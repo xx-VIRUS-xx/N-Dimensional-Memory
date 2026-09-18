@@ -1,0 +1,1922 @@
+[
+  {
+    "query_id": "Q0001",
+    "conversation_id": "atlas",
+    "query": "What was ultimately decided about PostgreSQL versus DynamoDB in backend migration?",
+    "category": "decision",
+    "gold_event_ids": [
+      "E00001",
+      "E00002",
+      "E00008",
+      "E00009",
+      "E00010",
+      "E00016",
+      "E00017",
+      "E00018",
+      "E00024",
+      "E00025",
+      "E00026",
+      "E00032"
+    ]
+  },
+  {
+    "query_id": "Q0002",
+    "conversation_id": "atlas",
+    "query": "What caused the first backend migration failure, and what fixed it?",
+    "category": "action_outcome",
+    "gold_event_ids": [
+      "E00001",
+      "E00002",
+      "E00008",
+      "E00009",
+      "E00010",
+      "E00016",
+      "E00017",
+      "E00018",
+      "E00024",
+      "E00025",
+      "E00026",
+      "E00032"
+    ]
+  },
+  {
+    "query_id": "Q0003",
+    "conversation_id": "atlas",
+    "query": "What is the current status of the Redis architecture decision?",
+    "category": "ambiguity",
+    "gold_event_ids": [
+      "E00001",
+      "E00002",
+      "E00008",
+      "E00009",
+      "E00010",
+      "E00016",
+      "E00017",
+      "E00018",
+      "E00024",
+      "E00025",
+      "E00026",
+      "E00032"
+    ]
+  },
+  {
+    "query_id": "Q0004",
+    "conversation_id": "atlas",
+    "query": "Who first reported the failure, and who later confirmed it?",
+    "category": "provenance",
+    "gold_event_ids": [
+      "E00001",
+      "E00002",
+      "E00008",
+      "E00009",
+      "E00010",
+      "E00016",
+      "E00017",
+      "E00018",
+      "E00024",
+      "E00025",
+      "E00026",
+      "E00032"
+    ]
+  },
+  {
+    "query_id": "Q0005",
+    "conversation_id": "atlas",
+    "query": "Was Cassandra ever discussed in the atlas sessions?",
+    "category": "negative",
+    "gold_event_ids": [
+      "E00001",
+      "E00002",
+      "E00008",
+      "E00009",
+      "E00010",
+      "E00016",
+      "E00017",
+      "E00018",
+      "E00024",
+      "E00025",
+      "E00026",
+      "E00032"
+    ]
+  },
+  {
+    "query_id": "Q0006",
+    "conversation_id": "atlas",
+    "query": "What changed between the initial PostgreSQL recommendation and the final direction?",
+    "category": "revision",
+    "gold_event_ids": [
+      "E00001",
+      "E00002",
+      "E00008",
+      "E00009",
+      "E00010",
+      "E00016",
+      "E00017",
+      "E00018",
+      "E00024",
+      "E00025",
+      "E00026",
+      "E00032"
+    ]
+  },
+  {
+    "query_id": "Q0007",
+    "conversation_id": "atlas",
+    "query": "What happened during the first rollout of DynamoDB, and what happened later?",
+    "category": "temporal",
+    "gold_event_ids": [
+      "E00001",
+      "E00002",
+      "E00008",
+      "E00009",
+      "E00010",
+      "E00016",
+      "E00017",
+      "E00018",
+      "E00024",
+      "E00025",
+      "E00026",
+      "E00032"
+    ]
+  },
+  {
+    "query_id": "Q0008",
+    "conversation_id": "atlas",
+    "query": "What was the final role of Redis?",
+    "category": "multi_hop",
+    "gold_event_ids": [
+      "E00001",
+      "E00002",
+      "E00008",
+      "E00009",
+      "E00010",
+      "E00016",
+      "E00017",
+      "E00018",
+      "E00024",
+      "E00025",
+      "E00026",
+      "E00032"
+    ]
+  },
+  {
+    "query_id": "Q0009",
+    "conversation_id": "mercury",
+    "query": "What was ultimately decided about Flutter versus React Native in mobile release?",
+    "category": "decision",
+    "gold_event_ids": [
+      "E00048",
+      "E00049",
+      "E00055",
+      "E00056",
+      "E00057",
+      "E00063",
+      "E00064",
+      "E00065",
+      "E00071",
+      "E00072",
+      "E00073",
+      "E00079"
+    ]
+  },
+  {
+    "query_id": "Q0010",
+    "conversation_id": "mercury",
+    "query": "What caused the first mobile release failure, and what fixed it?",
+    "category": "action_outcome",
+    "gold_event_ids": [
+      "E00048",
+      "E00049",
+      "E00055",
+      "E00056",
+      "E00057",
+      "E00063",
+      "E00064",
+      "E00065",
+      "E00071",
+      "E00072",
+      "E00073",
+      "E00079"
+    ]
+  },
+  {
+    "query_id": "Q0011",
+    "conversation_id": "mercury",
+    "query": "What is the current status of the Sentry architecture decision?",
+    "category": "ambiguity",
+    "gold_event_ids": [
+      "E00048",
+      "E00049",
+      "E00055",
+      "E00056",
+      "E00057",
+      "E00063",
+      "E00064",
+      "E00065",
+      "E00071",
+      "E00072",
+      "E00073",
+      "E00079"
+    ]
+  },
+  {
+    "query_id": "Q0012",
+    "conversation_id": "mercury",
+    "query": "Who first reported the failure, and who later confirmed it?",
+    "category": "provenance",
+    "gold_event_ids": [
+      "E00048",
+      "E00049",
+      "E00055",
+      "E00056",
+      "E00057",
+      "E00063",
+      "E00064",
+      "E00065",
+      "E00071",
+      "E00072",
+      "E00073",
+      "E00079"
+    ]
+  },
+  {
+    "query_id": "Q0013",
+    "conversation_id": "mercury",
+    "query": "Was Cassandra ever discussed in the mercury sessions?",
+    "category": "negative",
+    "gold_event_ids": [
+      "E00048",
+      "E00049",
+      "E00055",
+      "E00056",
+      "E00057",
+      "E00063",
+      "E00064",
+      "E00065",
+      "E00071",
+      "E00072",
+      "E00073",
+      "E00079"
+    ]
+  },
+  {
+    "query_id": "Q0014",
+    "conversation_id": "mercury",
+    "query": "What changed between the initial Flutter recommendation and the final direction?",
+    "category": "revision",
+    "gold_event_ids": [
+      "E00048",
+      "E00049",
+      "E00055",
+      "E00056",
+      "E00057",
+      "E00063",
+      "E00064",
+      "E00065",
+      "E00071",
+      "E00072",
+      "E00073",
+      "E00079"
+    ]
+  },
+  {
+    "query_id": "Q0015",
+    "conversation_id": "mercury",
+    "query": "What happened during the first rollout of React Native, and what happened later?",
+    "category": "temporal",
+    "gold_event_ids": [
+      "E00048",
+      "E00049",
+      "E00055",
+      "E00056",
+      "E00057",
+      "E00063",
+      "E00064",
+      "E00065",
+      "E00071",
+      "E00072",
+      "E00073",
+      "E00079"
+    ]
+  },
+  {
+    "query_id": "Q0016",
+    "conversation_id": "mercury",
+    "query": "What was the final role of Sentry?",
+    "category": "multi_hop",
+    "gold_event_ids": [
+      "E00048",
+      "E00049",
+      "E00055",
+      "E00056",
+      "E00057",
+      "E00063",
+      "E00064",
+      "E00065",
+      "E00071",
+      "E00072",
+      "E00073",
+      "E00079"
+    ]
+  },
+  {
+    "query_id": "Q0017",
+    "conversation_id": "northstar",
+    "query": "What was ultimately decided about Stripe versus Razorpay in billing redesign?",
+    "category": "decision",
+    "gold_event_ids": [
+      "E00095",
+      "E00096",
+      "E00102",
+      "E00103",
+      "E00104",
+      "E00110",
+      "E00111",
+      "E00112",
+      "E00118",
+      "E00119",
+      "E00120",
+      "E00126"
+    ]
+  },
+  {
+    "query_id": "Q0018",
+    "conversation_id": "northstar",
+    "query": "What caused the first billing redesign failure, and what fixed it?",
+    "category": "action_outcome",
+    "gold_event_ids": [
+      "E00095",
+      "E00096",
+      "E00102",
+      "E00103",
+      "E00104",
+      "E00110",
+      "E00111",
+      "E00112",
+      "E00118",
+      "E00119",
+      "E00120",
+      "E00126"
+    ]
+  },
+  {
+    "query_id": "Q0019",
+    "conversation_id": "northstar",
+    "query": "What is the current status of the PostgreSQL architecture decision?",
+    "category": "ambiguity",
+    "gold_event_ids": [
+      "E00095",
+      "E00096",
+      "E00102",
+      "E00103",
+      "E00104",
+      "E00110",
+      "E00111",
+      "E00112",
+      "E00118",
+      "E00119",
+      "E00120",
+      "E00126"
+    ]
+  },
+  {
+    "query_id": "Q0020",
+    "conversation_id": "northstar",
+    "query": "Who first reported the failure, and who later confirmed it?",
+    "category": "provenance",
+    "gold_event_ids": [
+      "E00095",
+      "E00096",
+      "E00102",
+      "E00103",
+      "E00104",
+      "E00110",
+      "E00111",
+      "E00112",
+      "E00118",
+      "E00119",
+      "E00120",
+      "E00126"
+    ]
+  },
+  {
+    "query_id": "Q0021",
+    "conversation_id": "northstar",
+    "query": "Was Cassandra ever discussed in the northstar sessions?",
+    "category": "negative",
+    "gold_event_ids": [
+      "E00095",
+      "E00096",
+      "E00102",
+      "E00103",
+      "E00104",
+      "E00110",
+      "E00111",
+      "E00112",
+      "E00118",
+      "E00119",
+      "E00120",
+      "E00126"
+    ]
+  },
+  {
+    "query_id": "Q0022",
+    "conversation_id": "northstar",
+    "query": "What changed between the initial Stripe recommendation and the final direction?",
+    "category": "revision",
+    "gold_event_ids": [
+      "E00095",
+      "E00096",
+      "E00102",
+      "E00103",
+      "E00104",
+      "E00110",
+      "E00111",
+      "E00112",
+      "E00118",
+      "E00119",
+      "E00120",
+      "E00126"
+    ]
+  },
+  {
+    "query_id": "Q0023",
+    "conversation_id": "northstar",
+    "query": "What happened during the first rollout of Razorpay, and what happened later?",
+    "category": "temporal",
+    "gold_event_ids": [
+      "E00095",
+      "E00096",
+      "E00102",
+      "E00103",
+      "E00104",
+      "E00110",
+      "E00111",
+      "E00112",
+      "E00118",
+      "E00119",
+      "E00120",
+      "E00126"
+    ]
+  },
+  {
+    "query_id": "Q0024",
+    "conversation_id": "northstar",
+    "query": "What was the final role of PostgreSQL?",
+    "category": "multi_hop",
+    "gold_event_ids": [
+      "E00095",
+      "E00096",
+      "E00102",
+      "E00103",
+      "E00104",
+      "E00110",
+      "E00111",
+      "E00112",
+      "E00118",
+      "E00119",
+      "E00120",
+      "E00126"
+    ]
+  },
+  {
+    "query_id": "Q0025",
+    "conversation_id": "orion",
+    "query": "What was ultimately decided about OpenSearch versus Elasticsearch in search overhaul?",
+    "category": "decision",
+    "gold_event_ids": [
+      "E00142",
+      "E00143",
+      "E00149",
+      "E00150",
+      "E00151",
+      "E00157",
+      "E00158",
+      "E00159",
+      "E00165",
+      "E00166",
+      "E00167",
+      "E00173"
+    ]
+  },
+  {
+    "query_id": "Q0026",
+    "conversation_id": "orion",
+    "query": "What caused the first search overhaul failure, and what fixed it?",
+    "category": "action_outcome",
+    "gold_event_ids": [
+      "E00142",
+      "E00143",
+      "E00149",
+      "E00150",
+      "E00151",
+      "E00157",
+      "E00158",
+      "E00159",
+      "E00165",
+      "E00166",
+      "E00167",
+      "E00173"
+    ]
+  },
+  {
+    "query_id": "Q0027",
+    "conversation_id": "orion",
+    "query": "What is the current status of the Redis architecture decision?",
+    "category": "ambiguity",
+    "gold_event_ids": [
+      "E00142",
+      "E00143",
+      "E00149",
+      "E00150",
+      "E00151",
+      "E00157",
+      "E00158",
+      "E00159",
+      "E00165",
+      "E00166",
+      "E00167",
+      "E00173"
+    ]
+  },
+  {
+    "query_id": "Q0028",
+    "conversation_id": "orion",
+    "query": "Who first reported the failure, and who later confirmed it?",
+    "category": "provenance",
+    "gold_event_ids": [
+      "E00142",
+      "E00143",
+      "E00149",
+      "E00150",
+      "E00151",
+      "E00157",
+      "E00158",
+      "E00159",
+      "E00165",
+      "E00166",
+      "E00167",
+      "E00173"
+    ]
+  },
+  {
+    "query_id": "Q0029",
+    "conversation_id": "orion",
+    "query": "Was Cassandra ever discussed in the orion sessions?",
+    "category": "negative",
+    "gold_event_ids": [
+      "E00142",
+      "E00143",
+      "E00149",
+      "E00150",
+      "E00151",
+      "E00157",
+      "E00158",
+      "E00159",
+      "E00165",
+      "E00166",
+      "E00167",
+      "E00173"
+    ]
+  },
+  {
+    "query_id": "Q0030",
+    "conversation_id": "orion",
+    "query": "What changed between the initial OpenSearch recommendation and the final direction?",
+    "category": "revision",
+    "gold_event_ids": [
+      "E00142",
+      "E00143",
+      "E00149",
+      "E00150",
+      "E00151",
+      "E00157",
+      "E00158",
+      "E00159",
+      "E00165",
+      "E00166",
+      "E00167",
+      "E00173"
+    ]
+  },
+  {
+    "query_id": "Q0031",
+    "conversation_id": "orion",
+    "query": "What happened during the first rollout of Elasticsearch, and what happened later?",
+    "category": "temporal",
+    "gold_event_ids": [
+      "E00142",
+      "E00143",
+      "E00149",
+      "E00150",
+      "E00151",
+      "E00157",
+      "E00158",
+      "E00159",
+      "E00165",
+      "E00166",
+      "E00167",
+      "E00173"
+    ]
+  },
+  {
+    "query_id": "Q0032",
+    "conversation_id": "orion",
+    "query": "What was the final role of Redis?",
+    "category": "multi_hop",
+    "gold_event_ids": [
+      "E00142",
+      "E00143",
+      "E00149",
+      "E00150",
+      "E00151",
+      "E00157",
+      "E00158",
+      "E00159",
+      "E00165",
+      "E00166",
+      "E00167",
+      "E00173"
+    ]
+  },
+  {
+    "query_id": "Q0033",
+    "conversation_id": "harbor",
+    "query": "What was ultimately decided about webhooks versus polling in notification service?",
+    "category": "decision",
+    "gold_event_ids": [
+      "E00189",
+      "E00190",
+      "E00196",
+      "E00197",
+      "E00198",
+      "E00204",
+      "E00205",
+      "E00206",
+      "E00212",
+      "E00213",
+      "E00214",
+      "E00220"
+    ]
+  },
+  {
+    "query_id": "Q0034",
+    "conversation_id": "harbor",
+    "query": "What caused the first notification service failure, and what fixed it?",
+    "category": "action_outcome",
+    "gold_event_ids": [
+      "E00189",
+      "E00190",
+      "E00196",
+      "E00197",
+      "E00198",
+      "E00204",
+      "E00205",
+      "E00206",
+      "E00212",
+      "E00213",
+      "E00214",
+      "E00220"
+    ]
+  },
+  {
+    "query_id": "Q0035",
+    "conversation_id": "harbor",
+    "query": "What is the current status of the Kafka architecture decision?",
+    "category": "ambiguity",
+    "gold_event_ids": [
+      "E00189",
+      "E00190",
+      "E00196",
+      "E00197",
+      "E00198",
+      "E00204",
+      "E00205",
+      "E00206",
+      "E00212",
+      "E00213",
+      "E00214",
+      "E00220"
+    ]
+  },
+  {
+    "query_id": "Q0036",
+    "conversation_id": "harbor",
+    "query": "Who first reported the failure, and who later confirmed it?",
+    "category": "provenance",
+    "gold_event_ids": [
+      "E00189",
+      "E00190",
+      "E00196",
+      "E00197",
+      "E00198",
+      "E00204",
+      "E00205",
+      "E00206",
+      "E00212",
+      "E00213",
+      "E00214",
+      "E00220"
+    ]
+  },
+  {
+    "query_id": "Q0037",
+    "conversation_id": "harbor",
+    "query": "Was Cassandra ever discussed in the harbor sessions?",
+    "category": "negative",
+    "gold_event_ids": [
+      "E00189",
+      "E00190",
+      "E00196",
+      "E00197",
+      "E00198",
+      "E00204",
+      "E00205",
+      "E00206",
+      "E00212",
+      "E00213",
+      "E00214",
+      "E00220"
+    ]
+  },
+  {
+    "query_id": "Q0038",
+    "conversation_id": "harbor",
+    "query": "What changed between the initial webhooks recommendation and the final direction?",
+    "category": "revision",
+    "gold_event_ids": [
+      "E00189",
+      "E00190",
+      "E00196",
+      "E00197",
+      "E00198",
+      "E00204",
+      "E00205",
+      "E00206",
+      "E00212",
+      "E00213",
+      "E00214",
+      "E00220"
+    ]
+  },
+  {
+    "query_id": "Q0039",
+    "conversation_id": "harbor",
+    "query": "What happened during the first rollout of polling, and what happened later?",
+    "category": "temporal",
+    "gold_event_ids": [
+      "E00189",
+      "E00190",
+      "E00196",
+      "E00197",
+      "E00198",
+      "E00204",
+      "E00205",
+      "E00206",
+      "E00212",
+      "E00213",
+      "E00214",
+      "E00220"
+    ]
+  },
+  {
+    "query_id": "Q0040",
+    "conversation_id": "harbor",
+    "query": "What was the final role of Kafka?",
+    "category": "multi_hop",
+    "gold_event_ids": [
+      "E00189",
+      "E00190",
+      "E00196",
+      "E00197",
+      "E00198",
+      "E00204",
+      "E00205",
+      "E00206",
+      "E00212",
+      "E00213",
+      "E00214",
+      "E00220"
+    ]
+  },
+  {
+    "query_id": "Q0041",
+    "conversation_id": "cinder",
+    "query": "What was ultimately decided about Airflow versus Dagster in data pipeline?",
+    "category": "decision",
+    "gold_event_ids": [
+      "E00236",
+      "E00237",
+      "E00243",
+      "E00244",
+      "E00245",
+      "E00251",
+      "E00252",
+      "E00253",
+      "E00259",
+      "E00260",
+      "E00261",
+      "E00267"
+    ]
+  },
+  {
+    "query_id": "Q0042",
+    "conversation_id": "cinder",
+    "query": "What caused the first data pipeline failure, and what fixed it?",
+    "category": "action_outcome",
+    "gold_event_ids": [
+      "E00236",
+      "E00237",
+      "E00243",
+      "E00244",
+      "E00245",
+      "E00251",
+      "E00252",
+      "E00253",
+      "E00259",
+      "E00260",
+      "E00261",
+      "E00267"
+    ]
+  },
+  {
+    "query_id": "Q0043",
+    "conversation_id": "cinder",
+    "query": "What is the current status of the S3 architecture decision?",
+    "category": "ambiguity",
+    "gold_event_ids": [
+      "E00236",
+      "E00237",
+      "E00243",
+      "E00244",
+      "E00245",
+      "E00251",
+      "E00252",
+      "E00253",
+      "E00259",
+      "E00260",
+      "E00261",
+      "E00267"
+    ]
+  },
+  {
+    "query_id": "Q0044",
+    "conversation_id": "cinder",
+    "query": "Who first reported the failure, and who later confirmed it?",
+    "category": "provenance",
+    "gold_event_ids": [
+      "E00236",
+      "E00237",
+      "E00243",
+      "E00244",
+      "E00245",
+      "E00251",
+      "E00252",
+      "E00253",
+      "E00259",
+      "E00260",
+      "E00261",
+      "E00267"
+    ]
+  },
+  {
+    "query_id": "Q0045",
+    "conversation_id": "cinder",
+    "query": "Was Cassandra ever discussed in the cinder sessions?",
+    "category": "negative",
+    "gold_event_ids": [
+      "E00236",
+      "E00237",
+      "E00243",
+      "E00244",
+      "E00245",
+      "E00251",
+      "E00252",
+      "E00253",
+      "E00259",
+      "E00260",
+      "E00261",
+      "E00267"
+    ]
+  },
+  {
+    "query_id": "Q0046",
+    "conversation_id": "cinder",
+    "query": "What changed between the initial Airflow recommendation and the final direction?",
+    "category": "revision",
+    "gold_event_ids": [
+      "E00236",
+      "E00237",
+      "E00243",
+      "E00244",
+      "E00245",
+      "E00251",
+      "E00252",
+      "E00253",
+      "E00259",
+      "E00260",
+      "E00261",
+      "E00267"
+    ]
+  },
+  {
+    "query_id": "Q0047",
+    "conversation_id": "cinder",
+    "query": "What happened during the first rollout of Dagster, and what happened later?",
+    "category": "temporal",
+    "gold_event_ids": [
+      "E00236",
+      "E00237",
+      "E00243",
+      "E00244",
+      "E00245",
+      "E00251",
+      "E00252",
+      "E00253",
+      "E00259",
+      "E00260",
+      "E00261",
+      "E00267"
+    ]
+  },
+  {
+    "query_id": "Q0048",
+    "conversation_id": "cinder",
+    "query": "What was the final role of S3?",
+    "category": "multi_hop",
+    "gold_event_ids": [
+      "E00236",
+      "E00237",
+      "E00243",
+      "E00244",
+      "E00245",
+      "E00251",
+      "E00252",
+      "E00253",
+      "E00259",
+      "E00260",
+      "E00261",
+      "E00267"
+    ]
+  },
+  {
+    "query_id": "Q0049",
+    "conversation_id": "lumen",
+    "query": "What was ultimately decided about Next.js versus Django in customer portal?",
+    "category": "decision",
+    "gold_event_ids": [
+      "E00283",
+      "E00284",
+      "E00290",
+      "E00291",
+      "E00292",
+      "E00298",
+      "E00299",
+      "E00300",
+      "E00306",
+      "E00307",
+      "E00308",
+      "E00314"
+    ]
+  },
+  {
+    "query_id": "Q0050",
+    "conversation_id": "lumen",
+    "query": "What caused the first customer portal failure, and what fixed it?",
+    "category": "action_outcome",
+    "gold_event_ids": [
+      "E00283",
+      "E00284",
+      "E00290",
+      "E00291",
+      "E00292",
+      "E00298",
+      "E00299",
+      "E00300",
+      "E00306",
+      "E00307",
+      "E00308",
+      "E00314"
+    ]
+  },
+  {
+    "query_id": "Q0051",
+    "conversation_id": "lumen",
+    "query": "What is the current status of the CloudFront architecture decision?",
+    "category": "ambiguity",
+    "gold_event_ids": [
+      "E00283",
+      "E00284",
+      "E00290",
+      "E00291",
+      "E00292",
+      "E00298",
+      "E00299",
+      "E00300",
+      "E00306",
+      "E00307",
+      "E00308",
+      "E00314"
+    ]
+  },
+  {
+    "query_id": "Q0052",
+    "conversation_id": "lumen",
+    "query": "Who first reported the failure, and who later confirmed it?",
+    "category": "provenance",
+    "gold_event_ids": [
+      "E00283",
+      "E00284",
+      "E00290",
+      "E00291",
+      "E00292",
+      "E00298",
+      "E00299",
+      "E00300",
+      "E00306",
+      "E00307",
+      "E00308",
+      "E00314"
+    ]
+  },
+  {
+    "query_id": "Q0053",
+    "conversation_id": "lumen",
+    "query": "Was Cassandra ever discussed in the lumen sessions?",
+    "category": "negative",
+    "gold_event_ids": [
+      "E00283",
+      "E00284",
+      "E00290",
+      "E00291",
+      "E00292",
+      "E00298",
+      "E00299",
+      "E00300",
+      "E00306",
+      "E00307",
+      "E00308",
+      "E00314"
+    ]
+  },
+  {
+    "query_id": "Q0054",
+    "conversation_id": "lumen",
+    "query": "What changed between the initial Next.js recommendation and the final direction?",
+    "category": "revision",
+    "gold_event_ids": [
+      "E00283",
+      "E00284",
+      "E00290",
+      "E00291",
+      "E00292",
+      "E00298",
+      "E00299",
+      "E00300",
+      "E00306",
+      "E00307",
+      "E00308",
+      "E00314"
+    ]
+  },
+  {
+    "query_id": "Q0055",
+    "conversation_id": "lumen",
+    "query": "What happened during the first rollout of Django, and what happened later?",
+    "category": "temporal",
+    "gold_event_ids": [
+      "E00283",
+      "E00284",
+      "E00290",
+      "E00291",
+      "E00292",
+      "E00298",
+      "E00299",
+      "E00300",
+      "E00306",
+      "E00307",
+      "E00308",
+      "E00314"
+    ]
+  },
+  {
+    "query_id": "Q0056",
+    "conversation_id": "lumen",
+    "query": "What was the final role of CloudFront?",
+    "category": "multi_hop",
+    "gold_event_ids": [
+      "E00283",
+      "E00284",
+      "E00290",
+      "E00291",
+      "E00292",
+      "E00298",
+      "E00299",
+      "E00300",
+      "E00306",
+      "E00307",
+      "E00308",
+      "E00314"
+    ]
+  },
+  {
+    "query_id": "Q0057",
+    "conversation_id": "quartz",
+    "query": "What was ultimately decided about ClickHouse versus BigQuery in analytics stack?",
+    "category": "decision",
+    "gold_event_ids": [
+      "E00330",
+      "E00331",
+      "E00337",
+      "E00338",
+      "E00339",
+      "E00345",
+      "E00346",
+      "E00347",
+      "E00353",
+      "E00354",
+      "E00355",
+      "E00361"
+    ]
+  },
+  {
+    "query_id": "Q0058",
+    "conversation_id": "quartz",
+    "query": "What caused the first analytics stack failure, and what fixed it?",
+    "category": "action_outcome",
+    "gold_event_ids": [
+      "E00330",
+      "E00331",
+      "E00337",
+      "E00338",
+      "E00339",
+      "E00345",
+      "E00346",
+      "E00347",
+      "E00353",
+      "E00354",
+      "E00355",
+      "E00361"
+    ]
+  },
+  {
+    "query_id": "Q0059",
+    "conversation_id": "quartz",
+    "query": "What is the current status of the dbt architecture decision?",
+    "category": "ambiguity",
+    "gold_event_ids": [
+      "E00330",
+      "E00331",
+      "E00337",
+      "E00338",
+      "E00339",
+      "E00345",
+      "E00346",
+      "E00347",
+      "E00353",
+      "E00354",
+      "E00355",
+      "E00361"
+    ]
+  },
+  {
+    "query_id": "Q0060",
+    "conversation_id": "quartz",
+    "query": "Who first reported the failure, and who later confirmed it?",
+    "category": "provenance",
+    "gold_event_ids": [
+      "E00330",
+      "E00331",
+      "E00337",
+      "E00338",
+      "E00339",
+      "E00345",
+      "E00346",
+      "E00347",
+      "E00353",
+      "E00354",
+      "E00355",
+      "E00361"
+    ]
+  },
+  {
+    "query_id": "Q0061",
+    "conversation_id": "quartz",
+    "query": "Was Cassandra ever discussed in the quartz sessions?",
+    "category": "negative",
+    "gold_event_ids": [
+      "E00330",
+      "E00331",
+      "E00337",
+      "E00338",
+      "E00339",
+      "E00345",
+      "E00346",
+      "E00347",
+      "E00353",
+      "E00354",
+      "E00355",
+      "E00361"
+    ]
+  },
+  {
+    "query_id": "Q0062",
+    "conversation_id": "quartz",
+    "query": "What changed between the initial ClickHouse recommendation and the final direction?",
+    "category": "revision",
+    "gold_event_ids": [
+      "E00330",
+      "E00331",
+      "E00337",
+      "E00338",
+      "E00339",
+      "E00345",
+      "E00346",
+      "E00347",
+      "E00353",
+      "E00354",
+      "E00355",
+      "E00361"
+    ]
+  },
+  {
+    "query_id": "Q0063",
+    "conversation_id": "quartz",
+    "query": "What happened during the first rollout of BigQuery, and what happened later?",
+    "category": "temporal",
+    "gold_event_ids": [
+      "E00330",
+      "E00331",
+      "E00337",
+      "E00338",
+      "E00339",
+      "E00345",
+      "E00346",
+      "E00347",
+      "E00353",
+      "E00354",
+      "E00355",
+      "E00361"
+    ]
+  },
+  {
+    "query_id": "Q0064",
+    "conversation_id": "quartz",
+    "query": "What was the final role of dbt?",
+    "category": "multi_hop",
+    "gold_event_ids": [
+      "E00330",
+      "E00331",
+      "E00337",
+      "E00338",
+      "E00339",
+      "E00345",
+      "E00346",
+      "E00347",
+      "E00353",
+      "E00354",
+      "E00355",
+      "E00361"
+    ]
+  },
+  {
+    "query_id": "Q0065",
+    "conversation_id": "maple",
+    "query": "What was ultimately decided about Cognito versus Auth0 in auth migration?",
+    "category": "decision",
+    "gold_event_ids": [
+      "E00377",
+      "E00378",
+      "E00384",
+      "E00385",
+      "E00386",
+      "E00392",
+      "E00393",
+      "E00394",
+      "E00400",
+      "E00401",
+      "E00402",
+      "E00408"
+    ]
+  },
+  {
+    "query_id": "Q0066",
+    "conversation_id": "maple",
+    "query": "What caused the first auth migration failure, and what fixed it?",
+    "category": "action_outcome",
+    "gold_event_ids": [
+      "E00377",
+      "E00378",
+      "E00384",
+      "E00385",
+      "E00386",
+      "E00392",
+      "E00393",
+      "E00394",
+      "E00400",
+      "E00401",
+      "E00402",
+      "E00408"
+    ]
+  },
+  {
+    "query_id": "Q0067",
+    "conversation_id": "maple",
+    "query": "What is the current status of the JWT architecture decision?",
+    "category": "ambiguity",
+    "gold_event_ids": [
+      "E00377",
+      "E00378",
+      "E00384",
+      "E00385",
+      "E00386",
+      "E00392",
+      "E00393",
+      "E00394",
+      "E00400",
+      "E00401",
+      "E00402",
+      "E00408"
+    ]
+  },
+  {
+    "query_id": "Q0068",
+    "conversation_id": "maple",
+    "query": "Who first reported the failure, and who later confirmed it?",
+    "category": "provenance",
+    "gold_event_ids": [
+      "E00377",
+      "E00378",
+      "E00384",
+      "E00385",
+      "E00386",
+      "E00392",
+      "E00393",
+      "E00394",
+      "E00400",
+      "E00401",
+      "E00402",
+      "E00408"
+    ]
+  },
+  {
+    "query_id": "Q0069",
+    "conversation_id": "maple",
+    "query": "Was Cassandra ever discussed in the maple sessions?",
+    "category": "negative",
+    "gold_event_ids": [
+      "E00377",
+      "E00378",
+      "E00384",
+      "E00385",
+      "E00386",
+      "E00392",
+      "E00393",
+      "E00394",
+      "E00400",
+      "E00401",
+      "E00402",
+      "E00408"
+    ]
+  },
+  {
+    "query_id": "Q0070",
+    "conversation_id": "maple",
+    "query": "What changed between the initial Cognito recommendation and the final direction?",
+    "category": "revision",
+    "gold_event_ids": [
+      "E00377",
+      "E00378",
+      "E00384",
+      "E00385",
+      "E00386",
+      "E00392",
+      "E00393",
+      "E00394",
+      "E00400",
+      "E00401",
+      "E00402",
+      "E00408"
+    ]
+  },
+  {
+    "query_id": "Q0071",
+    "conversation_id": "maple",
+    "query": "What happened during the first rollout of Auth0, and what happened later?",
+    "category": "temporal",
+    "gold_event_ids": [
+      "E00377",
+      "E00378",
+      "E00384",
+      "E00385",
+      "E00386",
+      "E00392",
+      "E00393",
+      "E00394",
+      "E00400",
+      "E00401",
+      "E00402",
+      "E00408"
+    ]
+  },
+  {
+    "query_id": "Q0072",
+    "conversation_id": "maple",
+    "query": "What was the final role of JWT?",
+    "category": "multi_hop",
+    "gold_event_ids": [
+      "E00377",
+      "E00378",
+      "E00384",
+      "E00385",
+      "E00386",
+      "E00392",
+      "E00393",
+      "E00394",
+      "E00400",
+      "E00401",
+      "E00402",
+      "E00408"
+    ]
+  },
+  {
+    "query_id": "Q0073",
+    "conversation_id": "vertex",
+    "query": "What was ultimately decided about S3 versus Cloudinary in image processing?",
+    "category": "decision",
+    "gold_event_ids": [
+      "E00424",
+      "E00425",
+      "E00431",
+      "E00432",
+      "E00433",
+      "E00439",
+      "E00440",
+      "E00441",
+      "E00447",
+      "E00448",
+      "E00449",
+      "E00455"
+    ]
+  },
+  {
+    "query_id": "Q0074",
+    "conversation_id": "vertex",
+    "query": "What caused the first image processing failure, and what fixed it?",
+    "category": "action_outcome",
+    "gold_event_ids": [
+      "E00424",
+      "E00425",
+      "E00431",
+      "E00432",
+      "E00433",
+      "E00439",
+      "E00440",
+      "E00441",
+      "E00447",
+      "E00448",
+      "E00449",
+      "E00455"
+    ]
+  },
+  {
+    "query_id": "Q0075",
+    "conversation_id": "vertex",
+    "query": "What is the current status of the Lambda architecture decision?",
+    "category": "ambiguity",
+    "gold_event_ids": [
+      "E00424",
+      "E00425",
+      "E00431",
+      "E00432",
+      "E00433",
+      "E00439",
+      "E00440",
+      "E00441",
+      "E00447",
+      "E00448",
+      "E00449",
+      "E00455"
+    ]
+  },
+  {
+    "query_id": "Q0076",
+    "conversation_id": "vertex",
+    "query": "Who first reported the failure, and who later confirmed it?",
+    "category": "provenance",
+    "gold_event_ids": [
+      "E00424",
+      "E00425",
+      "E00431",
+      "E00432",
+      "E00433",
+      "E00439",
+      "E00440",
+      "E00441",
+      "E00447",
+      "E00448",
+      "E00449",
+      "E00455"
+    ]
+  },
+  {
+    "query_id": "Q0077",
+    "conversation_id": "vertex",
+    "query": "Was Cassandra ever discussed in the vertex sessions?",
+    "category": "negative",
+    "gold_event_ids": [
+      "E00424",
+      "E00425",
+      "E00431",
+      "E00432",
+      "E00433",
+      "E00439",
+      "E00440",
+      "E00441",
+      "E00447",
+      "E00448",
+      "E00449",
+      "E00455"
+    ]
+  },
+  {
+    "query_id": "Q0078",
+    "conversation_id": "vertex",
+    "query": "What changed between the initial S3 recommendation and the final direction?",
+    "category": "revision",
+    "gold_event_ids": [
+      "E00424",
+      "E00425",
+      "E00431",
+      "E00432",
+      "E00433",
+      "E00439",
+      "E00440",
+      "E00441",
+      "E00447",
+      "E00448",
+      "E00449",
+      "E00455"
+    ]
+  },
+  {
+    "query_id": "Q0079",
+    "conversation_id": "vertex",
+    "query": "What happened during the first rollout of Cloudinary, and what happened later?",
+    "category": "temporal",
+    "gold_event_ids": [
+      "E00424",
+      "E00425",
+      "E00431",
+      "E00432",
+      "E00433",
+      "E00439",
+      "E00440",
+      "E00441",
+      "E00447",
+      "E00448",
+      "E00449",
+      "E00455"
+    ]
+  },
+  {
+    "query_id": "Q0080",
+    "conversation_id": "vertex",
+    "query": "What was the final role of Lambda?",
+    "category": "multi_hop",
+    "gold_event_ids": [
+      "E00424",
+      "E00425",
+      "E00431",
+      "E00432",
+      "E00433",
+      "E00439",
+      "E00440",
+      "E00441",
+      "E00447",
+      "E00448",
+      "E00449",
+      "E00455"
+    ]
+  },
+  {
+    "query_id": "Q0081",
+    "conversation_id": "echo",
+    "query": "What was ultimately decided about Slack versus Zendesk in support automation?",
+    "category": "decision",
+    "gold_event_ids": [
+      "E00471",
+      "E00472",
+      "E00478",
+      "E00479",
+      "E00480",
+      "E00486",
+      "E00487",
+      "E00488",
+      "E00494",
+      "E00495",
+      "E00496",
+      "E00502"
+    ]
+  },
+  {
+    "query_id": "Q0082",
+    "conversation_id": "echo",
+    "query": "What caused the first support automation failure, and what fixed it?",
+    "category": "action_outcome",
+    "gold_event_ids": [
+      "E00471",
+      "E00472",
+      "E00478",
+      "E00479",
+      "E00480",
+      "E00486",
+      "E00487",
+      "E00488",
+      "E00494",
+      "E00495",
+      "E00496",
+      "E00502"
+    ]
+  },
+  {
+    "query_id": "Q0083",
+    "conversation_id": "echo",
+    "query": "What is the current status of the LLM architecture decision?",
+    "category": "ambiguity",
+    "gold_event_ids": [
+      "E00471",
+      "E00472",
+      "E00478",
+      "E00479",
+      "E00480",
+      "E00486",
+      "E00487",
+      "E00488",
+      "E00494",
+      "E00495",
+      "E00496",
+      "E00502"
+    ]
+  },
+  {
+    "query_id": "Q0084",
+    "conversation_id": "echo",
+    "query": "Who first reported the failure, and who later confirmed it?",
+    "category": "provenance",
+    "gold_event_ids": [
+      "E00471",
+      "E00472",
+      "E00478",
+      "E00479",
+      "E00480",
+      "E00486",
+      "E00487",
+      "E00488",
+      "E00494",
+      "E00495",
+      "E00496",
+      "E00502"
+    ]
+  },
+  {
+    "query_id": "Q0085",
+    "conversation_id": "echo",
+    "query": "Was Cassandra ever discussed in the echo sessions?",
+    "category": "negative",
+    "gold_event_ids": [
+      "E00471",
+      "E00472",
+      "E00478",
+      "E00479",
+      "E00480",
+      "E00486",
+      "E00487",
+      "E00488",
+      "E00494",
+      "E00495",
+      "E00496",
+      "E00502"
+    ]
+  },
+  {
+    "query_id": "Q0086",
+    "conversation_id": "echo",
+    "query": "What changed between the initial Slack recommendation and the final direction?",
+    "category": "revision",
+    "gold_event_ids": [
+      "E00471",
+      "E00472",
+      "E00478",
+      "E00479",
+      "E00480",
+      "E00486",
+      "E00487",
+      "E00488",
+      "E00494",
+      "E00495",
+      "E00496",
+      "E00502"
+    ]
+  },
+  {
+    "query_id": "Q0087",
+    "conversation_id": "echo",
+    "query": "What happened during the first rollout of Zendesk, and what happened later?",
+    "category": "temporal",
+    "gold_event_ids": [
+      "E00471",
+      "E00472",
+      "E00478",
+      "E00479",
+      "E00480",
+      "E00486",
+      "E00487",
+      "E00488",
+      "E00494",
+      "E00495",
+      "E00496",
+      "E00502"
+    ]
+  },
+  {
+    "query_id": "Q0088",
+    "conversation_id": "echo",
+    "query": "What was the final role of LLM?",
+    "category": "multi_hop",
+    "gold_event_ids": [
+      "E00471",
+      "E00472",
+      "E00478",
+      "E00479",
+      "E00480",
+      "E00486",
+      "E00487",
+      "E00488",
+      "E00494",
+      "E00495",
+      "E00496",
+      "E00502"
+    ]
+  },
+  {
+    "query_id": "Q0089",
+    "conversation_id": "apollo",
+    "query": "What was ultimately decided about Kubernetes versus ECS in deployment platform?",
+    "category": "decision",
+    "gold_event_ids": [
+      "E00518",
+      "E00519",
+      "E00525",
+      "E00526",
+      "E00527",
+      "E00533",
+      "E00534",
+      "E00535",
+      "E00541",
+      "E00542",
+      "E00543",
+      "E00549"
+    ]
+  },
+  {
+    "query_id": "Q0090",
+    "conversation_id": "apollo",
+    "query": "What caused the first deployment platform failure, and what fixed it?",
+    "category": "action_outcome",
+    "gold_event_ids": [
+      "E00518",
+      "E00519",
+      "E00525",
+      "E00526",
+      "E00527",
+      "E00533",
+      "E00534",
+      "E00535",
+      "E00541",
+      "E00542",
+      "E00543",
+      "E00549"
+    ]
+  },
+  {
+    "query_id": "Q0091",
+    "conversation_id": "apollo",
+    "query": "What is the current status of the Helm architecture decision?",
+    "category": "ambiguity",
+    "gold_event_ids": [
+      "E00518",
+      "E00519",
+      "E00525",
+      "E00526",
+      "E00527",
+      "E00533",
+      "E00534",
+      "E00535",
+      "E00541",
+      "E00542",
+      "E00543",
+      "E00549"
+    ]
+  },
+  {
+    "query_id": "Q0092",
+    "conversation_id": "apollo",
+    "query": "Who first reported the failure, and who later confirmed it?",
+    "category": "provenance",
+    "gold_event_ids": [
+      "E00518",
+      "E00519",
+      "E00525",
+      "E00526",
+      "E00527",
+      "E00533",
+      "E00534",
+      "E00535",
+      "E00541",
+      "E00542",
+      "E00543",
+      "E00549"
+    ]
+  },
+  {
+    "query_id": "Q0093",
+    "conversation_id": "apollo",
+    "query": "Was Cassandra ever discussed in the apollo sessions?",
+    "category": "negative",
+    "gold_event_ids": [
+      "E00518",
+      "E00519",
+      "E00525",
+      "E00526",
+      "E00527",
+      "E00533",
+      "E00534",
+      "E00535",
+      "E00541",
+      "E00542",
+      "E00543",
+      "E00549"
+    ]
+  },
+  {
+    "query_id": "Q0094",
+    "conversation_id": "apollo",
+    "query": "What changed between the initial Kubernetes recommendation and the final direction?",
+    "category": "revision",
+    "gold_event_ids": [
+      "E00518",
+      "E00519",
+      "E00525",
+      "E00526",
+      "E00527",
+      "E00533",
+      "E00534",
+      "E00535",
+      "E00541",
+      "E00542",
+      "E00543",
+      "E00549"
+    ]
+  },
+  {
+    "query_id": "Q0095",
+    "conversation_id": "apollo",
+    "query": "What happened during the first rollout of ECS, and what happened later?",
+    "category": "temporal",
+    "gold_event_ids": [
+      "E00518",
+      "E00519",
+      "E00525",
+      "E00526",
+      "E00527",
+      "E00533",
+      "E00534",
+      "E00535",
+      "E00541",
+      "E00542",
+      "E00543",
+      "E00549"
+    ]
+  },
+  {
+    "query_id": "Q0096",
+    "conversation_id": "apollo",
+    "query": "What was the final role of Helm?",
+    "category": "multi_hop",
+    "gold_event_ids": [
+      "E00518",
+      "E00519",
+      "E00525",
+      "E00526",
+      "E00527",
+      "E00533",
+      "E00534",
+      "E00535",
+      "E00541",
+      "E00542",
+      "E00543",
+      "E00549"
+    ]
+  }
+]

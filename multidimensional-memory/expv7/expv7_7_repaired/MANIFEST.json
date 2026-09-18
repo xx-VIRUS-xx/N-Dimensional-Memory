@@ -1,0 +1,95 @@
+{
+  "benchmark": "V7.7-repaired-1",
+  "files": [
+    {
+      "path": "AGENT_HANDOFF.md",
+      "sha256": "af8f4aaa8a68b7834a29965e64f0ea4b59ac831910680dea3a18f6bd241c03b5",
+      "bytes": 922
+    },
+    {
+      "path": "EXP-V7.7.md",
+      "sha256": "2013a7e14981cc115f6cb44218cf5a95cca696d5c3814a307bc4f45dc3b580c6",
+      "bytes": 2714
+    },
+    {
+      "path": "OPERATOR_HANDOFF.md",
+      "sha256": "2e33259b584356a26e88689cb7c33f76b4d6a87a636663cd767a433383202378",
+      "bytes": 3028
+    },
+    {
+      "path": "README.md",
+      "sha256": "05628a97d39d397504cf3bc28b7547f74f67c57090f60441e62c133533fc8bec",
+      "bytes": 1072
+    },
+    {
+      "path": "RUN_PROMPT.md",
+      "sha256": "b17f2e9f30e3e1bea25aa7e6610c2eb3995f797bb3918f4f8f490d5a094f27b2",
+      "bytes": 1062
+    },
+    {
+      "path": "adapters/README.md",
+      "sha256": "f2624e2a74f8101ac1112f7e842e2007658b40a4c84c9fd16b0106652f0449ae",
+      "bytes": 346
+    },
+    {
+      "path": "data/DATASET_CARD.md",
+      "sha256": "80e28ec957ec0c20af58d9dee439b00cc3f50ed5c3fa1550cf1549481692efa5",
+      "bytes": 710
+    },
+    {
+      "path": "data/benchmark_v7_7_gold.json",
+      "sha256": "85c4923766e56bbebff10efd0f3ccdc76100e94404fc6f32016100a992a97a39",
+      "bytes": 30958
+    },
+    {
+      "path": "data/benchmark_v7_7_gold_repaired.json",
+      "sha256": "16bb1e89d1f685c96826e9ed76b994457859b4e3a8b1f54868637a39aa7d70e4",
+      "bytes": 33191
+    },
+    {
+      "path": "data/benchmark_v7_7_public.json",
+      "sha256": "c52f6f1aef3244e013471ab18020b08d72239dfeee7d87e1b1d1dd3d0c30068d",
+      "bytes": 128
+    },
+    {
+      "path": "data/benchmark_v7_7_public_repaired.json",
+      "sha256": "eb18624c78b25af7e927ff77f47878e890f795b2dc68f17f2f9d376d279d11d5",
+      "bytes": 21278
+    },
+    {
+      "path": "data/conversation_v7_7_evaluator.jsonl",
+      "sha256": "d1fe7d2a080b90291a0a42c5464ea660188bd19f64ab95d71e40e5acbd0517d6",
+      "bytes": 226603
+    },
+    {
+      "path": "data/conversation_v7_7_unlabeled.jsonl",
+      "sha256": "80a32f4f6edde3f65fa3ac74dede2750214b4514b23d8ca1c2bec9f7b7b9fec6",
+      "bytes": 199003
+    },
+    {
+      "path": "evaluator/README.md",
+      "sha256": "77c00e4c9cdb6f2e7cf5599a2fc0b30dc3c18117191d3fc0378c901c9d8e1464",
+      "bytes": 313
+    },
+    {
+      "path": "results/README.txt",
+      "sha256": "114549c064eab10f922abc424fbb5b6801a30a369a6cf66d780f628aa73e11a0",
+      "bytes": 268
+    },
+    {
+      "path": "schemas/memory_v77_repaired.schema.json",
+      "sha256": "95aa3fadc1e28524e78a7c48009b526aa66e1ca3001070c46023a14b07888a76",
+      "bytes": 624
+    },
+    {
+      "path": "src/validate.py",
+      "sha256": "93c344b49b4ba28f570f0e2ccc7438931215de48e3f3d59a5cce691cc3c43494",
+      "bytes": 1369
+    },
+    {
+      "path": "tests/test_benchmark.py",
+      "sha256": "e956f0b2d3b70a822f13adf2bf1dff29b74f5ff4d80e00d19c2c5fc620ff0dee",
+      "bytes": 71
+    }
+  ]
+}

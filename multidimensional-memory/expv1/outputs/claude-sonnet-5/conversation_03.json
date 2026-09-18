@@ -1,0 +1,164 @@
+{
+  "conversation_id": "conversation_03",
+
+  "points": [
+    {
+      "point_id": "p1",
+      "surface": "I",
+      "dimensions": ["noun", "subject", "actor"],
+      "interpretations": ["The user, consistently the subject/actor across all statements in this conversation."],
+      "source_sentences": [
+        "I want to learn guitar.",
+        "I bought a guitar yesterday.",
+        "I practiced chords for thirty minutes.",
+        "I want to practice again tomorrow."
+      ],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p2",
+      "surface": "guitar",
+      "dimensions": ["noun", "object", "instrument"],
+      "interpretations": ["The instrument the user wants to learn and has since acquired."],
+      "source_sentences": ["I want to learn guitar.", "I bought a guitar yesterday."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p3",
+      "surface": "want",
+      "dimensions": ["verb", "intent"],
+      "interpretations": ["Expresses a recurring desire/intent, appearing twice with different objects (learning, practicing)."],
+      "source_sentences": ["I want to learn guitar.", "I want to practice again tomorrow."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p4",
+      "surface": "learn",
+      "dimensions": ["verb", "action", "intent"],
+      "interpretations": ["The user's stated goal regarding the guitar."],
+      "source_sentences": ["I want to learn guitar."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p5",
+      "surface": "basic chords",
+      "dimensions": ["noun", "object"],
+      "interpretations": ["A suggested starting point for learning guitar, introduced by the assistant."],
+      "source_sentences": ["We can start with basic chords."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p6",
+      "surface": "bought",
+      "dimensions": ["verb", "action", "state"],
+      "interpretations": ["An action marking acquisition of the guitar; represents a completed state change from not-owning to owning."],
+      "source_sentences": ["I bought a guitar yesterday."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p7",
+      "surface": "yesterday",
+      "dimensions": ["time"],
+      "interpretations": ["The time at which the guitar was purchased, relative to the conversation."],
+      "source_sentences": ["I bought a guitar yesterday."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p8",
+      "surface": "practiced",
+      "dimensions": ["verb", "action"],
+      "interpretations": ["A completed practice action, distinct from the later stated intent to practice again."],
+      "source_sentences": ["I practiced chords for thirty minutes."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p9",
+      "surface": "chords",
+      "dimensions": ["noun", "object"],
+      "interpretations": ["The subject matter of the user's practice session; connects back to 'basic chords' suggested earlier."],
+      "source_sentences": ["I practiced chords for thirty minutes."],
+      "confidence": 0.9
+    },
+    {
+      "point_id": "p10",
+      "surface": "thirty minutes",
+      "dimensions": ["time"],
+      "interpretations": ["The duration of the practice session."],
+      "source_sentences": ["I practiced chords for thirty minutes."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p11",
+      "surface": "practice",
+      "dimensions": ["verb", "action", "activity"],
+      "interpretations": ["The recurring activity referenced both as a completed past action and a future intent."],
+      "source_sentences": ["I practiced chords for thirty minutes.", "I want to practice again tomorrow."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p12",
+      "surface": "again",
+      "dimensions": ["state"],
+      "interpretations": ["Marks the intended practice as a repetition of a prior action."],
+      "source_sentences": ["I want to practice again tomorrow."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p13",
+      "surface": "tomorrow",
+      "dimensions": ["time"],
+      "interpretations": ["The future time frame for the next intended practice session."],
+      "source_sentences": ["I want to practice again tomorrow."],
+      "confidence": 1.0
+    }
+  ],
+
+  "temporal_states": [
+    {
+      "state_id": "t1",
+      "subject": "I",
+      "topic": "guitar ownership",
+      "sequence": [
+        {
+          "state": "not yet owning / intending to learn",
+          "evidence": ["I want to learn guitar."]
+        },
+        {
+          "state": "acquired",
+          "evidence": ["I bought a guitar yesterday."]
+        }
+      ],
+      "note": "Ownership of the guitar transitions from absent/intended to acquired."
+    },
+    {
+      "state_id": "t2",
+      "subject": "I",
+      "topic": "practice activity",
+      "sequence": [
+        {
+          "state": "suggested (by assistant, not yet performed)",
+          "evidence": ["We can start with basic chords."]
+        },
+        {
+          "state": "performed once",
+          "evidence": ["I practiced chords for thirty minutes."]
+        },
+        {
+          "state": "intended to repeat",
+          "evidence": ["I want to practice again tomorrow."]
+        }
+      ],
+      "note": "Practice activity progresses from suggestion, to a single completed instance, to a stated future intent."
+    }
+  ],
+
+  "ambiguities": [],
+
+  "explicit_facts": [
+    "The user wants to learn guitar.",
+    "The assistant suggested starting with basic chords.",
+    "The user bought a guitar yesterday.",
+    "The user practiced chords for thirty minutes.",
+    "The user wants to practice again tomorrow."
+  ]
+}

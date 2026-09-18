@@ -1,0 +1,5954 @@
+{
+  "Q01-01": [
+    {
+      "event_id": "C01E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E044",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E004",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E012",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E016",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E024",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E028",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q01-02": [
+    {
+      "event_id": "C01E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E048",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E001",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E005",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E009",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E013",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E017",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E021",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E025",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q01-03": [
+    {
+      "event_id": "C01E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E008",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E001",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E005",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E009",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E013",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E017",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E021",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E025",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E029",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E033",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q01-04": [
+    {
+      "event_id": "C01E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q01-05": [
+    {
+      "event_id": "C01E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E062",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q01-06": [
+    {
+      "event_id": "C01E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E027",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q01-07": [
+    {
+      "event_id": "C01E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E008",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E044",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E100",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q01-08": [
+    {
+      "event_id": "C01E069",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E056",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E048",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E004",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E012",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C01E016",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q02-01": [
+    {
+      "event_id": "C02E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E044",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E004",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E012",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E016",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E024",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E028",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q02-02": [
+    {
+      "event_id": "C02E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E048",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E001",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E005",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E009",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E013",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E017",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E021",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E025",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q02-03": [
+    {
+      "event_id": "C02E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E008",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E001",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E005",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E009",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E013",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E017",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E021",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E025",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E029",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E033",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q02-04": [
+    {
+      "event_id": "C02E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q02-05": [
+    {
+      "event_id": "C02E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E062",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q02-06": [
+    {
+      "event_id": "C02E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E027",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q02-07": [
+    {
+      "event_id": "C02E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E008",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E044",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E100",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q02-08": [
+    {
+      "event_id": "C02E069",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E056",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E048",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E004",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E012",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C02E016",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q03-01": [
+    {
+      "event_id": "C03E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E044",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E004",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E012",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E016",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E024",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E028",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q03-02": [
+    {
+      "event_id": "C03E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E048",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E001",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E005",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E009",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E013",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E017",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E021",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E025",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q03-03": [
+    {
+      "event_id": "C03E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E008",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E001",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E005",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E009",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E013",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E017",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E021",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E025",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E029",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E033",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q03-04": [
+    {
+      "event_id": "C03E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q03-05": [
+    {
+      "event_id": "C03E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E062",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q03-06": [
+    {
+      "event_id": "C03E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E027",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q03-07": [
+    {
+      "event_id": "C03E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E008",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E044",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E100",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q03-08": [
+    {
+      "event_id": "C03E069",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E056",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E048",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E004",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E012",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C03E016",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q04-01": [
+    {
+      "event_id": "C04E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E044",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E004",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E012",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E016",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E024",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E028",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q04-02": [
+    {
+      "event_id": "C04E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E048",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E001",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E005",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E009",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E013",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E017",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E021",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E025",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q04-03": [
+    {
+      "event_id": "C04E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E008",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E001",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E005",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E009",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E013",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E017",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E021",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E025",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E029",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E033",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q04-04": [
+    {
+      "event_id": "C04E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q04-05": [
+    {
+      "event_id": "C04E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E062",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q04-06": [
+    {
+      "event_id": "C04E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E027",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q04-07": [
+    {
+      "event_id": "C04E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E008",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E044",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E100",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q04-08": [
+    {
+      "event_id": "C04E069",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E056",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E048",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E004",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E012",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C04E016",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q05-01": [
+    {
+      "event_id": "C05E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E044",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E004",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E012",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E016",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E024",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E028",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q05-02": [
+    {
+      "event_id": "C05E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E048",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E001",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E005",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E009",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E013",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E017",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E021",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E025",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q05-03": [
+    {
+      "event_id": "C05E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E008",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E001",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E005",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E009",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E013",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E017",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E021",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E025",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E029",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E033",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q05-04": [
+    {
+      "event_id": "C05E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q05-05": [
+    {
+      "event_id": "C05E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E062",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q05-06": [
+    {
+      "event_id": "C05E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E027",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q05-07": [
+    {
+      "event_id": "C05E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E008",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E044",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E100",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q05-08": [
+    {
+      "event_id": "C05E069",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E056",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E048",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E004",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E012",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C05E016",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q06-01": [
+    {
+      "event_id": "C06E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E044",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E004",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E012",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E016",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E024",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E028",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q06-02": [
+    {
+      "event_id": "C06E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E048",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E099",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E001",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E005",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E009",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E013",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E017",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E021",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q06-03": [
+    {
+      "event_id": "C06E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E008",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E001",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E005",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E009",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E013",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E017",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E021",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E025",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E029",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q06-04": [
+    {
+      "event_id": "C06E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q06-05": [
+    {
+      "event_id": "C06E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E062",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q06-06": [
+    {
+      "event_id": "C06E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E069",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q06-07": [
+    {
+      "event_id": "C06E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E008",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E044",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E100",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E056",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q06-08": [
+    {
+      "event_id": "C06E069",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E056",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E048",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E004",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E012",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E016",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C06E024",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q07-01": [
+    {
+      "event_id": "C07E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E044",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E004",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E012",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E016",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E024",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E028",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q07-02": [
+    {
+      "event_id": "C07E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E048",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E001",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E005",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E009",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E013",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E017",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E021",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E025",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q07-03": [
+    {
+      "event_id": "C07E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E008",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E001",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E005",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E009",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E013",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E017",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E021",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E025",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E029",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E033",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q07-04": [
+    {
+      "event_id": "C07E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q07-05": [
+    {
+      "event_id": "C07E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E062",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q07-06": [
+    {
+      "event_id": "C07E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E027",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q07-07": [
+    {
+      "event_id": "C07E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E008",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E044",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E100",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q07-08": [
+    {
+      "event_id": "C07E069",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E056",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E048",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E004",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E012",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C07E016",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q08-01": [
+    {
+      "event_id": "C08E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E044",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E004",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E012",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E016",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E024",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E028",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q08-02": [
+    {
+      "event_id": "C08E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E048",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E001",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E005",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E009",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E013",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E017",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E021",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E025",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q08-03": [
+    {
+      "event_id": "C08E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E008",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E001",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E005",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E009",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E013",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E017",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E021",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E025",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E029",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E033",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q08-04": [
+    {
+      "event_id": "C08E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q08-05": [
+    {
+      "event_id": "C08E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E062",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q08-06": [
+    {
+      "event_id": "C08E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E027",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q08-07": [
+    {
+      "event_id": "C08E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E008",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E044",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E100",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q08-08": [
+    {
+      "event_id": "C08E069",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E056",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E048",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E004",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E012",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C08E016",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q09-01": [
+    {
+      "event_id": "C09E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E044",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E004",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E012",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E016",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E024",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E028",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q09-02": [
+    {
+      "event_id": "C09E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E048",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E001",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E005",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E009",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E013",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E017",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E021",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E025",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q09-03": [
+    {
+      "event_id": "C09E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E008",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E001",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E005",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E009",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E013",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E017",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E021",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E025",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E029",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E033",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q09-04": [
+    {
+      "event_id": "C09E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q09-05": [
+    {
+      "event_id": "C09E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E062",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q09-06": [
+    {
+      "event_id": "C09E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E027",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q09-07": [
+    {
+      "event_id": "C09E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E008",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E044",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E100",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q09-08": [
+    {
+      "event_id": "C09E069",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E056",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E048",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E004",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E012",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C09E016",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q10-01": [
+    {
+      "event_id": "C10E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E044",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E004",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E012",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E016",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E024",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E028",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q10-02": [
+    {
+      "event_id": "C10E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E048",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E001",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E005",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E009",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E013",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E017",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E021",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E025",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q10-03": [
+    {
+      "event_id": "C10E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E008",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E001",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E005",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E009",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E013",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E017",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E021",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E025",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E029",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E033",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q10-04": [
+    {
+      "event_id": "C10E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q10-05": [
+    {
+      "event_id": "C10E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E062",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q10-06": [
+    {
+      "event_id": "C10E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E027",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q10-07": [
+    {
+      "event_id": "C10E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E008",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E044",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E100",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q10-08": [
+    {
+      "event_id": "C10E069",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E056",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E048",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E004",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E012",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C10E016",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q11-01": [
+    {
+      "event_id": "C11E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E044",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E004",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E012",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E016",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E024",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E028",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q11-02": [
+    {
+      "event_id": "C11E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E048",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E001",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E005",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E009",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E013",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E017",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E021",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E025",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q11-03": [
+    {
+      "event_id": "C11E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E008",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E001",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E005",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E009",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E013",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E017",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E021",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E025",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E029",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E033",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q11-04": [
+    {
+      "event_id": "C11E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q11-05": [
+    {
+      "event_id": "C11E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E062",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q11-06": [
+    {
+      "event_id": "C11E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E027",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q11-07": [
+    {
+      "event_id": "C11E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E008",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E044",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E100",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q11-08": [
+    {
+      "event_id": "C11E069",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E056",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E048",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E004",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E012",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C11E016",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q12-01": [
+    {
+      "event_id": "C12E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E044",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E004",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E012",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E016",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E024",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E028",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q12-02": [
+    {
+      "event_id": "C12E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E048",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E001",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E005",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E009",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E013",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E017",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E021",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E025",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q12-03": [
+    {
+      "event_id": "C12E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E008",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E001",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E005",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E009",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E013",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E017",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E021",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E025",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E029",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E033",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q12-04": [
+    {
+      "event_id": "C12E014",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q12-05": [
+    {
+      "event_id": "C12E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E062",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q12-06": [
+    {
+      "event_id": "C12E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E003",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E027",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q12-07": [
+    {
+      "event_id": "C12E092",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E008",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E044",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E080",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E100",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E007",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E011",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E015",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E019",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E023",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ],
+  "Q12-08": [
+    {
+      "event_id": "C12E069",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E037",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E056",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E084",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E048",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E095",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E020",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E098",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E032",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E004",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E012",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    },
+    {
+      "event_id": "C12E016",
+      "score": null,
+      "source": "raptor_leaf_or_window"
+    }
+  ]
+}

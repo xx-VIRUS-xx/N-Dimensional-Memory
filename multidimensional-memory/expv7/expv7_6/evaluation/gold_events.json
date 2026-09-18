@@ -1,0 +1,1730 @@
+[
+  {
+    "event_id": "E00001",
+    "conversation_id": "atlas",
+    "kind": "decision",
+    "key": "atlas.decision.initial",
+    "text": "I looked at the backend migration notes. The current PostgreSQL path is still our default, but I have not approved the migration yet.",
+    "timestamp": "2026-01-05T10:00:00"
+  },
+  {
+    "event_id": "E00002",
+    "conversation_id": "atlas",
+    "kind": "outcome",
+    "key": "atlas.action.failed",
+    "text": "The first prototype using PostgreSQL failed under the load test because the retry behavior amplified writes.",
+    "timestamp": "2026-01-05T10:00:00"
+  },
+  {
+    "event_id": "E00003",
+    "conversation_id": "atlas",
+    "kind": "belief",
+    "key": "atlas.belief.uncertain",
+    "text": "I am not sure whether the failure is in the storage layer or our queue configuration. Let's keep both possibilities open.",
+    "timestamp": "2026-01-05T10:00:00"
+  },
+  {
+    "event_id": "E00008",
+    "conversation_id": "atlas",
+    "kind": "outcome",
+    "key": "atlas.action.resolved",
+    "text": "We traced the earlier failure to the queue configuration, not PostgreSQL itself. I changed the retry limit and the test is passing now.",
+    "timestamp": "2026-01-09T10:00:00"
+  },
+  {
+    "event_id": "E00009",
+    "conversation_id": "atlas",
+    "kind": "decision",
+    "key": "atlas.decision.lean",
+    "text": "Given that result, I am leaning toward keeping PostgreSQL rather than switching to DynamoDB. I still want a rollback plan.",
+    "timestamp": "2026-01-09T10:00:00"
+  },
+  {
+    "event_id": "E00010",
+    "conversation_id": "atlas",
+    "kind": "negative",
+    "key": "atlas.negative.cutover",
+    "text": "For the record, nobody has approved a production cutover to DynamoDB.",
+    "timestamp": "2026-01-09T10:00:00"
+  },
+  {
+    "event_id": "E00016",
+    "conversation_id": "atlas",
+    "kind": "decision",
+    "key": "atlas.decision.final",
+    "text": "Actually, after the cost review, the team decided to replace PostgreSQL with DynamoDB for the production path. The old prototype stays for comparison.",
+    "timestamp": "2026-01-14T10:00:00"
+  },
+  {
+    "event_id": "E00017",
+    "conversation_id": "atlas",
+    "kind": "decision",
+    "key": "atlas.decision.supersede",
+    "text": "That supersedes my earlier recommendation to keep PostgreSQL. The approved direction is DynamoDB, starting with staging.",
+    "timestamp": "2026-01-14T10:00:00"
+  },
+  {
+    "event_id": "E00018",
+    "conversation_id": "atlas",
+    "kind": "outcome",
+    "key": "atlas.rollout",
+    "text": "The DynamoDB staging rollout completed successfully, although the first attempt was rolled back after elevated error rates.",
+    "timestamp": "2026-01-14T10:00:00"
+  },
+  {
+    "event_id": "E00024",
+    "conversation_id": "atlas",
+    "kind": "outcome",
+    "key": "atlas.rollout.success",
+    "text": "The second DynamoDB rollout succeeded after we reduced concurrency. We have not enabled it for every customer yet.",
+    "timestamp": "2026-01-20T10:00:00"
+  },
+  {
+    "event_id": "E00025",
+    "conversation_id": "atlas",
+    "kind": "ambiguity",
+    "key": "atlas.architecture.open",
+    "text": "There is still an open question about whether Redis should remain in the final architecture. No decision has been made on that part.",
+    "timestamp": "2026-01-20T10:00:00"
+  },
+  {
+    "event_id": "E00026",
+    "conversation_id": "atlas",
+    "kind": "ambiguity",
+    "key": "atlas.architecture.unresolved",
+    "text": "I remember we discussed Redis, but I don't remember agreeing to remove it. Let's treat that as unresolved.",
+    "timestamp": "2026-01-20T10:00:00"
+  },
+  {
+    "event_id": "E00032",
+    "conversation_id": "atlas",
+    "kind": "decision",
+    "key": "atlas.architecture.final",
+    "text": "We finally decided to keep Redis as an optional component, not a required dependency. That was the missing architecture decision.",
+    "timestamp": "2026-01-27T10:00:00"
+  },
+  {
+    "event_id": "E00033",
+    "conversation_id": "atlas",
+    "kind": "outcome",
+    "key": "atlas.production",
+    "text": "The production result after that change was stable. Error rate stayed below the agreed threshold during the canary.",
+    "timestamp": "2026-01-27T10:00:00"
+  },
+  {
+    "event_id": "E00034",
+    "conversation_id": "atlas",
+    "kind": "provenance",
+    "key": "atlas.provenance",
+    "text": "I was the one who originally reported the retry failure in the first session. Sam later confirmed it by reproducing the test.",
+    "timestamp": "2026-01-27T10:00:00"
+  },
+  {
+    "event_id": "E00040",
+    "conversation_id": "atlas",
+    "kind": "history",
+    "key": "atlas.history",
+    "text": "One thing to keep in mind: the DynamoDB decision is current, but the earlier PostgreSQL recommendation is still useful history because it explains why we changed direction.",
+    "timestamp": "2026-02-04T10:00:00"
+  },
+  {
+    "event_id": "E00041",
+    "conversation_id": "atlas",
+    "kind": "negative",
+    "key": "atlas.negative.cassandra",
+    "text": "If someone asks whether we ever discussed atlas-unrelated Cassandra adoption, the answer is no. It never came up in these sessions.",
+    "timestamp": "2026-02-04T10:00:00"
+  },
+  {
+    "event_id": "E00042",
+    "conversation_id": "atlas",
+    "kind": "provenance",
+    "key": "atlas.provenance.outcome",
+    "text": "I can confirm the successful rollout came after the concurrency change, not before it.",
+    "timestamp": "2026-02-04T10:00:00"
+  },
+  {
+    "event_id": "E00048",
+    "conversation_id": "mercury",
+    "kind": "decision",
+    "key": "mercury.decision.initial",
+    "text": "I looked at the mobile release notes. The current Flutter path is still our default, but I have not approved the migration yet.",
+    "timestamp": "2026-01-07T10:00:00"
+  },
+  {
+    "event_id": "E00049",
+    "conversation_id": "mercury",
+    "kind": "outcome",
+    "key": "mercury.action.failed",
+    "text": "The first prototype using Flutter failed under the load test because the retry behavior amplified writes.",
+    "timestamp": "2026-01-07T10:00:00"
+  },
+  {
+    "event_id": "E00050",
+    "conversation_id": "mercury",
+    "kind": "belief",
+    "key": "mercury.belief.uncertain",
+    "text": "I am not sure whether the failure is in the storage layer or our queue configuration. Let's keep both possibilities open.",
+    "timestamp": "2026-01-07T10:00:00"
+  },
+  {
+    "event_id": "E00055",
+    "conversation_id": "mercury",
+    "kind": "outcome",
+    "key": "mercury.action.resolved",
+    "text": "We traced the earlier failure to the queue configuration, not Flutter itself. I changed the retry limit and the test is passing now.",
+    "timestamp": "2026-01-11T10:00:00"
+  },
+  {
+    "event_id": "E00056",
+    "conversation_id": "mercury",
+    "kind": "decision",
+    "key": "mercury.decision.lean",
+    "text": "Given that result, I am leaning toward keeping Flutter rather than switching to React Native. I still want a rollback plan.",
+    "timestamp": "2026-01-11T10:00:00"
+  },
+  {
+    "event_id": "E00057",
+    "conversation_id": "mercury",
+    "kind": "negative",
+    "key": "mercury.negative.cutover",
+    "text": "For the record, nobody has approved a production cutover to React Native.",
+    "timestamp": "2026-01-11T10:00:00"
+  },
+  {
+    "event_id": "E00063",
+    "conversation_id": "mercury",
+    "kind": "decision",
+    "key": "mercury.decision.final",
+    "text": "Actually, after the cost review, the team decided to replace Flutter with React Native for the production path. The old prototype stays for comparison.",
+    "timestamp": "2026-01-16T10:00:00"
+  },
+  {
+    "event_id": "E00064",
+    "conversation_id": "mercury",
+    "kind": "decision",
+    "key": "mercury.decision.supersede",
+    "text": "That supersedes my earlier recommendation to keep Flutter. The approved direction is React Native, starting with staging.",
+    "timestamp": "2026-01-16T10:00:00"
+  },
+  {
+    "event_id": "E00065",
+    "conversation_id": "mercury",
+    "kind": "outcome",
+    "key": "mercury.rollout",
+    "text": "The React Native staging rollout completed successfully, although the first attempt was rolled back after elevated error rates.",
+    "timestamp": "2026-01-16T10:00:00"
+  },
+  {
+    "event_id": "E00071",
+    "conversation_id": "mercury",
+    "kind": "outcome",
+    "key": "mercury.rollout.success",
+    "text": "The second React Native rollout succeeded after we reduced concurrency. We have not enabled it for every customer yet.",
+    "timestamp": "2026-01-22T10:00:00"
+  },
+  {
+    "event_id": "E00072",
+    "conversation_id": "mercury",
+    "kind": "ambiguity",
+    "key": "mercury.architecture.open",
+    "text": "There is still an open question about whether Sentry should remain in the final architecture. No decision has been made on that part.",
+    "timestamp": "2026-01-22T10:00:00"
+  },
+  {
+    "event_id": "E00073",
+    "conversation_id": "mercury",
+    "kind": "ambiguity",
+    "key": "mercury.architecture.unresolved",
+    "text": "I remember we discussed Sentry, but I don't remember agreeing to remove it. Let's treat that as unresolved.",
+    "timestamp": "2026-01-22T10:00:00"
+  },
+  {
+    "event_id": "E00079",
+    "conversation_id": "mercury",
+    "kind": "decision",
+    "key": "mercury.architecture.final",
+    "text": "We finally decided to keep Sentry as an optional component, not a required dependency. That was the missing architecture decision.",
+    "timestamp": "2026-01-29T10:00:00"
+  },
+  {
+    "event_id": "E00080",
+    "conversation_id": "mercury",
+    "kind": "outcome",
+    "key": "mercury.production",
+    "text": "The production result after that change was stable. Error rate stayed below the agreed threshold during the canary.",
+    "timestamp": "2026-01-29T10:00:00"
+  },
+  {
+    "event_id": "E00081",
+    "conversation_id": "mercury",
+    "kind": "provenance",
+    "key": "mercury.provenance",
+    "text": "I was the one who originally reported the retry failure in the first session. Sam later confirmed it by reproducing the test.",
+    "timestamp": "2026-01-29T10:00:00"
+  },
+  {
+    "event_id": "E00087",
+    "conversation_id": "mercury",
+    "kind": "history",
+    "key": "mercury.history",
+    "text": "One thing to keep in mind: the React Native decision is current, but the earlier Flutter recommendation is still useful history because it explains why we changed direction.",
+    "timestamp": "2026-02-06T10:00:00"
+  },
+  {
+    "event_id": "E00088",
+    "conversation_id": "mercury",
+    "kind": "negative",
+    "key": "mercury.negative.cassandra",
+    "text": "If someone asks whether we ever discussed mercury-unrelated Cassandra adoption, the answer is no. It never came up in these sessions.",
+    "timestamp": "2026-02-06T10:00:00"
+  },
+  {
+    "event_id": "E00089",
+    "conversation_id": "mercury",
+    "kind": "provenance",
+    "key": "mercury.provenance.outcome",
+    "text": "I can confirm the successful rollout came after the concurrency change, not before it.",
+    "timestamp": "2026-02-06T10:00:00"
+  },
+  {
+    "event_id": "E00095",
+    "conversation_id": "northstar",
+    "kind": "decision",
+    "key": "northstar.decision.initial",
+    "text": "I looked at the billing redesign notes. The current Stripe path is still our default, but I have not approved the migration yet.",
+    "timestamp": "2026-01-09T10:00:00"
+  },
+  {
+    "event_id": "E00096",
+    "conversation_id": "northstar",
+    "kind": "outcome",
+    "key": "northstar.action.failed",
+    "text": "The first prototype using Stripe failed under the load test because the retry behavior amplified writes.",
+    "timestamp": "2026-01-09T10:00:00"
+  },
+  {
+    "event_id": "E00097",
+    "conversation_id": "northstar",
+    "kind": "belief",
+    "key": "northstar.belief.uncertain",
+    "text": "I am not sure whether the failure is in the storage layer or our queue configuration. Let's keep both possibilities open.",
+    "timestamp": "2026-01-09T10:00:00"
+  },
+  {
+    "event_id": "E00102",
+    "conversation_id": "northstar",
+    "kind": "outcome",
+    "key": "northstar.action.resolved",
+    "text": "We traced the earlier failure to the queue configuration, not Stripe itself. I changed the retry limit and the test is passing now.",
+    "timestamp": "2026-01-13T10:00:00"
+  },
+  {
+    "event_id": "E00103",
+    "conversation_id": "northstar",
+    "kind": "decision",
+    "key": "northstar.decision.lean",
+    "text": "Given that result, I am leaning toward keeping Stripe rather than switching to Razorpay. I still want a rollback plan.",
+    "timestamp": "2026-01-13T10:00:00"
+  },
+  {
+    "event_id": "E00104",
+    "conversation_id": "northstar",
+    "kind": "negative",
+    "key": "northstar.negative.cutover",
+    "text": "For the record, nobody has approved a production cutover to Razorpay.",
+    "timestamp": "2026-01-13T10:00:00"
+  },
+  {
+    "event_id": "E00110",
+    "conversation_id": "northstar",
+    "kind": "decision",
+    "key": "northstar.decision.final",
+    "text": "Actually, after the cost review, the team decided to replace Stripe with Razorpay for the production path. The old prototype stays for comparison.",
+    "timestamp": "2026-01-18T10:00:00"
+  },
+  {
+    "event_id": "E00111",
+    "conversation_id": "northstar",
+    "kind": "decision",
+    "key": "northstar.decision.supersede",
+    "text": "That supersedes my earlier recommendation to keep Stripe. The approved direction is Razorpay, starting with staging.",
+    "timestamp": "2026-01-18T10:00:00"
+  },
+  {
+    "event_id": "E00112",
+    "conversation_id": "northstar",
+    "kind": "outcome",
+    "key": "northstar.rollout",
+    "text": "The Razorpay staging rollout completed successfully, although the first attempt was rolled back after elevated error rates.",
+    "timestamp": "2026-01-18T10:00:00"
+  },
+  {
+    "event_id": "E00118",
+    "conversation_id": "northstar",
+    "kind": "outcome",
+    "key": "northstar.rollout.success",
+    "text": "The second Razorpay rollout succeeded after we reduced concurrency. We have not enabled it for every customer yet.",
+    "timestamp": "2026-01-24T10:00:00"
+  },
+  {
+    "event_id": "E00119",
+    "conversation_id": "northstar",
+    "kind": "ambiguity",
+    "key": "northstar.architecture.open",
+    "text": "There is still an open question about whether PostgreSQL should remain in the final architecture. No decision has been made on that part.",
+    "timestamp": "2026-01-24T10:00:00"
+  },
+  {
+    "event_id": "E00120",
+    "conversation_id": "northstar",
+    "kind": "ambiguity",
+    "key": "northstar.architecture.unresolved",
+    "text": "I remember we discussed PostgreSQL, but I don't remember agreeing to remove it. Let's treat that as unresolved.",
+    "timestamp": "2026-01-24T10:00:00"
+  },
+  {
+    "event_id": "E00126",
+    "conversation_id": "northstar",
+    "kind": "decision",
+    "key": "northstar.architecture.final",
+    "text": "We finally decided to keep PostgreSQL as an optional component, not a required dependency. That was the missing architecture decision.",
+    "timestamp": "2026-01-31T10:00:00"
+  },
+  {
+    "event_id": "E00127",
+    "conversation_id": "northstar",
+    "kind": "outcome",
+    "key": "northstar.production",
+    "text": "The production result after that change was stable. Error rate stayed below the agreed threshold during the canary.",
+    "timestamp": "2026-01-31T10:00:00"
+  },
+  {
+    "event_id": "E00128",
+    "conversation_id": "northstar",
+    "kind": "provenance",
+    "key": "northstar.provenance",
+    "text": "I was the one who originally reported the retry failure in the first session. Sam later confirmed it by reproducing the test.",
+    "timestamp": "2026-01-31T10:00:00"
+  },
+  {
+    "event_id": "E00134",
+    "conversation_id": "northstar",
+    "kind": "history",
+    "key": "northstar.history",
+    "text": "One thing to keep in mind: the Razorpay decision is current, but the earlier Stripe recommendation is still useful history because it explains why we changed direction.",
+    "timestamp": "2026-02-08T10:00:00"
+  },
+  {
+    "event_id": "E00135",
+    "conversation_id": "northstar",
+    "kind": "negative",
+    "key": "northstar.negative.cassandra",
+    "text": "If someone asks whether we ever discussed northstar-unrelated Cassandra adoption, the answer is no. It never came up in these sessions.",
+    "timestamp": "2026-02-08T10:00:00"
+  },
+  {
+    "event_id": "E00136",
+    "conversation_id": "northstar",
+    "kind": "provenance",
+    "key": "northstar.provenance.outcome",
+    "text": "I can confirm the successful rollout came after the concurrency change, not before it.",
+    "timestamp": "2026-02-08T10:00:00"
+  },
+  {
+    "event_id": "E00142",
+    "conversation_id": "orion",
+    "kind": "decision",
+    "key": "orion.decision.initial",
+    "text": "I looked at the search overhaul notes. The current OpenSearch path is still our default, but I have not approved the migration yet.",
+    "timestamp": "2026-01-11T10:00:00"
+  },
+  {
+    "event_id": "E00143",
+    "conversation_id": "orion",
+    "kind": "outcome",
+    "key": "orion.action.failed",
+    "text": "The first prototype using OpenSearch failed under the load test because the retry behavior amplified writes.",
+    "timestamp": "2026-01-11T10:00:00"
+  },
+  {
+    "event_id": "E00144",
+    "conversation_id": "orion",
+    "kind": "belief",
+    "key": "orion.belief.uncertain",
+    "text": "I am not sure whether the failure is in the storage layer or our queue configuration. Let's keep both possibilities open.",
+    "timestamp": "2026-01-11T10:00:00"
+  },
+  {
+    "event_id": "E00149",
+    "conversation_id": "orion",
+    "kind": "outcome",
+    "key": "orion.action.resolved",
+    "text": "We traced the earlier failure to the queue configuration, not OpenSearch itself. I changed the retry limit and the test is passing now.",
+    "timestamp": "2026-01-15T10:00:00"
+  },
+  {
+    "event_id": "E00150",
+    "conversation_id": "orion",
+    "kind": "decision",
+    "key": "orion.decision.lean",
+    "text": "Given that result, I am leaning toward keeping OpenSearch rather than switching to Elasticsearch. I still want a rollback plan.",
+    "timestamp": "2026-01-15T10:00:00"
+  },
+  {
+    "event_id": "E00151",
+    "conversation_id": "orion",
+    "kind": "negative",
+    "key": "orion.negative.cutover",
+    "text": "For the record, nobody has approved a production cutover to Elasticsearch.",
+    "timestamp": "2026-01-15T10:00:00"
+  },
+  {
+    "event_id": "E00157",
+    "conversation_id": "orion",
+    "kind": "decision",
+    "key": "orion.decision.final",
+    "text": "Actually, after the cost review, the team decided to replace OpenSearch with Elasticsearch for the production path. The old prototype stays for comparison.",
+    "timestamp": "2026-01-20T10:00:00"
+  },
+  {
+    "event_id": "E00158",
+    "conversation_id": "orion",
+    "kind": "decision",
+    "key": "orion.decision.supersede",
+    "text": "That supersedes my earlier recommendation to keep OpenSearch. The approved direction is Elasticsearch, starting with staging.",
+    "timestamp": "2026-01-20T10:00:00"
+  },
+  {
+    "event_id": "E00159",
+    "conversation_id": "orion",
+    "kind": "outcome",
+    "key": "orion.rollout",
+    "text": "The Elasticsearch staging rollout completed successfully, although the first attempt was rolled back after elevated error rates.",
+    "timestamp": "2026-01-20T10:00:00"
+  },
+  {
+    "event_id": "E00165",
+    "conversation_id": "orion",
+    "kind": "outcome",
+    "key": "orion.rollout.success",
+    "text": "The second Elasticsearch rollout succeeded after we reduced concurrency. We have not enabled it for every customer yet.",
+    "timestamp": "2026-01-26T10:00:00"
+  },
+  {
+    "event_id": "E00166",
+    "conversation_id": "orion",
+    "kind": "ambiguity",
+    "key": "orion.architecture.open",
+    "text": "There is still an open question about whether Redis should remain in the final architecture. No decision has been made on that part.",
+    "timestamp": "2026-01-26T10:00:00"
+  },
+  {
+    "event_id": "E00167",
+    "conversation_id": "orion",
+    "kind": "ambiguity",
+    "key": "orion.architecture.unresolved",
+    "text": "I remember we discussed Redis, but I don't remember agreeing to remove it. Let's treat that as unresolved.",
+    "timestamp": "2026-01-26T10:00:00"
+  },
+  {
+    "event_id": "E00173",
+    "conversation_id": "orion",
+    "kind": "decision",
+    "key": "orion.architecture.final",
+    "text": "We finally decided to keep Redis as an optional component, not a required dependency. That was the missing architecture decision.",
+    "timestamp": "2026-02-02T10:00:00"
+  },
+  {
+    "event_id": "E00174",
+    "conversation_id": "orion",
+    "kind": "outcome",
+    "key": "orion.production",
+    "text": "The production result after that change was stable. Error rate stayed below the agreed threshold during the canary.",
+    "timestamp": "2026-02-02T10:00:00"
+  },
+  {
+    "event_id": "E00175",
+    "conversation_id": "orion",
+    "kind": "provenance",
+    "key": "orion.provenance",
+    "text": "I was the one who originally reported the retry failure in the first session. Sam later confirmed it by reproducing the test.",
+    "timestamp": "2026-02-02T10:00:00"
+  },
+  {
+    "event_id": "E00181",
+    "conversation_id": "orion",
+    "kind": "history",
+    "key": "orion.history",
+    "text": "One thing to keep in mind: the Elasticsearch decision is current, but the earlier OpenSearch recommendation is still useful history because it explains why we changed direction.",
+    "timestamp": "2026-02-10T10:00:00"
+  },
+  {
+    "event_id": "E00182",
+    "conversation_id": "orion",
+    "kind": "negative",
+    "key": "orion.negative.cassandra",
+    "text": "If someone asks whether we ever discussed orion-unrelated Cassandra adoption, the answer is no. It never came up in these sessions.",
+    "timestamp": "2026-02-10T10:00:00"
+  },
+  {
+    "event_id": "E00183",
+    "conversation_id": "orion",
+    "kind": "provenance",
+    "key": "orion.provenance.outcome",
+    "text": "I can confirm the successful rollout came after the concurrency change, not before it.",
+    "timestamp": "2026-02-10T10:00:00"
+  },
+  {
+    "event_id": "E00189",
+    "conversation_id": "harbor",
+    "kind": "decision",
+    "key": "harbor.decision.initial",
+    "text": "I looked at the notification service notes. The current webhooks path is still our default, but I have not approved the migration yet.",
+    "timestamp": "2026-01-13T10:00:00"
+  },
+  {
+    "event_id": "E00190",
+    "conversation_id": "harbor",
+    "kind": "outcome",
+    "key": "harbor.action.failed",
+    "text": "The first prototype using webhooks failed under the load test because the retry behavior amplified writes.",
+    "timestamp": "2026-01-13T10:00:00"
+  },
+  {
+    "event_id": "E00191",
+    "conversation_id": "harbor",
+    "kind": "belief",
+    "key": "harbor.belief.uncertain",
+    "text": "I am not sure whether the failure is in the storage layer or our queue configuration. Let's keep both possibilities open.",
+    "timestamp": "2026-01-13T10:00:00"
+  },
+  {
+    "event_id": "E00196",
+    "conversation_id": "harbor",
+    "kind": "outcome",
+    "key": "harbor.action.resolved",
+    "text": "We traced the earlier failure to the queue configuration, not webhooks itself. I changed the retry limit and the test is passing now.",
+    "timestamp": "2026-01-17T10:00:00"
+  },
+  {
+    "event_id": "E00197",
+    "conversation_id": "harbor",
+    "kind": "decision",
+    "key": "harbor.decision.lean",
+    "text": "Given that result, I am leaning toward keeping webhooks rather than switching to polling. I still want a rollback plan.",
+    "timestamp": "2026-01-17T10:00:00"
+  },
+  {
+    "event_id": "E00198",
+    "conversation_id": "harbor",
+    "kind": "negative",
+    "key": "harbor.negative.cutover",
+    "text": "For the record, nobody has approved a production cutover to polling.",
+    "timestamp": "2026-01-17T10:00:00"
+  },
+  {
+    "event_id": "E00204",
+    "conversation_id": "harbor",
+    "kind": "decision",
+    "key": "harbor.decision.final",
+    "text": "Actually, after the cost review, the team decided to replace webhooks with polling for the production path. The old prototype stays for comparison.",
+    "timestamp": "2026-01-22T10:00:00"
+  },
+  {
+    "event_id": "E00205",
+    "conversation_id": "harbor",
+    "kind": "decision",
+    "key": "harbor.decision.supersede",
+    "text": "That supersedes my earlier recommendation to keep webhooks. The approved direction is polling, starting with staging.",
+    "timestamp": "2026-01-22T10:00:00"
+  },
+  {
+    "event_id": "E00206",
+    "conversation_id": "harbor",
+    "kind": "outcome",
+    "key": "harbor.rollout",
+    "text": "The polling staging rollout completed successfully, although the first attempt was rolled back after elevated error rates.",
+    "timestamp": "2026-01-22T10:00:00"
+  },
+  {
+    "event_id": "E00212",
+    "conversation_id": "harbor",
+    "kind": "outcome",
+    "key": "harbor.rollout.success",
+    "text": "The second polling rollout succeeded after we reduced concurrency. We have not enabled it for every customer yet.",
+    "timestamp": "2026-01-28T10:00:00"
+  },
+  {
+    "event_id": "E00213",
+    "conversation_id": "harbor",
+    "kind": "ambiguity",
+    "key": "harbor.architecture.open",
+    "text": "There is still an open question about whether Kafka should remain in the final architecture. No decision has been made on that part.",
+    "timestamp": "2026-01-28T10:00:00"
+  },
+  {
+    "event_id": "E00214",
+    "conversation_id": "harbor",
+    "kind": "ambiguity",
+    "key": "harbor.architecture.unresolved",
+    "text": "I remember we discussed Kafka, but I don't remember agreeing to remove it. Let's treat that as unresolved.",
+    "timestamp": "2026-01-28T10:00:00"
+  },
+  {
+    "event_id": "E00220",
+    "conversation_id": "harbor",
+    "kind": "decision",
+    "key": "harbor.architecture.final",
+    "text": "We finally decided to keep Kafka as an optional component, not a required dependency. That was the missing architecture decision.",
+    "timestamp": "2026-02-04T10:00:00"
+  },
+  {
+    "event_id": "E00221",
+    "conversation_id": "harbor",
+    "kind": "outcome",
+    "key": "harbor.production",
+    "text": "The production result after that change was stable. Error rate stayed below the agreed threshold during the canary.",
+    "timestamp": "2026-02-04T10:00:00"
+  },
+  {
+    "event_id": "E00222",
+    "conversation_id": "harbor",
+    "kind": "provenance",
+    "key": "harbor.provenance",
+    "text": "I was the one who originally reported the retry failure in the first session. Sam later confirmed it by reproducing the test.",
+    "timestamp": "2026-02-04T10:00:00"
+  },
+  {
+    "event_id": "E00228",
+    "conversation_id": "harbor",
+    "kind": "history",
+    "key": "harbor.history",
+    "text": "One thing to keep in mind: the polling decision is current, but the earlier webhooks recommendation is still useful history because it explains why we changed direction.",
+    "timestamp": "2026-02-12T10:00:00"
+  },
+  {
+    "event_id": "E00229",
+    "conversation_id": "harbor",
+    "kind": "negative",
+    "key": "harbor.negative.cassandra",
+    "text": "If someone asks whether we ever discussed harbor-unrelated Cassandra adoption, the answer is no. It never came up in these sessions.",
+    "timestamp": "2026-02-12T10:00:00"
+  },
+  {
+    "event_id": "E00230",
+    "conversation_id": "harbor",
+    "kind": "provenance",
+    "key": "harbor.provenance.outcome",
+    "text": "I can confirm the successful rollout came after the concurrency change, not before it.",
+    "timestamp": "2026-02-12T10:00:00"
+  },
+  {
+    "event_id": "E00236",
+    "conversation_id": "cinder",
+    "kind": "decision",
+    "key": "cinder.decision.initial",
+    "text": "I looked at the data pipeline notes. The current Airflow path is still our default, but I have not approved the migration yet.",
+    "timestamp": "2026-01-15T10:00:00"
+  },
+  {
+    "event_id": "E00237",
+    "conversation_id": "cinder",
+    "kind": "outcome",
+    "key": "cinder.action.failed",
+    "text": "The first prototype using Airflow failed under the load test because the retry behavior amplified writes.",
+    "timestamp": "2026-01-15T10:00:00"
+  },
+  {
+    "event_id": "E00238",
+    "conversation_id": "cinder",
+    "kind": "belief",
+    "key": "cinder.belief.uncertain",
+    "text": "I am not sure whether the failure is in the storage layer or our queue configuration. Let's keep both possibilities open.",
+    "timestamp": "2026-01-15T10:00:00"
+  },
+  {
+    "event_id": "E00243",
+    "conversation_id": "cinder",
+    "kind": "outcome",
+    "key": "cinder.action.resolved",
+    "text": "We traced the earlier failure to the queue configuration, not Airflow itself. I changed the retry limit and the test is passing now.",
+    "timestamp": "2026-01-19T10:00:00"
+  },
+  {
+    "event_id": "E00244",
+    "conversation_id": "cinder",
+    "kind": "decision",
+    "key": "cinder.decision.lean",
+    "text": "Given that result, I am leaning toward keeping Airflow rather than switching to Dagster. I still want a rollback plan.",
+    "timestamp": "2026-01-19T10:00:00"
+  },
+  {
+    "event_id": "E00245",
+    "conversation_id": "cinder",
+    "kind": "negative",
+    "key": "cinder.negative.cutover",
+    "text": "For the record, nobody has approved a production cutover to Dagster.",
+    "timestamp": "2026-01-19T10:00:00"
+  },
+  {
+    "event_id": "E00251",
+    "conversation_id": "cinder",
+    "kind": "decision",
+    "key": "cinder.decision.final",
+    "text": "Actually, after the cost review, the team decided to replace Airflow with Dagster for the production path. The old prototype stays for comparison.",
+    "timestamp": "2026-01-24T10:00:00"
+  },
+  {
+    "event_id": "E00252",
+    "conversation_id": "cinder",
+    "kind": "decision",
+    "key": "cinder.decision.supersede",
+    "text": "That supersedes my earlier recommendation to keep Airflow. The approved direction is Dagster, starting with staging.",
+    "timestamp": "2026-01-24T10:00:00"
+  },
+  {
+    "event_id": "E00253",
+    "conversation_id": "cinder",
+    "kind": "outcome",
+    "key": "cinder.rollout",
+    "text": "The Dagster staging rollout completed successfully, although the first attempt was rolled back after elevated error rates.",
+    "timestamp": "2026-01-24T10:00:00"
+  },
+  {
+    "event_id": "E00259",
+    "conversation_id": "cinder",
+    "kind": "outcome",
+    "key": "cinder.rollout.success",
+    "text": "The second Dagster rollout succeeded after we reduced concurrency. We have not enabled it for every customer yet.",
+    "timestamp": "2026-01-30T10:00:00"
+  },
+  {
+    "event_id": "E00260",
+    "conversation_id": "cinder",
+    "kind": "ambiguity",
+    "key": "cinder.architecture.open",
+    "text": "There is still an open question about whether S3 should remain in the final architecture. No decision has been made on that part.",
+    "timestamp": "2026-01-30T10:00:00"
+  },
+  {
+    "event_id": "E00261",
+    "conversation_id": "cinder",
+    "kind": "ambiguity",
+    "key": "cinder.architecture.unresolved",
+    "text": "I remember we discussed S3, but I don't remember agreeing to remove it. Let's treat that as unresolved.",
+    "timestamp": "2026-01-30T10:00:00"
+  },
+  {
+    "event_id": "E00267",
+    "conversation_id": "cinder",
+    "kind": "decision",
+    "key": "cinder.architecture.final",
+    "text": "We finally decided to keep S3 as an optional component, not a required dependency. That was the missing architecture decision.",
+    "timestamp": "2026-02-06T10:00:00"
+  },
+  {
+    "event_id": "E00268",
+    "conversation_id": "cinder",
+    "kind": "outcome",
+    "key": "cinder.production",
+    "text": "The production result after that change was stable. Error rate stayed below the agreed threshold during the canary.",
+    "timestamp": "2026-02-06T10:00:00"
+  },
+  {
+    "event_id": "E00269",
+    "conversation_id": "cinder",
+    "kind": "provenance",
+    "key": "cinder.provenance",
+    "text": "I was the one who originally reported the retry failure in the first session. Sam later confirmed it by reproducing the test.",
+    "timestamp": "2026-02-06T10:00:00"
+  },
+  {
+    "event_id": "E00275",
+    "conversation_id": "cinder",
+    "kind": "history",
+    "key": "cinder.history",
+    "text": "One thing to keep in mind: the Dagster decision is current, but the earlier Airflow recommendation is still useful history because it explains why we changed direction.",
+    "timestamp": "2026-02-14T10:00:00"
+  },
+  {
+    "event_id": "E00276",
+    "conversation_id": "cinder",
+    "kind": "negative",
+    "key": "cinder.negative.cassandra",
+    "text": "If someone asks whether we ever discussed cinder-unrelated Cassandra adoption, the answer is no. It never came up in these sessions.",
+    "timestamp": "2026-02-14T10:00:00"
+  },
+  {
+    "event_id": "E00277",
+    "conversation_id": "cinder",
+    "kind": "provenance",
+    "key": "cinder.provenance.outcome",
+    "text": "I can confirm the successful rollout came after the concurrency change, not before it.",
+    "timestamp": "2026-02-14T10:00:00"
+  },
+  {
+    "event_id": "E00283",
+    "conversation_id": "lumen",
+    "kind": "decision",
+    "key": "lumen.decision.initial",
+    "text": "I looked at the customer portal notes. The current Next.js path is still our default, but I have not approved the migration yet.",
+    "timestamp": "2026-01-17T10:00:00"
+  },
+  {
+    "event_id": "E00284",
+    "conversation_id": "lumen",
+    "kind": "outcome",
+    "key": "lumen.action.failed",
+    "text": "The first prototype using Next.js failed under the load test because the retry behavior amplified writes.",
+    "timestamp": "2026-01-17T10:00:00"
+  },
+  {
+    "event_id": "E00285",
+    "conversation_id": "lumen",
+    "kind": "belief",
+    "key": "lumen.belief.uncertain",
+    "text": "I am not sure whether the failure is in the storage layer or our queue configuration. Let's keep both possibilities open.",
+    "timestamp": "2026-01-17T10:00:00"
+  },
+  {
+    "event_id": "E00290",
+    "conversation_id": "lumen",
+    "kind": "outcome",
+    "key": "lumen.action.resolved",
+    "text": "We traced the earlier failure to the queue configuration, not Next.js itself. I changed the retry limit and the test is passing now.",
+    "timestamp": "2026-01-21T10:00:00"
+  },
+  {
+    "event_id": "E00291",
+    "conversation_id": "lumen",
+    "kind": "decision",
+    "key": "lumen.decision.lean",
+    "text": "Given that result, I am leaning toward keeping Next.js rather than switching to Django. I still want a rollback plan.",
+    "timestamp": "2026-01-21T10:00:00"
+  },
+  {
+    "event_id": "E00292",
+    "conversation_id": "lumen",
+    "kind": "negative",
+    "key": "lumen.negative.cutover",
+    "text": "For the record, nobody has approved a production cutover to Django.",
+    "timestamp": "2026-01-21T10:00:00"
+  },
+  {
+    "event_id": "E00298",
+    "conversation_id": "lumen",
+    "kind": "decision",
+    "key": "lumen.decision.final",
+    "text": "Actually, after the cost review, the team decided to replace Next.js with Django for the production path. The old prototype stays for comparison.",
+    "timestamp": "2026-01-26T10:00:00"
+  },
+  {
+    "event_id": "E00299",
+    "conversation_id": "lumen",
+    "kind": "decision",
+    "key": "lumen.decision.supersede",
+    "text": "That supersedes my earlier recommendation to keep Next.js. The approved direction is Django, starting with staging.",
+    "timestamp": "2026-01-26T10:00:00"
+  },
+  {
+    "event_id": "E00300",
+    "conversation_id": "lumen",
+    "kind": "outcome",
+    "key": "lumen.rollout",
+    "text": "The Django staging rollout completed successfully, although the first attempt was rolled back after elevated error rates.",
+    "timestamp": "2026-01-26T10:00:00"
+  },
+  {
+    "event_id": "E00306",
+    "conversation_id": "lumen",
+    "kind": "outcome",
+    "key": "lumen.rollout.success",
+    "text": "The second Django rollout succeeded after we reduced concurrency. We have not enabled it for every customer yet.",
+    "timestamp": "2026-02-01T10:00:00"
+  },
+  {
+    "event_id": "E00307",
+    "conversation_id": "lumen",
+    "kind": "ambiguity",
+    "key": "lumen.architecture.open",
+    "text": "There is still an open question about whether CloudFront should remain in the final architecture. No decision has been made on that part.",
+    "timestamp": "2026-02-01T10:00:00"
+  },
+  {
+    "event_id": "E00308",
+    "conversation_id": "lumen",
+    "kind": "ambiguity",
+    "key": "lumen.architecture.unresolved",
+    "text": "I remember we discussed CloudFront, but I don't remember agreeing to remove it. Let's treat that as unresolved.",
+    "timestamp": "2026-02-01T10:00:00"
+  },
+  {
+    "event_id": "E00314",
+    "conversation_id": "lumen",
+    "kind": "decision",
+    "key": "lumen.architecture.final",
+    "text": "We finally decided to keep CloudFront as an optional component, not a required dependency. That was the missing architecture decision.",
+    "timestamp": "2026-02-08T10:00:00"
+  },
+  {
+    "event_id": "E00315",
+    "conversation_id": "lumen",
+    "kind": "outcome",
+    "key": "lumen.production",
+    "text": "The production result after that change was stable. Error rate stayed below the agreed threshold during the canary.",
+    "timestamp": "2026-02-08T10:00:00"
+  },
+  {
+    "event_id": "E00316",
+    "conversation_id": "lumen",
+    "kind": "provenance",
+    "key": "lumen.provenance",
+    "text": "I was the one who originally reported the retry failure in the first session. Sam later confirmed it by reproducing the test.",
+    "timestamp": "2026-02-08T10:00:00"
+  },
+  {
+    "event_id": "E00322",
+    "conversation_id": "lumen",
+    "kind": "history",
+    "key": "lumen.history",
+    "text": "One thing to keep in mind: the Django decision is current, but the earlier Next.js recommendation is still useful history because it explains why we changed direction.",
+    "timestamp": "2026-02-16T10:00:00"
+  },
+  {
+    "event_id": "E00323",
+    "conversation_id": "lumen",
+    "kind": "negative",
+    "key": "lumen.negative.cassandra",
+    "text": "If someone asks whether we ever discussed lumen-unrelated Cassandra adoption, the answer is no. It never came up in these sessions.",
+    "timestamp": "2026-02-16T10:00:00"
+  },
+  {
+    "event_id": "E00324",
+    "conversation_id": "lumen",
+    "kind": "provenance",
+    "key": "lumen.provenance.outcome",
+    "text": "I can confirm the successful rollout came after the concurrency change, not before it.",
+    "timestamp": "2026-02-16T10:00:00"
+  },
+  {
+    "event_id": "E00330",
+    "conversation_id": "quartz",
+    "kind": "decision",
+    "key": "quartz.decision.initial",
+    "text": "I looked at the analytics stack notes. The current ClickHouse path is still our default, but I have not approved the migration yet.",
+    "timestamp": "2026-01-19T10:00:00"
+  },
+  {
+    "event_id": "E00331",
+    "conversation_id": "quartz",
+    "kind": "outcome",
+    "key": "quartz.action.failed",
+    "text": "The first prototype using ClickHouse failed under the load test because the retry behavior amplified writes.",
+    "timestamp": "2026-01-19T10:00:00"
+  },
+  {
+    "event_id": "E00332",
+    "conversation_id": "quartz",
+    "kind": "belief",
+    "key": "quartz.belief.uncertain",
+    "text": "I am not sure whether the failure is in the storage layer or our queue configuration. Let's keep both possibilities open.",
+    "timestamp": "2026-01-19T10:00:00"
+  },
+  {
+    "event_id": "E00337",
+    "conversation_id": "quartz",
+    "kind": "outcome",
+    "key": "quartz.action.resolved",
+    "text": "We traced the earlier failure to the queue configuration, not ClickHouse itself. I changed the retry limit and the test is passing now.",
+    "timestamp": "2026-01-23T10:00:00"
+  },
+  {
+    "event_id": "E00338",
+    "conversation_id": "quartz",
+    "kind": "decision",
+    "key": "quartz.decision.lean",
+    "text": "Given that result, I am leaning toward keeping ClickHouse rather than switching to BigQuery. I still want a rollback plan.",
+    "timestamp": "2026-01-23T10:00:00"
+  },
+  {
+    "event_id": "E00339",
+    "conversation_id": "quartz",
+    "kind": "negative",
+    "key": "quartz.negative.cutover",
+    "text": "For the record, nobody has approved a production cutover to BigQuery.",
+    "timestamp": "2026-01-23T10:00:00"
+  },
+  {
+    "event_id": "E00345",
+    "conversation_id": "quartz",
+    "kind": "decision",
+    "key": "quartz.decision.final",
+    "text": "Actually, after the cost review, the team decided to replace ClickHouse with BigQuery for the production path. The old prototype stays for comparison.",
+    "timestamp": "2026-01-28T10:00:00"
+  },
+  {
+    "event_id": "E00346",
+    "conversation_id": "quartz",
+    "kind": "decision",
+    "key": "quartz.decision.supersede",
+    "text": "That supersedes my earlier recommendation to keep ClickHouse. The approved direction is BigQuery, starting with staging.",
+    "timestamp": "2026-01-28T10:00:00"
+  },
+  {
+    "event_id": "E00347",
+    "conversation_id": "quartz",
+    "kind": "outcome",
+    "key": "quartz.rollout",
+    "text": "The BigQuery staging rollout completed successfully, although the first attempt was rolled back after elevated error rates.",
+    "timestamp": "2026-01-28T10:00:00"
+  },
+  {
+    "event_id": "E00353",
+    "conversation_id": "quartz",
+    "kind": "outcome",
+    "key": "quartz.rollout.success",
+    "text": "The second BigQuery rollout succeeded after we reduced concurrency. We have not enabled it for every customer yet.",
+    "timestamp": "2026-02-03T10:00:00"
+  },
+  {
+    "event_id": "E00354",
+    "conversation_id": "quartz",
+    "kind": "ambiguity",
+    "key": "quartz.architecture.open",
+    "text": "There is still an open question about whether dbt should remain in the final architecture. No decision has been made on that part.",
+    "timestamp": "2026-02-03T10:00:00"
+  },
+  {
+    "event_id": "E00355",
+    "conversation_id": "quartz",
+    "kind": "ambiguity",
+    "key": "quartz.architecture.unresolved",
+    "text": "I remember we discussed dbt, but I don't remember agreeing to remove it. Let's treat that as unresolved.",
+    "timestamp": "2026-02-03T10:00:00"
+  },
+  {
+    "event_id": "E00361",
+    "conversation_id": "quartz",
+    "kind": "decision",
+    "key": "quartz.architecture.final",
+    "text": "We finally decided to keep dbt as an optional component, not a required dependency. That was the missing architecture decision.",
+    "timestamp": "2026-02-10T10:00:00"
+  },
+  {
+    "event_id": "E00362",
+    "conversation_id": "quartz",
+    "kind": "outcome",
+    "key": "quartz.production",
+    "text": "The production result after that change was stable. Error rate stayed below the agreed threshold during the canary.",
+    "timestamp": "2026-02-10T10:00:00"
+  },
+  {
+    "event_id": "E00363",
+    "conversation_id": "quartz",
+    "kind": "provenance",
+    "key": "quartz.provenance",
+    "text": "I was the one who originally reported the retry failure in the first session. Sam later confirmed it by reproducing the test.",
+    "timestamp": "2026-02-10T10:00:00"
+  },
+  {
+    "event_id": "E00369",
+    "conversation_id": "quartz",
+    "kind": "history",
+    "key": "quartz.history",
+    "text": "One thing to keep in mind: the BigQuery decision is current, but the earlier ClickHouse recommendation is still useful history because it explains why we changed direction.",
+    "timestamp": "2026-02-18T10:00:00"
+  },
+  {
+    "event_id": "E00370",
+    "conversation_id": "quartz",
+    "kind": "negative",
+    "key": "quartz.negative.cassandra",
+    "text": "If someone asks whether we ever discussed quartz-unrelated Cassandra adoption, the answer is no. It never came up in these sessions.",
+    "timestamp": "2026-02-18T10:00:00"
+  },
+  {
+    "event_id": "E00371",
+    "conversation_id": "quartz",
+    "kind": "provenance",
+    "key": "quartz.provenance.outcome",
+    "text": "I can confirm the successful rollout came after the concurrency change, not before it.",
+    "timestamp": "2026-02-18T10:00:00"
+  },
+  {
+    "event_id": "E00377",
+    "conversation_id": "maple",
+    "kind": "decision",
+    "key": "maple.decision.initial",
+    "text": "I looked at the auth migration notes. The current Cognito path is still our default, but I have not approved the migration yet.",
+    "timestamp": "2026-01-21T10:00:00"
+  },
+  {
+    "event_id": "E00378",
+    "conversation_id": "maple",
+    "kind": "outcome",
+    "key": "maple.action.failed",
+    "text": "The first prototype using Cognito failed under the load test because the retry behavior amplified writes.",
+    "timestamp": "2026-01-21T10:00:00"
+  },
+  {
+    "event_id": "E00379",
+    "conversation_id": "maple",
+    "kind": "belief",
+    "key": "maple.belief.uncertain",
+    "text": "I am not sure whether the failure is in the storage layer or our queue configuration. Let's keep both possibilities open.",
+    "timestamp": "2026-01-21T10:00:00"
+  },
+  {
+    "event_id": "E00384",
+    "conversation_id": "maple",
+    "kind": "outcome",
+    "key": "maple.action.resolved",
+    "text": "We traced the earlier failure to the queue configuration, not Cognito itself. I changed the retry limit and the test is passing now.",
+    "timestamp": "2026-01-25T10:00:00"
+  },
+  {
+    "event_id": "E00385",
+    "conversation_id": "maple",
+    "kind": "decision",
+    "key": "maple.decision.lean",
+    "text": "Given that result, I am leaning toward keeping Cognito rather than switching to Auth0. I still want a rollback plan.",
+    "timestamp": "2026-01-25T10:00:00"
+  },
+  {
+    "event_id": "E00386",
+    "conversation_id": "maple",
+    "kind": "negative",
+    "key": "maple.negative.cutover",
+    "text": "For the record, nobody has approved a production cutover to Auth0.",
+    "timestamp": "2026-01-25T10:00:00"
+  },
+  {
+    "event_id": "E00392",
+    "conversation_id": "maple",
+    "kind": "decision",
+    "key": "maple.decision.final",
+    "text": "Actually, after the cost review, the team decided to replace Cognito with Auth0 for the production path. The old prototype stays for comparison.",
+    "timestamp": "2026-01-30T10:00:00"
+  },
+  {
+    "event_id": "E00393",
+    "conversation_id": "maple",
+    "kind": "decision",
+    "key": "maple.decision.supersede",
+    "text": "That supersedes my earlier recommendation to keep Cognito. The approved direction is Auth0, starting with staging.",
+    "timestamp": "2026-01-30T10:00:00"
+  },
+  {
+    "event_id": "E00394",
+    "conversation_id": "maple",
+    "kind": "outcome",
+    "key": "maple.rollout",
+    "text": "The Auth0 staging rollout completed successfully, although the first attempt was rolled back after elevated error rates.",
+    "timestamp": "2026-01-30T10:00:00"
+  },
+  {
+    "event_id": "E00400",
+    "conversation_id": "maple",
+    "kind": "outcome",
+    "key": "maple.rollout.success",
+    "text": "The second Auth0 rollout succeeded after we reduced concurrency. We have not enabled it for every customer yet.",
+    "timestamp": "2026-02-05T10:00:00"
+  },
+  {
+    "event_id": "E00401",
+    "conversation_id": "maple",
+    "kind": "ambiguity",
+    "key": "maple.architecture.open",
+    "text": "There is still an open question about whether JWT should remain in the final architecture. No decision has been made on that part.",
+    "timestamp": "2026-02-05T10:00:00"
+  },
+  {
+    "event_id": "E00402",
+    "conversation_id": "maple",
+    "kind": "ambiguity",
+    "key": "maple.architecture.unresolved",
+    "text": "I remember we discussed JWT, but I don't remember agreeing to remove it. Let's treat that as unresolved.",
+    "timestamp": "2026-02-05T10:00:00"
+  },
+  {
+    "event_id": "E00408",
+    "conversation_id": "maple",
+    "kind": "decision",
+    "key": "maple.architecture.final",
+    "text": "We finally decided to keep JWT as an optional component, not a required dependency. That was the missing architecture decision.",
+    "timestamp": "2026-02-12T10:00:00"
+  },
+  {
+    "event_id": "E00409",
+    "conversation_id": "maple",
+    "kind": "outcome",
+    "key": "maple.production",
+    "text": "The production result after that change was stable. Error rate stayed below the agreed threshold during the canary.",
+    "timestamp": "2026-02-12T10:00:00"
+  },
+  {
+    "event_id": "E00410",
+    "conversation_id": "maple",
+    "kind": "provenance",
+    "key": "maple.provenance",
+    "text": "I was the one who originally reported the retry failure in the first session. Sam later confirmed it by reproducing the test.",
+    "timestamp": "2026-02-12T10:00:00"
+  },
+  {
+    "event_id": "E00416",
+    "conversation_id": "maple",
+    "kind": "history",
+    "key": "maple.history",
+    "text": "One thing to keep in mind: the Auth0 decision is current, but the earlier Cognito recommendation is still useful history because it explains why we changed direction.",
+    "timestamp": "2026-02-20T10:00:00"
+  },
+  {
+    "event_id": "E00417",
+    "conversation_id": "maple",
+    "kind": "negative",
+    "key": "maple.negative.cassandra",
+    "text": "If someone asks whether we ever discussed maple-unrelated Cassandra adoption, the answer is no. It never came up in these sessions.",
+    "timestamp": "2026-02-20T10:00:00"
+  },
+  {
+    "event_id": "E00418",
+    "conversation_id": "maple",
+    "kind": "provenance",
+    "key": "maple.provenance.outcome",
+    "text": "I can confirm the successful rollout came after the concurrency change, not before it.",
+    "timestamp": "2026-02-20T10:00:00"
+  },
+  {
+    "event_id": "E00424",
+    "conversation_id": "vertex",
+    "kind": "decision",
+    "key": "vertex.decision.initial",
+    "text": "I looked at the image processing notes. The current S3 path is still our default, but I have not approved the migration yet.",
+    "timestamp": "2026-01-23T10:00:00"
+  },
+  {
+    "event_id": "E00425",
+    "conversation_id": "vertex",
+    "kind": "outcome",
+    "key": "vertex.action.failed",
+    "text": "The first prototype using S3 failed under the load test because the retry behavior amplified writes.",
+    "timestamp": "2026-01-23T10:00:00"
+  },
+  {
+    "event_id": "E00426",
+    "conversation_id": "vertex",
+    "kind": "belief",
+    "key": "vertex.belief.uncertain",
+    "text": "I am not sure whether the failure is in the storage layer or our queue configuration. Let's keep both possibilities open.",
+    "timestamp": "2026-01-23T10:00:00"
+  },
+  {
+    "event_id": "E00431",
+    "conversation_id": "vertex",
+    "kind": "outcome",
+    "key": "vertex.action.resolved",
+    "text": "We traced the earlier failure to the queue configuration, not S3 itself. I changed the retry limit and the test is passing now.",
+    "timestamp": "2026-01-27T10:00:00"
+  },
+  {
+    "event_id": "E00432",
+    "conversation_id": "vertex",
+    "kind": "decision",
+    "key": "vertex.decision.lean",
+    "text": "Given that result, I am leaning toward keeping S3 rather than switching to Cloudinary. I still want a rollback plan.",
+    "timestamp": "2026-01-27T10:00:00"
+  },
+  {
+    "event_id": "E00433",
+    "conversation_id": "vertex",
+    "kind": "negative",
+    "key": "vertex.negative.cutover",
+    "text": "For the record, nobody has approved a production cutover to Cloudinary.",
+    "timestamp": "2026-01-27T10:00:00"
+  },
+  {
+    "event_id": "E00439",
+    "conversation_id": "vertex",
+    "kind": "decision",
+    "key": "vertex.decision.final",
+    "text": "Actually, after the cost review, the team decided to replace S3 with Cloudinary for the production path. The old prototype stays for comparison.",
+    "timestamp": "2026-02-01T10:00:00"
+  },
+  {
+    "event_id": "E00440",
+    "conversation_id": "vertex",
+    "kind": "decision",
+    "key": "vertex.decision.supersede",
+    "text": "That supersedes my earlier recommendation to keep S3. The approved direction is Cloudinary, starting with staging.",
+    "timestamp": "2026-02-01T10:00:00"
+  },
+  {
+    "event_id": "E00441",
+    "conversation_id": "vertex",
+    "kind": "outcome",
+    "key": "vertex.rollout",
+    "text": "The Cloudinary staging rollout completed successfully, although the first attempt was rolled back after elevated error rates.",
+    "timestamp": "2026-02-01T10:00:00"
+  },
+  {
+    "event_id": "E00447",
+    "conversation_id": "vertex",
+    "kind": "outcome",
+    "key": "vertex.rollout.success",
+    "text": "The second Cloudinary rollout succeeded after we reduced concurrency. We have not enabled it for every customer yet.",
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "event_id": "E00448",
+    "conversation_id": "vertex",
+    "kind": "ambiguity",
+    "key": "vertex.architecture.open",
+    "text": "There is still an open question about whether Lambda should remain in the final architecture. No decision has been made on that part.",
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "event_id": "E00449",
+    "conversation_id": "vertex",
+    "kind": "ambiguity",
+    "key": "vertex.architecture.unresolved",
+    "text": "I remember we discussed Lambda, but I don't remember agreeing to remove it. Let's treat that as unresolved.",
+    "timestamp": "2026-02-07T10:00:00"
+  },
+  {
+    "event_id": "E00455",
+    "conversation_id": "vertex",
+    "kind": "decision",
+    "key": "vertex.architecture.final",
+    "text": "We finally decided to keep Lambda as an optional component, not a required dependency. That was the missing architecture decision.",
+    "timestamp": "2026-02-14T10:00:00"
+  },
+  {
+    "event_id": "E00456",
+    "conversation_id": "vertex",
+    "kind": "outcome",
+    "key": "vertex.production",
+    "text": "The production result after that change was stable. Error rate stayed below the agreed threshold during the canary.",
+    "timestamp": "2026-02-14T10:00:00"
+  },
+  {
+    "event_id": "E00457",
+    "conversation_id": "vertex",
+    "kind": "provenance",
+    "key": "vertex.provenance",
+    "text": "I was the one who originally reported the retry failure in the first session. Sam later confirmed it by reproducing the test.",
+    "timestamp": "2026-02-14T10:00:00"
+  },
+  {
+    "event_id": "E00463",
+    "conversation_id": "vertex",
+    "kind": "history",
+    "key": "vertex.history",
+    "text": "One thing to keep in mind: the Cloudinary decision is current, but the earlier S3 recommendation is still useful history because it explains why we changed direction.",
+    "timestamp": "2026-02-22T10:00:00"
+  },
+  {
+    "event_id": "E00464",
+    "conversation_id": "vertex",
+    "kind": "negative",
+    "key": "vertex.negative.cassandra",
+    "text": "If someone asks whether we ever discussed vertex-unrelated Cassandra adoption, the answer is no. It never came up in these sessions.",
+    "timestamp": "2026-02-22T10:00:00"
+  },
+  {
+    "event_id": "E00465",
+    "conversation_id": "vertex",
+    "kind": "provenance",
+    "key": "vertex.provenance.outcome",
+    "text": "I can confirm the successful rollout came after the concurrency change, not before it.",
+    "timestamp": "2026-02-22T10:00:00"
+  },
+  {
+    "event_id": "E00471",
+    "conversation_id": "echo",
+    "kind": "decision",
+    "key": "echo.decision.initial",
+    "text": "I looked at the support automation notes. The current Slack path is still our default, but I have not approved the migration yet.",
+    "timestamp": "2026-01-25T10:00:00"
+  },
+  {
+    "event_id": "E00472",
+    "conversation_id": "echo",
+    "kind": "outcome",
+    "key": "echo.action.failed",
+    "text": "The first prototype using Slack failed under the load test because the retry behavior amplified writes.",
+    "timestamp": "2026-01-25T10:00:00"
+  },
+  {
+    "event_id": "E00473",
+    "conversation_id": "echo",
+    "kind": "belief",
+    "key": "echo.belief.uncertain",
+    "text": "I am not sure whether the failure is in the storage layer or our queue configuration. Let's keep both possibilities open.",
+    "timestamp": "2026-01-25T10:00:00"
+  },
+  {
+    "event_id": "E00478",
+    "conversation_id": "echo",
+    "kind": "outcome",
+    "key": "echo.action.resolved",
+    "text": "We traced the earlier failure to the queue configuration, not Slack itself. I changed the retry limit and the test is passing now.",
+    "timestamp": "2026-01-29T10:00:00"
+  },
+  {
+    "event_id": "E00479",
+    "conversation_id": "echo",
+    "kind": "decision",
+    "key": "echo.decision.lean",
+    "text": "Given that result, I am leaning toward keeping Slack rather than switching to Zendesk. I still want a rollback plan.",
+    "timestamp": "2026-01-29T10:00:00"
+  },
+  {
+    "event_id": "E00480",
+    "conversation_id": "echo",
+    "kind": "negative",
+    "key": "echo.negative.cutover",
+    "text": "For the record, nobody has approved a production cutover to Zendesk.",
+    "timestamp": "2026-01-29T10:00:00"
+  },
+  {
+    "event_id": "E00486",
+    "conversation_id": "echo",
+    "kind": "decision",
+    "key": "echo.decision.final",
+    "text": "Actually, after the cost review, the team decided to replace Slack with Zendesk for the production path. The old prototype stays for comparison.",
+    "timestamp": "2026-02-03T10:00:00"
+  },
+  {
+    "event_id": "E00487",
+    "conversation_id": "echo",
+    "kind": "decision",
+    "key": "echo.decision.supersede",
+    "text": "That supersedes my earlier recommendation to keep Slack. The approved direction is Zendesk, starting with staging.",
+    "timestamp": "2026-02-03T10:00:00"
+  },
+  {
+    "event_id": "E00488",
+    "conversation_id": "echo",
+    "kind": "outcome",
+    "key": "echo.rollout",
+    "text": "The Zendesk staging rollout completed successfully, although the first attempt was rolled back after elevated error rates.",
+    "timestamp": "2026-02-03T10:00:00"
+  },
+  {
+    "event_id": "E00494",
+    "conversation_id": "echo",
+    "kind": "outcome",
+    "key": "echo.rollout.success",
+    "text": "The second Zendesk rollout succeeded after we reduced concurrency. We have not enabled it for every customer yet.",
+    "timestamp": "2026-02-09T10:00:00"
+  },
+  {
+    "event_id": "E00495",
+    "conversation_id": "echo",
+    "kind": "ambiguity",
+    "key": "echo.architecture.open",
+    "text": "There is still an open question about whether LLM should remain in the final architecture. No decision has been made on that part.",
+    "timestamp": "2026-02-09T10:00:00"
+  },
+  {
+    "event_id": "E00496",
+    "conversation_id": "echo",
+    "kind": "ambiguity",
+    "key": "echo.architecture.unresolved",
+    "text": "I remember we discussed LLM, but I don't remember agreeing to remove it. Let's treat that as unresolved.",
+    "timestamp": "2026-02-09T10:00:00"
+  },
+  {
+    "event_id": "E00502",
+    "conversation_id": "echo",
+    "kind": "decision",
+    "key": "echo.architecture.final",
+    "text": "We finally decided to keep LLM as an optional component, not a required dependency. That was the missing architecture decision.",
+    "timestamp": "2026-02-16T10:00:00"
+  },
+  {
+    "event_id": "E00503",
+    "conversation_id": "echo",
+    "kind": "outcome",
+    "key": "echo.production",
+    "text": "The production result after that change was stable. Error rate stayed below the agreed threshold during the canary.",
+    "timestamp": "2026-02-16T10:00:00"
+  },
+  {
+    "event_id": "E00504",
+    "conversation_id": "echo",
+    "kind": "provenance",
+    "key": "echo.provenance",
+    "text": "I was the one who originally reported the retry failure in the first session. Sam later confirmed it by reproducing the test.",
+    "timestamp": "2026-02-16T10:00:00"
+  },
+  {
+    "event_id": "E00510",
+    "conversation_id": "echo",
+    "kind": "history",
+    "key": "echo.history",
+    "text": "One thing to keep in mind: the Zendesk decision is current, but the earlier Slack recommendation is still useful history because it explains why we changed direction.",
+    "timestamp": "2026-02-24T10:00:00"
+  },
+  {
+    "event_id": "E00511",
+    "conversation_id": "echo",
+    "kind": "negative",
+    "key": "echo.negative.cassandra",
+    "text": "If someone asks whether we ever discussed echo-unrelated Cassandra adoption, the answer is no. It never came up in these sessions.",
+    "timestamp": "2026-02-24T10:00:00"
+  },
+  {
+    "event_id": "E00512",
+    "conversation_id": "echo",
+    "kind": "provenance",
+    "key": "echo.provenance.outcome",
+    "text": "I can confirm the successful rollout came after the concurrency change, not before it.",
+    "timestamp": "2026-02-24T10:00:00"
+  },
+  {
+    "event_id": "E00518",
+    "conversation_id": "apollo",
+    "kind": "decision",
+    "key": "apollo.decision.initial",
+    "text": "I looked at the deployment platform notes. The current Kubernetes path is still our default, but I have not approved the migration yet.",
+    "timestamp": "2026-01-27T10:00:00"
+  },
+  {
+    "event_id": "E00519",
+    "conversation_id": "apollo",
+    "kind": "outcome",
+    "key": "apollo.action.failed",
+    "text": "The first prototype using Kubernetes failed under the load test because the retry behavior amplified writes.",
+    "timestamp": "2026-01-27T10:00:00"
+  },
+  {
+    "event_id": "E00520",
+    "conversation_id": "apollo",
+    "kind": "belief",
+    "key": "apollo.belief.uncertain",
+    "text": "I am not sure whether the failure is in the storage layer or our queue configuration. Let's keep both possibilities open.",
+    "timestamp": "2026-01-27T10:00:00"
+  },
+  {
+    "event_id": "E00525",
+    "conversation_id": "apollo",
+    "kind": "outcome",
+    "key": "apollo.action.resolved",
+    "text": "We traced the earlier failure to the queue configuration, not Kubernetes itself. I changed the retry limit and the test is passing now.",
+    "timestamp": "2026-01-31T10:00:00"
+  },
+  {
+    "event_id": "E00526",
+    "conversation_id": "apollo",
+    "kind": "decision",
+    "key": "apollo.decision.lean",
+    "text": "Given that result, I am leaning toward keeping Kubernetes rather than switching to ECS. I still want a rollback plan.",
+    "timestamp": "2026-01-31T10:00:00"
+  },
+  {
+    "event_id": "E00527",
+    "conversation_id": "apollo",
+    "kind": "negative",
+    "key": "apollo.negative.cutover",
+    "text": "For the record, nobody has approved a production cutover to ECS.",
+    "timestamp": "2026-01-31T10:00:00"
+  },
+  {
+    "event_id": "E00533",
+    "conversation_id": "apollo",
+    "kind": "decision",
+    "key": "apollo.decision.final",
+    "text": "Actually, after the cost review, the team decided to replace Kubernetes with ECS for the production path. The old prototype stays for comparison.",
+    "timestamp": "2026-02-05T10:00:00"
+  },
+  {
+    "event_id": "E00534",
+    "conversation_id": "apollo",
+    "kind": "decision",
+    "key": "apollo.decision.supersede",
+    "text": "That supersedes my earlier recommendation to keep Kubernetes. The approved direction is ECS, starting with staging.",
+    "timestamp": "2026-02-05T10:00:00"
+  },
+  {
+    "event_id": "E00535",
+    "conversation_id": "apollo",
+    "kind": "outcome",
+    "key": "apollo.rollout",
+    "text": "The ECS staging rollout completed successfully, although the first attempt was rolled back after elevated error rates.",
+    "timestamp": "2026-02-05T10:00:00"
+  },
+  {
+    "event_id": "E00541",
+    "conversation_id": "apollo",
+    "kind": "outcome",
+    "key": "apollo.rollout.success",
+    "text": "The second ECS rollout succeeded after we reduced concurrency. We have not enabled it for every customer yet.",
+    "timestamp": "2026-02-11T10:00:00"
+  },
+  {
+    "event_id": "E00542",
+    "conversation_id": "apollo",
+    "kind": "ambiguity",
+    "key": "apollo.architecture.open",
+    "text": "There is still an open question about whether Helm should remain in the final architecture. No decision has been made on that part.",
+    "timestamp": "2026-02-11T10:00:00"
+  },
+  {
+    "event_id": "E00543",
+    "conversation_id": "apollo",
+    "kind": "ambiguity",
+    "key": "apollo.architecture.unresolved",
+    "text": "I remember we discussed Helm, but I don't remember agreeing to remove it. Let's treat that as unresolved.",
+    "timestamp": "2026-02-11T10:00:00"
+  },
+  {
+    "event_id": "E00549",
+    "conversation_id": "apollo",
+    "kind": "decision",
+    "key": "apollo.architecture.final",
+    "text": "We finally decided to keep Helm as an optional component, not a required dependency. That was the missing architecture decision.",
+    "timestamp": "2026-02-18T10:00:00"
+  },
+  {
+    "event_id": "E00550",
+    "conversation_id": "apollo",
+    "kind": "outcome",
+    "key": "apollo.production",
+    "text": "The production result after that change was stable. Error rate stayed below the agreed threshold during the canary.",
+    "timestamp": "2026-02-18T10:00:00"
+  },
+  {
+    "event_id": "E00551",
+    "conversation_id": "apollo",
+    "kind": "provenance",
+    "key": "apollo.provenance",
+    "text": "I was the one who originally reported the retry failure in the first session. Sam later confirmed it by reproducing the test.",
+    "timestamp": "2026-02-18T10:00:00"
+  },
+  {
+    "event_id": "E00557",
+    "conversation_id": "apollo",
+    "kind": "history",
+    "key": "apollo.history",
+    "text": "One thing to keep in mind: the ECS decision is current, but the earlier Kubernetes recommendation is still useful history because it explains why we changed direction.",
+    "timestamp": "2026-02-26T10:00:00"
+  },
+  {
+    "event_id": "E00558",
+    "conversation_id": "apollo",
+    "kind": "negative",
+    "key": "apollo.negative.cassandra",
+    "text": "If someone asks whether we ever discussed apollo-unrelated Cassandra adoption, the answer is no. It never came up in these sessions.",
+    "timestamp": "2026-02-26T10:00:00"
+  },
+  {
+    "event_id": "E00559",
+    "conversation_id": "apollo",
+    "kind": "provenance",
+    "key": "apollo.provenance.outcome",
+    "text": "I can confirm the successful rollout came after the concurrency change, not before it.",
+    "timestamp": "2026-02-26T10:00:00"
+  }
+]

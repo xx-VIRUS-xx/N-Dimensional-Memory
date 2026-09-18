@@ -1,0 +1,16 @@
+{
+  "metadata": {
+    "agent_id": "claude",
+    "condition": "RAPTOR",
+    "status": "NOT_RUN",
+    "reason": "NOT_RUN: no verified RAPTOR implementation is available in this environment (pip show raptor: not found).",
+    "query_count": 96,
+    "result_location": "results/retrieval",
+    "input_files": {
+      "corpus_sha256": "d1fe7d2a080b90291a0a42c5464ea660188bd19f64ab95d71e40e5acbd0517d6",
+      "public_queries_sha256": "eb18624c78b25af7e927ff77f47878e890f795b2dc68f17f2f9d376d279d11d5",
+      "memory_sha256": "8eff257075b16527b19ac7d57de2dce3afd84df917fe37ee4c274355ec93cbe4"
+    }
+  },
+  "results": []
+}

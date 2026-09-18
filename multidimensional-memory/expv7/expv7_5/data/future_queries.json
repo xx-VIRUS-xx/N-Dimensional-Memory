@@ -1,0 +1,362 @@
+[
+  {
+    "query_id": "ENGINEERING-Q000",
+    "domain": "engineering",
+    "kind": "direct",
+    "gold_event_ids": [
+      "ENG-0011"
+    ],
+    "question": "What was ultimately decided about PostgreSQL migration?"
+  },
+  {
+    "query_id": "ENGINEERING-Q001",
+    "domain": "engineering",
+    "kind": "paraphrase",
+    "gold_event_ids": [
+      "ENG-0030"
+    ],
+    "question": "Did the team ever settle the question involving invoice timeout?"
+  },
+  {
+    "query_id": "ENGINEERING-Q002",
+    "domain": "engineering",
+    "kind": "indirect",
+    "gold_event_ids": [
+      "ENG-0037"
+    ],
+    "question": "What changed over time regarding DynamoDB migration?"
+  },
+  {
+    "query_id": "ENGINEERING-Q003",
+    "domain": "engineering",
+    "kind": "temporal",
+    "gold_event_ids": [
+      "ENG-0042"
+    ],
+    "question": "What was the eventual outcome associated with API rate limit?"
+  },
+  {
+    "query_id": "ENGINEERING-Q004",
+    "domain": "engineering",
+    "kind": "causal",
+    "gold_event_ids": [
+      "ENG-0088"
+    ],
+    "question": "Why did the later state of search index differ from the earlier discussion?"
+  },
+  {
+    "query_id": "ENGINEERING-Q005",
+    "domain": "engineering",
+    "kind": "multi_hop",
+    "gold_event_ids": [
+      "ENG-0103"
+    ],
+    "question": "Trace the discussion, action, and outcome for webhook delivery."
+  },
+  {
+    "query_id": "ENGINEERING-Q006",
+    "domain": "engineering",
+    "kind": "negative",
+    "gold_event_ids": [
+      "ENG-0121"
+    ],
+    "question": "Was PostgreSQL migration ever confirmed, or was it left unresolved?"
+  },
+  {
+    "query_id": "ENGINEERING-Q007",
+    "domain": "engineering",
+    "kind": "ambiguity",
+    "gold_event_ids": [
+      "ENG-0128"
+    ],
+    "question": "What do we know and what remains uncertain about search index?"
+  },
+  {
+    "query_id": "ENGINEERING-Q008",
+    "domain": "engineering",
+    "kind": "compositional",
+    "gold_event_ids": [
+      "ENG-0138"
+    ],
+    "question": "How does search index relate to the surrounding decision and later outcome?"
+  },
+  {
+    "query_id": "ENGINEERING-Q009",
+    "domain": "engineering",
+    "kind": "direct",
+    "gold_event_ids": [
+      "ENG-0139"
+    ],
+    "question": "What was ultimately decided about cache invalidation?"
+  },
+  {
+    "query_id": "PLANNING-Q000",
+    "domain": "planning",
+    "kind": "direct",
+    "gold_event_ids": [
+      "PLA-0004"
+    ],
+    "question": "What was ultimately decided about team ownership?"
+  },
+  {
+    "query_id": "PLANNING-Q001",
+    "domain": "planning",
+    "kind": "paraphrase",
+    "gold_event_ids": [
+      "PLA-0006"
+    ],
+    "question": "Did the team ever settle the question involving travel schedule?"
+  },
+  {
+    "query_id": "PLANNING-Q002",
+    "domain": "planning",
+    "kind": "indirect",
+    "gold_event_ids": [
+      "PLA-0015"
+    ],
+    "question": "What changed over time regarding vendor review?"
+  },
+  {
+    "query_id": "PLANNING-Q003",
+    "domain": "planning",
+    "kind": "temporal",
+    "gold_event_ids": [
+      "PLA-0053"
+    ],
+    "question": "What was the eventual outcome associated with hiring plan?"
+  },
+  {
+    "query_id": "PLANNING-Q004",
+    "domain": "planning",
+    "kind": "causal",
+    "gold_event_ids": [
+      "PLA-0063"
+    ],
+    "question": "Why did the later state of hiring plan differ from the earlier discussion?"
+  },
+  {
+    "query_id": "PLANNING-Q005",
+    "domain": "planning",
+    "kind": "multi_hop",
+    "gold_event_ids": [
+      "PLA-0064"
+    ],
+    "question": "Trace the discussion, action, and outcome for team ownership."
+  },
+  {
+    "query_id": "PLANNING-Q006",
+    "domain": "planning",
+    "kind": "negative",
+    "gold_event_ids": [
+      "PLA-0085"
+    ],
+    "question": "Was vendor review ever confirmed, or was it left unresolved?"
+  },
+  {
+    "query_id": "PLANNING-Q007",
+    "domain": "planning",
+    "kind": "ambiguity",
+    "gold_event_ids": [
+      "PLA-0117"
+    ],
+    "question": "What do we know and what remains uncertain about customer workshop?"
+  },
+  {
+    "query_id": "PLANNING-Q008",
+    "domain": "planning",
+    "kind": "compositional",
+    "gold_event_ids": [
+      "PLA-0127"
+    ],
+    "question": "How does customer workshop relate to the surrounding decision and later outcome?"
+  },
+  {
+    "query_id": "PLANNING-Q009",
+    "domain": "planning",
+    "kind": "direct",
+    "gold_event_ids": [
+      "PLA-0152"
+    ],
+    "question": "What was ultimately decided about documentation deadline?"
+  },
+  {
+    "query_id": "PRODUCT-Q000",
+    "domain": "product",
+    "kind": "direct",
+    "gold_event_ids": [
+      "PRO-0013"
+    ],
+    "question": "What was ultimately decided about pricing experiment?"
+  },
+  {
+    "query_id": "PRODUCT-Q001",
+    "domain": "product",
+    "kind": "paraphrase",
+    "gold_event_ids": [
+      "PRO-0027"
+    ],
+    "question": "Did the team ever settle the question involving export API?"
+  },
+  {
+    "query_id": "PRODUCT-Q002",
+    "domain": "product",
+    "kind": "indirect",
+    "gold_event_ids": [
+      "PRO-0028"
+    ],
+    "question": "What changed over time regarding SSO rollout?"
+  },
+  {
+    "query_id": "PRODUCT-Q003",
+    "domain": "product",
+    "kind": "temporal",
+    "gold_event_ids": [
+      "PRO-0033"
+    ],
+    "question": "What was the eventual outcome associated with pricing experiment?"
+  },
+  {
+    "query_id": "PRODUCT-Q004",
+    "domain": "product",
+    "kind": "causal",
+    "gold_event_ids": [
+      "PRO-0115"
+    ],
+    "question": "Why did the later state of analytics dashboard differ from the earlier discussion?"
+  },
+  {
+    "query_id": "PRODUCT-Q005",
+    "domain": "product",
+    "kind": "multi_hop",
+    "gold_event_ids": [
+      "PRO-0123"
+    ],
+    "question": "Trace the discussion, action, and outcome for pricing experiment."
+  },
+  {
+    "query_id": "PRODUCT-Q006",
+    "domain": "product",
+    "kind": "negative",
+    "gold_event_ids": [
+      "PRO-0127"
+    ],
+    "question": "Was export API ever confirmed, or was it left unresolved?"
+  },
+  {
+    "query_id": "PRODUCT-Q007",
+    "domain": "product",
+    "kind": "ambiguity",
+    "gold_event_ids": [
+      "PRO-0137"
+    ],
+    "question": "What do we know and what remains uncertain about export API?"
+  },
+  {
+    "query_id": "PRODUCT-Q008",
+    "domain": "product",
+    "kind": "compositional",
+    "gold_event_ids": [
+      "PRO-0168"
+    ],
+    "question": "How does SSO rollout relate to the surrounding decision and later outcome?"
+  },
+  {
+    "query_id": "PRODUCT-Q009",
+    "domain": "product",
+    "kind": "direct",
+    "gold_event_ids": [
+      "PRO-0181"
+    ],
+    "question": "What was ultimately decided about bulk import?"
+  },
+  {
+    "query_id": "OPERATIONS-Q000",
+    "domain": "operations",
+    "kind": "direct",
+    "gold_event_ids": [
+      "OPE-0019"
+    ],
+    "question": "What was ultimately decided about latency incident?"
+  },
+  {
+    "query_id": "OPERATIONS-Q001",
+    "domain": "operations",
+    "kind": "paraphrase",
+    "gold_event_ids": [
+      "OPE-0021"
+    ],
+    "question": "Did the team ever settle the question involving database outage?"
+  },
+  {
+    "query_id": "OPERATIONS-Q002",
+    "domain": "operations",
+    "kind": "indirect",
+    "gold_event_ids": [
+      "OPE-0028"
+    ],
+    "question": "What changed over time regarding dependency outage?"
+  },
+  {
+    "query_id": "OPERATIONS-Q003",
+    "domain": "operations",
+    "kind": "temporal",
+    "gold_event_ids": [
+      "OPE-0067"
+    ],
+    "question": "What was the eventual outcome associated with billing alert?"
+  },
+  {
+    "query_id": "OPERATIONS-Q004",
+    "domain": "operations",
+    "kind": "causal",
+    "gold_event_ids": [
+      "OPE-0078"
+    ],
+    "question": "Why did the later state of dependency outage differ from the earlier discussion?"
+  },
+  {
+    "query_id": "OPERATIONS-Q005",
+    "domain": "operations",
+    "kind": "multi_hop",
+    "gold_event_ids": [
+      "OPE-0081"
+    ],
+    "question": "Trace the discussion, action, and outcome for database outage."
+  },
+  {
+    "query_id": "OPERATIONS-Q006",
+    "domain": "operations",
+    "kind": "negative",
+    "gold_event_ids": [
+      "OPE-0095"
+    ],
+    "question": "Was worker crash ever confirmed, or was it left unresolved?"
+  },
+  {
+    "query_id": "OPERATIONS-Q007",
+    "domain": "operations",
+    "kind": "ambiguity",
+    "gold_event_ids": [
+      "OPE-0112"
+    ],
+    "question": "What do we know and what remains uncertain about storage alert?"
+  },
+  {
+    "query_id": "OPERATIONS-Q008",
+    "domain": "operations",
+    "kind": "compositional",
+    "gold_event_ids": [
+      "OPE-0118"
+    ],
+    "question": "How does dependency outage relate to the surrounding decision and later outcome?"
+  },
+  {
+    "query_id": "OPERATIONS-Q009",
+    "domain": "operations",
+    "kind": "direct",
+    "gold_event_ids": [
+      "OPE-0143"
+    ],
+    "question": "What was ultimately decided about backup failure?"
+  }
+]

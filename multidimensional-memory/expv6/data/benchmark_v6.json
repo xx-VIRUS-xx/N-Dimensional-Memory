@@ -1,0 +1,56 @@
+{
+  "benchmarks": {
+    "shared_activity": [
+      {
+        "id": "claude_01",
+        "agent": "claude",
+        "proposition_key": "Rahul.football_activity",
+        "value": "Rahul plays football",
+        "interpretation": "He refers to Rahul",
+        "confidence": 1.0,
+        "source": "Conversation 01"
+      },
+      {
+        "id": "codex_01",
+        "agent": "codex",
+        "proposition_key": "Rahul.football_activity",
+        "value": "Rahul plays football",
+        "interpretation": "He refers to Rahul",
+        "confidence": 0.92,
+        "source": "Conversation 01"
+      },
+      {
+        "id": "copilot_01",
+        "agent": "copilot",
+        "proposition_key": "Rahul.football_activity",
+        "value": "Rahul plays football",
+        "interpretation": "He is an ambiguity candidate",
+        "confidence": 0.6,
+        "source": "Conversation 01"
+      }
+    ],
+    "location_disagreement": [
+      {
+        "id": "claude_02",
+        "agent": "claude",
+        "proposition_key": "Rahul.location",
+        "value": "Jaipur",
+        "interpretation": "Current location inferred from statement",
+        "confidence": 0.8,
+        "source": "Conversation A",
+        "temporal_from": "2025-01",
+        "temporal_to": "2026-05"
+      },
+      {
+        "id": "codex_02",
+        "agent": "codex",
+        "proposition_key": "Rahul.location",
+        "value": "Delhi",
+        "interpretation": "Current location asserted after move",
+        "confidence": 1.0,
+        "source": "Conversation B",
+        "temporal_from": "2026-06"
+      }
+    ]
+  }
+}

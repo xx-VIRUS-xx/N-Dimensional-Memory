@@ -1,0 +1,210 @@
+{
+  "V71-HIST-01": [
+    {
+      "event_id": "E0005",
+      "timestamp": "2026-01-04",
+      "speaker": "Rahul",
+      "text": "We chose PostgreSQL for the billing service because auditability mattered more than the lower migration effort of DynamoDB.",
+      "kind": "signal",
+      "topics": []
+    },
+    {
+      "event_id": "E0067",
+      "timestamp": "2026-01-19",
+      "speaker": "Rahul",
+      "text": "We tried DynamoDB for the billing prototype, but the migration failed because conditional update semantics did not match the existing transaction flow.",
+      "kind": "signal",
+      "topics": []
+    },
+    {
+      "event_id": "E0141",
+      "timestamp": "2026-02-02",
+      "speaker": "Claude",
+      "text": "The failed DynamoDB migration was confirmed after reviewing the integration test output.",
+      "kind": "signal",
+      "topics": []
+    }
+  ],
+  "V71-DEC-01": [
+    {
+      "event_id": "E0178",
+      "timestamp": "2026-02-09",
+      "speaker": "Rahul",
+      "text": "We tested Redis caching to reduce API latency.",
+      "kind": "signal",
+      "topics": []
+    },
+    {
+      "event_id": "E0263",
+      "timestamp": "2026-02-21",
+      "speaker": "Rahul",
+      "text": "The Redis experiment increased cache invalidation complexity, so we abandoned it.",
+      "kind": "signal",
+      "topics": []
+    },
+    {
+      "event_id": "E0731",
+      "timestamp": "2026-04-18",
+      "speaker": "Rahul",
+      "text": "We retried Redis with a narrower cache scope, but the latency improvement was negligible.",
+      "kind": "signal",
+      "topics": []
+    }
+  ],
+  "V71-ACT-01": [
+    {
+      "event_id": "E0356",
+      "timestamp": "2026-03-01",
+      "speaker": "Rahul",
+      "text": "The first invoice export attempt timed out after 18 minutes.",
+      "kind": "signal",
+      "topics": []
+    },
+    {
+      "event_id": "E0622",
+      "timestamp": "2026-04-03",
+      "speaker": "Rahul",
+      "text": "We switched invoice exports to asynchronous jobs after the timeout.",
+      "kind": "signal",
+      "topics": []
+    },
+    {
+      "event_id": "E1033",
+      "timestamp": "2026-05-31",
+      "speaker": "Rahul",
+      "text": "The asynchronous invoice export completed successfully for the first full customer batch.",
+      "kind": "signal",
+      "topics": []
+    }
+  ],
+  "V71-TIME-01": [
+    {
+      "event_id": "E0233",
+      "timestamp": "2026-02-17",
+      "speaker": "Rahul",
+      "text": "We started a webhook migration using polling as the temporary compatibility path.",
+      "kind": "signal",
+      "topics": []
+    },
+    {
+      "event_id": "E0401",
+      "timestamp": "2026-03-11",
+      "speaker": "Rahul",
+      "text": "The webhook migration moved from polling to webhooks after the provider fixed signature verification.",
+      "kind": "signal",
+      "topics": []
+    },
+    {
+      "event_id": "E0887",
+      "timestamp": "2026-05-20",
+      "speaker": "Rahul",
+      "text": "Webhooks were disabled temporarily because duplicate deliveries caused reconciliation errors.",
+      "kind": "signal",
+      "topics": []
+    },
+    {
+      "event_id": "E1190",
+      "timestamp": "2026-06-03",
+      "speaker": "Rahul",
+      "text": "Webhooks were re-enabled after idempotency handling was deployed.",
+      "kind": "signal",
+      "topics": []
+    }
+  ],
+  "V71-AMB-01": [
+    {
+      "event_id": "E0312",
+      "timestamp": "2026-02-25",
+      "speaker": "Rahul",
+      "text": "Rahul said he would ask Arjun about the deployment window, but the conversation did not establish whether \"he\" meant Rahul or Arjun.",
+      "kind": "signal",
+      "topics": []
+    },
+    {
+      "event_id": "E0515",
+      "timestamp": "2026-03-22",
+      "speaker": "Arjun",
+      "text": "The team discussed the deployment window, but no speaker-reference resolution for \"he\" was recorded.",
+      "kind": "signal",
+      "topics": []
+    }
+  ],
+  "V71-CONFLICT-01": [
+    {
+      "event_id": "E0448",
+      "timestamp": "2026-03-17",
+      "speaker": "Claude",
+      "text": "Claude inferred that the billing migration failure was related to transaction semantics.",
+      "kind": "signal",
+      "topics": []
+    },
+    {
+      "event_id": "E0449",
+      "timestamp": "2026-03-17",
+      "speaker": "Rahul",
+      "text": "Rahul confirmed that transaction semantics were the reason the DynamoDB migration was abandoned.",
+      "kind": "signal",
+      "topics": []
+    }
+  ],
+  "V71-NEG-01": [
+    {
+      "event_id": "E0548",
+      "timestamp": "2026-03-29",
+      "speaker": "Rahul",
+      "text": "We explicitly recorded that MongoDB had not been discussed in the billing migration review.",
+      "kind": "signal",
+      "topics": []
+    },
+    {
+      "event_id": "E1102",
+      "timestamp": "2026-05-08",
+      "speaker": "Rahul",
+      "text": "A proposal to use MongoDB for billing was mentioned in a different project, not in the billing migration review.",
+      "kind": "signal",
+      "topics": []
+    }
+  ],
+  "V71-PROV-01": [
+    {
+      "event_id": "E0067",
+      "timestamp": "2026-01-19",
+      "speaker": "Rahul",
+      "text": "We tried DynamoDB for the billing prototype, but the migration failed because conditional update semantics did not match the existing transaction flow.",
+      "kind": "signal",
+      "topics": []
+    },
+    {
+      "event_id": "E0141",
+      "timestamp": "2026-02-02",
+      "speaker": "Claude",
+      "text": "The failed DynamoDB migration was confirmed after reviewing the integration test output.",
+      "kind": "signal",
+      "topics": []
+    },
+    {
+      "event_id": "E0448",
+      "timestamp": "2026-03-17",
+      "speaker": "Claude",
+      "text": "Claude inferred that the billing migration failure was related to transaction semantics.",
+      "kind": "signal",
+      "topics": []
+    },
+    {
+      "event_id": "E0449",
+      "timestamp": "2026-03-17",
+      "speaker": "Rahul",
+      "text": "Rahul confirmed that transaction semantics were the reason the DynamoDB migration was abandoned.",
+      "kind": "signal",
+      "topics": []
+    },
+    {
+      "event_id": "E0802",
+      "timestamp": "2026-04-29",
+      "speaker": "Copilot",
+      "text": "Copilot later read the billing migration notes and preserved the PostgreSQL decision and the failed DynamoDB attempt.",
+      "kind": "signal",
+      "topics": []
+    }
+  ]
+}

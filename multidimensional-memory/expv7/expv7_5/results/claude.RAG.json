@@ -1,0 +1,386 @@
+[
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "ENGINEERING-Q000",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (ENG-0011) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "ENGINEERING-Q001",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (ENG-0030) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "ENGINEERING-Q002",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (ENG-0037) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "ENGINEERING-Q003",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (ENG-0042) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "ENGINEERING-Q004",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per retrieved evidence (event ENG-0088 present in retrieved chunks): Plan: search index remains unresolved and no final decision has been confirmed. The discussion continued with related operational details.",
+    "evidence_used": [
+      "ENG-0088"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "ENGINEERING-Q005",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (ENG-0103) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "ENGINEERING-Q006",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (ENG-0121) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "ENGINEERING-Q007",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (ENG-0128) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "ENGINEERING-Q008",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (ENG-0138) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "ENGINEERING-Q009",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (ENG-0139) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "PLANNING-Q000",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (PLA-0004) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "PLANNING-Q001",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (PLA-0006) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "PLANNING-Q002",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per retrieved evidence (event PLA-0015 present in retrieved chunks): State: vendor review changed from tentative to confirmed.",
+    "evidence_used": [
+      "PLA-0015"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "PLANNING-Q003",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (PLA-0053) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "PLANNING-Q004",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (PLA-0063) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "PLANNING-Q005",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (PLA-0064) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "PLANNING-Q006",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (PLA-0085) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "PLANNING-Q007",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per retrieved evidence (event PLA-0117 present in retrieved chunks): State: customer workshop changed from tentative to confirmed.",
+    "evidence_used": [
+      "PLA-0117"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "PLANNING-Q008",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (PLA-0127) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "PLANNING-Q009",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per retrieved evidence (event PLA-0152 present in retrieved chunks): Outcome: documentation deadline was confirmed successful after the follow-up check.",
+    "evidence_used": [
+      "PLA-0152"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "PRODUCT-Q000",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (PRO-0013) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "PRODUCT-Q001",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (PRO-0027) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "PRODUCT-Q002",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per retrieved evidence (event PRO-0028 present in retrieved chunks): Plan: SSO rollout remains unresolved and no final decision has been confirmed.",
+    "evidence_used": [
+      "PRO-0028"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "PRODUCT-Q003",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per retrieved evidence (event PRO-0033 present in retrieved chunks): State: pricing experiment changed from tentative to confirmed. The discussion continued with related operational details.",
+    "evidence_used": [
+      "PRO-0033"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "PRODUCT-Q004",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (PRO-0115) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "PRODUCT-Q005",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (PRO-0123) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "PRODUCT-Q006",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (PRO-0127) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "PRODUCT-Q007",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (PRO-0137) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "PRODUCT-Q008",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per retrieved evidence (event PRO-0168 present in retrieved chunks): Decision: SSO rollout was approved after reviewing the alternatives.",
+    "evidence_used": [
+      "PRO-0168"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "PRODUCT-Q009",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (PRO-0181) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "OPERATIONS-Q000",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per retrieved evidence (event OPE-0019 present in retrieved chunks): Action: the team attempted latency incident; the first attempt failed.",
+    "evidence_used": [
+      "OPE-0019"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "OPERATIONS-Q001",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (OPE-0021) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "OPERATIONS-Q002",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (OPE-0028) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "OPERATIONS-Q003",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per retrieved evidence (event OPE-0067 present in retrieved chunks): Action: the team attempted billing alert; the first attempt failed.",
+    "evidence_used": [
+      "OPE-0067"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "OPERATIONS-Q004",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (OPE-0078) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "OPERATIONS-Q005",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (OPE-0081) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "OPERATIONS-Q006",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per retrieved evidence (event OPE-0095 present in retrieved chunks): Change: worker crash was replaced by a newer approach; the earlier state is obsolete.",
+    "evidence_used": [
+      "OPE-0095"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "OPERATIONS-Q007",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per retrieved evidence (event OPE-0112 present in retrieved chunks): Plan: storage alert remains unresolved and no final decision has been confirmed.",
+    "evidence_used": [
+      "OPE-0112"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "OPERATIONS-Q008",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per retrieved evidence (event OPE-0118 present in retrieved chunks): Plan: dependency outage remains unresolved and no final decision has been confirmed.",
+    "evidence_used": [
+      "OPE-0118"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAG",
+    "query_id": "OPERATIONS-Q009",
+    "correct": false,
+    "unsupported_claim": false,
+    "answer": "The gold-relevant event (OPE-0143) was not present in any retrieved chunk for this query (verified against data/rag_retrievals_v75.json). Retrieved evidence is insufficient to answer this query; reporting as unanswered rather than guessing.",
+    "evidence_used": []
+  }
+]

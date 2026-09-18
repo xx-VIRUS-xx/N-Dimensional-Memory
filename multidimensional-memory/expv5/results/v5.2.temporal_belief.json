@@ -1,0 +1,31 @@
+{
+  "experiment": "EXP-V5.2",
+  "proposition": "Rahul.location",
+  "observations": [
+    {
+      "id": "o1",
+      "proposition": "Rahul.location",
+      "value": "Jaipur",
+      "valid_from": "2025-01",
+      "valid_to": "2026-05",
+      "status": "asserted",
+      "source": "I live in Jaipur."
+    },
+    {
+      "id": "o2",
+      "proposition": "Rahul.location",
+      "value": "Delhi",
+      "valid_from": "2026-06",
+      "valid_to": null,
+      "status": "confirmed",
+      "source": "Actually, I moved to Delhi last month."
+    }
+  ],
+  "relations": [
+    {
+      "type": "temporal_evolution",
+      "from": "o1",
+      "to": "o2"
+    }
+  ]
+}

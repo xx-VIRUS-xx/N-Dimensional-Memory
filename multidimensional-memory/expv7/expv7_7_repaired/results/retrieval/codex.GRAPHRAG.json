@@ -1,0 +1,1361 @@
+{
+  "metadata": {
+    "agent_id": "codex",
+    "condition": "GRAPHRAG",
+    "status": "NOT_RUN",
+    "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+    "query_count": 96,
+    "result_location": "results/retrieval",
+    "input_files": {
+      "corpus_sha256": "80a32f4f6edde3f65fa3ac74dede2750214b4514b23d8ca1c2bec9f7b7b9fec6",
+      "public_queries_sha256": "eb18624c78b25af7e927ff77f47878e890f795b2dc68f17f2f9d376d279d11d5",
+      "memory_sha256": "0887d43b4feeb86f0c264ac906b88776a8d651e921c719017054c1352369d715"
+    }
+  },
+  "results": [
+    {
+      "query_id": "Q01-01",
+      "conversation_id": "CONV-01",
+      "category": "historical",
+      "question": "What was the original technology preference for billing, what concern changed the direction, and what technology ultimately replaced it?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q01-02",
+      "conversation_id": "CONV-01",
+      "category": "decision",
+      "question": "What decision was made about billing after the cost and reliability review?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q01-03",
+      "conversation_id": "CONV-01",
+      "category": "action_outcome",
+      "question": "What failed in billing, what action followed, and what was the outcome?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q01-04",
+      "conversation_id": "CONV-01",
+      "category": "temporal",
+      "question": "How did the billing rollout state change over time?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q01-05",
+      "conversation_id": "CONV-01",
+      "category": "ambiguity",
+      "question": "What remained unresolved about the earlier billing decision, and what happened while the team held competing interpretations?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q01-06",
+      "conversation_id": "CONV-01",
+      "category": "negative",
+      "question": "What technology was explicitly outside the scope of the billing discussion?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q01-07",
+      "conversation_id": "CONV-01",
+      "category": "provenance",
+      "question": "How was the original billing failure report later confirmed?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q01-08",
+      "conversation_id": "CONV-01",
+      "category": "multi_hop",
+      "question": "Trace the chain from the original billing failure through the replacement decision, retry action, and later validation.",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q02-01",
+      "conversation_id": "CONV-02",
+      "category": "historical",
+      "question": "What was the original technology preference for search, what concern changed the direction, and what technology ultimately replaced it?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q02-02",
+      "conversation_id": "CONV-02",
+      "category": "decision",
+      "question": "What decision was made about search after the cost and reliability review?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q02-03",
+      "conversation_id": "CONV-02",
+      "category": "action_outcome",
+      "question": "What failed in search, what action followed, and what was the outcome?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q02-04",
+      "conversation_id": "CONV-02",
+      "category": "temporal",
+      "question": "How did the search rollout state change over time?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q02-05",
+      "conversation_id": "CONV-02",
+      "category": "ambiguity",
+      "question": "What remained unresolved about the earlier search decision, and what happened while the team held competing interpretations?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q02-06",
+      "conversation_id": "CONV-02",
+      "category": "negative",
+      "question": "What technology was explicitly outside the scope of the search discussion?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q02-07",
+      "conversation_id": "CONV-02",
+      "category": "provenance",
+      "question": "How was the original search failure report later confirmed?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q02-08",
+      "conversation_id": "CONV-02",
+      "category": "multi_hop",
+      "question": "Trace the chain from the original search failure through the replacement decision, retry action, and later validation.",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q03-01",
+      "conversation_id": "CONV-03",
+      "category": "historical",
+      "question": "What was the original technology preference for payments, what concern changed the direction, and what technology ultimately replaced it?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q03-02",
+      "conversation_id": "CONV-03",
+      "category": "decision",
+      "question": "What decision was made about payments after the cost and reliability review?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q03-03",
+      "conversation_id": "CONV-03",
+      "category": "action_outcome",
+      "question": "What failed in payments, what action followed, and what was the outcome?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q03-04",
+      "conversation_id": "CONV-03",
+      "category": "temporal",
+      "question": "How did the payments rollout state change over time?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q03-05",
+      "conversation_id": "CONV-03",
+      "category": "ambiguity",
+      "question": "What remained unresolved about the earlier payments decision, and what happened while the team held competing interpretations?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q03-06",
+      "conversation_id": "CONV-03",
+      "category": "negative",
+      "question": "What technology was explicitly outside the scope of the payments discussion?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q03-07",
+      "conversation_id": "CONV-03",
+      "category": "provenance",
+      "question": "How was the original payments failure report later confirmed?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q03-08",
+      "conversation_id": "CONV-03",
+      "category": "multi_hop",
+      "question": "Trace the chain from the original payments failure through the replacement decision, retry action, and later validation.",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q04-01",
+      "conversation_id": "CONV-04",
+      "category": "historical",
+      "question": "What was the original technology preference for notifications, what concern changed the direction, and what technology ultimately replaced it?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q04-02",
+      "conversation_id": "CONV-04",
+      "category": "decision",
+      "question": "What decision was made about notifications after the cost and reliability review?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q04-03",
+      "conversation_id": "CONV-04",
+      "category": "action_outcome",
+      "question": "What failed in notifications, what action followed, and what was the outcome?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q04-04",
+      "conversation_id": "CONV-04",
+      "category": "temporal",
+      "question": "How did the notifications rollout state change over time?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q04-05",
+      "conversation_id": "CONV-04",
+      "category": "ambiguity",
+      "question": "What remained unresolved about the earlier notifications decision, and what happened while the team held competing interpretations?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q04-06",
+      "conversation_id": "CONV-04",
+      "category": "negative",
+      "question": "What technology was explicitly outside the scope of the notifications discussion?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q04-07",
+      "conversation_id": "CONV-04",
+      "category": "provenance",
+      "question": "How was the original notifications failure report later confirmed?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q04-08",
+      "conversation_id": "CONV-04",
+      "category": "multi_hop",
+      "question": "Trace the chain from the original notifications failure through the replacement decision, retry action, and later validation.",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q05-01",
+      "conversation_id": "CONV-05",
+      "category": "historical",
+      "question": "What was the original technology preference for analytics, what concern changed the direction, and what technology ultimately replaced it?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q05-02",
+      "conversation_id": "CONV-05",
+      "category": "decision",
+      "question": "What decision was made about analytics after the cost and reliability review?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q05-03",
+      "conversation_id": "CONV-05",
+      "category": "action_outcome",
+      "question": "What failed in analytics, what action followed, and what was the outcome?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q05-04",
+      "conversation_id": "CONV-05",
+      "category": "temporal",
+      "question": "How did the analytics rollout state change over time?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q05-05",
+      "conversation_id": "CONV-05",
+      "category": "ambiguity",
+      "question": "What remained unresolved about the earlier analytics decision, and what happened while the team held competing interpretations?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q05-06",
+      "conversation_id": "CONV-05",
+      "category": "negative",
+      "question": "What technology was explicitly outside the scope of the analytics discussion?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q05-07",
+      "conversation_id": "CONV-05",
+      "category": "provenance",
+      "question": "How was the original analytics failure report later confirmed?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q05-08",
+      "conversation_id": "CONV-05",
+      "category": "multi_hop",
+      "question": "Trace the chain from the original analytics failure through the replacement decision, retry action, and later validation.",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q06-01",
+      "conversation_id": "CONV-06",
+      "category": "historical",
+      "question": "What was the original technology preference for deployment, what concern changed the direction, and what technology ultimately replaced it?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q06-02",
+      "conversation_id": "CONV-06",
+      "category": "decision",
+      "question": "What decision was made about deployment after the cost and reliability review?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q06-03",
+      "conversation_id": "CONV-06",
+      "category": "action_outcome",
+      "question": "What failed in deployment, what action followed, and what was the outcome?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q06-04",
+      "conversation_id": "CONV-06",
+      "category": "temporal",
+      "question": "How did the deployment rollout state change over time?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q06-05",
+      "conversation_id": "CONV-06",
+      "category": "ambiguity",
+      "question": "What remained unresolved about the earlier deployment decision, and what happened while the team held competing interpretations?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q06-06",
+      "conversation_id": "CONV-06",
+      "category": "negative",
+      "question": "What technology was explicitly outside the scope of the deployment discussion?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q06-07",
+      "conversation_id": "CONV-06",
+      "category": "provenance",
+      "question": "How was the original deployment failure report later confirmed?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q06-08",
+      "conversation_id": "CONV-06",
+      "category": "multi_hop",
+      "question": "Trace the chain from the original deployment failure through the replacement decision, retry action, and later validation.",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q07-01",
+      "conversation_id": "CONV-07",
+      "category": "historical",
+      "question": "What was the original technology preference for identity, what concern changed the direction, and what technology ultimately replaced it?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q07-02",
+      "conversation_id": "CONV-07",
+      "category": "decision",
+      "question": "What decision was made about identity after the cost and reliability review?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q07-03",
+      "conversation_id": "CONV-07",
+      "category": "action_outcome",
+      "question": "What failed in identity, what action followed, and what was the outcome?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q07-04",
+      "conversation_id": "CONV-07",
+      "category": "temporal",
+      "question": "How did the identity rollout state change over time?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q07-05",
+      "conversation_id": "CONV-07",
+      "category": "ambiguity",
+      "question": "What remained unresolved about the earlier identity decision, and what happened while the team held competing interpretations?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q07-06",
+      "conversation_id": "CONV-07",
+      "category": "negative",
+      "question": "What technology was explicitly outside the scope of the identity discussion?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q07-07",
+      "conversation_id": "CONV-07",
+      "category": "provenance",
+      "question": "How was the original identity failure report later confirmed?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q07-08",
+      "conversation_id": "CONV-07",
+      "category": "multi_hop",
+      "question": "Trace the chain from the original identity failure through the replacement decision, retry action, and later validation.",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q08-01",
+      "conversation_id": "CONV-08",
+      "category": "historical",
+      "question": "What was the original technology preference for imports, what concern changed the direction, and what technology ultimately replaced it?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q08-02",
+      "conversation_id": "CONV-08",
+      "category": "decision",
+      "question": "What decision was made about imports after the cost and reliability review?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q08-03",
+      "conversation_id": "CONV-08",
+      "category": "action_outcome",
+      "question": "What failed in imports, what action followed, and what was the outcome?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q08-04",
+      "conversation_id": "CONV-08",
+      "category": "temporal",
+      "question": "How did the imports rollout state change over time?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q08-05",
+      "conversation_id": "CONV-08",
+      "category": "ambiguity",
+      "question": "What remained unresolved about the earlier imports decision, and what happened while the team held competing interpretations?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q08-06",
+      "conversation_id": "CONV-08",
+      "category": "negative",
+      "question": "What technology was explicitly outside the scope of the imports discussion?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q08-07",
+      "conversation_id": "CONV-08",
+      "category": "provenance",
+      "question": "How was the original imports failure report later confirmed?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q08-08",
+      "conversation_id": "CONV-08",
+      "category": "multi_hop",
+      "question": "Trace the chain from the original imports failure through the replacement decision, retry action, and later validation.",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q09-01",
+      "conversation_id": "CONV-09",
+      "category": "historical",
+      "question": "What was the original technology preference for exports, what concern changed the direction, and what technology ultimately replaced it?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q09-02",
+      "conversation_id": "CONV-09",
+      "category": "decision",
+      "question": "What decision was made about exports after the cost and reliability review?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q09-03",
+      "conversation_id": "CONV-09",
+      "category": "action_outcome",
+      "question": "What failed in exports, what action followed, and what was the outcome?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q09-04",
+      "conversation_id": "CONV-09",
+      "category": "temporal",
+      "question": "How did the exports rollout state change over time?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q09-05",
+      "conversation_id": "CONV-09",
+      "category": "ambiguity",
+      "question": "What remained unresolved about the earlier exports decision, and what happened while the team held competing interpretations?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q09-06",
+      "conversation_id": "CONV-09",
+      "category": "negative",
+      "question": "What technology was explicitly outside the scope of the exports discussion?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q09-07",
+      "conversation_id": "CONV-09",
+      "category": "provenance",
+      "question": "How was the original exports failure report later confirmed?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q09-08",
+      "conversation_id": "CONV-09",
+      "category": "multi_hop",
+      "question": "Trace the chain from the original exports failure through the replacement decision, retry action, and later validation.",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q10-01",
+      "conversation_id": "CONV-10",
+      "category": "historical",
+      "question": "What was the original technology preference for recommendations, what concern changed the direction, and what technology ultimately replaced it?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q10-02",
+      "conversation_id": "CONV-10",
+      "category": "decision",
+      "question": "What decision was made about recommendations after the cost and reliability review?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q10-03",
+      "conversation_id": "CONV-10",
+      "category": "action_outcome",
+      "question": "What failed in recommendations, what action followed, and what was the outcome?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q10-04",
+      "conversation_id": "CONV-10",
+      "category": "temporal",
+      "question": "How did the recommendations rollout state change over time?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q10-05",
+      "conversation_id": "CONV-10",
+      "category": "ambiguity",
+      "question": "What remained unresolved about the earlier recommendations decision, and what happened while the team held competing interpretations?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q10-06",
+      "conversation_id": "CONV-10",
+      "category": "negative",
+      "question": "What technology was explicitly outside the scope of the recommendations discussion?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q10-07",
+      "conversation_id": "CONV-10",
+      "category": "provenance",
+      "question": "How was the original recommendations failure report later confirmed?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q10-08",
+      "conversation_id": "CONV-10",
+      "category": "multi_hop",
+      "question": "Trace the chain from the original recommendations failure through the replacement decision, retry action, and later validation.",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q11-01",
+      "conversation_id": "CONV-11",
+      "category": "historical",
+      "question": "What was the original technology preference for catalog, what concern changed the direction, and what technology ultimately replaced it?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q11-02",
+      "conversation_id": "CONV-11",
+      "category": "decision",
+      "question": "What decision was made about catalog after the cost and reliability review?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q11-03",
+      "conversation_id": "CONV-11",
+      "category": "action_outcome",
+      "question": "What failed in catalog, what action followed, and what was the outcome?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q11-04",
+      "conversation_id": "CONV-11",
+      "category": "temporal",
+      "question": "How did the catalog rollout state change over time?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q11-05",
+      "conversation_id": "CONV-11",
+      "category": "ambiguity",
+      "question": "What remained unresolved about the earlier catalog decision, and what happened while the team held competing interpretations?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q11-06",
+      "conversation_id": "CONV-11",
+      "category": "negative",
+      "question": "What technology was explicitly outside the scope of the catalog discussion?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q11-07",
+      "conversation_id": "CONV-11",
+      "category": "provenance",
+      "question": "How was the original catalog failure report later confirmed?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q11-08",
+      "conversation_id": "CONV-11",
+      "category": "multi_hop",
+      "question": "Trace the chain from the original catalog failure through the replacement decision, retry action, and later validation.",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q12-01",
+      "conversation_id": "CONV-12",
+      "category": "historical",
+      "question": "What was the original technology preference for webhooks, what concern changed the direction, and what technology ultimately replaced it?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q12-02",
+      "conversation_id": "CONV-12",
+      "category": "decision",
+      "question": "What decision was made about webhooks after the cost and reliability review?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q12-03",
+      "conversation_id": "CONV-12",
+      "category": "action_outcome",
+      "question": "What failed in webhooks, what action followed, and what was the outcome?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q12-04",
+      "conversation_id": "CONV-12",
+      "category": "temporal",
+      "question": "How did the webhooks rollout state change over time?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q12-05",
+      "conversation_id": "CONV-12",
+      "category": "ambiguity",
+      "question": "What remained unresolved about the earlier webhooks decision, and what happened while the team held competing interpretations?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q12-06",
+      "conversation_id": "CONV-12",
+      "category": "negative",
+      "question": "What technology was explicitly outside the scope of the webhooks discussion?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q12-07",
+      "conversation_id": "CONV-12",
+      "category": "provenance",
+      "question": "How was the original webhooks failure report later confirmed?",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    },
+    {
+      "query_id": "Q12-08",
+      "conversation_id": "CONV-12",
+      "category": "multi_hop",
+      "question": "Trace the chain from the original webhooks failure through the replacement decision, retry action, and later validation.",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured.",
+      "answer": null,
+      "evidence": [],
+      "measurements": {
+        "input_tokens": null,
+        "latency_ms": null
+      }
+    }
+  ]
+}

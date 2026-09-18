@@ -1,0 +1,12 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "type":"object",
+  "required":["query_id","condition","status","evidence"],
+  "properties":{
+    "query_id":{"type":"string"},
+    "condition":{"type":"string"},
+    "status":{"enum":["EXECUTED","NOT_EXECUTED","FAILED_SETUP","FAILED_RUNTIME","INVALID_RESULT","INCOMPLETE"]},
+    "evidence":{"type":"array","items":{"type":"object","required":["event_id"],"properties":{"event_id":{"type":"string"},"score":{"type":["number","null"]}}}},
+    "latency_ms":{"type":["number","null"]}
+  }
+}

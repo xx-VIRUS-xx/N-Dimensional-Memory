@@ -1,0 +1,9 @@
+{
+  "status":"not_executed",
+  "writer":"claude",
+  "reader":"copilot",
+  "reason":"No Claude V7.4 memory artifact was available in this workspace; no reader result was fabricated.",
+  "cases":null,
+  "correct":null,
+  "unsupported_claims":null
+}

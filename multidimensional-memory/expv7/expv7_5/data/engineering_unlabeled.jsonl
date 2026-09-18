@@ -1,0 +1,500 @@
+{"event_id": "ENG-0000", "timestamp": "2026-01-01T00:00:00Z", "speaker": "Alex", "text": "The team discussed invoice timeout and compared several options. The discussion continued with related operational details. Earlier notes were reviewed before moving on.", "topic": "invoice timeout"}
+{"event_id": "ENG-0168", "timestamp": "2026-01-01T00:00:00Z", "speaker": "Alex", "text": "The team discussed search index and compared several options.", "topic": "search index"}
+{"event_id": "ENG-0336", "timestamp": "2026-01-01T00:00:00Z", "speaker": "Alex", "text": "The team discussed deployment rollback and compared several options.", "topic": "deployment rollback"}
+{"event_id": "ENG-0028", "timestamp": "2026-01-01T04:00:00Z", "speaker": "Sam", "text": "The team discussed search index and compared several options.", "topic": "search index"}
+{"event_id": "ENG-0196", "timestamp": "2026-01-01T04:00:00Z", "speaker": "Sam", "text": "The team discussed deployment rollback and compared several options.", "topic": "deployment rollback"}
+{"event_id": "ENG-0364", "timestamp": "2026-01-01T04:00:00Z", "speaker": "Sam", "text": "The team discussed Redis retry policy and compared several options.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0056", "timestamp": "2026-01-01T08:00:00Z", "speaker": "Priya", "text": "The team discussed deployment rollback and compared several options.", "topic": "deployment rollback"}
+{"event_id": "ENG-0224", "timestamp": "2026-01-01T08:00:00Z", "speaker": "Priya", "text": "The team discussed Redis retry policy and compared several options.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0392", "timestamp": "2026-01-01T08:00:00Z", "speaker": "Priya", "text": "The team discussed API rate limit and compared several options.", "topic": "API rate limit"}
+{"event_id": "ENG-0084", "timestamp": "2026-01-01T12:00:00Z", "speaker": "Alex", "text": "The team discussed Redis retry policy and compared several options.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0252", "timestamp": "2026-01-01T12:00:00Z", "speaker": "Alex", "text": "The team discussed API rate limit and compared several options.", "topic": "API rate limit"}
+{"event_id": "ENG-0420", "timestamp": "2026-01-01T12:00:00Z", "speaker": "Alex", "text": "The team discussed invoice timeout and compared several options.", "topic": "invoice timeout"}
+{"event_id": "ENG-0112", "timestamp": "2026-01-01T16:00:00Z", "speaker": "Sam", "text": "The team discussed API rate limit and compared several options.", "topic": "API rate limit"}
+{"event_id": "ENG-0280", "timestamp": "2026-01-01T16:00:00Z", "speaker": "Sam", "text": "The team discussed invoice timeout and compared several options.", "topic": "invoice timeout"}
+{"event_id": "ENG-0448", "timestamp": "2026-01-01T16:00:00Z", "speaker": "Sam", "text": "The team discussed search index and compared several options.", "topic": "search index"}
+{"event_id": "ENG-0140", "timestamp": "2026-01-01T20:00:00Z", "speaker": "Priya", "text": "The team discussed invoice timeout and compared several options.", "topic": "invoice timeout"}
+{"event_id": "ENG-0308", "timestamp": "2026-01-01T20:00:00Z", "speaker": "Priya", "text": "The team discussed search index and compared several options. The discussion continued with related operational details.", "topic": "search index"}
+{"event_id": "ENG-0476", "timestamp": "2026-01-01T20:00:00Z", "speaker": "Priya", "text": "The team discussed deployment rollback and compared several options. Earlier notes were reviewed before moving on.", "topic": "deployment rollback"}
+{"event_id": "ENG-0001", "timestamp": "2026-01-02T01:00:00Z", "speaker": "Sam", "text": "Someone mentioned PostgreSQL migration during the meeting without making a decision.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0169", "timestamp": "2026-01-02T01:00:00Z", "speaker": "Sam", "text": "Someone mentioned cache invalidation during the meeting without making a decision.", "topic": "cache invalidation"}
+{"event_id": "ENG-0337", "timestamp": "2026-01-02T01:00:00Z", "speaker": "Sam", "text": "Someone mentioned DynamoDB migration during the meeting without making a decision.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0029", "timestamp": "2026-01-02T05:00:00Z", "speaker": "Priya", "text": "Someone mentioned cache invalidation during the meeting without making a decision.", "topic": "cache invalidation"}
+{"event_id": "ENG-0197", "timestamp": "2026-01-02T05:00:00Z", "speaker": "Priya", "text": "Someone mentioned DynamoDB migration during the meeting without making a decision.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0365", "timestamp": "2026-01-02T05:00:00Z", "speaker": "Priya", "text": "Someone mentioned CI pipeline during the meeting without making a decision.", "topic": "CI pipeline"}
+{"event_id": "ENG-0057", "timestamp": "2026-01-02T09:00:00Z", "speaker": "Alex", "text": "Someone mentioned DynamoDB migration during the meeting without making a decision.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0225", "timestamp": "2026-01-02T09:00:00Z", "speaker": "Alex", "text": "Someone mentioned CI pipeline during the meeting without making a decision.", "topic": "CI pipeline"}
+{"event_id": "ENG-0393", "timestamp": "2026-01-02T09:00:00Z", "speaker": "Alex", "text": "Someone mentioned webhook delivery during the meeting without making a decision.", "topic": "webhook delivery"}
+{"event_id": "ENG-0085", "timestamp": "2026-01-02T13:00:00Z", "speaker": "Sam", "text": "Someone mentioned CI pipeline during the meeting without making a decision. Earlier notes were reviewed before moving on.", "topic": "CI pipeline"}
+{"event_id": "ENG-0253", "timestamp": "2026-01-02T13:00:00Z", "speaker": "Sam", "text": "Someone mentioned webhook delivery during the meeting without making a decision. The discussion continued with related operational details.", "topic": "webhook delivery"}
+{"event_id": "ENG-0421", "timestamp": "2026-01-02T13:00:00Z", "speaker": "Sam", "text": "Someone mentioned PostgreSQL migration during the meeting without making a decision.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0113", "timestamp": "2026-01-02T17:00:00Z", "speaker": "Priya", "text": "Someone mentioned webhook delivery during the meeting without making a decision.", "topic": "webhook delivery"}
+{"event_id": "ENG-0281", "timestamp": "2026-01-02T17:00:00Z", "speaker": "Priya", "text": "Someone mentioned PostgreSQL migration during the meeting without making a decision.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0449", "timestamp": "2026-01-02T17:00:00Z", "speaker": "Priya", "text": "Someone mentioned cache invalidation during the meeting without making a decision.", "topic": "cache invalidation"}
+{"event_id": "ENG-0141", "timestamp": "2026-01-02T21:00:00Z", "speaker": "Alex", "text": "Someone mentioned PostgreSQL migration during the meeting without making a decision.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0309", "timestamp": "2026-01-02T21:00:00Z", "speaker": "Alex", "text": "Someone mentioned cache invalidation during the meeting without making a decision.", "topic": "cache invalidation"}
+{"event_id": "ENG-0477", "timestamp": "2026-01-02T21:00:00Z", "speaker": "Alex", "text": "Someone mentioned DynamoDB migration during the meeting without making a decision.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0002", "timestamp": "2026-01-03T02:00:00Z", "speaker": "Priya", "text": "A possible future approach involving API rate limit was considered.", "topic": "API rate limit"}
+{"event_id": "ENG-0170", "timestamp": "2026-01-03T02:00:00Z", "speaker": "Priya", "text": "A possible future approach involving invoice timeout was considered. Earlier notes were reviewed before moving on.", "topic": "invoice timeout"}
+{"event_id": "ENG-0338", "timestamp": "2026-01-03T02:00:00Z", "speaker": "Priya", "text": "A possible future approach involving search index was considered.", "topic": "search index"}
+{"event_id": "ENG-0030", "timestamp": "2026-01-03T06:00:00Z", "speaker": "Alex", "text": "Decision: invoice timeout was approved after reviewing the alternatives.", "topic": "invoice timeout"}
+{"event_id": "ENG-0198", "timestamp": "2026-01-03T06:00:00Z", "speaker": "Alex", "text": "A possible future approach involving search index was considered. The discussion continued with related operational details.", "topic": "search index"}
+{"event_id": "ENG-0366", "timestamp": "2026-01-03T06:00:00Z", "speaker": "Alex", "text": "A possible future approach involving deployment rollback was considered.", "topic": "deployment rollback"}
+{"event_id": "ENG-0058", "timestamp": "2026-01-03T10:00:00Z", "speaker": "Sam", "text": "A possible future approach involving search index was considered.", "topic": "search index"}
+{"event_id": "ENG-0226", "timestamp": "2026-01-03T10:00:00Z", "speaker": "Sam", "text": "A possible future approach involving deployment rollback was considered.", "topic": "deployment rollback"}
+{"event_id": "ENG-0394", "timestamp": "2026-01-03T10:00:00Z", "speaker": "Sam", "text": "A possible future approach involving Redis retry policy was considered.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0086", "timestamp": "2026-01-03T14:00:00Z", "speaker": "Priya", "text": "A possible future approach involving deployment rollback was considered.", "topic": "deployment rollback"}
+{"event_id": "ENG-0254", "timestamp": "2026-01-03T14:00:00Z", "speaker": "Priya", "text": "A possible future approach involving Redis retry policy was considered.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0422", "timestamp": "2026-01-03T14:00:00Z", "speaker": "Priya", "text": "A possible future approach involving API rate limit was considered.", "topic": "API rate limit"}
+{"event_id": "ENG-0114", "timestamp": "2026-01-03T18:00:00Z", "speaker": "Alex", "text": "A possible future approach involving Redis retry policy was considered.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0282", "timestamp": "2026-01-03T18:00:00Z", "speaker": "Alex", "text": "A possible future approach involving API rate limit was considered.", "topic": "API rate limit"}
+{"event_id": "ENG-0450", "timestamp": "2026-01-03T18:00:00Z", "speaker": "Alex", "text": "Decision: invoice timeout was approved after reviewing the alternatives.", "topic": "invoice timeout"}
+{"event_id": "ENG-0142", "timestamp": "2026-01-03T22:00:00Z", "speaker": "Sam", "text": "A possible future approach involving API rate limit was considered.", "topic": "API rate limit"}
+{"event_id": "ENG-0310", "timestamp": "2026-01-03T22:00:00Z", "speaker": "Sam", "text": "A possible future approach involving invoice timeout was considered.", "topic": "invoice timeout"}
+{"event_id": "ENG-0478", "timestamp": "2026-01-03T22:00:00Z", "speaker": "Sam", "text": "A possible future approach involving search index was considered.", "topic": "search index"}
+{"event_id": "ENG-0003", "timestamp": "2026-01-04T03:00:00Z", "speaker": "Alex", "text": "The team revisited webhook delivery as background context.", "topic": "webhook delivery"}
+{"event_id": "ENG-0171", "timestamp": "2026-01-04T03:00:00Z", "speaker": "Alex", "text": "The team revisited PostgreSQL migration as background context.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0339", "timestamp": "2026-01-04T03:00:00Z", "speaker": "Alex", "text": "The team revisited cache invalidation as background context.", "topic": "cache invalidation"}
+{"event_id": "ENG-0031", "timestamp": "2026-01-04T07:00:00Z", "speaker": "Sam", "text": "The team revisited PostgreSQL migration as background context.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0199", "timestamp": "2026-01-04T07:00:00Z", "speaker": "Sam", "text": "The team revisited cache invalidation as background context.", "topic": "cache invalidation"}
+{"event_id": "ENG-0367", "timestamp": "2026-01-04T07:00:00Z", "speaker": "Sam", "text": "The team revisited DynamoDB migration as background context.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0059", "timestamp": "2026-01-04T11:00:00Z", "speaker": "Priya", "text": "The team revisited cache invalidation as background context.", "topic": "cache invalidation"}
+{"event_id": "ENG-0227", "timestamp": "2026-01-04T11:00:00Z", "speaker": "Priya", "text": "Change: DynamoDB migration was replaced by a newer approach; the earlier state is obsolete.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0395", "timestamp": "2026-01-04T11:00:00Z", "speaker": "Priya", "text": "Change: CI pipeline was replaced by a newer approach; the earlier state is obsolete.", "topic": "CI pipeline"}
+{"event_id": "ENG-0087", "timestamp": "2026-01-04T15:00:00Z", "speaker": "Alex", "text": "The team revisited DynamoDB migration as background context.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0255", "timestamp": "2026-01-04T15:00:00Z", "speaker": "Alex", "text": "The team revisited CI pipeline as background context. Earlier notes were reviewed before moving on.", "topic": "CI pipeline"}
+{"event_id": "ENG-0423", "timestamp": "2026-01-04T15:00:00Z", "speaker": "Alex", "text": "The team revisited webhook delivery as background context.", "topic": "webhook delivery"}
+{"event_id": "ENG-0115", "timestamp": "2026-01-04T19:00:00Z", "speaker": "Sam", "text": "The team revisited CI pipeline as background context.", "topic": "CI pipeline"}
+{"event_id": "ENG-0283", "timestamp": "2026-01-04T19:00:00Z", "speaker": "Sam", "text": "The team revisited webhook delivery as background context.", "topic": "webhook delivery"}
+{"event_id": "ENG-0451", "timestamp": "2026-01-04T19:00:00Z", "speaker": "Sam", "text": "The team revisited PostgreSQL migration as background context. The discussion continued with related operational details.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0143", "timestamp": "2026-01-04T23:00:00Z", "speaker": "Priya", "text": "The team revisited webhook delivery as background context. The discussion continued with related operational details.", "topic": "webhook delivery"}
+{"event_id": "ENG-0311", "timestamp": "2026-01-04T23:00:00Z", "speaker": "Priya", "text": "The team revisited PostgreSQL migration as background context.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0479", "timestamp": "2026-01-04T23:00:00Z", "speaker": "Priya", "text": "The team revisited cache invalidation as background context.", "topic": "cache invalidation"}
+{"event_id": "ENG-0144", "timestamp": "2026-01-05T00:00:00Z", "speaker": "Alex", "text": "Decision: Redis retry policy was approved after reviewing the alternatives.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0312", "timestamp": "2026-01-05T00:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned API rate limit, but it did not change the current state.", "topic": "API rate limit"}
+{"event_id": "ENG-0480", "timestamp": "2026-01-05T00:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned invoice timeout, but it did not change the current state.", "topic": "invoice timeout"}
+{"event_id": "ENG-0004", "timestamp": "2026-01-05T04:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned Redis retry policy, but it did not change the current state.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0172", "timestamp": "2026-01-05T04:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned API rate limit, but it did not change the current state.", "topic": "API rate limit"}
+{"event_id": "ENG-0340", "timestamp": "2026-01-05T04:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned invoice timeout, but it did not change the current state. Earlier notes were reviewed before moving on.", "topic": "invoice timeout"}
+{"event_id": "ENG-0032", "timestamp": "2026-01-05T08:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned API rate limit, but it did not change the current state.", "topic": "API rate limit"}
+{"event_id": "ENG-0200", "timestamp": "2026-01-05T08:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned invoice timeout, but it did not change the current state.", "topic": "invoice timeout"}
+{"event_id": "ENG-0368", "timestamp": "2026-01-05T08:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned search index, but it did not change the current state.", "topic": "search index"}
+{"event_id": "ENG-0060", "timestamp": "2026-01-05T12:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned invoice timeout, but it did not change the current state.", "topic": "invoice timeout"}
+{"event_id": "ENG-0228", "timestamp": "2026-01-05T12:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned search index, but it did not change the current state.", "topic": "search index"}
+{"event_id": "ENG-0396", "timestamp": "2026-01-05T12:00:00Z", "speaker": "Alex", "text": "Decision: deployment rollback was approved after reviewing the alternatives. The discussion continued with related operational details.", "topic": "deployment rollback"}
+{"event_id": "ENG-0088", "timestamp": "2026-01-05T16:00:00Z", "speaker": "Sam", "text": "Plan: search index remains unresolved and no final decision has been confirmed. The discussion continued with related operational details.", "topic": "search index"}
+{"event_id": "ENG-0256", "timestamp": "2026-01-05T16:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned deployment rollback, but it did not change the current state.", "topic": "deployment rollback"}
+{"event_id": "ENG-0424", "timestamp": "2026-01-05T16:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned Redis retry policy, but it did not change the current state.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0116", "timestamp": "2026-01-05T20:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned deployment rollback, but it did not change the current state.", "topic": "deployment rollback"}
+{"event_id": "ENG-0284", "timestamp": "2026-01-05T20:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned Redis retry policy, but it did not change the current state.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0452", "timestamp": "2026-01-05T20:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned API rate limit, but it did not change the current state.", "topic": "API rate limit"}
+{"event_id": "ENG-0145", "timestamp": "2026-01-06T01:00:00Z", "speaker": "Sam", "text": "An earlier note about CI pipeline was repeated for context.", "topic": "CI pipeline"}
+{"event_id": "ENG-0313", "timestamp": "2026-01-06T01:00:00Z", "speaker": "Sam", "text": "An earlier note about webhook delivery was repeated for context.", "topic": "webhook delivery"}
+{"event_id": "ENG-0481", "timestamp": "2026-01-06T01:00:00Z", "speaker": "Sam", "text": "An earlier note about PostgreSQL migration was repeated for context.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0005", "timestamp": "2026-01-06T05:00:00Z", "speaker": "Priya", "text": "An earlier note about CI pipeline was repeated for context.", "topic": "CI pipeline"}
+{"event_id": "ENG-0173", "timestamp": "2026-01-06T05:00:00Z", "speaker": "Priya", "text": "An earlier note about webhook delivery was repeated for context.", "topic": "webhook delivery"}
+{"event_id": "ENG-0341", "timestamp": "2026-01-06T05:00:00Z", "speaker": "Priya", "text": "An earlier note about PostgreSQL migration was repeated for context. The discussion continued with related operational details.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0033", "timestamp": "2026-01-06T09:00:00Z", "speaker": "Alex", "text": "An earlier note about webhook delivery was repeated for context. The discussion continued with related operational details.", "topic": "webhook delivery"}
+{"event_id": "ENG-0201", "timestamp": "2026-01-06T09:00:00Z", "speaker": "Alex", "text": "An earlier note about PostgreSQL migration was repeated for context.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0369", "timestamp": "2026-01-06T09:00:00Z", "speaker": "Alex", "text": "An earlier note about cache invalidation was repeated for context.", "topic": "cache invalidation"}
+{"event_id": "ENG-0061", "timestamp": "2026-01-06T13:00:00Z", "speaker": "Sam", "text": "An earlier note about PostgreSQL migration was repeated for context.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0229", "timestamp": "2026-01-06T13:00:00Z", "speaker": "Sam", "text": "An earlier note about cache invalidation was repeated for context.", "topic": "cache invalidation"}
+{"event_id": "ENG-0397", "timestamp": "2026-01-06T13:00:00Z", "speaker": "Sam", "text": "An earlier note about DynamoDB migration was repeated for context.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0089", "timestamp": "2026-01-06T17:00:00Z", "speaker": "Priya", "text": "An earlier note about cache invalidation was repeated for context.", "topic": "cache invalidation"}
+{"event_id": "ENG-0257", "timestamp": "2026-01-06T17:00:00Z", "speaker": "Priya", "text": "An earlier note about DynamoDB migration was repeated for context.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0425", "timestamp": "2026-01-06T17:00:00Z", "speaker": "Priya", "text": "An earlier note about CI pipeline was repeated for context. Earlier notes were reviewed before moving on.", "topic": "CI pipeline"}
+{"event_id": "ENG-0117", "timestamp": "2026-01-06T21:00:00Z", "speaker": "Alex", "text": "An earlier note about DynamoDB migration was repeated for context.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0285", "timestamp": "2026-01-06T21:00:00Z", "speaker": "Alex", "text": "An earlier note about CI pipeline was repeated for context.", "topic": "CI pipeline"}
+{"event_id": "ENG-0453", "timestamp": "2026-01-06T21:00:00Z", "speaker": "Alex", "text": "An earlier note about webhook delivery was repeated for context.", "topic": "webhook delivery"}
+{"event_id": "ENG-0146", "timestamp": "2026-01-07T02:00:00Z", "speaker": "Priya", "text": "The group asked whether deployment rollback might matter later.", "topic": "deployment rollback"}
+{"event_id": "ENG-0314", "timestamp": "2026-01-07T02:00:00Z", "speaker": "Priya", "text": "The group asked whether Redis retry policy might matter later.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0482", "timestamp": "2026-01-07T02:00:00Z", "speaker": "Priya", "text": "The group asked whether API rate limit might matter later.", "topic": "API rate limit"}
+{"event_id": "ENG-0006", "timestamp": "2026-01-07T06:00:00Z", "speaker": "Alex", "text": "The group asked whether deployment rollback might matter later.", "topic": "deployment rollback"}
+{"event_id": "ENG-0174", "timestamp": "2026-01-07T06:00:00Z", "speaker": "Alex", "text": "The group asked whether Redis retry policy might matter later.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0342", "timestamp": "2026-01-07T06:00:00Z", "speaker": "Alex", "text": "The group asked whether API rate limit might matter later.", "topic": "API rate limit"}
+{"event_id": "ENG-0034", "timestamp": "2026-01-07T10:00:00Z", "speaker": "Sam", "text": "The group asked whether Redis retry policy might matter later. Earlier notes were reviewed before moving on.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0202", "timestamp": "2026-01-07T10:00:00Z", "speaker": "Sam", "text": "The group asked whether API rate limit might matter later.", "topic": "API rate limit"}
+{"event_id": "ENG-0370", "timestamp": "2026-01-07T10:00:00Z", "speaker": "Sam", "text": "The group asked whether invoice timeout might matter later.", "topic": "invoice timeout"}
+{"event_id": "ENG-0062", "timestamp": "2026-01-07T14:00:00Z", "speaker": "Priya", "text": "The group asked whether API rate limit might matter later.", "topic": "API rate limit"}
+{"event_id": "ENG-0230", "timestamp": "2026-01-07T14:00:00Z", "speaker": "Priya", "text": "The group asked whether invoice timeout might matter later.", "topic": "invoice timeout"}
+{"event_id": "ENG-0398", "timestamp": "2026-01-07T14:00:00Z", "speaker": "Priya", "text": "The group asked whether search index might matter later.", "topic": "search index"}
+{"event_id": "ENG-0090", "timestamp": "2026-01-07T18:00:00Z", "speaker": "Alex", "text": "The group asked whether invoice timeout might matter later.", "topic": "invoice timeout"}
+{"event_id": "ENG-0258", "timestamp": "2026-01-07T18:00:00Z", "speaker": "Alex", "text": "The group asked whether search index might matter later.", "topic": "search index"}
+{"event_id": "ENG-0426", "timestamp": "2026-01-07T18:00:00Z", "speaker": "Alex", "text": "The group asked whether deployment rollback might matter later.", "topic": "deployment rollback"}
+{"event_id": "ENG-0118", "timestamp": "2026-01-07T22:00:00Z", "speaker": "Sam", "text": "The group asked whether search index might matter later.", "topic": "search index"}
+{"event_id": "ENG-0286", "timestamp": "2026-01-07T22:00:00Z", "speaker": "Sam", "text": "The group asked whether deployment rollback might matter later. The discussion continued with related operational details.", "topic": "deployment rollback"}
+{"event_id": "ENG-0454", "timestamp": "2026-01-07T22:00:00Z", "speaker": "Sam", "text": "The group asked whether Redis retry policy might matter later.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0147", "timestamp": "2026-01-08T03:00:00Z", "speaker": "Alex", "text": "The team discussed DynamoDB migration and compared several options.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0315", "timestamp": "2026-01-08T03:00:00Z", "speaker": "Alex", "text": "The team discussed CI pipeline and compared several options.", "topic": "CI pipeline"}
+{"event_id": "ENG-0483", "timestamp": "2026-01-08T03:00:00Z", "speaker": "Alex", "text": "The team discussed webhook delivery and compared several options.", "topic": "webhook delivery"}
+{"event_id": "ENG-0007", "timestamp": "2026-01-08T07:00:00Z", "speaker": "Sam", "text": "The team discussed DynamoDB migration and compared several options.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0175", "timestamp": "2026-01-08T07:00:00Z", "speaker": "Sam", "text": "The team discussed CI pipeline and compared several options.", "topic": "CI pipeline"}
+{"event_id": "ENG-0343", "timestamp": "2026-01-08T07:00:00Z", "speaker": "Sam", "text": "Action: the team attempted webhook delivery; the first attempt failed.", "topic": "webhook delivery"}
+{"event_id": "ENG-0035", "timestamp": "2026-01-08T11:00:00Z", "speaker": "Priya", "text": "The team discussed CI pipeline and compared several options.", "topic": "CI pipeline"}
+{"event_id": "ENG-0203", "timestamp": "2026-01-08T11:00:00Z", "speaker": "Priya", "text": "The team discussed webhook delivery and compared several options.", "topic": "webhook delivery"}
+{"event_id": "ENG-0371", "timestamp": "2026-01-08T11:00:00Z", "speaker": "Priya", "text": "The team discussed PostgreSQL migration and compared several options.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0063", "timestamp": "2026-01-08T15:00:00Z", "speaker": "Alex", "text": "The team discussed webhook delivery and compared several options.", "topic": "webhook delivery"}
+{"event_id": "ENG-0231", "timestamp": "2026-01-08T15:00:00Z", "speaker": "Alex", "text": "The team discussed PostgreSQL migration and compared several options. The discussion continued with related operational details.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0399", "timestamp": "2026-01-08T15:00:00Z", "speaker": "Alex", "text": "The team discussed cache invalidation and compared several options.", "topic": "cache invalidation"}
+{"event_id": "ENG-0091", "timestamp": "2026-01-08T19:00:00Z", "speaker": "Sam", "text": "The team discussed PostgreSQL migration and compared several options.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0259", "timestamp": "2026-01-08T19:00:00Z", "speaker": "Sam", "text": "The team discussed cache invalidation and compared several options.", "topic": "cache invalidation"}
+{"event_id": "ENG-0427", "timestamp": "2026-01-08T19:00:00Z", "speaker": "Sam", "text": "The team discussed DynamoDB migration and compared several options.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0119", "timestamp": "2026-01-08T23:00:00Z", "speaker": "Priya", "text": "The team discussed cache invalidation and compared several options. Earlier notes were reviewed before moving on.", "topic": "cache invalidation"}
+{"event_id": "ENG-0287", "timestamp": "2026-01-08T23:00:00Z", "speaker": "Priya", "text": "The team discussed DynamoDB migration and compared several options.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0455", "timestamp": "2026-01-08T23:00:00Z", "speaker": "Priya", "text": "The team discussed CI pipeline and compared several options.", "topic": "CI pipeline"}
+{"event_id": "ENG-0120", "timestamp": "2026-01-09T00:00:00Z", "speaker": "Alex", "text": "Someone mentioned invoice timeout during the meeting without making a decision.", "topic": "invoice timeout"}
+{"event_id": "ENG-0288", "timestamp": "2026-01-09T00:00:00Z", "speaker": "Alex", "text": "Someone mentioned search index during the meeting without making a decision.", "topic": "search index"}
+{"event_id": "ENG-0456", "timestamp": "2026-01-09T00:00:00Z", "speaker": "Alex", "text": "Someone mentioned deployment rollback during the meeting without making a decision.", "topic": "deployment rollback"}
+{"event_id": "ENG-0148", "timestamp": "2026-01-09T04:00:00Z", "speaker": "Sam", "text": "Someone mentioned search index during the meeting without making a decision.", "topic": "search index"}
+{"event_id": "ENG-0316", "timestamp": "2026-01-09T04:00:00Z", "speaker": "Sam", "text": "Someone mentioned deployment rollback during the meeting without making a decision.", "topic": "deployment rollback"}
+{"event_id": "ENG-0484", "timestamp": "2026-01-09T04:00:00Z", "speaker": "Sam", "text": "Someone mentioned Redis retry policy during the meeting without making a decision. The discussion continued with related operational details.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0008", "timestamp": "2026-01-09T08:00:00Z", "speaker": "Priya", "text": "Someone mentioned search index during the meeting without making a decision.", "topic": "search index"}
+{"event_id": "ENG-0176", "timestamp": "2026-01-09T08:00:00Z", "speaker": "Priya", "text": "Someone mentioned deployment rollback during the meeting without making a decision. The discussion continued with related operational details.", "topic": "deployment rollback"}
+{"event_id": "ENG-0344", "timestamp": "2026-01-09T08:00:00Z", "speaker": "Priya", "text": "Someone mentioned Redis retry policy during the meeting without making a decision.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0036", "timestamp": "2026-01-09T12:00:00Z", "speaker": "Alex", "text": "Someone mentioned deployment rollback during the meeting without making a decision.", "topic": "deployment rollback"}
+{"event_id": "ENG-0204", "timestamp": "2026-01-09T12:00:00Z", "speaker": "Alex", "text": "Decision: Redis retry policy was approved after reviewing the alternatives. Earlier notes were reviewed before moving on.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0372", "timestamp": "2026-01-09T12:00:00Z", "speaker": "Alex", "text": "Someone mentioned API rate limit during the meeting without making a decision.", "topic": "API rate limit"}
+{"event_id": "ENG-0064", "timestamp": "2026-01-09T16:00:00Z", "speaker": "Sam", "text": "Someone mentioned Redis retry policy during the meeting without making a decision.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0232", "timestamp": "2026-01-09T16:00:00Z", "speaker": "Sam", "text": "Someone mentioned API rate limit during the meeting without making a decision.", "topic": "API rate limit"}
+{"event_id": "ENG-0400", "timestamp": "2026-01-09T16:00:00Z", "speaker": "Sam", "text": "Someone mentioned invoice timeout during the meeting without making a decision.", "topic": "invoice timeout"}
+{"event_id": "ENG-0092", "timestamp": "2026-01-09T20:00:00Z", "speaker": "Priya", "text": "Someone mentioned API rate limit during the meeting without making a decision.", "topic": "API rate limit"}
+{"event_id": "ENG-0260", "timestamp": "2026-01-09T20:00:00Z", "speaker": "Priya", "text": "Someone mentioned invoice timeout during the meeting without making a decision.", "topic": "invoice timeout"}
+{"event_id": "ENG-0428", "timestamp": "2026-01-09T20:00:00Z", "speaker": "Priya", "text": "Someone mentioned search index during the meeting without making a decision.", "topic": "search index"}
+{"event_id": "ENG-0121", "timestamp": "2026-01-10T01:00:00Z", "speaker": "Sam", "text": "Action: the team attempted PostgreSQL migration; the first attempt failed. The discussion continued with related operational details.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0289", "timestamp": "2026-01-10T01:00:00Z", "speaker": "Sam", "text": "A possible future approach involving cache invalidation was considered. Earlier notes were reviewed before moving on.", "topic": "cache invalidation"}
+{"event_id": "ENG-0457", "timestamp": "2026-01-10T01:00:00Z", "speaker": "Sam", "text": "A possible future approach involving DynamoDB migration was considered.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0149", "timestamp": "2026-01-10T05:00:00Z", "speaker": "Priya", "text": "A possible future approach involving cache invalidation was considered.", "topic": "cache invalidation"}
+{"event_id": "ENG-0317", "timestamp": "2026-01-10T05:00:00Z", "speaker": "Priya", "text": "A possible future approach involving DynamoDB migration was considered.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0485", "timestamp": "2026-01-10T05:00:00Z", "speaker": "Priya", "text": "A possible future approach involving CI pipeline was considered.", "topic": "CI pipeline"}
+{"event_id": "ENG-0009", "timestamp": "2026-01-10T09:00:00Z", "speaker": "Alex", "text": "A possible future approach involving cache invalidation was considered.", "topic": "cache invalidation"}
+{"event_id": "ENG-0177", "timestamp": "2026-01-10T09:00:00Z", "speaker": "Alex", "text": "A possible future approach involving DynamoDB migration was considered.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0345", "timestamp": "2026-01-10T09:00:00Z", "speaker": "Alex", "text": "A possible future approach involving CI pipeline was considered.", "topic": "CI pipeline"}
+{"event_id": "ENG-0037", "timestamp": "2026-01-10T13:00:00Z", "speaker": "Sam", "text": "Action: the team attempted DynamoDB migration; the first attempt failed.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0205", "timestamp": "2026-01-10T13:00:00Z", "speaker": "Sam", "text": "A possible future approach involving CI pipeline was considered.", "topic": "CI pipeline"}
+{"event_id": "ENG-0373", "timestamp": "2026-01-10T13:00:00Z", "speaker": "Sam", "text": "A possible future approach involving webhook delivery was considered.", "topic": "webhook delivery"}
+{"event_id": "ENG-0065", "timestamp": "2026-01-10T17:00:00Z", "speaker": "Priya", "text": "A possible future approach involving CI pipeline was considered.", "topic": "CI pipeline"}
+{"event_id": "ENG-0233", "timestamp": "2026-01-10T17:00:00Z", "speaker": "Priya", "text": "A possible future approach involving webhook delivery was considered.", "topic": "webhook delivery"}
+{"event_id": "ENG-0401", "timestamp": "2026-01-10T17:00:00Z", "speaker": "Priya", "text": "A possible future approach involving PostgreSQL migration was considered.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0093", "timestamp": "2026-01-10T21:00:00Z", "speaker": "Alex", "text": "A possible future approach involving webhook delivery was considered.", "topic": "webhook delivery"}
+{"event_id": "ENG-0261", "timestamp": "2026-01-10T21:00:00Z", "speaker": "Alex", "text": "A possible future approach involving PostgreSQL migration was considered.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0429", "timestamp": "2026-01-10T21:00:00Z", "speaker": "Alex", "text": "A possible future approach involving cache invalidation was considered. The discussion continued with related operational details.", "topic": "cache invalidation"}
+{"event_id": "ENG-0122", "timestamp": "2026-01-11T02:00:00Z", "speaker": "Priya", "text": "The team revisited API rate limit as background context.", "topic": "API rate limit"}
+{"event_id": "ENG-0290", "timestamp": "2026-01-11T02:00:00Z", "speaker": "Priya", "text": "The team revisited invoice timeout as background context.", "topic": "invoice timeout"}
+{"event_id": "ENG-0458", "timestamp": "2026-01-11T02:00:00Z", "speaker": "Priya", "text": "Outcome: search index was confirmed successful after the follow-up check.", "topic": "search index"}
+{"event_id": "ENG-0150", "timestamp": "2026-01-11T06:00:00Z", "speaker": "Alex", "text": "The team revisited invoice timeout as background context.", "topic": "invoice timeout"}
+{"event_id": "ENG-0318", "timestamp": "2026-01-11T06:00:00Z", "speaker": "Alex", "text": "The team revisited search index as background context.", "topic": "search index"}
+{"event_id": "ENG-0486", "timestamp": "2026-01-11T06:00:00Z", "speaker": "Alex", "text": "The team revisited deployment rollback as background context.", "topic": "deployment rollback"}
+{"event_id": "ENG-0010", "timestamp": "2026-01-11T10:00:00Z", "speaker": "Sam", "text": "The team revisited invoice timeout as background context.", "topic": "invoice timeout"}
+{"event_id": "ENG-0178", "timestamp": "2026-01-11T10:00:00Z", "speaker": "Sam", "text": "The team revisited search index as background context.", "topic": "search index"}
+{"event_id": "ENG-0346", "timestamp": "2026-01-11T10:00:00Z", "speaker": "Sam", "text": "The team revisited deployment rollback as background context.", "topic": "deployment rollback"}
+{"event_id": "ENG-0038", "timestamp": "2026-01-11T14:00:00Z", "speaker": "Priya", "text": "The team revisited search index as background context.", "topic": "search index"}
+{"event_id": "ENG-0206", "timestamp": "2026-01-11T14:00:00Z", "speaker": "Priya", "text": "The team revisited deployment rollback as background context.", "topic": "deployment rollback"}
+{"event_id": "ENG-0374", "timestamp": "2026-01-11T14:00:00Z", "speaker": "Priya", "text": "The team revisited Redis retry policy as background context. The discussion continued with related operational details. Earlier notes were reviewed before moving on.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0066", "timestamp": "2026-01-11T18:00:00Z", "speaker": "Alex", "text": "The team revisited deployment rollback as background context. The discussion continued with related operational details.", "topic": "deployment rollback"}
+{"event_id": "ENG-0234", "timestamp": "2026-01-11T18:00:00Z", "speaker": "Alex", "text": "The team revisited Redis retry policy as background context.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0402", "timestamp": "2026-01-11T18:00:00Z", "speaker": "Alex", "text": "The team revisited API rate limit as background context.", "topic": "API rate limit"}
+{"event_id": "ENG-0094", "timestamp": "2026-01-11T22:00:00Z", "speaker": "Sam", "text": "The team revisited Redis retry policy as background context.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0262", "timestamp": "2026-01-11T22:00:00Z", "speaker": "Sam", "text": "The team revisited API rate limit as background context.", "topic": "API rate limit"}
+{"event_id": "ENG-0430", "timestamp": "2026-01-11T22:00:00Z", "speaker": "Sam", "text": "Plan: invoice timeout remains unresolved and no final decision has been confirmed.", "topic": "invoice timeout"}
+{"event_id": "ENG-0123", "timestamp": "2026-01-12T03:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned webhook delivery, but it did not change the current state.", "topic": "webhook delivery"}
+{"event_id": "ENG-0291", "timestamp": "2026-01-12T03:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned PostgreSQL migration, but it did not change the current state.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0459", "timestamp": "2026-01-12T03:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned cache invalidation, but it did not change the current state. Earlier notes were reviewed before moving on.", "topic": "cache invalidation"}
+{"event_id": "ENG-0151", "timestamp": "2026-01-12T07:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned PostgreSQL migration, but it did not change the current state.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0319", "timestamp": "2026-01-12T07:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned cache invalidation, but it did not change the current state. The discussion continued with related operational details.", "topic": "cache invalidation"}
+{"event_id": "ENG-0487", "timestamp": "2026-01-12T07:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned DynamoDB migration, but it did not change the current state.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0011", "timestamp": "2026-01-12T11:00:00Z", "speaker": "Priya", "text": "Change: PostgreSQL migration was replaced by a newer approach; the earlier state is obsolete. The discussion continued with related operational details.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0179", "timestamp": "2026-01-12T11:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned cache invalidation, but it did not change the current state.", "topic": "cache invalidation"}
+{"event_id": "ENG-0347", "timestamp": "2026-01-12T11:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned DynamoDB migration, but it did not change the current state.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0039", "timestamp": "2026-01-12T15:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned cache invalidation, but it did not change the current state.", "topic": "cache invalidation"}
+{"event_id": "ENG-0207", "timestamp": "2026-01-12T15:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned DynamoDB migration, but it did not change the current state.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0375", "timestamp": "2026-01-12T15:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned CI pipeline, but it did not change the current state.", "topic": "CI pipeline"}
+{"event_id": "ENG-0067", "timestamp": "2026-01-12T19:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned DynamoDB migration, but it did not change the current state.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0235", "timestamp": "2026-01-12T19:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned CI pipeline, but it did not change the current state.", "topic": "CI pipeline"}
+{"event_id": "ENG-0403", "timestamp": "2026-01-12T19:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned webhook delivery, but it did not change the current state.", "topic": "webhook delivery"}
+{"event_id": "ENG-0095", "timestamp": "2026-01-12T23:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned CI pipeline, but it did not change the current state.", "topic": "CI pipeline"}
+{"event_id": "ENG-0263", "timestamp": "2026-01-12T23:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned webhook delivery, but it did not change the current state.", "topic": "webhook delivery"}
+{"event_id": "ENG-0431", "timestamp": "2026-01-12T23:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned PostgreSQL migration, but it did not change the current state.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0096", "timestamp": "2026-01-13T00:00:00Z", "speaker": "Alex", "text": "An earlier note about deployment rollback was repeated for context.", "topic": "deployment rollback"}
+{"event_id": "ENG-0264", "timestamp": "2026-01-13T00:00:00Z", "speaker": "Alex", "text": "An earlier note about Redis retry policy was repeated for context. The discussion continued with related operational details.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0432", "timestamp": "2026-01-13T00:00:00Z", "speaker": "Alex", "text": "An earlier note about API rate limit was repeated for context.", "topic": "API rate limit"}
+{"event_id": "ENG-0124", "timestamp": "2026-01-13T04:00:00Z", "speaker": "Sam", "text": "An earlier note about Redis retry policy was repeated for context.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0292", "timestamp": "2026-01-13T04:00:00Z", "speaker": "Sam", "text": "An earlier note about API rate limit was repeated for context.", "topic": "API rate limit"}
+{"event_id": "ENG-0460", "timestamp": "2026-01-13T04:00:00Z", "speaker": "Sam", "text": "An earlier note about invoice timeout was repeated for context.", "topic": "invoice timeout"}
+{"event_id": "ENG-0152", "timestamp": "2026-01-13T08:00:00Z", "speaker": "Priya", "text": "An earlier note about API rate limit was repeated for context.", "topic": "API rate limit"}
+{"event_id": "ENG-0320", "timestamp": "2026-01-13T08:00:00Z", "speaker": "Priya", "text": "An earlier note about invoice timeout was repeated for context.", "topic": "invoice timeout"}
+{"event_id": "ENG-0488", "timestamp": "2026-01-13T08:00:00Z", "speaker": "Priya", "text": "An earlier note about search index was repeated for context.", "topic": "search index"}
+{"event_id": "ENG-0012", "timestamp": "2026-01-13T12:00:00Z", "speaker": "Alex", "text": "An earlier note about API rate limit was repeated for context.", "topic": "API rate limit"}
+{"event_id": "ENG-0180", "timestamp": "2026-01-13T12:00:00Z", "speaker": "Alex", "text": "An earlier note about invoice timeout was repeated for context.", "topic": "invoice timeout"}
+{"event_id": "ENG-0348", "timestamp": "2026-01-13T12:00:00Z", "speaker": "Alex", "text": "An earlier note about search index was repeated for context.", "topic": "search index"}
+{"event_id": "ENG-0040", "timestamp": "2026-01-13T16:00:00Z", "speaker": "Sam", "text": "An earlier note about invoice timeout was repeated for context.", "topic": "invoice timeout"}
+{"event_id": "ENG-0208", "timestamp": "2026-01-13T16:00:00Z", "speaker": "Sam", "text": "An earlier note about search index was repeated for context.", "topic": "search index"}
+{"event_id": "ENG-0376", "timestamp": "2026-01-13T16:00:00Z", "speaker": "Sam", "text": "An earlier note about deployment rollback was repeated for context.", "topic": "deployment rollback"}
+{"event_id": "ENG-0068", "timestamp": "2026-01-13T20:00:00Z", "speaker": "Priya", "text": "An earlier note about search index was repeated for context. Earlier notes were reviewed before moving on.", "topic": "search index"}
+{"event_id": "ENG-0236", "timestamp": "2026-01-13T20:00:00Z", "speaker": "Priya", "text": "An earlier note about deployment rollback was repeated for context.", "topic": "deployment rollback"}
+{"event_id": "ENG-0404", "timestamp": "2026-01-13T20:00:00Z", "speaker": "Priya", "text": "An earlier note about Redis retry policy was repeated for context.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0097", "timestamp": "2026-01-14T01:00:00Z", "speaker": "Sam", "text": "The group asked whether DynamoDB migration might matter later.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0265", "timestamp": "2026-01-14T01:00:00Z", "speaker": "Sam", "text": "The group asked whether CI pipeline might matter later.", "topic": "CI pipeline"}
+{"event_id": "ENG-0433", "timestamp": "2026-01-14T01:00:00Z", "speaker": "Sam", "text": "The group asked whether webhook delivery might matter later.", "topic": "webhook delivery"}
+{"event_id": "ENG-0125", "timestamp": "2026-01-14T05:00:00Z", "speaker": "Priya", "text": "The group asked whether CI pipeline might matter later.", "topic": "CI pipeline"}
+{"event_id": "ENG-0293", "timestamp": "2026-01-14T05:00:00Z", "speaker": "Priya", "text": "The group asked whether webhook delivery might matter later.", "topic": "webhook delivery"}
+{"event_id": "ENG-0461", "timestamp": "2026-01-14T05:00:00Z", "speaker": "Priya", "text": "The group asked whether PostgreSQL migration might matter later.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0153", "timestamp": "2026-01-14T09:00:00Z", "speaker": "Alex", "text": "The group asked whether webhook delivery might matter later. Earlier notes were reviewed before moving on.", "topic": "webhook delivery"}
+{"event_id": "ENG-0321", "timestamp": "2026-01-14T09:00:00Z", "speaker": "Alex", "text": "The group asked whether PostgreSQL migration might matter later.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0489", "timestamp": "2026-01-14T09:00:00Z", "speaker": "Alex", "text": "The group asked whether cache invalidation might matter later.", "topic": "cache invalidation"}
+{"event_id": "ENG-0013", "timestamp": "2026-01-14T13:00:00Z", "speaker": "Sam", "text": "The group asked whether webhook delivery might matter later.", "topic": "webhook delivery"}
+{"event_id": "ENG-0181", "timestamp": "2026-01-14T13:00:00Z", "speaker": "Sam", "text": "The group asked whether PostgreSQL migration might matter later.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0349", "timestamp": "2026-01-14T13:00:00Z", "speaker": "Sam", "text": "The group asked whether cache invalidation might matter later.", "topic": "cache invalidation"}
+{"event_id": "ENG-0041", "timestamp": "2026-01-14T17:00:00Z", "speaker": "Priya", "text": "The group asked whether PostgreSQL migration might matter later.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0209", "timestamp": "2026-01-14T17:00:00Z", "speaker": "Priya", "text": "The group asked whether cache invalidation might matter later. The discussion continued with related operational details.", "topic": "cache invalidation"}
+{"event_id": "ENG-0377", "timestamp": "2026-01-14T17:00:00Z", "speaker": "Priya", "text": "The group asked whether DynamoDB migration might matter later.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0069", "timestamp": "2026-01-14T21:00:00Z", "speaker": "Alex", "text": "The group asked whether cache invalidation might matter later.", "topic": "cache invalidation"}
+{"event_id": "ENG-0237", "timestamp": "2026-01-14T21:00:00Z", "speaker": "Alex", "text": "The group asked whether DynamoDB migration might matter later.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0405", "timestamp": "2026-01-14T21:00:00Z", "speaker": "Alex", "text": "The group asked whether CI pipeline might matter later.", "topic": "CI pipeline"}
+{"event_id": "ENG-0098", "timestamp": "2026-01-15T02:00:00Z", "speaker": "Priya", "text": "The team discussed search index and compared several options.", "topic": "search index"}
+{"event_id": "ENG-0266", "timestamp": "2026-01-15T02:00:00Z", "speaker": "Priya", "text": "The team discussed deployment rollback and compared several options.", "topic": "deployment rollback"}
+{"event_id": "ENG-0434", "timestamp": "2026-01-15T02:00:00Z", "speaker": "Priya", "text": "The team discussed Redis retry policy and compared several options.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0126", "timestamp": "2026-01-15T06:00:00Z", "speaker": "Alex", "text": "The team discussed deployment rollback and compared several options.", "topic": "deployment rollback"}
+{"event_id": "ENG-0294", "timestamp": "2026-01-15T06:00:00Z", "speaker": "Alex", "text": "The team discussed Redis retry policy and compared several options.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0462", "timestamp": "2026-01-15T06:00:00Z", "speaker": "Alex", "text": "The team discussed API rate limit and compared several options. The discussion continued with related operational details.", "topic": "API rate limit"}
+{"event_id": "ENG-0154", "timestamp": "2026-01-15T10:00:00Z", "speaker": "Sam", "text": "The team discussed Redis retry policy and compared several options. The discussion continued with related operational details.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0322", "timestamp": "2026-01-15T10:00:00Z", "speaker": "Sam", "text": "The team discussed API rate limit and compared several options.", "topic": "API rate limit"}
+{"event_id": "ENG-0490", "timestamp": "2026-01-15T10:00:00Z", "speaker": "Sam", "text": "The team discussed invoice timeout and compared several options.", "topic": "invoice timeout"}
+{"event_id": "ENG-0014", "timestamp": "2026-01-15T14:00:00Z", "speaker": "Priya", "text": "The team discussed Redis retry policy and compared several options.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0182", "timestamp": "2026-01-15T14:00:00Z", "speaker": "Priya", "text": "The team discussed API rate limit and compared several options.", "topic": "API rate limit"}
+{"event_id": "ENG-0350", "timestamp": "2026-01-15T14:00:00Z", "speaker": "Priya", "text": "The team discussed invoice timeout and compared several options.", "topic": "invoice timeout"}
+{"event_id": "ENG-0042", "timestamp": "2026-01-15T18:00:00Z", "speaker": "Alex", "text": "Decision: API rate limit was approved after reviewing the alternatives.", "topic": "API rate limit"}
+{"event_id": "ENG-0210", "timestamp": "2026-01-15T18:00:00Z", "speaker": "Alex", "text": "The team discussed invoice timeout and compared several options.", "topic": "invoice timeout"}
+{"event_id": "ENG-0378", "timestamp": "2026-01-15T18:00:00Z", "speaker": "Alex", "text": "The team discussed search index and compared several options.", "topic": "search index"}
+{"event_id": "ENG-0070", "timestamp": "2026-01-15T22:00:00Z", "speaker": "Sam", "text": "The team discussed invoice timeout and compared several options.", "topic": "invoice timeout"}
+{"event_id": "ENG-0238", "timestamp": "2026-01-15T22:00:00Z", "speaker": "Sam", "text": "The team discussed search index and compared several options. Earlier notes were reviewed before moving on.", "topic": "search index"}
+{"event_id": "ENG-0406", "timestamp": "2026-01-15T22:00:00Z", "speaker": "Sam", "text": "The team discussed deployment rollback and compared several options.", "topic": "deployment rollback"}
+{"event_id": "ENG-0099", "timestamp": "2026-01-16T03:00:00Z", "speaker": "Alex", "text": "Someone mentioned cache invalidation during the meeting without making a decision. The discussion continued with related operational details.", "topic": "cache invalidation"}
+{"event_id": "ENG-0267", "timestamp": "2026-01-16T03:00:00Z", "speaker": "Alex", "text": "Someone mentioned DynamoDB migration during the meeting without making a decision.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0435", "timestamp": "2026-01-16T03:00:00Z", "speaker": "Alex", "text": "Someone mentioned CI pipeline during the meeting without making a decision.", "topic": "CI pipeline"}
+{"event_id": "ENG-0127", "timestamp": "2026-01-16T07:00:00Z", "speaker": "Sam", "text": "Someone mentioned DynamoDB migration during the meeting without making a decision.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0295", "timestamp": "2026-01-16T07:00:00Z", "speaker": "Sam", "text": "Someone mentioned CI pipeline during the meeting without making a decision.", "topic": "CI pipeline"}
+{"event_id": "ENG-0463", "timestamp": "2026-01-16T07:00:00Z", "speaker": "Sam", "text": "Someone mentioned webhook delivery during the meeting without making a decision.", "topic": "webhook delivery"}
+{"event_id": "ENG-0155", "timestamp": "2026-01-16T11:00:00Z", "speaker": "Priya", "text": "Someone mentioned CI pipeline during the meeting without making a decision.", "topic": "CI pipeline"}
+{"event_id": "ENG-0323", "timestamp": "2026-01-16T11:00:00Z", "speaker": "Priya", "text": "Someone mentioned webhook delivery during the meeting without making a decision. Earlier notes were reviewed before moving on.", "topic": "webhook delivery"}
+{"event_id": "ENG-0491", "timestamp": "2026-01-16T11:00:00Z", "speaker": "Priya", "text": "Someone mentioned PostgreSQL migration during the meeting without making a decision.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0015", "timestamp": "2026-01-16T15:00:00Z", "speaker": "Alex", "text": "Someone mentioned CI pipeline during the meeting without making a decision.", "topic": "CI pipeline"}
+{"event_id": "ENG-0183", "timestamp": "2026-01-16T15:00:00Z", "speaker": "Alex", "text": "Someone mentioned webhook delivery during the meeting without making a decision.", "topic": "webhook delivery"}
+{"event_id": "ENG-0351", "timestamp": "2026-01-16T15:00:00Z", "speaker": "Alex", "text": "Someone mentioned PostgreSQL migration during the meeting without making a decision.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0043", "timestamp": "2026-01-16T19:00:00Z", "speaker": "Sam", "text": "Someone mentioned webhook delivery during the meeting without making a decision.", "topic": "webhook delivery"}
+{"event_id": "ENG-0211", "timestamp": "2026-01-16T19:00:00Z", "speaker": "Sam", "text": "Someone mentioned PostgreSQL migration during the meeting without making a decision.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0379", "timestamp": "2026-01-16T19:00:00Z", "speaker": "Sam", "text": "Someone mentioned cache invalidation during the meeting without making a decision.", "topic": "cache invalidation"}
+{"event_id": "ENG-0071", "timestamp": "2026-01-16T23:00:00Z", "speaker": "Priya", "text": "Someone mentioned PostgreSQL migration during the meeting without making a decision.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0239", "timestamp": "2026-01-16T23:00:00Z", "speaker": "Priya", "text": "Someone mentioned cache invalidation during the meeting without making a decision.", "topic": "cache invalidation"}
+{"event_id": "ENG-0407", "timestamp": "2026-01-16T23:00:00Z", "speaker": "Priya", "text": "Someone mentioned DynamoDB migration during the meeting without making a decision. The discussion continued with related operational details.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0072", "timestamp": "2026-01-17T00:00:00Z", "speaker": "Alex", "text": "A possible future approach involving API rate limit was considered.", "topic": "API rate limit"}
+{"event_id": "ENG-0240", "timestamp": "2026-01-17T00:00:00Z", "speaker": "Alex", "text": "A possible future approach involving invoice timeout was considered.", "topic": "invoice timeout"}
+{"event_id": "ENG-0408", "timestamp": "2026-01-17T00:00:00Z", "speaker": "Alex", "text": "A possible future approach involving search index was considered. Earlier notes were reviewed before moving on.", "topic": "search index"}
+{"event_id": "ENG-0100", "timestamp": "2026-01-17T04:00:00Z", "speaker": "Sam", "text": "A possible future approach involving invoice timeout was considered.", "topic": "invoice timeout"}
+{"event_id": "ENG-0268", "timestamp": "2026-01-17T04:00:00Z", "speaker": "Sam", "text": "A possible future approach involving search index was considered.", "topic": "search index"}
+{"event_id": "ENG-0436", "timestamp": "2026-01-17T04:00:00Z", "speaker": "Sam", "text": "A possible future approach involving deployment rollback was considered.", "topic": "deployment rollback"}
+{"event_id": "ENG-0128", "timestamp": "2026-01-17T08:00:00Z", "speaker": "Priya", "text": "Outcome: search index was confirmed successful after the follow-up check.", "topic": "search index"}
+{"event_id": "ENG-0296", "timestamp": "2026-01-17T08:00:00Z", "speaker": "Priya", "text": "A possible future approach involving deployment rollback was considered.", "topic": "deployment rollback"}
+{"event_id": "ENG-0464", "timestamp": "2026-01-17T08:00:00Z", "speaker": "Priya", "text": "A possible future approach involving Redis retry policy was considered.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0156", "timestamp": "2026-01-17T12:00:00Z", "speaker": "Alex", "text": "A possible future approach involving deployment rollback was considered.", "topic": "deployment rollback"}
+{"event_id": "ENG-0324", "timestamp": "2026-01-17T12:00:00Z", "speaker": "Alex", "text": "A possible future approach involving Redis retry policy was considered.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0492", "timestamp": "2026-01-17T12:00:00Z", "speaker": "Alex", "text": "A possible future approach involving API rate limit was considered.", "topic": "API rate limit"}
+{"event_id": "ENG-0016", "timestamp": "2026-01-17T16:00:00Z", "speaker": "Sam", "text": "A possible future approach involving deployment rollback was considered.", "topic": "deployment rollback"}
+{"event_id": "ENG-0184", "timestamp": "2026-01-17T16:00:00Z", "speaker": "Sam", "text": "A possible future approach involving Redis retry policy was considered.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0352", "timestamp": "2026-01-17T16:00:00Z", "speaker": "Sam", "text": "A possible future approach involving API rate limit was considered. The discussion continued with related operational details.", "topic": "API rate limit"}
+{"event_id": "ENG-0044", "timestamp": "2026-01-17T20:00:00Z", "speaker": "Priya", "text": "A possible future approach involving Redis retry policy was considered. The discussion continued with related operational details.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0212", "timestamp": "2026-01-17T20:00:00Z", "speaker": "Priya", "text": "A possible future approach involving API rate limit was considered.", "topic": "API rate limit"}
+{"event_id": "ENG-0380", "timestamp": "2026-01-17T20:00:00Z", "speaker": "Priya", "text": "A possible future approach involving invoice timeout was considered.", "topic": "invoice timeout"}
+{"event_id": "ENG-0073", "timestamp": "2026-01-18T01:00:00Z", "speaker": "Sam", "text": "The team revisited webhook delivery as background context.", "topic": "webhook delivery"}
+{"event_id": "ENG-0241", "timestamp": "2026-01-18T01:00:00Z", "speaker": "Sam", "text": "The team revisited PostgreSQL migration as background context.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0409", "timestamp": "2026-01-18T01:00:00Z", "speaker": "Sam", "text": "The team revisited cache invalidation as background context.", "topic": "cache invalidation"}
+{"event_id": "ENG-0101", "timestamp": "2026-01-18T05:00:00Z", "speaker": "Priya", "text": "The team revisited PostgreSQL migration as background context.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0269", "timestamp": "2026-01-18T05:00:00Z", "speaker": "Priya", "text": "Change: cache invalidation was replaced by a newer approach; the earlier state is obsolete.", "topic": "cache invalidation"}
+{"event_id": "ENG-0437", "timestamp": "2026-01-18T05:00:00Z", "speaker": "Priya", "text": "The team revisited DynamoDB migration as background context.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0129", "timestamp": "2026-01-18T09:00:00Z", "speaker": "Alex", "text": "The team revisited cache invalidation as background context.", "topic": "cache invalidation"}
+{"event_id": "ENG-0297", "timestamp": "2026-01-18T09:00:00Z", "speaker": "Alex", "text": "The team revisited DynamoDB migration as background context. The discussion continued with related operational details.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0465", "timestamp": "2026-01-18T09:00:00Z", "speaker": "Alex", "text": "The team revisited CI pipeline as background context.", "topic": "CI pipeline"}
+{"event_id": "ENG-0157", "timestamp": "2026-01-18T13:00:00Z", "speaker": "Sam", "text": "The team revisited DynamoDB migration as background context.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0325", "timestamp": "2026-01-18T13:00:00Z", "speaker": "Sam", "text": "The team revisited CI pipeline as background context.", "topic": "CI pipeline"}
+{"event_id": "ENG-0493", "timestamp": "2026-01-18T13:00:00Z", "speaker": "Sam", "text": "The team revisited webhook delivery as background context. Earlier notes were reviewed before moving on.", "topic": "webhook delivery"}
+{"event_id": "ENG-0017", "timestamp": "2026-01-18T17:00:00Z", "speaker": "Priya", "text": "The team revisited DynamoDB migration as background context. Earlier notes were reviewed before moving on.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0185", "timestamp": "2026-01-18T17:00:00Z", "speaker": "Priya", "text": "The team revisited CI pipeline as background context.", "topic": "CI pipeline"}
+{"event_id": "ENG-0353", "timestamp": "2026-01-18T17:00:00Z", "speaker": "Priya", "text": "The team revisited webhook delivery as background context.", "topic": "webhook delivery"}
+{"event_id": "ENG-0045", "timestamp": "2026-01-18T21:00:00Z", "speaker": "Alex", "text": "The team revisited CI pipeline as background context.", "topic": "CI pipeline"}
+{"event_id": "ENG-0213", "timestamp": "2026-01-18T21:00:00Z", "speaker": "Alex", "text": "The team revisited webhook delivery as background context.", "topic": "webhook delivery"}
+{"event_id": "ENG-0381", "timestamp": "2026-01-18T21:00:00Z", "speaker": "Alex", "text": "State: PostgreSQL migration changed from tentative to confirmed.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0074", "timestamp": "2026-01-19T02:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned Redis retry policy, but it did not change the current state.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0242", "timestamp": "2026-01-19T02:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned API rate limit, but it did not change the current state. The discussion continued with related operational details.", "topic": "API rate limit"}
+{"event_id": "ENG-0410", "timestamp": "2026-01-19T02:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned invoice timeout, but it did not change the current state.", "topic": "invoice timeout"}
+{"event_id": "ENG-0102", "timestamp": "2026-01-19T06:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned API rate limit, but it did not change the current state. Earlier notes were reviewed before moving on.", "topic": "API rate limit"}
+{"event_id": "ENG-0270", "timestamp": "2026-01-19T06:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned invoice timeout, but it did not change the current state.", "topic": "invoice timeout"}
+{"event_id": "ENG-0438", "timestamp": "2026-01-19T06:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned search index, but it did not change the current state.", "topic": "search index"}
+{"event_id": "ENG-0130", "timestamp": "2026-01-19T10:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned invoice timeout, but it did not change the current state.", "topic": "invoice timeout"}
+{"event_id": "ENG-0298", "timestamp": "2026-01-19T10:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned search index, but it did not change the current state.", "topic": "search index"}
+{"event_id": "ENG-0466", "timestamp": "2026-01-19T10:00:00Z", "speaker": "Sam", "text": "Plan: deployment rollback remains unresolved and no final decision has been confirmed.", "topic": "deployment rollback"}
+{"event_id": "ENG-0158", "timestamp": "2026-01-19T14:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned search index, but it did not change the current state.", "topic": "search index"}
+{"event_id": "ENG-0326", "timestamp": "2026-01-19T14:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned deployment rollback, but it did not change the current state.", "topic": "deployment rollback"}
+{"event_id": "ENG-0494", "timestamp": "2026-01-19T14:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned Redis retry policy, but it did not change the current state.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0018", "timestamp": "2026-01-19T18:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned search index, but it did not change the current state.", "topic": "search index"}
+{"event_id": "ENG-0186", "timestamp": "2026-01-19T18:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned deployment rollback, but it did not change the current state.", "topic": "deployment rollback"}
+{"event_id": "ENG-0354", "timestamp": "2026-01-19T18:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned Redis retry policy, but it did not change the current state.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0046", "timestamp": "2026-01-19T22:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned deployment rollback, but it did not change the current state.", "topic": "deployment rollback"}
+{"event_id": "ENG-0214", "timestamp": "2026-01-19T22:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned Redis retry policy, but it did not change the current state.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0382", "timestamp": "2026-01-19T22:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned API rate limit, but it did not change the current state.", "topic": "API rate limit"}
+{"event_id": "ENG-0075", "timestamp": "2026-01-20T03:00:00Z", "speaker": "Alex", "text": "An earlier note about CI pipeline was repeated for context.", "topic": "CI pipeline"}
+{"event_id": "ENG-0243", "timestamp": "2026-01-20T03:00:00Z", "speaker": "Alex", "text": "State: webhook delivery changed from tentative to confirmed.", "topic": "webhook delivery"}
+{"event_id": "ENG-0411", "timestamp": "2026-01-20T03:00:00Z", "speaker": "Alex", "text": "An earlier note about PostgreSQL migration was repeated for context.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0103", "timestamp": "2026-01-20T07:00:00Z", "speaker": "Sam", "text": "Action: the team attempted webhook delivery; the first attempt failed.", "topic": "webhook delivery"}
+{"event_id": "ENG-0271", "timestamp": "2026-01-20T07:00:00Z", "speaker": "Sam", "text": "An earlier note about PostgreSQL migration was repeated for context.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0439", "timestamp": "2026-01-20T07:00:00Z", "speaker": "Sam", "text": "An earlier note about cache invalidation was repeated for context.", "topic": "cache invalidation"}
+{"event_id": "ENG-0131", "timestamp": "2026-01-20T11:00:00Z", "speaker": "Priya", "text": "An earlier note about PostgreSQL migration was repeated for context.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0299", "timestamp": "2026-01-20T11:00:00Z", "speaker": "Priya", "text": "An earlier note about cache invalidation was repeated for context.", "topic": "cache invalidation"}
+{"event_id": "ENG-0467", "timestamp": "2026-01-20T11:00:00Z", "speaker": "Priya", "text": "An earlier note about DynamoDB migration was repeated for context.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0159", "timestamp": "2026-01-20T15:00:00Z", "speaker": "Alex", "text": "An earlier note about cache invalidation was repeated for context.", "topic": "cache invalidation"}
+{"event_id": "ENG-0327", "timestamp": "2026-01-20T15:00:00Z", "speaker": "Alex", "text": "An earlier note about DynamoDB migration was repeated for context.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0495", "timestamp": "2026-01-20T15:00:00Z", "speaker": "Alex", "text": "An earlier note about CI pipeline was repeated for context. The discussion continued with related operational details.", "topic": "CI pipeline"}
+{"event_id": "ENG-0019", "timestamp": "2026-01-20T19:00:00Z", "speaker": "Sam", "text": "An earlier note about cache invalidation was repeated for context.", "topic": "cache invalidation"}
+{"event_id": "ENG-0187", "timestamp": "2026-01-20T19:00:00Z", "speaker": "Sam", "text": "An earlier note about DynamoDB migration was repeated for context. The discussion continued with related operational details. Earlier notes were reviewed before moving on.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0355", "timestamp": "2026-01-20T19:00:00Z", "speaker": "Sam", "text": "An earlier note about CI pipeline was repeated for context.", "topic": "CI pipeline"}
+{"event_id": "ENG-0047", "timestamp": "2026-01-20T23:00:00Z", "speaker": "Priya", "text": "An earlier note about DynamoDB migration was repeated for context.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0215", "timestamp": "2026-01-20T23:00:00Z", "speaker": "Priya", "text": "An earlier note about CI pipeline was repeated for context.", "topic": "CI pipeline"}
+{"event_id": "ENG-0383", "timestamp": "2026-01-20T23:00:00Z", "speaker": "Priya", "text": "An earlier note about webhook delivery was repeated for context.", "topic": "webhook delivery"}
+{"event_id": "ENG-0048", "timestamp": "2026-01-21T00:00:00Z", "speaker": "Alex", "text": "The group asked whether search index might matter later.", "topic": "search index"}
+{"event_id": "ENG-0216", "timestamp": "2026-01-21T00:00:00Z", "speaker": "Alex", "text": "Decision: deployment rollback was approved after reviewing the alternatives.", "topic": "deployment rollback"}
+{"event_id": "ENG-0384", "timestamp": "2026-01-21T00:00:00Z", "speaker": "Alex", "text": "The group asked whether Redis retry policy might matter later.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0076", "timestamp": "2026-01-21T04:00:00Z", "speaker": "Sam", "text": "The group asked whether deployment rollback might matter later.", "topic": "deployment rollback"}
+{"event_id": "ENG-0244", "timestamp": "2026-01-21T04:00:00Z", "speaker": "Sam", "text": "The group asked whether Redis retry policy might matter later.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0412", "timestamp": "2026-01-21T04:00:00Z", "speaker": "Sam", "text": "The group asked whether API rate limit might matter later.", "topic": "API rate limit"}
+{"event_id": "ENG-0104", "timestamp": "2026-01-21T08:00:00Z", "speaker": "Priya", "text": "The group asked whether Redis retry policy might matter later.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0272", "timestamp": "2026-01-21T08:00:00Z", "speaker": "Priya", "text": "The group asked whether API rate limit might matter later. Earlier notes were reviewed before moving on.", "topic": "API rate limit"}
+{"event_id": "ENG-0440", "timestamp": "2026-01-21T08:00:00Z", "speaker": "Priya", "text": "The group asked whether invoice timeout might matter later. The discussion continued with related operational details.", "topic": "invoice timeout"}
+{"event_id": "ENG-0132", "timestamp": "2026-01-21T12:00:00Z", "speaker": "Alex", "text": "The group asked whether API rate limit might matter later. The discussion continued with related operational details.", "topic": "API rate limit"}
+{"event_id": "ENG-0300", "timestamp": "2026-01-21T12:00:00Z", "speaker": "Alex", "text": "The group asked whether invoice timeout might matter later.", "topic": "invoice timeout"}
+{"event_id": "ENG-0468", "timestamp": "2026-01-21T12:00:00Z", "speaker": "Alex", "text": "The group asked whether search index might matter later.", "topic": "search index"}
+{"event_id": "ENG-0160", "timestamp": "2026-01-21T16:00:00Z", "speaker": "Sam", "text": "The group asked whether invoice timeout might matter later.", "topic": "invoice timeout"}
+{"event_id": "ENG-0328", "timestamp": "2026-01-21T16:00:00Z", "speaker": "Sam", "text": "The group asked whether search index might matter later.", "topic": "search index"}
+{"event_id": "ENG-0496", "timestamp": "2026-01-21T16:00:00Z", "speaker": "Sam", "text": "The group asked whether deployment rollback might matter later.", "topic": "deployment rollback"}
+{"event_id": "ENG-0020", "timestamp": "2026-01-21T20:00:00Z", "speaker": "Priya", "text": "The group asked whether invoice timeout might matter later.", "topic": "invoice timeout"}
+{"event_id": "ENG-0188", "timestamp": "2026-01-21T20:00:00Z", "speaker": "Priya", "text": "The group asked whether search index might matter later.", "topic": "search index"}
+{"event_id": "ENG-0356", "timestamp": "2026-01-21T20:00:00Z", "speaker": "Priya", "text": "The group asked whether deployment rollback might matter later.", "topic": "deployment rollback"}
+{"event_id": "ENG-0049", "timestamp": "2026-01-22T01:00:00Z", "speaker": "Sam", "text": "The team discussed cache invalidation and compared several options.", "topic": "cache invalidation"}
+{"event_id": "ENG-0217", "timestamp": "2026-01-22T01:00:00Z", "speaker": "Sam", "text": "The team discussed DynamoDB migration and compared several options.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0385", "timestamp": "2026-01-22T01:00:00Z", "speaker": "Sam", "text": "The team discussed CI pipeline and compared several options. The discussion continued with related operational details.", "topic": "CI pipeline"}
+{"event_id": "ENG-0077", "timestamp": "2026-01-22T05:00:00Z", "speaker": "Priya", "text": "The team discussed DynamoDB migration and compared several options. The discussion continued with related operational details.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0245", "timestamp": "2026-01-22T05:00:00Z", "speaker": "Priya", "text": "The team discussed CI pipeline and compared several options.", "topic": "CI pipeline"}
+{"event_id": "ENG-0413", "timestamp": "2026-01-22T05:00:00Z", "speaker": "Priya", "text": "The team discussed webhook delivery and compared several options.", "topic": "webhook delivery"}
+{"event_id": "ENG-0105", "timestamp": "2026-01-22T09:00:00Z", "speaker": "Alex", "text": "The team discussed CI pipeline and compared several options.", "topic": "CI pipeline"}
+{"event_id": "ENG-0273", "timestamp": "2026-01-22T09:00:00Z", "speaker": "Alex", "text": "The team discussed webhook delivery and compared several options.", "topic": "webhook delivery"}
+{"event_id": "ENG-0441", "timestamp": "2026-01-22T09:00:00Z", "speaker": "Alex", "text": "The team discussed PostgreSQL migration and compared several options.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0133", "timestamp": "2026-01-22T13:00:00Z", "speaker": "Sam", "text": "The team discussed webhook delivery and compared several options.", "topic": "webhook delivery"}
+{"event_id": "ENG-0301", "timestamp": "2026-01-22T13:00:00Z", "speaker": "Sam", "text": "The team discussed PostgreSQL migration and compared several options.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0469", "timestamp": "2026-01-22T13:00:00Z", "speaker": "Sam", "text": "The team discussed cache invalidation and compared several options.", "topic": "cache invalidation"}
+{"event_id": "ENG-0161", "timestamp": "2026-01-22T17:00:00Z", "speaker": "Priya", "text": "Change: PostgreSQL migration was replaced by a newer approach; the earlier state is obsolete.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0329", "timestamp": "2026-01-22T17:00:00Z", "speaker": "Priya", "text": "The team discussed cache invalidation and compared several options.", "topic": "cache invalidation"}
+{"event_id": "ENG-0497", "timestamp": "2026-01-22T17:00:00Z", "speaker": "Priya", "text": "The team discussed DynamoDB migration and compared several options.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0021", "timestamp": "2026-01-22T21:00:00Z", "speaker": "Alex", "text": "The team discussed PostgreSQL migration and compared several options.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0189", "timestamp": "2026-01-22T21:00:00Z", "speaker": "Alex", "text": "The team discussed cache invalidation and compared several options.", "topic": "cache invalidation"}
+{"event_id": "ENG-0357", "timestamp": "2026-01-22T21:00:00Z", "speaker": "Alex", "text": "The team discussed DynamoDB migration and compared several options. Earlier notes were reviewed before moving on.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0050", "timestamp": "2026-01-23T02:00:00Z", "speaker": "Priya", "text": "Someone mentioned invoice timeout during the meeting without making a decision.", "topic": "invoice timeout"}
+{"event_id": "ENG-0218", "timestamp": "2026-01-23T02:00:00Z", "speaker": "Priya", "text": "Someone mentioned search index during the meeting without making a decision.", "topic": "search index"}
+{"event_id": "ENG-0386", "timestamp": "2026-01-23T02:00:00Z", "speaker": "Priya", "text": "Someone mentioned deployment rollback during the meeting without making a decision.", "topic": "deployment rollback"}
+{"event_id": "ENG-0078", "timestamp": "2026-01-23T06:00:00Z", "speaker": "Alex", "text": "Someone mentioned search index during the meeting without making a decision.", "topic": "search index"}
+{"event_id": "ENG-0246", "timestamp": "2026-01-23T06:00:00Z", "speaker": "Alex", "text": "Someone mentioned deployment rollback during the meeting without making a decision.", "topic": "deployment rollback"}
+{"event_id": "ENG-0414", "timestamp": "2026-01-23T06:00:00Z", "speaker": "Alex", "text": "Someone mentioned Redis retry policy during the meeting without making a decision.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0106", "timestamp": "2026-01-23T10:00:00Z", "speaker": "Sam", "text": "Someone mentioned deployment rollback during the meeting without making a decision.", "topic": "deployment rollback"}
+{"event_id": "ENG-0274", "timestamp": "2026-01-23T10:00:00Z", "speaker": "Sam", "text": "Someone mentioned Redis retry policy during the meeting without making a decision.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0442", "timestamp": "2026-01-23T10:00:00Z", "speaker": "Sam", "text": "Someone mentioned API rate limit during the meeting without making a decision. Earlier notes were reviewed before moving on.", "topic": "API rate limit"}
+{"event_id": "ENG-0134", "timestamp": "2026-01-23T14:00:00Z", "speaker": "Priya", "text": "Someone mentioned Redis retry policy during the meeting without making a decision.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0302", "timestamp": "2026-01-23T14:00:00Z", "speaker": "Priya", "text": "Someone mentioned API rate limit during the meeting without making a decision.", "topic": "API rate limit"}
+{"event_id": "ENG-0470", "timestamp": "2026-01-23T14:00:00Z", "speaker": "Priya", "text": "Someone mentioned invoice timeout during the meeting without making a decision.", "topic": "invoice timeout"}
+{"event_id": "ENG-0162", "timestamp": "2026-01-23T18:00:00Z", "speaker": "Alex", "text": "Someone mentioned API rate limit during the meeting without making a decision.", "topic": "API rate limit"}
+{"event_id": "ENG-0330", "timestamp": "2026-01-23T18:00:00Z", "speaker": "Alex", "text": "Someone mentioned invoice timeout during the meeting without making a decision. The discussion continued with related operational details.", "topic": "invoice timeout"}
+{"event_id": "ENG-0498", "timestamp": "2026-01-23T18:00:00Z", "speaker": "Alex", "text": "Someone mentioned search index during the meeting without making a decision.", "topic": "search index"}
+{"event_id": "ENG-0022", "timestamp": "2026-01-23T22:00:00Z", "speaker": "Sam", "text": "Someone mentioned API rate limit during the meeting without making a decision. The discussion continued with related operational details.", "topic": "API rate limit"}
+{"event_id": "ENG-0190", "timestamp": "2026-01-23T22:00:00Z", "speaker": "Sam", "text": "Someone mentioned invoice timeout during the meeting without making a decision.", "topic": "invoice timeout"}
+{"event_id": "ENG-0358", "timestamp": "2026-01-23T22:00:00Z", "speaker": "Sam", "text": "Someone mentioned search index during the meeting without making a decision.", "topic": "search index"}
+{"event_id": "ENG-0051", "timestamp": "2026-01-24T03:00:00Z", "speaker": "Alex", "text": "A possible future approach involving PostgreSQL migration was considered. Earlier notes were reviewed before moving on.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0219", "timestamp": "2026-01-24T03:00:00Z", "speaker": "Alex", "text": "A possible future approach involving cache invalidation was considered.", "topic": "cache invalidation"}
+{"event_id": "ENG-0387", "timestamp": "2026-01-24T03:00:00Z", "speaker": "Alex", "text": "A possible future approach involving DynamoDB migration was considered.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0079", "timestamp": "2026-01-24T07:00:00Z", "speaker": "Sam", "text": "A possible future approach involving cache invalidation was considered.", "topic": "cache invalidation"}
+{"event_id": "ENG-0247", "timestamp": "2026-01-24T07:00:00Z", "speaker": "Sam", "text": "A possible future approach involving DynamoDB migration was considered.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0415", "timestamp": "2026-01-24T07:00:00Z", "speaker": "Sam", "text": "A possible future approach involving CI pipeline was considered.", "topic": "CI pipeline"}
+{"event_id": "ENG-0107", "timestamp": "2026-01-24T11:00:00Z", "speaker": "Priya", "text": "A possible future approach involving DynamoDB migration was considered.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0275", "timestamp": "2026-01-24T11:00:00Z", "speaker": "Priya", "text": "A possible future approach involving CI pipeline was considered. The discussion continued with related operational details.", "topic": "CI pipeline"}
+{"event_id": "ENG-0443", "timestamp": "2026-01-24T11:00:00Z", "speaker": "Priya", "text": "A possible future approach involving webhook delivery was considered.", "topic": "webhook delivery"}
+{"event_id": "ENG-0135", "timestamp": "2026-01-24T15:00:00Z", "speaker": "Alex", "text": "A possible future approach involving CI pipeline was considered.", "topic": "CI pipeline"}
+{"event_id": "ENG-0303", "timestamp": "2026-01-24T15:00:00Z", "speaker": "Alex", "text": "A possible future approach involving webhook delivery was considered.", "topic": "webhook delivery"}
+{"event_id": "ENG-0471", "timestamp": "2026-01-24T15:00:00Z", "speaker": "Alex", "text": "A possible future approach involving PostgreSQL migration was considered.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0163", "timestamp": "2026-01-24T19:00:00Z", "speaker": "Sam", "text": "A possible future approach involving webhook delivery was considered.", "topic": "webhook delivery"}
+{"event_id": "ENG-0331", "timestamp": "2026-01-24T19:00:00Z", "speaker": "Sam", "text": "A possible future approach involving PostgreSQL migration was considered.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0499", "timestamp": "2026-01-24T19:00:00Z", "speaker": "Sam", "text": "A possible future approach involving cache invalidation was considered.", "topic": "cache invalidation"}
+{"event_id": "ENG-0023", "timestamp": "2026-01-24T23:00:00Z", "speaker": "Priya", "text": "A possible future approach involving webhook delivery was considered.", "topic": "webhook delivery"}
+{"event_id": "ENG-0191", "timestamp": "2026-01-24T23:00:00Z", "speaker": "Priya", "text": "A possible future approach involving PostgreSQL migration was considered.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0359", "timestamp": "2026-01-24T23:00:00Z", "speaker": "Priya", "text": "A possible future approach involving cache invalidation was considered.", "topic": "cache invalidation"}
+{"event_id": "ENG-0024", "timestamp": "2026-01-25T00:00:00Z", "speaker": "Alex", "text": "The team revisited Redis retry policy as background context.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0192", "timestamp": "2026-01-25T00:00:00Z", "speaker": "Alex", "text": "The team revisited API rate limit as background context.", "topic": "API rate limit"}
+{"event_id": "ENG-0360", "timestamp": "2026-01-25T00:00:00Z", "speaker": "Alex", "text": "The team revisited invoice timeout as background context.", "topic": "invoice timeout"}
+{"event_id": "ENG-0052", "timestamp": "2026-01-25T04:00:00Z", "speaker": "Sam", "text": "The team revisited API rate limit as background context.", "topic": "API rate limit"}
+{"event_id": "ENG-0220", "timestamp": "2026-01-25T04:00:00Z", "speaker": "Sam", "text": "The team revisited invoice timeout as background context. The discussion continued with related operational details.", "topic": "invoice timeout"}
+{"event_id": "ENG-0388", "timestamp": "2026-01-25T04:00:00Z", "speaker": "Sam", "text": "Plan: search index remains unresolved and no final decision has been confirmed.", "topic": "search index"}
+{"event_id": "ENG-0080", "timestamp": "2026-01-25T08:00:00Z", "speaker": "Priya", "text": "The team revisited invoice timeout as background context.", "topic": "invoice timeout"}
+{"event_id": "ENG-0248", "timestamp": "2026-01-25T08:00:00Z", "speaker": "Priya", "text": "The team revisited search index as background context.", "topic": "search index"}
+{"event_id": "ENG-0416", "timestamp": "2026-01-25T08:00:00Z", "speaker": "Priya", "text": "Outcome: deployment rollback was confirmed successful after the follow-up check.", "topic": "deployment rollback"}
+{"event_id": "ENG-0108", "timestamp": "2026-01-25T12:00:00Z", "speaker": "Alex", "text": "The team revisited search index as background context.", "topic": "search index"}
+{"event_id": "ENG-0276", "timestamp": "2026-01-25T12:00:00Z", "speaker": "Alex", "text": "The team revisited deployment rollback as background context.", "topic": "deployment rollback"}
+{"event_id": "ENG-0444", "timestamp": "2026-01-25T12:00:00Z", "speaker": "Alex", "text": "The team revisited Redis retry policy as background context.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0136", "timestamp": "2026-01-25T16:00:00Z", "speaker": "Sam", "text": "The team revisited deployment rollback as background context. Earlier notes were reviewed before moving on.", "topic": "deployment rollback"}
+{"event_id": "ENG-0304", "timestamp": "2026-01-25T16:00:00Z", "speaker": "Sam", "text": "The team revisited Redis retry policy as background context.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0472", "timestamp": "2026-01-25T16:00:00Z", "speaker": "Sam", "text": "The team revisited API rate limit as background context.", "topic": "API rate limit"}
+{"event_id": "ENG-0164", "timestamp": "2026-01-25T20:00:00Z", "speaker": "Priya", "text": "The team revisited Redis retry policy as background context.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0332", "timestamp": "2026-01-25T20:00:00Z", "speaker": "Priya", "text": "The team revisited API rate limit as background context.", "topic": "API rate limit"}
+{"event_id": "ENG-0025", "timestamp": "2026-01-26T01:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned CI pipeline, but it did not change the current state.", "topic": "CI pipeline"}
+{"event_id": "ENG-0193", "timestamp": "2026-01-26T01:00:00Z", "speaker": "Sam", "text": "Action: the team attempted webhook delivery; the first attempt failed.", "topic": "webhook delivery"}
+{"event_id": "ENG-0361", "timestamp": "2026-01-26T01:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned PostgreSQL migration, but it did not change the current state.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0053", "timestamp": "2026-01-26T05:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned webhook delivery, but it did not change the current state.", "topic": "webhook delivery"}
+{"event_id": "ENG-0221", "timestamp": "2026-01-26T05:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned PostgreSQL migration, but it did not change the current state. Earlier notes were reviewed before moving on.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0389", "timestamp": "2026-01-26T05:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned cache invalidation, but it did not change the current state.", "topic": "cache invalidation"}
+{"event_id": "ENG-0081", "timestamp": "2026-01-26T09:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned PostgreSQL migration, but it did not change the current state.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0249", "timestamp": "2026-01-26T09:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned cache invalidation, but it did not change the current state.", "topic": "cache invalidation"}
+{"event_id": "ENG-0417", "timestamp": "2026-01-26T09:00:00Z", "speaker": "Alex", "text": "State: DynamoDB migration changed from tentative to confirmed.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0109", "timestamp": "2026-01-26T13:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned cache invalidation, but it did not change the current state.", "topic": "cache invalidation"}
+{"event_id": "ENG-0277", "timestamp": "2026-01-26T13:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned DynamoDB migration, but it did not change the current state.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0445", "timestamp": "2026-01-26T13:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned CI pipeline, but it did not change the current state.", "topic": "CI pipeline"}
+{"event_id": "ENG-0137", "timestamp": "2026-01-26T17:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned DynamoDB migration, but it did not change the current state.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0305", "timestamp": "2026-01-26T17:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned CI pipeline, but it did not change the current state.", "topic": "CI pipeline"}
+{"event_id": "ENG-0473", "timestamp": "2026-01-26T17:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned webhook delivery, but it did not change the current state. The discussion continued with related operational details.", "topic": "webhook delivery"}
+{"event_id": "ENG-0165", "timestamp": "2026-01-26T21:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned CI pipeline, but it did not change the current state. The discussion continued with related operational details.", "topic": "CI pipeline"}
+{"event_id": "ENG-0333", "timestamp": "2026-01-26T21:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned webhook delivery, but it did not change the current state.", "topic": "webhook delivery"}
+{"event_id": "ENG-0026", "timestamp": "2026-01-27T02:00:00Z", "speaker": "Priya", "text": "An earlier note about deployment rollback was repeated for context.", "topic": "deployment rollback"}
+{"event_id": "ENG-0194", "timestamp": "2026-01-27T02:00:00Z", "speaker": "Priya", "text": "An earlier note about Redis retry policy was repeated for context.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0362", "timestamp": "2026-01-27T02:00:00Z", "speaker": "Priya", "text": "An earlier note about API rate limit was repeated for context.", "topic": "API rate limit"}
+{"event_id": "ENG-0054", "timestamp": "2026-01-27T06:00:00Z", "speaker": "Alex", "text": "An earlier note about Redis retry policy was repeated for context.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0222", "timestamp": "2026-01-27T06:00:00Z", "speaker": "Alex", "text": "An earlier note about API rate limit was repeated for context.", "topic": "API rate limit"}
+{"event_id": "ENG-0390", "timestamp": "2026-01-27T06:00:00Z", "speaker": "Alex", "text": "An earlier note about invoice timeout was repeated for context.", "topic": "invoice timeout"}
+{"event_id": "ENG-0082", "timestamp": "2026-01-27T10:00:00Z", "speaker": "Sam", "text": "An earlier note about API rate limit was repeated for context.", "topic": "API rate limit"}
+{"event_id": "ENG-0250", "timestamp": "2026-01-27T10:00:00Z", "speaker": "Sam", "text": "An earlier note about invoice timeout was repeated for context.", "topic": "invoice timeout"}
+{"event_id": "ENG-0418", "timestamp": "2026-01-27T10:00:00Z", "speaker": "Sam", "text": "An earlier note about search index was repeated for context. The discussion continued with related operational details.", "topic": "search index"}
+{"event_id": "ENG-0110", "timestamp": "2026-01-27T14:00:00Z", "speaker": "Priya", "text": "An earlier note about invoice timeout was repeated for context. The discussion continued with related operational details.", "topic": "invoice timeout"}
+{"event_id": "ENG-0278", "timestamp": "2026-01-27T14:00:00Z", "speaker": "Priya", "text": "An earlier note about search index was repeated for context.", "topic": "search index"}
+{"event_id": "ENG-0446", "timestamp": "2026-01-27T14:00:00Z", "speaker": "Priya", "text": "An earlier note about deployment rollback was repeated for context.", "topic": "deployment rollback"}
+{"event_id": "ENG-0138", "timestamp": "2026-01-27T18:00:00Z", "speaker": "Alex", "text": "Decision: search index was approved after reviewing the alternatives.", "topic": "search index"}
+{"event_id": "ENG-0306", "timestamp": "2026-01-27T18:00:00Z", "speaker": "Alex", "text": "An earlier note about deployment rollback was repeated for context. Earlier notes were reviewed before moving on.", "topic": "deployment rollback"}
+{"event_id": "ENG-0474", "timestamp": "2026-01-27T18:00:00Z", "speaker": "Alex", "text": "An earlier note about Redis retry policy was repeated for context.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0166", "timestamp": "2026-01-27T22:00:00Z", "speaker": "Sam", "text": "Plan: deployment rollback remains unresolved and no final decision has been confirmed.", "topic": "deployment rollback"}
+{"event_id": "ENG-0334", "timestamp": "2026-01-27T22:00:00Z", "speaker": "Sam", "text": "An earlier note about Redis retry policy was repeated for context.", "topic": "Redis retry policy"}
+{"event_id": "ENG-0027", "timestamp": "2026-01-28T03:00:00Z", "speaker": "Alex", "text": "The group asked whether DynamoDB migration might matter later.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0195", "timestamp": "2026-01-28T03:00:00Z", "speaker": "Alex", "text": "The group asked whether CI pipeline might matter later.", "topic": "CI pipeline"}
+{"event_id": "ENG-0363", "timestamp": "2026-01-28T03:00:00Z", "speaker": "Alex", "text": "The group asked whether webhook delivery might matter later. The discussion continued with related operational details.", "topic": "webhook delivery"}
+{"event_id": "ENG-0055", "timestamp": "2026-01-28T07:00:00Z", "speaker": "Sam", "text": "The group asked whether CI pipeline might matter later. The discussion continued with related operational details.", "topic": "CI pipeline"}
+{"event_id": "ENG-0223", "timestamp": "2026-01-28T07:00:00Z", "speaker": "Sam", "text": "The group asked whether webhook delivery might matter later.", "topic": "webhook delivery"}
+{"event_id": "ENG-0391", "timestamp": "2026-01-28T07:00:00Z", "speaker": "Sam", "text": "The group asked whether PostgreSQL migration might matter later. Earlier notes were reviewed before moving on.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0083", "timestamp": "2026-01-28T11:00:00Z", "speaker": "Priya", "text": "The group asked whether webhook delivery might matter later.", "topic": "webhook delivery"}
+{"event_id": "ENG-0251", "timestamp": "2026-01-28T11:00:00Z", "speaker": "Priya", "text": "The group asked whether PostgreSQL migration might matter later.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0419", "timestamp": "2026-01-28T11:00:00Z", "speaker": "Priya", "text": "The group asked whether cache invalidation might matter later.", "topic": "cache invalidation"}
+{"event_id": "ENG-0111", "timestamp": "2026-01-28T15:00:00Z", "speaker": "Alex", "text": "The group asked whether PostgreSQL migration might matter later.", "topic": "PostgreSQL migration"}
+{"event_id": "ENG-0279", "timestamp": "2026-01-28T15:00:00Z", "speaker": "Alex", "text": "The group asked whether cache invalidation might matter later.", "topic": "cache invalidation"}
+{"event_id": "ENG-0447", "timestamp": "2026-01-28T15:00:00Z", "speaker": "Alex", "text": "The group asked whether DynamoDB migration might matter later.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0139", "timestamp": "2026-01-28T19:00:00Z", "speaker": "Sam", "text": "Action: the team attempted cache invalidation; the first attempt failed.", "topic": "cache invalidation"}
+{"event_id": "ENG-0307", "timestamp": "2026-01-28T19:00:00Z", "speaker": "Sam", "text": "The group asked whether DynamoDB migration might matter later.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0475", "timestamp": "2026-01-28T19:00:00Z", "speaker": "Sam", "text": "The group asked whether CI pipeline might matter later.", "topic": "CI pipeline"}
+{"event_id": "ENG-0167", "timestamp": "2026-01-28T23:00:00Z", "speaker": "Priya", "text": "The group asked whether DynamoDB migration might matter later.", "topic": "DynamoDB migration"}
+{"event_id": "ENG-0335", "timestamp": "2026-01-28T23:00:00Z", "speaker": "Priya", "text": "The group asked whether CI pipeline might matter later.", "topic": "CI pipeline"}

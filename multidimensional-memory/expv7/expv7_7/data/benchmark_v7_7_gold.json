@@ -1,0 +1,1220 @@
+{
+  "gold_durable_event_ids": [
+    "C01E003",
+    "C01E008",
+    "C01E014",
+    "C01E020",
+    "C01E032",
+    "C01E037",
+    "C01E044",
+    "C01E048",
+    "C01E056",
+    "C01E062",
+    "C01E069",
+    "C01E080",
+    "C01E084",
+    "C01E092",
+    "C01E095",
+    "C01E098",
+    "C01E099",
+    "C01E100",
+    "C02E003",
+    "C02E008",
+    "C02E014",
+    "C02E020",
+    "C02E032",
+    "C02E037",
+    "C02E044",
+    "C02E048",
+    "C02E056",
+    "C02E062",
+    "C02E069",
+    "C02E080",
+    "C02E084",
+    "C02E092",
+    "C02E095",
+    "C02E098",
+    "C02E099",
+    "C02E100",
+    "C03E003",
+    "C03E008",
+    "C03E014",
+    "C03E020",
+    "C03E032",
+    "C03E037",
+    "C03E044",
+    "C03E048",
+    "C03E056",
+    "C03E062",
+    "C03E069",
+    "C03E080",
+    "C03E084",
+    "C03E092",
+    "C03E095",
+    "C03E098",
+    "C03E099",
+    "C03E100",
+    "C04E003",
+    "C04E008",
+    "C04E014",
+    "C04E020",
+    "C04E032",
+    "C04E037",
+    "C04E044",
+    "C04E048",
+    "C04E056",
+    "C04E062",
+    "C04E069",
+    "C04E080",
+    "C04E084",
+    "C04E092",
+    "C04E095",
+    "C04E098",
+    "C04E099",
+    "C04E100",
+    "C05E003",
+    "C05E008",
+    "C05E014",
+    "C05E020",
+    "C05E032",
+    "C05E037",
+    "C05E044",
+    "C05E048",
+    "C05E056",
+    "C05E062",
+    "C05E069",
+    "C05E080",
+    "C05E084",
+    "C05E092",
+    "C05E095",
+    "C05E098",
+    "C05E099",
+    "C05E100",
+    "C06E003",
+    "C06E008",
+    "C06E014",
+    "C06E020",
+    "C06E032",
+    "C06E037",
+    "C06E044",
+    "C06E048",
+    "C06E056",
+    "C06E062",
+    "C06E069",
+    "C06E080",
+    "C06E084",
+    "C06E092",
+    "C06E095",
+    "C06E098",
+    "C06E099",
+    "C06E100",
+    "C07E003",
+    "C07E008",
+    "C07E014",
+    "C07E020",
+    "C07E032",
+    "C07E037",
+    "C07E044",
+    "C07E048",
+    "C07E056",
+    "C07E062",
+    "C07E069",
+    "C07E080",
+    "C07E084",
+    "C07E092",
+    "C07E095",
+    "C07E098",
+    "C07E099",
+    "C07E100",
+    "C08E003",
+    "C08E008",
+    "C08E014",
+    "C08E020",
+    "C08E032",
+    "C08E037",
+    "C08E044",
+    "C08E048",
+    "C08E056",
+    "C08E062",
+    "C08E069",
+    "C08E080",
+    "C08E084",
+    "C08E092",
+    "C08E095",
+    "C08E098",
+    "C08E099",
+    "C08E100",
+    "C09E003",
+    "C09E008",
+    "C09E014",
+    "C09E020",
+    "C09E032",
+    "C09E037",
+    "C09E044",
+    "C09E048",
+    "C09E056",
+    "C09E062",
+    "C09E069",
+    "C09E080",
+    "C09E084",
+    "C09E092",
+    "C09E095",
+    "C09E098",
+    "C09E099",
+    "C09E100",
+    "C10E003",
+    "C10E008",
+    "C10E014",
+    "C10E020",
+    "C10E032",
+    "C10E037",
+    "C10E044",
+    "C10E048",
+    "C10E056",
+    "C10E062",
+    "C10E069",
+    "C10E080",
+    "C10E084",
+    "C10E092",
+    "C10E095",
+    "C10E098",
+    "C10E099",
+    "C10E100",
+    "C11E003",
+    "C11E008",
+    "C11E014",
+    "C11E020",
+    "C11E032",
+    "C11E037",
+    "C11E044",
+    "C11E048",
+    "C11E056",
+    "C11E062",
+    "C11E069",
+    "C11E080",
+    "C11E084",
+    "C11E092",
+    "C11E095",
+    "C11E098",
+    "C11E099",
+    "C11E100",
+    "C12E003",
+    "C12E008",
+    "C12E014",
+    "C12E020",
+    "C12E032",
+    "C12E037",
+    "C12E044",
+    "C12E048",
+    "C12E056",
+    "C12E062",
+    "C12E069",
+    "C12E080",
+    "C12E084",
+    "C12E092",
+    "C12E095",
+    "C12E098",
+    "C12E099",
+    "C12E100"
+  ],
+  "queries": [
+    {
+      "query_id": "Q01-01",
+      "conversation_id": "CONV-01",
+      "category": "historical",
+      "question": "What was the original technology preference for billing, and what ultimately replaced it?",
+      "required_event_ids": [
+        "C01E013",
+        "C01E031",
+        "C01E079"
+      ]
+    },
+    {
+      "query_id": "Q01-02",
+      "conversation_id": "CONV-01",
+      "category": "decision",
+      "question": "What decision was made about billing after the cost and reliability review?",
+      "required_event_ids": [
+        "C01E019",
+        "C01E031"
+      ]
+    },
+    {
+      "query_id": "Q01-03",
+      "conversation_id": "CONV-01",
+      "category": "action_outcome",
+      "question": "What failed in billing, what action followed, and what was the outcome?",
+      "required_event_ids": [
+        "C01E007",
+        "C01E036",
+        "C01E047"
+      ]
+    },
+    {
+      "query_id": "Q01-04",
+      "conversation_id": "CONV-01",
+      "category": "temporal",
+      "question": "How did the billing technology state evolve from the initial preference to the final decision?",
+      "required_event_ids": [
+        "C01E013",
+        "C01E031",
+        "C01E079"
+      ]
+    },
+    {
+      "query_id": "Q01-05",
+      "conversation_id": "CONV-01",
+      "category": "ambiguity",
+      "question": "What remained unresolved about billing?",
+      "required_event_ids": [
+        "C01E061",
+        "C01E083"
+      ]
+    },
+    {
+      "query_id": "Q01-06",
+      "conversation_id": "CONV-01",
+      "category": "negative",
+      "question": "Was MongoDB part of the billing discussion?",
+      "required_event_ids": [
+        "C01E094"
+      ]
+    },
+    {
+      "query_id": "Q01-07",
+      "conversation_id": "CONV-01",
+      "category": "provenance",
+      "question": "Who originally reported the billing failure and how was it later confirmed?",
+      "required_event_ids": [
+        "C01E007",
+        "C01E091"
+      ]
+    },
+    {
+      "query_id": "Q01-08",
+      "conversation_id": "CONV-01",
+      "category": "multi_hop",
+      "question": "Why did the team keep both interpretations about the billing retry change before settling the issue?",
+      "required_event_ids": [
+        "C01E047",
+        "C01E055",
+        "C01E068"
+      ]
+    },
+    {
+      "query_id": "Q02-01",
+      "conversation_id": "CONV-02",
+      "category": "historical",
+      "question": "What was the original technology preference for search, and what ultimately replaced it?",
+      "required_event_ids": [
+        "C02E013",
+        "C02E031",
+        "C02E079"
+      ]
+    },
+    {
+      "query_id": "Q02-02",
+      "conversation_id": "CONV-02",
+      "category": "decision",
+      "question": "What decision was made about search after the cost and reliability review?",
+      "required_event_ids": [
+        "C02E019",
+        "C02E031"
+      ]
+    },
+    {
+      "query_id": "Q02-03",
+      "conversation_id": "CONV-02",
+      "category": "action_outcome",
+      "question": "What failed in search, what action followed, and what was the outcome?",
+      "required_event_ids": [
+        "C02E007",
+        "C02E036",
+        "C02E047"
+      ]
+    },
+    {
+      "query_id": "Q02-04",
+      "conversation_id": "CONV-02",
+      "category": "temporal",
+      "question": "How did the search technology state evolve from the initial preference to the final decision?",
+      "required_event_ids": [
+        "C02E013",
+        "C02E031",
+        "C02E079"
+      ]
+    },
+    {
+      "query_id": "Q02-05",
+      "conversation_id": "CONV-02",
+      "category": "ambiguity",
+      "question": "What remained unresolved about search?",
+      "required_event_ids": [
+        "C02E061",
+        "C02E083"
+      ]
+    },
+    {
+      "query_id": "Q02-06",
+      "conversation_id": "CONV-02",
+      "category": "negative",
+      "question": "Was MongoDB part of the search discussion?",
+      "required_event_ids": [
+        "C02E094"
+      ]
+    },
+    {
+      "query_id": "Q02-07",
+      "conversation_id": "CONV-02",
+      "category": "provenance",
+      "question": "Who originally reported the search failure and how was it later confirmed?",
+      "required_event_ids": [
+        "C02E007",
+        "C02E091"
+      ]
+    },
+    {
+      "query_id": "Q02-08",
+      "conversation_id": "CONV-02",
+      "category": "multi_hop",
+      "question": "Why did the team keep both interpretations about the search retry change before settling the issue?",
+      "required_event_ids": [
+        "C02E047",
+        "C02E055",
+        "C02E068"
+      ]
+    },
+    {
+      "query_id": "Q03-01",
+      "conversation_id": "CONV-03",
+      "category": "historical",
+      "question": "What was the original technology preference for payments, and what ultimately replaced it?",
+      "required_event_ids": [
+        "C03E013",
+        "C03E031",
+        "C03E079"
+      ]
+    },
+    {
+      "query_id": "Q03-02",
+      "conversation_id": "CONV-03",
+      "category": "decision",
+      "question": "What decision was made about payments after the cost and reliability review?",
+      "required_event_ids": [
+        "C03E019",
+        "C03E031"
+      ]
+    },
+    {
+      "query_id": "Q03-03",
+      "conversation_id": "CONV-03",
+      "category": "action_outcome",
+      "question": "What failed in payments, what action followed, and what was the outcome?",
+      "required_event_ids": [
+        "C03E007",
+        "C03E036",
+        "C03E047"
+      ]
+    },
+    {
+      "query_id": "Q03-04",
+      "conversation_id": "CONV-03",
+      "category": "temporal",
+      "question": "How did the payments technology state evolve from the initial preference to the final decision?",
+      "required_event_ids": [
+        "C03E013",
+        "C03E031",
+        "C03E079"
+      ]
+    },
+    {
+      "query_id": "Q03-05",
+      "conversation_id": "CONV-03",
+      "category": "ambiguity",
+      "question": "What remained unresolved about payments?",
+      "required_event_ids": [
+        "C03E061",
+        "C03E083"
+      ]
+    },
+    {
+      "query_id": "Q03-06",
+      "conversation_id": "CONV-03",
+      "category": "negative",
+      "question": "Was MongoDB part of the payments discussion?",
+      "required_event_ids": [
+        "C03E094"
+      ]
+    },
+    {
+      "query_id": "Q03-07",
+      "conversation_id": "CONV-03",
+      "category": "provenance",
+      "question": "Who originally reported the payments failure and how was it later confirmed?",
+      "required_event_ids": [
+        "C03E007",
+        "C03E091"
+      ]
+    },
+    {
+      "query_id": "Q03-08",
+      "conversation_id": "CONV-03",
+      "category": "multi_hop",
+      "question": "Why did the team keep both interpretations about the payments retry change before settling the issue?",
+      "required_event_ids": [
+        "C03E047",
+        "C03E055",
+        "C03E068"
+      ]
+    },
+    {
+      "query_id": "Q04-01",
+      "conversation_id": "CONV-04",
+      "category": "historical",
+      "question": "What was the original technology preference for notifications, and what ultimately replaced it?",
+      "required_event_ids": [
+        "C04E013",
+        "C04E031",
+        "C04E079"
+      ]
+    },
+    {
+      "query_id": "Q04-02",
+      "conversation_id": "CONV-04",
+      "category": "decision",
+      "question": "What decision was made about notifications after the cost and reliability review?",
+      "required_event_ids": [
+        "C04E019",
+        "C04E031"
+      ]
+    },
+    {
+      "query_id": "Q04-03",
+      "conversation_id": "CONV-04",
+      "category": "action_outcome",
+      "question": "What failed in notifications, what action followed, and what was the outcome?",
+      "required_event_ids": [
+        "C04E007",
+        "C04E036",
+        "C04E047"
+      ]
+    },
+    {
+      "query_id": "Q04-04",
+      "conversation_id": "CONV-04",
+      "category": "temporal",
+      "question": "How did the notifications technology state evolve from the initial preference to the final decision?",
+      "required_event_ids": [
+        "C04E013",
+        "C04E031",
+        "C04E079"
+      ]
+    },
+    {
+      "query_id": "Q04-05",
+      "conversation_id": "CONV-04",
+      "category": "ambiguity",
+      "question": "What remained unresolved about notifications?",
+      "required_event_ids": [
+        "C04E061",
+        "C04E083"
+      ]
+    },
+    {
+      "query_id": "Q04-06",
+      "conversation_id": "CONV-04",
+      "category": "negative",
+      "question": "Was MongoDB part of the notifications discussion?",
+      "required_event_ids": [
+        "C04E094"
+      ]
+    },
+    {
+      "query_id": "Q04-07",
+      "conversation_id": "CONV-04",
+      "category": "provenance",
+      "question": "Who originally reported the notifications failure and how was it later confirmed?",
+      "required_event_ids": [
+        "C04E007",
+        "C04E091"
+      ]
+    },
+    {
+      "query_id": "Q04-08",
+      "conversation_id": "CONV-04",
+      "category": "multi_hop",
+      "question": "Why did the team keep both interpretations about the notifications retry change before settling the issue?",
+      "required_event_ids": [
+        "C04E047",
+        "C04E055",
+        "C04E068"
+      ]
+    },
+    {
+      "query_id": "Q05-01",
+      "conversation_id": "CONV-05",
+      "category": "historical",
+      "question": "What was the original technology preference for analytics, and what ultimately replaced it?",
+      "required_event_ids": [
+        "C05E013",
+        "C05E031",
+        "C05E079"
+      ]
+    },
+    {
+      "query_id": "Q05-02",
+      "conversation_id": "CONV-05",
+      "category": "decision",
+      "question": "What decision was made about analytics after the cost and reliability review?",
+      "required_event_ids": [
+        "C05E019",
+        "C05E031"
+      ]
+    },
+    {
+      "query_id": "Q05-03",
+      "conversation_id": "CONV-05",
+      "category": "action_outcome",
+      "question": "What failed in analytics, what action followed, and what was the outcome?",
+      "required_event_ids": [
+        "C05E007",
+        "C05E036",
+        "C05E047"
+      ]
+    },
+    {
+      "query_id": "Q05-04",
+      "conversation_id": "CONV-05",
+      "category": "temporal",
+      "question": "How did the analytics technology state evolve from the initial preference to the final decision?",
+      "required_event_ids": [
+        "C05E013",
+        "C05E031",
+        "C05E079"
+      ]
+    },
+    {
+      "query_id": "Q05-05",
+      "conversation_id": "CONV-05",
+      "category": "ambiguity",
+      "question": "What remained unresolved about analytics?",
+      "required_event_ids": [
+        "C05E061",
+        "C05E083"
+      ]
+    },
+    {
+      "query_id": "Q05-06",
+      "conversation_id": "CONV-05",
+      "category": "negative",
+      "question": "Was MongoDB part of the analytics discussion?",
+      "required_event_ids": [
+        "C05E094"
+      ]
+    },
+    {
+      "query_id": "Q05-07",
+      "conversation_id": "CONV-05",
+      "category": "provenance",
+      "question": "Who originally reported the analytics failure and how was it later confirmed?",
+      "required_event_ids": [
+        "C05E007",
+        "C05E091"
+      ]
+    },
+    {
+      "query_id": "Q05-08",
+      "conversation_id": "CONV-05",
+      "category": "multi_hop",
+      "question": "Why did the team keep both interpretations about the analytics retry change before settling the issue?",
+      "required_event_ids": [
+        "C05E047",
+        "C05E055",
+        "C05E068"
+      ]
+    },
+    {
+      "query_id": "Q06-01",
+      "conversation_id": "CONV-06",
+      "category": "historical",
+      "question": "What was the original technology preference for deployment, and what ultimately replaced it?",
+      "required_event_ids": [
+        "C06E013",
+        "C06E031",
+        "C06E079"
+      ]
+    },
+    {
+      "query_id": "Q06-02",
+      "conversation_id": "CONV-06",
+      "category": "decision",
+      "question": "What decision was made about deployment after the cost and reliability review?",
+      "required_event_ids": [
+        "C06E019",
+        "C06E031"
+      ]
+    },
+    {
+      "query_id": "Q06-03",
+      "conversation_id": "CONV-06",
+      "category": "action_outcome",
+      "question": "What failed in deployment, what action followed, and what was the outcome?",
+      "required_event_ids": [
+        "C06E007",
+        "C06E036",
+        "C06E047"
+      ]
+    },
+    {
+      "query_id": "Q06-04",
+      "conversation_id": "CONV-06",
+      "category": "temporal",
+      "question": "How did the deployment technology state evolve from the initial preference to the final decision?",
+      "required_event_ids": [
+        "C06E013",
+        "C06E031",
+        "C06E079"
+      ]
+    },
+    {
+      "query_id": "Q06-05",
+      "conversation_id": "CONV-06",
+      "category": "ambiguity",
+      "question": "What remained unresolved about deployment?",
+      "required_event_ids": [
+        "C06E061",
+        "C06E083"
+      ]
+    },
+    {
+      "query_id": "Q06-06",
+      "conversation_id": "CONV-06",
+      "category": "negative",
+      "question": "Was MongoDB part of the deployment discussion?",
+      "required_event_ids": [
+        "C06E094"
+      ]
+    },
+    {
+      "query_id": "Q06-07",
+      "conversation_id": "CONV-06",
+      "category": "provenance",
+      "question": "Who originally reported the deployment failure and how was it later confirmed?",
+      "required_event_ids": [
+        "C06E007",
+        "C06E091"
+      ]
+    },
+    {
+      "query_id": "Q06-08",
+      "conversation_id": "CONV-06",
+      "category": "multi_hop",
+      "question": "Why did the team keep both interpretations about the deployment retry change before settling the issue?",
+      "required_event_ids": [
+        "C06E047",
+        "C06E055",
+        "C06E068"
+      ]
+    },
+    {
+      "query_id": "Q07-01",
+      "conversation_id": "CONV-07",
+      "category": "historical",
+      "question": "What was the original technology preference for identity, and what ultimately replaced it?",
+      "required_event_ids": [
+        "C07E013",
+        "C07E031",
+        "C07E079"
+      ]
+    },
+    {
+      "query_id": "Q07-02",
+      "conversation_id": "CONV-07",
+      "category": "decision",
+      "question": "What decision was made about identity after the cost and reliability review?",
+      "required_event_ids": [
+        "C07E019",
+        "C07E031"
+      ]
+    },
+    {
+      "query_id": "Q07-03",
+      "conversation_id": "CONV-07",
+      "category": "action_outcome",
+      "question": "What failed in identity, what action followed, and what was the outcome?",
+      "required_event_ids": [
+        "C07E007",
+        "C07E036",
+        "C07E047"
+      ]
+    },
+    {
+      "query_id": "Q07-04",
+      "conversation_id": "CONV-07",
+      "category": "temporal",
+      "question": "How did the identity technology state evolve from the initial preference to the final decision?",
+      "required_event_ids": [
+        "C07E013",
+        "C07E031",
+        "C07E079"
+      ]
+    },
+    {
+      "query_id": "Q07-05",
+      "conversation_id": "CONV-07",
+      "category": "ambiguity",
+      "question": "What remained unresolved about identity?",
+      "required_event_ids": [
+        "C07E061",
+        "C07E083"
+      ]
+    },
+    {
+      "query_id": "Q07-06",
+      "conversation_id": "CONV-07",
+      "category": "negative",
+      "question": "Was MongoDB part of the identity discussion?",
+      "required_event_ids": [
+        "C07E094"
+      ]
+    },
+    {
+      "query_id": "Q07-07",
+      "conversation_id": "CONV-07",
+      "category": "provenance",
+      "question": "Who originally reported the identity failure and how was it later confirmed?",
+      "required_event_ids": [
+        "C07E007",
+        "C07E091"
+      ]
+    },
+    {
+      "query_id": "Q07-08",
+      "conversation_id": "CONV-07",
+      "category": "multi_hop",
+      "question": "Why did the team keep both interpretations about the identity retry change before settling the issue?",
+      "required_event_ids": [
+        "C07E047",
+        "C07E055",
+        "C07E068"
+      ]
+    },
+    {
+      "query_id": "Q08-01",
+      "conversation_id": "CONV-08",
+      "category": "historical",
+      "question": "What was the original technology preference for imports, and what ultimately replaced it?",
+      "required_event_ids": [
+        "C08E013",
+        "C08E031",
+        "C08E079"
+      ]
+    },
+    {
+      "query_id": "Q08-02",
+      "conversation_id": "CONV-08",
+      "category": "decision",
+      "question": "What decision was made about imports after the cost and reliability review?",
+      "required_event_ids": [
+        "C08E019",
+        "C08E031"
+      ]
+    },
+    {
+      "query_id": "Q08-03",
+      "conversation_id": "CONV-08",
+      "category": "action_outcome",
+      "question": "What failed in imports, what action followed, and what was the outcome?",
+      "required_event_ids": [
+        "C08E007",
+        "C08E036",
+        "C08E047"
+      ]
+    },
+    {
+      "query_id": "Q08-04",
+      "conversation_id": "CONV-08",
+      "category": "temporal",
+      "question": "How did the imports technology state evolve from the initial preference to the final decision?",
+      "required_event_ids": [
+        "C08E013",
+        "C08E031",
+        "C08E079"
+      ]
+    },
+    {
+      "query_id": "Q08-05",
+      "conversation_id": "CONV-08",
+      "category": "ambiguity",
+      "question": "What remained unresolved about imports?",
+      "required_event_ids": [
+        "C08E061",
+        "C08E083"
+      ]
+    },
+    {
+      "query_id": "Q08-06",
+      "conversation_id": "CONV-08",
+      "category": "negative",
+      "question": "Was MongoDB part of the imports discussion?",
+      "required_event_ids": [
+        "C08E094"
+      ]
+    },
+    {
+      "query_id": "Q08-07",
+      "conversation_id": "CONV-08",
+      "category": "provenance",
+      "question": "Who originally reported the imports failure and how was it later confirmed?",
+      "required_event_ids": [
+        "C08E007",
+        "C08E091"
+      ]
+    },
+    {
+      "query_id": "Q08-08",
+      "conversation_id": "CONV-08",
+      "category": "multi_hop",
+      "question": "Why did the team keep both interpretations about the imports retry change before settling the issue?",
+      "required_event_ids": [
+        "C08E047",
+        "C08E055",
+        "C08E068"
+      ]
+    },
+    {
+      "query_id": "Q09-01",
+      "conversation_id": "CONV-09",
+      "category": "historical",
+      "question": "What was the original technology preference for exports, and what ultimately replaced it?",
+      "required_event_ids": [
+        "C09E013",
+        "C09E031",
+        "C09E079"
+      ]
+    },
+    {
+      "query_id": "Q09-02",
+      "conversation_id": "CONV-09",
+      "category": "decision",
+      "question": "What decision was made about exports after the cost and reliability review?",
+      "required_event_ids": [
+        "C09E019",
+        "C09E031"
+      ]
+    },
+    {
+      "query_id": "Q09-03",
+      "conversation_id": "CONV-09",
+      "category": "action_outcome",
+      "question": "What failed in exports, what action followed, and what was the outcome?",
+      "required_event_ids": [
+        "C09E007",
+        "C09E036",
+        "C09E047"
+      ]
+    },
+    {
+      "query_id": "Q09-04",
+      "conversation_id": "CONV-09",
+      "category": "temporal",
+      "question": "How did the exports technology state evolve from the initial preference to the final decision?",
+      "required_event_ids": [
+        "C09E013",
+        "C09E031",
+        "C09E079"
+      ]
+    },
+    {
+      "query_id": "Q09-05",
+      "conversation_id": "CONV-09",
+      "category": "ambiguity",
+      "question": "What remained unresolved about exports?",
+      "required_event_ids": [
+        "C09E061",
+        "C09E083"
+      ]
+    },
+    {
+      "query_id": "Q09-06",
+      "conversation_id": "CONV-09",
+      "category": "negative",
+      "question": "Was MongoDB part of the exports discussion?",
+      "required_event_ids": [
+        "C09E094"
+      ]
+    },
+    {
+      "query_id": "Q09-07",
+      "conversation_id": "CONV-09",
+      "category": "provenance",
+      "question": "Who originally reported the exports failure and how was it later confirmed?",
+      "required_event_ids": [
+        "C09E007",
+        "C09E091"
+      ]
+    },
+    {
+      "query_id": "Q09-08",
+      "conversation_id": "CONV-09",
+      "category": "multi_hop",
+      "question": "Why did the team keep both interpretations about the exports retry change before settling the issue?",
+      "required_event_ids": [
+        "C09E047",
+        "C09E055",
+        "C09E068"
+      ]
+    },
+    {
+      "query_id": "Q10-01",
+      "conversation_id": "CONV-10",
+      "category": "historical",
+      "question": "What was the original technology preference for recommendations, and what ultimately replaced it?",
+      "required_event_ids": [
+        "C10E013",
+        "C10E031",
+        "C10E079"
+      ]
+    },
+    {
+      "query_id": "Q10-02",
+      "conversation_id": "CONV-10",
+      "category": "decision",
+      "question": "What decision was made about recommendations after the cost and reliability review?",
+      "required_event_ids": [
+        "C10E019",
+        "C10E031"
+      ]
+    },
+    {
+      "query_id": "Q10-03",
+      "conversation_id": "CONV-10",
+      "category": "action_outcome",
+      "question": "What failed in recommendations, what action followed, and what was the outcome?",
+      "required_event_ids": [
+        "C10E007",
+        "C10E036",
+        "C10E047"
+      ]
+    },
+    {
+      "query_id": "Q10-04",
+      "conversation_id": "CONV-10",
+      "category": "temporal",
+      "question": "How did the recommendations technology state evolve from the initial preference to the final decision?",
+      "required_event_ids": [
+        "C10E013",
+        "C10E031",
+        "C10E079"
+      ]
+    },
+    {
+      "query_id": "Q10-05",
+      "conversation_id": "CONV-10",
+      "category": "ambiguity",
+      "question": "What remained unresolved about recommendations?",
+      "required_event_ids": [
+        "C10E061",
+        "C10E083"
+      ]
+    },
+    {
+      "query_id": "Q10-06",
+      "conversation_id": "CONV-10",
+      "category": "negative",
+      "question": "Was MongoDB part of the recommendations discussion?",
+      "required_event_ids": [
+        "C10E094"
+      ]
+    },
+    {
+      "query_id": "Q10-07",
+      "conversation_id": "CONV-10",
+      "category": "provenance",
+      "question": "Who originally reported the recommendations failure and how was it later confirmed?",
+      "required_event_ids": [
+        "C10E007",
+        "C10E091"
+      ]
+    },
+    {
+      "query_id": "Q10-08",
+      "conversation_id": "CONV-10",
+      "category": "multi_hop",
+      "question": "Why did the team keep both interpretations about the recommendations retry change before settling the issue?",
+      "required_event_ids": [
+        "C10E047",
+        "C10E055",
+        "C10E068"
+      ]
+    },
+    {
+      "query_id": "Q11-01",
+      "conversation_id": "CONV-11",
+      "category": "historical",
+      "question": "What was the original technology preference for catalog, and what ultimately replaced it?",
+      "required_event_ids": [
+        "C11E013",
+        "C11E031",
+        "C11E079"
+      ]
+    },
+    {
+      "query_id": "Q11-02",
+      "conversation_id": "CONV-11",
+      "category": "decision",
+      "question": "What decision was made about catalog after the cost and reliability review?",
+      "required_event_ids": [
+        "C11E019",
+        "C11E031"
+      ]
+    },
+    {
+      "query_id": "Q11-03",
+      "conversation_id": "CONV-11",
+      "category": "action_outcome",
+      "question": "What failed in catalog, what action followed, and what was the outcome?",
+      "required_event_ids": [
+        "C11E007",
+        "C11E036",
+        "C11E047"
+      ]
+    },
+    {
+      "query_id": "Q11-04",
+      "conversation_id": "CONV-11",
+      "category": "temporal",
+      "question": "How did the catalog technology state evolve from the initial preference to the final decision?",
+      "required_event_ids": [
+        "C11E013",
+        "C11E031",
+        "C11E079"
+      ]
+    },
+    {
+      "query_id": "Q11-05",
+      "conversation_id": "CONV-11",
+      "category": "ambiguity",
+      "question": "What remained unresolved about catalog?",
+      "required_event_ids": [
+        "C11E061",
+        "C11E083"
+      ]
+    },
+    {
+      "query_id": "Q11-06",
+      "conversation_id": "CONV-11",
+      "category": "negative",
+      "question": "Was MongoDB part of the catalog discussion?",
+      "required_event_ids": [
+        "C11E094"
+      ]
+    },
+    {
+      "query_id": "Q11-07",
+      "conversation_id": "CONV-11",
+      "category": "provenance",
+      "question": "Who originally reported the catalog failure and how was it later confirmed?",
+      "required_event_ids": [
+        "C11E007",
+        "C11E091"
+      ]
+    },
+    {
+      "query_id": "Q11-08",
+      "conversation_id": "CONV-11",
+      "category": "multi_hop",
+      "question": "Why did the team keep both interpretations about the catalog retry change before settling the issue?",
+      "required_event_ids": [
+        "C11E047",
+        "C11E055",
+        "C11E068"
+      ]
+    },
+    {
+      "query_id": "Q12-01",
+      "conversation_id": "CONV-12",
+      "category": "historical",
+      "question": "What was the original technology preference for webhooks, and what ultimately replaced it?",
+      "required_event_ids": [
+        "C12E013",
+        "C12E031",
+        "C12E079"
+      ]
+    },
+    {
+      "query_id": "Q12-02",
+      "conversation_id": "CONV-12",
+      "category": "decision",
+      "question": "What decision was made about webhooks after the cost and reliability review?",
+      "required_event_ids": [
+        "C12E019",
+        "C12E031"
+      ]
+    },
+    {
+      "query_id": "Q12-03",
+      "conversation_id": "CONV-12",
+      "category": "action_outcome",
+      "question": "What failed in webhooks, what action followed, and what was the outcome?",
+      "required_event_ids": [
+        "C12E007",
+        "C12E036",
+        "C12E047"
+      ]
+    },
+    {
+      "query_id": "Q12-04",
+      "conversation_id": "CONV-12",
+      "category": "temporal",
+      "question": "How did the webhooks technology state evolve from the initial preference to the final decision?",
+      "required_event_ids": [
+        "C12E013",
+        "C12E031",
+        "C12E079"
+      ]
+    },
+    {
+      "query_id": "Q12-05",
+      "conversation_id": "CONV-12",
+      "category": "ambiguity",
+      "question": "What remained unresolved about webhooks?",
+      "required_event_ids": [
+        "C12E061",
+        "C12E083"
+      ]
+    },
+    {
+      "query_id": "Q12-06",
+      "conversation_id": "CONV-12",
+      "category": "negative",
+      "question": "Was MongoDB part of the webhooks discussion?",
+      "required_event_ids": [
+        "C12E094"
+      ]
+    },
+    {
+      "query_id": "Q12-07",
+      "conversation_id": "CONV-12",
+      "category": "provenance",
+      "question": "Who originally reported the webhooks failure and how was it later confirmed?",
+      "required_event_ids": [
+        "C12E007",
+        "C12E091"
+      ]
+    },
+    {
+      "query_id": "Q12-08",
+      "conversation_id": "CONV-12",
+      "category": "multi_hop",
+      "question": "Why did the team keep both interpretations about the webhooks retry change before settling the issue?",
+      "required_event_ids": [
+        "C12E047",
+        "C12E055",
+        "C12E068"
+      ]
+    }
+  ],
+  "event_count": 1200,
+  "conversation_count": 12
+}

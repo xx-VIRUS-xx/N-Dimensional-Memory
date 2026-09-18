@@ -1,0 +1,4802 @@
+{
+  "Q01-01": [
+    {
+      "event_id": "C01E003",
+      "score": 8.63638
+    },
+    {
+      "event_id": "C01E092",
+      "score": 5.825982
+    },
+    {
+      "event_id": "C01E044",
+      "score": 5.254768
+    },
+    {
+      "event_id": "C01E080",
+      "score": 5.140463
+    },
+    {
+      "event_id": "C01E014",
+      "score": 5.080076
+    },
+    {
+      "event_id": "C01E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C01E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C01E004",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C01E012",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C01E016",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C01E024",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C01E028",
+      "score": 4.391575
+    }
+  ],
+  "Q01-02": [
+    {
+      "event_id": "C01E020",
+      "score": 19.434672
+    },
+    {
+      "event_id": "C01E098",
+      "score": 8.244479
+    },
+    {
+      "event_id": "C01E084",
+      "score": 8.015517
+    },
+    {
+      "event_id": "C01E014",
+      "score": 7.956241
+    },
+    {
+      "event_id": "C01E048",
+      "score": 5.936697
+    },
+    {
+      "event_id": "C01E001",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C01E005",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C01E009",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C01E013",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C01E017",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C01E021",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C01E025",
+      "score": 5.507051
+    }
+  ],
+  "Q01-03": [
+    {
+      "event_id": "C01E037",
+      "score": 14.373408
+    },
+    {
+      "event_id": "C01E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C01E008",
+      "score": 4.551052
+    },
+    {
+      "event_id": "C01E001",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C01E005",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C01E009",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C01E013",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C01E017",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C01E021",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C01E025",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C01E029",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C01E033",
+      "score": 4.42194
+    }
+  ],
+  "Q01-04": [
+    {
+      "event_id": "C01E014",
+      "score": 11.039589
+    },
+    {
+      "event_id": "C01E003",
+      "score": 10.0444
+    },
+    {
+      "event_id": "C01E032",
+      "score": 9.700226
+    },
+    {
+      "event_id": "C01E037",
+      "score": 9.700226
+    },
+    {
+      "event_id": "C01E080",
+      "score": 8.94403
+    },
+    {
+      "event_id": "C01E098",
+      "score": 6.542704
+    },
+    {
+      "event_id": "C01E095",
+      "score": 5.956135
+    },
+    {
+      "event_id": "C01E007",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C01E011",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C01E015",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C01E019",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C01E023",
+      "score": 5.263881
+    }
+  ],
+  "Q01-05": [
+    {
+      "event_id": "C01E084",
+      "score": 10.37262
+    },
+    {
+      "event_id": "C01E062",
+      "score": 7.18691
+    },
+    {
+      "event_id": "C01E020",
+      "score": 4.063562
+    },
+    {
+      "event_id": "C01E032",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C01E037",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C01E098",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C01E003",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C01E007",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C01E011",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C01E015",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C01E019",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C01E023",
+      "score": 2.644118
+    }
+  ],
+  "Q01-06": [
+    {
+      "event_id": "C01E095",
+      "score": 21.403385
+    },
+    {
+      "event_id": "C01E084",
+      "score": 8.015517
+    },
+    {
+      "event_id": "C01E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C01E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C01E032",
+      "score": 3.657948
+    },
+    {
+      "event_id": "C01E003",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C01E007",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C01E011",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C01E015",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C01E019",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C01E023",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C01E027",
+      "score": 3.517372
+    }
+  ],
+  "Q01-07": [
+    {
+      "event_id": "C01E092",
+      "score": 11.880695
+    },
+    {
+      "event_id": "C01E008",
+      "score": 11.490701
+    },
+    {
+      "event_id": "C01E044",
+      "score": 10.779077
+    },
+    {
+      "event_id": "C01E080",
+      "score": 7.604104
+    },
+    {
+      "event_id": "C01E100",
+      "score": 6.150102
+    },
+    {
+      "event_id": "C01E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C01E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C01E007",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C01E011",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C01E015",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C01E019",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C01E023",
+      "score": 4.390626
+    }
+  ],
+  "Q01-08": [
+    {
+      "event_id": "C01E069",
+      "score": 13.171131
+    },
+    {
+      "event_id": "C01E037",
+      "score": 9.253912
+    },
+    {
+      "event_id": "C01E056",
+      "score": 9.062874
+    },
+    {
+      "event_id": "C01E084",
+      "score": 8.982252
+    },
+    {
+      "event_id": "C01E048",
+      "score": 8.124398
+    },
+    {
+      "event_id": "C01E095",
+      "score": 6.87578
+    },
+    {
+      "event_id": "C01E020",
+      "score": 6.683325
+    },
+    {
+      "event_id": "C01E098",
+      "score": 6.542704
+    },
+    {
+      "event_id": "C01E032",
+      "score": 6.504168
+    },
+    {
+      "event_id": "C01E004",
+      "score": 6.502333
+    },
+    {
+      "event_id": "C01E012",
+      "score": 6.502333
+    },
+    {
+      "event_id": "C01E016",
+      "score": 6.502333
+    }
+  ],
+  "Q02-01": [
+    {
+      "event_id": "C02E003",
+      "score": 8.63638
+    },
+    {
+      "event_id": "C02E092",
+      "score": 5.825982
+    },
+    {
+      "event_id": "C02E044",
+      "score": 5.254768
+    },
+    {
+      "event_id": "C02E080",
+      "score": 5.140463
+    },
+    {
+      "event_id": "C02E014",
+      "score": 5.080076
+    },
+    {
+      "event_id": "C02E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C02E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C02E004",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C02E012",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C02E016",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C02E024",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C02E028",
+      "score": 4.391575
+    }
+  ],
+  "Q02-02": [
+    {
+      "event_id": "C02E020",
+      "score": 19.434672
+    },
+    {
+      "event_id": "C02E098",
+      "score": 8.244479
+    },
+    {
+      "event_id": "C02E084",
+      "score": 8.015517
+    },
+    {
+      "event_id": "C02E014",
+      "score": 7.956241
+    },
+    {
+      "event_id": "C02E048",
+      "score": 5.936697
+    },
+    {
+      "event_id": "C02E001",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C02E005",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C02E009",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C02E013",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C02E017",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C02E021",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C02E025",
+      "score": 5.507051
+    }
+  ],
+  "Q02-03": [
+    {
+      "event_id": "C02E037",
+      "score": 14.373408
+    },
+    {
+      "event_id": "C02E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C02E008",
+      "score": 4.551052
+    },
+    {
+      "event_id": "C02E001",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C02E005",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C02E009",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C02E013",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C02E017",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C02E021",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C02E025",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C02E029",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C02E033",
+      "score": 4.42194
+    }
+  ],
+  "Q02-04": [
+    {
+      "event_id": "C02E014",
+      "score": 11.039589
+    },
+    {
+      "event_id": "C02E003",
+      "score": 10.0444
+    },
+    {
+      "event_id": "C02E032",
+      "score": 9.700226
+    },
+    {
+      "event_id": "C02E037",
+      "score": 9.700226
+    },
+    {
+      "event_id": "C02E080",
+      "score": 8.94403
+    },
+    {
+      "event_id": "C02E098",
+      "score": 6.542704
+    },
+    {
+      "event_id": "C02E095",
+      "score": 5.956135
+    },
+    {
+      "event_id": "C02E007",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C02E011",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C02E015",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C02E019",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C02E023",
+      "score": 5.263881
+    }
+  ],
+  "Q02-05": [
+    {
+      "event_id": "C02E084",
+      "score": 10.37262
+    },
+    {
+      "event_id": "C02E062",
+      "score": 7.18691
+    },
+    {
+      "event_id": "C02E020",
+      "score": 4.063562
+    },
+    {
+      "event_id": "C02E032",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C02E037",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C02E098",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C02E003",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C02E007",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C02E011",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C02E015",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C02E019",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C02E023",
+      "score": 2.644118
+    }
+  ],
+  "Q02-06": [
+    {
+      "event_id": "C02E095",
+      "score": 21.403385
+    },
+    {
+      "event_id": "C02E084",
+      "score": 8.015517
+    },
+    {
+      "event_id": "C02E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C02E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C02E032",
+      "score": 3.657948
+    },
+    {
+      "event_id": "C02E003",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C02E007",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C02E011",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C02E015",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C02E019",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C02E023",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C02E027",
+      "score": 3.517372
+    }
+  ],
+  "Q02-07": [
+    {
+      "event_id": "C02E092",
+      "score": 11.880695
+    },
+    {
+      "event_id": "C02E008",
+      "score": 11.490701
+    },
+    {
+      "event_id": "C02E044",
+      "score": 10.779077
+    },
+    {
+      "event_id": "C02E080",
+      "score": 7.604104
+    },
+    {
+      "event_id": "C02E100",
+      "score": 6.150102
+    },
+    {
+      "event_id": "C02E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C02E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C02E007",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C02E011",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C02E015",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C02E019",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C02E023",
+      "score": 4.390626
+    }
+  ],
+  "Q02-08": [
+    {
+      "event_id": "C02E069",
+      "score": 13.171131
+    },
+    {
+      "event_id": "C02E037",
+      "score": 9.253912
+    },
+    {
+      "event_id": "C02E056",
+      "score": 9.062874
+    },
+    {
+      "event_id": "C02E084",
+      "score": 8.982252
+    },
+    {
+      "event_id": "C02E048",
+      "score": 8.124398
+    },
+    {
+      "event_id": "C02E095",
+      "score": 6.87578
+    },
+    {
+      "event_id": "C02E020",
+      "score": 6.683325
+    },
+    {
+      "event_id": "C02E098",
+      "score": 6.542704
+    },
+    {
+      "event_id": "C02E032",
+      "score": 6.504168
+    },
+    {
+      "event_id": "C02E004",
+      "score": 6.502333
+    },
+    {
+      "event_id": "C02E012",
+      "score": 6.502333
+    },
+    {
+      "event_id": "C02E016",
+      "score": 6.502333
+    }
+  ],
+  "Q03-01": [
+    {
+      "event_id": "C03E003",
+      "score": 8.63638
+    },
+    {
+      "event_id": "C03E092",
+      "score": 5.825982
+    },
+    {
+      "event_id": "C03E044",
+      "score": 5.254768
+    },
+    {
+      "event_id": "C03E080",
+      "score": 5.140463
+    },
+    {
+      "event_id": "C03E014",
+      "score": 5.080076
+    },
+    {
+      "event_id": "C03E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C03E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C03E004",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C03E012",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C03E016",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C03E024",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C03E028",
+      "score": 4.391575
+    }
+  ],
+  "Q03-02": [
+    {
+      "event_id": "C03E020",
+      "score": 19.434672
+    },
+    {
+      "event_id": "C03E098",
+      "score": 8.244479
+    },
+    {
+      "event_id": "C03E084",
+      "score": 8.015517
+    },
+    {
+      "event_id": "C03E014",
+      "score": 7.956241
+    },
+    {
+      "event_id": "C03E048",
+      "score": 5.936697
+    },
+    {
+      "event_id": "C03E001",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C03E005",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C03E009",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C03E013",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C03E017",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C03E021",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C03E025",
+      "score": 5.507051
+    }
+  ],
+  "Q03-03": [
+    {
+      "event_id": "C03E037",
+      "score": 14.373408
+    },
+    {
+      "event_id": "C03E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C03E008",
+      "score": 4.551052
+    },
+    {
+      "event_id": "C03E001",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C03E005",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C03E009",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C03E013",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C03E017",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C03E021",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C03E025",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C03E029",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C03E033",
+      "score": 4.42194
+    }
+  ],
+  "Q03-04": [
+    {
+      "event_id": "C03E014",
+      "score": 11.039589
+    },
+    {
+      "event_id": "C03E003",
+      "score": 10.0444
+    },
+    {
+      "event_id": "C03E032",
+      "score": 9.700226
+    },
+    {
+      "event_id": "C03E037",
+      "score": 9.700226
+    },
+    {
+      "event_id": "C03E080",
+      "score": 8.94403
+    },
+    {
+      "event_id": "C03E098",
+      "score": 6.542704
+    },
+    {
+      "event_id": "C03E095",
+      "score": 5.956135
+    },
+    {
+      "event_id": "C03E007",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C03E011",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C03E015",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C03E019",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C03E023",
+      "score": 5.263881
+    }
+  ],
+  "Q03-05": [
+    {
+      "event_id": "C03E084",
+      "score": 10.37262
+    },
+    {
+      "event_id": "C03E062",
+      "score": 7.18691
+    },
+    {
+      "event_id": "C03E020",
+      "score": 4.063562
+    },
+    {
+      "event_id": "C03E032",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C03E037",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C03E098",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C03E003",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C03E007",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C03E011",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C03E015",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C03E019",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C03E023",
+      "score": 2.644118
+    }
+  ],
+  "Q03-06": [
+    {
+      "event_id": "C03E095",
+      "score": 21.403385
+    },
+    {
+      "event_id": "C03E084",
+      "score": 8.015517
+    },
+    {
+      "event_id": "C03E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C03E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C03E032",
+      "score": 3.657948
+    },
+    {
+      "event_id": "C03E003",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C03E007",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C03E011",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C03E015",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C03E019",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C03E023",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C03E027",
+      "score": 3.517372
+    }
+  ],
+  "Q03-07": [
+    {
+      "event_id": "C03E092",
+      "score": 11.880695
+    },
+    {
+      "event_id": "C03E008",
+      "score": 11.490701
+    },
+    {
+      "event_id": "C03E044",
+      "score": 10.779077
+    },
+    {
+      "event_id": "C03E080",
+      "score": 7.604104
+    },
+    {
+      "event_id": "C03E100",
+      "score": 6.150102
+    },
+    {
+      "event_id": "C03E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C03E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C03E007",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C03E011",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C03E015",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C03E019",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C03E023",
+      "score": 4.390626
+    }
+  ],
+  "Q03-08": [
+    {
+      "event_id": "C03E069",
+      "score": 13.171131
+    },
+    {
+      "event_id": "C03E037",
+      "score": 9.253912
+    },
+    {
+      "event_id": "C03E056",
+      "score": 9.062874
+    },
+    {
+      "event_id": "C03E084",
+      "score": 8.982252
+    },
+    {
+      "event_id": "C03E048",
+      "score": 8.124398
+    },
+    {
+      "event_id": "C03E095",
+      "score": 6.87578
+    },
+    {
+      "event_id": "C03E020",
+      "score": 6.683325
+    },
+    {
+      "event_id": "C03E098",
+      "score": 6.542704
+    },
+    {
+      "event_id": "C03E032",
+      "score": 6.504168
+    },
+    {
+      "event_id": "C03E004",
+      "score": 6.502333
+    },
+    {
+      "event_id": "C03E012",
+      "score": 6.502333
+    },
+    {
+      "event_id": "C03E016",
+      "score": 6.502333
+    }
+  ],
+  "Q04-01": [
+    {
+      "event_id": "C04E003",
+      "score": 8.63638
+    },
+    {
+      "event_id": "C04E092",
+      "score": 5.825982
+    },
+    {
+      "event_id": "C04E044",
+      "score": 5.254768
+    },
+    {
+      "event_id": "C04E080",
+      "score": 5.140463
+    },
+    {
+      "event_id": "C04E014",
+      "score": 5.080076
+    },
+    {
+      "event_id": "C04E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C04E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C04E004",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C04E012",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C04E016",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C04E024",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C04E028",
+      "score": 4.391575
+    }
+  ],
+  "Q04-02": [
+    {
+      "event_id": "C04E020",
+      "score": 19.434672
+    },
+    {
+      "event_id": "C04E098",
+      "score": 8.244479
+    },
+    {
+      "event_id": "C04E084",
+      "score": 8.015517
+    },
+    {
+      "event_id": "C04E014",
+      "score": 7.956241
+    },
+    {
+      "event_id": "C04E048",
+      "score": 5.936697
+    },
+    {
+      "event_id": "C04E001",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C04E005",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C04E009",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C04E013",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C04E017",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C04E021",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C04E025",
+      "score": 5.507051
+    }
+  ],
+  "Q04-03": [
+    {
+      "event_id": "C04E037",
+      "score": 14.373408
+    },
+    {
+      "event_id": "C04E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C04E008",
+      "score": 4.551052
+    },
+    {
+      "event_id": "C04E001",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C04E005",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C04E009",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C04E013",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C04E017",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C04E021",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C04E025",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C04E029",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C04E033",
+      "score": 4.42194
+    }
+  ],
+  "Q04-04": [
+    {
+      "event_id": "C04E014",
+      "score": 11.039589
+    },
+    {
+      "event_id": "C04E003",
+      "score": 10.0444
+    },
+    {
+      "event_id": "C04E032",
+      "score": 9.700226
+    },
+    {
+      "event_id": "C04E037",
+      "score": 9.700226
+    },
+    {
+      "event_id": "C04E080",
+      "score": 8.94403
+    },
+    {
+      "event_id": "C04E098",
+      "score": 6.542704
+    },
+    {
+      "event_id": "C04E095",
+      "score": 5.956135
+    },
+    {
+      "event_id": "C04E007",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C04E011",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C04E015",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C04E019",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C04E023",
+      "score": 5.263881
+    }
+  ],
+  "Q04-05": [
+    {
+      "event_id": "C04E084",
+      "score": 10.37262
+    },
+    {
+      "event_id": "C04E062",
+      "score": 7.18691
+    },
+    {
+      "event_id": "C04E020",
+      "score": 4.063562
+    },
+    {
+      "event_id": "C04E032",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C04E037",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C04E098",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C04E003",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C04E007",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C04E011",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C04E015",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C04E019",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C04E023",
+      "score": 2.644118
+    }
+  ],
+  "Q04-06": [
+    {
+      "event_id": "C04E095",
+      "score": 21.403385
+    },
+    {
+      "event_id": "C04E084",
+      "score": 8.015517
+    },
+    {
+      "event_id": "C04E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C04E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C04E032",
+      "score": 3.657948
+    },
+    {
+      "event_id": "C04E003",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C04E007",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C04E011",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C04E015",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C04E019",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C04E023",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C04E027",
+      "score": 3.517372
+    }
+  ],
+  "Q04-07": [
+    {
+      "event_id": "C04E092",
+      "score": 11.880695
+    },
+    {
+      "event_id": "C04E008",
+      "score": 11.490701
+    },
+    {
+      "event_id": "C04E044",
+      "score": 10.779077
+    },
+    {
+      "event_id": "C04E080",
+      "score": 7.604104
+    },
+    {
+      "event_id": "C04E100",
+      "score": 6.150102
+    },
+    {
+      "event_id": "C04E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C04E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C04E007",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C04E011",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C04E015",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C04E019",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C04E023",
+      "score": 4.390626
+    }
+  ],
+  "Q04-08": [
+    {
+      "event_id": "C04E069",
+      "score": 13.171131
+    },
+    {
+      "event_id": "C04E037",
+      "score": 9.253912
+    },
+    {
+      "event_id": "C04E056",
+      "score": 9.062874
+    },
+    {
+      "event_id": "C04E084",
+      "score": 8.982252
+    },
+    {
+      "event_id": "C04E048",
+      "score": 8.124398
+    },
+    {
+      "event_id": "C04E095",
+      "score": 6.87578
+    },
+    {
+      "event_id": "C04E020",
+      "score": 6.683325
+    },
+    {
+      "event_id": "C04E098",
+      "score": 6.542704
+    },
+    {
+      "event_id": "C04E032",
+      "score": 6.504168
+    },
+    {
+      "event_id": "C04E004",
+      "score": 6.502333
+    },
+    {
+      "event_id": "C04E012",
+      "score": 6.502333
+    },
+    {
+      "event_id": "C04E016",
+      "score": 6.502333
+    }
+  ],
+  "Q05-01": [
+    {
+      "event_id": "C05E003",
+      "score": 8.63638
+    },
+    {
+      "event_id": "C05E092",
+      "score": 5.825982
+    },
+    {
+      "event_id": "C05E044",
+      "score": 5.254768
+    },
+    {
+      "event_id": "C05E080",
+      "score": 5.140463
+    },
+    {
+      "event_id": "C05E014",
+      "score": 5.080076
+    },
+    {
+      "event_id": "C05E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C05E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C05E004",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C05E012",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C05E016",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C05E024",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C05E028",
+      "score": 4.391575
+    }
+  ],
+  "Q05-02": [
+    {
+      "event_id": "C05E020",
+      "score": 19.434672
+    },
+    {
+      "event_id": "C05E098",
+      "score": 8.244479
+    },
+    {
+      "event_id": "C05E084",
+      "score": 8.015517
+    },
+    {
+      "event_id": "C05E014",
+      "score": 7.956241
+    },
+    {
+      "event_id": "C05E048",
+      "score": 5.936697
+    },
+    {
+      "event_id": "C05E001",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C05E005",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C05E009",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C05E013",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C05E017",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C05E021",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C05E025",
+      "score": 5.507051
+    }
+  ],
+  "Q05-03": [
+    {
+      "event_id": "C05E037",
+      "score": 14.373408
+    },
+    {
+      "event_id": "C05E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C05E008",
+      "score": 4.551052
+    },
+    {
+      "event_id": "C05E001",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C05E005",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C05E009",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C05E013",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C05E017",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C05E021",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C05E025",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C05E029",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C05E033",
+      "score": 4.42194
+    }
+  ],
+  "Q05-04": [
+    {
+      "event_id": "C05E014",
+      "score": 11.039589
+    },
+    {
+      "event_id": "C05E003",
+      "score": 10.0444
+    },
+    {
+      "event_id": "C05E032",
+      "score": 9.700226
+    },
+    {
+      "event_id": "C05E037",
+      "score": 9.700226
+    },
+    {
+      "event_id": "C05E080",
+      "score": 8.94403
+    },
+    {
+      "event_id": "C05E098",
+      "score": 6.542704
+    },
+    {
+      "event_id": "C05E095",
+      "score": 5.956135
+    },
+    {
+      "event_id": "C05E007",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C05E011",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C05E015",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C05E019",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C05E023",
+      "score": 5.263881
+    }
+  ],
+  "Q05-05": [
+    {
+      "event_id": "C05E084",
+      "score": 10.37262
+    },
+    {
+      "event_id": "C05E062",
+      "score": 7.18691
+    },
+    {
+      "event_id": "C05E020",
+      "score": 4.063562
+    },
+    {
+      "event_id": "C05E032",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C05E037",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C05E098",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C05E003",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C05E007",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C05E011",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C05E015",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C05E019",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C05E023",
+      "score": 2.644118
+    }
+  ],
+  "Q05-06": [
+    {
+      "event_id": "C05E095",
+      "score": 21.403385
+    },
+    {
+      "event_id": "C05E084",
+      "score": 8.015517
+    },
+    {
+      "event_id": "C05E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C05E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C05E032",
+      "score": 3.657948
+    },
+    {
+      "event_id": "C05E003",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C05E007",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C05E011",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C05E015",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C05E019",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C05E023",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C05E027",
+      "score": 3.517372
+    }
+  ],
+  "Q05-07": [
+    {
+      "event_id": "C05E092",
+      "score": 11.880695
+    },
+    {
+      "event_id": "C05E008",
+      "score": 11.490701
+    },
+    {
+      "event_id": "C05E044",
+      "score": 10.779077
+    },
+    {
+      "event_id": "C05E080",
+      "score": 7.604104
+    },
+    {
+      "event_id": "C05E100",
+      "score": 6.150102
+    },
+    {
+      "event_id": "C05E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C05E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C05E007",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C05E011",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C05E015",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C05E019",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C05E023",
+      "score": 4.390626
+    }
+  ],
+  "Q05-08": [
+    {
+      "event_id": "C05E069",
+      "score": 13.171131
+    },
+    {
+      "event_id": "C05E037",
+      "score": 9.253912
+    },
+    {
+      "event_id": "C05E056",
+      "score": 9.062874
+    },
+    {
+      "event_id": "C05E084",
+      "score": 8.982252
+    },
+    {
+      "event_id": "C05E048",
+      "score": 8.124398
+    },
+    {
+      "event_id": "C05E095",
+      "score": 6.87578
+    },
+    {
+      "event_id": "C05E020",
+      "score": 6.683325
+    },
+    {
+      "event_id": "C05E098",
+      "score": 6.542704
+    },
+    {
+      "event_id": "C05E032",
+      "score": 6.504168
+    },
+    {
+      "event_id": "C05E004",
+      "score": 6.502333
+    },
+    {
+      "event_id": "C05E012",
+      "score": 6.502333
+    },
+    {
+      "event_id": "C05E016",
+      "score": 6.502333
+    }
+  ],
+  "Q06-01": [
+    {
+      "event_id": "C06E003",
+      "score": 8.364127
+    },
+    {
+      "event_id": "C06E092",
+      "score": 8.110069
+    },
+    {
+      "event_id": "C06E044",
+      "score": 5.254768
+    },
+    {
+      "event_id": "C06E080",
+      "score": 5.140463
+    },
+    {
+      "event_id": "C06E014",
+      "score": 5.080076
+    },
+    {
+      "event_id": "C06E098",
+      "score": 4.503265
+    },
+    {
+      "event_id": "C06E037",
+      "score": 4.147116
+    },
+    {
+      "event_id": "C06E004",
+      "score": 4.138754
+    },
+    {
+      "event_id": "C06E012",
+      "score": 4.138754
+    },
+    {
+      "event_id": "C06E016",
+      "score": 4.138754
+    },
+    {
+      "event_id": "C06E024",
+      "score": 4.138754
+    },
+    {
+      "event_id": "C06E028",
+      "score": 4.138754
+    }
+  ],
+  "Q06-02": [
+    {
+      "event_id": "C06E020",
+      "score": 19.434672
+    },
+    {
+      "event_id": "C06E098",
+      "score": 7.961345
+    },
+    {
+      "event_id": "C06E014",
+      "score": 7.956241
+    },
+    {
+      "event_id": "C06E084",
+      "score": 7.75334
+    },
+    {
+      "event_id": "C06E048",
+      "score": 5.936697
+    },
+    {
+      "event_id": "C06E099",
+      "score": 5.441408
+    },
+    {
+      "event_id": "C06E001",
+      "score": 5.262942
+    },
+    {
+      "event_id": "C06E005",
+      "score": 5.262942
+    },
+    {
+      "event_id": "C06E009",
+      "score": 5.262942
+    },
+    {
+      "event_id": "C06E013",
+      "score": 5.262942
+    },
+    {
+      "event_id": "C06E017",
+      "score": 5.262942
+    },
+    {
+      "event_id": "C06E021",
+      "score": 5.262942
+    }
+  ],
+  "Q06-03": [
+    {
+      "event_id": "C06E037",
+      "score": 14.090274
+    },
+    {
+      "event_id": "C06E098",
+      "score": 4.503265
+    },
+    {
+      "event_id": "C06E008",
+      "score": 4.288875
+    },
+    {
+      "event_id": "C06E092",
+      "score": 4.196891
+    },
+    {
+      "event_id": "C06E001",
+      "score": 4.177831
+    },
+    {
+      "event_id": "C06E005",
+      "score": 4.177831
+    },
+    {
+      "event_id": "C06E009",
+      "score": 4.177831
+    },
+    {
+      "event_id": "C06E013",
+      "score": 4.177831
+    },
+    {
+      "event_id": "C06E017",
+      "score": 4.177831
+    },
+    {
+      "event_id": "C06E021",
+      "score": 4.177831
+    },
+    {
+      "event_id": "C06E025",
+      "score": 4.177831
+    },
+    {
+      "event_id": "C06E029",
+      "score": 4.177831
+    }
+  ],
+  "Q06-04": [
+    {
+      "event_id": "C06E014",
+      "score": 11.039589
+    },
+    {
+      "event_id": "C06E003",
+      "score": 9.772147
+    },
+    {
+      "event_id": "C06E032",
+      "score": 9.417092
+    },
+    {
+      "event_id": "C06E037",
+      "score": 9.417092
+    },
+    {
+      "event_id": "C06E080",
+      "score": 8.94403
+    },
+    {
+      "event_id": "C06E098",
+      "score": 6.25957
+    },
+    {
+      "event_id": "C06E092",
+      "score": 5.877084
+    },
+    {
+      "event_id": "C06E095",
+      "score": 5.703314
+    },
+    {
+      "event_id": "C06E007",
+      "score": 4.991628
+    },
+    {
+      "event_id": "C06E011",
+      "score": 4.991628
+    },
+    {
+      "event_id": "C06E015",
+      "score": 4.991628
+    },
+    {
+      "event_id": "C06E019",
+      "score": 4.991628
+    }
+  ],
+  "Q06-05": [
+    {
+      "event_id": "C06E084",
+      "score": 10.110443
+    },
+    {
+      "event_id": "C06E062",
+      "score": 7.18691
+    },
+    {
+      "event_id": "C06E020",
+      "score": 4.063562
+    },
+    {
+      "event_id": "C06E032",
+      "score": 2.46666
+    },
+    {
+      "event_id": "C06E037",
+      "score": 2.46666
+    },
+    {
+      "event_id": "C06E098",
+      "score": 2.46666
+    },
+    {
+      "event_id": "C06E003",
+      "score": 2.371865
+    },
+    {
+      "event_id": "C06E007",
+      "score": 2.371865
+    },
+    {
+      "event_id": "C06E011",
+      "score": 2.371865
+    },
+    {
+      "event_id": "C06E015",
+      "score": 2.371865
+    },
+    {
+      "event_id": "C06E019",
+      "score": 2.371865
+    },
+    {
+      "event_id": "C06E023",
+      "score": 2.371865
+    }
+  ],
+  "Q06-06": [
+    {
+      "event_id": "C06E095",
+      "score": 21.150564
+    },
+    {
+      "event_id": "C06E084",
+      "score": 7.75334
+    },
+    {
+      "event_id": "C06E098",
+      "score": 4.503265
+    },
+    {
+      "event_id": "C06E092",
+      "score": 4.196891
+    },
+    {
+      "event_id": "C06E037",
+      "score": 4.147116
+    },
+    {
+      "event_id": "C06E069",
+      "score": 3.987741
+    },
+    {
+      "event_id": "C06E032",
+      "score": 3.374815
+    },
+    {
+      "event_id": "C06E003",
+      "score": 3.24512
+    },
+    {
+      "event_id": "C06E007",
+      "score": 3.24512
+    },
+    {
+      "event_id": "C06E011",
+      "score": 3.24512
+    },
+    {
+      "event_id": "C06E015",
+      "score": 3.24512
+    },
+    {
+      "event_id": "C06E019",
+      "score": 3.24512
+    }
+  ],
+  "Q06-07": [
+    {
+      "event_id": "C06E092",
+      "score": 14.164783
+    },
+    {
+      "event_id": "C06E008",
+      "score": 11.228524
+    },
+    {
+      "event_id": "C06E044",
+      "score": 10.779077
+    },
+    {
+      "event_id": "C06E080",
+      "score": 7.604104
+    },
+    {
+      "event_id": "C06E100",
+      "score": 6.150102
+    },
+    {
+      "event_id": "C06E098",
+      "score": 4.503265
+    },
+    {
+      "event_id": "C06E056",
+      "score": 4.312243
+    },
+    {
+      "event_id": "C06E037",
+      "score": 4.147116
+    },
+    {
+      "event_id": "C06E007",
+      "score": 4.118374
+    },
+    {
+      "event_id": "C06E011",
+      "score": 4.118374
+    },
+    {
+      "event_id": "C06E015",
+      "score": 4.118374
+    },
+    {
+      "event_id": "C06E019",
+      "score": 4.118374
+    }
+  ],
+  "Q06-08": [
+    {
+      "event_id": "C06E069",
+      "score": 15.542997
+    },
+    {
+      "event_id": "C06E056",
+      "score": 9.062874
+    },
+    {
+      "event_id": "C06E037",
+      "score": 8.970778
+    },
+    {
+      "event_id": "C06E084",
+      "score": 8.720075
+    },
+    {
+      "event_id": "C06E048",
+      "score": 8.124398
+    },
+    {
+      "event_id": "C06E020",
+      "score": 6.683325
+    },
+    {
+      "event_id": "C06E095",
+      "score": 6.622959
+    },
+    {
+      "event_id": "C06E098",
+      "score": 6.25957
+    },
+    {
+      "event_id": "C06E004",
+      "score": 6.249512
+    },
+    {
+      "event_id": "C06E012",
+      "score": 6.249512
+    },
+    {
+      "event_id": "C06E016",
+      "score": 6.249512
+    },
+    {
+      "event_id": "C06E024",
+      "score": 6.249512
+    }
+  ],
+  "Q07-01": [
+    {
+      "event_id": "C07E003",
+      "score": 8.63638
+    },
+    {
+      "event_id": "C07E092",
+      "score": 5.825982
+    },
+    {
+      "event_id": "C07E044",
+      "score": 5.254768
+    },
+    {
+      "event_id": "C07E080",
+      "score": 5.140463
+    },
+    {
+      "event_id": "C07E014",
+      "score": 5.080076
+    },
+    {
+      "event_id": "C07E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C07E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C07E004",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C07E012",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C07E016",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C07E024",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C07E028",
+      "score": 4.391575
+    }
+  ],
+  "Q07-02": [
+    {
+      "event_id": "C07E020",
+      "score": 19.434672
+    },
+    {
+      "event_id": "C07E098",
+      "score": 8.244479
+    },
+    {
+      "event_id": "C07E084",
+      "score": 8.015517
+    },
+    {
+      "event_id": "C07E014",
+      "score": 7.956241
+    },
+    {
+      "event_id": "C07E048",
+      "score": 5.936697
+    },
+    {
+      "event_id": "C07E001",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C07E005",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C07E009",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C07E013",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C07E017",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C07E021",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C07E025",
+      "score": 5.507051
+    }
+  ],
+  "Q07-03": [
+    {
+      "event_id": "C07E037",
+      "score": 14.373408
+    },
+    {
+      "event_id": "C07E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C07E008",
+      "score": 4.551052
+    },
+    {
+      "event_id": "C07E001",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C07E005",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C07E009",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C07E013",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C07E017",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C07E021",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C07E025",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C07E029",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C07E033",
+      "score": 4.42194
+    }
+  ],
+  "Q07-04": [
+    {
+      "event_id": "C07E014",
+      "score": 11.039589
+    },
+    {
+      "event_id": "C07E003",
+      "score": 10.0444
+    },
+    {
+      "event_id": "C07E032",
+      "score": 9.700226
+    },
+    {
+      "event_id": "C07E037",
+      "score": 9.700226
+    },
+    {
+      "event_id": "C07E080",
+      "score": 8.94403
+    },
+    {
+      "event_id": "C07E098",
+      "score": 6.542704
+    },
+    {
+      "event_id": "C07E095",
+      "score": 5.956135
+    },
+    {
+      "event_id": "C07E007",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C07E011",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C07E015",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C07E019",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C07E023",
+      "score": 5.263881
+    }
+  ],
+  "Q07-05": [
+    {
+      "event_id": "C07E084",
+      "score": 10.37262
+    },
+    {
+      "event_id": "C07E062",
+      "score": 7.18691
+    },
+    {
+      "event_id": "C07E020",
+      "score": 4.063562
+    },
+    {
+      "event_id": "C07E032",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C07E037",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C07E098",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C07E003",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C07E007",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C07E011",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C07E015",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C07E019",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C07E023",
+      "score": 2.644118
+    }
+  ],
+  "Q07-06": [
+    {
+      "event_id": "C07E095",
+      "score": 21.403385
+    },
+    {
+      "event_id": "C07E084",
+      "score": 8.015517
+    },
+    {
+      "event_id": "C07E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C07E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C07E032",
+      "score": 3.657948
+    },
+    {
+      "event_id": "C07E003",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C07E007",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C07E011",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C07E015",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C07E019",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C07E023",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C07E027",
+      "score": 3.517372
+    }
+  ],
+  "Q07-07": [
+    {
+      "event_id": "C07E092",
+      "score": 11.880695
+    },
+    {
+      "event_id": "C07E008",
+      "score": 11.490701
+    },
+    {
+      "event_id": "C07E044",
+      "score": 10.779077
+    },
+    {
+      "event_id": "C07E080",
+      "score": 7.604104
+    },
+    {
+      "event_id": "C07E100",
+      "score": 6.150102
+    },
+    {
+      "event_id": "C07E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C07E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C07E007",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C07E011",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C07E015",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C07E019",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C07E023",
+      "score": 4.390626
+    }
+  ],
+  "Q07-08": [
+    {
+      "event_id": "C07E069",
+      "score": 13.171131
+    },
+    {
+      "event_id": "C07E037",
+      "score": 9.253912
+    },
+    {
+      "event_id": "C07E056",
+      "score": 9.062874
+    },
+    {
+      "event_id": "C07E084",
+      "score": 8.982252
+    },
+    {
+      "event_id": "C07E048",
+      "score": 8.124398
+    },
+    {
+      "event_id": "C07E095",
+      "score": 6.87578
+    },
+    {
+      "event_id": "C07E020",
+      "score": 6.683325
+    },
+    {
+      "event_id": "C07E098",
+      "score": 6.542704
+    },
+    {
+      "event_id": "C07E032",
+      "score": 6.504168
+    },
+    {
+      "event_id": "C07E004",
+      "score": 6.502333
+    },
+    {
+      "event_id": "C07E012",
+      "score": 6.502333
+    },
+    {
+      "event_id": "C07E016",
+      "score": 6.502333
+    }
+  ],
+  "Q08-01": [
+    {
+      "event_id": "C08E003",
+      "score": 8.63638
+    },
+    {
+      "event_id": "C08E092",
+      "score": 5.825982
+    },
+    {
+      "event_id": "C08E044",
+      "score": 5.254768
+    },
+    {
+      "event_id": "C08E080",
+      "score": 5.140463
+    },
+    {
+      "event_id": "C08E014",
+      "score": 5.080076
+    },
+    {
+      "event_id": "C08E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C08E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C08E004",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C08E012",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C08E016",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C08E024",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C08E028",
+      "score": 4.391575
+    }
+  ],
+  "Q08-02": [
+    {
+      "event_id": "C08E020",
+      "score": 19.434672
+    },
+    {
+      "event_id": "C08E098",
+      "score": 8.244479
+    },
+    {
+      "event_id": "C08E084",
+      "score": 8.015517
+    },
+    {
+      "event_id": "C08E014",
+      "score": 7.956241
+    },
+    {
+      "event_id": "C08E048",
+      "score": 5.936697
+    },
+    {
+      "event_id": "C08E001",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C08E005",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C08E009",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C08E013",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C08E017",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C08E021",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C08E025",
+      "score": 5.507051
+    }
+  ],
+  "Q08-03": [
+    {
+      "event_id": "C08E037",
+      "score": 14.373408
+    },
+    {
+      "event_id": "C08E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C08E008",
+      "score": 4.551052
+    },
+    {
+      "event_id": "C08E001",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C08E005",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C08E009",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C08E013",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C08E017",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C08E021",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C08E025",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C08E029",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C08E033",
+      "score": 4.42194
+    }
+  ],
+  "Q08-04": [
+    {
+      "event_id": "C08E014",
+      "score": 11.039589
+    },
+    {
+      "event_id": "C08E003",
+      "score": 10.0444
+    },
+    {
+      "event_id": "C08E032",
+      "score": 9.700226
+    },
+    {
+      "event_id": "C08E037",
+      "score": 9.700226
+    },
+    {
+      "event_id": "C08E080",
+      "score": 8.94403
+    },
+    {
+      "event_id": "C08E098",
+      "score": 6.542704
+    },
+    {
+      "event_id": "C08E095",
+      "score": 5.956135
+    },
+    {
+      "event_id": "C08E007",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C08E011",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C08E015",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C08E019",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C08E023",
+      "score": 5.263881
+    }
+  ],
+  "Q08-05": [
+    {
+      "event_id": "C08E084",
+      "score": 10.37262
+    },
+    {
+      "event_id": "C08E062",
+      "score": 7.18691
+    },
+    {
+      "event_id": "C08E020",
+      "score": 4.063562
+    },
+    {
+      "event_id": "C08E032",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C08E037",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C08E098",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C08E003",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C08E007",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C08E011",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C08E015",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C08E019",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C08E023",
+      "score": 2.644118
+    }
+  ],
+  "Q08-06": [
+    {
+      "event_id": "C08E095",
+      "score": 21.403385
+    },
+    {
+      "event_id": "C08E084",
+      "score": 8.015517
+    },
+    {
+      "event_id": "C08E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C08E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C08E032",
+      "score": 3.657948
+    },
+    {
+      "event_id": "C08E003",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C08E007",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C08E011",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C08E015",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C08E019",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C08E023",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C08E027",
+      "score": 3.517372
+    }
+  ],
+  "Q08-07": [
+    {
+      "event_id": "C08E092",
+      "score": 11.880695
+    },
+    {
+      "event_id": "C08E008",
+      "score": 11.490701
+    },
+    {
+      "event_id": "C08E044",
+      "score": 10.779077
+    },
+    {
+      "event_id": "C08E080",
+      "score": 7.604104
+    },
+    {
+      "event_id": "C08E100",
+      "score": 6.150102
+    },
+    {
+      "event_id": "C08E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C08E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C08E007",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C08E011",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C08E015",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C08E019",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C08E023",
+      "score": 4.390626
+    }
+  ],
+  "Q08-08": [
+    {
+      "event_id": "C08E069",
+      "score": 13.171131
+    },
+    {
+      "event_id": "C08E037",
+      "score": 9.253912
+    },
+    {
+      "event_id": "C08E056",
+      "score": 9.062874
+    },
+    {
+      "event_id": "C08E084",
+      "score": 8.982252
+    },
+    {
+      "event_id": "C08E048",
+      "score": 8.124398
+    },
+    {
+      "event_id": "C08E095",
+      "score": 6.87578
+    },
+    {
+      "event_id": "C08E020",
+      "score": 6.683325
+    },
+    {
+      "event_id": "C08E098",
+      "score": 6.542704
+    },
+    {
+      "event_id": "C08E032",
+      "score": 6.504168
+    },
+    {
+      "event_id": "C08E004",
+      "score": 6.502333
+    },
+    {
+      "event_id": "C08E012",
+      "score": 6.502333
+    },
+    {
+      "event_id": "C08E016",
+      "score": 6.502333
+    }
+  ],
+  "Q09-01": [
+    {
+      "event_id": "C09E003",
+      "score": 8.63638
+    },
+    {
+      "event_id": "C09E092",
+      "score": 5.825982
+    },
+    {
+      "event_id": "C09E044",
+      "score": 5.254768
+    },
+    {
+      "event_id": "C09E080",
+      "score": 5.140463
+    },
+    {
+      "event_id": "C09E014",
+      "score": 5.080076
+    },
+    {
+      "event_id": "C09E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C09E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C09E004",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C09E012",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C09E016",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C09E024",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C09E028",
+      "score": 4.391575
+    }
+  ],
+  "Q09-02": [
+    {
+      "event_id": "C09E020",
+      "score": 19.434672
+    },
+    {
+      "event_id": "C09E098",
+      "score": 8.244479
+    },
+    {
+      "event_id": "C09E084",
+      "score": 8.015517
+    },
+    {
+      "event_id": "C09E014",
+      "score": 7.956241
+    },
+    {
+      "event_id": "C09E048",
+      "score": 5.936697
+    },
+    {
+      "event_id": "C09E001",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C09E005",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C09E009",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C09E013",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C09E017",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C09E021",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C09E025",
+      "score": 5.507051
+    }
+  ],
+  "Q09-03": [
+    {
+      "event_id": "C09E037",
+      "score": 14.373408
+    },
+    {
+      "event_id": "C09E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C09E008",
+      "score": 4.551052
+    },
+    {
+      "event_id": "C09E001",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C09E005",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C09E009",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C09E013",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C09E017",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C09E021",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C09E025",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C09E029",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C09E033",
+      "score": 4.42194
+    }
+  ],
+  "Q09-04": [
+    {
+      "event_id": "C09E014",
+      "score": 11.039589
+    },
+    {
+      "event_id": "C09E003",
+      "score": 10.0444
+    },
+    {
+      "event_id": "C09E032",
+      "score": 9.700226
+    },
+    {
+      "event_id": "C09E037",
+      "score": 9.700226
+    },
+    {
+      "event_id": "C09E080",
+      "score": 8.94403
+    },
+    {
+      "event_id": "C09E098",
+      "score": 6.542704
+    },
+    {
+      "event_id": "C09E095",
+      "score": 5.956135
+    },
+    {
+      "event_id": "C09E007",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C09E011",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C09E015",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C09E019",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C09E023",
+      "score": 5.263881
+    }
+  ],
+  "Q09-05": [
+    {
+      "event_id": "C09E084",
+      "score": 10.37262
+    },
+    {
+      "event_id": "C09E062",
+      "score": 7.18691
+    },
+    {
+      "event_id": "C09E020",
+      "score": 4.063562
+    },
+    {
+      "event_id": "C09E032",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C09E037",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C09E098",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C09E003",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C09E007",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C09E011",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C09E015",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C09E019",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C09E023",
+      "score": 2.644118
+    }
+  ],
+  "Q09-06": [
+    {
+      "event_id": "C09E095",
+      "score": 21.403385
+    },
+    {
+      "event_id": "C09E084",
+      "score": 8.015517
+    },
+    {
+      "event_id": "C09E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C09E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C09E032",
+      "score": 3.657948
+    },
+    {
+      "event_id": "C09E003",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C09E007",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C09E011",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C09E015",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C09E019",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C09E023",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C09E027",
+      "score": 3.517372
+    }
+  ],
+  "Q09-07": [
+    {
+      "event_id": "C09E092",
+      "score": 11.880695
+    },
+    {
+      "event_id": "C09E008",
+      "score": 11.490701
+    },
+    {
+      "event_id": "C09E044",
+      "score": 10.779077
+    },
+    {
+      "event_id": "C09E080",
+      "score": 7.604104
+    },
+    {
+      "event_id": "C09E100",
+      "score": 6.150102
+    },
+    {
+      "event_id": "C09E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C09E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C09E007",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C09E011",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C09E015",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C09E019",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C09E023",
+      "score": 4.390626
+    }
+  ],
+  "Q09-08": [
+    {
+      "event_id": "C09E069",
+      "score": 13.171131
+    },
+    {
+      "event_id": "C09E037",
+      "score": 9.253912
+    },
+    {
+      "event_id": "C09E056",
+      "score": 9.062874
+    },
+    {
+      "event_id": "C09E084",
+      "score": 8.982252
+    },
+    {
+      "event_id": "C09E048",
+      "score": 8.124398
+    },
+    {
+      "event_id": "C09E095",
+      "score": 6.87578
+    },
+    {
+      "event_id": "C09E020",
+      "score": 6.683325
+    },
+    {
+      "event_id": "C09E098",
+      "score": 6.542704
+    },
+    {
+      "event_id": "C09E032",
+      "score": 6.504168
+    },
+    {
+      "event_id": "C09E004",
+      "score": 6.502333
+    },
+    {
+      "event_id": "C09E012",
+      "score": 6.502333
+    },
+    {
+      "event_id": "C09E016",
+      "score": 6.502333
+    }
+  ],
+  "Q10-01": [
+    {
+      "event_id": "C10E003",
+      "score": 8.63638
+    },
+    {
+      "event_id": "C10E092",
+      "score": 5.825982
+    },
+    {
+      "event_id": "C10E044",
+      "score": 5.254768
+    },
+    {
+      "event_id": "C10E080",
+      "score": 5.140463
+    },
+    {
+      "event_id": "C10E014",
+      "score": 5.080076
+    },
+    {
+      "event_id": "C10E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C10E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C10E004",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C10E012",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C10E016",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C10E024",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C10E028",
+      "score": 4.391575
+    }
+  ],
+  "Q10-02": [
+    {
+      "event_id": "C10E020",
+      "score": 19.434672
+    },
+    {
+      "event_id": "C10E098",
+      "score": 8.244479
+    },
+    {
+      "event_id": "C10E084",
+      "score": 8.015517
+    },
+    {
+      "event_id": "C10E014",
+      "score": 7.956241
+    },
+    {
+      "event_id": "C10E048",
+      "score": 5.936697
+    },
+    {
+      "event_id": "C10E001",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C10E005",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C10E009",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C10E013",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C10E017",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C10E021",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C10E025",
+      "score": 5.507051
+    }
+  ],
+  "Q10-03": [
+    {
+      "event_id": "C10E037",
+      "score": 14.373408
+    },
+    {
+      "event_id": "C10E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C10E008",
+      "score": 4.551052
+    },
+    {
+      "event_id": "C10E001",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C10E005",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C10E009",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C10E013",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C10E017",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C10E021",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C10E025",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C10E029",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C10E033",
+      "score": 4.42194
+    }
+  ],
+  "Q10-04": [
+    {
+      "event_id": "C10E014",
+      "score": 11.039589
+    },
+    {
+      "event_id": "C10E003",
+      "score": 10.0444
+    },
+    {
+      "event_id": "C10E032",
+      "score": 9.700226
+    },
+    {
+      "event_id": "C10E037",
+      "score": 9.700226
+    },
+    {
+      "event_id": "C10E080",
+      "score": 8.94403
+    },
+    {
+      "event_id": "C10E098",
+      "score": 6.542704
+    },
+    {
+      "event_id": "C10E095",
+      "score": 5.956135
+    },
+    {
+      "event_id": "C10E007",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C10E011",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C10E015",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C10E019",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C10E023",
+      "score": 5.263881
+    }
+  ],
+  "Q10-05": [
+    {
+      "event_id": "C10E084",
+      "score": 10.37262
+    },
+    {
+      "event_id": "C10E062",
+      "score": 7.18691
+    },
+    {
+      "event_id": "C10E020",
+      "score": 4.063562
+    },
+    {
+      "event_id": "C10E032",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C10E037",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C10E098",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C10E003",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C10E007",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C10E011",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C10E015",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C10E019",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C10E023",
+      "score": 2.644118
+    }
+  ],
+  "Q10-06": [
+    {
+      "event_id": "C10E095",
+      "score": 21.403385
+    },
+    {
+      "event_id": "C10E084",
+      "score": 8.015517
+    },
+    {
+      "event_id": "C10E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C10E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C10E032",
+      "score": 3.657948
+    },
+    {
+      "event_id": "C10E003",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C10E007",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C10E011",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C10E015",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C10E019",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C10E023",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C10E027",
+      "score": 3.517372
+    }
+  ],
+  "Q10-07": [
+    {
+      "event_id": "C10E092",
+      "score": 11.880695
+    },
+    {
+      "event_id": "C10E008",
+      "score": 11.490701
+    },
+    {
+      "event_id": "C10E044",
+      "score": 10.779077
+    },
+    {
+      "event_id": "C10E080",
+      "score": 7.604104
+    },
+    {
+      "event_id": "C10E100",
+      "score": 6.150102
+    },
+    {
+      "event_id": "C10E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C10E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C10E007",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C10E011",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C10E015",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C10E019",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C10E023",
+      "score": 4.390626
+    }
+  ],
+  "Q10-08": [
+    {
+      "event_id": "C10E069",
+      "score": 13.171131
+    },
+    {
+      "event_id": "C10E037",
+      "score": 9.253912
+    },
+    {
+      "event_id": "C10E056",
+      "score": 9.062874
+    },
+    {
+      "event_id": "C10E084",
+      "score": 8.982252
+    },
+    {
+      "event_id": "C10E048",
+      "score": 8.124398
+    },
+    {
+      "event_id": "C10E095",
+      "score": 6.87578
+    },
+    {
+      "event_id": "C10E020",
+      "score": 6.683325
+    },
+    {
+      "event_id": "C10E098",
+      "score": 6.542704
+    },
+    {
+      "event_id": "C10E032",
+      "score": 6.504168
+    },
+    {
+      "event_id": "C10E004",
+      "score": 6.502333
+    },
+    {
+      "event_id": "C10E012",
+      "score": 6.502333
+    },
+    {
+      "event_id": "C10E016",
+      "score": 6.502333
+    }
+  ],
+  "Q11-01": [
+    {
+      "event_id": "C11E003",
+      "score": 8.63638
+    },
+    {
+      "event_id": "C11E092",
+      "score": 5.825982
+    },
+    {
+      "event_id": "C11E044",
+      "score": 5.254768
+    },
+    {
+      "event_id": "C11E080",
+      "score": 5.140463
+    },
+    {
+      "event_id": "C11E014",
+      "score": 5.080076
+    },
+    {
+      "event_id": "C11E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C11E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C11E004",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C11E012",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C11E016",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C11E024",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C11E028",
+      "score": 4.391575
+    }
+  ],
+  "Q11-02": [
+    {
+      "event_id": "C11E020",
+      "score": 19.434672
+    },
+    {
+      "event_id": "C11E098",
+      "score": 8.244479
+    },
+    {
+      "event_id": "C11E084",
+      "score": 8.015517
+    },
+    {
+      "event_id": "C11E014",
+      "score": 7.956241
+    },
+    {
+      "event_id": "C11E048",
+      "score": 5.936697
+    },
+    {
+      "event_id": "C11E001",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C11E005",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C11E009",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C11E013",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C11E017",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C11E021",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C11E025",
+      "score": 5.507051
+    }
+  ],
+  "Q11-03": [
+    {
+      "event_id": "C11E037",
+      "score": 14.373408
+    },
+    {
+      "event_id": "C11E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C11E008",
+      "score": 4.551052
+    },
+    {
+      "event_id": "C11E001",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C11E005",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C11E009",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C11E013",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C11E017",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C11E021",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C11E025",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C11E029",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C11E033",
+      "score": 4.42194
+    }
+  ],
+  "Q11-04": [
+    {
+      "event_id": "C11E014",
+      "score": 11.039589
+    },
+    {
+      "event_id": "C11E003",
+      "score": 10.0444
+    },
+    {
+      "event_id": "C11E032",
+      "score": 9.700226
+    },
+    {
+      "event_id": "C11E037",
+      "score": 9.700226
+    },
+    {
+      "event_id": "C11E080",
+      "score": 8.94403
+    },
+    {
+      "event_id": "C11E098",
+      "score": 6.542704
+    },
+    {
+      "event_id": "C11E095",
+      "score": 5.956135
+    },
+    {
+      "event_id": "C11E007",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C11E011",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C11E015",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C11E019",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C11E023",
+      "score": 5.263881
+    }
+  ],
+  "Q11-05": [
+    {
+      "event_id": "C11E084",
+      "score": 10.37262
+    },
+    {
+      "event_id": "C11E062",
+      "score": 7.18691
+    },
+    {
+      "event_id": "C11E020",
+      "score": 4.063562
+    },
+    {
+      "event_id": "C11E032",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C11E037",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C11E098",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C11E003",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C11E007",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C11E011",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C11E015",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C11E019",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C11E023",
+      "score": 2.644118
+    }
+  ],
+  "Q11-06": [
+    {
+      "event_id": "C11E095",
+      "score": 21.403385
+    },
+    {
+      "event_id": "C11E084",
+      "score": 8.015517
+    },
+    {
+      "event_id": "C11E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C11E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C11E032",
+      "score": 3.657948
+    },
+    {
+      "event_id": "C11E003",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C11E007",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C11E011",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C11E015",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C11E019",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C11E023",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C11E027",
+      "score": 3.517372
+    }
+  ],
+  "Q11-07": [
+    {
+      "event_id": "C11E092",
+      "score": 11.880695
+    },
+    {
+      "event_id": "C11E008",
+      "score": 11.490701
+    },
+    {
+      "event_id": "C11E044",
+      "score": 10.779077
+    },
+    {
+      "event_id": "C11E080",
+      "score": 7.604104
+    },
+    {
+      "event_id": "C11E100",
+      "score": 6.150102
+    },
+    {
+      "event_id": "C11E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C11E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C11E007",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C11E011",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C11E015",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C11E019",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C11E023",
+      "score": 4.390626
+    }
+  ],
+  "Q11-08": [
+    {
+      "event_id": "C11E069",
+      "score": 13.171131
+    },
+    {
+      "event_id": "C11E037",
+      "score": 9.253912
+    },
+    {
+      "event_id": "C11E056",
+      "score": 9.062874
+    },
+    {
+      "event_id": "C11E084",
+      "score": 8.982252
+    },
+    {
+      "event_id": "C11E048",
+      "score": 8.124398
+    },
+    {
+      "event_id": "C11E095",
+      "score": 6.87578
+    },
+    {
+      "event_id": "C11E020",
+      "score": 6.683325
+    },
+    {
+      "event_id": "C11E098",
+      "score": 6.542704
+    },
+    {
+      "event_id": "C11E032",
+      "score": 6.504168
+    },
+    {
+      "event_id": "C11E004",
+      "score": 6.502333
+    },
+    {
+      "event_id": "C11E012",
+      "score": 6.502333
+    },
+    {
+      "event_id": "C11E016",
+      "score": 6.502333
+    }
+  ],
+  "Q12-01": [
+    {
+      "event_id": "C12E003",
+      "score": 8.63638
+    },
+    {
+      "event_id": "C12E092",
+      "score": 5.825982
+    },
+    {
+      "event_id": "C12E044",
+      "score": 5.254768
+    },
+    {
+      "event_id": "C12E080",
+      "score": 5.140463
+    },
+    {
+      "event_id": "C12E014",
+      "score": 5.080076
+    },
+    {
+      "event_id": "C12E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C12E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C12E004",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C12E012",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C12E016",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C12E024",
+      "score": 4.391575
+    },
+    {
+      "event_id": "C12E028",
+      "score": 4.391575
+    }
+  ],
+  "Q12-02": [
+    {
+      "event_id": "C12E020",
+      "score": 19.434672
+    },
+    {
+      "event_id": "C12E098",
+      "score": 8.244479
+    },
+    {
+      "event_id": "C12E084",
+      "score": 8.015517
+    },
+    {
+      "event_id": "C12E014",
+      "score": 7.956241
+    },
+    {
+      "event_id": "C12E048",
+      "score": 5.936697
+    },
+    {
+      "event_id": "C12E001",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C12E005",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C12E009",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C12E013",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C12E017",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C12E021",
+      "score": 5.507051
+    },
+    {
+      "event_id": "C12E025",
+      "score": 5.507051
+    }
+  ],
+  "Q12-03": [
+    {
+      "event_id": "C12E037",
+      "score": 14.373408
+    },
+    {
+      "event_id": "C12E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C12E008",
+      "score": 4.551052
+    },
+    {
+      "event_id": "C12E001",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C12E005",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C12E009",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C12E013",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C12E017",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C12E021",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C12E025",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C12E029",
+      "score": 4.42194
+    },
+    {
+      "event_id": "C12E033",
+      "score": 4.42194
+    }
+  ],
+  "Q12-04": [
+    {
+      "event_id": "C12E014",
+      "score": 11.039589
+    },
+    {
+      "event_id": "C12E003",
+      "score": 10.0444
+    },
+    {
+      "event_id": "C12E032",
+      "score": 9.700226
+    },
+    {
+      "event_id": "C12E037",
+      "score": 9.700226
+    },
+    {
+      "event_id": "C12E080",
+      "score": 8.94403
+    },
+    {
+      "event_id": "C12E098",
+      "score": 6.542704
+    },
+    {
+      "event_id": "C12E095",
+      "score": 5.956135
+    },
+    {
+      "event_id": "C12E007",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C12E011",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C12E015",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C12E019",
+      "score": 5.263881
+    },
+    {
+      "event_id": "C12E023",
+      "score": 5.263881
+    }
+  ],
+  "Q12-05": [
+    {
+      "event_id": "C12E084",
+      "score": 10.37262
+    },
+    {
+      "event_id": "C12E062",
+      "score": 7.18691
+    },
+    {
+      "event_id": "C12E020",
+      "score": 4.063562
+    },
+    {
+      "event_id": "C12E032",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C12E037",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C12E098",
+      "score": 2.749794
+    },
+    {
+      "event_id": "C12E003",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C12E007",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C12E011",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C12E015",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C12E019",
+      "score": 2.644118
+    },
+    {
+      "event_id": "C12E023",
+      "score": 2.644118
+    }
+  ],
+  "Q12-06": [
+    {
+      "event_id": "C12E095",
+      "score": 21.403385
+    },
+    {
+      "event_id": "C12E084",
+      "score": 8.015517
+    },
+    {
+      "event_id": "C12E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C12E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C12E032",
+      "score": 3.657948
+    },
+    {
+      "event_id": "C12E003",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C12E007",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C12E011",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C12E015",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C12E019",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C12E023",
+      "score": 3.517372
+    },
+    {
+      "event_id": "C12E027",
+      "score": 3.517372
+    }
+  ],
+  "Q12-07": [
+    {
+      "event_id": "C12E092",
+      "score": 11.880695
+    },
+    {
+      "event_id": "C12E008",
+      "score": 11.490701
+    },
+    {
+      "event_id": "C12E044",
+      "score": 10.779077
+    },
+    {
+      "event_id": "C12E080",
+      "score": 7.604104
+    },
+    {
+      "event_id": "C12E100",
+      "score": 6.150102
+    },
+    {
+      "event_id": "C12E098",
+      "score": 4.786398
+    },
+    {
+      "event_id": "C12E037",
+      "score": 4.43025
+    },
+    {
+      "event_id": "C12E007",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C12E011",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C12E015",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C12E019",
+      "score": 4.390626
+    },
+    {
+      "event_id": "C12E023",
+      "score": 4.390626
+    }
+  ],
+  "Q12-08": [
+    {
+      "event_id": "C12E069",
+      "score": 13.171131
+    },
+    {
+      "event_id": "C12E037",
+      "score": 9.253912
+    },
+    {
+      "event_id": "C12E056",
+      "score": 9.062874
+    },
+    {
+      "event_id": "C12E084",
+      "score": 8.982252
+    },
+    {
+      "event_id": "C12E048",
+      "score": 8.124398
+    },
+    {
+      "event_id": "C12E095",
+      "score": 6.87578
+    },
+    {
+      "event_id": "C12E020",
+      "score": 6.683325
+    },
+    {
+      "event_id": "C12E098",
+      "score": 6.542704
+    },
+    {
+      "event_id": "C12E032",
+      "score": 6.504168
+    },
+    {
+      "event_id": "C12E004",
+      "score": 6.502333
+    },
+    {
+      "event_id": "C12E012",
+      "score": 6.502333
+    },
+    {
+      "event_id": "C12E016",
+      "score": 6.502333
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "conversation_id": "conversation_01",
+  "points": [
+    {"surface":"Rahul","dimensions":["noun","subject","actor"],"confidence":1.0,"source_sentences":["Rahul loves to play football."],"interpretations":["A person named Rahul."]},
+    {"surface":"loves","dimensions":["verb","emotion","feeling"],"confidence":1.0,"source_sentences":["Rahul loves to play football."]},
+    {"surface":"play / plays / playing","dimensions":["verb","action"],"confidence":1.0,"source_sentences":["Rahul loves to play football."]},
+    {"surface":"football","dimensions":["noun","object","activity"],"confidence":1.0,"source_sentences":["Rahul loves to play football."]},
+    {"surface":"every Sunday","dimensions":["time"],"confidence":1.0,"source_sentences":["Rahul plays football every Sunday at the park."]},
+    {"surface":"park","dimensions":["noun","place"],"confidence":1.0,"source_sentences":["Rahul plays football every Sunday at the park."]},
+    {"surface":"He","dimensions":["noun","subject","actor"],"confidence":0.6,"source_sentences":["He usually plays with his friends."]},
+    {"surface":"friends","dimensions":["noun","object","target"],"confidence":0.95,"source_sentences":["He usually plays with his friends."]},
+    {"surface":"stopped playing football","dimensions":["verb","state","action"],"confidence":1.0,"source_sentences":["Rahul stopped playing football during the summer."]},
+    {"surface":"started playing again","dimensions":["verb","state","action"],"confidence":1.0,"source_sentences":["Rahul started playing again after joining a new team."]},
+    {"surface":"new team","dimensions":["noun","object"],"confidence":1.0,"source_sentences":["Rahul started playing again after joining a new team."]}
+  ],
+  "ambiguities":[{"surface":"He","candidate_referents":["Rahul"],"resolution_status":"resolved_from_context"}]
+}

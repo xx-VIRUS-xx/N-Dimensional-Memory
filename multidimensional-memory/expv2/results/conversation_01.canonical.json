@@ -1,0 +1,415 @@
+{
+  "conversation_id": "conversation_01",
+  "points": [
+    {
+      "canonical_id": "p_001",
+      "surface": "football",
+      "dimensions": {
+        "common": [
+          "noun",
+          "object"
+        ],
+        "union": [
+          "activity",
+          "noun",
+          "object"
+        ],
+        "model_specific": {
+          "claude": [
+            "activity"
+          ],
+          "codex": [],
+          "copilot": [
+            "activity"
+          ]
+        }
+      },
+      "model_support": {
+        "claude": true,
+        "codex": true,
+        "copilot": true
+      },
+      "certainty": "common",
+      "source_evidence": [
+        "Rahul loves to play football."
+      ]
+    },
+    {
+      "canonical_id": "p_002",
+      "surface": "friends",
+      "dimensions": {
+        "common": [
+          "noun"
+        ],
+        "union": [
+          "actor",
+          "noun",
+          "object",
+          "target"
+        ],
+        "model_specific": {
+          "claude": [
+            "object",
+            "target"
+          ],
+          "codex": [
+            "actor",
+            "target"
+          ],
+          "copilot": [
+            "actor"
+          ]
+        }
+      },
+      "model_support": {
+        "claude": true,
+        "codex": true,
+        "copilot": true
+      },
+      "certainty": "common",
+      "source_evidence": [
+        "He usually plays with his friends."
+      ]
+    },
+    {
+      "canonical_id": "p_003",
+      "surface": "he",
+      "dimensions": {
+        "common": [
+          "actor",
+          "subject"
+        ],
+        "union": [
+          "actor",
+          "noun",
+          "subject"
+        ],
+        "model_specific": {
+          "claude": [
+            "noun"
+          ],
+          "codex": []
+        }
+      },
+      "model_support": {
+        "claude": true,
+        "codex": true,
+        "copilot": false
+      },
+      "certainty": "model_specific",
+      "source_evidence": [
+        "He usually plays with his friends."
+      ]
+    },
+    {
+      "canonical_id": "p_004",
+      "surface": "love",
+      "dimensions": {
+        "common": [
+          "emotion",
+          "feeling",
+          "verb"
+        ],
+        "union": [
+          "emotion",
+          "feeling",
+          "verb"
+        ],
+        "model_specific": {
+          "claude": [],
+          "codex": [],
+          "copilot": []
+        }
+      },
+      "model_support": {
+        "claude": true,
+        "codex": true,
+        "copilot": true
+      },
+      "certainty": "common",
+      "source_evidence": [
+        "Rahul loves to play football."
+      ]
+    },
+    {
+      "canonical_id": "p_005",
+      "surface": "new team",
+      "dimensions": {
+        "common": [
+          "noun"
+        ],
+        "union": [
+          "actor",
+          "noun",
+          "object",
+          "state",
+          "target"
+        ],
+        "model_specific": {
+          "claude": [
+            "object"
+          ],
+          "codex": [
+            "object",
+            "target"
+          ],
+          "copilot": [
+            "actor",
+            "state"
+          ]
+        }
+      },
+      "model_support": {
+        "claude": true,
+        "codex": true,
+        "copilot": true
+      },
+      "certainty": "common",
+      "source_evidence": [
+        "Rahul started playing again after joining a new team."
+      ]
+    },
+    {
+      "canonical_id": "p_006",
+      "surface": "park",
+      "dimensions": {
+        "common": [
+          "place"
+        ],
+        "union": [
+          "noun",
+          "place"
+        ],
+        "model_specific": {
+          "claude": [
+            "noun"
+          ],
+          "codex": [],
+          "copilot": []
+        }
+      },
+      "model_support": {
+        "claude": true,
+        "codex": true,
+        "copilot": true
+      },
+      "certainty": "common",
+      "source_evidence": [
+        "Rahul plays football every Sunday at the park."
+      ]
+    },
+    {
+      "canonical_id": "p_007",
+      "surface": "play",
+      "dimensions": {
+        "common": [
+          "action",
+          "verb"
+        ],
+        "union": [
+          "action",
+          "verb"
+        ],
+        "model_specific": {
+          "claude": [],
+          "copilot": []
+        }
+      },
+      "model_support": {
+        "claude": true,
+        "codex": false,
+        "copilot": true
+      },
+      "certainty": "model_specific",
+      "source_evidence": [
+        "Rahul loves to play football."
+      ]
+    },
+    {
+      "canonical_id": "p_008",
+      "surface": "play football",
+      "dimensions": {
+        "common": [
+          "action",
+          "object",
+          "verb"
+        ],
+        "union": [
+          "action",
+          "object",
+          "verb"
+        ],
+        "model_specific": {
+          "codex": []
+        }
+      },
+      "model_support": {
+        "claude": false,
+        "codex": true,
+        "copilot": false
+      },
+      "certainty": "model_specific",
+      "source_evidence": [
+        "Rahul loves to play football."
+      ]
+    },
+    {
+      "canonical_id": "p_009",
+      "surface": "rahul",
+      "dimensions": {
+        "common": [
+          "actor",
+          "noun",
+          "subject"
+        ],
+        "union": [
+          "actor",
+          "noun",
+          "subject"
+        ],
+        "model_specific": {
+          "claude": [],
+          "codex": [],
+          "copilot": []
+        }
+      },
+      "model_support": {
+        "claude": true,
+        "codex": true,
+        "copilot": true
+      },
+      "certainty": "common",
+      "source_evidence": [
+        "Rahul loves to play football."
+      ]
+    },
+    {
+      "canonical_id": "p_010",
+      "surface": "started playing again",
+      "dimensions": {
+        "common": [
+          "action",
+          "state",
+          "verb"
+        ],
+        "union": [
+          "action",
+          "state",
+          "verb"
+        ],
+        "model_specific": {
+          "claude": [],
+          "codex": [],
+          "copilot": []
+        }
+      },
+      "model_support": {
+        "claude": true,
+        "codex": true,
+        "copilot": true
+      },
+      "certainty": "common",
+      "source_evidence": [
+        "Rahul started playing again after joining a new team."
+      ]
+    },
+    {
+      "canonical_id": "p_011",
+      "surface": "stopped playing football",
+      "dimensions": {
+        "common": [
+          "action",
+          "state",
+          "verb"
+        ],
+        "union": [
+          "action",
+          "state",
+          "verb"
+        ],
+        "model_specific": {
+          "claude": [],
+          "codex": [],
+          "copilot": []
+        }
+      },
+      "model_support": {
+        "claude": true,
+        "codex": true,
+        "copilot": true
+      },
+      "certainty": "common",
+      "source_evidence": [
+        "Rahul stopped playing football during the summer."
+      ]
+    },
+    {
+      "canonical_id": "p_012",
+      "surface": "sunday",
+      "dimensions": {
+        "common": [
+          "time"
+        ],
+        "union": [
+          "time"
+        ],
+        "model_specific": {
+          "claude": [],
+          "codex": [],
+          "copilot": []
+        }
+      },
+      "model_support": {
+        "claude": true,
+        "codex": true,
+        "copilot": true
+      },
+      "certainty": "common",
+      "source_evidence": [
+        "Rahul plays football every Sunday at the park."
+      ]
+    }
+  ],
+  "ambiguities": [
+    {
+      "candidate_referents": [
+        "Rahul"
+      ],
+      "resolution_status": "ambiguous_contextual",
+      "surface": "He"
+    },
+    {
+      "candidate_referents": [
+        "Rahul"
+      ],
+      "resolution_status": "resolved_from_context",
+      "surface": "He"
+    }
+  ],
+  "relations": [
+    {
+      "from": "rahul",
+      "type": "performs",
+      "to": "play",
+      "status": "candidate"
+    },
+    {
+      "from": "play",
+      "type": "object",
+      "to": "football",
+      "status": "candidate"
+    }
+  ],
+  "metrics": {
+    "models": [
+      "claude",
+      "codex",
+      "copilot"
+    ],
+    "canonical_point_count": 12,
+    "points_present_in_all_models": 9,
+    "point_coverage": 0.75,
+    "points_with_at_least_one_common_dimension": 12,
+    "dimension_preservation": 0.7143
+  }
+}

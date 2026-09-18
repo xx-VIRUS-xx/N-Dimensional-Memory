@@ -1,0 +1,4802 @@
+{
+  "Q01-01": [
+    {
+      "event_id": "C01E003",
+      "score": 1.0
+    },
+    {
+      "event_id": "C01E084",
+      "score": 0.377557
+    },
+    {
+      "event_id": "C01E007",
+      "score": 0.371473
+    },
+    {
+      "event_id": "C01E011",
+      "score": 0.371473
+    },
+    {
+      "event_id": "C01E015",
+      "score": 0.371473
+    },
+    {
+      "event_id": "C01E019",
+      "score": 0.371473
+    },
+    {
+      "event_id": "C01E023",
+      "score": 0.371473
+    },
+    {
+      "event_id": "C01E027",
+      "score": 0.371473
+    },
+    {
+      "event_id": "C01E031",
+      "score": 0.371473
+    },
+    {
+      "event_id": "C01E035",
+      "score": 0.371473
+    },
+    {
+      "event_id": "C01E039",
+      "score": 0.371473
+    },
+    {
+      "event_id": "C01E043",
+      "score": 0.371473
+    }
+  ],
+  "Q01-02": [
+    {
+      "event_id": "C01E020",
+      "score": 0.973793
+    },
+    {
+      "event_id": "C01E001",
+      "score": 0.588384
+    },
+    {
+      "event_id": "C01E005",
+      "score": 0.588384
+    },
+    {
+      "event_id": "C01E009",
+      "score": 0.588384
+    },
+    {
+      "event_id": "C01E013",
+      "score": 0.588384
+    },
+    {
+      "event_id": "C01E017",
+      "score": 0.588384
+    },
+    {
+      "event_id": "C01E021",
+      "score": 0.588384
+    },
+    {
+      "event_id": "C01E025",
+      "score": 0.588384
+    },
+    {
+      "event_id": "C01E037",
+      "score": 0.5
+    },
+    {
+      "event_id": "C01E029",
+      "score": 0.446703
+    },
+    {
+      "event_id": "C01E033",
+      "score": 0.446703
+    },
+    {
+      "event_id": "C01E041",
+      "score": 0.446703
+    }
+  ],
+  "Q01-03": [
+    {
+      "event_id": "C01E037",
+      "score": 1.0
+    },
+    {
+      "event_id": "C01E008",
+      "score": 0.510501
+    },
+    {
+      "event_id": "C01E001",
+      "score": 0.467504
+    },
+    {
+      "event_id": "C01E005",
+      "score": 0.467504
+    },
+    {
+      "event_id": "C01E009",
+      "score": 0.467504
+    },
+    {
+      "event_id": "C01E013",
+      "score": 0.467504
+    },
+    {
+      "event_id": "C01E017",
+      "score": 0.467504
+    },
+    {
+      "event_id": "C01E021",
+      "score": 0.467504
+    },
+    {
+      "event_id": "C01E025",
+      "score": 0.467504
+    },
+    {
+      "event_id": "C01E029",
+      "score": 0.467504
+    },
+    {
+      "event_id": "C01E033",
+      "score": 0.467504
+    },
+    {
+      "event_id": "C01E084",
+      "score": 0.314483
+    }
+  ],
+  "Q01-04": [
+    {
+      "event_id": "C01E003",
+      "score": 0.954926
+    },
+    {
+      "event_id": "C01E014",
+      "score": 0.5
+    },
+    {
+      "event_id": "C01E001",
+      "score": 0.452716
+    },
+    {
+      "event_id": "C01E005",
+      "score": 0.452716
+    },
+    {
+      "event_id": "C01E009",
+      "score": 0.452716
+    },
+    {
+      "event_id": "C01E013",
+      "score": 0.452716
+    },
+    {
+      "event_id": "C01E017",
+      "score": 0.452716
+    },
+    {
+      "event_id": "C01E021",
+      "score": 0.452716
+    },
+    {
+      "event_id": "C01E025",
+      "score": 0.452716
+    },
+    {
+      "event_id": "C01E029",
+      "score": 0.452716
+    },
+    {
+      "event_id": "C01E033",
+      "score": 0.452716
+    },
+    {
+      "event_id": "C01E041",
+      "score": 0.452716
+    }
+  ],
+  "Q01-05": [
+    {
+      "event_id": "C01E084",
+      "score": 1.0
+    },
+    {
+      "event_id": "C01E037",
+      "score": 0.602296
+    },
+    {
+      "event_id": "C01E001",
+      "score": 0.419548
+    },
+    {
+      "event_id": "C01E005",
+      "score": 0.419548
+    },
+    {
+      "event_id": "C01E009",
+      "score": 0.419548
+    },
+    {
+      "event_id": "C01E013",
+      "score": 0.419548
+    },
+    {
+      "event_id": "C01E017",
+      "score": 0.419548
+    },
+    {
+      "event_id": "C01E021",
+      "score": 0.419548
+    },
+    {
+      "event_id": "C01E025",
+      "score": 0.419548
+    },
+    {
+      "event_id": "C01E029",
+      "score": 0.419548
+    },
+    {
+      "event_id": "C01E033",
+      "score": 0.419548
+    },
+    {
+      "event_id": "C01E041",
+      "score": 0.419548
+    }
+  ],
+  "Q01-06": [
+    {
+      "event_id": "C01E095",
+      "score": 1.0
+    },
+    {
+      "event_id": "C01E032",
+      "score": 0.425376
+    },
+    {
+      "event_id": "C01E002",
+      "score": 0.333081
+    },
+    {
+      "event_id": "C01E006",
+      "score": 0.333081
+    },
+    {
+      "event_id": "C01E010",
+      "score": 0.333081
+    },
+    {
+      "event_id": "C01E018",
+      "score": 0.333081
+    },
+    {
+      "event_id": "C01E022",
+      "score": 0.333081
+    },
+    {
+      "event_id": "C01E026",
+      "score": 0.333081
+    },
+    {
+      "event_id": "C01E030",
+      "score": 0.333081
+    },
+    {
+      "event_id": "C01E034",
+      "score": 0.333081
+    },
+    {
+      "event_id": "C01E038",
+      "score": 0.333081
+    },
+    {
+      "event_id": "C01E042",
+      "score": 0.333081
+    }
+  ],
+  "Q01-07": [
+    {
+      "event_id": "C01E008",
+      "score": 0.878472
+    },
+    {
+      "event_id": "C01E037",
+      "score": 0.686447
+    },
+    {
+      "event_id": "C01E098",
+      "score": 0.562719
+    },
+    {
+      "event_id": "C01E092",
+      "score": 0.5
+    },
+    {
+      "event_id": "C01E044",
+      "score": 0.453638
+    },
+    {
+      "event_id": "C01E001",
+      "score": 0.350192
+    },
+    {
+      "event_id": "C01E005",
+      "score": 0.350192
+    },
+    {
+      "event_id": "C01E009",
+      "score": 0.350192
+    },
+    {
+      "event_id": "C01E013",
+      "score": 0.350192
+    },
+    {
+      "event_id": "C01E017",
+      "score": 0.350192
+    },
+    {
+      "event_id": "C01E021",
+      "score": 0.350192
+    },
+    {
+      "event_id": "C01E025",
+      "score": 0.350192
+    }
+  ],
+  "Q01-08": [
+    {
+      "event_id": "C01E037",
+      "score": 0.851295
+    },
+    {
+      "event_id": "C01E056",
+      "score": 0.790024
+    },
+    {
+      "event_id": "C01E069",
+      "score": 0.5
+    },
+    {
+      "event_id": "C01E001",
+      "score": 0.406588
+    },
+    {
+      "event_id": "C01E005",
+      "score": 0.406588
+    },
+    {
+      "event_id": "C01E009",
+      "score": 0.406588
+    },
+    {
+      "event_id": "C01E013",
+      "score": 0.406588
+    },
+    {
+      "event_id": "C01E017",
+      "score": 0.406588
+    },
+    {
+      "event_id": "C01E021",
+      "score": 0.406588
+    },
+    {
+      "event_id": "C01E025",
+      "score": 0.406588
+    },
+    {
+      "event_id": "C01E029",
+      "score": 0.406588
+    },
+    {
+      "event_id": "C01E033",
+      "score": 0.406588
+    }
+  ],
+  "Q02-01": [
+    {
+      "event_id": "C02E003",
+      "score": 1.0
+    },
+    {
+      "event_id": "C02E007",
+      "score": 0.421506
+    },
+    {
+      "event_id": "C02E011",
+      "score": 0.421506
+    },
+    {
+      "event_id": "C02E015",
+      "score": 0.421506
+    },
+    {
+      "event_id": "C02E019",
+      "score": 0.421506
+    },
+    {
+      "event_id": "C02E023",
+      "score": 0.421506
+    },
+    {
+      "event_id": "C02E027",
+      "score": 0.421506
+    },
+    {
+      "event_id": "C02E031",
+      "score": 0.421506
+    },
+    {
+      "event_id": "C02E035",
+      "score": 0.421506
+    },
+    {
+      "event_id": "C02E039",
+      "score": 0.421506
+    },
+    {
+      "event_id": "C02E043",
+      "score": 0.421506
+    },
+    {
+      "event_id": "C02E047",
+      "score": 0.421506
+    }
+  ],
+  "Q02-02": [
+    {
+      "event_id": "C02E020",
+      "score": 0.958436
+    },
+    {
+      "event_id": "C02E001",
+      "score": 0.59746
+    },
+    {
+      "event_id": "C02E005",
+      "score": 0.59746
+    },
+    {
+      "event_id": "C02E009",
+      "score": 0.59746
+    },
+    {
+      "event_id": "C02E013",
+      "score": 0.59746
+    },
+    {
+      "event_id": "C02E017",
+      "score": 0.59746
+    },
+    {
+      "event_id": "C02E021",
+      "score": 0.59746
+    },
+    {
+      "event_id": "C02E025",
+      "score": 0.59746
+    },
+    {
+      "event_id": "C02E037",
+      "score": 0.5
+    },
+    {
+      "event_id": "C02E029",
+      "score": 0.455779
+    },
+    {
+      "event_id": "C02E033",
+      "score": 0.455779
+    },
+    {
+      "event_id": "C02E041",
+      "score": 0.455779
+    }
+  ],
+  "Q02-03": [
+    {
+      "event_id": "C02E037",
+      "score": 1.0
+    },
+    {
+      "event_id": "C02E098",
+      "score": 0.48253
+    },
+    {
+      "event_id": "C02E001",
+      "score": 0.467711
+    },
+    {
+      "event_id": "C02E005",
+      "score": 0.467711
+    },
+    {
+      "event_id": "C02E009",
+      "score": 0.467711
+    },
+    {
+      "event_id": "C02E013",
+      "score": 0.467711
+    },
+    {
+      "event_id": "C02E017",
+      "score": 0.467711
+    },
+    {
+      "event_id": "C02E021",
+      "score": 0.467711
+    },
+    {
+      "event_id": "C02E025",
+      "score": 0.467711
+    },
+    {
+      "event_id": "C02E029",
+      "score": 0.467711
+    },
+    {
+      "event_id": "C02E033",
+      "score": 0.467711
+    },
+    {
+      "event_id": "C02E041",
+      "score": 0.313888
+    }
+  ],
+  "Q02-04": [
+    {
+      "event_id": "C02E003",
+      "score": 0.954926
+    },
+    {
+      "event_id": "C02E037",
+      "score": 0.910645
+    },
+    {
+      "event_id": "C02E014",
+      "score": 0.5
+    },
+    {
+      "event_id": "C02E001",
+      "score": 0.471153
+    },
+    {
+      "event_id": "C02E005",
+      "score": 0.471153
+    },
+    {
+      "event_id": "C02E009",
+      "score": 0.471153
+    },
+    {
+      "event_id": "C02E013",
+      "score": 0.471153
+    },
+    {
+      "event_id": "C02E017",
+      "score": 0.471153
+    },
+    {
+      "event_id": "C02E021",
+      "score": 0.471153
+    },
+    {
+      "event_id": "C02E025",
+      "score": 0.471153
+    },
+    {
+      "event_id": "C02E029",
+      "score": 0.471153
+    },
+    {
+      "event_id": "C02E033",
+      "score": 0.471153
+    }
+  ],
+  "Q02-05": [
+    {
+      "event_id": "C02E084",
+      "score": 0.997783
+    },
+    {
+      "event_id": "C02E037",
+      "score": 0.632551
+    },
+    {
+      "event_id": "C02E001",
+      "score": 0.49673
+    },
+    {
+      "event_id": "C02E005",
+      "score": 0.49673
+    },
+    {
+      "event_id": "C02E009",
+      "score": 0.49673
+    },
+    {
+      "event_id": "C02E013",
+      "score": 0.49673
+    },
+    {
+      "event_id": "C02E017",
+      "score": 0.49673
+    },
+    {
+      "event_id": "C02E021",
+      "score": 0.49673
+    },
+    {
+      "event_id": "C02E025",
+      "score": 0.49673
+    },
+    {
+      "event_id": "C02E029",
+      "score": 0.49673
+    },
+    {
+      "event_id": "C02E033",
+      "score": 0.49673
+    },
+    {
+      "event_id": "C02E041",
+      "score": 0.49673
+    }
+  ],
+  "Q02-06": [
+    {
+      "event_id": "C02E095",
+      "score": 1.0
+    },
+    {
+      "event_id": "C02E001",
+      "score": 0.27467
+    },
+    {
+      "event_id": "C02E005",
+      "score": 0.27467
+    },
+    {
+      "event_id": "C02E009",
+      "score": 0.27467
+    },
+    {
+      "event_id": "C02E013",
+      "score": 0.27467
+    },
+    {
+      "event_id": "C02E017",
+      "score": 0.27467
+    },
+    {
+      "event_id": "C02E021",
+      "score": 0.27467
+    },
+    {
+      "event_id": "C02E025",
+      "score": 0.27467
+    },
+    {
+      "event_id": "C02E029",
+      "score": 0.27467
+    },
+    {
+      "event_id": "C02E033",
+      "score": 0.27467
+    },
+    {
+      "event_id": "C02E041",
+      "score": 0.27467
+    },
+    {
+      "event_id": "C02E045",
+      "score": 0.27467
+    }
+  ],
+  "Q02-07": [
+    {
+      "event_id": "C02E008",
+      "score": 0.867187
+    },
+    {
+      "event_id": "C02E037",
+      "score": 0.686447
+    },
+    {
+      "event_id": "C02E092",
+      "score": 0.5
+    },
+    {
+      "event_id": "C02E044",
+      "score": 0.453638
+    },
+    {
+      "event_id": "C02E001",
+      "score": 0.38251
+    },
+    {
+      "event_id": "C02E005",
+      "score": 0.38251
+    },
+    {
+      "event_id": "C02E009",
+      "score": 0.38251
+    },
+    {
+      "event_id": "C02E013",
+      "score": 0.38251
+    },
+    {
+      "event_id": "C02E017",
+      "score": 0.38251
+    },
+    {
+      "event_id": "C02E021",
+      "score": 0.38251
+    },
+    {
+      "event_id": "C02E025",
+      "score": 0.38251
+    },
+    {
+      "event_id": "C02E029",
+      "score": 0.38251
+    }
+  ],
+  "Q02-08": [
+    {
+      "event_id": "C02E037",
+      "score": 0.851295
+    },
+    {
+      "event_id": "C02E056",
+      "score": 0.813897
+    },
+    {
+      "event_id": "C02E069",
+      "score": 0.5
+    },
+    {
+      "event_id": "C02E001",
+      "score": 0.398393
+    },
+    {
+      "event_id": "C02E005",
+      "score": 0.398393
+    },
+    {
+      "event_id": "C02E009",
+      "score": 0.398393
+    },
+    {
+      "event_id": "C02E013",
+      "score": 0.398393
+    },
+    {
+      "event_id": "C02E017",
+      "score": 0.398393
+    },
+    {
+      "event_id": "C02E021",
+      "score": 0.398393
+    },
+    {
+      "event_id": "C02E025",
+      "score": 0.398393
+    },
+    {
+      "event_id": "C02E029",
+      "score": 0.398393
+    },
+    {
+      "event_id": "C02E033",
+      "score": 0.398393
+    }
+  ],
+  "Q03-01": [
+    {
+      "event_id": "C03E003",
+      "score": 1.0
+    },
+    {
+      "event_id": "C03E032",
+      "score": 0.442335
+    },
+    {
+      "event_id": "C03E007",
+      "score": 0.418418
+    },
+    {
+      "event_id": "C03E011",
+      "score": 0.418418
+    },
+    {
+      "event_id": "C03E015",
+      "score": 0.418418
+    },
+    {
+      "event_id": "C03E019",
+      "score": 0.418418
+    },
+    {
+      "event_id": "C03E023",
+      "score": 0.418418
+    },
+    {
+      "event_id": "C03E027",
+      "score": 0.418418
+    },
+    {
+      "event_id": "C03E031",
+      "score": 0.418418
+    },
+    {
+      "event_id": "C03E035",
+      "score": 0.418418
+    },
+    {
+      "event_id": "C03E039",
+      "score": 0.418418
+    },
+    {
+      "event_id": "C03E043",
+      "score": 0.418418
+    }
+  ],
+  "Q03-02": [
+    {
+      "event_id": "C03E098",
+      "score": 0.708587
+    },
+    {
+      "event_id": "C03E001",
+      "score": 0.598454
+    },
+    {
+      "event_id": "C03E005",
+      "score": 0.598454
+    },
+    {
+      "event_id": "C03E009",
+      "score": 0.598454
+    },
+    {
+      "event_id": "C03E013",
+      "score": 0.598454
+    },
+    {
+      "event_id": "C03E017",
+      "score": 0.598454
+    },
+    {
+      "event_id": "C03E021",
+      "score": 0.598454
+    },
+    {
+      "event_id": "C03E025",
+      "score": 0.598454
+    },
+    {
+      "event_id": "C03E020",
+      "score": 0.5
+    },
+    {
+      "event_id": "C03E037",
+      "score": 0.5
+    },
+    {
+      "event_id": "C03E029",
+      "score": 0.456772
+    },
+    {
+      "event_id": "C03E033",
+      "score": 0.456772
+    }
+  ],
+  "Q03-03": [
+    {
+      "event_id": "C03E037",
+      "score": 1.0
+    },
+    {
+      "event_id": "C03E098",
+      "score": 0.521749
+    },
+    {
+      "event_id": "C03E001",
+      "score": 0.474063
+    },
+    {
+      "event_id": "C03E005",
+      "score": 0.474063
+    },
+    {
+      "event_id": "C03E009",
+      "score": 0.474063
+    },
+    {
+      "event_id": "C03E013",
+      "score": 0.474063
+    },
+    {
+      "event_id": "C03E017",
+      "score": 0.474063
+    },
+    {
+      "event_id": "C03E021",
+      "score": 0.474063
+    },
+    {
+      "event_id": "C03E025",
+      "score": 0.474063
+    },
+    {
+      "event_id": "C03E029",
+      "score": 0.474063
+    },
+    {
+      "event_id": "C03E033",
+      "score": 0.474063
+    },
+    {
+      "event_id": "C03E041",
+      "score": 0.32024
+    }
+  ],
+  "Q03-04": [
+    {
+      "event_id": "C03E098",
+      "score": 0.796329
+    },
+    {
+      "event_id": "C03E014",
+      "score": 0.5
+    },
+    {
+      "event_id": "C03E001",
+      "score": 0.467173
+    },
+    {
+      "event_id": "C03E005",
+      "score": 0.467173
+    },
+    {
+      "event_id": "C03E009",
+      "score": 0.467173
+    },
+    {
+      "event_id": "C03E013",
+      "score": 0.467173
+    },
+    {
+      "event_id": "C03E017",
+      "score": 0.467173
+    },
+    {
+      "event_id": "C03E021",
+      "score": 0.467173
+    },
+    {
+      "event_id": "C03E025",
+      "score": 0.467173
+    },
+    {
+      "event_id": "C03E029",
+      "score": 0.467173
+    },
+    {
+      "event_id": "C03E033",
+      "score": 0.467173
+    },
+    {
+      "event_id": "C03E041",
+      "score": 0.467173
+    }
+  ],
+  "Q03-05": [
+    {
+      "event_id": "C03E084",
+      "score": 1.0
+    },
+    {
+      "event_id": "C03E037",
+      "score": 0.579299
+    },
+    {
+      "event_id": "C03E001",
+      "score": 0.435817
+    },
+    {
+      "event_id": "C03E005",
+      "score": 0.435817
+    },
+    {
+      "event_id": "C03E009",
+      "score": 0.435817
+    },
+    {
+      "event_id": "C03E013",
+      "score": 0.435817
+    },
+    {
+      "event_id": "C03E017",
+      "score": 0.435817
+    },
+    {
+      "event_id": "C03E021",
+      "score": 0.435817
+    },
+    {
+      "event_id": "C03E025",
+      "score": 0.435817
+    },
+    {
+      "event_id": "C03E029",
+      "score": 0.435817
+    },
+    {
+      "event_id": "C03E033",
+      "score": 0.435817
+    },
+    {
+      "event_id": "C03E041",
+      "score": 0.435817
+    }
+  ],
+  "Q03-06": [
+    {
+      "event_id": "C03E095",
+      "score": 1.0
+    },
+    {
+      "event_id": "C03E001",
+      "score": 0.286542
+    },
+    {
+      "event_id": "C03E005",
+      "score": 0.286542
+    },
+    {
+      "event_id": "C03E009",
+      "score": 0.286542
+    },
+    {
+      "event_id": "C03E013",
+      "score": 0.286542
+    },
+    {
+      "event_id": "C03E017",
+      "score": 0.286542
+    },
+    {
+      "event_id": "C03E021",
+      "score": 0.286542
+    },
+    {
+      "event_id": "C03E025",
+      "score": 0.286542
+    },
+    {
+      "event_id": "C03E029",
+      "score": 0.286542
+    },
+    {
+      "event_id": "C03E033",
+      "score": 0.286542
+    },
+    {
+      "event_id": "C03E041",
+      "score": 0.286542
+    },
+    {
+      "event_id": "C03E045",
+      "score": 0.286542
+    }
+  ],
+  "Q03-07": [
+    {
+      "event_id": "C03E037",
+      "score": 0.686447
+    },
+    {
+      "event_id": "C03E098",
+      "score": 0.601019
+    },
+    {
+      "event_id": "C03E092",
+      "score": 0.5
+    },
+    {
+      "event_id": "C03E008",
+      "score": 0.483587
+    },
+    {
+      "event_id": "C03E044",
+      "score": 0.453638
+    },
+    {
+      "event_id": "C03E001",
+      "score": 0.36092
+    },
+    {
+      "event_id": "C03E005",
+      "score": 0.36092
+    },
+    {
+      "event_id": "C03E009",
+      "score": 0.36092
+    },
+    {
+      "event_id": "C03E013",
+      "score": 0.36092
+    },
+    {
+      "event_id": "C03E017",
+      "score": 0.36092
+    },
+    {
+      "event_id": "C03E021",
+      "score": 0.36092
+    },
+    {
+      "event_id": "C03E025",
+      "score": 0.36092
+    }
+  ],
+  "Q03-08": [
+    {
+      "event_id": "C03E037",
+      "score": 0.851295
+    },
+    {
+      "event_id": "C03E056",
+      "score": 0.813691
+    },
+    {
+      "event_id": "C03E069",
+      "score": 0.5
+    },
+    {
+      "event_id": "C03E001",
+      "score": 0.398849
+    },
+    {
+      "event_id": "C03E005",
+      "score": 0.398849
+    },
+    {
+      "event_id": "C03E009",
+      "score": 0.398849
+    },
+    {
+      "event_id": "C03E013",
+      "score": 0.398849
+    },
+    {
+      "event_id": "C03E017",
+      "score": 0.398849
+    },
+    {
+      "event_id": "C03E021",
+      "score": 0.398849
+    },
+    {
+      "event_id": "C03E025",
+      "score": 0.398849
+    },
+    {
+      "event_id": "C03E029",
+      "score": 0.398849
+    },
+    {
+      "event_id": "C03E033",
+      "score": 0.398849
+    }
+  ],
+  "Q04-01": [
+    {
+      "event_id": "C04E003",
+      "score": 1.0
+    },
+    {
+      "event_id": "C04E007",
+      "score": 0.41528
+    },
+    {
+      "event_id": "C04E011",
+      "score": 0.41528
+    },
+    {
+      "event_id": "C04E015",
+      "score": 0.41528
+    },
+    {
+      "event_id": "C04E019",
+      "score": 0.41528
+    },
+    {
+      "event_id": "C04E023",
+      "score": 0.41528
+    },
+    {
+      "event_id": "C04E027",
+      "score": 0.41528
+    },
+    {
+      "event_id": "C04E031",
+      "score": 0.41528
+    },
+    {
+      "event_id": "C04E035",
+      "score": 0.41528
+    },
+    {
+      "event_id": "C04E039",
+      "score": 0.41528
+    },
+    {
+      "event_id": "C04E043",
+      "score": 0.41528
+    },
+    {
+      "event_id": "C04E047",
+      "score": 0.41528
+    }
+  ],
+  "Q04-02": [
+    {
+      "event_id": "C04E098",
+      "score": 0.665895
+    },
+    {
+      "event_id": "C04E001",
+      "score": 0.590717
+    },
+    {
+      "event_id": "C04E005",
+      "score": 0.590717
+    },
+    {
+      "event_id": "C04E009",
+      "score": 0.590717
+    },
+    {
+      "event_id": "C04E013",
+      "score": 0.590717
+    },
+    {
+      "event_id": "C04E017",
+      "score": 0.590717
+    },
+    {
+      "event_id": "C04E021",
+      "score": 0.590717
+    },
+    {
+      "event_id": "C04E025",
+      "score": 0.590717
+    },
+    {
+      "event_id": "C04E020",
+      "score": 0.5
+    },
+    {
+      "event_id": "C04E037",
+      "score": 0.5
+    },
+    {
+      "event_id": "C04E029",
+      "score": 0.449036
+    },
+    {
+      "event_id": "C04E033",
+      "score": 0.449036
+    }
+  ],
+  "Q04-03": [
+    {
+      "event_id": "C04E037",
+      "score": 1.0
+    },
+    {
+      "event_id": "C04E001",
+      "score": 0.497189
+    },
+    {
+      "event_id": "C04E005",
+      "score": 0.497189
+    },
+    {
+      "event_id": "C04E009",
+      "score": 0.497189
+    },
+    {
+      "event_id": "C04E013",
+      "score": 0.497189
+    },
+    {
+      "event_id": "C04E017",
+      "score": 0.497189
+    },
+    {
+      "event_id": "C04E021",
+      "score": 0.497189
+    },
+    {
+      "event_id": "C04E025",
+      "score": 0.497189
+    },
+    {
+      "event_id": "C04E029",
+      "score": 0.497189
+    },
+    {
+      "event_id": "C04E033",
+      "score": 0.497189
+    },
+    {
+      "event_id": "C04E041",
+      "score": 0.343365
+    },
+    {
+      "event_id": "C04E045",
+      "score": 0.343365
+    }
+  ],
+  "Q04-04": [
+    {
+      "event_id": "C04E003",
+      "score": 0.954926
+    },
+    {
+      "event_id": "C04E014",
+      "score": 0.5
+    },
+    {
+      "event_id": "C04E001",
+      "score": 0.492723
+    },
+    {
+      "event_id": "C04E005",
+      "score": 0.492723
+    },
+    {
+      "event_id": "C04E009",
+      "score": 0.492723
+    },
+    {
+      "event_id": "C04E013",
+      "score": 0.492723
+    },
+    {
+      "event_id": "C04E017",
+      "score": 0.492723
+    },
+    {
+      "event_id": "C04E021",
+      "score": 0.492723
+    },
+    {
+      "event_id": "C04E025",
+      "score": 0.492723
+    },
+    {
+      "event_id": "C04E029",
+      "score": 0.492723
+    },
+    {
+      "event_id": "C04E033",
+      "score": 0.492723
+    },
+    {
+      "event_id": "C04E041",
+      "score": 0.492723
+    }
+  ],
+  "Q04-05": [
+    {
+      "event_id": "C04E084",
+      "score": 0.951407
+    },
+    {
+      "event_id": "C04E037",
+      "score": 0.632551
+    },
+    {
+      "event_id": "C04E001",
+      "score": 0.442279
+    },
+    {
+      "event_id": "C04E005",
+      "score": 0.442279
+    },
+    {
+      "event_id": "C04E009",
+      "score": 0.442279
+    },
+    {
+      "event_id": "C04E013",
+      "score": 0.442279
+    },
+    {
+      "event_id": "C04E017",
+      "score": 0.442279
+    },
+    {
+      "event_id": "C04E021",
+      "score": 0.442279
+    },
+    {
+      "event_id": "C04E025",
+      "score": 0.442279
+    },
+    {
+      "event_id": "C04E029",
+      "score": 0.442279
+    },
+    {
+      "event_id": "C04E033",
+      "score": 0.442279
+    },
+    {
+      "event_id": "C04E041",
+      "score": 0.442279
+    }
+  ],
+  "Q04-06": [
+    {
+      "event_id": "C04E095",
+      "score": 1.0
+    },
+    {
+      "event_id": "C04E002",
+      "score": 0.319936
+    },
+    {
+      "event_id": "C04E006",
+      "score": 0.319936
+    },
+    {
+      "event_id": "C04E010",
+      "score": 0.319936
+    },
+    {
+      "event_id": "C04E018",
+      "score": 0.319936
+    },
+    {
+      "event_id": "C04E022",
+      "score": 0.319936
+    },
+    {
+      "event_id": "C04E026",
+      "score": 0.319936
+    },
+    {
+      "event_id": "C04E030",
+      "score": 0.319936
+    },
+    {
+      "event_id": "C04E034",
+      "score": 0.319936
+    },
+    {
+      "event_id": "C04E038",
+      "score": 0.319936
+    },
+    {
+      "event_id": "C04E042",
+      "score": 0.319936
+    },
+    {
+      "event_id": "C04E046",
+      "score": 0.319936
+    }
+  ],
+  "Q04-07": [
+    {
+      "event_id": "C04E008",
+      "score": 0.871861
+    },
+    {
+      "event_id": "C04E092",
+      "score": 0.857699
+    },
+    {
+      "event_id": "C04E037",
+      "score": 0.686447
+    },
+    {
+      "event_id": "C04E098",
+      "score": 0.575146
+    },
+    {
+      "event_id": "C04E044",
+      "score": 0.453638
+    },
+    {
+      "event_id": "C04E095",
+      "score": 0.359683
+    },
+    {
+      "event_id": "C04E001",
+      "score": 0.353429
+    },
+    {
+      "event_id": "C04E005",
+      "score": 0.353429
+    },
+    {
+      "event_id": "C04E009",
+      "score": 0.353429
+    },
+    {
+      "event_id": "C04E013",
+      "score": 0.353429
+    },
+    {
+      "event_id": "C04E017",
+      "score": 0.353429
+    },
+    {
+      "event_id": "C04E021",
+      "score": 0.353429
+    }
+  ],
+  "Q04-08": [
+    {
+      "event_id": "C04E069",
+      "score": 0.915924
+    },
+    {
+      "event_id": "C04E037",
+      "score": 0.848311
+    },
+    {
+      "event_id": "C04E056",
+      "score": 0.844043
+    },
+    {
+      "event_id": "C04E048",
+      "score": 0.725522
+    },
+    {
+      "event_id": "C04E001",
+      "score": 0.412927
+    },
+    {
+      "event_id": "C04E005",
+      "score": 0.412927
+    },
+    {
+      "event_id": "C04E009",
+      "score": 0.412927
+    },
+    {
+      "event_id": "C04E013",
+      "score": 0.412927
+    },
+    {
+      "event_id": "C04E017",
+      "score": 0.412927
+    },
+    {
+      "event_id": "C04E021",
+      "score": 0.412927
+    },
+    {
+      "event_id": "C04E025",
+      "score": 0.412927
+    },
+    {
+      "event_id": "C04E029",
+      "score": 0.412927
+    }
+  ],
+  "Q05-01": [
+    {
+      "event_id": "C05E003",
+      "score": 1.0
+    },
+    {
+      "event_id": "C05E037",
+      "score": 0.676661
+    },
+    {
+      "event_id": "C05E004",
+      "score": 0.663159
+    },
+    {
+      "event_id": "C05E012",
+      "score": 0.663159
+    },
+    {
+      "event_id": "C05E016",
+      "score": 0.663159
+    },
+    {
+      "event_id": "C05E024",
+      "score": 0.663159
+    },
+    {
+      "event_id": "C05E028",
+      "score": 0.663159
+    },
+    {
+      "event_id": "C05E084",
+      "score": 0.429055
+    },
+    {
+      "event_id": "C05E036",
+      "score": 0.40891
+    },
+    {
+      "event_id": "C05E040",
+      "score": 0.40891
+    },
+    {
+      "event_id": "C05E052",
+      "score": 0.40891
+    },
+    {
+      "event_id": "C05E060",
+      "score": 0.40891
+    }
+  ],
+  "Q05-02": [
+    {
+      "event_id": "C05E020",
+      "score": 0.5
+    },
+    {
+      "event_id": "C05E037",
+      "score": 0.5
+    },
+    {
+      "event_id": "C05E004",
+      "score": 0.456524
+    },
+    {
+      "event_id": "C05E012",
+      "score": 0.456524
+    },
+    {
+      "event_id": "C05E016",
+      "score": 0.456524
+    },
+    {
+      "event_id": "C05E024",
+      "score": 0.456524
+    },
+    {
+      "event_id": "C05E028",
+      "score": 0.456524
+    },
+    {
+      "event_id": "C05E036",
+      "score": 0.456524
+    },
+    {
+      "event_id": "C05E040",
+      "score": 0.456524
+    },
+    {
+      "event_id": "C05E052",
+      "score": 0.456524
+    },
+    {
+      "event_id": "C05E060",
+      "score": 0.456524
+    },
+    {
+      "event_id": "C05E064",
+      "score": 0.456524
+    }
+  ],
+  "Q05-03": [
+    {
+      "event_id": "C05E037",
+      "score": 1.0
+    },
+    {
+      "event_id": "C05E098",
+      "score": 0.534512
+    },
+    {
+      "event_id": "C05E001",
+      "score": 0.490919
+    },
+    {
+      "event_id": "C05E005",
+      "score": 0.490919
+    },
+    {
+      "event_id": "C05E009",
+      "score": 0.490919
+    },
+    {
+      "event_id": "C05E013",
+      "score": 0.490919
+    },
+    {
+      "event_id": "C05E017",
+      "score": 0.490919
+    },
+    {
+      "event_id": "C05E021",
+      "score": 0.490919
+    },
+    {
+      "event_id": "C05E025",
+      "score": 0.490919
+    },
+    {
+      "event_id": "C05E029",
+      "score": 0.490919
+    },
+    {
+      "event_id": "C05E033",
+      "score": 0.490919
+    },
+    {
+      "event_id": "C05E041",
+      "score": 0.337095
+    }
+  ],
+  "Q05-04": [
+    {
+      "event_id": "C05E003",
+      "score": 0.954926
+    },
+    {
+      "event_id": "C05E037",
+      "score": 0.897347
+    },
+    {
+      "event_id": "C05E098",
+      "score": 0.742426
+    },
+    {
+      "event_id": "C05E014",
+      "score": 0.5
+    },
+    {
+      "event_id": "C05E001",
+      "score": 0.443965
+    },
+    {
+      "event_id": "C05E005",
+      "score": 0.443965
+    },
+    {
+      "event_id": "C05E009",
+      "score": 0.443965
+    },
+    {
+      "event_id": "C05E013",
+      "score": 0.443965
+    },
+    {
+      "event_id": "C05E017",
+      "score": 0.443965
+    },
+    {
+      "event_id": "C05E021",
+      "score": 0.443965
+    },
+    {
+      "event_id": "C05E025",
+      "score": 0.443965
+    },
+    {
+      "event_id": "C05E029",
+      "score": 0.443965
+    }
+  ],
+  "Q05-05": [
+    {
+      "event_id": "C05E084",
+      "score": 1.0
+    },
+    {
+      "event_id": "C05E037",
+      "score": 0.611599
+    },
+    {
+      "event_id": "C05E095",
+      "score": 0.455574
+    },
+    {
+      "event_id": "C05E001",
+      "score": 0.42955
+    },
+    {
+      "event_id": "C05E005",
+      "score": 0.42955
+    },
+    {
+      "event_id": "C05E009",
+      "score": 0.42955
+    },
+    {
+      "event_id": "C05E013",
+      "score": 0.42955
+    },
+    {
+      "event_id": "C05E017",
+      "score": 0.42955
+    },
+    {
+      "event_id": "C05E021",
+      "score": 0.42955
+    },
+    {
+      "event_id": "C05E025",
+      "score": 0.42955
+    },
+    {
+      "event_id": "C05E029",
+      "score": 0.42955
+    },
+    {
+      "event_id": "C05E033",
+      "score": 0.42955
+    }
+  ],
+  "Q05-06": [
+    {
+      "event_id": "C05E095",
+      "score": 1.0
+    },
+    {
+      "event_id": "C05E001",
+      "score": 0.283809
+    },
+    {
+      "event_id": "C05E005",
+      "score": 0.283809
+    },
+    {
+      "event_id": "C05E009",
+      "score": 0.283809
+    },
+    {
+      "event_id": "C05E013",
+      "score": 0.283809
+    },
+    {
+      "event_id": "C05E017",
+      "score": 0.283809
+    },
+    {
+      "event_id": "C05E021",
+      "score": 0.283809
+    },
+    {
+      "event_id": "C05E025",
+      "score": 0.283809
+    },
+    {
+      "event_id": "C05E029",
+      "score": 0.283809
+    },
+    {
+      "event_id": "C05E033",
+      "score": 0.283809
+    },
+    {
+      "event_id": "C05E041",
+      "score": 0.283809
+    },
+    {
+      "event_id": "C05E045",
+      "score": 0.283809
+    }
+  ],
+  "Q05-07": [
+    {
+      "event_id": "C05E008",
+      "score": 0.875494
+    },
+    {
+      "event_id": "C05E092",
+      "score": 0.872933
+    },
+    {
+      "event_id": "C05E037",
+      "score": 0.686447
+    },
+    {
+      "event_id": "C05E098",
+      "score": 0.597666
+    },
+    {
+      "event_id": "C05E044",
+      "score": 0.453638
+    },
+    {
+      "event_id": "C05E095",
+      "score": 0.384195
+    },
+    {
+      "event_id": "C05E084",
+      "score": 0.359861
+    },
+    {
+      "event_id": "C05E001",
+      "score": 0.353844
+    },
+    {
+      "event_id": "C05E005",
+      "score": 0.353844
+    },
+    {
+      "event_id": "C05E009",
+      "score": 0.353844
+    },
+    {
+      "event_id": "C05E013",
+      "score": 0.353844
+    },
+    {
+      "event_id": "C05E017",
+      "score": 0.353844
+    }
+  ],
+  "Q05-08": [
+    {
+      "event_id": "C05E037",
+      "score": 0.851295
+    },
+    {
+      "event_id": "C05E056",
+      "score": 0.814404
+    },
+    {
+      "event_id": "C05E069",
+      "score": 0.5
+    },
+    {
+      "event_id": "C05E001",
+      "score": 0.393459
+    },
+    {
+      "event_id": "C05E005",
+      "score": 0.393459
+    },
+    {
+      "event_id": "C05E009",
+      "score": 0.393459
+    },
+    {
+      "event_id": "C05E013",
+      "score": 0.393459
+    },
+    {
+      "event_id": "C05E017",
+      "score": 0.393459
+    },
+    {
+      "event_id": "C05E021",
+      "score": 0.393459
+    },
+    {
+      "event_id": "C05E025",
+      "score": 0.393459
+    },
+    {
+      "event_id": "C05E029",
+      "score": 0.393459
+    },
+    {
+      "event_id": "C05E033",
+      "score": 0.393459
+    }
+  ],
+  "Q06-01": [
+    {
+      "event_id": "C06E003",
+      "score": 1.0
+    },
+    {
+      "event_id": "C06E092",
+      "score": 0.484813
+    },
+    {
+      "event_id": "C06E007",
+      "score": 0.427359
+    },
+    {
+      "event_id": "C06E011",
+      "score": 0.427359
+    },
+    {
+      "event_id": "C06E015",
+      "score": 0.427359
+    },
+    {
+      "event_id": "C06E019",
+      "score": 0.427359
+    },
+    {
+      "event_id": "C06E023",
+      "score": 0.427359
+    },
+    {
+      "event_id": "C06E027",
+      "score": 0.427359
+    },
+    {
+      "event_id": "C06E031",
+      "score": 0.427359
+    },
+    {
+      "event_id": "C06E035",
+      "score": 0.427359
+    },
+    {
+      "event_id": "C06E039",
+      "score": 0.427359
+    },
+    {
+      "event_id": "C06E043",
+      "score": 0.427359
+    }
+  ],
+  "Q06-02": [
+    {
+      "event_id": "C06E020",
+      "score": 0.935998
+    },
+    {
+      "event_id": "C06E092",
+      "score": 0.5
+    },
+    {
+      "event_id": "C06E037",
+      "score": 0.457572
+    },
+    {
+      "event_id": "C06E069",
+      "score": 0.447975
+    },
+    {
+      "event_id": "C06E004",
+      "score": 0.421104
+    },
+    {
+      "event_id": "C06E012",
+      "score": 0.421104
+    },
+    {
+      "event_id": "C06E016",
+      "score": 0.421104
+    },
+    {
+      "event_id": "C06E024",
+      "score": 0.421104
+    },
+    {
+      "event_id": "C06E028",
+      "score": 0.421104
+    },
+    {
+      "event_id": "C06E036",
+      "score": 0.421104
+    },
+    {
+      "event_id": "C06E040",
+      "score": 0.421104
+    },
+    {
+      "event_id": "C06E052",
+      "score": 0.421104
+    }
+  ],
+  "Q06-03": [
+    {
+      "event_id": "C06E037",
+      "score": 1.0
+    },
+    {
+      "event_id": "C06E092",
+      "score": 0.592127
+    },
+    {
+      "event_id": "C06E001",
+      "score": 0.482011
+    },
+    {
+      "event_id": "C06E005",
+      "score": 0.482011
+    },
+    {
+      "event_id": "C06E009",
+      "score": 0.482011
+    },
+    {
+      "event_id": "C06E013",
+      "score": 0.482011
+    },
+    {
+      "event_id": "C06E017",
+      "score": 0.482011
+    },
+    {
+      "event_id": "C06E021",
+      "score": 0.482011
+    },
+    {
+      "event_id": "C06E025",
+      "score": 0.482011
+    },
+    {
+      "event_id": "C06E029",
+      "score": 0.482011
+    },
+    {
+      "event_id": "C06E033",
+      "score": 0.333759
+    },
+    {
+      "event_id": "C06E041",
+      "score": 0.333759
+    }
+  ],
+  "Q06-04": [
+    {
+      "event_id": "C06E014",
+      "score": 0.5
+    },
+    {
+      "event_id": "C06E069",
+      "score": 0.5
+    },
+    {
+      "event_id": "C06E001",
+      "score": 0.498072
+    },
+    {
+      "event_id": "C06E005",
+      "score": 0.498072
+    },
+    {
+      "event_id": "C06E009",
+      "score": 0.498072
+    },
+    {
+      "event_id": "C06E013",
+      "score": 0.498072
+    },
+    {
+      "event_id": "C06E017",
+      "score": 0.498072
+    },
+    {
+      "event_id": "C06E021",
+      "score": 0.498072
+    },
+    {
+      "event_id": "C06E025",
+      "score": 0.498072
+    },
+    {
+      "event_id": "C06E029",
+      "score": 0.498072
+    },
+    {
+      "event_id": "C06E033",
+      "score": 0.498072
+    },
+    {
+      "event_id": "C06E041",
+      "score": 0.498072
+    }
+  ],
+  "Q06-05": [
+    {
+      "event_id": "C06E084",
+      "score": 0.999726
+    },
+    {
+      "event_id": "C06E037",
+      "score": 0.621986
+    },
+    {
+      "event_id": "C06E001",
+      "score": 0.44074
+    },
+    {
+      "event_id": "C06E005",
+      "score": 0.44074
+    },
+    {
+      "event_id": "C06E009",
+      "score": 0.44074
+    },
+    {
+      "event_id": "C06E013",
+      "score": 0.44074
+    },
+    {
+      "event_id": "C06E017",
+      "score": 0.44074
+    },
+    {
+      "event_id": "C06E021",
+      "score": 0.44074
+    },
+    {
+      "event_id": "C06E025",
+      "score": 0.44074
+    },
+    {
+      "event_id": "C06E029",
+      "score": 0.44074
+    },
+    {
+      "event_id": "C06E033",
+      "score": 0.44074
+    },
+    {
+      "event_id": "C06E041",
+      "score": 0.44074
+    }
+  ],
+  "Q06-06": [
+    {
+      "event_id": "C06E095",
+      "score": 1.0
+    },
+    {
+      "event_id": "C06E001",
+      "score": 0.252592
+    },
+    {
+      "event_id": "C06E005",
+      "score": 0.252592
+    },
+    {
+      "event_id": "C06E009",
+      "score": 0.252592
+    },
+    {
+      "event_id": "C06E013",
+      "score": 0.252592
+    },
+    {
+      "event_id": "C06E017",
+      "score": 0.252592
+    },
+    {
+      "event_id": "C06E021",
+      "score": 0.252592
+    },
+    {
+      "event_id": "C06E025",
+      "score": 0.252592
+    },
+    {
+      "event_id": "C06E029",
+      "score": 0.252592
+    },
+    {
+      "event_id": "C06E033",
+      "score": 0.252592
+    },
+    {
+      "event_id": "C06E041",
+      "score": 0.252592
+    },
+    {
+      "event_id": "C06E045",
+      "score": 0.252592
+    }
+  ],
+  "Q06-07": [
+    {
+      "event_id": "C06E092",
+      "score": 1.0
+    },
+    {
+      "event_id": "C06E008",
+      "score": 0.741697
+    },
+    {
+      "event_id": "C06E037",
+      "score": 0.581841
+    },
+    {
+      "event_id": "C06E098",
+      "score": 0.478866
+    },
+    {
+      "event_id": "C06E044",
+      "score": 0.380489
+    },
+    {
+      "event_id": "C06E069",
+      "score": 0.34793
+    },
+    {
+      "event_id": "C06E001",
+      "score": 0.316672
+    },
+    {
+      "event_id": "C06E005",
+      "score": 0.316672
+    },
+    {
+      "event_id": "C06E009",
+      "score": 0.316672
+    },
+    {
+      "event_id": "C06E013",
+      "score": 0.316672
+    },
+    {
+      "event_id": "C06E017",
+      "score": 0.316672
+    },
+    {
+      "event_id": "C06E021",
+      "score": 0.316672
+    }
+  ],
+  "Q06-08": [
+    {
+      "event_id": "C06E069",
+      "score": 1.0
+    },
+    {
+      "event_id": "C06E056",
+      "score": 0.774482
+    },
+    {
+      "event_id": "C06E037",
+      "score": 0.746377
+    },
+    {
+      "event_id": "C06E048",
+      "score": 0.700116
+    },
+    {
+      "event_id": "C06E092",
+      "score": 0.405085
+    },
+    {
+      "event_id": "C06E001",
+      "score": 0.371921
+    },
+    {
+      "event_id": "C06E005",
+      "score": 0.371921
+    },
+    {
+      "event_id": "C06E009",
+      "score": 0.371921
+    },
+    {
+      "event_id": "C06E013",
+      "score": 0.371921
+    },
+    {
+      "event_id": "C06E017",
+      "score": 0.371921
+    },
+    {
+      "event_id": "C06E021",
+      "score": 0.371921
+    },
+    {
+      "event_id": "C06E025",
+      "score": 0.371921
+    }
+  ],
+  "Q07-01": [
+    {
+      "event_id": "C07E003",
+      "score": 1.0
+    },
+    {
+      "event_id": "C07E037",
+      "score": 0.580361
+    },
+    {
+      "event_id": "C07E084",
+      "score": 0.374301
+    },
+    {
+      "event_id": "C07E092",
+      "score": 0.337293
+    },
+    {
+      "event_id": "C07E007",
+      "score": 0.317959
+    },
+    {
+      "event_id": "C07E011",
+      "score": 0.317959
+    },
+    {
+      "event_id": "C07E015",
+      "score": 0.317959
+    },
+    {
+      "event_id": "C07E019",
+      "score": 0.317959
+    },
+    {
+      "event_id": "C07E023",
+      "score": 0.317959
+    },
+    {
+      "event_id": "C07E027",
+      "score": 0.317959
+    },
+    {
+      "event_id": "C07E031",
+      "score": 0.317959
+    },
+    {
+      "event_id": "C07E035",
+      "score": 0.317959
+    }
+  ],
+  "Q07-02": [
+    {
+      "event_id": "C07E098",
+      "score": 0.66582
+    },
+    {
+      "event_id": "C07E001",
+      "score": 0.590367
+    },
+    {
+      "event_id": "C07E005",
+      "score": 0.590367
+    },
+    {
+      "event_id": "C07E009",
+      "score": 0.590367
+    },
+    {
+      "event_id": "C07E013",
+      "score": 0.590367
+    },
+    {
+      "event_id": "C07E017",
+      "score": 0.590367
+    },
+    {
+      "event_id": "C07E021",
+      "score": 0.590367
+    },
+    {
+      "event_id": "C07E025",
+      "score": 0.590367
+    },
+    {
+      "event_id": "C07E020",
+      "score": 0.5
+    },
+    {
+      "event_id": "C07E037",
+      "score": 0.5
+    },
+    {
+      "event_id": "C07E029",
+      "score": 0.448685
+    },
+    {
+      "event_id": "C07E033",
+      "score": 0.448685
+    }
+  ],
+  "Q07-03": [
+    {
+      "event_id": "C07E037",
+      "score": 1.0
+    },
+    {
+      "event_id": "C07E008",
+      "score": 0.496051
+    },
+    {
+      "event_id": "C07E001",
+      "score": 0.480451
+    },
+    {
+      "event_id": "C07E005",
+      "score": 0.480451
+    },
+    {
+      "event_id": "C07E009",
+      "score": 0.480451
+    },
+    {
+      "event_id": "C07E013",
+      "score": 0.480451
+    },
+    {
+      "event_id": "C07E017",
+      "score": 0.480451
+    },
+    {
+      "event_id": "C07E021",
+      "score": 0.480451
+    },
+    {
+      "event_id": "C07E025",
+      "score": 0.480451
+    },
+    {
+      "event_id": "C07E029",
+      "score": 0.480451
+    },
+    {
+      "event_id": "C07E033",
+      "score": 0.480451
+    },
+    {
+      "event_id": "C07E084",
+      "score": 0.337228
+    }
+  ],
+  "Q07-04": [
+    {
+      "event_id": "C07E003",
+      "score": 0.954926
+    },
+    {
+      "event_id": "C07E014",
+      "score": 0.5
+    },
+    {
+      "event_id": "C07E001",
+      "score": 0.441648
+    },
+    {
+      "event_id": "C07E005",
+      "score": 0.441648
+    },
+    {
+      "event_id": "C07E009",
+      "score": 0.441648
+    },
+    {
+      "event_id": "C07E013",
+      "score": 0.441648
+    },
+    {
+      "event_id": "C07E017",
+      "score": 0.441648
+    },
+    {
+      "event_id": "C07E021",
+      "score": 0.441648
+    },
+    {
+      "event_id": "C07E025",
+      "score": 0.441648
+    },
+    {
+      "event_id": "C07E029",
+      "score": 0.441648
+    },
+    {
+      "event_id": "C07E033",
+      "score": 0.441648
+    },
+    {
+      "event_id": "C07E041",
+      "score": 0.441648
+    }
+  ],
+  "Q07-05": [
+    {
+      "event_id": "C07E084",
+      "score": 1.0
+    },
+    {
+      "event_id": "C07E037",
+      "score": 0.580921
+    },
+    {
+      "event_id": "C07E001",
+      "score": 0.408157
+    },
+    {
+      "event_id": "C07E005",
+      "score": 0.408157
+    },
+    {
+      "event_id": "C07E009",
+      "score": 0.408157
+    },
+    {
+      "event_id": "C07E013",
+      "score": 0.408157
+    },
+    {
+      "event_id": "C07E017",
+      "score": 0.408157
+    },
+    {
+      "event_id": "C07E021",
+      "score": 0.408157
+    },
+    {
+      "event_id": "C07E025",
+      "score": 0.408157
+    },
+    {
+      "event_id": "C07E029",
+      "score": 0.408157
+    },
+    {
+      "event_id": "C07E033",
+      "score": 0.408157
+    },
+    {
+      "event_id": "C07E041",
+      "score": 0.408157
+    }
+  ],
+  "Q07-06": [
+    {
+      "event_id": "C07E095",
+      "score": 1.0
+    },
+    {
+      "event_id": "C07E002",
+      "score": 0.366601
+    },
+    {
+      "event_id": "C07E006",
+      "score": 0.366601
+    },
+    {
+      "event_id": "C07E010",
+      "score": 0.366601
+    },
+    {
+      "event_id": "C07E018",
+      "score": 0.366601
+    },
+    {
+      "event_id": "C07E022",
+      "score": 0.366601
+    },
+    {
+      "event_id": "C07E026",
+      "score": 0.366601
+    },
+    {
+      "event_id": "C07E030",
+      "score": 0.366601
+    },
+    {
+      "event_id": "C07E034",
+      "score": 0.366601
+    },
+    {
+      "event_id": "C07E038",
+      "score": 0.366601
+    },
+    {
+      "event_id": "C07E042",
+      "score": 0.366601
+    },
+    {
+      "event_id": "C07E046",
+      "score": 0.366601
+    }
+  ],
+  "Q07-07": [
+    {
+      "event_id": "C07E008",
+      "score": 0.871064
+    },
+    {
+      "event_id": "C07E037",
+      "score": 0.686447
+    },
+    {
+      "event_id": "C07E092",
+      "score": 0.5
+    },
+    {
+      "event_id": "C07E044",
+      "score": 0.453638
+    },
+    {
+      "event_id": "C07E001",
+      "score": 0.356128
+    },
+    {
+      "event_id": "C07E005",
+      "score": 0.356128
+    },
+    {
+      "event_id": "C07E009",
+      "score": 0.356128
+    },
+    {
+      "event_id": "C07E013",
+      "score": 0.356128
+    },
+    {
+      "event_id": "C07E017",
+      "score": 0.356128
+    },
+    {
+      "event_id": "C07E021",
+      "score": 0.356128
+    },
+    {
+      "event_id": "C07E025",
+      "score": 0.356128
+    },
+    {
+      "event_id": "C07E029",
+      "score": 0.356128
+    }
+  ],
+  "Q07-08": [
+    {
+      "event_id": "C07E056",
+      "score": 0.844043
+    },
+    {
+      "event_id": "C07E037",
+      "score": 0.843639
+    },
+    {
+      "event_id": "C07E048",
+      "score": 0.716535
+    },
+    {
+      "event_id": "C07E069",
+      "score": 0.5
+    },
+    {
+      "event_id": "C07E001",
+      "score": 0.384616
+    },
+    {
+      "event_id": "C07E005",
+      "score": 0.384616
+    },
+    {
+      "event_id": "C07E009",
+      "score": 0.384616
+    },
+    {
+      "event_id": "C07E013",
+      "score": 0.384616
+    },
+    {
+      "event_id": "C07E017",
+      "score": 0.384616
+    },
+    {
+      "event_id": "C07E021",
+      "score": 0.384616
+    },
+    {
+      "event_id": "C07E025",
+      "score": 0.384616
+    },
+    {
+      "event_id": "C07E029",
+      "score": 0.384616
+    }
+  ],
+  "Q08-01": [
+    {
+      "event_id": "C08E003",
+      "score": 1.0
+    },
+    {
+      "event_id": "C08E004",
+      "score": 0.721039
+    },
+    {
+      "event_id": "C08E012",
+      "score": 0.721039
+    },
+    {
+      "event_id": "C08E016",
+      "score": 0.721039
+    },
+    {
+      "event_id": "C08E024",
+      "score": 0.721039
+    },
+    {
+      "event_id": "C08E028",
+      "score": 0.721039
+    },
+    {
+      "event_id": "C08E084",
+      "score": 0.470676
+    },
+    {
+      "event_id": "C08E036",
+      "score": 0.46679
+    },
+    {
+      "event_id": "C08E040",
+      "score": 0.46679
+    },
+    {
+      "event_id": "C08E052",
+      "score": 0.46679
+    },
+    {
+      "event_id": "C08E060",
+      "score": 0.46679
+    },
+    {
+      "event_id": "C08E064",
+      "score": 0.46679
+    }
+  ],
+  "Q08-02": [
+    {
+      "event_id": "C08E001",
+      "score": 0.605985
+    },
+    {
+      "event_id": "C08E005",
+      "score": 0.605985
+    },
+    {
+      "event_id": "C08E009",
+      "score": 0.605985
+    },
+    {
+      "event_id": "C08E013",
+      "score": 0.605985
+    },
+    {
+      "event_id": "C08E017",
+      "score": 0.605985
+    },
+    {
+      "event_id": "C08E021",
+      "score": 0.605985
+    },
+    {
+      "event_id": "C08E025",
+      "score": 0.605985
+    },
+    {
+      "event_id": "C08E020",
+      "score": 0.5
+    },
+    {
+      "event_id": "C08E037",
+      "score": 0.5
+    },
+    {
+      "event_id": "C08E029",
+      "score": 0.464303
+    },
+    {
+      "event_id": "C08E033",
+      "score": 0.464303
+    },
+    {
+      "event_id": "C08E041",
+      "score": 0.464303
+    }
+  ],
+  "Q08-03": [
+    {
+      "event_id": "C08E037",
+      "score": 1.0
+    },
+    {
+      "event_id": "C08E001",
+      "score": 0.521968
+    },
+    {
+      "event_id": "C08E005",
+      "score": 0.521968
+    },
+    {
+      "event_id": "C08E009",
+      "score": 0.521968
+    },
+    {
+      "event_id": "C08E013",
+      "score": 0.521968
+    },
+    {
+      "event_id": "C08E017",
+      "score": 0.521968
+    },
+    {
+      "event_id": "C08E021",
+      "score": 0.521968
+    },
+    {
+      "event_id": "C08E025",
+      "score": 0.521968
+    },
+    {
+      "event_id": "C08E029",
+      "score": 0.521968
+    },
+    {
+      "event_id": "C08E033",
+      "score": 0.521968
+    },
+    {
+      "event_id": "C08E041",
+      "score": 0.368145
+    },
+    {
+      "event_id": "C08E045",
+      "score": 0.368145
+    }
+  ],
+  "Q08-04": [
+    {
+      "event_id": "C08E001",
+      "score": 0.5
+    },
+    {
+      "event_id": "C08E005",
+      "score": 0.5
+    },
+    {
+      "event_id": "C08E009",
+      "score": 0.5
+    },
+    {
+      "event_id": "C08E013",
+      "score": 0.5
+    },
+    {
+      "event_id": "C08E014",
+      "score": 0.5
+    },
+    {
+      "event_id": "C08E017",
+      "score": 0.5
+    },
+    {
+      "event_id": "C08E021",
+      "score": 0.5
+    },
+    {
+      "event_id": "C08E025",
+      "score": 0.5
+    },
+    {
+      "event_id": "C08E029",
+      "score": 0.5
+    },
+    {
+      "event_id": "C08E033",
+      "score": 0.5
+    },
+    {
+      "event_id": "C08E041",
+      "score": 0.5
+    },
+    {
+      "event_id": "C08E045",
+      "score": 0.5
+    }
+  ],
+  "Q08-05": [
+    {
+      "event_id": "C08E084",
+      "score": 1.0
+    },
+    {
+      "event_id": "C08E037",
+      "score": 0.602203
+    },
+    {
+      "event_id": "C08E001",
+      "score": 0.436579
+    },
+    {
+      "event_id": "C08E005",
+      "score": 0.436579
+    },
+    {
+      "event_id": "C08E009",
+      "score": 0.436579
+    },
+    {
+      "event_id": "C08E013",
+      "score": 0.436579
+    },
+    {
+      "event_id": "C08E017",
+      "score": 0.436579
+    },
+    {
+      "event_id": "C08E021",
+      "score": 0.436579
+    },
+    {
+      "event_id": "C08E025",
+      "score": 0.436579
+    },
+    {
+      "event_id": "C08E029",
+      "score": 0.436579
+    },
+    {
+      "event_id": "C08E033",
+      "score": 0.436579
+    },
+    {
+      "event_id": "C08E041",
+      "score": 0.436579
+    }
+  ],
+  "Q08-06": [
+    {
+      "event_id": "C08E095",
+      "score": 1.0
+    },
+    {
+      "event_id": "C08E001",
+      "score": 0.279563
+    },
+    {
+      "event_id": "C08E005",
+      "score": 0.279563
+    },
+    {
+      "event_id": "C08E009",
+      "score": 0.279563
+    },
+    {
+      "event_id": "C08E013",
+      "score": 0.279563
+    },
+    {
+      "event_id": "C08E017",
+      "score": 0.279563
+    },
+    {
+      "event_id": "C08E021",
+      "score": 0.279563
+    },
+    {
+      "event_id": "C08E025",
+      "score": 0.279563
+    },
+    {
+      "event_id": "C08E029",
+      "score": 0.279563
+    },
+    {
+      "event_id": "C08E033",
+      "score": 0.279563
+    },
+    {
+      "event_id": "C08E041",
+      "score": 0.279563
+    },
+    {
+      "event_id": "C08E045",
+      "score": 0.279563
+    }
+  ],
+  "Q08-07": [
+    {
+      "event_id": "C08E037",
+      "score": 0.686447
+    },
+    {
+      "event_id": "C08E092",
+      "score": 0.5
+    },
+    {
+      "event_id": "C08E008",
+      "score": 0.483587
+    },
+    {
+      "event_id": "C08E044",
+      "score": 0.453638
+    },
+    {
+      "event_id": "C08E001",
+      "score": 0.395875
+    },
+    {
+      "event_id": "C08E005",
+      "score": 0.395875
+    },
+    {
+      "event_id": "C08E009",
+      "score": 0.395875
+    },
+    {
+      "event_id": "C08E013",
+      "score": 0.395875
+    },
+    {
+      "event_id": "C08E017",
+      "score": 0.395875
+    },
+    {
+      "event_id": "C08E021",
+      "score": 0.395875
+    },
+    {
+      "event_id": "C08E025",
+      "score": 0.395875
+    },
+    {
+      "event_id": "C08E029",
+      "score": 0.395875
+    }
+  ],
+  "Q08-08": [
+    {
+      "event_id": "C08E037",
+      "score": 0.851295
+    },
+    {
+      "event_id": "C08E056",
+      "score": 0.831549
+    },
+    {
+      "event_id": "C08E069",
+      "score": 0.5
+    },
+    {
+      "event_id": "C08E001",
+      "score": 0.44655
+    },
+    {
+      "event_id": "C08E005",
+      "score": 0.44655
+    },
+    {
+      "event_id": "C08E009",
+      "score": 0.44655
+    },
+    {
+      "event_id": "C08E013",
+      "score": 0.44655
+    },
+    {
+      "event_id": "C08E017",
+      "score": 0.44655
+    },
+    {
+      "event_id": "C08E021",
+      "score": 0.44655
+    },
+    {
+      "event_id": "C08E025",
+      "score": 0.44655
+    },
+    {
+      "event_id": "C08E029",
+      "score": 0.44655
+    },
+    {
+      "event_id": "C08E033",
+      "score": 0.44655
+    }
+  ],
+  "Q09-01": [
+    {
+      "event_id": "C09E003",
+      "score": 1.0
+    },
+    {
+      "event_id": "C09E084",
+      "score": 0.433388
+    },
+    {
+      "event_id": "C09E032",
+      "score": 0.433162
+    },
+    {
+      "event_id": "C09E007",
+      "score": 0.420013
+    },
+    {
+      "event_id": "C09E011",
+      "score": 0.420013
+    },
+    {
+      "event_id": "C09E015",
+      "score": 0.420013
+    },
+    {
+      "event_id": "C09E019",
+      "score": 0.420013
+    },
+    {
+      "event_id": "C09E023",
+      "score": 0.420013
+    },
+    {
+      "event_id": "C09E027",
+      "score": 0.420013
+    },
+    {
+      "event_id": "C09E031",
+      "score": 0.420013
+    },
+    {
+      "event_id": "C09E035",
+      "score": 0.420013
+    },
+    {
+      "event_id": "C09E039",
+      "score": 0.420013
+    }
+  ],
+  "Q09-02": [
+    {
+      "event_id": "C09E098",
+      "score": 0.693875
+    },
+    {
+      "event_id": "C09E020",
+      "score": 0.5
+    },
+    {
+      "event_id": "C09E037",
+      "score": 0.5
+    },
+    {
+      "event_id": "C09E007",
+      "score": 0.424564
+    },
+    {
+      "event_id": "C09E011",
+      "score": 0.424564
+    },
+    {
+      "event_id": "C09E015",
+      "score": 0.424564
+    },
+    {
+      "event_id": "C09E019",
+      "score": 0.424564
+    },
+    {
+      "event_id": "C09E023",
+      "score": 0.424564
+    },
+    {
+      "event_id": "C09E027",
+      "score": 0.424564
+    },
+    {
+      "event_id": "C09E031",
+      "score": 0.424564
+    },
+    {
+      "event_id": "C09E035",
+      "score": 0.424564
+    },
+    {
+      "event_id": "C09E039",
+      "score": 0.424564
+    }
+  ],
+  "Q09-03": [
+    {
+      "event_id": "C09E037",
+      "score": 1.0
+    },
+    {
+      "event_id": "C09E098",
+      "score": 0.52654
+    },
+    {
+      "event_id": "C09E084",
+      "score": 0.368095
+    },
+    {
+      "event_id": "C09E007",
+      "score": 0.330717
+    },
+    {
+      "event_id": "C09E011",
+      "score": 0.330717
+    },
+    {
+      "event_id": "C09E015",
+      "score": 0.330717
+    },
+    {
+      "event_id": "C09E019",
+      "score": 0.330717
+    },
+    {
+      "event_id": "C09E023",
+      "score": 0.330717
+    },
+    {
+      "event_id": "C09E027",
+      "score": 0.330717
+    },
+    {
+      "event_id": "C09E031",
+      "score": 0.330717
+    },
+    {
+      "event_id": "C09E035",
+      "score": 0.330717
+    },
+    {
+      "event_id": "C09E039",
+      "score": 0.330717
+    }
+  ],
+  "Q09-04": [
+    {
+      "event_id": "C09E003",
+      "score": 0.918759
+    },
+    {
+      "event_id": "C09E098",
+      "score": 0.796329
+    },
+    {
+      "event_id": "C09E014",
+      "score": 0.5
+    },
+    {
+      "event_id": "C09E001",
+      "score": 0.456652
+    },
+    {
+      "event_id": "C09E005",
+      "score": 0.456652
+    },
+    {
+      "event_id": "C09E009",
+      "score": 0.456652
+    },
+    {
+      "event_id": "C09E013",
+      "score": 0.456652
+    },
+    {
+      "event_id": "C09E017",
+      "score": 0.456652
+    },
+    {
+      "event_id": "C09E021",
+      "score": 0.456652
+    },
+    {
+      "event_id": "C09E025",
+      "score": 0.456652
+    },
+    {
+      "event_id": "C09E029",
+      "score": 0.456652
+    },
+    {
+      "event_id": "C09E033",
+      "score": 0.456652
+    }
+  ],
+  "Q09-05": [
+    {
+      "event_id": "C09E084",
+      "score": 1.0
+    },
+    {
+      "event_id": "C09E037",
+      "score": 0.570822
+    },
+    {
+      "event_id": "C09E001",
+      "score": 0.395081
+    },
+    {
+      "event_id": "C09E005",
+      "score": 0.395081
+    },
+    {
+      "event_id": "C09E009",
+      "score": 0.395081
+    },
+    {
+      "event_id": "C09E013",
+      "score": 0.395081
+    },
+    {
+      "event_id": "C09E017",
+      "score": 0.395081
+    },
+    {
+      "event_id": "C09E021",
+      "score": 0.395081
+    },
+    {
+      "event_id": "C09E025",
+      "score": 0.395081
+    },
+    {
+      "event_id": "C09E029",
+      "score": 0.395081
+    },
+    {
+      "event_id": "C09E033",
+      "score": 0.395081
+    },
+    {
+      "event_id": "C09E041",
+      "score": 0.395081
+    }
+  ],
+  "Q09-06": [
+    {
+      "event_id": "C09E095",
+      "score": 1.0
+    },
+    {
+      "event_id": "C09E001",
+      "score": 0.270455
+    },
+    {
+      "event_id": "C09E005",
+      "score": 0.270455
+    },
+    {
+      "event_id": "C09E009",
+      "score": 0.270455
+    },
+    {
+      "event_id": "C09E013",
+      "score": 0.270455
+    },
+    {
+      "event_id": "C09E017",
+      "score": 0.270455
+    },
+    {
+      "event_id": "C09E021",
+      "score": 0.270455
+    },
+    {
+      "event_id": "C09E025",
+      "score": 0.270455
+    },
+    {
+      "event_id": "C09E029",
+      "score": 0.270455
+    },
+    {
+      "event_id": "C09E033",
+      "score": 0.270455
+    },
+    {
+      "event_id": "C09E041",
+      "score": 0.270455
+    },
+    {
+      "event_id": "C09E045",
+      "score": 0.270455
+    }
+  ],
+  "Q09-07": [
+    {
+      "event_id": "C09E092",
+      "score": 0.86714
+    },
+    {
+      "event_id": "C09E008",
+      "score": 0.853613
+    },
+    {
+      "event_id": "C09E037",
+      "score": 0.686447
+    },
+    {
+      "event_id": "C09E098",
+      "score": 0.603374
+    },
+    {
+      "event_id": "C09E007",
+      "score": 0.539842
+    },
+    {
+      "event_id": "C09E011",
+      "score": 0.539842
+    },
+    {
+      "event_id": "C09E015",
+      "score": 0.539842
+    },
+    {
+      "event_id": "C09E019",
+      "score": 0.539842
+    },
+    {
+      "event_id": "C09E023",
+      "score": 0.539842
+    },
+    {
+      "event_id": "C09E044",
+      "score": 0.453638
+    },
+    {
+      "event_id": "C09E084",
+      "score": 0.374935
+    },
+    {
+      "event_id": "C09E027",
+      "score": 0.355062
+    }
+  ],
+  "Q09-08": [
+    {
+      "event_id": "C09E037",
+      "score": 0.851295
+    },
+    {
+      "event_id": "C09E084",
+      "score": 0.745858
+    },
+    {
+      "event_id": "C09E069",
+      "score": 0.5
+    },
+    {
+      "event_id": "C09E001",
+      "score": 0.392249
+    },
+    {
+      "event_id": "C09E005",
+      "score": 0.392249
+    },
+    {
+      "event_id": "C09E009",
+      "score": 0.392249
+    },
+    {
+      "event_id": "C09E013",
+      "score": 0.392249
+    },
+    {
+      "event_id": "C09E017",
+      "score": 0.392249
+    },
+    {
+      "event_id": "C09E021",
+      "score": 0.392249
+    },
+    {
+      "event_id": "C09E025",
+      "score": 0.392249
+    },
+    {
+      "event_id": "C09E029",
+      "score": 0.392249
+    },
+    {
+      "event_id": "C09E033",
+      "score": 0.392249
+    }
+  ],
+  "Q10-01": [
+    {
+      "event_id": "C10E003",
+      "score": 1.0
+    },
+    {
+      "event_id": "C10E007",
+      "score": 0.383523
+    },
+    {
+      "event_id": "C10E011",
+      "score": 0.383523
+    },
+    {
+      "event_id": "C10E015",
+      "score": 0.383523
+    },
+    {
+      "event_id": "C10E019",
+      "score": 0.383523
+    },
+    {
+      "event_id": "C10E023",
+      "score": 0.383523
+    },
+    {
+      "event_id": "C10E027",
+      "score": 0.383523
+    },
+    {
+      "event_id": "C10E031",
+      "score": 0.383523
+    },
+    {
+      "event_id": "C10E035",
+      "score": 0.383523
+    },
+    {
+      "event_id": "C10E039",
+      "score": 0.383523
+    },
+    {
+      "event_id": "C10E043",
+      "score": 0.383523
+    },
+    {
+      "event_id": "C10E047",
+      "score": 0.383523
+    }
+  ],
+  "Q10-02": [
+    {
+      "event_id": "C10E020",
+      "score": 1.0
+    },
+    {
+      "event_id": "C10E098",
+      "score": 0.590829
+    },
+    {
+      "event_id": "C10E001",
+      "score": 0.499278
+    },
+    {
+      "event_id": "C10E005",
+      "score": 0.499278
+    },
+    {
+      "event_id": "C10E009",
+      "score": 0.499278
+    },
+    {
+      "event_id": "C10E013",
+      "score": 0.499278
+    },
+    {
+      "event_id": "C10E017",
+      "score": 0.499278
+    },
+    {
+      "event_id": "C10E021",
+      "score": 0.499278
+    },
+    {
+      "event_id": "C10E025",
+      "score": 0.499278
+    },
+    {
+      "event_id": "C10E037",
+      "score": 0.427275
+    },
+    {
+      "event_id": "C10E029",
+      "score": 0.357597
+    },
+    {
+      "event_id": "C10E033",
+      "score": 0.357597
+    }
+  ],
+  "Q10-03": [
+    {
+      "event_id": "C10E037",
+      "score": 1.0
+    },
+    {
+      "event_id": "C10E001",
+      "score": 0.47425
+    },
+    {
+      "event_id": "C10E005",
+      "score": 0.47425
+    },
+    {
+      "event_id": "C10E009",
+      "score": 0.47425
+    },
+    {
+      "event_id": "C10E013",
+      "score": 0.47425
+    },
+    {
+      "event_id": "C10E017",
+      "score": 0.47425
+    },
+    {
+      "event_id": "C10E021",
+      "score": 0.47425
+    },
+    {
+      "event_id": "C10E025",
+      "score": 0.47425
+    },
+    {
+      "event_id": "C10E029",
+      "score": 0.47425
+    },
+    {
+      "event_id": "C10E033",
+      "score": 0.47425
+    },
+    {
+      "event_id": "C10E041",
+      "score": 0.320427
+    },
+    {
+      "event_id": "C10E045",
+      "score": 0.320427
+    }
+  ],
+  "Q10-04": [
+    {
+      "event_id": "C10E003",
+      "score": 0.954926
+    },
+    {
+      "event_id": "C10E037",
+      "score": 0.890674
+    },
+    {
+      "event_id": "C10E014",
+      "score": 0.5
+    },
+    {
+      "event_id": "C10E032",
+      "score": 0.439338
+    },
+    {
+      "event_id": "C10E001",
+      "score": 0.420823
+    },
+    {
+      "event_id": "C10E005",
+      "score": 0.420823
+    },
+    {
+      "event_id": "C10E009",
+      "score": 0.420823
+    },
+    {
+      "event_id": "C10E013",
+      "score": 0.420823
+    },
+    {
+      "event_id": "C10E017",
+      "score": 0.420823
+    },
+    {
+      "event_id": "C10E021",
+      "score": 0.420823
+    },
+    {
+      "event_id": "C10E025",
+      "score": 0.420823
+    },
+    {
+      "event_id": "C10E029",
+      "score": 0.420823
+    }
+  ],
+  "Q10-05": [
+    {
+      "event_id": "C10E084",
+      "score": 1.0
+    },
+    {
+      "event_id": "C10E037",
+      "score": 0.626498
+    },
+    {
+      "event_id": "C10E095",
+      "score": 0.440215
+    },
+    {
+      "event_id": "C10E001",
+      "score": 0.433316
+    },
+    {
+      "event_id": "C10E005",
+      "score": 0.433316
+    },
+    {
+      "event_id": "C10E009",
+      "score": 0.433316
+    },
+    {
+      "event_id": "C10E013",
+      "score": 0.433316
+    },
+    {
+      "event_id": "C10E017",
+      "score": 0.433316
+    },
+    {
+      "event_id": "C10E021",
+      "score": 0.433316
+    },
+    {
+      "event_id": "C10E025",
+      "score": 0.433316
+    },
+    {
+      "event_id": "C10E029",
+      "score": 0.433316
+    },
+    {
+      "event_id": "C10E033",
+      "score": 0.433316
+    }
+  ],
+  "Q10-06": [
+    {
+      "event_id": "C10E095",
+      "score": 1.0
+    },
+    {
+      "event_id": "C10E002",
+      "score": 0.338643
+    },
+    {
+      "event_id": "C10E006",
+      "score": 0.338643
+    },
+    {
+      "event_id": "C10E010",
+      "score": 0.338643
+    },
+    {
+      "event_id": "C10E018",
+      "score": 0.338643
+    },
+    {
+      "event_id": "C10E022",
+      "score": 0.338643
+    },
+    {
+      "event_id": "C10E026",
+      "score": 0.338643
+    },
+    {
+      "event_id": "C10E030",
+      "score": 0.338643
+    },
+    {
+      "event_id": "C10E034",
+      "score": 0.338643
+    },
+    {
+      "event_id": "C10E038",
+      "score": 0.338643
+    },
+    {
+      "event_id": "C10E042",
+      "score": 0.338643
+    },
+    {
+      "event_id": "C10E046",
+      "score": 0.338643
+    }
+  ],
+  "Q10-07": [
+    {
+      "event_id": "C10E008",
+      "score": 0.858974
+    },
+    {
+      "event_id": "C10E037",
+      "score": 0.686447
+    },
+    {
+      "event_id": "C10E098",
+      "score": 0.550944
+    },
+    {
+      "event_id": "C10E092",
+      "score": 0.5
+    },
+    {
+      "event_id": "C10E044",
+      "score": 0.453638
+    },
+    {
+      "event_id": "C10E095",
+      "score": 0.364357
+    },
+    {
+      "event_id": "C10E084",
+      "score": 0.346761
+    },
+    {
+      "event_id": "C10E001",
+      "score": 0.343772
+    },
+    {
+      "event_id": "C10E005",
+      "score": 0.343772
+    },
+    {
+      "event_id": "C10E009",
+      "score": 0.343772
+    },
+    {
+      "event_id": "C10E013",
+      "score": 0.343772
+    },
+    {
+      "event_id": "C10E017",
+      "score": 0.343772
+    }
+  ],
+  "Q10-08": [
+    {
+      "event_id": "C10E037",
+      "score": 0.851295
+    },
+    {
+      "event_id": "C10E056",
+      "score": 0.831883
+    },
+    {
+      "event_id": "C10E048",
+      "score": 0.715732
+    },
+    {
+      "event_id": "C10E095",
+      "score": 0.624723
+    },
+    {
+      "event_id": "C10E069",
+      "score": 0.5
+    },
+    {
+      "event_id": "C10E062",
+      "score": 0.36223
+    },
+    {
+      "event_id": "C10E001",
+      "score": 0.361351
+    },
+    {
+      "event_id": "C10E005",
+      "score": 0.361351
+    },
+    {
+      "event_id": "C10E009",
+      "score": 0.361351
+    },
+    {
+      "event_id": "C10E013",
+      "score": 0.361351
+    },
+    {
+      "event_id": "C10E017",
+      "score": 0.361351
+    },
+    {
+      "event_id": "C10E021",
+      "score": 0.361351
+    }
+  ],
+  "Q11-01": [
+    {
+      "event_id": "C11E003",
+      "score": 1.0
+    },
+    {
+      "event_id": "C11E007",
+      "score": 0.455611
+    },
+    {
+      "event_id": "C11E011",
+      "score": 0.455611
+    },
+    {
+      "event_id": "C11E015",
+      "score": 0.455611
+    },
+    {
+      "event_id": "C11E019",
+      "score": 0.455611
+    },
+    {
+      "event_id": "C11E023",
+      "score": 0.455611
+    },
+    {
+      "event_id": "C11E027",
+      "score": 0.455611
+    },
+    {
+      "event_id": "C11E031",
+      "score": 0.455611
+    },
+    {
+      "event_id": "C11E035",
+      "score": 0.455611
+    },
+    {
+      "event_id": "C11E039",
+      "score": 0.455611
+    },
+    {
+      "event_id": "C11E043",
+      "score": 0.455611
+    },
+    {
+      "event_id": "C11E047",
+      "score": 0.455611
+    }
+  ],
+  "Q11-02": [
+    {
+      "event_id": "C11E001",
+      "score": 0.606035
+    },
+    {
+      "event_id": "C11E005",
+      "score": 0.606035
+    },
+    {
+      "event_id": "C11E009",
+      "score": 0.606035
+    },
+    {
+      "event_id": "C11E013",
+      "score": 0.606035
+    },
+    {
+      "event_id": "C11E017",
+      "score": 0.606035
+    },
+    {
+      "event_id": "C11E021",
+      "score": 0.606035
+    },
+    {
+      "event_id": "C11E025",
+      "score": 0.606035
+    },
+    {
+      "event_id": "C11E020",
+      "score": 0.5
+    },
+    {
+      "event_id": "C11E037",
+      "score": 0.5
+    },
+    {
+      "event_id": "C11E029",
+      "score": 0.464354
+    },
+    {
+      "event_id": "C11E033",
+      "score": 0.464354
+    },
+    {
+      "event_id": "C11E041",
+      "score": 0.464354
+    }
+  ],
+  "Q11-03": [
+    {
+      "event_id": "C11E037",
+      "score": 1.0
+    },
+    {
+      "event_id": "C11E098",
+      "score": 0.518319
+    },
+    {
+      "event_id": "C11E001",
+      "score": 0.487311
+    },
+    {
+      "event_id": "C11E005",
+      "score": 0.487311
+    },
+    {
+      "event_id": "C11E009",
+      "score": 0.487311
+    },
+    {
+      "event_id": "C11E013",
+      "score": 0.487311
+    },
+    {
+      "event_id": "C11E017",
+      "score": 0.487311
+    },
+    {
+      "event_id": "C11E021",
+      "score": 0.487311
+    },
+    {
+      "event_id": "C11E025",
+      "score": 0.487311
+    },
+    {
+      "event_id": "C11E029",
+      "score": 0.487311
+    },
+    {
+      "event_id": "C11E033",
+      "score": 0.487311
+    },
+    {
+      "event_id": "C11E041",
+      "score": 0.333487
+    }
+  ],
+  "Q11-04": [
+    {
+      "event_id": "C11E003",
+      "score": 0.954926
+    },
+    {
+      "event_id": "C11E014",
+      "score": 0.5
+    },
+    {
+      "event_id": "C11E001",
+      "score": 0.472892
+    },
+    {
+      "event_id": "C11E005",
+      "score": 0.472892
+    },
+    {
+      "event_id": "C11E009",
+      "score": 0.472892
+    },
+    {
+      "event_id": "C11E013",
+      "score": 0.472892
+    },
+    {
+      "event_id": "C11E017",
+      "score": 0.472892
+    },
+    {
+      "event_id": "C11E021",
+      "score": 0.472892
+    },
+    {
+      "event_id": "C11E025",
+      "score": 0.472892
+    },
+    {
+      "event_id": "C11E029",
+      "score": 0.472892
+    },
+    {
+      "event_id": "C11E033",
+      "score": 0.472892
+    },
+    {
+      "event_id": "C11E041",
+      "score": 0.472892
+    }
+  ],
+  "Q11-05": [
+    {
+      "event_id": "C11E084",
+      "score": 0.966135
+    },
+    {
+      "event_id": "C11E037",
+      "score": 0.632551
+    },
+    {
+      "event_id": "C11E001",
+      "score": 0.438366
+    },
+    {
+      "event_id": "C11E005",
+      "score": 0.438366
+    },
+    {
+      "event_id": "C11E009",
+      "score": 0.438366
+    },
+    {
+      "event_id": "C11E013",
+      "score": 0.438366
+    },
+    {
+      "event_id": "C11E017",
+      "score": 0.438366
+    },
+    {
+      "event_id": "C11E021",
+      "score": 0.438366
+    },
+    {
+      "event_id": "C11E025",
+      "score": 0.438366
+    },
+    {
+      "event_id": "C11E029",
+      "score": 0.438366
+    },
+    {
+      "event_id": "C11E033",
+      "score": 0.438366
+    },
+    {
+      "event_id": "C11E041",
+      "score": 0.438366
+    }
+  ],
+  "Q11-06": [
+    {
+      "event_id": "C11E095",
+      "score": 1.0
+    },
+    {
+      "event_id": "C11E001",
+      "score": 0.267664
+    },
+    {
+      "event_id": "C11E005",
+      "score": 0.267664
+    },
+    {
+      "event_id": "C11E009",
+      "score": 0.267664
+    },
+    {
+      "event_id": "C11E013",
+      "score": 0.267664
+    },
+    {
+      "event_id": "C11E017",
+      "score": 0.267664
+    },
+    {
+      "event_id": "C11E021",
+      "score": 0.267664
+    },
+    {
+      "event_id": "C11E025",
+      "score": 0.267664
+    },
+    {
+      "event_id": "C11E029",
+      "score": 0.267664
+    },
+    {
+      "event_id": "C11E033",
+      "score": 0.267664
+    },
+    {
+      "event_id": "C11E041",
+      "score": 0.267664
+    },
+    {
+      "event_id": "C11E045",
+      "score": 0.267664
+    }
+  ],
+  "Q11-07": [
+    {
+      "event_id": "C11E037",
+      "score": 0.686447
+    },
+    {
+      "event_id": "C11E098",
+      "score": 0.578173
+    },
+    {
+      "event_id": "C11E092",
+      "score": 0.5
+    },
+    {
+      "event_id": "C11E008",
+      "score": 0.483587
+    },
+    {
+      "event_id": "C11E044",
+      "score": 0.453638
+    },
+    {
+      "event_id": "C11E001",
+      "score": 0.374111
+    },
+    {
+      "event_id": "C11E005",
+      "score": 0.374111
+    },
+    {
+      "event_id": "C11E009",
+      "score": 0.374111
+    },
+    {
+      "event_id": "C11E013",
+      "score": 0.374111
+    },
+    {
+      "event_id": "C11E017",
+      "score": 0.374111
+    },
+    {
+      "event_id": "C11E021",
+      "score": 0.374111
+    },
+    {
+      "event_id": "C11E025",
+      "score": 0.374111
+    }
+  ],
+  "Q11-08": [
+    {
+      "event_id": "C11E037",
+      "score": 0.851295
+    },
+    {
+      "event_id": "C11E056",
+      "score": 0.773414
+    },
+    {
+      "event_id": "C11E069",
+      "score": 0.5
+    },
+    {
+      "event_id": "C11E001",
+      "score": 0.420735
+    },
+    {
+      "event_id": "C11E005",
+      "score": 0.420735
+    },
+    {
+      "event_id": "C11E009",
+      "score": 0.420735
+    },
+    {
+      "event_id": "C11E013",
+      "score": 0.420735
+    },
+    {
+      "event_id": "C11E017",
+      "score": 0.420735
+    },
+    {
+      "event_id": "C11E021",
+      "score": 0.420735
+    },
+    {
+      "event_id": "C11E025",
+      "score": 0.420735
+    },
+    {
+      "event_id": "C11E029",
+      "score": 0.420735
+    },
+    {
+      "event_id": "C11E033",
+      "score": 0.420735
+    }
+  ],
+  "Q12-01": [
+    {
+      "event_id": "C12E003",
+      "score": 1.0
+    },
+    {
+      "event_id": "C12E007",
+      "score": 0.498706
+    },
+    {
+      "event_id": "C12E011",
+      "score": 0.498706
+    },
+    {
+      "event_id": "C12E015",
+      "score": 0.498706
+    },
+    {
+      "event_id": "C12E019",
+      "score": 0.498706
+    },
+    {
+      "event_id": "C12E023",
+      "score": 0.498706
+    },
+    {
+      "event_id": "C12E027",
+      "score": 0.498706
+    },
+    {
+      "event_id": "C12E031",
+      "score": 0.498706
+    },
+    {
+      "event_id": "C12E035",
+      "score": 0.498706
+    },
+    {
+      "event_id": "C12E039",
+      "score": 0.498706
+    },
+    {
+      "event_id": "C12E043",
+      "score": 0.498706
+    },
+    {
+      "event_id": "C12E047",
+      "score": 0.498706
+    }
+  ],
+  "Q12-02": [
+    {
+      "event_id": "C12E001",
+      "score": 0.641681
+    },
+    {
+      "event_id": "C12E005",
+      "score": 0.641681
+    },
+    {
+      "event_id": "C12E009",
+      "score": 0.641681
+    },
+    {
+      "event_id": "C12E013",
+      "score": 0.641681
+    },
+    {
+      "event_id": "C12E017",
+      "score": 0.641681
+    },
+    {
+      "event_id": "C12E021",
+      "score": 0.641681
+    },
+    {
+      "event_id": "C12E025",
+      "score": 0.641681
+    },
+    {
+      "event_id": "C12E020",
+      "score": 0.5
+    },
+    {
+      "event_id": "C12E029",
+      "score": 0.5
+    },
+    {
+      "event_id": "C12E033",
+      "score": 0.5
+    },
+    {
+      "event_id": "C12E041",
+      "score": 0.5
+    },
+    {
+      "event_id": "C12E045",
+      "score": 0.5
+    }
+  ],
+  "Q12-03": [
+    {
+      "event_id": "C12E037",
+      "score": 1.0
+    },
+    {
+      "event_id": "C12E001",
+      "score": 0.572373
+    },
+    {
+      "event_id": "C12E005",
+      "score": 0.572373
+    },
+    {
+      "event_id": "C12E009",
+      "score": 0.572373
+    },
+    {
+      "event_id": "C12E013",
+      "score": 0.572373
+    },
+    {
+      "event_id": "C12E017",
+      "score": 0.572373
+    },
+    {
+      "event_id": "C12E021",
+      "score": 0.572373
+    },
+    {
+      "event_id": "C12E025",
+      "score": 0.572373
+    },
+    {
+      "event_id": "C12E029",
+      "score": 0.572373
+    },
+    {
+      "event_id": "C12E033",
+      "score": 0.572373
+    },
+    {
+      "event_id": "C12E041",
+      "score": 0.41855
+    },
+    {
+      "event_id": "C12E045",
+      "score": 0.41855
+    }
+  ],
+  "Q12-04": [
+    {
+      "event_id": "C12E001",
+      "score": 0.5
+    },
+    {
+      "event_id": "C12E005",
+      "score": 0.5
+    },
+    {
+      "event_id": "C12E009",
+      "score": 0.5
+    },
+    {
+      "event_id": "C12E013",
+      "score": 0.5
+    },
+    {
+      "event_id": "C12E014",
+      "score": 0.5
+    },
+    {
+      "event_id": "C12E017",
+      "score": 0.5
+    },
+    {
+      "event_id": "C12E021",
+      "score": 0.5
+    },
+    {
+      "event_id": "C12E025",
+      "score": 0.5
+    },
+    {
+      "event_id": "C12E029",
+      "score": 0.5
+    },
+    {
+      "event_id": "C12E033",
+      "score": 0.5
+    },
+    {
+      "event_id": "C12E041",
+      "score": 0.5
+    },
+    {
+      "event_id": "C12E045",
+      "score": 0.5
+    }
+  ],
+  "Q12-05": [
+    {
+      "event_id": "C12E037",
+      "score": 0.632551
+    },
+    {
+      "event_id": "C12E084",
+      "score": 0.5
+    },
+    {
+      "event_id": "C12E001",
+      "score": 0.489955
+    },
+    {
+      "event_id": "C12E005",
+      "score": 0.489955
+    },
+    {
+      "event_id": "C12E009",
+      "score": 0.489955
+    },
+    {
+      "event_id": "C12E013",
+      "score": 0.489955
+    },
+    {
+      "event_id": "C12E017",
+      "score": 0.489955
+    },
+    {
+      "event_id": "C12E021",
+      "score": 0.489955
+    },
+    {
+      "event_id": "C12E025",
+      "score": 0.489955
+    },
+    {
+      "event_id": "C12E029",
+      "score": 0.489955
+    },
+    {
+      "event_id": "C12E033",
+      "score": 0.489955
+    },
+    {
+      "event_id": "C12E041",
+      "score": 0.489955
+    }
+  ],
+  "Q12-06": [
+    {
+      "event_id": "C12E095",
+      "score": 1.0
+    },
+    {
+      "event_id": "C12E001",
+      "score": 0.319365
+    },
+    {
+      "event_id": "C12E005",
+      "score": 0.319365
+    },
+    {
+      "event_id": "C12E009",
+      "score": 0.319365
+    },
+    {
+      "event_id": "C12E013",
+      "score": 0.319365
+    },
+    {
+      "event_id": "C12E017",
+      "score": 0.319365
+    },
+    {
+      "event_id": "C12E021",
+      "score": 0.319365
+    },
+    {
+      "event_id": "C12E025",
+      "score": 0.319365
+    },
+    {
+      "event_id": "C12E029",
+      "score": 0.319365
+    },
+    {
+      "event_id": "C12E033",
+      "score": 0.319365
+    },
+    {
+      "event_id": "C12E041",
+      "score": 0.319365
+    },
+    {
+      "event_id": "C12E045",
+      "score": 0.319365
+    }
+  ],
+  "Q12-07": [
+    {
+      "event_id": "C12E037",
+      "score": 0.686447
+    },
+    {
+      "event_id": "C12E092",
+      "score": 0.5
+    },
+    {
+      "event_id": "C12E008",
+      "score": 0.483587
+    },
+    {
+      "event_id": "C12E044",
+      "score": 0.453638
+    },
+    {
+      "event_id": "C12E001",
+      "score": 0.440398
+    },
+    {
+      "event_id": "C12E005",
+      "score": 0.440398
+    },
+    {
+      "event_id": "C12E009",
+      "score": 0.440398
+    },
+    {
+      "event_id": "C12E013",
+      "score": 0.440398
+    },
+    {
+      "event_id": "C12E017",
+      "score": 0.440398
+    },
+    {
+      "event_id": "C12E021",
+      "score": 0.440398
+    },
+    {
+      "event_id": "C12E025",
+      "score": 0.440398
+    },
+    {
+      "event_id": "C12E029",
+      "score": 0.440398
+    }
+  ],
+  "Q12-08": [
+    {
+      "event_id": "C12E037",
+      "score": 0.851295
+    },
+    {
+      "event_id": "C12E069",
+      "score": 0.5
+    },
+    {
+      "event_id": "C12E001",
+      "score": 0.47104
+    },
+    {
+      "event_id": "C12E005",
+      "score": 0.47104
+    },
+    {
+      "event_id": "C12E009",
+      "score": 0.47104
+    },
+    {
+      "event_id": "C12E013",
+      "score": 0.47104
+    },
+    {
+      "event_id": "C12E017",
+      "score": 0.47104
+    },
+    {
+      "event_id": "C12E021",
+      "score": 0.47104
+    },
+    {
+      "event_id": "C12E025",
+      "score": 0.47104
+    },
+    {
+      "event_id": "C12E029",
+      "score": 0.47104
+    },
+    {
+      "event_id": "C12E033",
+      "score": 0.47104
+    },
+    {
+      "event_id": "C12E041",
+      "score": 0.47104
+    }
+  ]
+}

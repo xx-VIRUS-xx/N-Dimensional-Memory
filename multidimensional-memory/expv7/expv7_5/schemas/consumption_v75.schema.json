@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "V7.5 Consumption Result",
+  "type": "object",
+  "required": ["agent", "condition", "query_id", "correct"],
+  "properties": {
+    "agent": {"type": "string"},
+    "condition": {"enum": ["RAW", "RAG", "V6-GENERATED", "V6-GENERATED+RAW", "CROSS-AGENT"]},
+    "query_id": {"type": "string"},
+    "correct": {"type": "boolean"},
+    "unsupported_claim": {"type": "boolean"}
+  }
+}

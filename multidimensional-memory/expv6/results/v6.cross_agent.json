@@ -1,0 +1,122 @@
+{
+  "experiment": "EXP-V6",
+  "benchmarks": {
+    "shared_activity": {
+      "summary": {
+        "propositions": 1,
+        "observations": 3,
+        "multi_agent_propositions": 1,
+        "disputed_propositions": 0,
+        "interpretation_variants": 1,
+        "provenance_preserved": true
+      },
+      "memories": [
+        {
+          "id": "pm_001",
+          "key": "Rahul.football_activity",
+          "state": "supported",
+          "agents": [
+            "claude",
+            "codex",
+            "copilot"
+          ],
+          "values": [
+            "Rahul plays football"
+          ],
+          "interpretations": [
+            "He is an ambiguity candidate",
+            "He refers to Rahul"
+          ],
+          "observations": [
+            {
+              "id": "claude_01",
+              "agent": "claude",
+              "proposition_key": "Rahul.football_activity",
+              "value": "Rahul plays football",
+              "interpretation": "He refers to Rahul",
+              "confidence": 1.0,
+              "source": "Conversation 01",
+              "temporal_from": null,
+              "temporal_to": null
+            },
+            {
+              "id": "codex_01",
+              "agent": "codex",
+              "proposition_key": "Rahul.football_activity",
+              "value": "Rahul plays football",
+              "interpretation": "He refers to Rahul",
+              "confidence": 0.92,
+              "source": "Conversation 01",
+              "temporal_from": null,
+              "temporal_to": null
+            },
+            {
+              "id": "copilot_01",
+              "agent": "copilot",
+              "proposition_key": "Rahul.football_activity",
+              "value": "Rahul plays football",
+              "interpretation": "He is an ambiguity candidate",
+              "confidence": 0.6,
+              "source": "Conversation 01",
+              "temporal_from": null,
+              "temporal_to": null
+            }
+          ]
+        }
+      ]
+    },
+    "location_disagreement": {
+      "summary": {
+        "propositions": 1,
+        "observations": 2,
+        "multi_agent_propositions": 1,
+        "disputed_propositions": 1,
+        "interpretation_variants": 1,
+        "provenance_preserved": true
+      },
+      "memories": [
+        {
+          "id": "pm_001",
+          "key": "Rahul.location",
+          "state": "disputed",
+          "agents": [
+            "claude",
+            "codex"
+          ],
+          "values": [
+            "Delhi",
+            "Jaipur"
+          ],
+          "interpretations": [
+            "Current location asserted after move",
+            "Current location inferred from statement"
+          ],
+          "observations": [
+            {
+              "id": "claude_02",
+              "agent": "claude",
+              "proposition_key": "Rahul.location",
+              "value": "Jaipur",
+              "interpretation": "Current location inferred from statement",
+              "confidence": 0.8,
+              "source": "Conversation A",
+              "temporal_from": "2025-01",
+              "temporal_to": "2026-05"
+            },
+            {
+              "id": "codex_02",
+              "agent": "codex",
+              "proposition_key": "Rahul.location",
+              "value": "Delhi",
+              "interpretation": "Current location asserted after move",
+              "confidence": 1.0,
+              "source": "Conversation B",
+              "temporal_from": "2026-06",
+              "temporal_to": null
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

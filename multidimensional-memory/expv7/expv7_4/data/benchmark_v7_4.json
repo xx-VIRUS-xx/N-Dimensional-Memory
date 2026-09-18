@@ -1,0 +1,98 @@
+{
+  "version": "7.4",
+  "corpus_size": 1200,
+  "signal_event_ids": [
+    "E0014",
+    "E0068",
+    "E0142",
+    "E0179",
+    "E0264",
+    "E0357",
+    "E0402",
+    "E0449",
+    "E0450",
+    "E0516",
+    "E0549",
+    "E0623",
+    "E0732",
+    "E0803",
+    "E0888",
+    "E1034",
+    "E1103",
+    "E1191",
+    "E1200",
+    "E1201"
+  ],
+  "cases": [
+    {
+      "case_id": "V74-HIST-01",
+      "query": "Why was PostgreSQL chosen and what happened with DynamoDB?",
+      "required_event_ids": [
+        "E0014",
+        "E0068",
+        "E0142"
+      ]
+    },
+    {
+      "case_id": "V74-DEC-01",
+      "query": "What happened to Redis from experiment through retry outcome?",
+      "required_event_ids": [
+        "E0179",
+        "E0264",
+        "E0732"
+      ]
+    },
+    {
+      "case_id": "V74-ACT-01",
+      "query": "What happened to invoice exports from failure through successful batch?",
+      "required_event_ids": [
+        "E0357",
+        "E0623",
+        "E1034"
+      ]
+    },
+    {
+      "case_id": "V74-TIME-01",
+      "query": "Reconstruct webhook state through the latest known state.",
+      "required_event_ids": [
+        "E0402",
+        "E0888",
+        "E1191"
+      ]
+    },
+    {
+      "case_id": "V74-AMB-01",
+      "query": "What is known about the deployment-window pronoun ambiguity?",
+      "required_event_ids": [
+        "E0516"
+      ]
+    },
+    {
+      "case_id": "V74-BELIEF-01",
+      "query": "Was transaction semantics only an inference or later confirmed?",
+      "required_event_ids": [
+        "E0449",
+        "E0450"
+      ]
+    },
+    {
+      "case_id": "V74-NEG-01",
+      "query": "Was MongoDB discussed in the billing migration review?",
+      "required_event_ids": [
+        "E0549",
+        "E1103"
+      ]
+    },
+    {
+      "case_id": "V74-PROV-01",
+      "query": "What is the provenance history of the billing database decision and migration failure?",
+      "required_event_ids": [
+        "E0068",
+        "E0142",
+        "E0449",
+        "E0450",
+        "E0803"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "metadata": {
+    "agent_id": "claude",
+    "condition": "GRAPHITI",
+    "status": "NOT_RUN",
+    "reason": "NOT_RUN: graphiti-core requires an LLM provider API key (OpenAI by default) and a running Neo4j 5.26+/FalkorDB backend, per src/retrieval/GRAPHITI.md. Neither is configured in this environment (verified: no OPENAI_API_KEY/ANTHROPIC_API_KEY set, no Neo4j bolt port reachable on localhost:7687). graphiti-core itself is pip-installable but was not installed since it cannot actually run without these dependencies, and installing an unusable package would not change the NOT_RUN status.",
+    "query_count": 96,
+    "result_location": "results/retrieval",
+    "input_files": {
+      "corpus_sha256": "d1fe7d2a080b90291a0a42c5464ea660188bd19f64ab95d71e40e5acbd0517d6",
+      "public_queries_sha256": "eb18624c78b25af7e927ff77f47878e890f795b2dc68f17f2f9d376d279d11d5",
+      "memory_sha256": "8eff257075b16527b19ac7d57de2dce3afd84df917fe37ee4c274355ec93cbe4"
+    }
+  },
+  "results": []
+}

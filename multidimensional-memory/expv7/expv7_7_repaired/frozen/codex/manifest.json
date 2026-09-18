@@ -1,0 +1,11 @@
+{
+  "agent": "codex",
+  "status": "frozen",
+  "source_memory_path": "results/codex.memory.json",
+  "frozen_memory_path": "frozen/codex/memory.json",
+  "memory_sha256": "0887d43b4feeb86f0c264ac906b88776a8d651e921c719017054c1352369d715",
+  "memory_bytes": 81240,
+  "frozen_at": "2026-09-17T00:00:00+05:30",
+  "report_path": "results/codex.report.md",
+  "report_sha256": "aeb4db41c4ada8ae7ef2b8605d33e3906334083307181acfcecb35d39d97b93d"
+}

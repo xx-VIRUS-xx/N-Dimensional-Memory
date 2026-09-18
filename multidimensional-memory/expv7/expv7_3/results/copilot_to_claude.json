@@ -1,0 +1,85 @@
+{
+  "writer": "copilot",
+  "reader": "claude",
+  "writer_memory_artifact": "results/copilot.memory.json",
+  "writer_memory_sha256": "71aa87c544aa5dc8633344d40eb0f21af279dca6399000b2b888115f691d395f",
+  "writer_memory_record_count": 19,
+  "reader_input": "Copilot memory artifact (results/copilot.memory.json) plus the 8 delayed queries and schema/design rules only; original conversation, gold memory, gold answers, and Copilot's report/memory_eval were withheld from this reader step.",
+  "note_on_prior_placeholder": "This file previously contained a 'not_executed' placeholder written by the Copilot run, which correctly declined to fabricate a Claude-reader result since Claude's memory artifact/session was not yet available to it at that time -- consistent with V7.3's anti-fabrication rule. Claude has now completed its own independent writer+consumer run and can genuinely execute this reader step using the frozen results/copilot.memory.json (SHA-256 verified to match).",
+  "cases": 8,
+  "answers": [
+    {
+      "case_id": "V71-HIST-01",
+      "query": "Why was PostgreSQL chosen for the billing service, and what happened when DynamoDB was tried?",
+      "answer": "Per copilot.memory.json memory-0001: PostgreSQL was selected for the billing service because auditability outweighed DynamoDB's lower migration effort. Per memory-0002/0003: DynamoDB was tried for the billing prototype but failed because conditional-update semantics did not match the existing transaction flow, and this failure was confirmed by integration-test output.",
+      "evidence_used": ["memory-0001", "memory-0002", "memory-0003"],
+      "correct": true,
+      "unsupported_claims": 0
+    },
+    {
+      "case_id": "V71-DEC-01",
+      "query": "Why was Redis caching abandoned, and what happened when it was retried?",
+      "answer": "Per memory-0006: the Redis experiment was abandoned because it increased cache invalidation complexity. Per memory-0015: a narrower-scope retry produced negligible latency improvement.",
+      "evidence_used": ["memory-0004", "memory-0006", "memory-0015"],
+      "correct": true,
+      "unsupported_claims": 0
+    },
+    {
+      "case_id": "V71-ACT-01",
+      "query": "What happened with invoice exports from the first failed attempt through the later full customer batch?",
+      "answer": "Per memory-0008: the first invoice export attempt timed out after 18 minutes. Per memory-0014: exports were then switched to asynchronous jobs, motivated by that timeout. Per memory-0018: the asynchronous export subsequently completed successfully for the first full customer batch.",
+      "evidence_used": ["memory-0008", "memory-0014", "memory-0018"],
+      "correct": true,
+      "unsupported_claims": 0
+    },
+    {
+      "case_id": "V71-TIME-01",
+      "query": "Reconstruct the webhook state from the initial migration through the latest known state.",
+      "answer": "Per memory-0005: webhook migration started with polling as a temporary compatibility path (2026-02-17). Per memory-0009: moved from polling to webhooks after the provider fixed signature verification (2026-03-11). Per memory-0017: webhooks were temporarily disabled due to duplicate-delivery reconciliation errors (2026-05-20). Per memory-0019: webhooks were re-enabled after idempotency handling was deployed (2026-06-03), with prior_state explicitly recorded as temporarily_disabled. Latest known state: webhooks re-enabled/active as of 2026-06-03.",
+      "evidence_used": ["memory-0005", "memory-0009", "memory-0017", "memory-0019"],
+      "correct": true,
+      "unsupported_claims": 0
+    },
+    {
+      "case_id": "V71-AMB-01",
+      "query": "Who did \"he\" refer to in the deployment-window discussion?",
+      "answer": "Per memory-0007: the pronoun 'he' has alternatives [Rahul, Arjun], resolution unresolved. Per memory-0012: a follow-up report confirms the reference remains 'still_unresolved'. The reference remains unresolved between Rahul and Arjun; note that unlike Claude's generated memory (a separate artifact this reader has not consulted), Copilot's memory explicitly links these two events into one evolving ambiguity thread (memory-0012's belief_evolution field: 'initial unresolved pronoun' -> 'unresolved after follow-up').",
+      "evidence_used": ["memory-0007", "memory-0012"],
+      "correct": true,
+      "unsupported_claims": 0
+    },
+    {
+      "case_id": "V71-CONFLICT-01",
+      "query": "Was the reason for abandoning DynamoDB merely an inference, or was it later confirmed? Preserve the provenance.",
+      "answer": "Per memory-0010: Claude inferred that the billing migration failure was related to transaction semantics (status: inferred, belief_evolution 'failure observed' -> 'transaction semantics suspected'). Per memory-0011: Rahul later confirmed that transaction semantics were the reason for abandonment (status: confirmed, belief_evolution 'suspected relationship' -> 'confirmed reason'). So it began as an inference and was subsequently confirmed, not left merely as an inference.",
+      "evidence_used": ["memory-0010", "memory-0011"],
+      "correct": true,
+      "unsupported_claims": 0
+    },
+    {
+      "case_id": "V71-NEG-01",
+      "query": "Was MongoDB discussed as a billing-migration option in the billing migration review?",
+      "answer": "Per memory-0013: MongoDB was not discussed in the billing migration review, explicitly scoped to 'billing migration review only'. Per memory-0019: a MongoDB proposal was mentioned but belongs to a different project, not the billing migration review -- explicitly scoped, not a contradiction. Answer: no, MongoDB was not discussed in the billing migration review; a separate mention exists in an unrelated project.",
+      "evidence_used": ["memory-0013", "memory-0019"],
+      "correct": true,
+      "unsupported_claims": 0
+    },
+    {
+      "case_id": "V71-PROV-01",
+      "query": "Which agent observed or confirmed the DynamoDB migration failure, and what is the history of that belief?",
+      "answer": "Per memory-0002 (Rahul, direct_statement): DynamoDB migration failure first reported. Per memory-0003 (Claude, reported_confirmation): failure confirmed via integration-test output. Per memory-0010 (Claude, inference): transaction semantics inferred as cause. Per memory-0011 (Rahul, direct_confirmation): transaction semantics confirmed as the reason. Per memory-0016 (Copilot, self_reported_later_reading): a later reader preserved the PostgreSQL decision and failed DynamoDB attempt from billing migration notes. Original observer: Rahul. Confirmers: Claude (via test output) and Rahul (of the transaction-semantics cause). Later persistence: Copilot.",
+      "evidence_used": ["memory-0002", "memory-0003", "memory-0010", "memory-0011", "memory-0016"],
+      "correct": true,
+      "unsupported_claims": 0
+    }
+  ],
+  "correct": 8,
+  "unsupported_claims": 0,
+  "evidence_ids": ["E0005", "E0067", "E0141", "E0178", "E0233", "E0263", "E0312", "E0356", "E0401", "E0448", "E0449", "E0515", "E0548", "E0622", "E0731", "E0802", "E0887", "E1033", "E1102", "E1190"],
+  "missing_or_ambiguous_records": [],
+  "notes": [
+    "Copilot's memory has 19 records covering all 20 required source event IDs (one record, memory-0019, merges two source events -- E1102 and E1190 -- that are topically unrelated: a MongoDB-scoping statement and a webhook re-enablement. This did not cause any answer error since both underlying facts are still individually extractable from that record's fields, but it is a structural oddity flagged here rather than silently normalized.",
+    "Unlike Claude's own V7.3 generated memory (a separate artifact from a separate clean-room writer run, not consulted by this reader), Copilot's memory explicitly links the two 'he' ambiguity mentions (E0312, E0515) into one evolving thread via memory-0012's belief_evolution field, rather than treating them as two independent unresolved records. Both approaches reach the same unresolved conclusion; this is a genuine representational difference between the two writers' independent judgment calls, not a correctness issue for this reader."
+  ],
+  "limitations": ["No latency or token instrumentation was available for this reader step; no numeric measurement is reported."]
+}

@@ -1,0 +1,107 @@
+{
+  "V7-HIST-01": {
+    "fallback_used": true,
+    "retrieved": [
+      {
+        "chunk_id": "c1",
+        "text": "We tried approach A last week.",
+        "score": 0
+      },
+      {
+        "chunk_id": "c2",
+        "text": "It failed because latency was too high.",
+        "score": 0
+      },
+      {
+        "chunk_id": "c3",
+        "text": "We then switched to approach B.",
+        "score": 0
+      }
+    ]
+  },
+  "V7-ACT-01": {
+    "fallback_used": true,
+    "retrieved": [
+      {
+        "chunk_id": "c1",
+        "text": "I tested Redis caching.",
+        "score": 0
+      },
+      {
+        "chunk_id": "c2",
+        "text": "It reduced repeated database reads but introduced stale-data issues.",
+        "score": 0
+      },
+      {
+        "chunk_id": "c3",
+        "text": "We put the change on hold.",
+        "score": 0
+      }
+    ]
+  },
+  "V7-TIME-01": {
+    "fallback_used": false,
+    "retrieved": [
+      {
+        "chunk_id": "c1",
+        "text": "In January the service used polling.",
+        "score": 1
+      }
+    ]
+  },
+  "V7-AMB-01": {
+    "fallback_used": false,
+    "retrieved": [
+      {
+        "chunk_id": "c3",
+        "text": "The conversation did not establish whether 'He' meant Rahul or Arjun.",
+        "score": 1
+      }
+    ]
+  },
+  "V7-CONFLICT-01": {
+    "fallback_used": false,
+    "retrieved": [
+      {
+        "chunk_id": "c1",
+        "text": "Agent A recorded that the deployment target was Jaipur.",
+        "score": 2
+      },
+      {
+        "chunk_id": "c2",
+        "text": "Agent B later recorded that the deployment target was Delhi, with overlapping validity and no temporal explanation.",
+        "score": 2
+      }
+    ]
+  },
+  "V7-NEG-01": {
+    "fallback_used": false,
+    "retrieved": [
+      {
+        "chunk_id": "c2",
+        "text": "There is no discussion of MongoDB anywhere in this benchmark case.",
+        "score": 2
+      },
+      {
+        "chunk_id": "c1",
+        "text": "The complete conversation discusses PostgreSQL, Redis, and S3.",
+        "score": 1
+      }
+    ]
+  },
+  "V7-PROV-01": {
+    "fallback_used": false,
+    "retrieved": [
+      {
+        "chunk_id": "c2",
+        "text": "Claude later confirmed the failure after reviewing the test output.",
+        "score": 3
+      },
+      {
+        "chunk_id": "c1",
+        "text": "Codex observed that the migration failed.",
+        "score": 1
+      }
+    ]
+  }
+}

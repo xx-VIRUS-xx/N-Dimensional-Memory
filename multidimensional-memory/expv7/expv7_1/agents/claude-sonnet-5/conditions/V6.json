@@ -1,0 +1,529 @@
+{
+  "V71-HIST-01": [
+    {
+      "memory_id": "M-E0005",
+      "case_id": "V71-HIST-01",
+      "type": "observation",
+      "event_id": "E0005",
+      "timestamp": "2026-01-04",
+      "speaker": "Rahul",
+      "content": "We chose PostgreSQL for the billing service because auditability mattered more than the lower migration effort of DynamoDB.",
+      "provenance": {
+        "source_event": "E0005",
+        "source_agent": "Rahul"
+      },
+      "status": "observed"
+    },
+    {
+      "memory_id": "M-E0067",
+      "case_id": "V71-HIST-01",
+      "type": "observation",
+      "event_id": "E0067",
+      "timestamp": "2026-01-19",
+      "speaker": "Rahul",
+      "content": "We tried DynamoDB for the billing prototype, but the migration failed because conditional update semantics did not match the existing transaction flow.",
+      "provenance": {
+        "source_event": "E0067",
+        "source_agent": "Rahul"
+      },
+      "status": "observed"
+    },
+    {
+      "memory_id": "M-E0141",
+      "case_id": "V71-HIST-01",
+      "type": "observation",
+      "event_id": "E0141",
+      "timestamp": "2026-02-02",
+      "speaker": "Claude",
+      "content": "The failed DynamoDB migration was confirmed after reviewing the integration test output.",
+      "provenance": {
+        "source_event": "E0141",
+        "source_agent": "Claude"
+      },
+      "status": "observed"
+    },
+    {
+      "memory_id": "MREL-BILLING-01",
+      "type": "relationship",
+      "case_id": "V71-HIST-01",
+      "subject": "PostgreSQL",
+      "predicate": "chosen_for",
+      "object": "billing_service",
+      "basis": [
+        "E0005"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "memory_id": "MREL-BILLING-02",
+      "type": "relationship",
+      "case_id": "V71-HIST-01",
+      "subject": "DynamoDB",
+      "predicate": "migration_failed_because",
+      "object": "transaction_flow_incompatibility",
+      "basis": [
+        "E0067",
+        "E0141"
+      ],
+      "status": "confirmed"
+    }
+  ],
+  "V71-DEC-01": [
+    {
+      "memory_id": "M-E0178",
+      "case_id": "V71-DEC-01",
+      "type": "observation",
+      "event_id": "E0178",
+      "timestamp": "2026-02-09",
+      "speaker": "Rahul",
+      "content": "We tested Redis caching to reduce API latency.",
+      "provenance": {
+        "source_event": "E0178",
+        "source_agent": "Rahul"
+      },
+      "status": "observed"
+    },
+    {
+      "memory_id": "M-E0263",
+      "case_id": "V71-DEC-01",
+      "type": "observation",
+      "event_id": "E0263",
+      "timestamp": "2026-02-21",
+      "speaker": "Rahul",
+      "content": "The Redis experiment increased cache invalidation complexity, so we abandoned it.",
+      "provenance": {
+        "source_event": "E0263",
+        "source_agent": "Rahul"
+      },
+      "status": "observed"
+    },
+    {
+      "memory_id": "M-E0731",
+      "case_id": "V71-DEC-01",
+      "type": "observation",
+      "event_id": "E0731",
+      "timestamp": "2026-04-18",
+      "speaker": "Rahul",
+      "content": "We retried Redis with a narrower cache scope, but the latency improvement was negligible.",
+      "provenance": {
+        "source_event": "E0731",
+        "source_agent": "Rahul"
+      },
+      "status": "observed"
+    },
+    {
+      "memory_id": "MREL-REDIS-01",
+      "type": "relationship",
+      "case_id": "V71-DEC-01",
+      "subject": "Redis",
+      "predicate": "abandoned_because",
+      "object": "cache_invalidation_complexity",
+      "basis": [
+        "E0263"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "memory_id": "MREL-REDIS-02",
+      "type": "relationship",
+      "case_id": "V71-DEC-01",
+      "subject": "Redis",
+      "predicate": "retry_result",
+      "object": "negligible_latency_improvement",
+      "basis": [
+        "E0731"
+      ],
+      "status": "confirmed"
+    }
+  ],
+  "V71-ACT-01": [
+    {
+      "memory_id": "M-E0356",
+      "case_id": "V71-ACT-01",
+      "type": "observation",
+      "event_id": "E0356",
+      "timestamp": "2026-03-01",
+      "speaker": "Rahul",
+      "content": "The first invoice export attempt timed out after 18 minutes.",
+      "provenance": {
+        "source_event": "E0356",
+        "source_agent": "Rahul"
+      },
+      "status": "observed"
+    },
+    {
+      "memory_id": "M-E0622",
+      "case_id": "V71-ACT-01",
+      "type": "observation",
+      "event_id": "E0622",
+      "timestamp": "2026-04-03",
+      "speaker": "Rahul",
+      "content": "We switched invoice exports to asynchronous jobs after the timeout.",
+      "provenance": {
+        "source_event": "E0622",
+        "source_agent": "Rahul"
+      },
+      "status": "observed"
+    },
+    {
+      "memory_id": "M-E1033",
+      "case_id": "V71-ACT-01",
+      "type": "observation",
+      "event_id": "E1033",
+      "timestamp": "2026-05-31",
+      "speaker": "Rahul",
+      "content": "The asynchronous invoice export completed successfully for the first full customer batch.",
+      "provenance": {
+        "source_event": "E1033",
+        "source_agent": "Rahul"
+      },
+      "status": "observed"
+    }
+  ],
+  "V71-TIME-01": [
+    {
+      "memory_id": "M-E0233",
+      "case_id": "V71-TIME-01",
+      "type": "observation",
+      "event_id": "E0233",
+      "timestamp": "2026-02-17",
+      "speaker": "Rahul",
+      "content": "We started a webhook migration using polling as the temporary compatibility path.",
+      "provenance": {
+        "source_event": "E0233",
+        "source_agent": "Rahul"
+      },
+      "status": "observed"
+    },
+    {
+      "memory_id": "M-E0401",
+      "case_id": "V71-TIME-01",
+      "type": "observation",
+      "event_id": "E0401",
+      "timestamp": "2026-03-11",
+      "speaker": "Rahul",
+      "content": "The webhook migration moved from polling to webhooks after the provider fixed signature verification.",
+      "provenance": {
+        "source_event": "E0401",
+        "source_agent": "Rahul"
+      },
+      "status": "observed"
+    },
+    {
+      "memory_id": "M-E0887",
+      "case_id": "V71-TIME-01",
+      "type": "observation",
+      "event_id": "E0887",
+      "timestamp": "2026-05-20",
+      "speaker": "Rahul",
+      "content": "Webhooks were disabled temporarily because duplicate deliveries caused reconciliation errors.",
+      "provenance": {
+        "source_event": "E0887",
+        "source_agent": "Rahul"
+      },
+      "status": "observed"
+    },
+    {
+      "memory_id": "M-E1190",
+      "case_id": "V71-TIME-01",
+      "type": "observation",
+      "event_id": "E1190",
+      "timestamp": "2026-06-03",
+      "speaker": "Rahul",
+      "content": "Webhooks were re-enabled after idempotency handling was deployed.",
+      "provenance": {
+        "source_event": "E1190",
+        "source_agent": "Rahul"
+      },
+      "status": "observed"
+    },
+    {
+      "memory_id": "MSTATE-WEBHOOK",
+      "type": "state_history",
+      "case_id": "V71-TIME-01",
+      "subject": "webhook_migration",
+      "states": [
+        {
+          "state": "polling",
+          "valid_from": "2026-02-17",
+          "valid_to": "2026-03-11",
+          "basis": [
+            "E0233"
+          ]
+        },
+        {
+          "state": "webhooks_active",
+          "valid_from": "2026-03-11",
+          "valid_to": "2026-05-20",
+          "basis": [
+            "E0401"
+          ]
+        },
+        {
+          "state": "webhooks_disabled",
+          "valid_from": "2026-05-20",
+          "valid_to": "2026-06-03",
+          "basis": [
+            "E0887"
+          ]
+        },
+        {
+          "state": "webhooks_active",
+          "valid_from": "2026-06-03",
+          "valid_to": null,
+          "basis": [
+            "E1190"
+          ]
+        }
+      ],
+      "current_state": "webhooks_active",
+      "status": "derived"
+    }
+  ],
+  "V71-AMB-01": [
+    {
+      "memory_id": "M-E0312",
+      "case_id": "V71-AMB-01",
+      "type": "observation",
+      "event_id": "E0312",
+      "timestamp": "2026-02-25",
+      "speaker": "Rahul",
+      "content": "Rahul said he would ask Arjun about the deployment window, but the conversation did not establish whether \"he\" meant Rahul or Arjun.",
+      "provenance": {
+        "source_event": "E0312",
+        "source_agent": "Rahul"
+      },
+      "status": "observed"
+    },
+    {
+      "memory_id": "M-E0515",
+      "case_id": "V71-AMB-01",
+      "type": "observation",
+      "event_id": "E0515",
+      "timestamp": "2026-03-22",
+      "speaker": "Arjun",
+      "content": "The team discussed the deployment window, but no speaker-reference resolution for \"he\" was recorded.",
+      "provenance": {
+        "source_event": "E0515",
+        "source_agent": "Arjun"
+      },
+      "status": "observed"
+    },
+    {
+      "memory_id": "MAMB-HE",
+      "type": "ambiguity",
+      "case_id": "V71-AMB-01",
+      "expression": "he",
+      "candidates": [
+        "Rahul",
+        "Arjun"
+      ],
+      "resolution": null,
+      "basis": [
+        "E0312",
+        "E0515"
+      ],
+      "status": "unresolved"
+    }
+  ],
+  "V71-CONFLICT-01": [
+    {
+      "memory_id": "M-E0448",
+      "case_id": "V71-CONFLICT-01",
+      "type": "observation",
+      "event_id": "E0448",
+      "timestamp": "2026-03-17",
+      "speaker": "Claude",
+      "content": "Claude inferred that the billing migration failure was related to transaction semantics.",
+      "provenance": {
+        "source_event": "E0448",
+        "source_agent": "Claude"
+      },
+      "status": "observed"
+    },
+    {
+      "memory_id": "M-E0449",
+      "case_id": "V71-CONFLICT-01",
+      "type": "observation",
+      "event_id": "E0449",
+      "timestamp": "2026-03-17",
+      "speaker": "Rahul",
+      "content": "Rahul confirmed that transaction semantics were the reason the DynamoDB migration was abandoned.",
+      "provenance": {
+        "source_event": "E0449",
+        "source_agent": "Rahul"
+      },
+      "status": "observed"
+    },
+    {
+      "memory_id": "MREL-CONFIRM",
+      "type": "belief_history",
+      "case_id": "V71-CONFLICT-01",
+      "proposition": "DynamoDB migration was abandoned because transaction semantics were incompatible",
+      "history": [
+        {
+          "status": "inferred",
+          "source": "E0448",
+          "agent": "Claude"
+        },
+        {
+          "status": "confirmed",
+          "source": "E0449",
+          "agent": "Rahul"
+        }
+      ],
+      "current_status": "confirmed",
+      "basis": [
+        "E0448",
+        "E0449"
+      ]
+    }
+  ],
+  "V71-NEG-01": [
+    {
+      "memory_id": "M-E0548",
+      "case_id": "V71-NEG-01",
+      "type": "observation",
+      "event_id": "E0548",
+      "timestamp": "2026-03-29",
+      "speaker": "Rahul",
+      "content": "We explicitly recorded that MongoDB had not been discussed in the billing migration review.",
+      "provenance": {
+        "source_event": "E0548",
+        "source_agent": "Rahul"
+      },
+      "status": "observed"
+    },
+    {
+      "memory_id": "M-E1102",
+      "case_id": "V71-NEG-01",
+      "type": "observation",
+      "event_id": "E1102",
+      "timestamp": "2026-05-08",
+      "speaker": "Rahul",
+      "content": "A proposal to use MongoDB for billing was mentioned in a different project, not in the billing migration review.",
+      "provenance": {
+        "source_event": "E1102",
+        "source_agent": "Rahul"
+      },
+      "status": "observed"
+    },
+    {
+      "memory_id": "MNEG-MONGO",
+      "type": "negative_knowledge",
+      "case_id": "V71-NEG-01",
+      "proposition": "MongoDB was discussed in the billing migration review",
+      "status": "not_discussed",
+      "completeness": "complete_for_review",
+      "basis": [
+        "E0548"
+      ],
+      "qualifier": "A later MongoDB mention belonged to a different project (E1102)"
+    }
+  ],
+  "V71-PROV-01": [
+    {
+      "memory_id": "M-E0067",
+      "case_id": "V71-PROV-01",
+      "type": "observation",
+      "event_id": "E0067",
+      "timestamp": "2026-01-19",
+      "speaker": "Rahul",
+      "content": "We tried DynamoDB for the billing prototype, but the migration failed because conditional update semantics did not match the existing transaction flow.",
+      "provenance": {
+        "source_event": "E0067",
+        "source_agent": "Rahul"
+      },
+      "status": "observed"
+    },
+    {
+      "memory_id": "M-E0141",
+      "case_id": "V71-PROV-01",
+      "type": "observation",
+      "event_id": "E0141",
+      "timestamp": "2026-02-02",
+      "speaker": "Claude",
+      "content": "The failed DynamoDB migration was confirmed after reviewing the integration test output.",
+      "provenance": {
+        "source_event": "E0141",
+        "source_agent": "Claude"
+      },
+      "status": "observed"
+    },
+    {
+      "memory_id": "M-E0448",
+      "case_id": "V71-PROV-01",
+      "type": "observation",
+      "event_id": "E0448",
+      "timestamp": "2026-03-17",
+      "speaker": "Claude",
+      "content": "Claude inferred that the billing migration failure was related to transaction semantics.",
+      "provenance": {
+        "source_event": "E0448",
+        "source_agent": "Claude"
+      },
+      "status": "observed"
+    },
+    {
+      "memory_id": "M-E0449",
+      "case_id": "V71-PROV-01",
+      "type": "observation",
+      "event_id": "E0449",
+      "timestamp": "2026-03-17",
+      "speaker": "Rahul",
+      "content": "Rahul confirmed that transaction semantics were the reason the DynamoDB migration was abandoned.",
+      "provenance": {
+        "source_event": "E0449",
+        "source_agent": "Rahul"
+      },
+      "status": "observed"
+    },
+    {
+      "memory_id": "M-E0802",
+      "case_id": "V71-PROV-01",
+      "type": "observation",
+      "event_id": "E0802",
+      "timestamp": "2026-04-29",
+      "speaker": "Copilot",
+      "content": "Copilot later read the billing migration notes and preserved the PostgreSQL decision and the failed DynamoDB attempt.",
+      "provenance": {
+        "source_event": "E0802",
+        "source_agent": "Copilot"
+      },
+      "status": "observed"
+    },
+    {
+      "memory_id": "MPROV-BILLING",
+      "type": "provenance_chain",
+      "case_id": "V71-PROV-01",
+      "proposition": "DynamoDB migration failure and reason",
+      "chain": [
+        {
+          "source": "E0067",
+          "agent": "Rahul",
+          "role": "observation"
+        },
+        {
+          "source": "E0141",
+          "agent": "Claude",
+          "role": "confirmation"
+        },
+        {
+          "source": "E0448",
+          "agent": "Claude",
+          "role": "inference"
+        },
+        {
+          "source": "E0449",
+          "agent": "Rahul",
+          "role": "confirmation"
+        },
+        {
+          "source": "E0802",
+          "agent": "Copilot",
+          "role": "later_memory_read"
+        }
+      ]
+    }
+  ]
+}

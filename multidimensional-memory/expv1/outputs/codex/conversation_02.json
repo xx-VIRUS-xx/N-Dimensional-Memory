@@ -1,0 +1,215 @@
+{
+  "conversation_id": "conversation_02",
+  "points": [
+    {
+      "point_id": "c02_p001",
+      "surface": "Rahul",
+      "dimensions": ["noun", "subject", "actor"],
+      "interpretations": ["named person who spoke to Arjun"],
+      "source_sentences": ["User: Rahul spoke to Arjun about football."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "c02_p002",
+      "surface": "spoke",
+      "dimensions": ["verb", "action"],
+      "interpretations": ["communication action"],
+      "source_sentences": ["User: Rahul spoke to Arjun about football."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "c02_p003",
+      "surface": "Arjun",
+      "dimensions": ["noun", "object", "target", "actor"],
+      "interpretations": ["named person Rahul spoke to"],
+      "source_sentences": ["User: Rahul spoke to Arjun about football."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "c02_p004",
+      "surface": "football",
+      "dimensions": ["noun", "object"],
+      "interpretations": ["topic of Rahul's speech to Arjun"],
+      "source_sentences": ["User: Rahul spoke to Arjun about football."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "c02_p005",
+      "surface": "He",
+      "dimensions": ["subject", "actor"],
+      "interpretations": ["ambiguous pronoun; possible referents include Rahul or Arjun"],
+      "source_sentences": ["User: He said he might join the team next month."],
+      "confidence": 0.55
+    },
+    {
+      "point_id": "c02_p006",
+      "surface": "said",
+      "dimensions": ["verb", "action"],
+      "interpretations": ["speech act attributed to an ambiguous male referent"],
+      "source_sentences": ["User: He said he might join the team next month."],
+      "confidence": 0.95
+    },
+    {
+      "point_id": "c02_p007",
+      "surface": "he",
+      "dimensions": ["subject", "actor"],
+      "interpretations": ["ambiguous pronoun; could match the first He or another male referent from context"],
+      "source_sentences": ["User: He said he might join the team next month."],
+      "confidence": 0.5
+    },
+    {
+      "point_id": "c02_p008",
+      "surface": "might join",
+      "dimensions": ["verb", "action", "intent", "state"],
+      "interpretations": ["possible future joining action, not confirmed"],
+      "source_sentences": ["User: He said he might join the team next month."],
+      "confidence": 0.9
+    },
+    {
+      "point_id": "c02_p009",
+      "surface": "the team",
+      "dimensions": ["noun", "object", "target"],
+      "interpretations": ["team that an ambiguous male referent might join"],
+      "source_sentences": ["User: He said he might join the team next month."],
+      "confidence": 0.9
+    },
+    {
+      "point_id": "c02_p010",
+      "surface": "next month",
+      "dimensions": ["time"],
+      "interpretations": ["future time for possible joining"],
+      "source_sentences": ["User: He said he might join the team next month."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "c02_p011",
+      "surface": "They",
+      "dimensions": ["subject", "actor"],
+      "interpretations": ["ambiguous plural pronoun; likely refers to Rahul and Arjun but not explicitly restated"],
+      "source_sentences": ["User: They discussed meeting at the park."],
+      "confidence": 0.78
+    },
+    {
+      "point_id": "c02_p012",
+      "surface": "discussed",
+      "dimensions": ["verb", "action"],
+      "interpretations": ["communication action about a possible meeting"],
+      "source_sentences": ["User: They discussed meeting at the park."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "c02_p013",
+      "surface": "meeting",
+      "dimensions": ["noun", "verb", "action", "intent"],
+      "interpretations": ["meeting event under discussion"],
+      "source_sentences": ["User: They discussed meeting at the park."],
+      "confidence": 0.95
+    },
+    {
+      "point_id": "c02_p014",
+      "surface": "at the park",
+      "dimensions": ["place"],
+      "interpretations": ["place for the discussed meeting"],
+      "source_sentences": ["User: They discussed meeting at the park."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "c02_p015",
+      "surface": "The plan",
+      "dimensions": ["noun", "subject"],
+      "interpretations": ["ambiguous plan; could refer to joining the team, meeting at the park, or the broader discussed arrangement"],
+      "source_sentences": ["User: The plan changed later."],
+      "confidence": 0.62
+    },
+    {
+      "point_id": "c02_p016",
+      "surface": "changed",
+      "dimensions": ["verb", "action", "state"],
+      "interpretations": ["later change in an ambiguous plan"],
+      "source_sentences": ["User: The plan changed later."],
+      "confidence": 0.95
+    },
+    {
+      "point_id": "c02_p017",
+      "surface": "later",
+      "dimensions": ["time"],
+      "interpretations": ["time after the prior discussion or plan formation"],
+      "source_sentences": ["User: The plan changed later."],
+      "confidence": 0.95
+    }
+  ],
+  "temporal_states": [
+    {
+      "state_id": "c02_ts001",
+      "surface": "Rahul spoke to Arjun about football.",
+      "subject": "Rahul",
+      "state": "spoke to Arjun about football",
+      "time": null,
+      "source_sentences": ["User: Rahul spoke to Arjun about football."],
+      "confidence": 1.0
+    },
+    {
+      "state_id": "c02_ts002",
+      "surface": "He said he might join the team next month.",
+      "subject": "He",
+      "state": "might join the team",
+      "time": "next month",
+      "source_sentences": ["User: He said he might join the team next month."],
+      "confidence": 0.72
+    },
+    {
+      "state_id": "c02_ts003",
+      "surface": "They discussed meeting at the park.",
+      "subject": "They",
+      "state": "discussed meeting at the park",
+      "time": null,
+      "source_sentences": ["User: They discussed meeting at the park."],
+      "confidence": 0.78
+    },
+    {
+      "state_id": "c02_ts004",
+      "surface": "The plan changed later.",
+      "subject": "The plan",
+      "state": "changed",
+      "time": "later",
+      "source_sentences": ["User: The plan changed later."],
+      "confidence": 0.85
+    }
+  ],
+  "ambiguities": [
+    {
+      "ambiguity_id": "c02_a001",
+      "surface": "He",
+      "description": "The referent of 'He' is not explicitly resolved.",
+      "possible_referents": ["Rahul", "Arjun"],
+      "source_sentences": ["User: He said he might join the team next month."]
+    },
+    {
+      "ambiguity_id": "c02_a002",
+      "surface": "he",
+      "description": "The referent of the second 'he' is not explicitly resolved and may or may not be the same as the first 'He'.",
+      "possible_referents": ["Rahul", "Arjun", "same referent as first He"],
+      "source_sentences": ["User: He said he might join the team next month."]
+    },
+    {
+      "ambiguity_id": "c02_a003",
+      "surface": "They",
+      "description": "The plural referent is not explicitly restated.",
+      "possible_referents": ["Rahul and Arjun"],
+      "source_sentences": ["User: They discussed meeting at the park."]
+    },
+    {
+      "ambiguity_id": "c02_a004",
+      "surface": "The plan",
+      "description": "The changed plan is not explicitly identified.",
+      "possible_referents": ["joining the team next month", "meeting at the park", "broader arrangement discussed by Rahul and Arjun"],
+      "source_sentences": ["User: The plan changed later."]
+    }
+  ],
+  "explicit_facts": [
+    "User: Rahul spoke to Arjun about football.",
+    "User: He said he might join the team next month.",
+    "User: They discussed meeting at the park.",
+    "User: The plan changed later."
+  ]
+}

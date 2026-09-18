@@ -1,0 +1,758 @@
+{
+  "experiment": "EXP-V2.1",
+  "conversation_id": "conversation_01",
+  "identity_policy": {
+    "SAME": "normalized surface equivalent",
+    "RELATED": "compatible points with different granularity/qualifier",
+    "DISTINCT": "insufficient evidence to relate"
+  },
+  "points": [
+    {
+      "canonical_id": "p_001",
+      "surfaces": [
+        "rahul"
+      ],
+      "dimensions": {
+        "common": [
+          "actor",
+          "noun",
+          "subject"
+        ],
+        "union": [
+          "actor",
+          "noun",
+          "subject"
+        ],
+        "model_specific": {
+          "claude": [],
+          "codex": [],
+          "copilot": []
+        }
+      },
+      "model_support": {
+        "claude": true,
+        "codex": true,
+        "copilot": true
+      },
+      "evidence": [
+        "Rahul loves to play football."
+      ],
+      "raw_observations": [
+        {
+          "model": "claude",
+          "surface": "Rahul",
+          "dimensions": [
+            "actor",
+            "noun",
+            "subject"
+          ],
+          "confidence": 1.0
+        },
+        {
+          "model": "codex",
+          "surface": "Rahul",
+          "dimensions": [
+            "actor",
+            "noun",
+            "subject"
+          ],
+          "confidence": 1.0
+        },
+        {
+          "model": "copilot",
+          "surface": "Rahul",
+          "dimensions": [
+            "actor",
+            "noun",
+            "subject"
+          ],
+          "confidence": 1.0
+        }
+      ],
+      "related_point_ids": []
+    },
+    {
+      "canonical_id": "p_002",
+      "surfaces": [
+        "love"
+      ],
+      "dimensions": {
+        "common": [
+          "emotion",
+          "feeling",
+          "verb"
+        ],
+        "union": [
+          "emotion",
+          "feeling",
+          "verb"
+        ],
+        "model_specific": {
+          "claude": [],
+          "codex": [],
+          "copilot": []
+        }
+      },
+      "model_support": {
+        "claude": true,
+        "codex": true,
+        "copilot": true
+      },
+      "evidence": [
+        "Rahul loves to play football."
+      ],
+      "raw_observations": [
+        {
+          "model": "claude",
+          "surface": "loves",
+          "dimensions": [
+            "emotion",
+            "feeling",
+            "verb"
+          ],
+          "confidence": 1.0
+        },
+        {
+          "model": "codex",
+          "surface": "loves",
+          "dimensions": [
+            "emotion",
+            "feeling",
+            "verb"
+          ],
+          "confidence": 0.98
+        },
+        {
+          "model": "copilot",
+          "surface": "loves",
+          "dimensions": [
+            "emotion",
+            "feeling",
+            "verb"
+          ],
+          "confidence": 1.0
+        }
+      ],
+      "related_point_ids": []
+    },
+    {
+      "canonical_id": "p_003",
+      "surfaces": [
+        "play"
+      ],
+      "dimensions": {
+        "common": [
+          "action",
+          "verb"
+        ],
+        "union": [
+          "action",
+          "verb"
+        ],
+        "model_specific": {
+          "claude": [],
+          "codex": [],
+          "copilot": []
+        }
+      },
+      "model_support": {
+        "claude": true,
+        "codex": false,
+        "copilot": true
+      },
+      "evidence": [
+        "Rahul loves to play football."
+      ],
+      "raw_observations": [
+        {
+          "model": "claude",
+          "surface": "play / plays / playing",
+          "dimensions": [
+            "action",
+            "verb"
+          ],
+          "confidence": 1.0
+        },
+        {
+          "model": "copilot",
+          "surface": "play",
+          "dimensions": [
+            "action",
+            "verb"
+          ],
+          "confidence": 1.0
+        }
+      ],
+      "related_point_ids": [
+        "p_012"
+      ]
+    },
+    {
+      "canonical_id": "p_004",
+      "surfaces": [
+        "football"
+      ],
+      "dimensions": {
+        "common": [
+          "noun",
+          "object"
+        ],
+        "union": [
+          "activity",
+          "noun",
+          "object"
+        ],
+        "model_specific": {
+          "claude": [
+            "activity"
+          ],
+          "codex": [],
+          "copilot": [
+            "activity"
+          ]
+        }
+      },
+      "model_support": {
+        "claude": true,
+        "codex": true,
+        "copilot": true
+      },
+      "evidence": [
+        "Rahul loves to play football."
+      ],
+      "raw_observations": [
+        {
+          "model": "claude",
+          "surface": "football",
+          "dimensions": [
+            "activity",
+            "noun",
+            "object"
+          ],
+          "confidence": 1.0
+        },
+        {
+          "model": "codex",
+          "surface": "football",
+          "dimensions": [
+            "noun",
+            "object"
+          ],
+          "confidence": 1.0
+        },
+        {
+          "model": "copilot",
+          "surface": "football",
+          "dimensions": [
+            "activity",
+            "noun",
+            "object"
+          ],
+          "confidence": 1.0
+        }
+      ],
+      "related_point_ids": [
+        "p_012"
+      ]
+    },
+    {
+      "canonical_id": "p_005",
+      "surfaces": [
+        "sunday"
+      ],
+      "dimensions": {
+        "common": [
+          "time"
+        ],
+        "union": [
+          "time"
+        ],
+        "model_specific": {
+          "claude": [],
+          "codex": [],
+          "copilot": []
+        }
+      },
+      "model_support": {
+        "claude": true,
+        "codex": true,
+        "copilot": true
+      },
+      "evidence": [
+        "Rahul plays football every Sunday at the park."
+      ],
+      "raw_observations": [
+        {
+          "model": "claude",
+          "surface": "every Sunday",
+          "dimensions": [
+            "time"
+          ],
+          "confidence": 1.0
+        },
+        {
+          "model": "codex",
+          "surface": "every Sunday",
+          "dimensions": [
+            "time"
+          ],
+          "confidence": 1.0
+        },
+        {
+          "model": "copilot",
+          "surface": "every Sunday",
+          "dimensions": [
+            "time"
+          ],
+          "confidence": 1.0
+        }
+      ],
+      "related_point_ids": []
+    },
+    {
+      "canonical_id": "p_006",
+      "surfaces": [
+        "park"
+      ],
+      "dimensions": {
+        "common": [
+          "place"
+        ],
+        "union": [
+          "noun",
+          "place"
+        ],
+        "model_specific": {
+          "claude": [
+            "noun"
+          ],
+          "codex": [],
+          "copilot": []
+        }
+      },
+      "model_support": {
+        "claude": true,
+        "codex": true,
+        "copilot": true
+      },
+      "evidence": [
+        "Rahul plays football every Sunday at the park."
+      ],
+      "raw_observations": [
+        {
+          "model": "claude",
+          "surface": "park",
+          "dimensions": [
+            "noun",
+            "place"
+          ],
+          "confidence": 1.0
+        },
+        {
+          "model": "codex",
+          "surface": "at the park",
+          "dimensions": [
+            "place"
+          ],
+          "confidence": 1.0
+        },
+        {
+          "model": "copilot",
+          "surface": "park",
+          "dimensions": [
+            "place"
+          ],
+          "confidence": 1.0
+        }
+      ],
+      "related_point_ids": []
+    },
+    {
+      "canonical_id": "p_007",
+      "surfaces": [
+        "he"
+      ],
+      "dimensions": {
+        "common": [
+          "actor",
+          "subject"
+        ],
+        "union": [
+          "actor",
+          "noun",
+          "subject"
+        ],
+        "model_specific": {
+          "claude": [
+            "noun"
+          ],
+          "codex": [],
+          "copilot": []
+        }
+      },
+      "model_support": {
+        "claude": true,
+        "codex": true,
+        "copilot": false
+      },
+      "evidence": [
+        "He usually plays with his friends."
+      ],
+      "raw_observations": [
+        {
+          "model": "claude",
+          "surface": "He",
+          "dimensions": [
+            "actor",
+            "noun",
+            "subject"
+          ],
+          "confidence": 0.6
+        },
+        {
+          "model": "codex",
+          "surface": "He",
+          "dimensions": [
+            "actor",
+            "subject"
+          ],
+          "confidence": 0.92
+        }
+      ],
+      "related_point_ids": []
+    },
+    {
+      "canonical_id": "p_008",
+      "surfaces": [
+        "friends"
+      ],
+      "dimensions": {
+        "common": [
+          "noun"
+        ],
+        "union": [
+          "actor",
+          "noun",
+          "object",
+          "target"
+        ],
+        "model_specific": {
+          "claude": [
+            "object",
+            "target"
+          ],
+          "codex": [
+            "actor",
+            "target"
+          ],
+          "copilot": [
+            "actor"
+          ]
+        }
+      },
+      "model_support": {
+        "claude": true,
+        "codex": true,
+        "copilot": true
+      },
+      "evidence": [
+        "He usually plays with his friends."
+      ],
+      "raw_observations": [
+        {
+          "model": "claude",
+          "surface": "friends",
+          "dimensions": [
+            "noun",
+            "object",
+            "target"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "model": "codex",
+          "surface": "his friends",
+          "dimensions": [
+            "actor",
+            "noun",
+            "target"
+          ],
+          "confidence": 0.92
+        },
+        {
+          "model": "copilot",
+          "surface": "friends",
+          "dimensions": [
+            "actor",
+            "noun"
+          ],
+          "confidence": 1.0
+        }
+      ],
+      "related_point_ids": []
+    },
+    {
+      "canonical_id": "p_009",
+      "surfaces": [
+        "stopped playing football"
+      ],
+      "dimensions": {
+        "common": [
+          "action",
+          "state",
+          "verb"
+        ],
+        "union": [
+          "action",
+          "state",
+          "verb"
+        ],
+        "model_specific": {
+          "claude": [],
+          "codex": [],
+          "copilot": []
+        }
+      },
+      "model_support": {
+        "claude": true,
+        "codex": true,
+        "copilot": true
+      },
+      "evidence": [
+        "Rahul stopped playing football during the summer."
+      ],
+      "raw_observations": [
+        {
+          "model": "claude",
+          "surface": "stopped playing football",
+          "dimensions": [
+            "action",
+            "state",
+            "verb"
+          ],
+          "confidence": 1.0
+        },
+        {
+          "model": "codex",
+          "surface": "stopped playing football",
+          "dimensions": [
+            "action",
+            "state",
+            "verb"
+          ],
+          "confidence": 1.0
+        },
+        {
+          "model": "copilot",
+          "surface": "stopped playing football",
+          "dimensions": [
+            "action",
+            "state",
+            "verb"
+          ],
+          "confidence": 1.0
+        }
+      ],
+      "related_point_ids": [
+        "p_012"
+      ]
+    },
+    {
+      "canonical_id": "p_010",
+      "surfaces": [
+        "started playing again"
+      ],
+      "dimensions": {
+        "common": [
+          "action",
+          "state",
+          "verb"
+        ],
+        "union": [
+          "action",
+          "state",
+          "verb"
+        ],
+        "model_specific": {
+          "claude": [],
+          "codex": [],
+          "copilot": []
+        }
+      },
+      "model_support": {
+        "claude": true,
+        "codex": true,
+        "copilot": true
+      },
+      "evidence": [
+        "Rahul started playing again after joining a new team."
+      ],
+      "raw_observations": [
+        {
+          "model": "claude",
+          "surface": "started playing again",
+          "dimensions": [
+            "action",
+            "state",
+            "verb"
+          ],
+          "confidence": 1.0
+        },
+        {
+          "model": "codex",
+          "surface": "started playing again",
+          "dimensions": [
+            "action",
+            "state",
+            "verb"
+          ],
+          "confidence": 1.0
+        },
+        {
+          "model": "copilot",
+          "surface": "started playing again",
+          "dimensions": [
+            "action",
+            "state",
+            "verb"
+          ],
+          "confidence": 1.0
+        }
+      ],
+      "related_point_ids": []
+    },
+    {
+      "canonical_id": "p_011",
+      "surfaces": [
+        "new team"
+      ],
+      "dimensions": {
+        "common": [
+          "noun"
+        ],
+        "union": [
+          "actor",
+          "noun",
+          "object",
+          "state",
+          "target"
+        ],
+        "model_specific": {
+          "claude": [
+            "object"
+          ],
+          "codex": [
+            "object",
+            "target"
+          ],
+          "copilot": [
+            "actor",
+            "state"
+          ]
+        }
+      },
+      "model_support": {
+        "claude": true,
+        "codex": true,
+        "copilot": true
+      },
+      "evidence": [
+        "Rahul started playing again after joining a new team."
+      ],
+      "raw_observations": [
+        {
+          "model": "claude",
+          "surface": "new team",
+          "dimensions": [
+            "noun",
+            "object"
+          ],
+          "confidence": 1.0
+        },
+        {
+          "model": "codex",
+          "surface": "new team",
+          "dimensions": [
+            "noun",
+            "object",
+            "target"
+          ],
+          "confidence": 0.98
+        },
+        {
+          "model": "copilot",
+          "surface": "new team",
+          "dimensions": [
+            "actor",
+            "noun",
+            "state"
+          ],
+          "confidence": 0.9
+        }
+      ],
+      "related_point_ids": []
+    },
+    {
+      "canonical_id": "p_012",
+      "surfaces": [
+        "play football"
+      ],
+      "dimensions": {
+        "common": [
+          "action",
+          "object",
+          "verb"
+        ],
+        "union": [
+          "action",
+          "object",
+          "verb"
+        ],
+        "model_specific": {
+          "claude": [],
+          "codex": [],
+          "copilot": []
+        }
+      },
+      "model_support": {
+        "claude": false,
+        "codex": true,
+        "copilot": false
+      },
+      "evidence": [
+        "Rahul loves to play football."
+      ],
+      "raw_observations": [
+        {
+          "model": "codex",
+          "surface": "play football",
+          "dimensions": [
+            "action",
+            "object",
+            "verb"
+          ],
+          "confidence": 1.0
+        }
+      ],
+      "related_point_ids": [
+        "p_003",
+        "p_004",
+        "p_009"
+      ]
+    }
+  ],
+  "metrics": {
+    "models": [
+      "claude",
+      "codex",
+      "copilot"
+    ],
+    "canonical_points": 12,
+    "points_supported_by_2_or_more_models": 11,
+    "points_supported_by_all_models": 9,
+    "multi_model_support_rate": 0.9167,
+    "all_model_support_rate": 0.75,
+    "related_point_edges": 3,
+    "dimension_intersection_union_ratio": 0.7143
+  }
+}

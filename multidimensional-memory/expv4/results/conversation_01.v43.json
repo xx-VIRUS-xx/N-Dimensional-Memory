@@ -1,0 +1,471 @@
+{
+  "ordered_evolution": {
+    "case": "ordered_evolution",
+    "input": [
+      "Rahul started playing football.",
+      "Rahul stopped playing football later.",
+      "Rahul resumed playing football after that."
+    ],
+    "v4": {
+      "experiment": "EXP-V4",
+      "hypothesis": "A persistent semantic substrate can preserve evolving temporal state without collapsing uncertain or relative time into invented absolute dates.",
+      "policy": {
+        "temporal_claims_are_conservative": true,
+        "absolute_dates_are_never_invented": true,
+        "sequence_is_weak_unless_explicit": true,
+        "state_history_is_append_only": true,
+        "no_llm": true,
+        "no_embeddings": true,
+        "no_vector_db": true,
+        "no_graph_db": true
+      },
+      "events": [
+        {
+          "event_id": "e_001",
+          "sequence": 1,
+          "source_sentence": "Rahul started playing football.",
+          "point_ids": [
+            "playing_0",
+            "state_0"
+          ],
+          "actor_ids": [
+            "rahul"
+          ],
+          "time_anchors": [],
+          "transition_markers": [
+            {
+              "marker": "started",
+              "state": "began"
+            }
+          ],
+          "temporal_status": "unanchored",
+          "ordering_evidence": "source_sentence_order"
+        },
+        {
+          "event_id": "e_002",
+          "sequence": 2,
+          "source_sentence": "Rahul stopped playing football later.",
+          "point_ids": [
+            "playing_1",
+            "state_1"
+          ],
+          "actor_ids": [
+            "rahul"
+          ],
+          "time_anchors": [
+            {
+              "text": "later",
+              "kind": "relative_order",
+              "explicit": false
+            }
+          ],
+          "transition_markers": [
+            {
+              "marker": "stopped",
+              "state": "ended"
+            }
+          ],
+          "temporal_status": "anchored",
+          "ordering_evidence": "source_sentence_order"
+        },
+        {
+          "event_id": "e_003",
+          "sequence": 3,
+          "source_sentence": "Rahul resumed playing football after that.",
+          "point_ids": [
+            "playing_2",
+            "state_2"
+          ],
+          "actor_ids": [
+            "rahul"
+          ],
+          "time_anchors": [
+            {
+              "text": "after",
+              "kind": "relative_order",
+              "explicit": false
+            }
+          ],
+          "transition_markers": [
+            {
+              "marker": "resumed",
+              "state": "resumed"
+            }
+          ],
+          "temporal_status": "anchored",
+          "ordering_evidence": "source_sentence_order"
+        }
+      ],
+      "temporal_constraints": [
+        {
+          "before": "e_001",
+          "after": "e_002",
+          "type": "sequence",
+          "confidence": "medium",
+          "evidence": "source_sentence_order"
+        },
+        {
+          "before": "e_002",
+          "after": "e_003",
+          "type": "sequence",
+          "confidence": "medium",
+          "evidence": "source_sentence_order"
+        },
+        {
+          "before": "e_001",
+          "after": "e_002",
+          "type": "explicit_after",
+          "confidence": "high",
+          "evidence": "Rahul stopped playing football later."
+        },
+        {
+          "before": "e_002",
+          "after": "e_003",
+          "type": "explicit_after",
+          "confidence": "high",
+          "evidence": "Rahul resumed playing football after that."
+        }
+      ],
+      "state_history": {
+        "rahul": [
+          {
+            "event_id": "e_001",
+            "transition": "began",
+            "marker": "started",
+            "source": "Rahul started playing football."
+          },
+          {
+            "event_id": "e_002",
+            "transition": "ended",
+            "marker": "stopped",
+            "source": "Rahul stopped playing football later."
+          },
+          {
+            "event_id": "e_003",
+            "transition": "resumed",
+            "marker": "resumed",
+            "source": "Rahul resumed playing football after that."
+          }
+        ]
+      },
+      "metrics": {
+        "events": 3,
+        "anchored_events": 2,
+        "unanchored_events": 1,
+        "temporal_constraints": 4,
+        "state_transition_events": 3
+      }
+    },
+    "v43": {
+      "experiment": "EXP-V4.3",
+      "hypothesis": "Opposing observations can be classified as evolution only when explicit temporal evidence orders them; otherwise they remain potential conflicts.",
+      "policy": {
+        "history_is_append_only": true,
+        "preserve_both": true,
+        "explicit_order_required_for_evolution": true,
+        "source_sequence_is_not_sufficient_for_evolution": true,
+        "potential_conflict_is_not_auto_resolved": true,
+        "no_winner_selected": true
+      },
+      "state_relationships": [
+        {
+          "subject_id": "rahul",
+          "target": "playing",
+          "from": "active",
+          "to": "inactive",
+          "event_from": "e_001",
+          "event_to": "e_002",
+          "kind": "evolution",
+          "reason": "opposing states have explicit temporal ordering evidence",
+          "ordering": {
+            "type": "explicit_after",
+            "confidence": "high"
+          },
+          "source_sequence": [
+            1,
+            2
+          ],
+          "resolution": "preserve_both",
+          "evidence": [
+            "Rahul started playing football.",
+            "Rahul stopped playing football later."
+          ]
+        },
+        {
+          "subject_id": "rahul",
+          "target": "playing",
+          "from": "inactive",
+          "to": "active",
+          "event_from": "e_002",
+          "event_to": "e_003",
+          "kind": "evolution",
+          "reason": "opposing states have explicit temporal ordering evidence",
+          "ordering": {
+            "type": "explicit_after",
+            "confidence": "high"
+          },
+          "source_sequence": [
+            2,
+            3
+          ],
+          "resolution": "preserve_both",
+          "evidence": [
+            "Rahul stopped playing football later.",
+            "Rahul resumed playing football after that."
+          ]
+        }
+      ],
+      "metrics": {
+        "state_relationships": 2,
+        "evolutions": 2,
+        "potential_conflicts": 0,
+        "preserved_observations": 3
+      }
+    }
+  },
+  "unordered_conflict": {
+    "case": "unordered_conflict",
+    "input": [
+      "Rahul is playing football.",
+      "Rahul is not playing football."
+    ],
+    "v4": {
+      "experiment": "EXP-V4",
+      "hypothesis": "A persistent semantic substrate can preserve evolving temporal state without collapsing uncertain or relative time into invented absolute dates.",
+      "policy": {
+        "temporal_claims_are_conservative": true,
+        "absolute_dates_are_never_invented": true,
+        "sequence_is_weak_unless_explicit": true,
+        "state_history_is_append_only": true,
+        "no_llm": true,
+        "no_embeddings": true,
+        "no_vector_db": true,
+        "no_graph_db": true
+      },
+      "events": [
+        {
+          "event_id": "e_001",
+          "sequence": 1,
+          "source_sentence": "Rahul is playing football.",
+          "point_ids": [
+            "playing_0",
+            "state_0"
+          ],
+          "actor_ids": [
+            "rahul"
+          ],
+          "time_anchors": [],
+          "transition_markers": [
+            {
+              "marker": "state",
+              "state": "active"
+            }
+          ],
+          "temporal_status": "unanchored",
+          "ordering_evidence": "source_sentence_order"
+        },
+        {
+          "event_id": "e_002",
+          "sequence": 2,
+          "source_sentence": "Rahul is not playing football.",
+          "point_ids": [
+            "playing_1",
+            "state_1"
+          ],
+          "actor_ids": [
+            "rahul"
+          ],
+          "time_anchors": [],
+          "transition_markers": [
+            {
+              "marker": "stopped",
+              "state": "ended"
+            },
+            {
+              "marker": "state",
+              "state": "inactive"
+            }
+          ],
+          "temporal_status": "unanchored",
+          "ordering_evidence": "source_sentence_order"
+        }
+      ],
+      "temporal_constraints": [
+        {
+          "before": "e_001",
+          "after": "e_002",
+          "type": "sequence",
+          "confidence": "medium",
+          "evidence": "source_sentence_order"
+        }
+      ],
+      "state_history": {
+        "rahul": [
+          {
+            "event_id": "e_002",
+            "transition": "ended",
+            "marker": "stopped",
+            "source": "Rahul is not playing football."
+          }
+        ]
+      },
+      "metrics": {
+        "events": 2,
+        "anchored_events": 0,
+        "unanchored_events": 2,
+        "temporal_constraints": 1,
+        "state_transition_events": 1
+      }
+    },
+    "v43": {
+      "experiment": "EXP-V4.3",
+      "hypothesis": "Opposing observations can be classified as evolution only when explicit temporal evidence orders them; otherwise they remain potential conflicts.",
+      "policy": {
+        "history_is_append_only": true,
+        "preserve_both": true,
+        "explicit_order_required_for_evolution": true,
+        "source_sequence_is_not_sufficient_for_evolution": true,
+        "potential_conflict_is_not_auto_resolved": true,
+        "no_winner_selected": true
+      },
+      "state_relationships": [
+        {
+          "subject_id": "rahul",
+          "target": "playing",
+          "from": "active",
+          "to": "inactive",
+          "event_from": "e_001",
+          "event_to": "e_002",
+          "kind": "potential_conflict",
+          "reason": "opposing observations have no explicit temporal ordering evidence",
+          "ordering": {
+            "type": "none",
+            "confidence": "none"
+          },
+          "source_sequence": [
+            1,
+            2
+          ],
+          "resolution": "preserve_both",
+          "evidence": [
+            "Rahul is playing football.",
+            "Rahul is not playing football."
+          ]
+        }
+      ],
+      "metrics": {
+        "state_relationships": 1,
+        "evolutions": 0,
+        "potential_conflicts": 1,
+        "preserved_observations": 2
+      }
+    }
+  },
+  "repeated_same_state": {
+    "case": "repeated_same_state",
+    "input": [
+      "Rahul is playing football.",
+      "Rahul is playing football again."
+    ],
+    "v4": {
+      "experiment": "EXP-V4",
+      "hypothesis": "A persistent semantic substrate can preserve evolving temporal state without collapsing uncertain or relative time into invented absolute dates.",
+      "policy": {
+        "temporal_claims_are_conservative": true,
+        "absolute_dates_are_never_invented": true,
+        "sequence_is_weak_unless_explicit": true,
+        "state_history_is_append_only": true,
+        "no_llm": true,
+        "no_embeddings": true,
+        "no_vector_db": true,
+        "no_graph_db": true
+      },
+      "events": [
+        {
+          "event_id": "e_001",
+          "sequence": 1,
+          "source_sentence": "Rahul is playing football.",
+          "point_ids": [
+            "playing_0",
+            "state_0"
+          ],
+          "actor_ids": [
+            "rahul"
+          ],
+          "time_anchors": [],
+          "transition_markers": [
+            {
+              "marker": "state",
+              "state": "active"
+            }
+          ],
+          "temporal_status": "unanchored",
+          "ordering_evidence": "source_sentence_order"
+        },
+        {
+          "event_id": "e_002",
+          "sequence": 2,
+          "source_sentence": "Rahul is playing football again.",
+          "point_ids": [
+            "playing_1",
+            "state_1"
+          ],
+          "actor_ids": [
+            "rahul"
+          ],
+          "time_anchors": [
+            {
+              "text": "again",
+              "kind": "relative_order",
+              "explicit": false
+            }
+          ],
+          "transition_markers": [
+            {
+              "marker": "state",
+              "state": "active"
+            }
+          ],
+          "temporal_status": "anchored",
+          "ordering_evidence": "source_sentence_order"
+        }
+      ],
+      "temporal_constraints": [
+        {
+          "before": "e_001",
+          "after": "e_002",
+          "type": "sequence",
+          "confidence": "medium",
+          "evidence": "source_sentence_order"
+        }
+      ],
+      "state_history": {},
+      "metrics": {
+        "events": 2,
+        "anchored_events": 1,
+        "unanchored_events": 1,
+        "temporal_constraints": 1,
+        "state_transition_events": 0
+      }
+    },
+    "v43": {
+      "experiment": "EXP-V4.3",
+      "hypothesis": "Opposing observations can be classified as evolution only when explicit temporal evidence orders them; otherwise they remain potential conflicts.",
+      "policy": {
+        "history_is_append_only": true,
+        "preserve_both": true,
+        "explicit_order_required_for_evolution": true,
+        "source_sequence_is_not_sufficient_for_evolution": true,
+        "potential_conflict_is_not_auto_resolved": true,
+        "no_winner_selected": true
+      },
+      "state_relationships": [],
+      "metrics": {
+        "state_relationships": 0,
+        "evolutions": 0,
+        "potential_conflicts": 0,
+        "preserved_observations": 2
+      }
+    }
+  }
+}

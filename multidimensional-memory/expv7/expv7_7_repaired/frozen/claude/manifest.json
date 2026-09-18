@@ -1,0 +1,11 @@
+{
+  "agent": "claude",
+  "status": "frozen",
+  "source_memory_path": "results/claude.memory.json",
+  "frozen_memory_path": "frozen/claude/memory.json",
+  "memory_sha256": "8eff257075b16527b19ac7d57de2dce3afd84df917fe37ee4c274355ec93cbe4",
+  "memory_bytes": 87348,
+  "frozen_at": "2026-09-17T00:00:00+05:30",
+  "report_path": null,
+  "report_sha256": null
+}

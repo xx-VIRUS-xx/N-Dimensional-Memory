@@ -1,0 +1,602 @@
+[
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "ENGINEERING-Q000",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "ENG-0011"
+    ],
+    "required_event_ids": [
+      "ENG-0011"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "ENGINEERING-Q001",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "ENG-0030"
+    ],
+    "required_event_ids": [
+      "ENG-0030"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "ENGINEERING-Q002",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "ENG-0037"
+    ],
+    "required_event_ids": [
+      "ENG-0037"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "ENGINEERING-Q003",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "ENG-0042"
+    ],
+    "required_event_ids": [
+      "ENG-0042"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "ENGINEERING-Q004",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "ENG-0088"
+    ],
+    "required_event_ids": [
+      "ENG-0088"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "ENGINEERING-Q005",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "ENG-0103"
+    ],
+    "required_event_ids": [
+      "ENG-0103"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "ENGINEERING-Q006",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "ENG-0121"
+    ],
+    "required_event_ids": [
+      "ENG-0121"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "ENGINEERING-Q007",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "ENG-0128"
+    ],
+    "required_event_ids": [
+      "ENG-0128"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "ENGINEERING-Q008",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "ENG-0138"
+    ],
+    "required_event_ids": [
+      "ENG-0138"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "ENGINEERING-Q009",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "ENG-0139"
+    ],
+    "required_event_ids": [
+      "ENG-0139"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "PLANNING-Q000",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PLA-0004"
+    ],
+    "required_event_ids": [
+      "PLA-0004"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "PLANNING-Q001",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PLA-0006"
+    ],
+    "required_event_ids": [
+      "PLA-0006"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "PLANNING-Q002",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PLA-0015"
+    ],
+    "required_event_ids": [
+      "PLA-0015"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "PLANNING-Q003",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PLA-0053"
+    ],
+    "required_event_ids": [
+      "PLA-0053"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "PLANNING-Q004",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PLA-0063"
+    ],
+    "required_event_ids": [
+      "PLA-0063"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "PLANNING-Q005",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PLA-0064"
+    ],
+    "required_event_ids": [
+      "PLA-0064"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "PLANNING-Q006",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PLA-0085"
+    ],
+    "required_event_ids": [
+      "PLA-0085"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "PLANNING-Q007",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PLA-0117"
+    ],
+    "required_event_ids": [
+      "PLA-0117"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "PLANNING-Q008",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PLA-0127"
+    ],
+    "required_event_ids": [
+      "PLA-0127"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "PLANNING-Q009",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PLA-0152"
+    ],
+    "required_event_ids": [
+      "PLA-0152"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "PRODUCT-Q000",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PRO-0013"
+    ],
+    "required_event_ids": [
+      "PRO-0013"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "PRODUCT-Q001",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PRO-0027"
+    ],
+    "required_event_ids": [
+      "PRO-0027"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "PRODUCT-Q002",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PRO-0028"
+    ],
+    "required_event_ids": [
+      "PRO-0028"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "PRODUCT-Q003",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PRO-0033"
+    ],
+    "required_event_ids": [
+      "PRO-0033"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "PRODUCT-Q004",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PRO-0115"
+    ],
+    "required_event_ids": [
+      "PRO-0115"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "PRODUCT-Q005",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PRO-0123"
+    ],
+    "required_event_ids": [
+      "PRO-0123"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "PRODUCT-Q006",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PRO-0127"
+    ],
+    "required_event_ids": [
+      "PRO-0127"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "PRODUCT-Q007",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PRO-0137"
+    ],
+    "required_event_ids": [
+      "PRO-0137"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "PRODUCT-Q008",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PRO-0168"
+    ],
+    "required_event_ids": [
+      "PRO-0168"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "PRODUCT-Q009",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PRO-0181"
+    ],
+    "required_event_ids": [
+      "PRO-0181"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "OPERATIONS-Q000",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "OPE-0019"
+    ],
+    "required_event_ids": [
+      "OPE-0019"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "OPERATIONS-Q001",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "OPE-0021"
+    ],
+    "required_event_ids": [
+      "OPE-0021"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "OPERATIONS-Q002",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "OPE-0028"
+    ],
+    "required_event_ids": [
+      "OPE-0028"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "OPERATIONS-Q003",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "OPE-0067"
+    ],
+    "required_event_ids": [
+      "OPE-0067"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "OPERATIONS-Q004",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "OPE-0078"
+    ],
+    "required_event_ids": [
+      "OPE-0078"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "OPERATIONS-Q005",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "OPE-0081"
+    ],
+    "required_event_ids": [
+      "OPE-0081"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "OPERATIONS-Q006",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "OPE-0095"
+    ],
+    "required_event_ids": [
+      "OPE-0095"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "OPERATIONS-Q007",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "OPE-0112"
+    ],
+    "required_event_ids": [
+      "OPE-0112"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "OPERATIONS-Q008",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "OPE-0118"
+    ],
+    "required_event_ids": [
+      "OPE-0118"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "RAW",
+    "query_id": "OPERATIONS-Q009",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "OPE-0143"
+    ],
+    "required_event_ids": [
+      "OPE-0143"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  }
+]

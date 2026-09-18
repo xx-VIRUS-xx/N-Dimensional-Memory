@@ -1,0 +1,63 @@
+{
+  "experiment": "EXP-V4.2",
+  "hypothesis": "Temporal ordering can distinguish legitimate state evolution from potentially conflicting observations while preserving every observation.",
+  "policy": {
+    "history_is_append_only": true,
+    "preserve_both": true,
+    "evolution_is_not_conflict": true,
+    "potential_conflict_is_not_auto_resolved": true,
+    "no_winner_selected": true,
+    "absolute_dates_never_invented": true
+  },
+  "state_histories": {
+    "p_001": [
+      {
+        "event_id": "e_004",
+        "transition": "ended",
+        "marker": "stopped",
+        "source": "Rahul stopped playing football during the summer."
+      },
+      {
+        "event_id": "e_005",
+        "transition": "began",
+        "marker": "started",
+        "source": "Rahul started playing again after joining a new team."
+      }
+    ],
+    "p_011": [
+      {
+        "event_id": "e_005",
+        "transition": "began",
+        "marker": "started",
+        "source": "Rahul started playing again after joining a new team."
+      }
+    ]
+  },
+  "state_relationships": [
+    {
+      "subject_id": "p_001",
+      "target": "playing",
+      "from": "inactive",
+      "to": "active",
+      "event_from": "e_004",
+      "event_to": "e_005",
+      "kind": "evolution",
+      "reason": "opposing states have explicit temporal order",
+      "ordering": {
+        "type": "sequence",
+        "confidence": "medium"
+      },
+      "resolution": "preserve_both",
+      "evidence": [
+        "Rahul stopped playing football during the summer.",
+        "Rahul started playing again after joining a new team."
+      ]
+    }
+  ],
+  "metrics": {
+    "state_relationships": 1,
+    "evolutions": 1,
+    "potential_conflicts": 0,
+    "preserved_observations": 3
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "benchmark": "shared-memory-order-independent-disagreement",
+  "state": {
+    "proposition_id": "rahul.location",
+    "status": "disputed",
+    "current_value": "Delhi",
+    "current_observation_id": "obs-b-001",
+    "observations": [
+      {
+        "observation_id": "obs-a-001",
+        "proposition_id": "rahul.location",
+        "agent_id": "agent-a",
+        "value": "Jaipur",
+        "epistemic_status": "inferred",
+        "observed_at": "2026-01-10T10:00:00",
+        "valid_from": null,
+        "valid_to": null,
+        "evidence": "Rahul appears to be in Jaipur from prior context."
+      },
+      {
+        "observation_id": "obs-b-001",
+        "proposition_id": "rahul.location",
+        "agent_id": "agent-b",
+        "value": "Delhi",
+        "epistemic_status": "confirmed",
+        "observed_at": "2026-01-11T10:00:00",
+        "valid_from": null,
+        "valid_to": null,
+        "evidence": "Rahul explicitly says he is in Delhi."
+      }
+    ],
+    "agents": [
+      "agent-a",
+      "agent-b"
+    ]
+  },
+  "snapshot_round_trip": {
+    "proposition_id": "rahul.location",
+    "status": "disputed",
+    "current_value": "Delhi",
+    "current_observation_id": "obs-b-001",
+    "observations": [
+      {
+        "observation_id": "obs-a-001",
+        "proposition_id": "rahul.location",
+        "agent_id": "agent-a",
+        "value": "Jaipur",
+        "epistemic_status": "inferred",
+        "observed_at": "2026-01-10T10:00:00",
+        "valid_from": null,
+        "valid_to": null,
+        "evidence": "Rahul appears to be in Jaipur from prior context."
+      },
+      {
+        "observation_id": "obs-b-001",
+        "proposition_id": "rahul.location",
+        "agent_id": "agent-b",
+        "value": "Delhi",
+        "epistemic_status": "confirmed",
+        "observed_at": "2026-01-11T10:00:00",
+        "valid_from": null,
+        "valid_to": null,
+        "evidence": "Rahul explicitly says he is in Delhi."
+      }
+    ],
+    "agents": [
+      "agent-a",
+      "agent-b"
+    ]
+  }
+}

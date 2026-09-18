@@ -1,0 +1,14 @@
+{
+  "writer": "claude",
+  "reader": "copilot",
+  "writer_memory_artifact": "results/claude.memory.json",
+  "writer_memory_sha256": "d5a71e9ce6aedddc0c4ce8e17e48a11388088547e2839842e9be6ceb2abfcf0b",
+  "writer_memory_record_count": 50,
+  "reader_input": "Claude memory artifact plus delayed queries and schema only; original conversation, gold memory, gold answers, and Claude report were withheld.",
+  "cases": 8,
+  "correct": 8,
+  "unsupported_claims": 0,
+  "evidence_ids": ["E0005","E0067","E0141","E0178","E0263","E0731","E0356","E0622","E1033","E0233","E0401","E0887","E1190","E0312","E0515","E0448","E0449","E0548","E1102","E0802"],
+  "missing_or_ambiguous_records": [],
+  "limitations": ["No latency or token instrumentation was available."]
+}

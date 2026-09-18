@@ -1,0 +1,11 @@
+{
+  "agent": "copilot",
+  "status": "frozen",
+  "source_memory_path": "results/copilot.memory.json",
+  "frozen_memory_path": "frozen/copilot/memory.json",
+  "memory_sha256": "ef1b36ec47b76b6f8a7f1accaf96a886f26fc4d4a5583f03c4a8e3f2d499836d",
+  "memory_bytes": 87339,
+  "frozen_at": "2026-09-17T00:00:00+05:30",
+  "report_path": null,
+  "report_sha256": null
+}

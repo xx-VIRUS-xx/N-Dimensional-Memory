@@ -1,0 +1,158 @@
+{
+  "conversation_id": "conversation_01",
+  "points": [
+    {
+      "point_id": "p1",
+      "surface": "Rahul",
+      "dimensions": ["noun", "subject", "actor"],
+      "interpretations": ["Person identified as Rahul"],
+      "source_sentences": ["Rahul loves to play football.", "Rahul plays football every Sunday at the park.", "Rahul stopped playing football during the summer.", "Rahul started playing again after joining a new team."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p2",
+      "surface": "loves",
+      "dimensions": ["verb", "emotion", "feeling"],
+      "interpretations": ["Rahul expresses strong positive feeling toward playing football"],
+      "source_sentences": ["Rahul loves to play football."],
+      "confidence": 0.98
+    },
+    {
+      "point_id": "p3",
+      "surface": "play",
+      "dimensions": ["verb", "action"],
+      "interpretations": ["Football-playing activity"],
+      "source_sentences": ["Rahul loves to play football.", "Rahul plays football every Sunday at the park.", "He usually plays with his friends.", "Rahul stopped playing football during the summer.", "Rahul started playing again after joining a new team."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p4",
+      "surface": "football",
+      "dimensions": ["noun", "object", "activity"],
+      "interpretations": ["The sport Rahul plays"],
+      "source_sentences": ["Rahul loves to play football.", "Rahul plays football every Sunday at the park.", "He usually plays with his friends.", "Rahul stopped playing football during the summer."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p5",
+      "surface": "every Sunday",
+      "dimensions": ["time"],
+      "interpretations": ["A weekly recurring time for playing football"],
+      "source_sentences": ["Rahul plays football every Sunday at the park."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p6",
+      "surface": "park",
+      "dimensions": ["place"],
+      "interpretations": ["Place where Rahul plays football"],
+      "source_sentences": ["Rahul plays football every Sunday at the park."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p7",
+      "surface": "friends",
+      "dimensions": ["noun", "actor"],
+      "interpretations": ["People Rahul usually plays football with"],
+      "source_sentences": ["He usually plays with his friends."],
+      "confidence": 0.95
+    },
+    {
+      "point_id": "p8",
+      "surface": "stopped playing football",
+      "dimensions": ["verb", "action", "state"],
+      "interpretations": ["A period in which Rahul was not playing football"],
+      "source_sentences": ["Rahul stopped playing football during the summer.", "So there was a period when he wasn't playing."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p9",
+      "surface": "summer",
+      "dimensions": ["time"],
+      "interpretations": ["Season during which Rahul stopped playing football; the specific year and dates are unspecified"],
+      "source_sentences": ["Rahul stopped playing football during the summer."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p10",
+      "surface": "started playing again",
+      "dimensions": ["verb", "action", "state"],
+      "interpretations": ["Rahul resumed playing football after a period of not playing"],
+      "source_sentences": ["Rahul started playing again after joining a new team.", "His football activity resumed after joining the new team."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p11",
+      "surface": "new team",
+      "dimensions": ["noun", "actor", "state"],
+      "interpretations": ["A team Rahul joined before resuming football; the team's identity is unspecified"],
+      "source_sentences": ["Rahul started playing again after joining a new team.", "His football activity resumed after joining the new team."],
+      "confidence": 1.0
+    }
+  ],
+  "temporal_states": [
+    {
+      "state_id": "t1",
+      "surface": "Rahul plays football every Sunday at the park",
+      "state": "active recurring football activity",
+      "time": "every Sunday",
+      "source_sentences": ["Rahul plays football every Sunday at the park.", "So football seems to be part of his weekly routine."]
+    },
+    {
+      "state_id": "t2",
+      "surface": "Rahul stopped playing football during the summer",
+      "state": "inactive football activity",
+      "time": "during the summer",
+      "source_sentences": ["Rahul stopped playing football during the summer.", "So there was a period when he wasn't playing."]
+    },
+    {
+      "state_id": "t3",
+      "surface": "Rahul started playing again after joining a new team",
+      "state": "resumed football activity",
+      "time": "after joining a new team",
+      "source_sentences": ["Rahul started playing again after joining a new team.", "His football activity resumed after joining the new team."]
+    }
+  ],
+  "ambiguities": [
+    {
+      "surface": "He",
+      "interpretation": "The pronoun is used in the sentence about usually playing with friends and is most naturally understood as Rahul from the immediately preceding context; no independent identity is stated.",
+      "source_sentences": ["He usually plays with his friends."],
+      "confidence": 0.95
+    },
+    {
+      "surface": "regularly",
+      "interpretation": "The assistant describes Rahul's enjoyment as regular, but the first user sentence does not specify a frequency; the later Sunday statement supplies a weekly frequency.",
+      "source_sentences": ["That sounds like something he enjoys regularly.", "Rahul plays football every Sunday at the park."],
+      "confidence": 1.0
+    },
+    {
+      "surface": "summer",
+      "interpretation": "The season is specified, but the year and exact interval are not.",
+      "source_sentences": ["Rahul stopped playing football during the summer."],
+      "confidence": 1.0
+    }
+  ],
+  "explicit_facts": [
+    {
+      "fact": "Rahul loves to play football.",
+      "source_sentences": ["Rahul loves to play football."]
+    },
+    {
+      "fact": "Rahul plays football every Sunday at the park.",
+      "source_sentences": ["Rahul plays football every Sunday at the park."]
+    },
+    {
+      "fact": "Rahul usually plays football with his friends.",
+      "source_sentences": ["He usually plays with his friends."]
+    },
+    {
+      "fact": "Rahul stopped playing football during the summer.",
+      "source_sentences": ["Rahul stopped playing football during the summer."]
+    },
+    {
+      "fact": "Rahul started playing football again after joining a new team.",
+      "source_sentences": ["Rahul started playing again after joining a new team."]
+    }
+  ]
+}

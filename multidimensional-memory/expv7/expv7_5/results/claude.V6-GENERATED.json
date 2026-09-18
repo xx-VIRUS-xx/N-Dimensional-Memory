@@ -1,0 +1,447 @@
+[
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "ENGINEERING-Q000",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: PostgreSQL migration approach was replaced by a newer approach; earlier state marked obsolete (recorded twice).",
+    "evidence_used": [
+      "ENG-MEM-017"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "ENGINEERING-Q001",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Invoice timeout approach was approved after reviewing alternatives.",
+    "evidence_used": [
+      "ENG-MEM-001"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "ENGINEERING-Q002",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Team attempted DynamoDB migration; the first attempt failed (consequential failed attempt, prior to later confirmation).",
+    "evidence_used": [
+      "ENG-MEM-005"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "ENGINEERING-Q003",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: API rate limit approach was approved after reviewing alternatives.",
+    "evidence_used": [
+      "ENG-MEM-019"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "ENGINEERING-Q004",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Search index plan repeatedly noted as remaining unresolved with no final decision confirmed (recorded at least twice).",
+    "evidence_used": [
+      "ENG-MEM-011"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "ENGINEERING-Q005",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Team attempted webhook delivery; first attempt failed (recorded three times across the timeline \u2014 a recurring failure pattern).",
+    "evidence_used": [
+      "ENG-MEM-014"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "ENGINEERING-Q006",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Team attempted PostgreSQL migration; the first attempt failed.",
+    "evidence_used": [
+      "ENG-MEM-016"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "ENGINEERING-Q007",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Search index was confirmed successful after follow-up check (recorded twice).",
+    "evidence_used": [
+      "ENG-MEM-012"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "ENGINEERING-Q008",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Search index approach was approved after reviewing alternatives.",
+    "evidence_used": [
+      "ENG-MEM-013"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "ENGINEERING-Q009",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Team attempted cache invalidation; the first attempt failed.",
+    "evidence_used": [
+      "ENG-MEM-021"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "PLANNING-Q000",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Team ownership plan repeatedly recorded as remaining unresolved with no final decision confirmed (recorded three times), despite an earlier outcome-confirmed record \u2014 conflicting/ambiguous state.",
+    "evidence_used": [
+      "PLA-MEM-025"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "PLANNING-Q001",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Travel schedule was approved after reviewing alternatives.",
+    "evidence_used": [
+      "PLA-MEM-032"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "PLANNING-Q002",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Vendor review state changed from tentative to confirmed. Vendor review shows only a failed first attempt and a later tentative-to-confirmed transition; no explicit 'Decision:' approval event exists for this topic in the planning corpus, unlike travel schedule, documentation deadline, and budget approval which each have explicit Decision events.",
+    "evidence_used": [
+      "PLA-MEM-023",
+      "PLA-MEM-083"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "PLANNING-Q003",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Hiring plan approach was replaced by a newer approach; earlier state marked obsolete, following its earlier confirmation and failed attempt.",
+    "evidence_used": [
+      "PLA-MEM-036"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "PLANNING-Q004",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Hiring plan state changed from tentative to confirmed.",
+    "evidence_used": [
+      "PLA-MEM-034"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "PLANNING-Q005",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Team ownership plan repeatedly recorded as remaining unresolved with no final decision confirmed (recorded three times), despite an earlier outcome-confirmed record \u2014 conflicting/ambiguous state.",
+    "evidence_used": [
+      "PLA-MEM-025"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "PLANNING-Q006",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Team attempted vendor review; the first attempt failed. Vendor review shows only a failed first attempt and a later tentative-to-confirmed transition; no explicit 'Decision:' approval event exists for this topic in the planning corpus, unlike travel schedule, documentation deadline, and budget approval which each have explicit Decision events.",
+    "evidence_used": [
+      "PLA-MEM-022",
+      "PLA-MEM-083"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "PLANNING-Q007",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Customer workshop state changed from tentative to confirmed (recorded twice).",
+    "evidence_used": [
+      "PLA-MEM-029"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "PLANNING-Q008",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Team attempted customer workshop; the first attempt failed (recorded twice).",
+    "evidence_used": [
+      "PLA-MEM-030"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "PLANNING-Q009",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Documentation deadline was confirmed successful after a follow-up check (recorded three times across the timeline).",
+    "evidence_used": [
+      "PLA-MEM-038"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "PRODUCT-Q000",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Team attempted pricing experiment; the first attempt failed.",
+    "evidence_used": [
+      "PRO-MEM-055"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "PRODUCT-Q001",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Export API state changed from tentative to confirmed (recorded twice, interleaved with continued failed attempts and a later obsolescence marker \u2014 net effect: export API had a volatile, non-monotonic history of confirm/fail/replace cycles). Export API's history is non-monotonic: repeated failed attempts (4x), two obsolescence markers, and two tentative-to-confirmed state transitions occur interleaved across the timeline without a clear final resolution order distinguishable from timestamps alone. Treated as genuinely ambiguous rather than resolved.",
+    "evidence_used": [
+      "PRO-MEM-050",
+      "PRO-MEM-084"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "PRODUCT-Q002",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Despite approvals, SSO rollout plan was repeatedly recorded as remaining unresolved with no final decision confirmed (recorded three times) \u2014 conflicting/ambiguous state across the timeline.",
+    "evidence_used": [
+      "PRO-MEM-045"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "PRODUCT-Q003",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Pricing experiment state changed from tentative to confirmed (recorded twice).",
+    "evidence_used": [
+      "PRO-MEM-053"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "PRODUCT-Q004",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Team attempted analytics dashboard; the first attempt failed.",
+    "evidence_used": [
+      "PRO-MEM-051"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "PRODUCT-Q005",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Pricing experiment state changed from tentative to confirmed (recorded twice).",
+    "evidence_used": [
+      "PRO-MEM-053"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "PRODUCT-Q006",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Team attempted export API; the first attempt failed (recorded four times across the timeline \u2014 a persistent recurring failure). Export API's history is non-monotonic: repeated failed attempts (4x), two obsolescence markers, and two tentative-to-confirmed state transitions occur interleaved across the timeline without a clear final resolution order distinguishable from timestamps alone. Treated as genuinely ambiguous rather than resolved.",
+    "evidence_used": [
+      "PRO-MEM-048",
+      "PRO-MEM-084"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "PRODUCT-Q007",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Export API approach was replaced by a newer approach; earlier state marked obsolete (recorded twice). Export API's history is non-monotonic: repeated failed attempts (4x), two obsolescence markers, and two tentative-to-confirmed state transitions occur interleaved across the timeline without a clear final resolution order distinguishable from timestamps alone. Treated as genuinely ambiguous rather than resolved.",
+    "evidence_used": [
+      "PRO-MEM-049",
+      "PRO-MEM-084"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "PRODUCT-Q008",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: SSO rollout was approved after reviewing alternatives (recorded twice, early and again mid-timeline).",
+    "evidence_used": [
+      "PRO-MEM-044"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "PRODUCT-Q009",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Team attempted bulk import; the first attempt failed.",
+    "evidence_used": [
+      "PRO-MEM-060"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "OPERATIONS-Q000",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Team attempted latency incident fix; the first attempt failed (recorded twice).",
+    "evidence_used": [
+      "OPE-MEM-078"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "OPERATIONS-Q001",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Database outage state changed from tentative to confirmed (recorded four times across the timeline \u2014 a recurring/reinforced confirmation).",
+    "evidence_used": [
+      "OPE-MEM-065"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "OPERATIONS-Q002",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Dependency outage plan repeatedly recorded as remaining unresolved with no final decision confirmed (recorded twice).",
+    "evidence_used": [
+      "OPE-MEM-062"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "OPERATIONS-Q003",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Team attempted billing alert fix; the first attempt failed, interleaved with the confirm/replace history above \u2014 a volatile topic.",
+    "evidence_used": [
+      "OPE-MEM-072"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "OPERATIONS-Q004",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Dependency outage response was approved after reviewing alternatives, resolving the earlier unresolved plan state.",
+    "evidence_used": [
+      "OPE-MEM-063"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "OPERATIONS-Q005",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Database outage state changed from tentative to confirmed (recorded four times across the timeline \u2014 a recurring/reinforced confirmation).",
+    "evidence_used": [
+      "OPE-MEM-065"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "OPERATIONS-Q006",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Worker crash approach was replaced by a newer approach; earlier confirmed state marked obsolete.",
+    "evidence_used": [
+      "OPE-MEM-074"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "OPERATIONS-Q007",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Storage alert plan recorded as remaining unresolved with no final decision confirmed (recorded twice, early and late in timeline).",
+    "evidence_used": [
+      "OPE-MEM-064"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "OPERATIONS-Q008",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Dependency outage plan repeatedly recorded as remaining unresolved with no final decision confirmed (recorded twice).",
+    "evidence_used": [
+      "OPE-MEM-062"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "V6-GENERATED",
+    "query_id": "OPERATIONS-Q009",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per generated memory: Backup failure approach was replaced by a newer approach; earlier state marked obsolete.",
+    "evidence_used": [
+      "OPE-MEM-066"
+    ]
+  }
+]

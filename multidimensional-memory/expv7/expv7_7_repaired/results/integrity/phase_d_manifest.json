@@ -1,0 +1,180 @@
+{
+  "phase": "Phase D integrity",
+  "status": "OK_WITH_NOT_RUN_CROSS_AGENT_READERS",
+  "created_at": "2026-09-17T00:00:00+05:30",
+  "dataset": {
+    "corpus_sha256": "80a32f4f6edde3f65fa3ac74dede2750214b4514b23d8ca1c2bec9f7b7b9fec6",
+    "public_queries_sha256": "eb18624c78b25af7e927ff77f47878e890f795b2dc68f17f2f9d376d279d11d5"
+  },
+  "instructions": {
+    "run_prompt_sha256": "744d0d2351be0e3633b12cb945023ae53ce4fa7e2d5839e808d806248670f70e",
+    "agent_handoff_sha256": "af8f4aaa8a68b7834a29965e64f0ea4b59ac831910680dea3a18f6bd241c03b5",
+    "operator_handoff_sha256": "138217423f95df2f0d1ca83627876a0de4092725bcb232e16333bdc98eeb029c"
+  },
+  "frozen_memories": {
+    "claude": {
+      "agent": "claude",
+      "status": "frozen",
+      "source_memory_path": "results/claude.memory.json",
+      "frozen_memory_path": "frozen/claude/memory.json",
+      "memory_sha256": "8eff257075b16527b19ac7d57de2dce3afd84df917fe37ee4c274355ec93cbe4",
+      "memory_bytes": 87348,
+      "frozen_at": "2026-09-17T00:00:00+05:30",
+      "report_path": null,
+      "report_sha256": null
+    },
+    "copilot": {
+      "agent": "copilot",
+      "status": "frozen",
+      "source_memory_path": "results/copilot.memory.json",
+      "frozen_memory_path": "frozen/copilot/memory.json",
+      "memory_sha256": "ef1b36ec47b76b6f8a7f1accaf96a886f26fc4d4a5583f03c4a8e3f2d499836d",
+      "memory_bytes": 87339,
+      "frozen_at": "2026-09-17T00:00:00+05:30",
+      "report_path": null,
+      "report_sha256": null
+    },
+    "codex": {
+      "agent": "codex",
+      "status": "frozen",
+      "source_memory_path": "results/codex.memory.json",
+      "frozen_memory_path": "frozen/codex/memory.json",
+      "memory_sha256": "0887d43b4feeb86f0c264ac906b88776a8d651e921c719017054c1352369d715",
+      "memory_bytes": 81240,
+      "frozen_at": "2026-09-17T00:00:00+05:30",
+      "report_path": "results/codex.report.md",
+      "report_sha256": "aeb4db41c4ada8ae7ef2b8605d33e3906334083307181acfcecb35d39d97b93d"
+    }
+  },
+  "cross_agent": {
+    "completed": [
+      "claude->codex",
+      "copilot->codex"
+    ],
+    "not_run": [
+      "claude->copilot",
+      "copilot->claude",
+      "codex->claude",
+      "codex->copilot"
+    ],
+    "reason": "Only Codex reader is available in this session; other reader agents were not impersonated."
+  },
+  "tracked_artifacts": [
+    {
+      "path": "frozen/claude/manifest.json",
+      "sha256": "587037aa9d22e8e6357066bb0a97715f83e819908289055226be17198e69cbe8",
+      "bytes": 357
+    },
+    {
+      "path": "frozen/claude/memory.json",
+      "sha256": "8eff257075b16527b19ac7d57de2dce3afd84df917fe37ee4c274355ec93cbe4",
+      "bytes": 87348
+    },
+    {
+      "path": "frozen/codex/manifest.json",
+      "sha256": "25b33aa7a62c464e5e36b903b45183a98c927cc7dc46e8b07bfc52ee30fef366",
+      "bytes": 437
+    },
+    {
+      "path": "frozen/codex/memory.json",
+      "sha256": "0887d43b4feeb86f0c264ac906b88776a8d651e921c719017054c1352369d715",
+      "bytes": 81240
+    },
+    {
+      "path": "frozen/copilot/manifest.json",
+      "sha256": "37301ccb0d8f95e918c1ee486762b3c5986a66138afe8a2f5b96b2c6889c24c4",
+      "bytes": 360
+    },
+    {
+      "path": "frozen/copilot/memory.json",
+      "sha256": "ef1b36ec47b76b6f8a7f1accaf96a886f26fc4d4a5583f03c4a8e3f2d499836d",
+      "bytes": 87339
+    },
+    {
+      "path": "results/codex.memory.json",
+      "sha256": "0887d43b4feeb86f0c264ac906b88776a8d651e921c719017054c1352369d715",
+      "bytes": 81240
+    },
+    {
+      "path": "results/codex.memory_eval.json",
+      "sha256": "82db6ae35961a0dcad6c12a6a262566dadecf045befc1598a6e728672eb11276",
+      "bytes": 3375
+    },
+    {
+      "path": "results/cross_agent/claude_to_codex.json",
+      "sha256": "19cb99eaf63c4629e1d8d75be31c55d4d8cc6f458f9584e79fa1d62c60a66ed0",
+      "bytes": 673128
+    },
+    {
+      "path": "results/cross_agent/claude_to_copilot.json",
+      "sha256": "9610fb903d5240f2a35ad4f462a846751ced1a31c92995cbcf009ba4184a666b",
+      "bytes": 56348
+    },
+    {
+      "path": "results/cross_agent/codex_to_claude.json",
+      "sha256": "2e3c01cc0b06a99989d2b0f7657b107268a9d117eede858eae6ff2fb88a15e32",
+      "bytes": 56057
+    },
+    {
+      "path": "results/cross_agent/codex_to_copilot.json",
+      "sha256": "4d2adce618c0e2007ceb2f3638b8acb900f03a52f709a827222acd512e6c1cf4",
+      "bytes": 56251
+    },
+    {
+      "path": "results/cross_agent/copilot_to_claude.json",
+      "sha256": "43ee2309287b5c27f41643bf5465d8d48787cf450f482e0de3e7925169e3945b",
+      "bytes": 56251
+    },
+    {
+      "path": "results/cross_agent/copilot_to_codex.json",
+      "sha256": "d131b068a04b57094c9a20be813b4a22c72b898cb38cffbeb5226b258393b7e5",
+      "bytes": 380528
+    },
+    {
+      "path": "results/retrieval/codex.BM25.json",
+      "sha256": "fe3073195fcd87398d9016ddc18285aad754f226429e4105f124d8ffcb12ce2d",
+      "bytes": 733962
+    },
+    {
+      "path": "results/retrieval/codex.DENSE.json",
+      "sha256": "71c9da2238b680bfdf6347c7eafe962b324a9aafff1b1017ab2f237f2a7c5019",
+      "bytes": 48731
+    },
+    {
+      "path": "results/retrieval/codex.GRAPHRAG.json",
+      "sha256": "ca783c4f3d190b464baf38d01681dd42ecb854bef919b4597aeae7b62196937c",
+      "bytes": 45533
+    },
+    {
+      "path": "results/retrieval/codex.HIPPORAG2.json",
+      "sha256": "763efbad0264192a9d697b596921b25fed7c4278c245b8f34bb5dd74f362ef12",
+      "bytes": 43594
+    },
+    {
+      "path": "results/retrieval/codex.HYBRID.json",
+      "sha256": "00806aa4dcdfbc1b48c216622b2e4b6d629db1d896500faaf815cfad6d2b8098",
+      "bytes": 44561
+    },
+    {
+      "path": "results/retrieval/codex.MEMORY+RAW.json",
+      "sha256": "3d3e86a33122842be4ae8a8c2ce089166c366333f4b44540ead9c5f1a6db8428",
+      "bytes": 255455
+    },
+    {
+      "path": "results/retrieval/codex.MEMORY.json",
+      "sha256": "a2d763ffa939ffd919a2c82577db88490cd195a4b30fb151382e947158455a04",
+      "bytes": 162338
+    },
+    {
+      "path": "results/retrieval/codex.RAPTOR.json",
+      "sha256": "641d483f17311059c7a276f428ff2be870e1ca64c548ad0772ee176adbfe9f48",
+      "bytes": 43300
+    },
+    {
+      "path": "results/retrieval/codex.RAW.json",
+      "sha256": "1731db57c0f815ea7565b28eb95177cf328bfcd7dd97d79b6f4a9456ecb5f4fa",
+      "bytes": 2660925
+    }
+  ],
+  "measurements_policy": "Token counts, latency, and cost were unavailable and left null."
+}

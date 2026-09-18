@@ -1,0 +1,185 @@
+{
+  "conversation_id": "conversation_02",
+
+  "points": [
+    {
+      "point_id": "p1",
+      "surface": "Rahul",
+      "dimensions": ["noun", "subject", "actor"],
+      "interpretations": ["A person who initiates a conversation with Arjun about football."],
+      "source_sentences": ["Rahul spoke to Arjun about football."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p2",
+      "surface": "Arjun",
+      "dimensions": ["noun", "object", "target"],
+      "interpretations": ["A person Rahul spoke to; also a candidate referent for later pronouns."],
+      "source_sentences": ["Rahul spoke to Arjun about football."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p3",
+      "surface": "spoke to",
+      "dimensions": ["verb", "action"],
+      "interpretations": ["A communication action performed by Rahul, directed at Arjun."],
+      "source_sentences": ["Rahul spoke to Arjun about football."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p4",
+      "surface": "football",
+      "dimensions": ["noun", "object", "activity"],
+      "interpretations": ["The topic of the conversation between Rahul and Arjun."],
+      "source_sentences": ["Rahul spoke to Arjun about football."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p5",
+      "surface": "He",
+      "dimensions": ["noun", "subject", "actor"],
+      "interpretations": [
+        "Ambiguous pronoun; could refer to Rahul (the initiator of the conversation) or Arjun (the person spoken to).",
+        "No grammatical or contextual marker disambiguates the referent."
+      ],
+      "source_sentences": ["He said he might join the team next month."],
+      "confidence": 0.5
+    },
+    {
+      "point_id": "p6",
+      "surface": "might join",
+      "dimensions": ["verb", "intent", "state"],
+      "interpretations": ["Expresses a tentative, unconfirmed intent to join a team; not a committed action."],
+      "source_sentences": ["He said he might join the team next month."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p7",
+      "surface": "the team",
+      "dimensions": ["noun", "object"],
+      "interpretations": ["An unspecified team referenced without further identifying detail."],
+      "source_sentences": ["He said he might join the team next month."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p8",
+      "surface": "next month",
+      "dimensions": ["time"],
+      "interpretations": ["The prospective future time frame for the possible joining."],
+      "source_sentences": ["He said he might join the team next month."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p9",
+      "surface": "They",
+      "dimensions": ["noun", "subject", "actor"],
+      "interpretations": [
+        "Ambiguous plural pronoun; most plausibly refers to Rahul and Arjun jointly, given they are the only two people introduced.",
+        "No explicit confirmation that the referenced pair excludes or includes other unmentioned people."
+      ],
+      "source_sentences": ["They discussed meeting at the park."],
+      "confidence": 0.6
+    },
+    {
+      "point_id": "p10",
+      "surface": "discussed",
+      "dimensions": ["verb", "action"],
+      "interpretations": ["A communicative action regarding a plan to meet."],
+      "source_sentences": ["They discussed meeting at the park."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p11",
+      "surface": "meeting",
+      "dimensions": ["noun", "verb", "action"],
+      "interpretations": ["A planned future encounter, not yet confirmed as having occurred."],
+      "source_sentences": ["They discussed meeting at the park."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p12",
+      "surface": "park",
+      "dimensions": ["noun", "place"],
+      "interpretations": ["The proposed location for the discussed meeting."],
+      "source_sentences": ["They discussed meeting at the park."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p13",
+      "surface": "the plan",
+      "dimensions": ["noun", "object"],
+      "interpretations": ["Refers back to the previously discussed meeting/joining plan; the specific referent among prior plans is not explicitly disambiguated."],
+      "source_sentences": ["The plan changed later."],
+      "confidence": 0.7
+    },
+    {
+      "point_id": "p14",
+      "surface": "changed",
+      "dimensions": ["verb", "state", "action"],
+      "interpretations": ["Marks a state transition of the plan; the nature and direction of the change is not specified."],
+      "source_sentences": ["The plan changed later."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "p15",
+      "surface": "later",
+      "dimensions": ["time"],
+      "interpretations": ["An unspecified point in time after the discussion, when the plan changed."],
+      "source_sentences": ["The plan changed later."],
+      "confidence": 1.0
+    }
+  ],
+
+  "temporal_states": [
+    {
+      "state_id": "t1",
+      "subject": "the plan",
+      "topic": "team-joining / meeting plan",
+      "sequence": [
+        {
+          "state": "discussed / tentative",
+          "evidence": ["He said he might join the team next month.", "They discussed meeting at the park."]
+        },
+        {
+          "state": "changed",
+          "evidence": ["The plan changed later."]
+        }
+      ],
+      "note": "The plan is explicitly marked as having changed, but the resulting state after the change is not described in the conversation."
+    }
+  ],
+
+  "ambiguities": [
+    {
+      "ambiguity_id": "a1",
+      "surface": "He",
+      "candidate_referents": ["Rahul", "Arjun"],
+      "resolution_status": "unresolved",
+      "note": "Both Rahul and Arjun are grammatically valid antecedents from the prior sentence; the text gives no disambiguating evidence.",
+      "source_sentences": ["He said he might join the team next month."]
+    },
+    {
+      "ambiguity_id": "a2",
+      "surface": "They",
+      "candidate_referents": ["Rahul and Arjun"],
+      "resolution_status": "resolved_from_context",
+      "note": "Only two people have been introduced in the conversation, making the joint reading the only plausible contextual interpretation, though it is not explicitly stated.",
+      "source_sentences": ["They discussed meeting at the park."]
+    },
+    {
+      "ambiguity_id": "a3",
+      "surface": "the plan",
+      "candidate_referents": ["the plan to join the team", "the plan to meet at the park", "a combined/unspecified plan"],
+      "resolution_status": "unresolved",
+      "note": "Two candidate plans were introduced earlier (joining the team, meeting at the park); the text does not specify which one 'the plan' refers to, or whether it refers to both.",
+      "source_sentences": ["The plan changed later."]
+    }
+  ],
+
+  "explicit_facts": [
+    "Rahul spoke to Arjun about football.",
+    "An unspecified 'he' said he might join the team next month.",
+    "An unspecified 'they' discussed meeting at the park.",
+    "The plan changed later."
+  ]
+}

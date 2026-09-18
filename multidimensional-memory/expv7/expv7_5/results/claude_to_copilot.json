@@ -1,0 +1,487 @@
+[
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "ENGINEERING-Q000",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "ENG-MEM-017"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "ENGINEERING-Q001",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "ENG-MEM-001"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "ENGINEERING-Q002",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "ENG-MEM-005"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "ENGINEERING-Q003",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "ENG-MEM-019"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "ENGINEERING-Q004",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "ENG-MEM-011"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "ENGINEERING-Q005",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "ENG-MEM-014"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "ENGINEERING-Q006",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "ENG-MEM-016"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "ENGINEERING-Q007",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "ENG-MEM-012"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "ENGINEERING-Q008",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "ENG-MEM-013"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "ENGINEERING-Q009",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "ENG-MEM-021"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "PLANNING-Q000",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PLA-MEM-025"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "PLANNING-Q001",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PLA-MEM-032"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "PLANNING-Q002",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PLA-MEM-023",
+      "PLA-MEM-083"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "PLANNING-Q003",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PLA-MEM-036"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "PLANNING-Q004",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PLA-MEM-034"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "PLANNING-Q005",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PLA-MEM-025"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "PLANNING-Q006",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PLA-MEM-022",
+      "PLA-MEM-083"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "PLANNING-Q007",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PLA-MEM-029"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "PLANNING-Q008",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PLA-MEM-030"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "PLANNING-Q009",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PLA-MEM-038"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "PRODUCT-Q000",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PRO-MEM-055"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "PRODUCT-Q001",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PRO-MEM-050",
+      "PRO-MEM-084"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "PRODUCT-Q002",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PRO-MEM-045"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "PRODUCT-Q003",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PRO-MEM-053"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "PRODUCT-Q004",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PRO-MEM-051"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "PRODUCT-Q005",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PRO-MEM-053"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "PRODUCT-Q006",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PRO-MEM-048",
+      "PRO-MEM-084"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "PRODUCT-Q007",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PRO-MEM-049",
+      "PRO-MEM-084"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "PRODUCT-Q008",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PRO-MEM-044"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "PRODUCT-Q009",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "PRO-MEM-060"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "OPERATIONS-Q000",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "OPE-MEM-078"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "OPERATIONS-Q001",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "OPE-MEM-065"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "OPERATIONS-Q002",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "OPE-MEM-062"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "OPERATIONS-Q003",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "OPE-MEM-072"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "OPERATIONS-Q004",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "OPE-MEM-063"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "OPERATIONS-Q005",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "OPE-MEM-065"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "OPERATIONS-Q006",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "OPE-MEM-074"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "OPERATIONS-Q007",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "OPE-MEM-064"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "OPERATIONS-Q008",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "OPE-MEM-062"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent": "Copilot",
+    "condition": "CROSS-AGENT",
+    "query_id": "OPERATIONS-Q009",
+    "correct": true,
+    "unsupported_claim": false,
+    "evidence_used": [
+      "OPE-MEM-066"
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  }
+]

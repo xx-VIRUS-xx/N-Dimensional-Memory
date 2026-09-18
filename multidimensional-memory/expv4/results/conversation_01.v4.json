@@ -1,0 +1,146 @@
+{
+  "experiment": "EXP-V4",
+  "hypothesis": "A persistent semantic substrate can preserve evolving temporal state without collapsing uncertain or relative time into invented absolute dates.",
+  "policy": {
+    "temporal_claims_are_conservative": true,
+    "absolute_dates_are_never_invented": true,
+    "sequence_is_weak_unless_explicit": true,
+    "state_history_is_append_only": true,
+    "no_llm": true,
+    "no_embeddings": true,
+    "no_vector_db": true,
+    "no_graph_db": true
+  },
+  "events": [
+    {
+      "event_id": "e_001",
+      "sequence": 1,
+      "source_sentence": "Rahul loves to play football.",
+      "point_ids": [
+        "p_002",
+        "p_003",
+        "p_012"
+      ],
+      "actor_ids": [
+        "p_001"
+      ],
+      "time_anchors": [],
+      "transition_markers": [],
+      "temporal_status": "unanchored",
+      "ordering_evidence": "source_sentence_order"
+    },
+    {
+      "event_id": "e_004",
+      "sequence": 4,
+      "source_sentence": "Rahul stopped playing football during the summer.",
+      "point_ids": [
+        "p_009"
+      ],
+      "actor_ids": [
+        "p_001"
+      ],
+      "time_anchors": [
+        {
+          "text": "summer",
+          "kind": "seasonal",
+          "explicit": true
+        }
+      ],
+      "transition_markers": [
+        {
+          "marker": "stopped",
+          "state": "ended"
+        }
+      ],
+      "temporal_status": "anchored",
+      "ordering_evidence": "source_sentence_order"
+    },
+    {
+      "event_id": "e_005",
+      "sequence": 5,
+      "source_sentence": "Rahul started playing again after joining a new team.",
+      "point_ids": [
+        "p_010",
+        "p_011"
+      ],
+      "actor_ids": [
+        "p_001",
+        "p_011"
+      ],
+      "time_anchors": [
+        {
+          "text": "again",
+          "kind": "relative_order",
+          "explicit": false
+        },
+        {
+          "text": "after",
+          "kind": "relative_order",
+          "explicit": false
+        }
+      ],
+      "transition_markers": [
+        {
+          "marker": "started",
+          "state": "began"
+        }
+      ],
+      "temporal_status": "anchored",
+      "ordering_evidence": "source_sentence_order"
+    }
+  ],
+  "temporal_constraints": [
+    {
+      "before": "e_001",
+      "after": "e_004",
+      "type": "sequence",
+      "confidence": "medium",
+      "evidence": "source_sentence_order"
+    },
+    {
+      "before": "e_004",
+      "after": "e_005",
+      "type": "sequence",
+      "confidence": "medium",
+      "evidence": "source_sentence_order"
+    },
+    {
+      "before": "e_004",
+      "after": "e_005",
+      "type": "explicit_after",
+      "confidence": "high",
+      "evidence": "Rahul started playing again after joining a new team."
+    }
+  ],
+  "state_history": {
+    "p_001": [
+      {
+        "event_id": "e_004",
+        "transition": "ended",
+        "marker": "stopped",
+        "source": "Rahul stopped playing football during the summer."
+      },
+      {
+        "event_id": "e_005",
+        "transition": "began",
+        "marker": "started",
+        "source": "Rahul started playing again after joining a new team."
+      }
+    ],
+    "p_011": [
+      {
+        "event_id": "e_005",
+        "transition": "began",
+        "marker": "started",
+        "source": "Rahul started playing again after joining a new team."
+      }
+    ]
+  },
+  "metrics": {
+    "events": 3,
+    "anchored_events": 2,
+    "unanchored_events": 1,
+    "temporal_constraints": 3,
+    "state_transition_events": 2
+  }
+}

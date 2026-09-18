@@ -1,0 +1,4802 @@
+{
+  "Q0001": [
+    {
+      "event_id": "E00001",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00016",
+      "score": 0.672438
+    },
+    {
+      "event_id": "E00017",
+      "score": 0.607531
+    },
+    {
+      "event_id": "E00040",
+      "score": 0.532193
+    },
+    {
+      "event_id": "E00009",
+      "score": 0.527303
+    },
+    {
+      "event_id": "E00010",
+      "score": 0.390211
+    },
+    {
+      "event_id": "E00018",
+      "score": 0.38507
+    },
+    {
+      "event_id": "E00011",
+      "score": 0.376566
+    },
+    {
+      "event_id": "E00024",
+      "score": 0.296454
+    },
+    {
+      "event_id": "E00002",
+      "score": 0.282518
+    },
+    {
+      "event_id": "E00032",
+      "score": 0.269765
+    },
+    {
+      "event_id": "E00025",
+      "score": 0.145024
+    }
+  ],
+  "Q0002": [
+    {
+      "event_id": "E00001",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00034",
+      "score": 0.600529
+    },
+    {
+      "event_id": "E00008",
+      "score": 0.562309
+    },
+    {
+      "event_id": "E00004",
+      "score": 0.535111
+    },
+    {
+      "event_id": "E00002",
+      "score": 0.310424
+    },
+    {
+      "event_id": "E00018",
+      "score": 0.280954
+    },
+    {
+      "event_id": "E00003",
+      "score": 0.25603
+    },
+    {
+      "event_id": "E00042",
+      "score": 0.251008
+    },
+    {
+      "event_id": "E00024",
+      "score": 0.185953
+    },
+    {
+      "event_id": "E00040",
+      "score": 0.175342
+    },
+    {
+      "event_id": "E00041",
+      "score": 0.162907
+    },
+    {
+      "event_id": "E00021",
+      "score": 0.079152
+    }
+  ],
+  "Q0003": [
+    {
+      "event_id": "E00025",
+      "score": 0.988369
+    },
+    {
+      "event_id": "E00032",
+      "score": 0.98691
+    },
+    {
+      "event_id": "E00040",
+      "score": 0.705815
+    },
+    {
+      "event_id": "E00030",
+      "score": 0.6872
+    },
+    {
+      "event_id": "E00004",
+      "score": 0.682127
+    },
+    {
+      "event_id": "E00001",
+      "score": 0.521554
+    },
+    {
+      "event_id": "E00026",
+      "score": 0.39624
+    },
+    {
+      "event_id": "E00019",
+      "score": 0.344136
+    },
+    {
+      "event_id": "E00008",
+      "score": 0.340268
+    },
+    {
+      "event_id": "E00003",
+      "score": 0.261532
+    },
+    {
+      "event_id": "E00021",
+      "score": 0.160051
+    },
+    {
+      "event_id": "E00022",
+      "score": 0.160051
+    }
+  ],
+  "Q0004": [
+    {
+      "event_id": "E00034",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00008",
+      "score": 0.291586
+    },
+    {
+      "event_id": "E00005",
+      "score": 0.240962
+    },
+    {
+      "event_id": "E00002",
+      "score": 0.159101
+    },
+    {
+      "event_id": "E00018",
+      "score": 0.143928
+    },
+    {
+      "event_id": "E00003",
+      "score": 0.13169
+    },
+    {
+      "event_id": "E00042",
+      "score": 0.128609
+    },
+    {
+      "event_id": "E00024",
+      "score": 0.095043
+    },
+    {
+      "event_id": "E00040",
+      "score": 0.089676
+    },
+    {
+      "event_id": "E00041",
+      "score": 0.083136
+    },
+    {
+      "event_id": "E00021",
+      "score": 0.038311
+    },
+    {
+      "event_id": "E00022",
+      "score": 0.038311
+    }
+  ],
+  "Q0005": [
+    {
+      "event_id": "E00041",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00034",
+      "score": 0.184279
+    },
+    {
+      "event_id": "E00021",
+      "score": 0.169963
+    },
+    {
+      "event_id": "E00022",
+      "score": 0.169963
+    },
+    {
+      "event_id": "E00023",
+      "score": 0.169963
+    },
+    {
+      "event_id": "E00043",
+      "score": 0.165039
+    },
+    {
+      "event_id": "E00036",
+      "score": 0.160574
+    },
+    {
+      "event_id": "E00026",
+      "score": 0.139647
+    },
+    {
+      "event_id": "E00029",
+      "score": 0.139495
+    },
+    {
+      "event_id": "E00030",
+      "score": 0.138841
+    },
+    {
+      "event_id": "E00033",
+      "score": 0.120127
+    },
+    {
+      "event_id": "E00011",
+      "score": 0.119598
+    }
+  ],
+  "Q0006": [
+    {
+      "event_id": "E00017",
+      "score": 0.992761
+    },
+    {
+      "event_id": "E00008",
+      "score": 0.978211
+    },
+    {
+      "event_id": "E00040",
+      "score": 0.943766
+    },
+    {
+      "event_id": "E00002",
+      "score": 0.554793
+    },
+    {
+      "event_id": "E00016",
+      "score": 0.506697
+    },
+    {
+      "event_id": "E00001",
+      "score": 0.465524
+    },
+    {
+      "event_id": "E00043",
+      "score": 0.458619
+    },
+    {
+      "event_id": "E00025",
+      "score": 0.358408
+    },
+    {
+      "event_id": "E00009",
+      "score": 0.313102
+    },
+    {
+      "event_id": "E00021",
+      "score": 0.211512
+    },
+    {
+      "event_id": "E00022",
+      "score": 0.211512
+    },
+    {
+      "event_id": "E00023",
+      "score": 0.14598
+    }
+  ],
+  "Q0007": [
+    {
+      "event_id": "E00018",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00024",
+      "score": 0.711813
+    },
+    {
+      "event_id": "E00004",
+      "score": 0.637183
+    },
+    {
+      "event_id": "E00010",
+      "score": 0.62934
+    },
+    {
+      "event_id": "E00034",
+      "score": 0.597222
+    },
+    {
+      "event_id": "E00005",
+      "score": 0.55475
+    },
+    {
+      "event_id": "E00017",
+      "score": 0.513979
+    },
+    {
+      "event_id": "E00016",
+      "score": 0.494196
+    },
+    {
+      "event_id": "E00033",
+      "score": 0.474254
+    },
+    {
+      "event_id": "E00008",
+      "score": 0.454569
+    },
+    {
+      "event_id": "E00040",
+      "score": 0.218856
+    },
+    {
+      "event_id": "E00009",
+      "score": 0.218255
+    }
+  ],
+  "Q0008": [
+    {
+      "event_id": "E00025",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00004",
+      "score": 0.853998
+    },
+    {
+      "event_id": "E00032",
+      "score": 0.790769
+    },
+    {
+      "event_id": "E00026",
+      "score": 0.55412
+    },
+    {
+      "event_id": "E00036",
+      "score": 0.406053
+    },
+    {
+      "event_id": "E00029",
+      "score": 0.352945
+    },
+    {
+      "event_id": "E00030",
+      "score": 0.351313
+    },
+    {
+      "event_id": "E00034",
+      "score": 0.307832
+    },
+    {
+      "event_id": "E00033",
+      "score": 0.30407
+    },
+    {
+      "event_id": "E00011",
+      "score": 0.302693
+    },
+    {
+      "event_id": "E00018",
+      "score": 0.274821
+    },
+    {
+      "event_id": "E00021",
+      "score": 0.117824
+    }
+  ],
+  "Q0009": [
+    {
+      "event_id": "E00063",
+      "score": 0.995515
+    },
+    {
+      "event_id": "E00064",
+      "score": 0.982321
+    },
+    {
+      "event_id": "E00048",
+      "score": 0.949514
+    },
+    {
+      "event_id": "E00056",
+      "score": 0.859878
+    },
+    {
+      "event_id": "E00087",
+      "score": 0.830601
+    },
+    {
+      "event_id": "E00057",
+      "score": 0.789878
+    },
+    {
+      "event_id": "E00065",
+      "score": 0.709192
+    },
+    {
+      "event_id": "E00071",
+      "score": 0.612461
+    },
+    {
+      "event_id": "E00091",
+      "score": 0.445838
+    },
+    {
+      "event_id": "E00093",
+      "score": 0.445838
+    },
+    {
+      "event_id": "E00049",
+      "score": 0.334416
+    },
+    {
+      "event_id": "E00058",
+      "score": 0.317761
+    }
+  ],
+  "Q0010": [
+    {
+      "event_id": "E00048",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00081",
+      "score": 0.727263
+    },
+    {
+      "event_id": "E00091",
+      "score": 0.691394
+    },
+    {
+      "event_id": "E00093",
+      "score": 0.691394
+    },
+    {
+      "event_id": "E00055",
+      "score": 0.68031
+    },
+    {
+      "event_id": "E00049",
+      "score": 0.374115
+    },
+    {
+      "event_id": "E00065",
+      "score": 0.327583
+    },
+    {
+      "event_id": "E00050",
+      "score": 0.309637
+    },
+    {
+      "event_id": "E00089",
+      "score": 0.303163
+    },
+    {
+      "event_id": "E00071",
+      "score": 0.216535
+    },
+    {
+      "event_id": "E00087",
+      "score": 0.205975
+    },
+    {
+      "event_id": "E00088",
+      "score": 0.196489
+    }
+  ],
+  "Q0011": [
+    {
+      "event_id": "E00079",
+      "score": 0.989416
+    },
+    {
+      "event_id": "E00072",
+      "score": 0.985071
+    },
+    {
+      "event_id": "E00075",
+      "score": 0.644513
+    },
+    {
+      "event_id": "E00076",
+      "score": 0.644513
+    },
+    {
+      "event_id": "E00087",
+      "score": 0.64321
+    },
+    {
+      "event_id": "E00048",
+      "score": 0.502152
+    },
+    {
+      "event_id": "E00073",
+      "score": 0.435715
+    },
+    {
+      "event_id": "E00067",
+      "score": 0.324004
+    },
+    {
+      "event_id": "E00068",
+      "score": 0.324004
+    },
+    {
+      "event_id": "E00070",
+      "score": 0.324004
+    },
+    {
+      "event_id": "E00055",
+      "score": 0.319455
+    },
+    {
+      "event_id": "E00050",
+      "score": 0.246342
+    }
+  ],
+  "Q0012": [
+    {
+      "event_id": "E00081",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00055",
+      "score": 0.290853
+    },
+    {
+      "event_id": "E00053",
+      "score": 0.240962
+    },
+    {
+      "event_id": "E00049",
+      "score": 0.158718
+    },
+    {
+      "event_id": "E00065",
+      "score": 0.138898
+    },
+    {
+      "event_id": "E00050",
+      "score": 0.13169
+    },
+    {
+      "event_id": "E00089",
+      "score": 0.128609
+    },
+    {
+      "event_id": "E00071",
+      "score": 0.091681
+    },
+    {
+      "event_id": "E00087",
+      "score": 0.087245
+    },
+    {
+      "event_id": "E00088",
+      "score": 0.083136
+    },
+    {
+      "event_id": "E00073",
+      "score": 0.066636
+    },
+    {
+      "event_id": "E00063",
+      "score": 0.051777
+    }
+  ],
+  "Q0013": [
+    {
+      "event_id": "E00088",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00058",
+      "score": 0.270727
+    },
+    {
+      "event_id": "E00059",
+      "score": 0.270727
+    },
+    {
+      "event_id": "E00061",
+      "score": 0.270727
+    },
+    {
+      "event_id": "E00081",
+      "score": 0.184279
+    },
+    {
+      "event_id": "E00078",
+      "score": 0.139495
+    },
+    {
+      "event_id": "E00073",
+      "score": 0.139007
+    },
+    {
+      "event_id": "E00075",
+      "score": 0.138841
+    },
+    {
+      "event_id": "E00076",
+      "score": 0.138841
+    },
+    {
+      "event_id": "E00051",
+      "score": 0.122935
+    },
+    {
+      "event_id": "E00052",
+      "score": 0.122935
+    },
+    {
+      "event_id": "E00080",
+      "score": 0.120127
+    }
+  ],
+  "Q0014": [
+    {
+      "event_id": "E00055",
+      "score": 0.99194
+    },
+    {
+      "event_id": "E00064",
+      "score": 0.969867
+    },
+    {
+      "event_id": "E00087",
+      "score": 0.929191
+    },
+    {
+      "event_id": "E00049",
+      "score": 0.583008
+    },
+    {
+      "event_id": "E00063",
+      "score": 0.515374
+    },
+    {
+      "event_id": "E00048",
+      "score": 0.503176
+    },
+    {
+      "event_id": "E00084",
+      "score": 0.451938
+    },
+    {
+      "event_id": "E00085",
+      "score": 0.451938
+    },
+    {
+      "event_id": "E00086",
+      "score": 0.451938
+    },
+    {
+      "event_id": "E00072",
+      "score": 0.351293
+    },
+    {
+      "event_id": "E00056",
+      "score": 0.328884
+    },
+    {
+      "event_id": "E00081",
+      "score": 0.2148
+    }
+  ],
+  "Q0015": [
+    {
+      "event_id": "E00065",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00057",
+      "score": 0.811011
+    },
+    {
+      "event_id": "E00071",
+      "score": 0.792627
+    },
+    {
+      "event_id": "E00064",
+      "score": 0.671943
+    },
+    {
+      "event_id": "E00063",
+      "score": 0.609783
+    },
+    {
+      "event_id": "E00056",
+      "score": 0.552511
+    },
+    {
+      "event_id": "E00087",
+      "score": 0.53773
+    },
+    {
+      "event_id": "E00081",
+      "score": 0.433621
+    },
+    {
+      "event_id": "E00053",
+      "score": 0.402271
+    },
+    {
+      "event_id": "E00080",
+      "score": 0.344386
+    },
+    {
+      "event_id": "E00055",
+      "score": 0.328912
+    },
+    {
+      "event_id": "E00049",
+      "score": 0.15097
+    }
+  ],
+  "Q0016": [
+    {
+      "event_id": "E00072",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00079",
+      "score": 0.817726
+    },
+    {
+      "event_id": "E00073",
+      "score": 0.597309
+    },
+    {
+      "event_id": "E00058",
+      "score": 0.353331
+    },
+    {
+      "event_id": "E00059",
+      "score": 0.353331
+    },
+    {
+      "event_id": "E00061",
+      "score": 0.353331
+    },
+    {
+      "event_id": "E00078",
+      "score": 0.325583
+    },
+    {
+      "event_id": "E00075",
+      "score": 0.324113
+    },
+    {
+      "event_id": "E00076",
+      "score": 0.324113
+    },
+    {
+      "event_id": "E00051",
+      "score": 0.286875
+    },
+    {
+      "event_id": "E00052",
+      "score": 0.286875
+    },
+    {
+      "event_id": "E00080",
+      "score": 0.178695
+    }
+  ],
+  "Q0017": [
+    {
+      "event_id": "E00095",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00110",
+      "score": 0.674633
+    },
+    {
+      "event_id": "E00111",
+      "score": 0.61661
+    },
+    {
+      "event_id": "E00134",
+      "score": 0.537206
+    },
+    {
+      "event_id": "E00103",
+      "score": 0.535668
+    },
+    {
+      "event_id": "E00104",
+      "score": 0.377809
+    },
+    {
+      "event_id": "E00112",
+      "score": 0.373117
+    },
+    {
+      "event_id": "E00096",
+      "score": 0.302252
+    },
+    {
+      "event_id": "E00118",
+      "score": 0.287133
+    },
+    {
+      "event_id": "E00107",
+      "score": 0.286654
+    },
+    {
+      "event_id": "E00126",
+      "score": 0.262381
+    },
+    {
+      "event_id": "E00119",
+      "score": 0.141926
+    }
+  ],
+  "Q0018": [
+    {
+      "event_id": "E00095",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00128",
+      "score": 0.597286
+    },
+    {
+      "event_id": "E00102",
+      "score": 0.557795
+    },
+    {
+      "event_id": "E00098",
+      "score": 0.532088
+    },
+    {
+      "event_id": "E00101",
+      "score": 0.532088
+    },
+    {
+      "event_id": "E00096",
+      "score": 0.308268
+    },
+    {
+      "event_id": "E00112",
+      "score": 0.279622
+    },
+    {
+      "event_id": "E00097",
+      "score": 0.254732
+    },
+    {
+      "event_id": "E00136",
+      "score": 0.249814
+    },
+    {
+      "event_id": "E00118",
+      "score": 0.185105
+    },
+    {
+      "event_id": "E00134",
+      "score": 0.174292
+    },
+    {
+      "event_id": "E00135",
+      "score": 0.162185
+    }
+  ],
+  "Q0019": [
+    {
+      "event_id": "E00119",
+      "score": 0.991379
+    },
+    {
+      "event_id": "E00126",
+      "score": 0.98479
+    },
+    {
+      "event_id": "E00134",
+      "score": 0.74239
+    },
+    {
+      "event_id": "E00124",
+      "score": 0.724077
+    },
+    {
+      "event_id": "E00125",
+      "score": 0.724077
+    },
+    {
+      "event_id": "E00098",
+      "score": 0.718653
+    },
+    {
+      "event_id": "E00101",
+      "score": 0.718653
+    },
+    {
+      "event_id": "E00095",
+      "score": 0.55526
+    },
+    {
+      "event_id": "E00116",
+      "score": 0.361472
+    },
+    {
+      "event_id": "E00102",
+      "score": 0.356894
+    },
+    {
+      "event_id": "E00097",
+      "score": 0.274608
+    },
+    {
+      "event_id": "E00120",
+      "score": 0.196914
+    }
+  ],
+  "Q0020": [
+    {
+      "event_id": "E00128",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00102",
+      "score": 0.290853
+    },
+    {
+      "event_id": "E00096",
+      "score": 0.158718
+    },
+    {
+      "event_id": "E00112",
+      "score": 0.143928
+    },
+    {
+      "event_id": "E00097",
+      "score": 0.13169
+    },
+    {
+      "event_id": "E00136",
+      "score": 0.128609
+    },
+    {
+      "event_id": "E00118",
+      "score": 0.095043
+    },
+    {
+      "event_id": "E00134",
+      "score": 0.089538
+    },
+    {
+      "event_id": "E00135",
+      "score": 0.083136
+    },
+    {
+      "event_id": "E00120",
+      "score": 0.067133
+    },
+    {
+      "event_id": "E00114",
+      "score": 0.053526
+    },
+    {
+      "event_id": "E00110",
+      "score": 0.052887
+    }
+  ],
+  "Q0021": [
+    {
+      "event_id": "E00135",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00107",
+      "score": 0.270727
+    },
+    {
+      "event_id": "E00128",
+      "score": 0.184279
+    },
+    {
+      "event_id": "E00114",
+      "score": 0.169963
+    },
+    {
+      "event_id": "E00137",
+      "score": 0.165039
+    },
+    {
+      "event_id": "E00139",
+      "score": 0.165039
+    },
+    {
+      "event_id": "E00129",
+      "score": 0.160574
+    },
+    {
+      "event_id": "E00131",
+      "score": 0.160574
+    },
+    {
+      "event_id": "E00121",
+      "score": 0.139495
+    },
+    {
+      "event_id": "E00122",
+      "score": 0.139495
+    },
+    {
+      "event_id": "E00124",
+      "score": 0.138841
+    },
+    {
+      "event_id": "E00125",
+      "score": 0.084143
+    }
+  ],
+  "Q0022": [
+    {
+      "event_id": "E00111",
+      "score": 0.9951
+    },
+    {
+      "event_id": "E00102",
+      "score": 0.976224
+    },
+    {
+      "event_id": "E00134",
+      "score": 0.939818
+    },
+    {
+      "event_id": "E00096",
+      "score": 0.572776
+    },
+    {
+      "event_id": "E00110",
+      "score": 0.520813
+    },
+    {
+      "event_id": "E00095",
+      "score": 0.48766
+    },
+    {
+      "event_id": "E00137",
+      "score": 0.443536
+    },
+    {
+      "event_id": "E00139",
+      "score": 0.443536
+    },
+    {
+      "event_id": "E00119",
+      "score": 0.347484
+    },
+    {
+      "event_id": "E00103",
+      "score": 0.335172
+    },
+    {
+      "event_id": "E00128",
+      "score": 0.210261
+    },
+    {
+      "event_id": "E00114",
+      "score": 0.204875
+    }
+  ],
+  "Q0023": [
+    {
+      "event_id": "E00112",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00118",
+      "score": 0.711813
+    },
+    {
+      "event_id": "E00098",
+      "score": 0.637183
+    },
+    {
+      "event_id": "E00101",
+      "score": 0.637183
+    },
+    {
+      "event_id": "E00104",
+      "score": 0.62934
+    },
+    {
+      "event_id": "E00128",
+      "score": 0.597222
+    },
+    {
+      "event_id": "E00111",
+      "score": 0.512232
+    },
+    {
+      "event_id": "E00110",
+      "score": 0.493069
+    },
+    {
+      "event_id": "E00127",
+      "score": 0.474254
+    },
+    {
+      "event_id": "E00102",
+      "score": 0.453358
+    },
+    {
+      "event_id": "E00134",
+      "score": 0.21799
+    },
+    {
+      "event_id": "E00103",
+      "score": 0.217226
+    }
+  ],
+  "Q0024": [
+    {
+      "event_id": "E00119",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00098",
+      "score": 0.915395
+    },
+    {
+      "event_id": "E00101",
+      "score": 0.915395
+    },
+    {
+      "event_id": "E00126",
+      "score": 0.76645
+    },
+    {
+      "event_id": "E00120",
+      "score": 0.515464
+    },
+    {
+      "event_id": "E00129",
+      "score": 0.434428
+    },
+    {
+      "event_id": "E00131",
+      "score": 0.434428
+    },
+    {
+      "event_id": "E00107",
+      "score": 0.410874
+    },
+    {
+      "event_id": "E00121",
+      "score": 0.377316
+    },
+    {
+      "event_id": "E00122",
+      "score": 0.377316
+    },
+    {
+      "event_id": "E00124",
+      "score": 0.375537
+    },
+    {
+      "event_id": "E00125",
+      "score": 0.375537
+    }
+  ],
+  "Q0025": [
+    {
+      "event_id": "E00142",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00157",
+      "score": 0.674633
+    },
+    {
+      "event_id": "E00158",
+      "score": 0.61661
+    },
+    {
+      "event_id": "E00181",
+      "score": 0.537206
+    },
+    {
+      "event_id": "E00150",
+      "score": 0.535668
+    },
+    {
+      "event_id": "E00151",
+      "score": 0.377809
+    },
+    {
+      "event_id": "E00159",
+      "score": 0.373117
+    },
+    {
+      "event_id": "E00155",
+      "score": 0.36502
+    },
+    {
+      "event_id": "E00143",
+      "score": 0.302252
+    },
+    {
+      "event_id": "E00165",
+      "score": 0.287133
+    },
+    {
+      "event_id": "E00152",
+      "score": 0.286654
+    },
+    {
+      "event_id": "E00156",
+      "score": 0.286654
+    }
+  ],
+  "Q0026": [
+    {
+      "event_id": "E00142",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00175",
+      "score": 0.597286
+    },
+    {
+      "event_id": "E00149",
+      "score": 0.557795
+    },
+    {
+      "event_id": "E00146",
+      "score": 0.532088
+    },
+    {
+      "event_id": "E00143",
+      "score": 0.308268
+    },
+    {
+      "event_id": "E00159",
+      "score": 0.279622
+    },
+    {
+      "event_id": "E00144",
+      "score": 0.254732
+    },
+    {
+      "event_id": "E00183",
+      "score": 0.249814
+    },
+    {
+      "event_id": "E00165",
+      "score": 0.185105
+    },
+    {
+      "event_id": "E00181",
+      "score": 0.174292
+    },
+    {
+      "event_id": "E00182",
+      "score": 0.162185
+    },
+    {
+      "event_id": "E00164",
+      "score": 0.079132
+    }
+  ],
+  "Q0027": [
+    {
+      "event_id": "E00166",
+      "score": 0.988369
+    },
+    {
+      "event_id": "E00173",
+      "score": 0.98691
+    },
+    {
+      "event_id": "E00181",
+      "score": 0.704483
+    },
+    {
+      "event_id": "E00169",
+      "score": 0.6872
+    },
+    {
+      "event_id": "E00146",
+      "score": 0.682127
+    },
+    {
+      "event_id": "E00142",
+      "score": 0.527737
+    },
+    {
+      "event_id": "E00167",
+      "score": 0.39624
+    },
+    {
+      "event_id": "E00170",
+      "score": 0.380673
+    },
+    {
+      "event_id": "E00147",
+      "score": 0.347585
+    },
+    {
+      "event_id": "E00161",
+      "score": 0.344136
+    },
+    {
+      "event_id": "E00149",
+      "score": 0.339565
+    },
+    {
+      "event_id": "E00144",
+      "score": 0.261532
+    }
+  ],
+  "Q0028": [
+    {
+      "event_id": "E00175",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00149",
+      "score": 0.290853
+    },
+    {
+      "event_id": "E00143",
+      "score": 0.158718
+    },
+    {
+      "event_id": "E00159",
+      "score": 0.143928
+    },
+    {
+      "event_id": "E00144",
+      "score": 0.13169
+    },
+    {
+      "event_id": "E00183",
+      "score": 0.128609
+    },
+    {
+      "event_id": "E00165",
+      "score": 0.095043
+    },
+    {
+      "event_id": "E00181",
+      "score": 0.089538
+    },
+    {
+      "event_id": "E00182",
+      "score": 0.083136
+    },
+    {
+      "event_id": "E00167",
+      "score": 0.066919
+    },
+    {
+      "event_id": "E00164",
+      "score": 0.053526
+    },
+    {
+      "event_id": "E00157",
+      "score": 0.052887
+    }
+  ],
+  "Q0029": [
+    {
+      "event_id": "E00182",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00152",
+      "score": 0.270727
+    },
+    {
+      "event_id": "E00156",
+      "score": 0.270727
+    },
+    {
+      "event_id": "E00175",
+      "score": 0.184279
+    },
+    {
+      "event_id": "E00164",
+      "score": 0.169963
+    },
+    {
+      "event_id": "E00185",
+      "score": 0.165039
+    },
+    {
+      "event_id": "E00188",
+      "score": 0.165039
+    },
+    {
+      "event_id": "E00176",
+      "score": 0.160574
+    },
+    {
+      "event_id": "E00171",
+      "score": 0.139495
+    },
+    {
+      "event_id": "E00169",
+      "score": 0.138841
+    },
+    {
+      "event_id": "E00145",
+      "score": 0.122935
+    },
+    {
+      "event_id": "E00174",
+      "score": 0.074763
+    }
+  ],
+  "Q0030": [
+    {
+      "event_id": "E00158",
+      "score": 0.9951
+    },
+    {
+      "event_id": "E00149",
+      "score": 0.976224
+    },
+    {
+      "event_id": "E00181",
+      "score": 0.939818
+    },
+    {
+      "event_id": "E00143",
+      "score": 0.572776
+    },
+    {
+      "event_id": "E00157",
+      "score": 0.520813
+    },
+    {
+      "event_id": "E00142",
+      "score": 0.48766
+    },
+    {
+      "event_id": "E00177",
+      "score": 0.443596
+    },
+    {
+      "event_id": "E00178",
+      "score": 0.443596
+    },
+    {
+      "event_id": "E00185",
+      "score": 0.443536
+    },
+    {
+      "event_id": "E00188",
+      "score": 0.443536
+    },
+    {
+      "event_id": "E00166",
+      "score": 0.346479
+    },
+    {
+      "event_id": "E00150",
+      "score": 0.335172
+    }
+  ],
+  "Q0031": [
+    {
+      "event_id": "E00159",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00165",
+      "score": 0.711813
+    },
+    {
+      "event_id": "E00146",
+      "score": 0.637183
+    },
+    {
+      "event_id": "E00151",
+      "score": 0.62934
+    },
+    {
+      "event_id": "E00175",
+      "score": 0.597222
+    },
+    {
+      "event_id": "E00158",
+      "score": 0.512232
+    },
+    {
+      "event_id": "E00157",
+      "score": 0.493069
+    },
+    {
+      "event_id": "E00174",
+      "score": 0.474254
+    },
+    {
+      "event_id": "E00149",
+      "score": 0.453358
+    },
+    {
+      "event_id": "E00181",
+      "score": 0.417238
+    },
+    {
+      "event_id": "E00183",
+      "score": 0.379492
+    },
+    {
+      "event_id": "E00150",
+      "score": 0.217226
+    }
+  ],
+  "Q0032": [
+    {
+      "event_id": "E00166",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00146",
+      "score": 0.853998
+    },
+    {
+      "event_id": "E00173",
+      "score": 0.790769
+    },
+    {
+      "event_id": "E00167",
+      "score": 0.55412
+    },
+    {
+      "event_id": "E00176",
+      "score": 0.406053
+    },
+    {
+      "event_id": "E00152",
+      "score": 0.383747
+    },
+    {
+      "event_id": "E00156",
+      "score": 0.383747
+    },
+    {
+      "event_id": "E00171",
+      "score": 0.352945
+    },
+    {
+      "event_id": "E00169",
+      "score": 0.351313
+    },
+    {
+      "event_id": "E00145",
+      "score": 0.311022
+    },
+    {
+      "event_id": "E00155",
+      "score": 0.302693
+    },
+    {
+      "event_id": "E00174",
+      "score": 0.190834
+    }
+  ],
+  "Q0033": [
+    {
+      "event_id": "E00189",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00204",
+      "score": 0.674633
+    },
+    {
+      "event_id": "E00205",
+      "score": 0.61661
+    },
+    {
+      "event_id": "E00228",
+      "score": 0.537206
+    },
+    {
+      "event_id": "E00197",
+      "score": 0.535668
+    },
+    {
+      "event_id": "E00198",
+      "score": 0.377809
+    },
+    {
+      "event_id": "E00206",
+      "score": 0.373117
+    },
+    {
+      "event_id": "E00201",
+      "score": 0.36502
+    },
+    {
+      "event_id": "E00190",
+      "score": 0.302252
+    },
+    {
+      "event_id": "E00212",
+      "score": 0.287133
+    },
+    {
+      "event_id": "E00200",
+      "score": 0.286654
+    },
+    {
+      "event_id": "E00203",
+      "score": 0.286654
+    }
+  ],
+  "Q0034": [
+    {
+      "event_id": "E00189",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00222",
+      "score": 0.597286
+    },
+    {
+      "event_id": "E00196",
+      "score": 0.557795
+    },
+    {
+      "event_id": "E00193",
+      "score": 0.532088
+    },
+    {
+      "event_id": "E00190",
+      "score": 0.308268
+    },
+    {
+      "event_id": "E00206",
+      "score": 0.279622
+    },
+    {
+      "event_id": "E00191",
+      "score": 0.254732
+    },
+    {
+      "event_id": "E00230",
+      "score": 0.249814
+    },
+    {
+      "event_id": "E00212",
+      "score": 0.185105
+    },
+    {
+      "event_id": "E00228",
+      "score": 0.174292
+    },
+    {
+      "event_id": "E00229",
+      "score": 0.162185
+    },
+    {
+      "event_id": "E00208",
+      "score": 0.079132
+    }
+  ],
+  "Q0035": [
+    {
+      "event_id": "E00220",
+      "score": 0.989416
+    },
+    {
+      "event_id": "E00213",
+      "score": 0.985071
+    },
+    {
+      "event_id": "E00228",
+      "score": 0.66061
+    },
+    {
+      "event_id": "E00215",
+      "score": 0.644513
+    },
+    {
+      "event_id": "E00193",
+      "score": 0.639842
+    },
+    {
+      "event_id": "E00189",
+      "score": 0.495834
+    },
+    {
+      "event_id": "E00214",
+      "score": 0.435715
+    },
+    {
+      "event_id": "E00219",
+      "score": 0.358383
+    },
+    {
+      "event_id": "E00196",
+      "score": 0.319455
+    },
+    {
+      "event_id": "E00191",
+      "score": 0.246342
+    },
+    {
+      "event_id": "E00208",
+      "score": 0.152992
+    },
+    {
+      "event_id": "E00210",
+      "score": 0.152992
+    }
+  ],
+  "Q0036": [
+    {
+      "event_id": "E00222",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00196",
+      "score": 0.290853
+    },
+    {
+      "event_id": "E00192",
+      "score": 0.240962
+    },
+    {
+      "event_id": "E00194",
+      "score": 0.240962
+    },
+    {
+      "event_id": "E00195",
+      "score": 0.240962
+    },
+    {
+      "event_id": "E00190",
+      "score": 0.158718
+    },
+    {
+      "event_id": "E00206",
+      "score": 0.143928
+    },
+    {
+      "event_id": "E00191",
+      "score": 0.13169
+    },
+    {
+      "event_id": "E00230",
+      "score": 0.128609
+    },
+    {
+      "event_id": "E00212",
+      "score": 0.095043
+    },
+    {
+      "event_id": "E00228",
+      "score": 0.089538
+    },
+    {
+      "event_id": "E00229",
+      "score": 0.083136
+    }
+  ],
+  "Q0037": [
+    {
+      "event_id": "E00229",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00200",
+      "score": 0.270727
+    },
+    {
+      "event_id": "E00203",
+      "score": 0.270727
+    },
+    {
+      "event_id": "E00222",
+      "score": 0.184279
+    },
+    {
+      "event_id": "E00208",
+      "score": 0.169963
+    },
+    {
+      "event_id": "E00210",
+      "score": 0.169963
+    },
+    {
+      "event_id": "E00233",
+      "score": 0.165039
+    },
+    {
+      "event_id": "E00235",
+      "score": 0.165039
+    },
+    {
+      "event_id": "E00225",
+      "score": 0.160574
+    },
+    {
+      "event_id": "E00216",
+      "score": 0.139495
+    },
+    {
+      "event_id": "E00217",
+      "score": 0.139495
+    },
+    {
+      "event_id": "E00215",
+      "score": 0.084143
+    }
+  ],
+  "Q0038": [
+    {
+      "event_id": "E00205",
+      "score": 0.9951
+    },
+    {
+      "event_id": "E00196",
+      "score": 0.976224
+    },
+    {
+      "event_id": "E00228",
+      "score": 0.939818
+    },
+    {
+      "event_id": "E00190",
+      "score": 0.572776
+    },
+    {
+      "event_id": "E00204",
+      "score": 0.520813
+    },
+    {
+      "event_id": "E00189",
+      "score": 0.48766
+    },
+    {
+      "event_id": "E00227",
+      "score": 0.443596
+    },
+    {
+      "event_id": "E00233",
+      "score": 0.443536
+    },
+    {
+      "event_id": "E00235",
+      "score": 0.443536
+    },
+    {
+      "event_id": "E00213",
+      "score": 0.345143
+    },
+    {
+      "event_id": "E00197",
+      "score": 0.335172
+    },
+    {
+      "event_id": "E00208",
+      "score": 0.141953
+    }
+  ],
+  "Q0039": [
+    {
+      "event_id": "E00206",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00212",
+      "score": 0.711813
+    },
+    {
+      "event_id": "E00193",
+      "score": 0.637183
+    },
+    {
+      "event_id": "E00198",
+      "score": 0.62934
+    },
+    {
+      "event_id": "E00222",
+      "score": 0.597222
+    },
+    {
+      "event_id": "E00192",
+      "score": 0.55475
+    },
+    {
+      "event_id": "E00194",
+      "score": 0.55475
+    },
+    {
+      "event_id": "E00195",
+      "score": 0.55475
+    },
+    {
+      "event_id": "E00205",
+      "score": 0.512232
+    },
+    {
+      "event_id": "E00204",
+      "score": 0.493069
+    },
+    {
+      "event_id": "E00221",
+      "score": 0.474254
+    },
+    {
+      "event_id": "E00196",
+      "score": 0.453358
+    }
+  ],
+  "Q0040": [
+    {
+      "event_id": "E00213",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00220",
+      "score": 0.817726
+    },
+    {
+      "event_id": "E00193",
+      "score": 0.78522
+    },
+    {
+      "event_id": "E00214",
+      "score": 0.597309
+    },
+    {
+      "event_id": "E00225",
+      "score": 0.374216
+    },
+    {
+      "event_id": "E00200",
+      "score": 0.353331
+    },
+    {
+      "event_id": "E00203",
+      "score": 0.353331
+    },
+    {
+      "event_id": "E00216",
+      "score": 0.325583
+    },
+    {
+      "event_id": "E00217",
+      "score": 0.325583
+    },
+    {
+      "event_id": "E00215",
+      "score": 0.324113
+    },
+    {
+      "event_id": "E00201",
+      "score": 0.279372
+    },
+    {
+      "event_id": "E00221",
+      "score": 0.178695
+    }
+  ],
+  "Q0041": [
+    {
+      "event_id": "E00236",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00251",
+      "score": 0.674633
+    },
+    {
+      "event_id": "E00252",
+      "score": 0.61661
+    },
+    {
+      "event_id": "E00275",
+      "score": 0.537206
+    },
+    {
+      "event_id": "E00244",
+      "score": 0.535668
+    },
+    {
+      "event_id": "E00245",
+      "score": 0.377809
+    },
+    {
+      "event_id": "E00253",
+      "score": 0.373117
+    },
+    {
+      "event_id": "E00247",
+      "score": 0.36502
+    },
+    {
+      "event_id": "E00248",
+      "score": 0.36502
+    },
+    {
+      "event_id": "E00237",
+      "score": 0.302252
+    },
+    {
+      "event_id": "E00259",
+      "score": 0.287133
+    },
+    {
+      "event_id": "E00267",
+      "score": 0.147961
+    }
+  ],
+  "Q0042": [
+    {
+      "event_id": "E00236",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00269",
+      "score": 0.597286
+    },
+    {
+      "event_id": "E00243",
+      "score": 0.557795
+    },
+    {
+      "event_id": "E00237",
+      "score": 0.308268
+    },
+    {
+      "event_id": "E00253",
+      "score": 0.279622
+    },
+    {
+      "event_id": "E00238",
+      "score": 0.254732
+    },
+    {
+      "event_id": "E00277",
+      "score": 0.249814
+    },
+    {
+      "event_id": "E00259",
+      "score": 0.185105
+    },
+    {
+      "event_id": "E00275",
+      "score": 0.174292
+    },
+    {
+      "event_id": "E00276",
+      "score": 0.162185
+    },
+    {
+      "event_id": "E00261",
+      "score": 0.129369
+    },
+    {
+      "event_id": "E00255",
+      "score": 0.079132
+    }
+  ],
+  "Q0043": [
+    {
+      "event_id": "E00260",
+      "score": 0.991379
+    },
+    {
+      "event_id": "E00267",
+      "score": 0.98479
+    },
+    {
+      "event_id": "E00275",
+      "score": 0.74239
+    },
+    {
+      "event_id": "E00236",
+      "score": 0.55526
+    },
+    {
+      "event_id": "E00264",
+      "score": 0.399869
+    },
+    {
+      "event_id": "E00261",
+      "score": 0.362231
+    },
+    {
+      "event_id": "E00254",
+      "score": 0.361472
+    },
+    {
+      "event_id": "E00243",
+      "score": 0.356894
+    },
+    {
+      "event_id": "E00238",
+      "score": 0.274608
+    },
+    {
+      "event_id": "E00269",
+      "score": 0.247868
+    },
+    {
+      "event_id": "E00255",
+      "score": 0.166022
+    },
+    {
+      "event_id": "E00237",
+      "score": 0.159364
+    }
+  ],
+  "Q0044": [
+    {
+      "event_id": "E00269",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00243",
+      "score": 0.290853
+    },
+    {
+      "event_id": "E00239",
+      "score": 0.240962
+    },
+    {
+      "event_id": "E00241",
+      "score": 0.240962
+    },
+    {
+      "event_id": "E00237",
+      "score": 0.158718
+    },
+    {
+      "event_id": "E00253",
+      "score": 0.143928
+    },
+    {
+      "event_id": "E00238",
+      "score": 0.13169
+    },
+    {
+      "event_id": "E00277",
+      "score": 0.128609
+    },
+    {
+      "event_id": "E00259",
+      "score": 0.095043
+    },
+    {
+      "event_id": "E00275",
+      "score": 0.089538
+    },
+    {
+      "event_id": "E00276",
+      "score": 0.083136
+    },
+    {
+      "event_id": "E00255",
+      "score": 0.038311
+    }
+  ],
+  "Q0045": [
+    {
+      "event_id": "E00276",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00269",
+      "score": 0.184279
+    },
+    {
+      "event_id": "E00255",
+      "score": 0.169963
+    },
+    {
+      "event_id": "E00279",
+      "score": 0.165039
+    },
+    {
+      "event_id": "E00281",
+      "score": 0.165039
+    },
+    {
+      "event_id": "E00272",
+      "score": 0.160574
+    },
+    {
+      "event_id": "E00261",
+      "score": 0.14013
+    },
+    {
+      "event_id": "E00265",
+      "score": 0.139495
+    },
+    {
+      "event_id": "E00240",
+      "score": 0.122935
+    },
+    {
+      "event_id": "E00268",
+      "score": 0.120127
+    },
+    {
+      "event_id": "E00247",
+      "score": 0.119598
+    },
+    {
+      "event_id": "E00248",
+      "score": 0.119598
+    }
+  ],
+  "Q0046": [
+    {
+      "event_id": "E00252",
+      "score": 0.9951
+    },
+    {
+      "event_id": "E00243",
+      "score": 0.976224
+    },
+    {
+      "event_id": "E00275",
+      "score": 0.939818
+    },
+    {
+      "event_id": "E00237",
+      "score": 0.572776
+    },
+    {
+      "event_id": "E00251",
+      "score": 0.520813
+    },
+    {
+      "event_id": "E00236",
+      "score": 0.48766
+    },
+    {
+      "event_id": "E00279",
+      "score": 0.443536
+    },
+    {
+      "event_id": "E00281",
+      "score": 0.443536
+    },
+    {
+      "event_id": "E00260",
+      "score": 0.347484
+    },
+    {
+      "event_id": "E00244",
+      "score": 0.335172
+    },
+    {
+      "event_id": "E00269",
+      "score": 0.210261
+    },
+    {
+      "event_id": "E00255",
+      "score": 0.204875
+    }
+  ],
+  "Q0047": [
+    {
+      "event_id": "E00253",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00259",
+      "score": 0.711813
+    },
+    {
+      "event_id": "E00245",
+      "score": 0.62934
+    },
+    {
+      "event_id": "E00269",
+      "score": 0.597222
+    },
+    {
+      "event_id": "E00239",
+      "score": 0.55475
+    },
+    {
+      "event_id": "E00241",
+      "score": 0.55475
+    },
+    {
+      "event_id": "E00252",
+      "score": 0.512232
+    },
+    {
+      "event_id": "E00251",
+      "score": 0.493069
+    },
+    {
+      "event_id": "E00268",
+      "score": 0.474254
+    },
+    {
+      "event_id": "E00243",
+      "score": 0.453358
+    },
+    {
+      "event_id": "E00275",
+      "score": 0.21799
+    },
+    {
+      "event_id": "E00244",
+      "score": 0.217226
+    }
+  ],
+  "Q0048": [
+    {
+      "event_id": "E00260",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00267",
+      "score": 0.76645
+    },
+    {
+      "event_id": "E00261",
+      "score": 0.515464
+    },
+    {
+      "event_id": "E00272",
+      "score": 0.434428
+    },
+    {
+      "event_id": "E00265",
+      "score": 0.377316
+    },
+    {
+      "event_id": "E00240",
+      "score": 0.332532
+    },
+    {
+      "event_id": "E00269",
+      "score": 0.329094
+    },
+    {
+      "event_id": "E00268",
+      "score": 0.324871
+    },
+    {
+      "event_id": "E00247",
+      "score": 0.323458
+    },
+    {
+      "event_id": "E00248",
+      "score": 0.323458
+    },
+    {
+      "event_id": "E00253",
+      "score": 0.293469
+    },
+    {
+      "event_id": "E00255",
+      "score": 0.124412
+    }
+  ],
+  "Q0049": [
+    {
+      "event_id": "E00283",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00298",
+      "score": 0.826593
+    },
+    {
+      "event_id": "E00299",
+      "score": 0.800541
+    },
+    {
+      "event_id": "E00291",
+      "score": 0.699586
+    },
+    {
+      "event_id": "E00322",
+      "score": 0.681179
+    },
+    {
+      "event_id": "E00306",
+      "score": 0.526558
+    },
+    {
+      "event_id": "E00284",
+      "score": 0.492414
+    },
+    {
+      "event_id": "E00290",
+      "score": 0.429655
+    },
+    {
+      "event_id": "E00292",
+      "score": 0.378784
+    },
+    {
+      "event_id": "E00300",
+      "score": 0.373248
+    },
+    {
+      "event_id": "E00295",
+      "score": 0.364734
+    },
+    {
+      "event_id": "E00302",
+      "score": 0.317429
+    }
+  ],
+  "Q0050": [
+    {
+      "event_id": "E00283",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00316",
+      "score": 0.751279
+    },
+    {
+      "event_id": "E00290",
+      "score": 0.685398
+    },
+    {
+      "event_id": "E00306",
+      "score": 0.597923
+    },
+    {
+      "event_id": "E00284",
+      "score": 0.375526
+    },
+    {
+      "event_id": "E00300",
+      "score": 0.350487
+    },
+    {
+      "event_id": "E00285",
+      "score": 0.319848
+    },
+    {
+      "event_id": "E00324",
+      "score": 0.313148
+    },
+    {
+      "event_id": "E00322",
+      "score": 0.213679
+    },
+    {
+      "event_id": "E00323",
+      "score": 0.202952
+    },
+    {
+      "event_id": "E00301",
+      "score": 0.096828
+    },
+    {
+      "event_id": "E00305",
+      "score": 0.096828
+    }
+  ],
+  "Q0051": [
+    {
+      "event_id": "E00314",
+      "score": 0.989416
+    },
+    {
+      "event_id": "E00307",
+      "score": 0.985071
+    },
+    {
+      "event_id": "E00322",
+      "score": 0.646784
+    },
+    {
+      "event_id": "E00313",
+      "score": 0.644513
+    },
+    {
+      "event_id": "E00283",
+      "score": 0.490855
+    },
+    {
+      "event_id": "E00308",
+      "score": 0.435715
+    },
+    {
+      "event_id": "E00312",
+      "score": 0.358383
+    },
+    {
+      "event_id": "E00286",
+      "score": 0.327573
+    },
+    {
+      "event_id": "E00290",
+      "score": 0.312772
+    },
+    {
+      "event_id": "E00285",
+      "score": 0.246342
+    },
+    {
+      "event_id": "E00301",
+      "score": 0.152992
+    },
+    {
+      "event_id": "E00305",
+      "score": 0.152992
+    }
+  ],
+  "Q0052": [
+    {
+      "event_id": "E00316",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00290",
+      "score": 0.283627
+    },
+    {
+      "event_id": "E00288",
+      "score": 0.240962
+    },
+    {
+      "event_id": "E00284",
+      "score": 0.154225
+    },
+    {
+      "event_id": "E00300",
+      "score": 0.143928
+    },
+    {
+      "event_id": "E00285",
+      "score": 0.13169
+    },
+    {
+      "event_id": "E00324",
+      "score": 0.128609
+    },
+    {
+      "event_id": "E00306",
+      "score": 0.095043
+    },
+    {
+      "event_id": "E00322",
+      "score": 0.087648
+    },
+    {
+      "event_id": "E00323",
+      "score": 0.083136
+    },
+    {
+      "event_id": "E00301",
+      "score": 0.038311
+    },
+    {
+      "event_id": "E00305",
+      "score": 0.038311
+    }
+  ],
+  "Q0053": [
+    {
+      "event_id": "E00323",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00293",
+      "score": 0.270727
+    },
+    {
+      "event_id": "E00296",
+      "score": 0.270727
+    },
+    {
+      "event_id": "E00316",
+      "score": 0.184279
+    },
+    {
+      "event_id": "E00301",
+      "score": 0.169963
+    },
+    {
+      "event_id": "E00305",
+      "score": 0.169963
+    },
+    {
+      "event_id": "E00328",
+      "score": 0.165039
+    },
+    {
+      "event_id": "E00329",
+      "score": 0.165039
+    },
+    {
+      "event_id": "E00320",
+      "score": 0.160574
+    },
+    {
+      "event_id": "E00310",
+      "score": 0.139495
+    },
+    {
+      "event_id": "E00311",
+      "score": 0.139495
+    },
+    {
+      "event_id": "E00313",
+      "score": 0.084143
+    }
+  ],
+  "Q0054": [
+    {
+      "event_id": "E00299",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00290",
+      "score": 0.96213
+    },
+    {
+      "event_id": "E00322",
+      "score": 0.915832
+    },
+    {
+      "event_id": "E00284",
+      "score": 0.661358
+    },
+    {
+      "event_id": "E00298",
+      "score": 0.591027
+    },
+    {
+      "event_id": "E00283",
+      "score": 0.571919
+    },
+    {
+      "event_id": "E00291",
+      "score": 0.44956
+    },
+    {
+      "event_id": "E00302",
+      "score": 0.444194
+    },
+    {
+      "event_id": "E00303",
+      "score": 0.444194
+    },
+    {
+      "event_id": "E00327",
+      "score": 0.392714
+    },
+    {
+      "event_id": "E00319",
+      "score": 0.365334
+    },
+    {
+      "event_id": "E00328",
+      "score": 0.365285
+    }
+  ],
+  "Q0055": [
+    {
+      "event_id": "E00300",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00306",
+      "score": 0.711813
+    },
+    {
+      "event_id": "E00292",
+      "score": 0.62934
+    },
+    {
+      "event_id": "E00316",
+      "score": 0.597222
+    },
+    {
+      "event_id": "E00288",
+      "score": 0.55475
+    },
+    {
+      "event_id": "E00299",
+      "score": 0.495636
+    },
+    {
+      "event_id": "E00298",
+      "score": 0.481926
+    },
+    {
+      "event_id": "E00315",
+      "score": 0.474254
+    },
+    {
+      "event_id": "E00290",
+      "score": 0.442337
+    },
+    {
+      "event_id": "E00322",
+      "score": 0.408326
+    },
+    {
+      "event_id": "E00324",
+      "score": 0.379492
+    },
+    {
+      "event_id": "E00291",
+      "score": 0.211981
+    }
+  ],
+  "Q0056": [
+    {
+      "event_id": "E00307",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00314",
+      "score": 0.817726
+    },
+    {
+      "event_id": "E00308",
+      "score": 0.597309
+    },
+    {
+      "event_id": "E00320",
+      "score": 0.374216
+    },
+    {
+      "event_id": "E00293",
+      "score": 0.353331
+    },
+    {
+      "event_id": "E00296",
+      "score": 0.353331
+    },
+    {
+      "event_id": "E00310",
+      "score": 0.325583
+    },
+    {
+      "event_id": "E00311",
+      "score": 0.325583
+    },
+    {
+      "event_id": "E00313",
+      "score": 0.324113
+    },
+    {
+      "event_id": "E00287",
+      "score": 0.286875
+    },
+    {
+      "event_id": "E00295",
+      "score": 0.279372
+    },
+    {
+      "event_id": "E00315",
+      "score": 0.178695
+    }
+  ],
+  "Q0057": [
+    {
+      "event_id": "E00330",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00345",
+      "score": 0.674633
+    },
+    {
+      "event_id": "E00346",
+      "score": 0.61661
+    },
+    {
+      "event_id": "E00369",
+      "score": 0.537206
+    },
+    {
+      "event_id": "E00338",
+      "score": 0.535668
+    },
+    {
+      "event_id": "E00339",
+      "score": 0.377809
+    },
+    {
+      "event_id": "E00347",
+      "score": 0.373117
+    },
+    {
+      "event_id": "E00341",
+      "score": 0.36502
+    },
+    {
+      "event_id": "E00342",
+      "score": 0.36502
+    },
+    {
+      "event_id": "E00331",
+      "score": 0.302252
+    },
+    {
+      "event_id": "E00353",
+      "score": 0.287133
+    },
+    {
+      "event_id": "E00344",
+      "score": 0.286654
+    }
+  ],
+  "Q0058": [
+    {
+      "event_id": "E00330",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00363",
+      "score": 0.597286
+    },
+    {
+      "event_id": "E00337",
+      "score": 0.557795
+    },
+    {
+      "event_id": "E00334",
+      "score": 0.532088
+    },
+    {
+      "event_id": "E00331",
+      "score": 0.308268
+    },
+    {
+      "event_id": "E00347",
+      "score": 0.279622
+    },
+    {
+      "event_id": "E00332",
+      "score": 0.254732
+    },
+    {
+      "event_id": "E00371",
+      "score": 0.249814
+    },
+    {
+      "event_id": "E00353",
+      "score": 0.185105
+    },
+    {
+      "event_id": "E00369",
+      "score": 0.174292
+    },
+    {
+      "event_id": "E00370",
+      "score": 0.162185
+    },
+    {
+      "event_id": "E00348",
+      "score": 0.079132
+    }
+  ],
+  "Q0059": [
+    {
+      "event_id": "E00361",
+      "score": 0.989416
+    },
+    {
+      "event_id": "E00354",
+      "score": 0.985071
+    },
+    {
+      "event_id": "E00369",
+      "score": 0.66061
+    },
+    {
+      "event_id": "E00359",
+      "score": 0.644513
+    },
+    {
+      "event_id": "E00334",
+      "score": 0.639842
+    },
+    {
+      "event_id": "E00330",
+      "score": 0.495834
+    },
+    {
+      "event_id": "E00355",
+      "score": 0.435715
+    },
+    {
+      "event_id": "E00358",
+      "score": 0.358383
+    },
+    {
+      "event_id": "E00360",
+      "score": 0.358383
+    },
+    {
+      "event_id": "E00350",
+      "score": 0.324004
+    },
+    {
+      "event_id": "E00337",
+      "score": 0.319455
+    },
+    {
+      "event_id": "E00332",
+      "score": 0.246342
+    }
+  ],
+  "Q0060": [
+    {
+      "event_id": "E00363",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00337",
+      "score": 0.290853
+    },
+    {
+      "event_id": "E00336",
+      "score": 0.240962
+    },
+    {
+      "event_id": "E00331",
+      "score": 0.158718
+    },
+    {
+      "event_id": "E00347",
+      "score": 0.143928
+    },
+    {
+      "event_id": "E00332",
+      "score": 0.13169
+    },
+    {
+      "event_id": "E00371",
+      "score": 0.128609
+    },
+    {
+      "event_id": "E00353",
+      "score": 0.095043
+    },
+    {
+      "event_id": "E00369",
+      "score": 0.089538
+    },
+    {
+      "event_id": "E00370",
+      "score": 0.083136
+    },
+    {
+      "event_id": "E00355",
+      "score": 0.066636
+    },
+    {
+      "event_id": "E00348",
+      "score": 0.038311
+    }
+  ],
+  "Q0061": [
+    {
+      "event_id": "E00370",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00344",
+      "score": 0.270727
+    },
+    {
+      "event_id": "E00363",
+      "score": 0.184279
+    },
+    {
+      "event_id": "E00348",
+      "score": 0.169963
+    },
+    {
+      "event_id": "E00374",
+      "score": 0.165039
+    },
+    {
+      "event_id": "E00366",
+      "score": 0.160574
+    },
+    {
+      "event_id": "E00355",
+      "score": 0.139007
+    },
+    {
+      "event_id": "E00359",
+      "score": 0.138841
+    },
+    {
+      "event_id": "E00335",
+      "score": 0.122935
+    },
+    {
+      "event_id": "E00362",
+      "score": 0.120127
+    },
+    {
+      "event_id": "E00341",
+      "score": 0.119598
+    },
+    {
+      "event_id": "E00342",
+      "score": 0.119598
+    }
+  ],
+  "Q0062": [
+    {
+      "event_id": "E00346",
+      "score": 0.9951
+    },
+    {
+      "event_id": "E00337",
+      "score": 0.976224
+    },
+    {
+      "event_id": "E00369",
+      "score": 0.939818
+    },
+    {
+      "event_id": "E00331",
+      "score": 0.572776
+    },
+    {
+      "event_id": "E00345",
+      "score": 0.520813
+    },
+    {
+      "event_id": "E00330",
+      "score": 0.48766
+    },
+    {
+      "event_id": "E00364",
+      "score": 0.443596
+    },
+    {
+      "event_id": "E00367",
+      "score": 0.443596
+    },
+    {
+      "event_id": "E00374",
+      "score": 0.443536
+    },
+    {
+      "event_id": "E00354",
+      "score": 0.345143
+    },
+    {
+      "event_id": "E00338",
+      "score": 0.335172
+    },
+    {
+      "event_id": "E00348",
+      "score": 0.141953
+    }
+  ],
+  "Q0063": [
+    {
+      "event_id": "E00347",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00353",
+      "score": 0.711813
+    },
+    {
+      "event_id": "E00334",
+      "score": 0.637183
+    },
+    {
+      "event_id": "E00339",
+      "score": 0.62934
+    },
+    {
+      "event_id": "E00363",
+      "score": 0.597222
+    },
+    {
+      "event_id": "E00336",
+      "score": 0.55475
+    },
+    {
+      "event_id": "E00346",
+      "score": 0.512232
+    },
+    {
+      "event_id": "E00345",
+      "score": 0.493069
+    },
+    {
+      "event_id": "E00362",
+      "score": 0.474254
+    },
+    {
+      "event_id": "E00337",
+      "score": 0.453358
+    },
+    {
+      "event_id": "E00369",
+      "score": 0.21799
+    },
+    {
+      "event_id": "E00338",
+      "score": 0.217226
+    }
+  ],
+  "Q0064": [
+    {
+      "event_id": "E00354",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00361",
+      "score": 0.817726
+    },
+    {
+      "event_id": "E00334",
+      "score": 0.78522
+    },
+    {
+      "event_id": "E00355",
+      "score": 0.597309
+    },
+    {
+      "event_id": "E00366",
+      "score": 0.374216
+    },
+    {
+      "event_id": "E00344",
+      "score": 0.353331
+    },
+    {
+      "event_id": "E00359",
+      "score": 0.324113
+    },
+    {
+      "event_id": "E00335",
+      "score": 0.286875
+    },
+    {
+      "event_id": "E00363",
+      "score": 0.28396
+    },
+    {
+      "event_id": "E00362",
+      "score": 0.280703
+    },
+    {
+      "event_id": "E00341",
+      "score": 0.279372
+    },
+    {
+      "event_id": "E00342",
+      "score": 0.279372
+    }
+  ],
+  "Q0065": [
+    {
+      "event_id": "E00377",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00392",
+      "score": 0.680981
+    },
+    {
+      "event_id": "E00393",
+      "score": 0.622472
+    },
+    {
+      "event_id": "E00416",
+      "score": 0.542379
+    },
+    {
+      "event_id": "E00385",
+      "score": 0.540664
+    },
+    {
+      "event_id": "E00386",
+      "score": 0.381491
+    },
+    {
+      "event_id": "E00394",
+      "score": 0.376497
+    },
+    {
+      "event_id": "E00388",
+      "score": 0.368199
+    },
+    {
+      "event_id": "E00378",
+      "score": 0.305061
+    },
+    {
+      "event_id": "E00400",
+      "score": 0.289841
+    },
+    {
+      "event_id": "E00390",
+      "score": 0.289396
+    },
+    {
+      "event_id": "E00408",
+      "score": 0.147993
+    }
+  ],
+  "Q0066": [
+    {
+      "event_id": "E00377",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00410",
+      "score": 0.601578
+    },
+    {
+      "event_id": "E00384",
+      "score": 0.562047
+    },
+    {
+      "event_id": "E00381",
+      "score": 0.536091
+    },
+    {
+      "event_id": "E00378",
+      "score": 0.310217
+    },
+    {
+      "event_id": "E00394",
+      "score": 0.281383
+    },
+    {
+      "event_id": "E00379",
+      "score": 0.256449
+    },
+    {
+      "event_id": "E00418",
+      "score": 0.251391
+    },
+    {
+      "event_id": "E00400",
+      "score": 0.186224
+    },
+    {
+      "event_id": "E00416",
+      "score": 0.175355
+    },
+    {
+      "event_id": "E00417",
+      "score": 0.163138
+    },
+    {
+      "event_id": "E00402",
+      "score": 0.129402
+    }
+  ],
+  "Q0067": [
+    {
+      "event_id": "E00408",
+      "score": 0.989416
+    },
+    {
+      "event_id": "E00401",
+      "score": 0.985071
+    },
+    {
+      "event_id": "E00416",
+      "score": 0.66061
+    },
+    {
+      "event_id": "E00381",
+      "score": 0.639842
+    },
+    {
+      "event_id": "E00377",
+      "score": 0.48932
+    },
+    {
+      "event_id": "E00402",
+      "score": 0.435715
+    },
+    {
+      "event_id": "E00405",
+      "score": 0.358383
+    },
+    {
+      "event_id": "E00380",
+      "score": 0.327573
+    },
+    {
+      "event_id": "E00396",
+      "score": 0.324004
+    },
+    {
+      "event_id": "E00398",
+      "score": 0.324004
+    },
+    {
+      "event_id": "E00384",
+      "score": 0.319455
+    },
+    {
+      "event_id": "E00379",
+      "score": 0.246342
+    }
+  ],
+  "Q0068": [
+    {
+      "event_id": "E00410",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00384",
+      "score": 0.290853
+    },
+    {
+      "event_id": "E00378",
+      "score": 0.158718
+    },
+    {
+      "event_id": "E00394",
+      "score": 0.143928
+    },
+    {
+      "event_id": "E00379",
+      "score": 0.13169
+    },
+    {
+      "event_id": "E00418",
+      "score": 0.128609
+    },
+    {
+      "event_id": "E00400",
+      "score": 0.095043
+    },
+    {
+      "event_id": "E00416",
+      "score": 0.089538
+    },
+    {
+      "event_id": "E00417",
+      "score": 0.083136
+    },
+    {
+      "event_id": "E00402",
+      "score": 0.066636
+    },
+    {
+      "event_id": "E00392",
+      "score": 0.052887
+    },
+    {
+      "event_id": "E00409",
+      "score": 0.049329
+    }
+  ],
+  "Q0069": [
+    {
+      "event_id": "E00417",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00390",
+      "score": 0.270727
+    },
+    {
+      "event_id": "E00410",
+      "score": 0.184279
+    },
+    {
+      "event_id": "E00403",
+      "score": 0.139495
+    },
+    {
+      "event_id": "E00402",
+      "score": 0.139007
+    },
+    {
+      "event_id": "E00382",
+      "score": 0.122935
+    },
+    {
+      "event_id": "E00409",
+      "score": 0.120127
+    },
+    {
+      "event_id": "E00388",
+      "score": 0.119598
+    },
+    {
+      "event_id": "E00394",
+      "score": 0.108532
+    },
+    {
+      "event_id": "E00379",
+      "score": 0.106722
+    },
+    {
+      "event_id": "E00416",
+      "score": 0.093572
+    },
+    {
+      "event_id": "E00408",
+      "score": 0.085211
+    }
+  ],
+  "Q0070": [
+    {
+      "event_id": "E00393",
+      "score": 0.9951
+    },
+    {
+      "event_id": "E00384",
+      "score": 0.976224
+    },
+    {
+      "event_id": "E00416",
+      "score": 0.939818
+    },
+    {
+      "event_id": "E00378",
+      "score": 0.572776
+    },
+    {
+      "event_id": "E00392",
+      "score": 0.520813
+    },
+    {
+      "event_id": "E00377",
+      "score": 0.480544
+    },
+    {
+      "event_id": "E00412",
+      "score": 0.443596
+    },
+    {
+      "event_id": "E00413",
+      "score": 0.443596
+    },
+    {
+      "event_id": "E00401",
+      "score": 0.345143
+    },
+    {
+      "event_id": "E00385",
+      "score": 0.335172
+    },
+    {
+      "event_id": "E00410",
+      "score": 0.210261
+    },
+    {
+      "event_id": "E00409",
+      "score": 0.188773
+    }
+  ],
+  "Q0071": [
+    {
+      "event_id": "E00394",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00400",
+      "score": 0.711813
+    },
+    {
+      "event_id": "E00381",
+      "score": 0.637183
+    },
+    {
+      "event_id": "E00386",
+      "score": 0.62934
+    },
+    {
+      "event_id": "E00410",
+      "score": 0.597222
+    },
+    {
+      "event_id": "E00393",
+      "score": 0.512232
+    },
+    {
+      "event_id": "E00392",
+      "score": 0.493069
+    },
+    {
+      "event_id": "E00409",
+      "score": 0.474254
+    },
+    {
+      "event_id": "E00384",
+      "score": 0.453358
+    },
+    {
+      "event_id": "E00416",
+      "score": 0.417238
+    },
+    {
+      "event_id": "E00418",
+      "score": 0.379492
+    },
+    {
+      "event_id": "E00385",
+      "score": 0.217226
+    }
+  ],
+  "Q0072": [
+    {
+      "event_id": "E00401",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00408",
+      "score": 0.817726
+    },
+    {
+      "event_id": "E00381",
+      "score": 0.78522
+    },
+    {
+      "event_id": "E00402",
+      "score": 0.597309
+    },
+    {
+      "event_id": "E00390",
+      "score": 0.353331
+    },
+    {
+      "event_id": "E00403",
+      "score": 0.325583
+    },
+    {
+      "event_id": "E00382",
+      "score": 0.286875
+    },
+    {
+      "event_id": "E00410",
+      "score": 0.28396
+    },
+    {
+      "event_id": "E00409",
+      "score": 0.280703
+    },
+    {
+      "event_id": "E00388",
+      "score": 0.279372
+    },
+    {
+      "event_id": "E00394",
+      "score": 0.253863
+    },
+    {
+      "event_id": "E00378",
+      "score": 0.105904
+    }
+  ],
+  "Q0073": [
+    {
+      "event_id": "E00424",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00439",
+      "score": 0.666219
+    },
+    {
+      "event_id": "E00440",
+      "score": 0.601861
+    },
+    {
+      "event_id": "E00463",
+      "score": 0.527165
+    },
+    {
+      "event_id": "E00432",
+      "score": 0.522478
+    },
+    {
+      "event_id": "E00433",
+      "score": 0.386452
+    },
+    {
+      "event_id": "E00441",
+      "score": 0.381619
+    },
+    {
+      "event_id": "E00447",
+      "score": 0.29369
+    },
+    {
+      "event_id": "E00435",
+      "score": 0.293205
+    },
+    {
+      "event_id": "E00437",
+      "score": 0.293205
+    },
+    {
+      "event_id": "E00425",
+      "score": 0.27997
+    },
+    {
+      "event_id": "E00455",
+      "score": 0.151157
+    }
+  ],
+  "Q0074": [
+    {
+      "event_id": "E00424",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00457",
+      "score": 0.596186
+    },
+    {
+      "event_id": "E00431",
+      "score": 0.557986
+    },
+    {
+      "event_id": "E00425",
+      "score": 0.30844
+    },
+    {
+      "event_id": "E00441",
+      "score": 0.279173
+    },
+    {
+      "event_id": "E00426",
+      "score": 0.254293
+    },
+    {
+      "event_id": "E00465",
+      "score": 0.249412
+    },
+    {
+      "event_id": "E00447",
+      "score": 0.18482
+    },
+    {
+      "event_id": "E00463",
+      "score": 0.174263
+    },
+    {
+      "event_id": "E00464",
+      "score": 0.161943
+    },
+    {
+      "event_id": "E00449",
+      "score": 0.128263
+    },
+    {
+      "event_id": "E00445",
+      "score": 0.079132
+    }
+  ],
+  "Q0075": [
+    {
+      "event_id": "E00455",
+      "score": 0.989416
+    },
+    {
+      "event_id": "E00448",
+      "score": 0.985071
+    },
+    {
+      "event_id": "E00463",
+      "score": 0.661832
+    },
+    {
+      "event_id": "E00450",
+      "score": 0.644513
+    },
+    {
+      "event_id": "E00453",
+      "score": 0.644513
+    },
+    {
+      "event_id": "E00424",
+      "score": 0.496758
+    },
+    {
+      "event_id": "E00449",
+      "score": 0.435715
+    },
+    {
+      "event_id": "E00429",
+      "score": 0.327573
+    },
+    {
+      "event_id": "E00431",
+      "score": 0.320101
+    },
+    {
+      "event_id": "E00426",
+      "score": 0.246342
+    },
+    {
+      "event_id": "E00457",
+      "score": 0.222724
+    },
+    {
+      "event_id": "E00445",
+      "score": 0.152992
+    }
+  ],
+  "Q0076": [
+    {
+      "event_id": "E00457",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00431",
+      "score": 0.291586
+    },
+    {
+      "event_id": "E00427",
+      "score": 0.240962
+    },
+    {
+      "event_id": "E00430",
+      "score": 0.240962
+    },
+    {
+      "event_id": "E00425",
+      "score": 0.159101
+    },
+    {
+      "event_id": "E00441",
+      "score": 0.143928
+    },
+    {
+      "event_id": "E00426",
+      "score": 0.13169
+    },
+    {
+      "event_id": "E00465",
+      "score": 0.128609
+    },
+    {
+      "event_id": "E00447",
+      "score": 0.095043
+    },
+    {
+      "event_id": "E00463",
+      "score": 0.089676
+    },
+    {
+      "event_id": "E00464",
+      "score": 0.083136
+    },
+    {
+      "event_id": "E00445",
+      "score": 0.038311
+    }
+  ],
+  "Q0077": [
+    {
+      "event_id": "E00464",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00435",
+      "score": 0.270727
+    },
+    {
+      "event_id": "E00437",
+      "score": 0.270727
+    },
+    {
+      "event_id": "E00457",
+      "score": 0.184279
+    },
+    {
+      "event_id": "E00445",
+      "score": 0.169963
+    },
+    {
+      "event_id": "E00452",
+      "score": 0.139495
+    },
+    {
+      "event_id": "E00449",
+      "score": 0.139007
+    },
+    {
+      "event_id": "E00450",
+      "score": 0.138841
+    },
+    {
+      "event_id": "E00453",
+      "score": 0.138841
+    },
+    {
+      "event_id": "E00456",
+      "score": 0.120127
+    },
+    {
+      "event_id": "E00441",
+      "score": 0.108532
+    },
+    {
+      "event_id": "E00426",
+      "score": 0.106722
+    }
+  ],
+  "Q0078": [
+    {
+      "event_id": "E00440",
+      "score": 0.992761
+    },
+    {
+      "event_id": "E00431",
+      "score": 0.978211
+    },
+    {
+      "event_id": "E00463",
+      "score": 0.943766
+    },
+    {
+      "event_id": "E00425",
+      "score": 0.554793
+    },
+    {
+      "event_id": "E00439",
+      "score": 0.506697
+    },
+    {
+      "event_id": "E00424",
+      "score": 0.472346
+    },
+    {
+      "event_id": "E00448",
+      "score": 0.357016
+    },
+    {
+      "event_id": "E00432",
+      "score": 0.313102
+    },
+    {
+      "event_id": "E00457",
+      "score": 0.217179
+    },
+    {
+      "event_id": "E00445",
+      "score": 0.211512
+    },
+    {
+      "event_id": "E00456",
+      "score": 0.194884
+    },
+    {
+      "event_id": "E00436",
+      "score": 0.123667
+    }
+  ],
+  "Q0079": [
+    {
+      "event_id": "E00441",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00447",
+      "score": 0.711813
+    },
+    {
+      "event_id": "E00433",
+      "score": 0.62934
+    },
+    {
+      "event_id": "E00457",
+      "score": 0.597222
+    },
+    {
+      "event_id": "E00427",
+      "score": 0.55475
+    },
+    {
+      "event_id": "E00430",
+      "score": 0.55475
+    },
+    {
+      "event_id": "E00440",
+      "score": 0.513979
+    },
+    {
+      "event_id": "E00439",
+      "score": 0.494196
+    },
+    {
+      "event_id": "E00456",
+      "score": 0.474254
+    },
+    {
+      "event_id": "E00431",
+      "score": 0.454569
+    },
+    {
+      "event_id": "E00463",
+      "score": 0.218856
+    },
+    {
+      "event_id": "E00432",
+      "score": 0.218255
+    }
+  ],
+  "Q0080": [
+    {
+      "event_id": "E00448",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00455",
+      "score": 0.817726
+    },
+    {
+      "event_id": "E00449",
+      "score": 0.597309
+    },
+    {
+      "event_id": "E00435",
+      "score": 0.353331
+    },
+    {
+      "event_id": "E00437",
+      "score": 0.353331
+    },
+    {
+      "event_id": "E00452",
+      "score": 0.325583
+    },
+    {
+      "event_id": "E00450",
+      "score": 0.324113
+    },
+    {
+      "event_id": "E00453",
+      "score": 0.324113
+    },
+    {
+      "event_id": "E00457",
+      "score": 0.28396
+    },
+    {
+      "event_id": "E00456",
+      "score": 0.280703
+    },
+    {
+      "event_id": "E00441",
+      "score": 0.253863
+    },
+    {
+      "event_id": "E00445",
+      "score": 0.110329
+    }
+  ],
+  "Q0081": [
+    {
+      "event_id": "E00471",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00486",
+      "score": 0.778538
+    },
+    {
+      "event_id": "E00487",
+      "score": 0.711681
+    },
+    {
+      "event_id": "E00510",
+      "score": 0.620149
+    },
+    {
+      "event_id": "E00479",
+      "score": 0.618094
+    },
+    {
+      "event_id": "E00481",
+      "score": 0.540193
+    },
+    {
+      "event_id": "E00482",
+      "score": 0.540193
+    },
+    {
+      "event_id": "E00480",
+      "score": 0.436217
+    },
+    {
+      "event_id": "E00488",
+      "score": 0.430358
+    },
+    {
+      "event_id": "E00484",
+      "score": 0.420798
+    },
+    {
+      "event_id": "E00472",
+      "score": 0.348743
+    },
+    {
+      "event_id": "E00494",
+      "score": 0.331367
+    }
+  ],
+  "Q0082": [
+    {
+      "event_id": "E00471",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00481",
+      "score": 0.783247
+    },
+    {
+      "event_id": "E00482",
+      "score": 0.783247
+    },
+    {
+      "event_id": "E00504",
+      "score": 0.714686
+    },
+    {
+      "event_id": "E00478",
+      "score": 0.668457
+    },
+    {
+      "event_id": "E00474",
+      "score": 0.637428
+    },
+    {
+      "event_id": "E00476",
+      "score": 0.637428
+    },
+    {
+      "event_id": "E00472",
+      "score": 0.367741
+    },
+    {
+      "event_id": "E00488",
+      "score": 0.333535
+    },
+    {
+      "event_id": "E00473",
+      "score": 0.304323
+    },
+    {
+      "event_id": "E00512",
+      "score": 0.297999
+    },
+    {
+      "event_id": "E00494",
+      "score": 0.220599
+    }
+  ],
+  "Q0083": [
+    {
+      "event_id": "E00502",
+      "score": 0.989416
+    },
+    {
+      "event_id": "E00495",
+      "score": 0.985071
+    },
+    {
+      "event_id": "E00510",
+      "score": 0.66061
+    },
+    {
+      "event_id": "E00497",
+      "score": 0.644513
+    },
+    {
+      "event_id": "E00474",
+      "score": 0.639842
+    },
+    {
+      "event_id": "E00476",
+      "score": 0.639842
+    },
+    {
+      "event_id": "E00471",
+      "score": 0.501652
+    },
+    {
+      "event_id": "E00496",
+      "score": 0.435715
+    },
+    {
+      "event_id": "E00498",
+      "score": 0.358383
+    },
+    {
+      "event_id": "E00501",
+      "score": 0.358383
+    },
+    {
+      "event_id": "E00491",
+      "score": 0.324004
+    },
+    {
+      "event_id": "E00478",
+      "score": 0.319455
+    }
+  ],
+  "Q0084": [
+    {
+      "event_id": "E00504",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00478",
+      "score": 0.290853
+    },
+    {
+      "event_id": "E00477",
+      "score": 0.240962
+    },
+    {
+      "event_id": "E00472",
+      "score": 0.158718
+    },
+    {
+      "event_id": "E00488",
+      "score": 0.143928
+    },
+    {
+      "event_id": "E00473",
+      "score": 0.13169
+    },
+    {
+      "event_id": "E00512",
+      "score": 0.128609
+    },
+    {
+      "event_id": "E00494",
+      "score": 0.095043
+    },
+    {
+      "event_id": "E00510",
+      "score": 0.089538
+    },
+    {
+      "event_id": "E00511",
+      "score": 0.083136
+    },
+    {
+      "event_id": "E00496",
+      "score": 0.066636
+    },
+    {
+      "event_id": "E00490",
+      "score": 0.038311
+    }
+  ],
+  "Q0085": [
+    {
+      "event_id": "E00511",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00504",
+      "score": 0.184279
+    },
+    {
+      "event_id": "E00490",
+      "score": 0.169963
+    },
+    {
+      "event_id": "E00515",
+      "score": 0.165039
+    },
+    {
+      "event_id": "E00496",
+      "score": 0.139007
+    },
+    {
+      "event_id": "E00497",
+      "score": 0.138841
+    },
+    {
+      "event_id": "E00475",
+      "score": 0.122935
+    },
+    {
+      "event_id": "E00503",
+      "score": 0.120127
+    },
+    {
+      "event_id": "E00484",
+      "score": 0.119598
+    },
+    {
+      "event_id": "E00488",
+      "score": 0.108532
+    },
+    {
+      "event_id": "E00473",
+      "score": 0.106722
+    },
+    {
+      "event_id": "E00510",
+      "score": 0.093572
+    }
+  ],
+  "Q0086": [
+    {
+      "event_id": "E00487",
+      "score": 0.9951
+    },
+    {
+      "event_id": "E00478",
+      "score": 0.976224
+    },
+    {
+      "event_id": "E00510",
+      "score": 0.939818
+    },
+    {
+      "event_id": "E00472",
+      "score": 0.572776
+    },
+    {
+      "event_id": "E00486",
+      "score": 0.520813
+    },
+    {
+      "event_id": "E00471",
+      "score": 0.494016
+    },
+    {
+      "event_id": "E00507",
+      "score": 0.443596
+    },
+    {
+      "event_id": "E00509",
+      "score": 0.443596
+    },
+    {
+      "event_id": "E00515",
+      "score": 0.443536
+    },
+    {
+      "event_id": "E00495",
+      "score": 0.345143
+    },
+    {
+      "event_id": "E00479",
+      "score": 0.335172
+    },
+    {
+      "event_id": "E00490",
+      "score": 0.141953
+    }
+  ],
+  "Q0087": [
+    {
+      "event_id": "E00488",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00494",
+      "score": 0.711813
+    },
+    {
+      "event_id": "E00474",
+      "score": 0.637183
+    },
+    {
+      "event_id": "E00476",
+      "score": 0.637183
+    },
+    {
+      "event_id": "E00480",
+      "score": 0.62934
+    },
+    {
+      "event_id": "E00504",
+      "score": 0.597222
+    },
+    {
+      "event_id": "E00477",
+      "score": 0.55475
+    },
+    {
+      "event_id": "E00487",
+      "score": 0.512232
+    },
+    {
+      "event_id": "E00486",
+      "score": 0.493069
+    },
+    {
+      "event_id": "E00503",
+      "score": 0.474254
+    },
+    {
+      "event_id": "E00478",
+      "score": 0.453358
+    },
+    {
+      "event_id": "E00510",
+      "score": 0.21799
+    }
+  ],
+  "Q0088": [
+    {
+      "event_id": "E00495",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00502",
+      "score": 0.817726
+    },
+    {
+      "event_id": "E00474",
+      "score": 0.78522
+    },
+    {
+      "event_id": "E00476",
+      "score": 0.78522
+    },
+    {
+      "event_id": "E00496",
+      "score": 0.597309
+    },
+    {
+      "event_id": "E00497",
+      "score": 0.324113
+    },
+    {
+      "event_id": "E00475",
+      "score": 0.286875
+    },
+    {
+      "event_id": "E00504",
+      "score": 0.28396
+    },
+    {
+      "event_id": "E00503",
+      "score": 0.280703
+    },
+    {
+      "event_id": "E00484",
+      "score": 0.279372
+    },
+    {
+      "event_id": "E00488",
+      "score": 0.253863
+    },
+    {
+      "event_id": "E00490",
+      "score": 0.110329
+    }
+  ],
+  "Q0089": [
+    {
+      "event_id": "E00518",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00533",
+      "score": 0.674633
+    },
+    {
+      "event_id": "E00534",
+      "score": 0.61661
+    },
+    {
+      "event_id": "E00557",
+      "score": 0.537206
+    },
+    {
+      "event_id": "E00526",
+      "score": 0.535668
+    },
+    {
+      "event_id": "E00527",
+      "score": 0.377809
+    },
+    {
+      "event_id": "E00535",
+      "score": 0.373117
+    },
+    {
+      "event_id": "E00528",
+      "score": 0.36502
+    },
+    {
+      "event_id": "E00531",
+      "score": 0.36502
+    },
+    {
+      "event_id": "E00519",
+      "score": 0.302252
+    },
+    {
+      "event_id": "E00541",
+      "score": 0.287133
+    },
+    {
+      "event_id": "E00530",
+      "score": 0.286654
+    }
+  ],
+  "Q0090": [
+    {
+      "event_id": "E00518",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00551",
+      "score": 0.597286
+    },
+    {
+      "event_id": "E00525",
+      "score": 0.557795
+    },
+    {
+      "event_id": "E00521",
+      "score": 0.532088
+    },
+    {
+      "event_id": "E00519",
+      "score": 0.308268
+    },
+    {
+      "event_id": "E00535",
+      "score": 0.279622
+    },
+    {
+      "event_id": "E00520",
+      "score": 0.254732
+    },
+    {
+      "event_id": "E00559",
+      "score": 0.249814
+    },
+    {
+      "event_id": "E00541",
+      "score": 0.185105
+    },
+    {
+      "event_id": "E00557",
+      "score": 0.174292
+    },
+    {
+      "event_id": "E00558",
+      "score": 0.162185
+    },
+    {
+      "event_id": "E00536",
+      "score": 0.079132
+    }
+  ],
+  "Q0091": [
+    {
+      "event_id": "E00549",
+      "score": 0.989416
+    },
+    {
+      "event_id": "E00542",
+      "score": 0.985071
+    },
+    {
+      "event_id": "E00557",
+      "score": 0.66061
+    },
+    {
+      "event_id": "E00547",
+      "score": 0.644513
+    },
+    {
+      "event_id": "E00521",
+      "score": 0.639842
+    },
+    {
+      "event_id": "E00518",
+      "score": 0.495834
+    },
+    {
+      "event_id": "E00543",
+      "score": 0.435715
+    },
+    {
+      "event_id": "E00544",
+      "score": 0.358383
+    },
+    {
+      "event_id": "E00524",
+      "score": 0.327573
+    },
+    {
+      "event_id": "E00525",
+      "score": 0.319455
+    },
+    {
+      "event_id": "E00520",
+      "score": 0.246342
+    },
+    {
+      "event_id": "E00536",
+      "score": 0.152992
+    }
+  ],
+  "Q0092": [
+    {
+      "event_id": "E00551",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00525",
+      "score": 0.290853
+    },
+    {
+      "event_id": "E00522",
+      "score": 0.240962
+    },
+    {
+      "event_id": "E00519",
+      "score": 0.158718
+    },
+    {
+      "event_id": "E00535",
+      "score": 0.143928
+    },
+    {
+      "event_id": "E00520",
+      "score": 0.13169
+    },
+    {
+      "event_id": "E00559",
+      "score": 0.128609
+    },
+    {
+      "event_id": "E00541",
+      "score": 0.095043
+    },
+    {
+      "event_id": "E00557",
+      "score": 0.089538
+    },
+    {
+      "event_id": "E00558",
+      "score": 0.083136
+    },
+    {
+      "event_id": "E00536",
+      "score": 0.038311
+    },
+    {
+      "event_id": "E00539",
+      "score": 0.038311
+    }
+  ],
+  "Q0093": [
+    {
+      "event_id": "E00558",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00530",
+      "score": 0.270727
+    },
+    {
+      "event_id": "E00551",
+      "score": 0.184279
+    },
+    {
+      "event_id": "E00536",
+      "score": 0.169963
+    },
+    {
+      "event_id": "E00539",
+      "score": 0.169963
+    },
+    {
+      "event_id": "E00556",
+      "score": 0.160574
+    },
+    {
+      "event_id": "E00546",
+      "score": 0.139495
+    },
+    {
+      "event_id": "E00547",
+      "score": 0.138841
+    },
+    {
+      "event_id": "E00523",
+      "score": 0.122935
+    },
+    {
+      "event_id": "E00528",
+      "score": 0.119598
+    },
+    {
+      "event_id": "E00531",
+      "score": 0.119598
+    },
+    {
+      "event_id": "E00550",
+      "score": 0.074763
+    }
+  ],
+  "Q0094": [
+    {
+      "event_id": "E00534",
+      "score": 0.9951
+    },
+    {
+      "event_id": "E00525",
+      "score": 0.976224
+    },
+    {
+      "event_id": "E00557",
+      "score": 0.939818
+    },
+    {
+      "event_id": "E00519",
+      "score": 0.572776
+    },
+    {
+      "event_id": "E00533",
+      "score": 0.520813
+    },
+    {
+      "event_id": "E00518",
+      "score": 0.48766
+    },
+    {
+      "event_id": "E00555",
+      "score": 0.443596
+    },
+    {
+      "event_id": "E00542",
+      "score": 0.345143
+    },
+    {
+      "event_id": "E00526",
+      "score": 0.335172
+    },
+    {
+      "event_id": "E00551",
+      "score": 0.210261
+    },
+    {
+      "event_id": "E00536",
+      "score": 0.204875
+    },
+    {
+      "event_id": "E00539",
+      "score": 0.204875
+    }
+  ],
+  "Q0095": [
+    {
+      "event_id": "E00535",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00541",
+      "score": 0.711813
+    },
+    {
+      "event_id": "E00521",
+      "score": 0.637183
+    },
+    {
+      "event_id": "E00527",
+      "score": 0.62934
+    },
+    {
+      "event_id": "E00551",
+      "score": 0.597222
+    },
+    {
+      "event_id": "E00522",
+      "score": 0.55475
+    },
+    {
+      "event_id": "E00534",
+      "score": 0.512232
+    },
+    {
+      "event_id": "E00533",
+      "score": 0.493069
+    },
+    {
+      "event_id": "E00550",
+      "score": 0.474254
+    },
+    {
+      "event_id": "E00525",
+      "score": 0.453358
+    },
+    {
+      "event_id": "E00557",
+      "score": 0.21799
+    },
+    {
+      "event_id": "E00526",
+      "score": 0.217226
+    }
+  ],
+  "Q0096": [
+    {
+      "event_id": "E00542",
+      "score": 1.0
+    },
+    {
+      "event_id": "E00549",
+      "score": 0.817726
+    },
+    {
+      "event_id": "E00521",
+      "score": 0.78522
+    },
+    {
+      "event_id": "E00543",
+      "score": 0.597309
+    },
+    {
+      "event_id": "E00556",
+      "score": 0.374216
+    },
+    {
+      "event_id": "E00530",
+      "score": 0.353331
+    },
+    {
+      "event_id": "E00546",
+      "score": 0.325583
+    },
+    {
+      "event_id": "E00547",
+      "score": 0.324113
+    },
+    {
+      "event_id": "E00523",
+      "score": 0.286875
+    },
+    {
+      "event_id": "E00528",
+      "score": 0.279372
+    },
+    {
+      "event_id": "E00531",
+      "score": 0.279372
+    },
+    {
+      "event_id": "E00550",
+      "score": 0.178695
+    }
+  ]
+}

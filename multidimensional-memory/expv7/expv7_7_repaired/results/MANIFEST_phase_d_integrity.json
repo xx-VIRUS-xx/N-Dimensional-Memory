@@ -1,0 +1,238 @@
+{
+  "experiment": "EXP-V7.7-Repaired",
+  "phase": "D-integrity",
+  "dataset_hash": {
+    "corpus_evaluator": "d1fe7d2a080b90291a0a42c5464ea660188bd19f64ab95d71e40e5acbd0517d6",
+    "corpus_unlabeled": "80a32f4f6edde3f65fa3ac74dede2750214b4514b23d8ca1c2bec9f7b7b9fec6",
+    "public_queries": "eb18624c78b25af7e927ff77f47878e890f795b2dc68f17f2f9d376d279d11d5",
+    "gold": "16bb1e89d1f685c96826e9ed76b994457859b4e3a8b1f54868637a39aa7d70e4"
+  },
+  "writer_memories": {
+    "claude": {
+      "path": "frozen/claude/memory.json",
+      "sha256": "8eff257075b16527b19ac7d57de2dce3afd84df917fe37ee4c274355ec93cbe4",
+      "record_count": 108,
+      "memory_version": "claude-writer-v7.7-repaired-1.0",
+      "results_copy_matches_frozen": true
+    },
+    "codex": {
+      "path": "frozen/codex/memory.json",
+      "sha256": "0887d43b4feeb86f0c264ac906b88776a8d651e921c719017054c1352369d715",
+      "record_count": 216,
+      "memory_version": "v7.7-repaired-codex-2026-09-17",
+      "results_copy_matches_frozen": true
+    },
+    "copilot": {
+      "path": "frozen/copilot/memory.json",
+      "sha256": "ef1b36ec47b76b6f8a7f1accaf96a886f26fc4d4a5583f03c4a8e3f2d499836d",
+      "record_count": 168,
+      "memory_version": "EXP-V7.7-REPAIRED-COPILOT",
+      "results_copy_matches_frozen": true
+    }
+  },
+  "phase_b_conditions": {
+    "claude": {
+      "RAW": {
+        "path": "results/retrieval/claude.RAW.json",
+        "sha256": "67633f8cb03fb2ab93cb5a0af2010b1d16de7d0d0069895198a0671bade12997",
+        "status": "OK",
+        "independently_scored_correct": 96,
+        "independently_scored_total": 96,
+        "self_reported_correct": 96
+      },
+      "BM25": {
+        "path": "results/retrieval/claude.BM25.json",
+        "sha256": "94c6512b0ad34468ccd03c45dafc87f9612f03cb489dc20ee36936e407f005aa",
+        "status": "OK",
+        "independently_scored_correct": 48,
+        "independently_scored_total": 96,
+        "self_reported_correct": 48
+      },
+      "DENSE": {
+        "path": "results/retrieval/claude.DENSE.json",
+        "sha256": "f683e0b279cc7c7f073476a2c3597ef9a2053a1e49373b5f3a263792bf13be97",
+        "status": "OK",
+        "independently_scored_correct": 48,
+        "independently_scored_total": 96,
+        "self_reported_correct": 48
+      },
+      "HYBRID": {
+        "path": "results/retrieval/claude.HYBRID.json",
+        "sha256": "c8a92b008b258bdf313acacda8a36bcbc2627ebd1608a77ff1e6e4bd1f0368da",
+        "status": "OK",
+        "independently_scored_correct": 48,
+        "independently_scored_total": 96,
+        "self_reported_correct": 48
+      },
+      "GRAPHRAG": {
+        "path": "results/retrieval/claude.GRAPHRAG.json",
+        "sha256": "c03fb5b7a335d415eb9aa0edd085e9f4d78cd4488fe1abc8bc40e00e1f1b0155",
+        "status": "NOT_RUN",
+        "reason": "NOT_RUN: no verified GraphRAG implementation/backend is available in this environment (pip show graphrag: not found; no network install attempted per instruction not to substitute a proxy silently)."
+      },
+      "HIPPORAG2": {
+        "path": "results/retrieval/claude.HIPPORAG2.json",
+        "sha256": "53c901a987852b77ec02ee826dc6520b8510148e12525fc4d0147b81e42f4cbd",
+        "status": "NOT_RUN",
+        "reason": "NOT_RUN: no verified HippoRAG 2 implementation is available in this environment (pip show hipporag: not found)."
+      },
+      "RAPTOR": {
+        "path": "results/retrieval/claude.RAPTOR.json",
+        "sha256": "54a0b38f6f068ae0443147f9ee970f94d926aadb3247793e24d770d9a3c12aa4",
+        "status": "NOT_RUN",
+        "reason": "NOT_RUN: no verified RAPTOR implementation is available in this environment (pip show raptor: not found)."
+      },
+      "GRAPHITI": {
+        "path": "results/retrieval/claude.GRAPHITI.json",
+        "sha256": "879b1ee0584d33916dc01124fee3e34d7856825c626c5f0179dcd68692af76a8",
+        "status": "NOT_RUN",
+        "reason": "NOT_RUN: graphiti-core requires an LLM provider API key (OpenAI by default) and a running Neo4j 5.26+/FalkorDB backend, per src/retrieval/GRAPHITI.md. Neither is configured in this environment (verified: no OPENAI_API_KEY/ANTHROPIC_API_KEY set, no Neo4j bolt port reachable on localhost:7687). graphiti-core itself is pip-installable but was not installed since it cannot actually run without these dependencies, and installing an unusable package would not change the NOT_RUN status."
+      },
+      "MEMORY": {
+        "path": "results/retrieval/claude.MEMORY.json",
+        "sha256": "b884033ff9fa3c7de686f5de659f42151b923372ad466b66017d62945db455f9",
+        "status": "OK",
+        "independently_scored_correct": 96,
+        "independently_scored_total": 96,
+        "self_reported_correct": 96
+      },
+      "MEMORY+RAW": {
+        "path": "results/retrieval/claude.MEMORY+RAW.json",
+        "sha256": "bab5c30bceafb8e6eacf8eee9efd5727e866d57d097af26268f5a6f1fa60e079",
+        "status": "OK",
+        "independently_scored_correct": 96,
+        "independently_scored_total": 96,
+        "self_reported_correct": 96
+      }
+    },
+    "codex": {
+      "RAW": {
+        "path": "results/retrieval/codex.RAW.json",
+        "sha256": "1731db57c0f815ea7565b28eb95177cf328bfcd7dd97d79b6f4a9456ecb5f4fa",
+        "status": "OK",
+        "independently_scored_correct": 96,
+        "independently_scored_total": 96,
+        "self_reported_correct": null
+      },
+      "BM25": {
+        "path": "results/retrieval/codex.BM25.json",
+        "sha256": "fe3073195fcd87398d9016ddc18285aad754f226429e4105f124d8ffcb12ce2d",
+        "status": "OK",
+        "independently_scored_correct": 13,
+        "independently_scored_total": 96,
+        "self_reported_correct": null
+      },
+      "DENSE": {
+        "path": "results/retrieval/codex.DENSE.json",
+        "sha256": "71c9da2238b680bfdf6347c7eafe962b324a9aafff1b1017ab2f237f2a7c5019",
+        "status": "NOT_RUN",
+        "reason": "NOT_RUN: no verified dense embedding model/backend is configured; a proxy would violate the handoff."
+      },
+      "HYBRID": {
+        "path": "results/retrieval/codex.HYBRID.json",
+        "sha256": "00806aa4dcdfbc1b48c216622b2e4b6d629db1d896500faaf815cfad6d2b8098",
+        "status": "NOT_RUN",
+        "reason": "NOT_RUN: depends on unavailable verified dense retriever."
+      },
+      "GRAPHRAG": {
+        "path": "results/retrieval/codex.GRAPHRAG.json",
+        "sha256": "ca783c4f3d190b464baf38d01681dd42ecb854bef919b4597aeae7b62196937c",
+        "status": "NOT_RUN",
+        "reason": "NOT_RUN: no verified GraphRAG implementation/backend is configured."
+      },
+      "HIPPORAG2": {
+        "path": "results/retrieval/codex.HIPPORAG2.json",
+        "sha256": "763efbad0264192a9d697b596921b25fed7c4278c245b8f34bb5dd74f362ef12",
+        "status": "NOT_RUN",
+        "reason": "NOT_RUN: HippoRAG2 is not installed/configured."
+      },
+      "RAPTOR": {
+        "path": "results/retrieval/codex.RAPTOR.json",
+        "sha256": "641d483f17311059c7a276f428ff2be870e1ca64c548ad0772ee176adbfe9f48",
+        "status": "NOT_RUN",
+        "reason": "NOT_RUN: RAPTOR is not installed/configured."
+      },
+      "GRAPHITI": {
+        "status": "MISSING"
+      },
+      "MEMORY": {
+        "path": "results/retrieval/codex.MEMORY.json",
+        "sha256": "a2d763ffa939ffd919a2c82577db88490cd195a4b30fb151382e947158455a04",
+        "status": "OK",
+        "independently_scored_correct": 96,
+        "independently_scored_total": 96,
+        "self_reported_correct": null
+      },
+      "MEMORY+RAW": {
+        "path": "results/retrieval/codex.MEMORY+RAW.json",
+        "sha256": "3d3e86a33122842be4ae8a8c2ce089166c366333f4b44540ead9c5f1a6db8428",
+        "status": "OK",
+        "independently_scored_correct": 96,
+        "independently_scored_total": 96,
+        "self_reported_correct": null
+      }
+    },
+    "copilot": {
+      "status": "NOT_PRODUCED_BY_WRITER",
+      "note": "Copilot's session had not produced Phase B retrieval condition files in results/retrieval/ at the time this manifest was generated; only results/copilot.memory.json (Phase A) exists."
+    }
+  },
+  "phase_c_cross_agent": {
+    "claude_to_codex": {
+      "path": "results/cross_agent/claude_to_codex.json",
+      "sha256": "19cb99eaf63c4629e1d8d75be31c55d4d8cc6f458f9584e79fa1d62c60a66ed0",
+      "status": "OK",
+      "independently_scored_correct": 96,
+      "independently_scored_total": 96,
+      "writer_memory_sha256_referenced": "8eff257075b16527b19ac7d57de2dce3afd84df917fe37ee4c274355ec93cbe4",
+      "writer_memory_sha256_actual": "8eff257075b16527b19ac7d57de2dce3afd84df917fe37ee4c274355ec93cbe4",
+      "hash_match": true
+    },
+    "claude_to_copilot": {
+      "path": "results/cross_agent/claude_to_copilot.json",
+      "sha256": "9610fb903d5240f2a35ad4f462a846751ced1a31c92995cbcf009ba4184a666b",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: reader agent copilot is not available in this Codex session; Codex did not impersonate another model family."
+    },
+    "codex_to_claude": {
+      "path": "results/cross_agent/codex_to_claude.json",
+      "sha256": "13aa7a418945c072555331b0f3d7fe25d1e5dd62642d5a6fb89feb3884ecf4d1",
+      "status": "OK",
+      "independently_scored_correct": 96,
+      "independently_scored_total": 96,
+      "writer_memory_sha256_referenced": "0887d43b4feeb86f0c264ac906b88776a8d651e921c719017054c1352369d715",
+      "writer_memory_sha256_actual": "0887d43b4feeb86f0c264ac906b88776a8d651e921c719017054c1352369d715",
+      "hash_match": true
+    },
+    "codex_to_copilot": {
+      "path": "results/cross_agent/codex_to_copilot.json",
+      "sha256": "4d2adce618c0e2007ceb2f3638b8acb900f03a52f709a827222acd512e6c1cf4",
+      "status": "NOT_RUN",
+      "reason": "NOT_RUN: reader agent copilot is not available in this Codex session; Codex did not impersonate another model family."
+    },
+    "copilot_to_claude": {
+      "path": "results/cross_agent/copilot_to_claude.json",
+      "sha256": "0c68654f7caa528b4b165da594884161b2859058f4f47bc30d63434d3dffb721",
+      "status": "OK",
+      "independently_scored_correct": 84,
+      "independently_scored_total": 96,
+      "writer_memory_sha256_referenced": "ef1b36ec47b76b6f8a7f1accaf96a886f26fc4d4a5583f03c4a8e3f2d499836d",
+      "writer_memory_sha256_actual": "ef1b36ec47b76b6f8a7f1accaf96a886f26fc4d4a5583f03c4a8e3f2d499836d",
+      "hash_match": true
+    },
+    "copilot_to_codex": {
+      "path": "results/cross_agent/copilot_to_codex.json",
+      "sha256": "d131b068a04b57094c9a20be813b4a22c72b898cb38cffbeb5226b258393b7e5",
+      "status": "OK",
+      "independently_scored_correct": 84,
+      "independently_scored_total": 96,
+      "writer_memory_sha256_referenced": "ef1b36ec47b76b6f8a7f1accaf96a886f26fc4d4a5583f03c4a8e3f2d499836d",
+      "writer_memory_sha256_actual": "ef1b36ec47b76b6f8a7f1accaf96a886f26fc4d4a5583f03c4a8e3f2d499836d",
+      "hash_match": true
+    }
+  },
+  "integrity_failures": [
+    "codex.GRAPHITI.json missing"
+  ],
+  "integrity_status": "FAIL"
+}

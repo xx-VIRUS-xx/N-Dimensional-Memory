@@ -1,0 +1,177 @@
+{
+  "version": "7.1",
+  "event_count": 1200,
+  "cases": [
+    {
+      "case_id": "V71-HIST-01",
+      "query_category": "historical_recall",
+      "query": "Why was PostgreSQL chosen for the billing service, and what happened when DynamoDB was tried?",
+      "raw_event_ids": [
+        "E0005",
+        "E0067",
+        "E0141"
+      ],
+      "gold": {
+        "facts": [
+          "PostgreSQL was chosen because auditability mattered more than lower migration effort",
+          "DynamoDB migration failed due to conditional-update/transaction-flow incompatibility",
+          "Claude later confirmed the failure after reviewing integration-test output"
+        ],
+        "required": [
+          "E0005",
+          "E0067",
+          "E0141"
+        ]
+      }
+    },
+    {
+      "case_id": "V71-DEC-01",
+      "query_category": "decision_continuity",
+      "query": "Why was Redis caching abandoned, and what happened when it was retried?",
+      "raw_event_ids": [
+        "E0178",
+        "E0263",
+        "E0731"
+      ],
+      "gold": {
+        "facts": [
+          "initial Redis test increased cache invalidation complexity",
+          "it was abandoned",
+          "a narrower retry produced negligible latency improvement"
+        ],
+        "required": [
+          "E0178",
+          "E0263",
+          "E0731"
+        ]
+      }
+    },
+    {
+      "case_id": "V71-ACT-01",
+      "query_category": "action_outcome",
+      "query": "What happened with invoice exports from the first failed attempt through the later full customer batch?",
+      "raw_event_ids": [
+        "E0356",
+        "E0622",
+        "E1033"
+      ],
+      "gold": {
+        "facts": [
+          "first export timed out after 18 minutes",
+          "exports were switched to asynchronous jobs",
+          "first full customer batch completed successfully"
+        ],
+        "required": [
+          "E0356",
+          "E0622",
+          "E1033"
+        ]
+      }
+    },
+    {
+      "case_id": "V71-TIME-01",
+      "query_category": "temporal_state",
+      "query": "Reconstruct the webhook state from the initial migration through the latest known state.",
+      "raw_event_ids": [
+        "E0233",
+        "E0401",
+        "E0887",
+        "E1190"
+      ],
+      "gold": {
+        "timeline": [
+          "polling temporary compatibility path",
+          "moved to webhooks",
+          "webhooks disabled temporarily due duplicate deliveries/reconciliation errors",
+          "webhooks re-enabled after idempotency handling"
+        ],
+        "latest": "webhooks re-enabled",
+        "required": [
+          "E0233",
+          "E0401",
+          "E0887",
+          "E1190"
+        ]
+      }
+    },
+    {
+      "case_id": "V71-AMB-01",
+      "query_category": "ambiguity",
+      "query": "Who did \"he\" refer to in the deployment-window discussion?",
+      "raw_event_ids": [
+        "E0312",
+        "E0515"
+      ],
+      "gold": {
+        "answer": "unresolved between Rahul and Arjun",
+        "required": [
+          "E0312",
+          "E0515"
+        ]
+      }
+    },
+    {
+      "case_id": "V71-CONFLICT-01",
+      "query_category": "conflict",
+      "query": "Was the reason for abandoning DynamoDB merely an inference, or was it later confirmed? Preserve the provenance.",
+      "raw_event_ids": [
+        "E0448",
+        "E0449"
+      ],
+      "gold": {
+        "observations": [
+          "Claude inferred transaction semantics were involved",
+          "Rahul later confirmed transaction semantics were the reason"
+        ],
+        "status": "confirmed_after_inference",
+        "required": [
+          "E0448",
+          "E0449"
+        ]
+      }
+    },
+    {
+      "case_id": "V71-NEG-01",
+      "query_category": "negative_knowledge",
+      "query": "Was MongoDB discussed as a billing-migration option in the billing migration review?",
+      "raw_event_ids": [
+        "E0548",
+        "E1102"
+      ],
+      "gold": {
+        "answer": "not_discussed_in_that_review; E1102 was a different project",
+        "required": [
+          "E0548",
+          "E1102"
+        ]
+      }
+    },
+    {
+      "case_id": "V71-PROV-01",
+      "query_category": "provenance",
+      "query": "Which agent observed or confirmed the DynamoDB migration failure, and what is the history of that belief?",
+      "raw_event_ids": [
+        "E0067",
+        "E0141",
+        "E0448",
+        "E0449",
+        "E0802"
+      ],
+      "gold": {
+        "history": [
+          "Rahul observed the failed migration",
+          "Claude confirmed it after reviewing integration-test output",
+          "Claude later inferred transaction semantics",
+          "Rahul explicitly confirmed transaction semantics"
+        ],
+        "required": [
+          "E0067",
+          "E0141",
+          "E0448",
+          "E0449",
+          "E0802"
+        ]
+      }
+    }
+  ]
+}

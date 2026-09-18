@@ -1,0 +1,10 @@
+{
+  "status": "not_executed",
+  "writer": "claude",
+  "reader": "copilot",
+  "reason": "No Claude V7.3 memory artifact was present after the Copilot independent run; a reader result would be fabricated without it.",
+  "memory_artifact": null,
+  "cases": null,
+  "correct": null,
+  "unsupported_claims": null
+}

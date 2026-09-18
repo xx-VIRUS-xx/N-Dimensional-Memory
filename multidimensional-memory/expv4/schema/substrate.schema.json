@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EXP-V2 Canonical Semantic Substrate",
+  "type": "object",
+  "required": ["conversation_id", "points", "ambiguities", "relations", "metrics"],
+  "properties": {
+    "conversation_id": {"type": "string"},
+    "points": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["canonical_id", "surface", "dimensions", "model_support", "certainty"],
+        "properties": {
+          "canonical_id": {"type": "string"},
+          "surface": {"type": "string"},
+          "dimensions": {"type": "object", "additionalProperties": {"type": "array", "items": {"type": "string"}}},
+          "model_support": {"type": "object", "additionalProperties": {"type": "boolean"}},
+          "certainty": {"type": "string", "enum": ["common", "model_specific", "ambiguous"]},
+          "source_evidence": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "ambiguities": {"type": "array"},
+    "relations": {"type": "array"},
+    "metrics": {"type": "object"}
+  }
+}

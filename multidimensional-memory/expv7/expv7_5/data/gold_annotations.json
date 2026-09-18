@@ -1,0 +1,730 @@
+{
+  "engineering": [
+    {
+      "event_id": "ENG-0011",
+      "domain": "engineering",
+      "topic": "PostgreSQL migration",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0030",
+      "domain": "engineering",
+      "topic": "invoice timeout",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0037",
+      "domain": "engineering",
+      "topic": "DynamoDB migration",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0042",
+      "domain": "engineering",
+      "topic": "API rate limit",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0088",
+      "domain": "engineering",
+      "topic": "search index",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0103",
+      "domain": "engineering",
+      "topic": "webhook delivery",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0121",
+      "domain": "engineering",
+      "topic": "PostgreSQL migration",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0128",
+      "domain": "engineering",
+      "topic": "search index",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0138",
+      "domain": "engineering",
+      "topic": "search index",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0139",
+      "domain": "engineering",
+      "topic": "cache invalidation",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0144",
+      "domain": "engineering",
+      "topic": "Redis retry policy",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0161",
+      "domain": "engineering",
+      "topic": "PostgreSQL migration",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0166",
+      "domain": "engineering",
+      "topic": "deployment rollback",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0193",
+      "domain": "engineering",
+      "topic": "webhook delivery",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0204",
+      "domain": "engineering",
+      "topic": "Redis retry policy",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0216",
+      "domain": "engineering",
+      "topic": "deployment rollback",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0227",
+      "domain": "engineering",
+      "topic": "DynamoDB migration",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0243",
+      "domain": "engineering",
+      "topic": "webhook delivery",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0269",
+      "domain": "engineering",
+      "topic": "cache invalidation",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0343",
+      "domain": "engineering",
+      "topic": "webhook delivery",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0381",
+      "domain": "engineering",
+      "topic": "PostgreSQL migration",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0388",
+      "domain": "engineering",
+      "topic": "search index",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0395",
+      "domain": "engineering",
+      "topic": "CI pipeline",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0396",
+      "domain": "engineering",
+      "topic": "deployment rollback",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0416",
+      "domain": "engineering",
+      "topic": "deployment rollback",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0417",
+      "domain": "engineering",
+      "topic": "DynamoDB migration",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0430",
+      "domain": "engineering",
+      "topic": "invoice timeout",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0450",
+      "domain": "engineering",
+      "topic": "invoice timeout",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0458",
+      "domain": "engineering",
+      "topic": "search index",
+      "durable": true
+    },
+    {
+      "event_id": "ENG-0466",
+      "domain": "engineering",
+      "topic": "deployment rollback",
+      "durable": true
+    }
+  ],
+  "planning": [
+    {
+      "event_id": "PLA-0004",
+      "domain": "planning",
+      "topic": "team ownership",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0006",
+      "domain": "planning",
+      "topic": "travel schedule",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0015",
+      "domain": "planning",
+      "topic": "vendor review",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0053",
+      "domain": "planning",
+      "topic": "hiring plan",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0063",
+      "domain": "planning",
+      "topic": "hiring plan",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0064",
+      "domain": "planning",
+      "topic": "team ownership",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0085",
+      "domain": "planning",
+      "topic": "vendor review",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0117",
+      "domain": "planning",
+      "topic": "customer workshop",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0127",
+      "domain": "planning",
+      "topic": "customer workshop",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0152",
+      "domain": "planning",
+      "topic": "documentation deadline",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0157",
+      "domain": "planning",
+      "topic": "customer workshop",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0254",
+      "domain": "planning",
+      "topic": "team ownership",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0272",
+      "domain": "planning",
+      "topic": "documentation deadline",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0321",
+      "domain": "planning",
+      "topic": "release date",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0350",
+      "domain": "planning",
+      "topic": "budget approval",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0369",
+      "domain": "planning",
+      "topic": "on-call rotation",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0387",
+      "domain": "planning",
+      "topic": "customer workshop",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0388",
+      "domain": "planning",
+      "topic": "quarterly goal",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0390",
+      "domain": "planning",
+      "topic": "budget approval",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0412",
+      "domain": "planning",
+      "topic": "documentation deadline",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0418",
+      "domain": "planning",
+      "topic": "quarterly goal",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0419",
+      "domain": "planning",
+      "topic": "on-call rotation",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0424",
+      "domain": "planning",
+      "topic": "team ownership",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0432",
+      "domain": "planning",
+      "topic": "documentation deadline",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0446",
+      "domain": "planning",
+      "topic": "travel schedule",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0452",
+      "domain": "planning",
+      "topic": "documentation deadline",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0463",
+      "domain": "planning",
+      "topic": "hiring plan",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0479",
+      "domain": "planning",
+      "topic": "on-call rotation",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0497",
+      "domain": "planning",
+      "topic": "customer workshop",
+      "durable": true
+    },
+    {
+      "event_id": "PLA-0499",
+      "domain": "planning",
+      "topic": "on-call rotation",
+      "durable": true
+    }
+  ],
+  "product": [
+    {
+      "event_id": "PRO-0013",
+      "domain": "product",
+      "topic": "pricing experiment",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0027",
+      "domain": "product",
+      "topic": "export API",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0028",
+      "domain": "product",
+      "topic": "SSO rollout",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0033",
+      "domain": "product",
+      "topic": "pricing experiment",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0115",
+      "domain": "product",
+      "topic": "analytics dashboard",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0123",
+      "domain": "product",
+      "topic": "pricing experiment",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0127",
+      "domain": "product",
+      "topic": "export API",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0137",
+      "domain": "product",
+      "topic": "export API",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0168",
+      "domain": "product",
+      "topic": "SSO rollout",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0181",
+      "domain": "product",
+      "topic": "bulk import",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0192",
+      "domain": "product",
+      "topic": "checkout flow",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0224",
+      "domain": "product",
+      "topic": "dark mode",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0229",
+      "domain": "product",
+      "topic": "search redesign",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0236",
+      "domain": "product",
+      "topic": "notification system",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0238",
+      "domain": "product",
+      "topic": "SSO rollout",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0249",
+      "domain": "product",
+      "topic": "search redesign",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0252",
+      "domain": "product",
+      "topic": "checkout flow",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0267",
+      "domain": "product",
+      "topic": "export API",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0277",
+      "domain": "product",
+      "topic": "export API",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0293",
+      "domain": "product",
+      "topic": "pricing experiment",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0317",
+      "domain": "product",
+      "topic": "export API",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0349",
+      "domain": "product",
+      "topic": "search redesign",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0367",
+      "domain": "product",
+      "topic": "export API",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0400",
+      "domain": "product",
+      "topic": "mobile workflow",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0438",
+      "domain": "product",
+      "topic": "SSO rollout",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0441",
+      "domain": "product",
+      "topic": "bulk import",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0457",
+      "domain": "product",
+      "topic": "export API",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0473",
+      "domain": "product",
+      "topic": "pricing experiment",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0478",
+      "domain": "product",
+      "topic": "SSO rollout",
+      "durable": true
+    },
+    {
+      "event_id": "PRO-0485",
+      "domain": "product",
+      "topic": "analytics dashboard",
+      "durable": true
+    }
+  ],
+  "operations": [
+    {
+      "event_id": "OPE-0019",
+      "domain": "operations",
+      "topic": "latency incident",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0021",
+      "domain": "operations",
+      "topic": "database outage",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0028",
+      "domain": "operations",
+      "topic": "dependency outage",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0067",
+      "domain": "operations",
+      "topic": "billing alert",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0078",
+      "domain": "operations",
+      "topic": "dependency outage",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0081",
+      "domain": "operations",
+      "topic": "database outage",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0095",
+      "domain": "operations",
+      "topic": "worker crash",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0112",
+      "domain": "operations",
+      "topic": "storage alert",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0118",
+      "domain": "operations",
+      "topic": "dependency outage",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0143",
+      "domain": "operations",
+      "topic": "backup failure",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0171",
+      "domain": "operations",
+      "topic": "database outage",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0177",
+      "domain": "operations",
+      "topic": "billing alert",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0180",
+      "domain": "operations",
+      "topic": "certificate renewal",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0200",
+      "domain": "operations",
+      "topic": "certificate renewal",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0201",
+      "domain": "operations",
+      "topic": "database outage",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0213",
+      "domain": "operations",
+      "topic": "backup failure",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0249",
+      "domain": "operations",
+      "topic": "latency incident",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0257",
+      "domain": "operations",
+      "topic": "billing alert",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0276",
+      "domain": "operations",
+      "topic": "support escalation",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0315",
+      "domain": "operations",
+      "topic": "worker crash",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0316",
+      "domain": "operations",
+      "topic": "support escalation",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0319",
+      "domain": "operations",
+      "topic": "latency incident",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0330",
+      "domain": "operations",
+      "topic": "certificate renewal",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0363",
+      "domain": "operations",
+      "topic": "backup failure",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0385",
+      "domain": "operations",
+      "topic": "worker crash",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0417",
+      "domain": "operations",
+      "topic": "billing alert",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0445",
+      "domain": "operations",
+      "topic": "worker crash",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0472",
+      "domain": "operations",
+      "topic": "storage alert",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0474",
+      "domain": "operations",
+      "topic": "queue backlog",
+      "durable": true
+    },
+    {
+      "event_id": "OPE-0494",
+      "domain": "operations",
+      "topic": "queue backlog",
+      "durable": true
+    }
+  ]
+}

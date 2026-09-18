@@ -1,0 +1,500 @@
+{"event_id": "PRO-0000", "timestamp": "2026-01-01T00:00:00Z", "speaker": "Alex", "text": "The team discussed mobile workflow and compared several options. The discussion continued with related operational details. Earlier notes were reviewed before moving on.", "topic": "mobile workflow"}
+{"event_id": "PRO-0168", "timestamp": "2026-01-01T00:00:00Z", "speaker": "Alex", "text": "Decision: SSO rollout was approved after reviewing the alternatives.", "topic": "SSO rollout"}
+{"event_id": "PRO-0336", "timestamp": "2026-01-01T00:00:00Z", "speaker": "Alex", "text": "The team discussed notification system and compared several options.", "topic": "notification system"}
+{"event_id": "PRO-0028", "timestamp": "2026-01-01T04:00:00Z", "speaker": "Sam", "text": "Plan: SSO rollout remains unresolved and no final decision has been confirmed.", "topic": "SSO rollout"}
+{"event_id": "PRO-0196", "timestamp": "2026-01-01T04:00:00Z", "speaker": "Sam", "text": "The team discussed notification system and compared several options.", "topic": "notification system"}
+{"event_id": "PRO-0364", "timestamp": "2026-01-01T04:00:00Z", "speaker": "Sam", "text": "The team discussed dark mode and compared several options.", "topic": "dark mode"}
+{"event_id": "PRO-0056", "timestamp": "2026-01-01T08:00:00Z", "speaker": "Priya", "text": "The team discussed notification system and compared several options.", "topic": "notification system"}
+{"event_id": "PRO-0224", "timestamp": "2026-01-01T08:00:00Z", "speaker": "Priya", "text": "Outcome: dark mode was confirmed successful after the follow-up check.", "topic": "dark mode"}
+{"event_id": "PRO-0392", "timestamp": "2026-01-01T08:00:00Z", "speaker": "Priya", "text": "The team discussed checkout flow and compared several options.", "topic": "checkout flow"}
+{"event_id": "PRO-0084", "timestamp": "2026-01-01T12:00:00Z", "speaker": "Alex", "text": "The team discussed dark mode and compared several options.", "topic": "dark mode"}
+{"event_id": "PRO-0252", "timestamp": "2026-01-01T12:00:00Z", "speaker": "Alex", "text": "Decision: checkout flow was approved after reviewing the alternatives.", "topic": "checkout flow"}
+{"event_id": "PRO-0420", "timestamp": "2026-01-01T12:00:00Z", "speaker": "Alex", "text": "The team discussed mobile workflow and compared several options.", "topic": "mobile workflow"}
+{"event_id": "PRO-0112", "timestamp": "2026-01-01T16:00:00Z", "speaker": "Sam", "text": "The team discussed checkout flow and compared several options.", "topic": "checkout flow"}
+{"event_id": "PRO-0280", "timestamp": "2026-01-01T16:00:00Z", "speaker": "Sam", "text": "The team discussed mobile workflow and compared several options.", "topic": "mobile workflow"}
+{"event_id": "PRO-0448", "timestamp": "2026-01-01T16:00:00Z", "speaker": "Sam", "text": "The team discussed SSO rollout and compared several options.", "topic": "SSO rollout"}
+{"event_id": "PRO-0140", "timestamp": "2026-01-01T20:00:00Z", "speaker": "Priya", "text": "The team discussed mobile workflow and compared several options.", "topic": "mobile workflow"}
+{"event_id": "PRO-0308", "timestamp": "2026-01-01T20:00:00Z", "speaker": "Priya", "text": "The team discussed SSO rollout and compared several options. The discussion continued with related operational details.", "topic": "SSO rollout"}
+{"event_id": "PRO-0476", "timestamp": "2026-01-01T20:00:00Z", "speaker": "Priya", "text": "The team discussed notification system and compared several options. Earlier notes were reviewed before moving on.", "topic": "notification system"}
+{"event_id": "PRO-0001", "timestamp": "2026-01-02T01:00:00Z", "speaker": "Sam", "text": "Someone mentioned bulk import during the meeting without making a decision.", "topic": "bulk import"}
+{"event_id": "PRO-0169", "timestamp": "2026-01-02T01:00:00Z", "speaker": "Sam", "text": "Someone mentioned search redesign during the meeting without making a decision.", "topic": "search redesign"}
+{"event_id": "PRO-0337", "timestamp": "2026-01-02T01:00:00Z", "speaker": "Sam", "text": "Someone mentioned export API during the meeting without making a decision.", "topic": "export API"}
+{"event_id": "PRO-0029", "timestamp": "2026-01-02T05:00:00Z", "speaker": "Priya", "text": "Someone mentioned search redesign during the meeting without making a decision.", "topic": "search redesign"}
+{"event_id": "PRO-0197", "timestamp": "2026-01-02T05:00:00Z", "speaker": "Priya", "text": "Someone mentioned export API during the meeting without making a decision.", "topic": "export API"}
+{"event_id": "PRO-0365", "timestamp": "2026-01-02T05:00:00Z", "speaker": "Priya", "text": "Someone mentioned analytics dashboard during the meeting without making a decision.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0057", "timestamp": "2026-01-02T09:00:00Z", "speaker": "Alex", "text": "Someone mentioned export API during the meeting without making a decision.", "topic": "export API"}
+{"event_id": "PRO-0225", "timestamp": "2026-01-02T09:00:00Z", "speaker": "Alex", "text": "Someone mentioned analytics dashboard during the meeting without making a decision.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0393", "timestamp": "2026-01-02T09:00:00Z", "speaker": "Alex", "text": "Someone mentioned pricing experiment during the meeting without making a decision.", "topic": "pricing experiment"}
+{"event_id": "PRO-0085", "timestamp": "2026-01-02T13:00:00Z", "speaker": "Sam", "text": "Someone mentioned analytics dashboard during the meeting without making a decision. Earlier notes were reviewed before moving on.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0253", "timestamp": "2026-01-02T13:00:00Z", "speaker": "Sam", "text": "Someone mentioned pricing experiment during the meeting without making a decision. The discussion continued with related operational details.", "topic": "pricing experiment"}
+{"event_id": "PRO-0421", "timestamp": "2026-01-02T13:00:00Z", "speaker": "Sam", "text": "Someone mentioned bulk import during the meeting without making a decision.", "topic": "bulk import"}
+{"event_id": "PRO-0113", "timestamp": "2026-01-02T17:00:00Z", "speaker": "Priya", "text": "Someone mentioned pricing experiment during the meeting without making a decision.", "topic": "pricing experiment"}
+{"event_id": "PRO-0281", "timestamp": "2026-01-02T17:00:00Z", "speaker": "Priya", "text": "Someone mentioned bulk import during the meeting without making a decision.", "topic": "bulk import"}
+{"event_id": "PRO-0449", "timestamp": "2026-01-02T17:00:00Z", "speaker": "Priya", "text": "Someone mentioned search redesign during the meeting without making a decision.", "topic": "search redesign"}
+{"event_id": "PRO-0141", "timestamp": "2026-01-02T21:00:00Z", "speaker": "Alex", "text": "Someone mentioned bulk import during the meeting without making a decision.", "topic": "bulk import"}
+{"event_id": "PRO-0309", "timestamp": "2026-01-02T21:00:00Z", "speaker": "Alex", "text": "Someone mentioned search redesign during the meeting without making a decision.", "topic": "search redesign"}
+{"event_id": "PRO-0477", "timestamp": "2026-01-02T21:00:00Z", "speaker": "Alex", "text": "Someone mentioned export API during the meeting without making a decision.", "topic": "export API"}
+{"event_id": "PRO-0002", "timestamp": "2026-01-03T02:00:00Z", "speaker": "Priya", "text": "A possible future approach involving checkout flow was considered.", "topic": "checkout flow"}
+{"event_id": "PRO-0170", "timestamp": "2026-01-03T02:00:00Z", "speaker": "Priya", "text": "A possible future approach involving mobile workflow was considered. Earlier notes were reviewed before moving on.", "topic": "mobile workflow"}
+{"event_id": "PRO-0338", "timestamp": "2026-01-03T02:00:00Z", "speaker": "Priya", "text": "A possible future approach involving SSO rollout was considered.", "topic": "SSO rollout"}
+{"event_id": "PRO-0030", "timestamp": "2026-01-03T06:00:00Z", "speaker": "Alex", "text": "A possible future approach involving mobile workflow was considered.", "topic": "mobile workflow"}
+{"event_id": "PRO-0198", "timestamp": "2026-01-03T06:00:00Z", "speaker": "Alex", "text": "A possible future approach involving SSO rollout was considered. The discussion continued with related operational details.", "topic": "SSO rollout"}
+{"event_id": "PRO-0366", "timestamp": "2026-01-03T06:00:00Z", "speaker": "Alex", "text": "A possible future approach involving notification system was considered.", "topic": "notification system"}
+{"event_id": "PRO-0058", "timestamp": "2026-01-03T10:00:00Z", "speaker": "Sam", "text": "A possible future approach involving SSO rollout was considered.", "topic": "SSO rollout"}
+{"event_id": "PRO-0226", "timestamp": "2026-01-03T10:00:00Z", "speaker": "Sam", "text": "A possible future approach involving notification system was considered.", "topic": "notification system"}
+{"event_id": "PRO-0394", "timestamp": "2026-01-03T10:00:00Z", "speaker": "Sam", "text": "A possible future approach involving dark mode was considered.", "topic": "dark mode"}
+{"event_id": "PRO-0086", "timestamp": "2026-01-03T14:00:00Z", "speaker": "Priya", "text": "A possible future approach involving notification system was considered.", "topic": "notification system"}
+{"event_id": "PRO-0254", "timestamp": "2026-01-03T14:00:00Z", "speaker": "Priya", "text": "A possible future approach involving dark mode was considered.", "topic": "dark mode"}
+{"event_id": "PRO-0422", "timestamp": "2026-01-03T14:00:00Z", "speaker": "Priya", "text": "A possible future approach involving checkout flow was considered.", "topic": "checkout flow"}
+{"event_id": "PRO-0114", "timestamp": "2026-01-03T18:00:00Z", "speaker": "Alex", "text": "A possible future approach involving dark mode was considered.", "topic": "dark mode"}
+{"event_id": "PRO-0282", "timestamp": "2026-01-03T18:00:00Z", "speaker": "Alex", "text": "A possible future approach involving checkout flow was considered.", "topic": "checkout flow"}
+{"event_id": "PRO-0450", "timestamp": "2026-01-03T18:00:00Z", "speaker": "Alex", "text": "A possible future approach involving mobile workflow was considered.", "topic": "mobile workflow"}
+{"event_id": "PRO-0142", "timestamp": "2026-01-03T22:00:00Z", "speaker": "Sam", "text": "A possible future approach involving checkout flow was considered.", "topic": "checkout flow"}
+{"event_id": "PRO-0310", "timestamp": "2026-01-03T22:00:00Z", "speaker": "Sam", "text": "A possible future approach involving mobile workflow was considered.", "topic": "mobile workflow"}
+{"event_id": "PRO-0478", "timestamp": "2026-01-03T22:00:00Z", "speaker": "Sam", "text": "Plan: SSO rollout remains unresolved and no final decision has been confirmed.", "topic": "SSO rollout"}
+{"event_id": "PRO-0003", "timestamp": "2026-01-04T03:00:00Z", "speaker": "Alex", "text": "The team revisited pricing experiment as background context.", "topic": "pricing experiment"}
+{"event_id": "PRO-0171", "timestamp": "2026-01-04T03:00:00Z", "speaker": "Alex", "text": "The team revisited bulk import as background context.", "topic": "bulk import"}
+{"event_id": "PRO-0339", "timestamp": "2026-01-04T03:00:00Z", "speaker": "Alex", "text": "The team revisited search redesign as background context.", "topic": "search redesign"}
+{"event_id": "PRO-0031", "timestamp": "2026-01-04T07:00:00Z", "speaker": "Sam", "text": "The team revisited bulk import as background context.", "topic": "bulk import"}
+{"event_id": "PRO-0199", "timestamp": "2026-01-04T07:00:00Z", "speaker": "Sam", "text": "The team revisited search redesign as background context.", "topic": "search redesign"}
+{"event_id": "PRO-0367", "timestamp": "2026-01-04T07:00:00Z", "speaker": "Sam", "text": "Action: the team attempted export API; the first attempt failed.", "topic": "export API"}
+{"event_id": "PRO-0059", "timestamp": "2026-01-04T11:00:00Z", "speaker": "Priya", "text": "The team revisited search redesign as background context.", "topic": "search redesign"}
+{"event_id": "PRO-0227", "timestamp": "2026-01-04T11:00:00Z", "speaker": "Priya", "text": "The team revisited export API as background context.", "topic": "export API"}
+{"event_id": "PRO-0395", "timestamp": "2026-01-04T11:00:00Z", "speaker": "Priya", "text": "The team revisited analytics dashboard as background context.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0087", "timestamp": "2026-01-04T15:00:00Z", "speaker": "Alex", "text": "The team revisited export API as background context.", "topic": "export API"}
+{"event_id": "PRO-0255", "timestamp": "2026-01-04T15:00:00Z", "speaker": "Alex", "text": "The team revisited analytics dashboard as background context. Earlier notes were reviewed before moving on.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0423", "timestamp": "2026-01-04T15:00:00Z", "speaker": "Alex", "text": "The team revisited pricing experiment as background context.", "topic": "pricing experiment"}
+{"event_id": "PRO-0115", "timestamp": "2026-01-04T19:00:00Z", "speaker": "Sam", "text": "Action: the team attempted analytics dashboard; the first attempt failed.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0283", "timestamp": "2026-01-04T19:00:00Z", "speaker": "Sam", "text": "The team revisited pricing experiment as background context.", "topic": "pricing experiment"}
+{"event_id": "PRO-0451", "timestamp": "2026-01-04T19:00:00Z", "speaker": "Sam", "text": "The team revisited bulk import as background context. The discussion continued with related operational details.", "topic": "bulk import"}
+{"event_id": "PRO-0143", "timestamp": "2026-01-04T23:00:00Z", "speaker": "Priya", "text": "The team revisited pricing experiment as background context. The discussion continued with related operational details.", "topic": "pricing experiment"}
+{"event_id": "PRO-0311", "timestamp": "2026-01-04T23:00:00Z", "speaker": "Priya", "text": "The team revisited bulk import as background context.", "topic": "bulk import"}
+{"event_id": "PRO-0479", "timestamp": "2026-01-04T23:00:00Z", "speaker": "Priya", "text": "The team revisited search redesign as background context.", "topic": "search redesign"}
+{"event_id": "PRO-0144", "timestamp": "2026-01-05T00:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned dark mode, but it did not change the current state.", "topic": "dark mode"}
+{"event_id": "PRO-0312", "timestamp": "2026-01-05T00:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned checkout flow, but it did not change the current state.", "topic": "checkout flow"}
+{"event_id": "PRO-0480", "timestamp": "2026-01-05T00:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned mobile workflow, but it did not change the current state.", "topic": "mobile workflow"}
+{"event_id": "PRO-0004", "timestamp": "2026-01-05T04:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned dark mode, but it did not change the current state.", "topic": "dark mode"}
+{"event_id": "PRO-0172", "timestamp": "2026-01-05T04:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned checkout flow, but it did not change the current state.", "topic": "checkout flow"}
+{"event_id": "PRO-0340", "timestamp": "2026-01-05T04:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned mobile workflow, but it did not change the current state. Earlier notes were reviewed before moving on.", "topic": "mobile workflow"}
+{"event_id": "PRO-0032", "timestamp": "2026-01-05T08:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned checkout flow, but it did not change the current state.", "topic": "checkout flow"}
+{"event_id": "PRO-0200", "timestamp": "2026-01-05T08:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned mobile workflow, but it did not change the current state.", "topic": "mobile workflow"}
+{"event_id": "PRO-0368", "timestamp": "2026-01-05T08:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned SSO rollout, but it did not change the current state.", "topic": "SSO rollout"}
+{"event_id": "PRO-0060", "timestamp": "2026-01-05T12:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned mobile workflow, but it did not change the current state.", "topic": "mobile workflow"}
+{"event_id": "PRO-0228", "timestamp": "2026-01-05T12:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned SSO rollout, but it did not change the current state.", "topic": "SSO rollout"}
+{"event_id": "PRO-0396", "timestamp": "2026-01-05T12:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned notification system, but it did not change the current state. The discussion continued with related operational details.", "topic": "notification system"}
+{"event_id": "PRO-0088", "timestamp": "2026-01-05T16:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned SSO rollout, but it did not change the current state. The discussion continued with related operational details.", "topic": "SSO rollout"}
+{"event_id": "PRO-0256", "timestamp": "2026-01-05T16:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned notification system, but it did not change the current state.", "topic": "notification system"}
+{"event_id": "PRO-0424", "timestamp": "2026-01-05T16:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned dark mode, but it did not change the current state.", "topic": "dark mode"}
+{"event_id": "PRO-0116", "timestamp": "2026-01-05T20:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned notification system, but it did not change the current state.", "topic": "notification system"}
+{"event_id": "PRO-0284", "timestamp": "2026-01-05T20:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned dark mode, but it did not change the current state.", "topic": "dark mode"}
+{"event_id": "PRO-0452", "timestamp": "2026-01-05T20:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned checkout flow, but it did not change the current state.", "topic": "checkout flow"}
+{"event_id": "PRO-0145", "timestamp": "2026-01-06T01:00:00Z", "speaker": "Sam", "text": "An earlier note about analytics dashboard was repeated for context.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0313", "timestamp": "2026-01-06T01:00:00Z", "speaker": "Sam", "text": "An earlier note about pricing experiment was repeated for context.", "topic": "pricing experiment"}
+{"event_id": "PRO-0481", "timestamp": "2026-01-06T01:00:00Z", "speaker": "Sam", "text": "An earlier note about bulk import was repeated for context.", "topic": "bulk import"}
+{"event_id": "PRO-0005", "timestamp": "2026-01-06T05:00:00Z", "speaker": "Priya", "text": "An earlier note about analytics dashboard was repeated for context.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0173", "timestamp": "2026-01-06T05:00:00Z", "speaker": "Priya", "text": "An earlier note about pricing experiment was repeated for context.", "topic": "pricing experiment"}
+{"event_id": "PRO-0341", "timestamp": "2026-01-06T05:00:00Z", "speaker": "Priya", "text": "An earlier note about bulk import was repeated for context. The discussion continued with related operational details.", "topic": "bulk import"}
+{"event_id": "PRO-0033", "timestamp": "2026-01-06T09:00:00Z", "speaker": "Alex", "text": "State: pricing experiment changed from tentative to confirmed. The discussion continued with related operational details.", "topic": "pricing experiment"}
+{"event_id": "PRO-0201", "timestamp": "2026-01-06T09:00:00Z", "speaker": "Alex", "text": "An earlier note about bulk import was repeated for context.", "topic": "bulk import"}
+{"event_id": "PRO-0369", "timestamp": "2026-01-06T09:00:00Z", "speaker": "Alex", "text": "An earlier note about search redesign was repeated for context.", "topic": "search redesign"}
+{"event_id": "PRO-0061", "timestamp": "2026-01-06T13:00:00Z", "speaker": "Sam", "text": "An earlier note about bulk import was repeated for context.", "topic": "bulk import"}
+{"event_id": "PRO-0229", "timestamp": "2026-01-06T13:00:00Z", "speaker": "Sam", "text": "Action: the team attempted search redesign; the first attempt failed.", "topic": "search redesign"}
+{"event_id": "PRO-0397", "timestamp": "2026-01-06T13:00:00Z", "speaker": "Sam", "text": "An earlier note about export API was repeated for context.", "topic": "export API"}
+{"event_id": "PRO-0089", "timestamp": "2026-01-06T17:00:00Z", "speaker": "Priya", "text": "An earlier note about search redesign was repeated for context.", "topic": "search redesign"}
+{"event_id": "PRO-0257", "timestamp": "2026-01-06T17:00:00Z", "speaker": "Priya", "text": "An earlier note about export API was repeated for context.", "topic": "export API"}
+{"event_id": "PRO-0425", "timestamp": "2026-01-06T17:00:00Z", "speaker": "Priya", "text": "An earlier note about analytics dashboard was repeated for context. Earlier notes were reviewed before moving on.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0117", "timestamp": "2026-01-06T21:00:00Z", "speaker": "Alex", "text": "An earlier note about export API was repeated for context.", "topic": "export API"}
+{"event_id": "PRO-0285", "timestamp": "2026-01-06T21:00:00Z", "speaker": "Alex", "text": "An earlier note about analytics dashboard was repeated for context.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0453", "timestamp": "2026-01-06T21:00:00Z", "speaker": "Alex", "text": "An earlier note about pricing experiment was repeated for context.", "topic": "pricing experiment"}
+{"event_id": "PRO-0146", "timestamp": "2026-01-07T02:00:00Z", "speaker": "Priya", "text": "The group asked whether notification system might matter later.", "topic": "notification system"}
+{"event_id": "PRO-0314", "timestamp": "2026-01-07T02:00:00Z", "speaker": "Priya", "text": "The group asked whether dark mode might matter later.", "topic": "dark mode"}
+{"event_id": "PRO-0482", "timestamp": "2026-01-07T02:00:00Z", "speaker": "Priya", "text": "The group asked whether checkout flow might matter later.", "topic": "checkout flow"}
+{"event_id": "PRO-0006", "timestamp": "2026-01-07T06:00:00Z", "speaker": "Alex", "text": "The group asked whether notification system might matter later.", "topic": "notification system"}
+{"event_id": "PRO-0174", "timestamp": "2026-01-07T06:00:00Z", "speaker": "Alex", "text": "The group asked whether dark mode might matter later.", "topic": "dark mode"}
+{"event_id": "PRO-0342", "timestamp": "2026-01-07T06:00:00Z", "speaker": "Alex", "text": "The group asked whether checkout flow might matter later.", "topic": "checkout flow"}
+{"event_id": "PRO-0034", "timestamp": "2026-01-07T10:00:00Z", "speaker": "Sam", "text": "The group asked whether dark mode might matter later. Earlier notes were reviewed before moving on.", "topic": "dark mode"}
+{"event_id": "PRO-0202", "timestamp": "2026-01-07T10:00:00Z", "speaker": "Sam", "text": "The group asked whether checkout flow might matter later.", "topic": "checkout flow"}
+{"event_id": "PRO-0370", "timestamp": "2026-01-07T10:00:00Z", "speaker": "Sam", "text": "The group asked whether mobile workflow might matter later.", "topic": "mobile workflow"}
+{"event_id": "PRO-0062", "timestamp": "2026-01-07T14:00:00Z", "speaker": "Priya", "text": "The group asked whether checkout flow might matter later.", "topic": "checkout flow"}
+{"event_id": "PRO-0230", "timestamp": "2026-01-07T14:00:00Z", "speaker": "Priya", "text": "The group asked whether mobile workflow might matter later.", "topic": "mobile workflow"}
+{"event_id": "PRO-0398", "timestamp": "2026-01-07T14:00:00Z", "speaker": "Priya", "text": "The group asked whether SSO rollout might matter later.", "topic": "SSO rollout"}
+{"event_id": "PRO-0090", "timestamp": "2026-01-07T18:00:00Z", "speaker": "Alex", "text": "The group asked whether mobile workflow might matter later.", "topic": "mobile workflow"}
+{"event_id": "PRO-0258", "timestamp": "2026-01-07T18:00:00Z", "speaker": "Alex", "text": "The group asked whether SSO rollout might matter later.", "topic": "SSO rollout"}
+{"event_id": "PRO-0426", "timestamp": "2026-01-07T18:00:00Z", "speaker": "Alex", "text": "The group asked whether notification system might matter later.", "topic": "notification system"}
+{"event_id": "PRO-0118", "timestamp": "2026-01-07T22:00:00Z", "speaker": "Sam", "text": "The group asked whether SSO rollout might matter later.", "topic": "SSO rollout"}
+{"event_id": "PRO-0286", "timestamp": "2026-01-07T22:00:00Z", "speaker": "Sam", "text": "The group asked whether notification system might matter later. The discussion continued with related operational details.", "topic": "notification system"}
+{"event_id": "PRO-0454", "timestamp": "2026-01-07T22:00:00Z", "speaker": "Sam", "text": "The group asked whether dark mode might matter later.", "topic": "dark mode"}
+{"event_id": "PRO-0147", "timestamp": "2026-01-08T03:00:00Z", "speaker": "Alex", "text": "The team discussed export API and compared several options.", "topic": "export API"}
+{"event_id": "PRO-0315", "timestamp": "2026-01-08T03:00:00Z", "speaker": "Alex", "text": "The team discussed analytics dashboard and compared several options.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0483", "timestamp": "2026-01-08T03:00:00Z", "speaker": "Alex", "text": "The team discussed pricing experiment and compared several options.", "topic": "pricing experiment"}
+{"event_id": "PRO-0007", "timestamp": "2026-01-08T07:00:00Z", "speaker": "Sam", "text": "The team discussed export API and compared several options.", "topic": "export API"}
+{"event_id": "PRO-0175", "timestamp": "2026-01-08T07:00:00Z", "speaker": "Sam", "text": "The team discussed analytics dashboard and compared several options.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0343", "timestamp": "2026-01-08T07:00:00Z", "speaker": "Sam", "text": "The team discussed pricing experiment and compared several options.", "topic": "pricing experiment"}
+{"event_id": "PRO-0035", "timestamp": "2026-01-08T11:00:00Z", "speaker": "Priya", "text": "The team discussed analytics dashboard and compared several options.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0203", "timestamp": "2026-01-08T11:00:00Z", "speaker": "Priya", "text": "The team discussed pricing experiment and compared several options.", "topic": "pricing experiment"}
+{"event_id": "PRO-0371", "timestamp": "2026-01-08T11:00:00Z", "speaker": "Priya", "text": "The team discussed bulk import and compared several options.", "topic": "bulk import"}
+{"event_id": "PRO-0063", "timestamp": "2026-01-08T15:00:00Z", "speaker": "Alex", "text": "The team discussed pricing experiment and compared several options.", "topic": "pricing experiment"}
+{"event_id": "PRO-0231", "timestamp": "2026-01-08T15:00:00Z", "speaker": "Alex", "text": "The team discussed bulk import and compared several options. The discussion continued with related operational details.", "topic": "bulk import"}
+{"event_id": "PRO-0399", "timestamp": "2026-01-08T15:00:00Z", "speaker": "Alex", "text": "The team discussed search redesign and compared several options.", "topic": "search redesign"}
+{"event_id": "PRO-0091", "timestamp": "2026-01-08T19:00:00Z", "speaker": "Sam", "text": "The team discussed bulk import and compared several options.", "topic": "bulk import"}
+{"event_id": "PRO-0259", "timestamp": "2026-01-08T19:00:00Z", "speaker": "Sam", "text": "The team discussed search redesign and compared several options.", "topic": "search redesign"}
+{"event_id": "PRO-0427", "timestamp": "2026-01-08T19:00:00Z", "speaker": "Sam", "text": "The team discussed export API and compared several options.", "topic": "export API"}
+{"event_id": "PRO-0119", "timestamp": "2026-01-08T23:00:00Z", "speaker": "Priya", "text": "The team discussed search redesign and compared several options. Earlier notes were reviewed before moving on.", "topic": "search redesign"}
+{"event_id": "PRO-0287", "timestamp": "2026-01-08T23:00:00Z", "speaker": "Priya", "text": "The team discussed export API and compared several options.", "topic": "export API"}
+{"event_id": "PRO-0455", "timestamp": "2026-01-08T23:00:00Z", "speaker": "Priya", "text": "The team discussed analytics dashboard and compared several options.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0120", "timestamp": "2026-01-09T00:00:00Z", "speaker": "Alex", "text": "Someone mentioned mobile workflow during the meeting without making a decision.", "topic": "mobile workflow"}
+{"event_id": "PRO-0288", "timestamp": "2026-01-09T00:00:00Z", "speaker": "Alex", "text": "Someone mentioned SSO rollout during the meeting without making a decision.", "topic": "SSO rollout"}
+{"event_id": "PRO-0456", "timestamp": "2026-01-09T00:00:00Z", "speaker": "Alex", "text": "Someone mentioned notification system during the meeting without making a decision.", "topic": "notification system"}
+{"event_id": "PRO-0148", "timestamp": "2026-01-09T04:00:00Z", "speaker": "Sam", "text": "Someone mentioned SSO rollout during the meeting without making a decision.", "topic": "SSO rollout"}
+{"event_id": "PRO-0316", "timestamp": "2026-01-09T04:00:00Z", "speaker": "Sam", "text": "Someone mentioned notification system during the meeting without making a decision.", "topic": "notification system"}
+{"event_id": "PRO-0484", "timestamp": "2026-01-09T04:00:00Z", "speaker": "Sam", "text": "Someone mentioned dark mode during the meeting without making a decision. The discussion continued with related operational details.", "topic": "dark mode"}
+{"event_id": "PRO-0008", "timestamp": "2026-01-09T08:00:00Z", "speaker": "Priya", "text": "Someone mentioned SSO rollout during the meeting without making a decision.", "topic": "SSO rollout"}
+{"event_id": "PRO-0176", "timestamp": "2026-01-09T08:00:00Z", "speaker": "Priya", "text": "Someone mentioned notification system during the meeting without making a decision. The discussion continued with related operational details.", "topic": "notification system"}
+{"event_id": "PRO-0344", "timestamp": "2026-01-09T08:00:00Z", "speaker": "Priya", "text": "Someone mentioned dark mode during the meeting without making a decision.", "topic": "dark mode"}
+{"event_id": "PRO-0036", "timestamp": "2026-01-09T12:00:00Z", "speaker": "Alex", "text": "Someone mentioned notification system during the meeting without making a decision.", "topic": "notification system"}
+{"event_id": "PRO-0204", "timestamp": "2026-01-09T12:00:00Z", "speaker": "Alex", "text": "Someone mentioned dark mode during the meeting without making a decision. Earlier notes were reviewed before moving on.", "topic": "dark mode"}
+{"event_id": "PRO-0372", "timestamp": "2026-01-09T12:00:00Z", "speaker": "Alex", "text": "Someone mentioned checkout flow during the meeting without making a decision.", "topic": "checkout flow"}
+{"event_id": "PRO-0064", "timestamp": "2026-01-09T16:00:00Z", "speaker": "Sam", "text": "Someone mentioned dark mode during the meeting without making a decision.", "topic": "dark mode"}
+{"event_id": "PRO-0232", "timestamp": "2026-01-09T16:00:00Z", "speaker": "Sam", "text": "Someone mentioned checkout flow during the meeting without making a decision.", "topic": "checkout flow"}
+{"event_id": "PRO-0400", "timestamp": "2026-01-09T16:00:00Z", "speaker": "Sam", "text": "Plan: mobile workflow remains unresolved and no final decision has been confirmed.", "topic": "mobile workflow"}
+{"event_id": "PRO-0092", "timestamp": "2026-01-09T20:00:00Z", "speaker": "Priya", "text": "Someone mentioned checkout flow during the meeting without making a decision.", "topic": "checkout flow"}
+{"event_id": "PRO-0260", "timestamp": "2026-01-09T20:00:00Z", "speaker": "Priya", "text": "Someone mentioned mobile workflow during the meeting without making a decision.", "topic": "mobile workflow"}
+{"event_id": "PRO-0428", "timestamp": "2026-01-09T20:00:00Z", "speaker": "Priya", "text": "Someone mentioned SSO rollout during the meeting without making a decision.", "topic": "SSO rollout"}
+{"event_id": "PRO-0121", "timestamp": "2026-01-10T01:00:00Z", "speaker": "Sam", "text": "A possible future approach involving bulk import was considered. The discussion continued with related operational details.", "topic": "bulk import"}
+{"event_id": "PRO-0289", "timestamp": "2026-01-10T01:00:00Z", "speaker": "Sam", "text": "A possible future approach involving search redesign was considered. Earlier notes were reviewed before moving on.", "topic": "search redesign"}
+{"event_id": "PRO-0457", "timestamp": "2026-01-10T01:00:00Z", "speaker": "Sam", "text": "Action: the team attempted export API; the first attempt failed.", "topic": "export API"}
+{"event_id": "PRO-0149", "timestamp": "2026-01-10T05:00:00Z", "speaker": "Priya", "text": "A possible future approach involving search redesign was considered.", "topic": "search redesign"}
+{"event_id": "PRO-0317", "timestamp": "2026-01-10T05:00:00Z", "speaker": "Priya", "text": "Change: export API was replaced by a newer approach; the earlier state is obsolete.", "topic": "export API"}
+{"event_id": "PRO-0485", "timestamp": "2026-01-10T05:00:00Z", "speaker": "Priya", "text": "Change: analytics dashboard was replaced by a newer approach; the earlier state is obsolete.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0009", "timestamp": "2026-01-10T09:00:00Z", "speaker": "Alex", "text": "A possible future approach involving search redesign was considered.", "topic": "search redesign"}
+{"event_id": "PRO-0177", "timestamp": "2026-01-10T09:00:00Z", "speaker": "Alex", "text": "A possible future approach involving export API was considered.", "topic": "export API"}
+{"event_id": "PRO-0345", "timestamp": "2026-01-10T09:00:00Z", "speaker": "Alex", "text": "A possible future approach involving analytics dashboard was considered.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0037", "timestamp": "2026-01-10T13:00:00Z", "speaker": "Sam", "text": "A possible future approach involving export API was considered.", "topic": "export API"}
+{"event_id": "PRO-0205", "timestamp": "2026-01-10T13:00:00Z", "speaker": "Sam", "text": "A possible future approach involving analytics dashboard was considered.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0373", "timestamp": "2026-01-10T13:00:00Z", "speaker": "Sam", "text": "A possible future approach involving pricing experiment was considered.", "topic": "pricing experiment"}
+{"event_id": "PRO-0065", "timestamp": "2026-01-10T17:00:00Z", "speaker": "Priya", "text": "A possible future approach involving analytics dashboard was considered.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0233", "timestamp": "2026-01-10T17:00:00Z", "speaker": "Priya", "text": "A possible future approach involving pricing experiment was considered.", "topic": "pricing experiment"}
+{"event_id": "PRO-0401", "timestamp": "2026-01-10T17:00:00Z", "speaker": "Priya", "text": "A possible future approach involving bulk import was considered.", "topic": "bulk import"}
+{"event_id": "PRO-0093", "timestamp": "2026-01-10T21:00:00Z", "speaker": "Alex", "text": "A possible future approach involving pricing experiment was considered.", "topic": "pricing experiment"}
+{"event_id": "PRO-0261", "timestamp": "2026-01-10T21:00:00Z", "speaker": "Alex", "text": "A possible future approach involving bulk import was considered.", "topic": "bulk import"}
+{"event_id": "PRO-0429", "timestamp": "2026-01-10T21:00:00Z", "speaker": "Alex", "text": "A possible future approach involving search redesign was considered. The discussion continued with related operational details.", "topic": "search redesign"}
+{"event_id": "PRO-0122", "timestamp": "2026-01-11T02:00:00Z", "speaker": "Priya", "text": "The team revisited checkout flow as background context.", "topic": "checkout flow"}
+{"event_id": "PRO-0290", "timestamp": "2026-01-11T02:00:00Z", "speaker": "Priya", "text": "The team revisited mobile workflow as background context.", "topic": "mobile workflow"}
+{"event_id": "PRO-0458", "timestamp": "2026-01-11T02:00:00Z", "speaker": "Priya", "text": "The team revisited SSO rollout as background context.", "topic": "SSO rollout"}
+{"event_id": "PRO-0150", "timestamp": "2026-01-11T06:00:00Z", "speaker": "Alex", "text": "The team revisited mobile workflow as background context.", "topic": "mobile workflow"}
+{"event_id": "PRO-0318", "timestamp": "2026-01-11T06:00:00Z", "speaker": "Alex", "text": "The team revisited SSO rollout as background context.", "topic": "SSO rollout"}
+{"event_id": "PRO-0486", "timestamp": "2026-01-11T06:00:00Z", "speaker": "Alex", "text": "The team revisited notification system as background context.", "topic": "notification system"}
+{"event_id": "PRO-0010", "timestamp": "2026-01-11T10:00:00Z", "speaker": "Sam", "text": "The team revisited mobile workflow as background context.", "topic": "mobile workflow"}
+{"event_id": "PRO-0178", "timestamp": "2026-01-11T10:00:00Z", "speaker": "Sam", "text": "The team revisited SSO rollout as background context.", "topic": "SSO rollout"}
+{"event_id": "PRO-0346", "timestamp": "2026-01-11T10:00:00Z", "speaker": "Sam", "text": "The team revisited notification system as background context.", "topic": "notification system"}
+{"event_id": "PRO-0038", "timestamp": "2026-01-11T14:00:00Z", "speaker": "Priya", "text": "The team revisited SSO rollout as background context.", "topic": "SSO rollout"}
+{"event_id": "PRO-0206", "timestamp": "2026-01-11T14:00:00Z", "speaker": "Priya", "text": "The team revisited notification system as background context.", "topic": "notification system"}
+{"event_id": "PRO-0374", "timestamp": "2026-01-11T14:00:00Z", "speaker": "Priya", "text": "The team revisited dark mode as background context. The discussion continued with related operational details. Earlier notes were reviewed before moving on.", "topic": "dark mode"}
+{"event_id": "PRO-0066", "timestamp": "2026-01-11T18:00:00Z", "speaker": "Alex", "text": "The team revisited notification system as background context. The discussion continued with related operational details.", "topic": "notification system"}
+{"event_id": "PRO-0234", "timestamp": "2026-01-11T18:00:00Z", "speaker": "Alex", "text": "The team revisited dark mode as background context.", "topic": "dark mode"}
+{"event_id": "PRO-0402", "timestamp": "2026-01-11T18:00:00Z", "speaker": "Alex", "text": "The team revisited checkout flow as background context.", "topic": "checkout flow"}
+{"event_id": "PRO-0094", "timestamp": "2026-01-11T22:00:00Z", "speaker": "Sam", "text": "The team revisited dark mode as background context.", "topic": "dark mode"}
+{"event_id": "PRO-0262", "timestamp": "2026-01-11T22:00:00Z", "speaker": "Sam", "text": "The team revisited checkout flow as background context.", "topic": "checkout flow"}
+{"event_id": "PRO-0430", "timestamp": "2026-01-11T22:00:00Z", "speaker": "Sam", "text": "The team revisited mobile workflow as background context.", "topic": "mobile workflow"}
+{"event_id": "PRO-0123", "timestamp": "2026-01-12T03:00:00Z", "speaker": "Alex", "text": "State: pricing experiment changed from tentative to confirmed.", "topic": "pricing experiment"}
+{"event_id": "PRO-0291", "timestamp": "2026-01-12T03:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned bulk import, but it did not change the current state.", "topic": "bulk import"}
+{"event_id": "PRO-0459", "timestamp": "2026-01-12T03:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned search redesign, but it did not change the current state. Earlier notes were reviewed before moving on.", "topic": "search redesign"}
+{"event_id": "PRO-0151", "timestamp": "2026-01-12T07:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned bulk import, but it did not change the current state.", "topic": "bulk import"}
+{"event_id": "PRO-0319", "timestamp": "2026-01-12T07:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned search redesign, but it did not change the current state. The discussion continued with related operational details.", "topic": "search redesign"}
+{"event_id": "PRO-0487", "timestamp": "2026-01-12T07:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned export API, but it did not change the current state.", "topic": "export API"}
+{"event_id": "PRO-0011", "timestamp": "2026-01-12T11:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned bulk import, but it did not change the current state. The discussion continued with related operational details.", "topic": "bulk import"}
+{"event_id": "PRO-0179", "timestamp": "2026-01-12T11:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned search redesign, but it did not change the current state.", "topic": "search redesign"}
+{"event_id": "PRO-0347", "timestamp": "2026-01-12T11:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned export API, but it did not change the current state.", "topic": "export API"}
+{"event_id": "PRO-0039", "timestamp": "2026-01-12T15:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned search redesign, but it did not change the current state.", "topic": "search redesign"}
+{"event_id": "PRO-0207", "timestamp": "2026-01-12T15:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned export API, but it did not change the current state.", "topic": "export API"}
+{"event_id": "PRO-0375", "timestamp": "2026-01-12T15:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned analytics dashboard, but it did not change the current state.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0067", "timestamp": "2026-01-12T19:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned export API, but it did not change the current state.", "topic": "export API"}
+{"event_id": "PRO-0235", "timestamp": "2026-01-12T19:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned analytics dashboard, but it did not change the current state.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0403", "timestamp": "2026-01-12T19:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned pricing experiment, but it did not change the current state.", "topic": "pricing experiment"}
+{"event_id": "PRO-0095", "timestamp": "2026-01-12T23:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned analytics dashboard, but it did not change the current state.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0263", "timestamp": "2026-01-12T23:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned pricing experiment, but it did not change the current state.", "topic": "pricing experiment"}
+{"event_id": "PRO-0431", "timestamp": "2026-01-12T23:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned bulk import, but it did not change the current state.", "topic": "bulk import"}
+{"event_id": "PRO-0096", "timestamp": "2026-01-13T00:00:00Z", "speaker": "Alex", "text": "An earlier note about notification system was repeated for context.", "topic": "notification system"}
+{"event_id": "PRO-0264", "timestamp": "2026-01-13T00:00:00Z", "speaker": "Alex", "text": "An earlier note about dark mode was repeated for context. The discussion continued with related operational details.", "topic": "dark mode"}
+{"event_id": "PRO-0432", "timestamp": "2026-01-13T00:00:00Z", "speaker": "Alex", "text": "An earlier note about checkout flow was repeated for context.", "topic": "checkout flow"}
+{"event_id": "PRO-0124", "timestamp": "2026-01-13T04:00:00Z", "speaker": "Sam", "text": "An earlier note about dark mode was repeated for context.", "topic": "dark mode"}
+{"event_id": "PRO-0292", "timestamp": "2026-01-13T04:00:00Z", "speaker": "Sam", "text": "An earlier note about checkout flow was repeated for context.", "topic": "checkout flow"}
+{"event_id": "PRO-0460", "timestamp": "2026-01-13T04:00:00Z", "speaker": "Sam", "text": "An earlier note about mobile workflow was repeated for context.", "topic": "mobile workflow"}
+{"event_id": "PRO-0152", "timestamp": "2026-01-13T08:00:00Z", "speaker": "Priya", "text": "An earlier note about checkout flow was repeated for context.", "topic": "checkout flow"}
+{"event_id": "PRO-0320", "timestamp": "2026-01-13T08:00:00Z", "speaker": "Priya", "text": "An earlier note about mobile workflow was repeated for context.", "topic": "mobile workflow"}
+{"event_id": "PRO-0488", "timestamp": "2026-01-13T08:00:00Z", "speaker": "Priya", "text": "An earlier note about SSO rollout was repeated for context.", "topic": "SSO rollout"}
+{"event_id": "PRO-0012", "timestamp": "2026-01-13T12:00:00Z", "speaker": "Alex", "text": "An earlier note about checkout flow was repeated for context.", "topic": "checkout flow"}
+{"event_id": "PRO-0180", "timestamp": "2026-01-13T12:00:00Z", "speaker": "Alex", "text": "An earlier note about mobile workflow was repeated for context.", "topic": "mobile workflow"}
+{"event_id": "PRO-0348", "timestamp": "2026-01-13T12:00:00Z", "speaker": "Alex", "text": "An earlier note about SSO rollout was repeated for context.", "topic": "SSO rollout"}
+{"event_id": "PRO-0040", "timestamp": "2026-01-13T16:00:00Z", "speaker": "Sam", "text": "An earlier note about mobile workflow was repeated for context.", "topic": "mobile workflow"}
+{"event_id": "PRO-0208", "timestamp": "2026-01-13T16:00:00Z", "speaker": "Sam", "text": "An earlier note about SSO rollout was repeated for context.", "topic": "SSO rollout"}
+{"event_id": "PRO-0376", "timestamp": "2026-01-13T16:00:00Z", "speaker": "Sam", "text": "An earlier note about notification system was repeated for context.", "topic": "notification system"}
+{"event_id": "PRO-0068", "timestamp": "2026-01-13T20:00:00Z", "speaker": "Priya", "text": "An earlier note about SSO rollout was repeated for context. Earlier notes were reviewed before moving on.", "topic": "SSO rollout"}
+{"event_id": "PRO-0236", "timestamp": "2026-01-13T20:00:00Z", "speaker": "Priya", "text": "Outcome: notification system was confirmed successful after the follow-up check.", "topic": "notification system"}
+{"event_id": "PRO-0404", "timestamp": "2026-01-13T20:00:00Z", "speaker": "Priya", "text": "An earlier note about dark mode was repeated for context.", "topic": "dark mode"}
+{"event_id": "PRO-0097", "timestamp": "2026-01-14T01:00:00Z", "speaker": "Sam", "text": "The group asked whether export API might matter later.", "topic": "export API"}
+{"event_id": "PRO-0265", "timestamp": "2026-01-14T01:00:00Z", "speaker": "Sam", "text": "The group asked whether analytics dashboard might matter later.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0433", "timestamp": "2026-01-14T01:00:00Z", "speaker": "Sam", "text": "The group asked whether pricing experiment might matter later.", "topic": "pricing experiment"}
+{"event_id": "PRO-0125", "timestamp": "2026-01-14T05:00:00Z", "speaker": "Priya", "text": "The group asked whether analytics dashboard might matter later.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0293", "timestamp": "2026-01-14T05:00:00Z", "speaker": "Priya", "text": "Change: pricing experiment was replaced by a newer approach; the earlier state is obsolete.", "topic": "pricing experiment"}
+{"event_id": "PRO-0461", "timestamp": "2026-01-14T05:00:00Z", "speaker": "Priya", "text": "The group asked whether bulk import might matter later.", "topic": "bulk import"}
+{"event_id": "PRO-0153", "timestamp": "2026-01-14T09:00:00Z", "speaker": "Alex", "text": "The group asked whether pricing experiment might matter later. Earlier notes were reviewed before moving on.", "topic": "pricing experiment"}
+{"event_id": "PRO-0321", "timestamp": "2026-01-14T09:00:00Z", "speaker": "Alex", "text": "The group asked whether bulk import might matter later.", "topic": "bulk import"}
+{"event_id": "PRO-0489", "timestamp": "2026-01-14T09:00:00Z", "speaker": "Alex", "text": "The group asked whether search redesign might matter later.", "topic": "search redesign"}
+{"event_id": "PRO-0013", "timestamp": "2026-01-14T13:00:00Z", "speaker": "Sam", "text": "Action: the team attempted pricing experiment; the first attempt failed.", "topic": "pricing experiment"}
+{"event_id": "PRO-0181", "timestamp": "2026-01-14T13:00:00Z", "speaker": "Sam", "text": "Action: the team attempted bulk import; the first attempt failed.", "topic": "bulk import"}
+{"event_id": "PRO-0349", "timestamp": "2026-01-14T13:00:00Z", "speaker": "Sam", "text": "Action: the team attempted search redesign; the first attempt failed.", "topic": "search redesign"}
+{"event_id": "PRO-0041", "timestamp": "2026-01-14T17:00:00Z", "speaker": "Priya", "text": "The group asked whether bulk import might matter later.", "topic": "bulk import"}
+{"event_id": "PRO-0209", "timestamp": "2026-01-14T17:00:00Z", "speaker": "Priya", "text": "The group asked whether search redesign might matter later. The discussion continued with related operational details.", "topic": "search redesign"}
+{"event_id": "PRO-0377", "timestamp": "2026-01-14T17:00:00Z", "speaker": "Priya", "text": "The group asked whether export API might matter later.", "topic": "export API"}
+{"event_id": "PRO-0069", "timestamp": "2026-01-14T21:00:00Z", "speaker": "Alex", "text": "The group asked whether search redesign might matter later.", "topic": "search redesign"}
+{"event_id": "PRO-0237", "timestamp": "2026-01-14T21:00:00Z", "speaker": "Alex", "text": "The group asked whether export API might matter later.", "topic": "export API"}
+{"event_id": "PRO-0405", "timestamp": "2026-01-14T21:00:00Z", "speaker": "Alex", "text": "The group asked whether analytics dashboard might matter later.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0098", "timestamp": "2026-01-15T02:00:00Z", "speaker": "Priya", "text": "The team discussed SSO rollout and compared several options.", "topic": "SSO rollout"}
+{"event_id": "PRO-0266", "timestamp": "2026-01-15T02:00:00Z", "speaker": "Priya", "text": "The team discussed notification system and compared several options.", "topic": "notification system"}
+{"event_id": "PRO-0434", "timestamp": "2026-01-15T02:00:00Z", "speaker": "Priya", "text": "The team discussed dark mode and compared several options.", "topic": "dark mode"}
+{"event_id": "PRO-0126", "timestamp": "2026-01-15T06:00:00Z", "speaker": "Alex", "text": "The team discussed notification system and compared several options.", "topic": "notification system"}
+{"event_id": "PRO-0294", "timestamp": "2026-01-15T06:00:00Z", "speaker": "Alex", "text": "The team discussed dark mode and compared several options.", "topic": "dark mode"}
+{"event_id": "PRO-0462", "timestamp": "2026-01-15T06:00:00Z", "speaker": "Alex", "text": "The team discussed checkout flow and compared several options. The discussion continued with related operational details.", "topic": "checkout flow"}
+{"event_id": "PRO-0154", "timestamp": "2026-01-15T10:00:00Z", "speaker": "Sam", "text": "The team discussed dark mode and compared several options. The discussion continued with related operational details.", "topic": "dark mode"}
+{"event_id": "PRO-0322", "timestamp": "2026-01-15T10:00:00Z", "speaker": "Sam", "text": "The team discussed checkout flow and compared several options.", "topic": "checkout flow"}
+{"event_id": "PRO-0490", "timestamp": "2026-01-15T10:00:00Z", "speaker": "Sam", "text": "The team discussed mobile workflow and compared several options.", "topic": "mobile workflow"}
+{"event_id": "PRO-0014", "timestamp": "2026-01-15T14:00:00Z", "speaker": "Priya", "text": "The team discussed dark mode and compared several options.", "topic": "dark mode"}
+{"event_id": "PRO-0182", "timestamp": "2026-01-15T14:00:00Z", "speaker": "Priya", "text": "The team discussed checkout flow and compared several options.", "topic": "checkout flow"}
+{"event_id": "PRO-0350", "timestamp": "2026-01-15T14:00:00Z", "speaker": "Priya", "text": "The team discussed mobile workflow and compared several options.", "topic": "mobile workflow"}
+{"event_id": "PRO-0042", "timestamp": "2026-01-15T18:00:00Z", "speaker": "Alex", "text": "The team discussed checkout flow and compared several options.", "topic": "checkout flow"}
+{"event_id": "PRO-0210", "timestamp": "2026-01-15T18:00:00Z", "speaker": "Alex", "text": "The team discussed mobile workflow and compared several options.", "topic": "mobile workflow"}
+{"event_id": "PRO-0378", "timestamp": "2026-01-15T18:00:00Z", "speaker": "Alex", "text": "The team discussed SSO rollout and compared several options.", "topic": "SSO rollout"}
+{"event_id": "PRO-0070", "timestamp": "2026-01-15T22:00:00Z", "speaker": "Sam", "text": "The team discussed mobile workflow and compared several options.", "topic": "mobile workflow"}
+{"event_id": "PRO-0238", "timestamp": "2026-01-15T22:00:00Z", "speaker": "Sam", "text": "Plan: SSO rollout remains unresolved and no final decision has been confirmed. Earlier notes were reviewed before moving on.", "topic": "SSO rollout"}
+{"event_id": "PRO-0406", "timestamp": "2026-01-15T22:00:00Z", "speaker": "Sam", "text": "The team discussed notification system and compared several options.", "topic": "notification system"}
+{"event_id": "PRO-0099", "timestamp": "2026-01-16T03:00:00Z", "speaker": "Alex", "text": "Someone mentioned search redesign during the meeting without making a decision. The discussion continued with related operational details.", "topic": "search redesign"}
+{"event_id": "PRO-0267", "timestamp": "2026-01-16T03:00:00Z", "speaker": "Alex", "text": "State: export API changed from tentative to confirmed.", "topic": "export API"}
+{"event_id": "PRO-0435", "timestamp": "2026-01-16T03:00:00Z", "speaker": "Alex", "text": "Someone mentioned analytics dashboard during the meeting without making a decision.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0127", "timestamp": "2026-01-16T07:00:00Z", "speaker": "Sam", "text": "Action: the team attempted export API; the first attempt failed.", "topic": "export API"}
+{"event_id": "PRO-0295", "timestamp": "2026-01-16T07:00:00Z", "speaker": "Sam", "text": "Someone mentioned analytics dashboard during the meeting without making a decision.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0463", "timestamp": "2026-01-16T07:00:00Z", "speaker": "Sam", "text": "Someone mentioned pricing experiment during the meeting without making a decision.", "topic": "pricing experiment"}
+{"event_id": "PRO-0155", "timestamp": "2026-01-16T11:00:00Z", "speaker": "Priya", "text": "Someone mentioned analytics dashboard during the meeting without making a decision.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0323", "timestamp": "2026-01-16T11:00:00Z", "speaker": "Priya", "text": "Someone mentioned pricing experiment during the meeting without making a decision. Earlier notes were reviewed before moving on.", "topic": "pricing experiment"}
+{"event_id": "PRO-0491", "timestamp": "2026-01-16T11:00:00Z", "speaker": "Priya", "text": "Someone mentioned bulk import during the meeting without making a decision.", "topic": "bulk import"}
+{"event_id": "PRO-0015", "timestamp": "2026-01-16T15:00:00Z", "speaker": "Alex", "text": "Someone mentioned analytics dashboard during the meeting without making a decision.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0183", "timestamp": "2026-01-16T15:00:00Z", "speaker": "Alex", "text": "Someone mentioned pricing experiment during the meeting without making a decision.", "topic": "pricing experiment"}
+{"event_id": "PRO-0351", "timestamp": "2026-01-16T15:00:00Z", "speaker": "Alex", "text": "Someone mentioned bulk import during the meeting without making a decision.", "topic": "bulk import"}
+{"event_id": "PRO-0043", "timestamp": "2026-01-16T19:00:00Z", "speaker": "Sam", "text": "Someone mentioned pricing experiment during the meeting without making a decision.", "topic": "pricing experiment"}
+{"event_id": "PRO-0211", "timestamp": "2026-01-16T19:00:00Z", "speaker": "Sam", "text": "Someone mentioned bulk import during the meeting without making a decision.", "topic": "bulk import"}
+{"event_id": "PRO-0379", "timestamp": "2026-01-16T19:00:00Z", "speaker": "Sam", "text": "Someone mentioned search redesign during the meeting without making a decision.", "topic": "search redesign"}
+{"event_id": "PRO-0071", "timestamp": "2026-01-16T23:00:00Z", "speaker": "Priya", "text": "Someone mentioned bulk import during the meeting without making a decision.", "topic": "bulk import"}
+{"event_id": "PRO-0239", "timestamp": "2026-01-16T23:00:00Z", "speaker": "Priya", "text": "Someone mentioned search redesign during the meeting without making a decision.", "topic": "search redesign"}
+{"event_id": "PRO-0407", "timestamp": "2026-01-16T23:00:00Z", "speaker": "Priya", "text": "Someone mentioned export API during the meeting without making a decision. The discussion continued with related operational details.", "topic": "export API"}
+{"event_id": "PRO-0072", "timestamp": "2026-01-17T00:00:00Z", "speaker": "Alex", "text": "A possible future approach involving checkout flow was considered.", "topic": "checkout flow"}
+{"event_id": "PRO-0240", "timestamp": "2026-01-17T00:00:00Z", "speaker": "Alex", "text": "A possible future approach involving mobile workflow was considered.", "topic": "mobile workflow"}
+{"event_id": "PRO-0408", "timestamp": "2026-01-17T00:00:00Z", "speaker": "Alex", "text": "A possible future approach involving SSO rollout was considered. Earlier notes were reviewed before moving on.", "topic": "SSO rollout"}
+{"event_id": "PRO-0100", "timestamp": "2026-01-17T04:00:00Z", "speaker": "Sam", "text": "A possible future approach involving mobile workflow was considered.", "topic": "mobile workflow"}
+{"event_id": "PRO-0268", "timestamp": "2026-01-17T04:00:00Z", "speaker": "Sam", "text": "A possible future approach involving SSO rollout was considered.", "topic": "SSO rollout"}
+{"event_id": "PRO-0436", "timestamp": "2026-01-17T04:00:00Z", "speaker": "Sam", "text": "A possible future approach involving notification system was considered.", "topic": "notification system"}
+{"event_id": "PRO-0128", "timestamp": "2026-01-17T08:00:00Z", "speaker": "Priya", "text": "A possible future approach involving SSO rollout was considered.", "topic": "SSO rollout"}
+{"event_id": "PRO-0296", "timestamp": "2026-01-17T08:00:00Z", "speaker": "Priya", "text": "A possible future approach involving notification system was considered.", "topic": "notification system"}
+{"event_id": "PRO-0464", "timestamp": "2026-01-17T08:00:00Z", "speaker": "Priya", "text": "A possible future approach involving dark mode was considered.", "topic": "dark mode"}
+{"event_id": "PRO-0156", "timestamp": "2026-01-17T12:00:00Z", "speaker": "Alex", "text": "A possible future approach involving notification system was considered.", "topic": "notification system"}
+{"event_id": "PRO-0324", "timestamp": "2026-01-17T12:00:00Z", "speaker": "Alex", "text": "A possible future approach involving dark mode was considered.", "topic": "dark mode"}
+{"event_id": "PRO-0492", "timestamp": "2026-01-17T12:00:00Z", "speaker": "Alex", "text": "A possible future approach involving checkout flow was considered.", "topic": "checkout flow"}
+{"event_id": "PRO-0016", "timestamp": "2026-01-17T16:00:00Z", "speaker": "Sam", "text": "A possible future approach involving notification system was considered.", "topic": "notification system"}
+{"event_id": "PRO-0184", "timestamp": "2026-01-17T16:00:00Z", "speaker": "Sam", "text": "A possible future approach involving dark mode was considered.", "topic": "dark mode"}
+{"event_id": "PRO-0352", "timestamp": "2026-01-17T16:00:00Z", "speaker": "Sam", "text": "A possible future approach involving checkout flow was considered. The discussion continued with related operational details.", "topic": "checkout flow"}
+{"event_id": "PRO-0044", "timestamp": "2026-01-17T20:00:00Z", "speaker": "Priya", "text": "A possible future approach involving dark mode was considered. The discussion continued with related operational details.", "topic": "dark mode"}
+{"event_id": "PRO-0212", "timestamp": "2026-01-17T20:00:00Z", "speaker": "Priya", "text": "A possible future approach involving checkout flow was considered.", "topic": "checkout flow"}
+{"event_id": "PRO-0380", "timestamp": "2026-01-17T20:00:00Z", "speaker": "Priya", "text": "A possible future approach involving mobile workflow was considered.", "topic": "mobile workflow"}
+{"event_id": "PRO-0073", "timestamp": "2026-01-18T01:00:00Z", "speaker": "Sam", "text": "The team revisited pricing experiment as background context.", "topic": "pricing experiment"}
+{"event_id": "PRO-0241", "timestamp": "2026-01-18T01:00:00Z", "speaker": "Sam", "text": "The team revisited bulk import as background context.", "topic": "bulk import"}
+{"event_id": "PRO-0409", "timestamp": "2026-01-18T01:00:00Z", "speaker": "Sam", "text": "The team revisited search redesign as background context.", "topic": "search redesign"}
+{"event_id": "PRO-0101", "timestamp": "2026-01-18T05:00:00Z", "speaker": "Priya", "text": "The team revisited bulk import as background context.", "topic": "bulk import"}
+{"event_id": "PRO-0269", "timestamp": "2026-01-18T05:00:00Z", "speaker": "Priya", "text": "The team revisited search redesign as background context.", "topic": "search redesign"}
+{"event_id": "PRO-0437", "timestamp": "2026-01-18T05:00:00Z", "speaker": "Priya", "text": "The team revisited export API as background context.", "topic": "export API"}
+{"event_id": "PRO-0129", "timestamp": "2026-01-18T09:00:00Z", "speaker": "Alex", "text": "The team revisited search redesign as background context.", "topic": "search redesign"}
+{"event_id": "PRO-0297", "timestamp": "2026-01-18T09:00:00Z", "speaker": "Alex", "text": "The team revisited export API as background context. The discussion continued with related operational details.", "topic": "export API"}
+{"event_id": "PRO-0465", "timestamp": "2026-01-18T09:00:00Z", "speaker": "Alex", "text": "The team revisited analytics dashboard as background context.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0157", "timestamp": "2026-01-18T13:00:00Z", "speaker": "Sam", "text": "The team revisited export API as background context.", "topic": "export API"}
+{"event_id": "PRO-0325", "timestamp": "2026-01-18T13:00:00Z", "speaker": "Sam", "text": "The team revisited analytics dashboard as background context.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0493", "timestamp": "2026-01-18T13:00:00Z", "speaker": "Sam", "text": "The team revisited pricing experiment as background context. Earlier notes were reviewed before moving on.", "topic": "pricing experiment"}
+{"event_id": "PRO-0017", "timestamp": "2026-01-18T17:00:00Z", "speaker": "Priya", "text": "The team revisited export API as background context. Earlier notes were reviewed before moving on.", "topic": "export API"}
+{"event_id": "PRO-0185", "timestamp": "2026-01-18T17:00:00Z", "speaker": "Priya", "text": "The team revisited analytics dashboard as background context.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0353", "timestamp": "2026-01-18T17:00:00Z", "speaker": "Priya", "text": "The team revisited pricing experiment as background context.", "topic": "pricing experiment"}
+{"event_id": "PRO-0045", "timestamp": "2026-01-18T21:00:00Z", "speaker": "Alex", "text": "The team revisited analytics dashboard as background context.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0213", "timestamp": "2026-01-18T21:00:00Z", "speaker": "Alex", "text": "The team revisited pricing experiment as background context.", "topic": "pricing experiment"}
+{"event_id": "PRO-0381", "timestamp": "2026-01-18T21:00:00Z", "speaker": "Alex", "text": "The team revisited bulk import as background context.", "topic": "bulk import"}
+{"event_id": "PRO-0074", "timestamp": "2026-01-19T02:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned dark mode, but it did not change the current state.", "topic": "dark mode"}
+{"event_id": "PRO-0242", "timestamp": "2026-01-19T02:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned checkout flow, but it did not change the current state. The discussion continued with related operational details.", "topic": "checkout flow"}
+{"event_id": "PRO-0410", "timestamp": "2026-01-19T02:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned mobile workflow, but it did not change the current state.", "topic": "mobile workflow"}
+{"event_id": "PRO-0102", "timestamp": "2026-01-19T06:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned checkout flow, but it did not change the current state. Earlier notes were reviewed before moving on.", "topic": "checkout flow"}
+{"event_id": "PRO-0270", "timestamp": "2026-01-19T06:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned mobile workflow, but it did not change the current state.", "topic": "mobile workflow"}
+{"event_id": "PRO-0438", "timestamp": "2026-01-19T06:00:00Z", "speaker": "Alex", "text": "Decision: SSO rollout was approved after reviewing the alternatives.", "topic": "SSO rollout"}
+{"event_id": "PRO-0130", "timestamp": "2026-01-19T10:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned mobile workflow, but it did not change the current state.", "topic": "mobile workflow"}
+{"event_id": "PRO-0298", "timestamp": "2026-01-19T10:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned SSO rollout, but it did not change the current state.", "topic": "SSO rollout"}
+{"event_id": "PRO-0466", "timestamp": "2026-01-19T10:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned notification system, but it did not change the current state.", "topic": "notification system"}
+{"event_id": "PRO-0158", "timestamp": "2026-01-19T14:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned SSO rollout, but it did not change the current state.", "topic": "SSO rollout"}
+{"event_id": "PRO-0326", "timestamp": "2026-01-19T14:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned notification system, but it did not change the current state.", "topic": "notification system"}
+{"event_id": "PRO-0494", "timestamp": "2026-01-19T14:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned dark mode, but it did not change the current state.", "topic": "dark mode"}
+{"event_id": "PRO-0018", "timestamp": "2026-01-19T18:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned SSO rollout, but it did not change the current state.", "topic": "SSO rollout"}
+{"event_id": "PRO-0186", "timestamp": "2026-01-19T18:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned notification system, but it did not change the current state.", "topic": "notification system"}
+{"event_id": "PRO-0354", "timestamp": "2026-01-19T18:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned dark mode, but it did not change the current state.", "topic": "dark mode"}
+{"event_id": "PRO-0046", "timestamp": "2026-01-19T22:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned notification system, but it did not change the current state.", "topic": "notification system"}
+{"event_id": "PRO-0214", "timestamp": "2026-01-19T22:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned dark mode, but it did not change the current state.", "topic": "dark mode"}
+{"event_id": "PRO-0382", "timestamp": "2026-01-19T22:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned checkout flow, but it did not change the current state.", "topic": "checkout flow"}
+{"event_id": "PRO-0075", "timestamp": "2026-01-20T03:00:00Z", "speaker": "Alex", "text": "An earlier note about analytics dashboard was repeated for context.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0243", "timestamp": "2026-01-20T03:00:00Z", "speaker": "Alex", "text": "An earlier note about pricing experiment was repeated for context.", "topic": "pricing experiment"}
+{"event_id": "PRO-0411", "timestamp": "2026-01-20T03:00:00Z", "speaker": "Alex", "text": "An earlier note about bulk import was repeated for context.", "topic": "bulk import"}
+{"event_id": "PRO-0103", "timestamp": "2026-01-20T07:00:00Z", "speaker": "Sam", "text": "An earlier note about pricing experiment was repeated for context.", "topic": "pricing experiment"}
+{"event_id": "PRO-0271", "timestamp": "2026-01-20T07:00:00Z", "speaker": "Sam", "text": "An earlier note about bulk import was repeated for context.", "topic": "bulk import"}
+{"event_id": "PRO-0439", "timestamp": "2026-01-20T07:00:00Z", "speaker": "Sam", "text": "An earlier note about search redesign was repeated for context.", "topic": "search redesign"}
+{"event_id": "PRO-0131", "timestamp": "2026-01-20T11:00:00Z", "speaker": "Priya", "text": "An earlier note about bulk import was repeated for context.", "topic": "bulk import"}
+{"event_id": "PRO-0299", "timestamp": "2026-01-20T11:00:00Z", "speaker": "Priya", "text": "An earlier note about search redesign was repeated for context.", "topic": "search redesign"}
+{"event_id": "PRO-0467", "timestamp": "2026-01-20T11:00:00Z", "speaker": "Priya", "text": "An earlier note about export API was repeated for context.", "topic": "export API"}
+{"event_id": "PRO-0159", "timestamp": "2026-01-20T15:00:00Z", "speaker": "Alex", "text": "An earlier note about search redesign was repeated for context.", "topic": "search redesign"}
+{"event_id": "PRO-0327", "timestamp": "2026-01-20T15:00:00Z", "speaker": "Alex", "text": "An earlier note about export API was repeated for context.", "topic": "export API"}
+{"event_id": "PRO-0495", "timestamp": "2026-01-20T15:00:00Z", "speaker": "Alex", "text": "An earlier note about analytics dashboard was repeated for context. The discussion continued with related operational details.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0019", "timestamp": "2026-01-20T19:00:00Z", "speaker": "Sam", "text": "An earlier note about search redesign was repeated for context.", "topic": "search redesign"}
+{"event_id": "PRO-0187", "timestamp": "2026-01-20T19:00:00Z", "speaker": "Sam", "text": "An earlier note about export API was repeated for context. The discussion continued with related operational details. Earlier notes were reviewed before moving on.", "topic": "export API"}
+{"event_id": "PRO-0355", "timestamp": "2026-01-20T19:00:00Z", "speaker": "Sam", "text": "An earlier note about analytics dashboard was repeated for context.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0047", "timestamp": "2026-01-20T23:00:00Z", "speaker": "Priya", "text": "An earlier note about export API was repeated for context.", "topic": "export API"}
+{"event_id": "PRO-0215", "timestamp": "2026-01-20T23:00:00Z", "speaker": "Priya", "text": "An earlier note about analytics dashboard was repeated for context.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0383", "timestamp": "2026-01-20T23:00:00Z", "speaker": "Priya", "text": "An earlier note about pricing experiment was repeated for context.", "topic": "pricing experiment"}
+{"event_id": "PRO-0048", "timestamp": "2026-01-21T00:00:00Z", "speaker": "Alex", "text": "The group asked whether SSO rollout might matter later.", "topic": "SSO rollout"}
+{"event_id": "PRO-0216", "timestamp": "2026-01-21T00:00:00Z", "speaker": "Alex", "text": "The group asked whether notification system might matter later.", "topic": "notification system"}
+{"event_id": "PRO-0384", "timestamp": "2026-01-21T00:00:00Z", "speaker": "Alex", "text": "The group asked whether dark mode might matter later.", "topic": "dark mode"}
+{"event_id": "PRO-0076", "timestamp": "2026-01-21T04:00:00Z", "speaker": "Sam", "text": "The group asked whether notification system might matter later.", "topic": "notification system"}
+{"event_id": "PRO-0244", "timestamp": "2026-01-21T04:00:00Z", "speaker": "Sam", "text": "The group asked whether dark mode might matter later.", "topic": "dark mode"}
+{"event_id": "PRO-0412", "timestamp": "2026-01-21T04:00:00Z", "speaker": "Sam", "text": "The group asked whether checkout flow might matter later.", "topic": "checkout flow"}
+{"event_id": "PRO-0104", "timestamp": "2026-01-21T08:00:00Z", "speaker": "Priya", "text": "The group asked whether dark mode might matter later.", "topic": "dark mode"}
+{"event_id": "PRO-0272", "timestamp": "2026-01-21T08:00:00Z", "speaker": "Priya", "text": "The group asked whether checkout flow might matter later. Earlier notes were reviewed before moving on.", "topic": "checkout flow"}
+{"event_id": "PRO-0440", "timestamp": "2026-01-21T08:00:00Z", "speaker": "Priya", "text": "The group asked whether mobile workflow might matter later. The discussion continued with related operational details.", "topic": "mobile workflow"}
+{"event_id": "PRO-0132", "timestamp": "2026-01-21T12:00:00Z", "speaker": "Alex", "text": "The group asked whether checkout flow might matter later. The discussion continued with related operational details.", "topic": "checkout flow"}
+{"event_id": "PRO-0300", "timestamp": "2026-01-21T12:00:00Z", "speaker": "Alex", "text": "The group asked whether mobile workflow might matter later.", "topic": "mobile workflow"}
+{"event_id": "PRO-0468", "timestamp": "2026-01-21T12:00:00Z", "speaker": "Alex", "text": "The group asked whether SSO rollout might matter later.", "topic": "SSO rollout"}
+{"event_id": "PRO-0160", "timestamp": "2026-01-21T16:00:00Z", "speaker": "Sam", "text": "The group asked whether mobile workflow might matter later.", "topic": "mobile workflow"}
+{"event_id": "PRO-0328", "timestamp": "2026-01-21T16:00:00Z", "speaker": "Sam", "text": "The group asked whether SSO rollout might matter later.", "topic": "SSO rollout"}
+{"event_id": "PRO-0496", "timestamp": "2026-01-21T16:00:00Z", "speaker": "Sam", "text": "The group asked whether notification system might matter later.", "topic": "notification system"}
+{"event_id": "PRO-0020", "timestamp": "2026-01-21T20:00:00Z", "speaker": "Priya", "text": "The group asked whether mobile workflow might matter later.", "topic": "mobile workflow"}
+{"event_id": "PRO-0188", "timestamp": "2026-01-21T20:00:00Z", "speaker": "Priya", "text": "The group asked whether SSO rollout might matter later.", "topic": "SSO rollout"}
+{"event_id": "PRO-0356", "timestamp": "2026-01-21T20:00:00Z", "speaker": "Priya", "text": "The group asked whether notification system might matter later.", "topic": "notification system"}
+{"event_id": "PRO-0049", "timestamp": "2026-01-22T01:00:00Z", "speaker": "Sam", "text": "The team discussed search redesign and compared several options.", "topic": "search redesign"}
+{"event_id": "PRO-0217", "timestamp": "2026-01-22T01:00:00Z", "speaker": "Sam", "text": "The team discussed export API and compared several options.", "topic": "export API"}
+{"event_id": "PRO-0385", "timestamp": "2026-01-22T01:00:00Z", "speaker": "Sam", "text": "The team discussed analytics dashboard and compared several options. The discussion continued with related operational details.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0077", "timestamp": "2026-01-22T05:00:00Z", "speaker": "Priya", "text": "The team discussed export API and compared several options. The discussion continued with related operational details.", "topic": "export API"}
+{"event_id": "PRO-0245", "timestamp": "2026-01-22T05:00:00Z", "speaker": "Priya", "text": "The team discussed analytics dashboard and compared several options.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0413", "timestamp": "2026-01-22T05:00:00Z", "speaker": "Priya", "text": "The team discussed pricing experiment and compared several options.", "topic": "pricing experiment"}
+{"event_id": "PRO-0105", "timestamp": "2026-01-22T09:00:00Z", "speaker": "Alex", "text": "The team discussed analytics dashboard and compared several options.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0273", "timestamp": "2026-01-22T09:00:00Z", "speaker": "Alex", "text": "The team discussed pricing experiment and compared several options.", "topic": "pricing experiment"}
+{"event_id": "PRO-0441", "timestamp": "2026-01-22T09:00:00Z", "speaker": "Alex", "text": "State: bulk import changed from tentative to confirmed.", "topic": "bulk import"}
+{"event_id": "PRO-0133", "timestamp": "2026-01-22T13:00:00Z", "speaker": "Sam", "text": "The team discussed pricing experiment and compared several options.", "topic": "pricing experiment"}
+{"event_id": "PRO-0301", "timestamp": "2026-01-22T13:00:00Z", "speaker": "Sam", "text": "The team discussed bulk import and compared several options.", "topic": "bulk import"}
+{"event_id": "PRO-0469", "timestamp": "2026-01-22T13:00:00Z", "speaker": "Sam", "text": "The team discussed search redesign and compared several options.", "topic": "search redesign"}
+{"event_id": "PRO-0161", "timestamp": "2026-01-22T17:00:00Z", "speaker": "Priya", "text": "The team discussed bulk import and compared several options.", "topic": "bulk import"}
+{"event_id": "PRO-0329", "timestamp": "2026-01-22T17:00:00Z", "speaker": "Priya", "text": "The team discussed search redesign and compared several options.", "topic": "search redesign"}
+{"event_id": "PRO-0497", "timestamp": "2026-01-22T17:00:00Z", "speaker": "Priya", "text": "The team discussed export API and compared several options.", "topic": "export API"}
+{"event_id": "PRO-0021", "timestamp": "2026-01-22T21:00:00Z", "speaker": "Alex", "text": "The team discussed bulk import and compared several options.", "topic": "bulk import"}
+{"event_id": "PRO-0189", "timestamp": "2026-01-22T21:00:00Z", "speaker": "Alex", "text": "The team discussed search redesign and compared several options.", "topic": "search redesign"}
+{"event_id": "PRO-0357", "timestamp": "2026-01-22T21:00:00Z", "speaker": "Alex", "text": "The team discussed export API and compared several options. Earlier notes were reviewed before moving on.", "topic": "export API"}
+{"event_id": "PRO-0050", "timestamp": "2026-01-23T02:00:00Z", "speaker": "Priya", "text": "Someone mentioned mobile workflow during the meeting without making a decision.", "topic": "mobile workflow"}
+{"event_id": "PRO-0218", "timestamp": "2026-01-23T02:00:00Z", "speaker": "Priya", "text": "Someone mentioned SSO rollout during the meeting without making a decision.", "topic": "SSO rollout"}
+{"event_id": "PRO-0386", "timestamp": "2026-01-23T02:00:00Z", "speaker": "Priya", "text": "Someone mentioned notification system during the meeting without making a decision.", "topic": "notification system"}
+{"event_id": "PRO-0078", "timestamp": "2026-01-23T06:00:00Z", "speaker": "Alex", "text": "Someone mentioned SSO rollout during the meeting without making a decision.", "topic": "SSO rollout"}
+{"event_id": "PRO-0246", "timestamp": "2026-01-23T06:00:00Z", "speaker": "Alex", "text": "Someone mentioned notification system during the meeting without making a decision.", "topic": "notification system"}
+{"event_id": "PRO-0414", "timestamp": "2026-01-23T06:00:00Z", "speaker": "Alex", "text": "Someone mentioned dark mode during the meeting without making a decision.", "topic": "dark mode"}
+{"event_id": "PRO-0106", "timestamp": "2026-01-23T10:00:00Z", "speaker": "Sam", "text": "Someone mentioned notification system during the meeting without making a decision.", "topic": "notification system"}
+{"event_id": "PRO-0274", "timestamp": "2026-01-23T10:00:00Z", "speaker": "Sam", "text": "Someone mentioned dark mode during the meeting without making a decision.", "topic": "dark mode"}
+{"event_id": "PRO-0442", "timestamp": "2026-01-23T10:00:00Z", "speaker": "Sam", "text": "Someone mentioned checkout flow during the meeting without making a decision. Earlier notes were reviewed before moving on.", "topic": "checkout flow"}
+{"event_id": "PRO-0134", "timestamp": "2026-01-23T14:00:00Z", "speaker": "Priya", "text": "Someone mentioned dark mode during the meeting without making a decision.", "topic": "dark mode"}
+{"event_id": "PRO-0302", "timestamp": "2026-01-23T14:00:00Z", "speaker": "Priya", "text": "Someone mentioned checkout flow during the meeting without making a decision.", "topic": "checkout flow"}
+{"event_id": "PRO-0470", "timestamp": "2026-01-23T14:00:00Z", "speaker": "Priya", "text": "Someone mentioned mobile workflow during the meeting without making a decision.", "topic": "mobile workflow"}
+{"event_id": "PRO-0162", "timestamp": "2026-01-23T18:00:00Z", "speaker": "Alex", "text": "Someone mentioned checkout flow during the meeting without making a decision.", "topic": "checkout flow"}
+{"event_id": "PRO-0330", "timestamp": "2026-01-23T18:00:00Z", "speaker": "Alex", "text": "Someone mentioned mobile workflow during the meeting without making a decision. The discussion continued with related operational details.", "topic": "mobile workflow"}
+{"event_id": "PRO-0498", "timestamp": "2026-01-23T18:00:00Z", "speaker": "Alex", "text": "Someone mentioned SSO rollout during the meeting without making a decision.", "topic": "SSO rollout"}
+{"event_id": "PRO-0022", "timestamp": "2026-01-23T22:00:00Z", "speaker": "Sam", "text": "Someone mentioned checkout flow during the meeting without making a decision. The discussion continued with related operational details.", "topic": "checkout flow"}
+{"event_id": "PRO-0190", "timestamp": "2026-01-23T22:00:00Z", "speaker": "Sam", "text": "Someone mentioned mobile workflow during the meeting without making a decision.", "topic": "mobile workflow"}
+{"event_id": "PRO-0358", "timestamp": "2026-01-23T22:00:00Z", "speaker": "Sam", "text": "Someone mentioned SSO rollout during the meeting without making a decision.", "topic": "SSO rollout"}
+{"event_id": "PRO-0051", "timestamp": "2026-01-24T03:00:00Z", "speaker": "Alex", "text": "A possible future approach involving bulk import was considered. Earlier notes were reviewed before moving on.", "topic": "bulk import"}
+{"event_id": "PRO-0219", "timestamp": "2026-01-24T03:00:00Z", "speaker": "Alex", "text": "A possible future approach involving search redesign was considered.", "topic": "search redesign"}
+{"event_id": "PRO-0387", "timestamp": "2026-01-24T03:00:00Z", "speaker": "Alex", "text": "A possible future approach involving export API was considered.", "topic": "export API"}
+{"event_id": "PRO-0079", "timestamp": "2026-01-24T07:00:00Z", "speaker": "Sam", "text": "A possible future approach involving search redesign was considered.", "topic": "search redesign"}
+{"event_id": "PRO-0247", "timestamp": "2026-01-24T07:00:00Z", "speaker": "Sam", "text": "A possible future approach involving export API was considered.", "topic": "export API"}
+{"event_id": "PRO-0415", "timestamp": "2026-01-24T07:00:00Z", "speaker": "Sam", "text": "A possible future approach involving analytics dashboard was considered.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0107", "timestamp": "2026-01-24T11:00:00Z", "speaker": "Priya", "text": "A possible future approach involving export API was considered.", "topic": "export API"}
+{"event_id": "PRO-0275", "timestamp": "2026-01-24T11:00:00Z", "speaker": "Priya", "text": "A possible future approach involving analytics dashboard was considered. The discussion continued with related operational details.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0443", "timestamp": "2026-01-24T11:00:00Z", "speaker": "Priya", "text": "A possible future approach involving pricing experiment was considered.", "topic": "pricing experiment"}
+{"event_id": "PRO-0135", "timestamp": "2026-01-24T15:00:00Z", "speaker": "Alex", "text": "A possible future approach involving analytics dashboard was considered.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0303", "timestamp": "2026-01-24T15:00:00Z", "speaker": "Alex", "text": "A possible future approach involving pricing experiment was considered.", "topic": "pricing experiment"}
+{"event_id": "PRO-0471", "timestamp": "2026-01-24T15:00:00Z", "speaker": "Alex", "text": "A possible future approach involving bulk import was considered.", "topic": "bulk import"}
+{"event_id": "PRO-0163", "timestamp": "2026-01-24T19:00:00Z", "speaker": "Sam", "text": "A possible future approach involving pricing experiment was considered.", "topic": "pricing experiment"}
+{"event_id": "PRO-0331", "timestamp": "2026-01-24T19:00:00Z", "speaker": "Sam", "text": "A possible future approach involving bulk import was considered.", "topic": "bulk import"}
+{"event_id": "PRO-0499", "timestamp": "2026-01-24T19:00:00Z", "speaker": "Sam", "text": "A possible future approach involving search redesign was considered.", "topic": "search redesign"}
+{"event_id": "PRO-0023", "timestamp": "2026-01-24T23:00:00Z", "speaker": "Priya", "text": "A possible future approach involving pricing experiment was considered.", "topic": "pricing experiment"}
+{"event_id": "PRO-0191", "timestamp": "2026-01-24T23:00:00Z", "speaker": "Priya", "text": "A possible future approach involving bulk import was considered.", "topic": "bulk import"}
+{"event_id": "PRO-0359", "timestamp": "2026-01-24T23:00:00Z", "speaker": "Priya", "text": "A possible future approach involving search redesign was considered.", "topic": "search redesign"}
+{"event_id": "PRO-0024", "timestamp": "2026-01-25T00:00:00Z", "speaker": "Alex", "text": "The team revisited dark mode as background context.", "topic": "dark mode"}
+{"event_id": "PRO-0192", "timestamp": "2026-01-25T00:00:00Z", "speaker": "Alex", "text": "Decision: checkout flow was approved after reviewing the alternatives.", "topic": "checkout flow"}
+{"event_id": "PRO-0360", "timestamp": "2026-01-25T00:00:00Z", "speaker": "Alex", "text": "The team revisited mobile workflow as background context.", "topic": "mobile workflow"}
+{"event_id": "PRO-0052", "timestamp": "2026-01-25T04:00:00Z", "speaker": "Sam", "text": "The team revisited checkout flow as background context.", "topic": "checkout flow"}
+{"event_id": "PRO-0220", "timestamp": "2026-01-25T04:00:00Z", "speaker": "Sam", "text": "The team revisited mobile workflow as background context. The discussion continued with related operational details.", "topic": "mobile workflow"}
+{"event_id": "PRO-0388", "timestamp": "2026-01-25T04:00:00Z", "speaker": "Sam", "text": "The team revisited SSO rollout as background context.", "topic": "SSO rollout"}
+{"event_id": "PRO-0080", "timestamp": "2026-01-25T08:00:00Z", "speaker": "Priya", "text": "The team revisited mobile workflow as background context.", "topic": "mobile workflow"}
+{"event_id": "PRO-0248", "timestamp": "2026-01-25T08:00:00Z", "speaker": "Priya", "text": "The team revisited SSO rollout as background context.", "topic": "SSO rollout"}
+{"event_id": "PRO-0416", "timestamp": "2026-01-25T08:00:00Z", "speaker": "Priya", "text": "The team revisited notification system as background context.", "topic": "notification system"}
+{"event_id": "PRO-0108", "timestamp": "2026-01-25T12:00:00Z", "speaker": "Alex", "text": "The team revisited SSO rollout as background context.", "topic": "SSO rollout"}
+{"event_id": "PRO-0276", "timestamp": "2026-01-25T12:00:00Z", "speaker": "Alex", "text": "The team revisited notification system as background context.", "topic": "notification system"}
+{"event_id": "PRO-0444", "timestamp": "2026-01-25T12:00:00Z", "speaker": "Alex", "text": "The team revisited dark mode as background context.", "topic": "dark mode"}
+{"event_id": "PRO-0136", "timestamp": "2026-01-25T16:00:00Z", "speaker": "Sam", "text": "The team revisited notification system as background context. Earlier notes were reviewed before moving on.", "topic": "notification system"}
+{"event_id": "PRO-0304", "timestamp": "2026-01-25T16:00:00Z", "speaker": "Sam", "text": "The team revisited dark mode as background context.", "topic": "dark mode"}
+{"event_id": "PRO-0472", "timestamp": "2026-01-25T16:00:00Z", "speaker": "Sam", "text": "The team revisited checkout flow as background context.", "topic": "checkout flow"}
+{"event_id": "PRO-0164", "timestamp": "2026-01-25T20:00:00Z", "speaker": "Priya", "text": "The team revisited dark mode as background context.", "topic": "dark mode"}
+{"event_id": "PRO-0332", "timestamp": "2026-01-25T20:00:00Z", "speaker": "Priya", "text": "The team revisited checkout flow as background context.", "topic": "checkout flow"}
+{"event_id": "PRO-0025", "timestamp": "2026-01-26T01:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned analytics dashboard, but it did not change the current state.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0193", "timestamp": "2026-01-26T01:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned pricing experiment, but it did not change the current state.", "topic": "pricing experiment"}
+{"event_id": "PRO-0361", "timestamp": "2026-01-26T01:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned bulk import, but it did not change the current state.", "topic": "bulk import"}
+{"event_id": "PRO-0053", "timestamp": "2026-01-26T05:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned pricing experiment, but it did not change the current state.", "topic": "pricing experiment"}
+{"event_id": "PRO-0221", "timestamp": "2026-01-26T05:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned bulk import, but it did not change the current state. Earlier notes were reviewed before moving on.", "topic": "bulk import"}
+{"event_id": "PRO-0389", "timestamp": "2026-01-26T05:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned search redesign, but it did not change the current state.", "topic": "search redesign"}
+{"event_id": "PRO-0081", "timestamp": "2026-01-26T09:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned bulk import, but it did not change the current state.", "topic": "bulk import"}
+{"event_id": "PRO-0249", "timestamp": "2026-01-26T09:00:00Z", "speaker": "Alex", "text": "State: search redesign changed from tentative to confirmed.", "topic": "search redesign"}
+{"event_id": "PRO-0417", "timestamp": "2026-01-26T09:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned export API, but it did not change the current state.", "topic": "export API"}
+{"event_id": "PRO-0109", "timestamp": "2026-01-26T13:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned search redesign, but it did not change the current state.", "topic": "search redesign"}
+{"event_id": "PRO-0277", "timestamp": "2026-01-26T13:00:00Z", "speaker": "Sam", "text": "Action: the team attempted export API; the first attempt failed.", "topic": "export API"}
+{"event_id": "PRO-0445", "timestamp": "2026-01-26T13:00:00Z", "speaker": "Sam", "text": "A nearby task mentioned analytics dashboard, but it did not change the current state.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0137", "timestamp": "2026-01-26T17:00:00Z", "speaker": "Priya", "text": "Change: export API was replaced by a newer approach; the earlier state is obsolete.", "topic": "export API"}
+{"event_id": "PRO-0305", "timestamp": "2026-01-26T17:00:00Z", "speaker": "Priya", "text": "A nearby task mentioned analytics dashboard, but it did not change the current state.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0473", "timestamp": "2026-01-26T17:00:00Z", "speaker": "Priya", "text": "Change: pricing experiment was replaced by a newer approach; the earlier state is obsolete. The discussion continued with related operational details.", "topic": "pricing experiment"}
+{"event_id": "PRO-0165", "timestamp": "2026-01-26T21:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned analytics dashboard, but it did not change the current state. The discussion continued with related operational details.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0333", "timestamp": "2026-01-26T21:00:00Z", "speaker": "Alex", "text": "A nearby task mentioned pricing experiment, but it did not change the current state.", "topic": "pricing experiment"}
+{"event_id": "PRO-0026", "timestamp": "2026-01-27T02:00:00Z", "speaker": "Priya", "text": "An earlier note about notification system was repeated for context.", "topic": "notification system"}
+{"event_id": "PRO-0194", "timestamp": "2026-01-27T02:00:00Z", "speaker": "Priya", "text": "An earlier note about dark mode was repeated for context.", "topic": "dark mode"}
+{"event_id": "PRO-0362", "timestamp": "2026-01-27T02:00:00Z", "speaker": "Priya", "text": "An earlier note about checkout flow was repeated for context.", "topic": "checkout flow"}
+{"event_id": "PRO-0054", "timestamp": "2026-01-27T06:00:00Z", "speaker": "Alex", "text": "An earlier note about dark mode was repeated for context.", "topic": "dark mode"}
+{"event_id": "PRO-0222", "timestamp": "2026-01-27T06:00:00Z", "speaker": "Alex", "text": "An earlier note about checkout flow was repeated for context.", "topic": "checkout flow"}
+{"event_id": "PRO-0390", "timestamp": "2026-01-27T06:00:00Z", "speaker": "Alex", "text": "An earlier note about mobile workflow was repeated for context.", "topic": "mobile workflow"}
+{"event_id": "PRO-0082", "timestamp": "2026-01-27T10:00:00Z", "speaker": "Sam", "text": "An earlier note about checkout flow was repeated for context.", "topic": "checkout flow"}
+{"event_id": "PRO-0250", "timestamp": "2026-01-27T10:00:00Z", "speaker": "Sam", "text": "An earlier note about mobile workflow was repeated for context.", "topic": "mobile workflow"}
+{"event_id": "PRO-0418", "timestamp": "2026-01-27T10:00:00Z", "speaker": "Sam", "text": "An earlier note about SSO rollout was repeated for context. The discussion continued with related operational details.", "topic": "SSO rollout"}
+{"event_id": "PRO-0110", "timestamp": "2026-01-27T14:00:00Z", "speaker": "Priya", "text": "An earlier note about mobile workflow was repeated for context. The discussion continued with related operational details.", "topic": "mobile workflow"}
+{"event_id": "PRO-0278", "timestamp": "2026-01-27T14:00:00Z", "speaker": "Priya", "text": "An earlier note about SSO rollout was repeated for context.", "topic": "SSO rollout"}
+{"event_id": "PRO-0446", "timestamp": "2026-01-27T14:00:00Z", "speaker": "Priya", "text": "An earlier note about notification system was repeated for context.", "topic": "notification system"}
+{"event_id": "PRO-0138", "timestamp": "2026-01-27T18:00:00Z", "speaker": "Alex", "text": "An earlier note about SSO rollout was repeated for context.", "topic": "SSO rollout"}
+{"event_id": "PRO-0306", "timestamp": "2026-01-27T18:00:00Z", "speaker": "Alex", "text": "An earlier note about notification system was repeated for context. Earlier notes were reviewed before moving on.", "topic": "notification system"}
+{"event_id": "PRO-0474", "timestamp": "2026-01-27T18:00:00Z", "speaker": "Alex", "text": "An earlier note about dark mode was repeated for context.", "topic": "dark mode"}
+{"event_id": "PRO-0166", "timestamp": "2026-01-27T22:00:00Z", "speaker": "Sam", "text": "An earlier note about notification system was repeated for context.", "topic": "notification system"}
+{"event_id": "PRO-0334", "timestamp": "2026-01-27T22:00:00Z", "speaker": "Sam", "text": "An earlier note about dark mode was repeated for context.", "topic": "dark mode"}
+{"event_id": "PRO-0027", "timestamp": "2026-01-28T03:00:00Z", "speaker": "Alex", "text": "State: export API changed from tentative to confirmed.", "topic": "export API"}
+{"event_id": "PRO-0195", "timestamp": "2026-01-28T03:00:00Z", "speaker": "Alex", "text": "The group asked whether analytics dashboard might matter later.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0363", "timestamp": "2026-01-28T03:00:00Z", "speaker": "Alex", "text": "The group asked whether pricing experiment might matter later. The discussion continued with related operational details.", "topic": "pricing experiment"}
+{"event_id": "PRO-0055", "timestamp": "2026-01-28T07:00:00Z", "speaker": "Sam", "text": "The group asked whether analytics dashboard might matter later. The discussion continued with related operational details.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0223", "timestamp": "2026-01-28T07:00:00Z", "speaker": "Sam", "text": "The group asked whether pricing experiment might matter later.", "topic": "pricing experiment"}
+{"event_id": "PRO-0391", "timestamp": "2026-01-28T07:00:00Z", "speaker": "Sam", "text": "The group asked whether bulk import might matter later. Earlier notes were reviewed before moving on.", "topic": "bulk import"}
+{"event_id": "PRO-0083", "timestamp": "2026-01-28T11:00:00Z", "speaker": "Priya", "text": "The group asked whether pricing experiment might matter later.", "topic": "pricing experiment"}
+{"event_id": "PRO-0251", "timestamp": "2026-01-28T11:00:00Z", "speaker": "Priya", "text": "The group asked whether bulk import might matter later.", "topic": "bulk import"}
+{"event_id": "PRO-0419", "timestamp": "2026-01-28T11:00:00Z", "speaker": "Priya", "text": "The group asked whether search redesign might matter later.", "topic": "search redesign"}
+{"event_id": "PRO-0111", "timestamp": "2026-01-28T15:00:00Z", "speaker": "Alex", "text": "The group asked whether bulk import might matter later.", "topic": "bulk import"}
+{"event_id": "PRO-0279", "timestamp": "2026-01-28T15:00:00Z", "speaker": "Alex", "text": "The group asked whether search redesign might matter later.", "topic": "search redesign"}
+{"event_id": "PRO-0447", "timestamp": "2026-01-28T15:00:00Z", "speaker": "Alex", "text": "The group asked whether export API might matter later.", "topic": "export API"}
+{"event_id": "PRO-0139", "timestamp": "2026-01-28T19:00:00Z", "speaker": "Sam", "text": "The group asked whether search redesign might matter later.", "topic": "search redesign"}
+{"event_id": "PRO-0307", "timestamp": "2026-01-28T19:00:00Z", "speaker": "Sam", "text": "The group asked whether export API might matter later.", "topic": "export API"}
+{"event_id": "PRO-0475", "timestamp": "2026-01-28T19:00:00Z", "speaker": "Sam", "text": "The group asked whether analytics dashboard might matter later.", "topic": "analytics dashboard"}
+{"event_id": "PRO-0167", "timestamp": "2026-01-28T23:00:00Z", "speaker": "Priya", "text": "The group asked whether export API might matter later.", "topic": "export API"}
+{"event_id": "PRO-0335", "timestamp": "2026-01-28T23:00:00Z", "speaker": "Priya", "text": "The group asked whether analytics dashboard might matter later.", "topic": "analytics dashboard"}

@@ -1,0 +1,453 @@
+{
+  "writer": "copilot",
+  "reader": "claude",
+  "status": "executed",
+  "writer_memory_artifact": "results/copilot.memory.json",
+  "writer_memory_stated_sha256": "d0b1cc8e5fb25d584af2ef18d6cd5403fa34b9b82993b3a89276f51b263354a0",
+  "writer_memory_hash_verification_note": "This reader independently recomputed SHA-256 over the writer artifact's content (agent/version/records/source_event_ids fields, excluding frozen_sha256 itself) using json.dumps(obj, sort_keys=True) -- the same canonicalization method this session's own claude.memory.json writer used and verified successfully. The recomputed hash (37aa3e56489627a06e419f901e1fda2d098713e949f012c846a73b1bbdd4b7ee) does NOT match the stated frozen_sha256 (d0b1cc8e5fb25d584af2ef18d6cd5403fa34b9b82993b3a89276f51b263354a0) under this or three other canonicalization variants tried (compact separators, indent=2, default json.dumps with no sort). This is disclosed as a genuine integrity-verification gap in Copilot's artifact, not silently accepted or silently corrected -- this reader proceeded to read and use the memory content anyway, since the protocol's freeze requirement is about the writer not editing memory after freeze to improve query performance, not a reader-side blocking gate, and the record content itself was internally consistent and schema-valid.",
+  "reader_input": "Copilot memory artifact (results/copilot.memory.json) plus the 40 future queries and schema only; original corpora, gold annotations, and Copilot's report/memory_eval were withheld from this reader step.",
+  "cases": 40,
+  "correct": 40,
+  "answers": [
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "ENGINEERING-Q000",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-ENG-0011']: Change: PostgreSQL migration was replaced by a newer approach; the earlier state is obsolete. The discussion continued with related operational details.",
+      "evidence_used": [
+        "memory-ENG-0011"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "ENGINEERING-Q001",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-ENG-0030']: Decision: invoice timeout was approved after reviewing the alternatives.",
+      "evidence_used": [
+        "memory-ENG-0030"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "ENGINEERING-Q002",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-ENG-0037']: Action: the team attempted DynamoDB migration; the first attempt failed.",
+      "evidence_used": [
+        "memory-ENG-0037"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "ENGINEERING-Q003",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-ENG-0042']: Decision: API rate limit was approved after reviewing the alternatives.",
+      "evidence_used": [
+        "memory-ENG-0042"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "ENGINEERING-Q004",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-ENG-0088']: Plan: search index remains unresolved and no final decision has been confirmed. The discussion continued with related operational details.",
+      "evidence_used": [
+        "memory-ENG-0088"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "ENGINEERING-Q005",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-ENG-0103']: Action: the team attempted webhook delivery; the first attempt failed.",
+      "evidence_used": [
+        "memory-ENG-0103"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "ENGINEERING-Q006",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-ENG-0121']: Action: the team attempted PostgreSQL migration; the first attempt failed. The discussion continued with related operational details.",
+      "evidence_used": [
+        "memory-ENG-0121"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "ENGINEERING-Q007",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-ENG-0128']: Outcome: search index was confirmed successful after the follow-up check.",
+      "evidence_used": [
+        "memory-ENG-0128"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "ENGINEERING-Q008",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-ENG-0138']: Decision: search index was approved after reviewing the alternatives.",
+      "evidence_used": [
+        "memory-ENG-0138"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "ENGINEERING-Q009",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-ENG-0139']: Action: the team attempted cache invalidation; the first attempt failed.",
+      "evidence_used": [
+        "memory-ENG-0139"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "PLANNING-Q000",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-PLA-0004']: Plan: team ownership remains unresolved and no final decision has been confirmed.",
+      "evidence_used": [
+        "memory-PLA-0004"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "PLANNING-Q001",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-PLA-0006']: Decision: travel schedule was approved after reviewing the alternatives.",
+      "evidence_used": [
+        "memory-PLA-0006"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "PLANNING-Q002",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-PLA-0015']: State: vendor review changed from tentative to confirmed.",
+      "evidence_used": [
+        "memory-PLA-0015"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "PLANNING-Q003",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-PLA-0053']: Change: hiring plan was replaced by a newer approach; the earlier state is obsolete.",
+      "evidence_used": [
+        "memory-PLA-0053"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "PLANNING-Q004",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-PLA-0063']: State: hiring plan changed from tentative to confirmed.",
+      "evidence_used": [
+        "memory-PLA-0063"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "PLANNING-Q005",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-PLA-0064']: Plan: team ownership remains unresolved and no final decision has been confirmed.",
+      "evidence_used": [
+        "memory-PLA-0064"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "PLANNING-Q006",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-PLA-0085']: Action: the team attempted vendor review; the first attempt failed. Earlier notes were reviewed before moving on.",
+      "evidence_used": [
+        "memory-PLA-0085"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "PLANNING-Q007",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-PLA-0117']: State: customer workshop changed from tentative to confirmed.",
+      "evidence_used": [
+        "memory-PLA-0117"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "PLANNING-Q008",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-PLA-0127']: Action: the team attempted customer workshop; the first attempt failed.",
+      "evidence_used": [
+        "memory-PLA-0127"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "PLANNING-Q009",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-PLA-0152']: Outcome: documentation deadline was confirmed successful after the follow-up check.",
+      "evidence_used": [
+        "memory-PLA-0152"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "PRODUCT-Q000",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-PRO-0013']: Action: the team attempted pricing experiment; the first attempt failed.",
+      "evidence_used": [
+        "memory-PRO-0013"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "PRODUCT-Q001",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-PRO-0027']: State: export API changed from tentative to confirmed.",
+      "evidence_used": [
+        "memory-PRO-0027"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "PRODUCT-Q002",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-PRO-0028']: Plan: SSO rollout remains unresolved and no final decision has been confirmed.",
+      "evidence_used": [
+        "memory-PRO-0028"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "PRODUCT-Q003",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-PRO-0033']: State: pricing experiment changed from tentative to confirmed. The discussion continued with related operational details.",
+      "evidence_used": [
+        "memory-PRO-0033"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "PRODUCT-Q004",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-PRO-0115']: Action: the team attempted analytics dashboard; the first attempt failed.",
+      "evidence_used": [
+        "memory-PRO-0115"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "PRODUCT-Q005",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-PRO-0123']: State: pricing experiment changed from tentative to confirmed.",
+      "evidence_used": [
+        "memory-PRO-0123"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "PRODUCT-Q006",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-PRO-0127']: Action: the team attempted export API; the first attempt failed.",
+      "evidence_used": [
+        "memory-PRO-0127"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "PRODUCT-Q007",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-PRO-0137']: Change: export API was replaced by a newer approach; the earlier state is obsolete.",
+      "evidence_used": [
+        "memory-PRO-0137"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "PRODUCT-Q008",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-PRO-0168']: Decision: SSO rollout was approved after reviewing the alternatives.",
+      "evidence_used": [
+        "memory-PRO-0168"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "PRODUCT-Q009",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-PRO-0181']: Action: the team attempted bulk import; the first attempt failed.",
+      "evidence_used": [
+        "memory-PRO-0181"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "OPERATIONS-Q000",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-OPE-0019']: Action: the team attempted latency incident; the first attempt failed.",
+      "evidence_used": [
+        "memory-OPE-0019"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "OPERATIONS-Q001",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-OPE-0021']: State: database outage changed from tentative to confirmed.",
+      "evidence_used": [
+        "memory-OPE-0021"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "OPERATIONS-Q002",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-OPE-0028']: Plan: dependency outage remains unresolved and no final decision has been confirmed.",
+      "evidence_used": [
+        "memory-OPE-0028"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "OPERATIONS-Q003",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-OPE-0067']: Action: the team attempted billing alert; the first attempt failed.",
+      "evidence_used": [
+        "memory-OPE-0067"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "OPERATIONS-Q004",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-OPE-0078']: Decision: dependency outage was approved after reviewing the alternatives.",
+      "evidence_used": [
+        "memory-OPE-0078"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "OPERATIONS-Q005",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-OPE-0081']: State: database outage changed from tentative to confirmed.",
+      "evidence_used": [
+        "memory-OPE-0081"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "OPERATIONS-Q006",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-OPE-0095']: Change: worker crash was replaced by a newer approach; the earlier state is obsolete.",
+      "evidence_used": [
+        "memory-OPE-0095"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "OPERATIONS-Q007",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-OPE-0112']: Plan: storage alert remains unresolved and no final decision has been confirmed.",
+      "evidence_used": [
+        "memory-OPE-0112"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "OPERATIONS-Q008",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-OPE-0118']: Plan: dependency outage remains unresolved and no final decision has been confirmed.",
+      "evidence_used": [
+        "memory-OPE-0118"
+      ]
+    },
+    {
+      "agent": "claude",
+      "condition": "CROSS-AGENT",
+      "query_id": "OPERATIONS-Q009",
+      "correct": true,
+      "unsupported_claim": false,
+      "answer": "Per copilot.memory.json record(s) ['memory-OPE-0143']: Change: backup failure was replaced by a newer approach; the earlier state is obsolete. The discussion continued with related operational details.",
+      "evidence_used": [
+        "memory-OPE-0143"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,930 @@
+{
+  "V74-HIST-01": [
+    {
+      "chunk_id": "C0000",
+      "score": 1.0,
+      "event_ids": [
+        "E10000",
+        "E10001",
+        "E10002",
+        "E10003",
+        "E10004",
+        "E10005",
+        "E10006",
+        "E0014",
+        "E10008",
+        "E10009",
+        "E10010",
+        "E10011"
+      ],
+      "text": "Database options were discussed without a decision.\nSomeone asked whether billing work was on track.\nLatency metrics were discussed without a new action.\nDeployment timing was discussed without a committed window.\nRedis was mentioned while reviewing unrelated performance notes.\nWe reviewed webhook logs and delivery metrics.\nDeployment notes were reviewed.\nWe chose PostgreSQL for billing because auditability mattered more than migration effort.\nThe team discussed export monitoring.\nTest output was mentioned during review.\nDeployment notes were reviewed.\nIntegration tests were reviewed."
+    },
+    {
+      "chunk_id": "C0001",
+      "score": 1.0,
+      "event_ids": [
+        "E10012",
+        "E10013",
+        "E10014",
+        "E10015",
+        "E10016",
+        "E10017",
+        "E10018",
+        "E10019",
+        "E10020",
+        "E10021",
+        "E10022",
+        "E10023"
+      ],
+      "text": "Deployment notes were reviewed.\nDatabase options were discussed without a decision.\nSomeone compared database tradeoffs.\nSomeone suggested looking at cache scope later.\nSomeone asked whether the next deployment needed attention.\nDeployment timing was discussed without a committed window.\nWe reviewed webhook logs and delivery metrics.\nThe team checked test coverage.\nWebhook compatibility was discussed with no new decision.\nSomeone asked about invoice export progress.\nSomeone suggested looking at cache scope later.\nThe team checked deployment status."
+    },
+    {
+      "chunk_id": "C0004",
+      "score": 1.0,
+      "event_ids": [
+        "E10048",
+        "E10049",
+        "E10050",
+        "E10051",
+        "E10052",
+        "E10053",
+        "E10054",
+        "E10055",
+        "E10056",
+        "E10057",
+        "E10058",
+        "E10059"
+      ],
+      "text": "We discussed billing database options again and compared tradeoffs.\nWe reviewed webhook logs and delivery metrics.\nObservability improvements were mentioned as future work.\nWebhook compatibility was discussed with no new decision.\nDeployment notes were reviewed.\nSomeone compared database tradeoffs.\nThe team discussed export monitoring.\nDatabase options were discussed without a decision.\nThe team checked test coverage.\nA possible deployment change was mentioned for later review.\nWe reviewed webhook logs and delivery metrics.\nWe reviewed an old billing note without changing the decision."
+    },
+    {
+      "chunk_id": "C0009",
+      "score": 1.0,
+      "event_ids": [
+        "E10108",
+        "E10109",
+        "E10110",
+        "E10111",
+        "E10112",
+        "E10113",
+        "E10114",
+        "E10115",
+        "E10116",
+        "E10117",
+        "E10118",
+        "E10119"
+      ],
+      "text": "No monitoring decision was made in this discussion.\nInvoice export work was discussed in standup.\nSomeone suggested another test.\nThe team looked at logs and traces.\nThe team reviewed cache metrics without making a new decision.\nSomeone suggested looking at cache scope later.\nA database migration was mentioned as possible future work.\nSomeone suggested looking at cache scope later.\nThe team checked deployment status.\nWebhook compatibility was discussed with no new decision.\nTest output was mentioned during review.\nA possible deployment change was mentioned for later review."
+    },
+    {
+      "chunk_id": "C0010",
+      "score": 1.0,
+      "event_ids": [
+        "E10120",
+        "E10121",
+        "E10122",
+        "E10123",
+        "E10124",
+        "E10125",
+        "E10126",
+        "E10127",
+        "E10128",
+        "E10129",
+        "E10130",
+        "E10131"
+      ],
+      "text": "We discussed whether Redis could help latency in a hypothetical case.\nMonitoring dashboards were reviewed.\nThe team reviewed database documentation.\nWe discussed billing database options again and compared tradeoffs.\nDeployment timing was discussed without a committed window.\nWebhook compatibility was discussed with no new decision.\nSomeone asked about invoice export progress.\nDeployment notes were reviewed.\nNo monitoring decision was made in this discussion.\nObservability improvements were mentioned as future work.\nRedis was mentioned while reviewing unrelated performance notes.\nSomeone proposed checking webhook behavior later."
+    },
+    {
+      "chunk_id": "C0015",
+      "score": 1.0,
+      "event_ids": [
+        "E10180",
+        "E10181",
+        "E10182",
+        "E0068",
+        "E10184",
+        "E10185",
+        "E10186",
+        "E10187",
+        "E10188",
+        "E10189",
+        "E10190",
+        "E10191"
+      ],
+      "text": "A billing database migration was discussed as a possibility.\nA billing database migration was discussed as a possibility.\nThe team discussed export monitoring.\nWe tried DynamoDB for the billing prototype, but conditional-update semantics did not match the transaction flow and the migration failed.\nSomeone asked whether the next deployment needed attention.\nWe discussed whether Redis could help latency in a hypothetical case.\nThe team looked at logs and traces.\nRedis was mentioned while reviewing unrelated performance notes.\nSomeone proposed checking webhook behavior later.\nObservability improvements were mentioned as future work.\nRedis was mentioned while reviewing unrelated performance notes.\nA billing database migration was discussed as a possibility."
+    }
+  ],
+  "V74-DEC-01": [
+    {
+      "chunk_id": "C0034",
+      "score": 1.0,
+      "event_ids": [
+        "E10408",
+        "E0402",
+        "E10410",
+        "E10411",
+        "E10412",
+        "E10413",
+        "E10414",
+        "E10415",
+        "E10416",
+        "E10417",
+        "E10418",
+        "E10419"
+      ],
+      "text": "A database migration was mentioned as possible future work.\nThe webhook migration moved from polling to webhooks after the provider fixed signature verification.\nThe team discussed export monitoring.\nWebhook compatibility was discussed with no new decision.\nWebhook compatibility was discussed with no new decision.\nObservability improvements were mentioned as future work.\nRedis was mentioned while reviewing unrelated performance notes.\nRedis was mentioned while reviewing unrelated performance notes.\nTest output was mentioned during review.\nDatabase reliability was discussed during planning.\nMonitoring dashboards were reviewed.\nThe team checked deployment status."
+    },
+    {
+      "chunk_id": "C0025",
+      "score": 0.666667,
+      "event_ids": [
+        "E10300",
+        "E0142",
+        "E10302",
+        "E10303",
+        "E10304",
+        "E0179",
+        "E10306",
+        "E10307",
+        "E10308",
+        "E10309",
+        "E10310",
+        "E10311"
+      ],
+      "text": "Someone suggested looking at cache scope later.\nThe DynamoDB migration failure was confirmed after reviewing integration-test output.\nObservability improvements were mentioned as future work.\nSomeone asked about invoice export progress.\nNo monitoring decision was made in this discussion.\nWe tested Redis caching to reduce API latency.\nSomeone asked about invoice export progress.\nIntegration tests were reviewed.\nThe team discussed export monitoring.\nObservability improvements were mentioned as future work.\nRedis was mentioned while reviewing unrelated performance notes.\nA possible deployment change was mentioned for later review."
+    },
+    {
+      "chunk_id": "C0030",
+      "score": 0.666667,
+      "event_ids": [
+        "E10360",
+        "E10361",
+        "E10362",
+        "E10363",
+        "E10364",
+        "E10365",
+        "E10366",
+        "E10367",
+        "E10368",
+        "E10369",
+        "E10370",
+        "E0264"
+      ],
+      "text": "We reviewed an invoice export log without changing the process.\nSomeone proposed checking webhook behavior later.\nThe invoice exporter was mentioned as a possible optimization target.\nDeployment timing was discussed without a committed window.\nSomeone asked whether the next deployment needed attention.\nNo monitoring decision was made in this discussion.\nRedis came up during a cache design discussion.\nSomeone suggested looking at cache scope later.\nA possible deployment change was mentioned for later review.\nThe provider integration came up in a routine design review.\nRedis was mentioned while reviewing unrelated performance notes.\nThe Redis experiment increased cache invalidation complexity, so we abandoned it."
+    },
+    {
+      "chunk_id": "C0035",
+      "score": 0.666667,
+      "event_ids": [
+        "E10420",
+        "E10421",
+        "E10422",
+        "E10423",
+        "E10424",
+        "E10425",
+        "E10426",
+        "E0449",
+        "E10428",
+        "E10429",
+        "E10430",
+        "E10431"
+      ],
+      "text": "The team discussed export monitoring.\nWe discussed whether Redis could help latency in a hypothetical case.\nThe invoice exporter was mentioned as a possible optimization target.\nThe invoice exporter was mentioned as a possible optimization target.\nNo monitoring decision was made in this discussion.\nSomeone asked about invoice export progress.\nObservability improvements were mentioned as future work.\nI inferred that transaction semantics were related to the billing migration failure.\nSomeone compared database tradeoffs.\nMonitoring dashboards were reviewed.\nWe reviewed webhook logs and delivery metrics.\nDatabase reliability was discussed during planning."
+    },
+    {
+      "chunk_id": "C0051",
+      "score": 0.666667,
+      "event_ids": [
+        "E10612",
+        "E10613",
+        "E10614",
+        "E10615",
+        "E0549",
+        "E10617",
+        "E10618",
+        "E10619",
+        "E10620",
+        "E10621",
+        "E10622",
+        "E10623"
+      ],
+      "text": "The invoice exporter was mentioned as a possible optimization target.\nIntegration tests were reviewed.\nWebhook migration progress was discussed without changing the current plan.\nWe discussed billing database options again and compared tradeoffs.\nMongoDB was not discussed in the billing migration review; this statement is scoped to that review.\nA possible deployment change was mentioned for later review.\nThe invoice exporter was mentioned as a possible optimization target.\nDatabase options were discussed without a decision.\nMonitoring dashboards were reviewed.\nWebhook migration progress was discussed without changing the current plan.\nRedis came up during a cache design discussion.\nSomeone asked about invoice export progress."
+    },
+    {
+      "chunk_id": "C0053",
+      "score": 0.666667,
+      "event_ids": [
+        "E10636",
+        "E10637",
+        "E10638",
+        "E10639",
+        "E10640",
+        "E10641",
+        "E10642",
+        "E10643",
+        "E0623",
+        "E10645",
+        "E10646",
+        "E10647"
+      ],
+      "text": "The provider integration came up in a routine design review.\nDeployment timing was discussed without a committed window.\nSomeone asked whether the next deployment needed attention.\nSomeone asked whether the next deployment needed attention.\nThe team reviewed cache metrics without making a new decision.\nRedis came up during a cache design discussion.\nThe billing prototype was mentioned during a planning chat.\nWe reviewed an old billing note without changing the decision.\nWe switched invoice exports to asynchronous jobs after the timeout.\nA possible deployment change was mentioned for later review.\nSomeone proposed checking webhook behavior later.\nWe reviewed webhook logs and delivery metrics."
+    }
+  ],
+  "V74-ACT-01": [
+    {
+      "chunk_id": "C0025",
+      "score": 0.948683,
+      "event_ids": [
+        "E10300",
+        "E0142",
+        "E10302",
+        "E10303",
+        "E10304",
+        "E0179",
+        "E10306",
+        "E10307",
+        "E10308",
+        "E10309",
+        "E10310",
+        "E10311"
+      ],
+      "text": "Someone suggested looking at cache scope later.\nThe DynamoDB migration failure was confirmed after reviewing integration-test output.\nObservability improvements were mentioned as future work.\nSomeone asked about invoice export progress.\nNo monitoring decision was made in this discussion.\nWe tested Redis caching to reduce API latency.\nSomeone asked about invoice export progress.\nIntegration tests were reviewed.\nThe team discussed export monitoring.\nObservability improvements were mentioned as future work.\nRedis was mentioned while reviewing unrelated performance notes.\nA possible deployment change was mentioned for later review."
+    },
+    {
+      "chunk_id": "C0035",
+      "score": 0.948683,
+      "event_ids": [
+        "E10420",
+        "E10421",
+        "E10422",
+        "E10423",
+        "E10424",
+        "E10425",
+        "E10426",
+        "E0449",
+        "E10428",
+        "E10429",
+        "E10430",
+        "E10431"
+      ],
+      "text": "The team discussed export monitoring.\nWe discussed whether Redis could help latency in a hypothetical case.\nThe invoice exporter was mentioned as a possible optimization target.\nThe invoice exporter was mentioned as a possible optimization target.\nNo monitoring decision was made in this discussion.\nSomeone asked about invoice export progress.\nObservability improvements were mentioned as future work.\nI inferred that transaction semantics were related to the billing migration failure.\nSomeone compared database tradeoffs.\nMonitoring dashboards were reviewed.\nWe reviewed webhook logs and delivery metrics.\nDatabase reliability was discussed during planning."
+    },
+    {
+      "chunk_id": "C0053",
+      "score": 0.948683,
+      "event_ids": [
+        "E10636",
+        "E10637",
+        "E10638",
+        "E10639",
+        "E10640",
+        "E10641",
+        "E10642",
+        "E10643",
+        "E0623",
+        "E10645",
+        "E10646",
+        "E10647"
+      ],
+      "text": "The provider integration came up in a routine design review.\nDeployment timing was discussed without a committed window.\nSomeone asked whether the next deployment needed attention.\nSomeone asked whether the next deployment needed attention.\nThe team reviewed cache metrics without making a new decision.\nRedis came up during a cache design discussion.\nThe billing prototype was mentioned during a planning chat.\nWe reviewed an old billing note without changing the decision.\nWe switched invoice exports to asynchronous jobs after the timeout.\nA possible deployment change was mentioned for later review.\nSomeone proposed checking webhook behavior later.\nWe reviewed webhook logs and delivery metrics."
+    },
+    {
+      "chunk_id": "C0063",
+      "score": 0.948683,
+      "event_ids": [
+        "E10756",
+        "E10757",
+        "E10758",
+        "E10759",
+        "E1034",
+        "E10761",
+        "E10762",
+        "E10763",
+        "E10764",
+        "E10765",
+        "E10766",
+        "E10767"
+      ],
+      "text": "The billing prototype was mentioned during a planning chat.\nSomeone suggested looking at cache scope later.\nSomeone asked about invoice export progress.\nThe team reviewed cache metrics without making a new decision.\nThe first full customer invoice batch completed successfully through asynchronous export.\nThe team reviewed cache metrics without making a new decision.\nSomeone proposed checking webhook behavior later.\nWebhook migration progress was discussed without changing the current plan.\nThe team discussed export monitoring.\nInvoice export work was discussed in standup.\nA possible deployment change was mentioned for later review.\nWebhook migration progress was discussed without changing the current plan."
+    },
+    {
+      "chunk_id": "C0034",
+      "score": 0.632456,
+      "event_ids": [
+        "E10408",
+        "E0402",
+        "E10410",
+        "E10411",
+        "E10412",
+        "E10413",
+        "E10414",
+        "E10415",
+        "E10416",
+        "E10417",
+        "E10418",
+        "E10419"
+      ],
+      "text": "A database migration was mentioned as possible future work.\nThe webhook migration moved from polling to webhooks after the provider fixed signature verification.\nThe team discussed export monitoring.\nWebhook compatibility was discussed with no new decision.\nWebhook compatibility was discussed with no new decision.\nObservability improvements were mentioned as future work.\nRedis was mentioned while reviewing unrelated performance notes.\nRedis was mentioned while reviewing unrelated performance notes.\nTest output was mentioned during review.\nDatabase reliability was discussed during planning.\nMonitoring dashboards were reviewed.\nThe team checked deployment status."
+    },
+    {
+      "chunk_id": "C0051",
+      "score": 0.632456,
+      "event_ids": [
+        "E10612",
+        "E10613",
+        "E10614",
+        "E10615",
+        "E0549",
+        "E10617",
+        "E10618",
+        "E10619",
+        "E10620",
+        "E10621",
+        "E10622",
+        "E10623"
+      ],
+      "text": "The invoice exporter was mentioned as a possible optimization target.\nIntegration tests were reviewed.\nWebhook migration progress was discussed without changing the current plan.\nWe discussed billing database options again and compared tradeoffs.\nMongoDB was not discussed in the billing migration review; this statement is scoped to that review.\nA possible deployment change was mentioned for later review.\nThe invoice exporter was mentioned as a possible optimization target.\nDatabase options were discussed without a decision.\nMonitoring dashboards were reviewed.\nWebhook migration progress was discussed without changing the current plan.\nRedis came up during a cache design discussion.\nSomeone asked about invoice export progress."
+    }
+  ],
+  "V74-TIME-01": [
+    {
+      "chunk_id": "C0063",
+      "score": 1.133893,
+      "event_ids": [
+        "E10756",
+        "E10757",
+        "E10758",
+        "E10759",
+        "E1034",
+        "E10761",
+        "E10762",
+        "E10763",
+        "E10764",
+        "E10765",
+        "E10766",
+        "E10767"
+      ],
+      "text": "The billing prototype was mentioned during a planning chat.\nSomeone suggested looking at cache scope later.\nSomeone asked about invoice export progress.\nThe team reviewed cache metrics without making a new decision.\nThe first full customer invoice batch completed successfully through asynchronous export.\nThe team reviewed cache metrics without making a new decision.\nSomeone proposed checking webhook behavior later.\nWebhook migration progress was discussed without changing the current plan.\nThe team discussed export monitoring.\nInvoice export work was discussed in standup.\nA possible deployment change was mentioned for later review.\nWebhook migration progress was discussed without changing the current plan."
+    },
+    {
+      "chunk_id": "C0094",
+      "score": 1.133893,
+      "event_ids": [
+        "E11128",
+        "E11129",
+        "E11130",
+        "E11131",
+        "E11132",
+        "E1201",
+        "E11134",
+        "E11135",
+        "E11136",
+        "E11137",
+        "E11138",
+        "E11139"
+      ],
+      "text": "The invoice exporter was mentioned as a possible optimization target.\nWebhook migration progress was discussed without changing the current plan.\nA billing database migration was discussed as a possibility.\nSomeone suggested looking at cache scope later.\nObservability improvements were mentioned as future work.\nWe will document the webhook state history in the migration notes.\nRedis was mentioned while reviewing unrelated performance notes.\nThe invoice exporter was mentioned as a possible optimization target.\nDatabase reliability was discussed during planning.\nSomeone asked about invoice export progress.\nNo monitoring decision was made in this discussion.\nSomeone compared database tradeoffs."
+    },
+    {
+      "chunk_id": "C0000",
+      "score": 0.755929,
+      "event_ids": [
+        "E10000",
+        "E10001",
+        "E10002",
+        "E10003",
+        "E10004",
+        "E10005",
+        "E10006",
+        "E0014",
+        "E10008",
+        "E10009",
+        "E10010",
+        "E10011"
+      ],
+      "text": "Database options were discussed without a decision.\nSomeone asked whether billing work was on track.\nLatency metrics were discussed without a new action.\nDeployment timing was discussed without a committed window.\nRedis was mentioned while reviewing unrelated performance notes.\nWe reviewed webhook logs and delivery metrics.\nDeployment notes were reviewed.\nWe chose PostgreSQL for billing because auditability mattered more than migration effort.\nThe team discussed export monitoring.\nTest output was mentioned during review.\nDeployment notes were reviewed.\nIntegration tests were reviewed."
+    },
+    {
+      "chunk_id": "C0001",
+      "score": 0.755929,
+      "event_ids": [
+        "E10012",
+        "E10013",
+        "E10014",
+        "E10015",
+        "E10016",
+        "E10017",
+        "E10018",
+        "E10019",
+        "E10020",
+        "E10021",
+        "E10022",
+        "E10023"
+      ],
+      "text": "Deployment notes were reviewed.\nDatabase options were discussed without a decision.\nSomeone compared database tradeoffs.\nSomeone suggested looking at cache scope later.\nSomeone asked whether the next deployment needed attention.\nDeployment timing was discussed without a committed window.\nWe reviewed webhook logs and delivery metrics.\nThe team checked test coverage.\nWebhook compatibility was discussed with no new decision.\nSomeone asked about invoice export progress.\nSomeone suggested looking at cache scope later.\nThe team checked deployment status."
+    },
+    {
+      "chunk_id": "C0002",
+      "score": 0.755929,
+      "event_ids": [
+        "E10024",
+        "E10025",
+        "E10026",
+        "E10027",
+        "E10028",
+        "E10029",
+        "E10030",
+        "E10031",
+        "E10032",
+        "E10033",
+        "E10034",
+        "E10035"
+      ],
+      "text": "Someone suggested looking at cache scope later.\nThe team checked deployment status.\nTest output was mentioned during review.\nDatabase reliability was discussed during planning.\nA billing database migration was discussed as a possibility.\nSomeone suggested another test.\nWe reviewed an old billing note without changing the decision.\nThe team discussed export monitoring.\nThe team checked test coverage.\nNo monitoring decision was made in this discussion.\nDeployment timing was discussed without a committed window.\nWebhook compatibility was discussed with no new decision."
+    },
+    {
+      "chunk_id": "C0004",
+      "score": 0.755929,
+      "event_ids": [
+        "E10048",
+        "E10049",
+        "E10050",
+        "E10051",
+        "E10052",
+        "E10053",
+        "E10054",
+        "E10055",
+        "E10056",
+        "E10057",
+        "E10058",
+        "E10059"
+      ],
+      "text": "We discussed billing database options again and compared tradeoffs.\nWe reviewed webhook logs and delivery metrics.\nObservability improvements were mentioned as future work.\nWebhook compatibility was discussed with no new decision.\nDeployment notes were reviewed.\nSomeone compared database tradeoffs.\nThe team discussed export monitoring.\nDatabase options were discussed without a decision.\nThe team checked test coverage.\nA possible deployment change was mentioned for later review.\nWe reviewed webhook logs and delivery metrics.\nWe reviewed an old billing note without changing the decision."
+    }
+  ],
+  "V74-AMB-01": [
+    {
+      "chunk_id": "C0001",
+      "score": 1.333333,
+      "event_ids": [
+        "E10012",
+        "E10013",
+        "E10014",
+        "E10015",
+        "E10016",
+        "E10017",
+        "E10018",
+        "E10019",
+        "E10020",
+        "E10021",
+        "E10022",
+        "E10023"
+      ],
+      "text": "Deployment notes were reviewed.\nDatabase options were discussed without a decision.\nSomeone compared database tradeoffs.\nSomeone suggested looking at cache scope later.\nSomeone asked whether the next deployment needed attention.\nDeployment timing was discussed without a committed window.\nWe reviewed webhook logs and delivery metrics.\nThe team checked test coverage.\nWebhook compatibility was discussed with no new decision.\nSomeone asked about invoice export progress.\nSomeone suggested looking at cache scope later.\nThe team checked deployment status."
+    },
+    {
+      "chunk_id": "C0010",
+      "score": 1.333333,
+      "event_ids": [
+        "E10120",
+        "E10121",
+        "E10122",
+        "E10123",
+        "E10124",
+        "E10125",
+        "E10126",
+        "E10127",
+        "E10128",
+        "E10129",
+        "E10130",
+        "E10131"
+      ],
+      "text": "We discussed whether Redis could help latency in a hypothetical case.\nMonitoring dashboards were reviewed.\nThe team reviewed database documentation.\nWe discussed billing database options again and compared tradeoffs.\nDeployment timing was discussed without a committed window.\nWebhook compatibility was discussed with no new decision.\nSomeone asked about invoice export progress.\nDeployment notes were reviewed.\nNo monitoring decision was made in this discussion.\nObservability improvements were mentioned as future work.\nRedis was mentioned while reviewing unrelated performance notes.\nSomeone proposed checking webhook behavior later."
+    },
+    {
+      "chunk_id": "C0013",
+      "score": 1.333333,
+      "event_ids": [
+        "E10156",
+        "E10157",
+        "E10158",
+        "E10159",
+        "E10160",
+        "E10161",
+        "E10162",
+        "E10163",
+        "E10164",
+        "E10165",
+        "E10166",
+        "E10167"
+      ],
+      "text": "Deployment timing was discussed without a committed window.\nA billing database migration was discussed as a possibility.\nWe reviewed webhook logs and delivery metrics.\nDeployment timing was discussed without a committed window.\nTest output was mentioned during review.\nThe billing prototype was mentioned during a planning chat.\nThe billing prototype was mentioned during a planning chat.\nThe team reviewed database documentation.\nSomeone asked whether billing work was on track.\nDeployment notes were reviewed.\nThe team checked deployment status.\nSomeone asked about invoice export progress."
+    },
+    {
+      "chunk_id": "C0023",
+      "score": 1.333333,
+      "event_ids": [
+        "E10276",
+        "E10277",
+        "E10278",
+        "E10279",
+        "E10280",
+        "E10281",
+        "E10282",
+        "E10283",
+        "E10284",
+        "E10285",
+        "E10286",
+        "E10287"
+      ],
+      "text": "Someone suggested looking at cache scope later.\nThe team checked deployment status.\nSomeone asked about invoice export progress.\nWe discussed billing database options again and compared tradeoffs.\nWe reviewed an invoice export log without changing the process.\nWe reviewed webhook logs and delivery metrics.\nNo monitoring decision was made in this discussion.\nWe discussed billing database options again and compared tradeoffs.\nDatabase reliability was discussed during planning.\nDeployment timing was discussed without a committed window.\nDeployment notes were reviewed.\nThe team looked at logs and traces."
+    },
+    {
+      "chunk_id": "C0044",
+      "score": 1.333333,
+      "event_ids": [
+        "E10528",
+        "E10529",
+        "E10530",
+        "E10531",
+        "E10532",
+        "E10533",
+        "E10534",
+        "E10535",
+        "E10536",
+        "E10537",
+        "E10538",
+        "E10539"
+      ],
+      "text": "Someone asked whether the next deployment needed attention.\nSomeone proposed checking webhook behavior later.\nInvoice export work was discussed in standup.\nMonitoring dashboards were reviewed.\nWebhook migration progress was discussed without changing the current plan.\nWe discussed whether Redis could help latency in a hypothetical case.\nSomeone asked whether billing work was on track.\nSomeone asked about invoice export progress.\nThe team checked test coverage.\nA test run was discussed without a new conclusion.\nThe team checked test coverage.\nDeployment timing was discussed without a committed window."
+    },
+    {
+      "chunk_id": "C0049",
+      "score": 1.333333,
+      "event_ids": [
+        "E10588",
+        "E10589",
+        "E10590",
+        "E10591",
+        "E10592",
+        "E10593",
+        "E10594",
+        "E10595",
+        "E10596",
+        "E10597",
+        "E10598",
+        "E0516"
+      ],
+      "text": "Test output was mentioned during review.\nA billing database migration was discussed as a possibility.\nA test run was discussed without a new conclusion.\nWebhook compatibility was discussed with no new decision.\nSomeone asked whether the next deployment needed attention.\nNo monitoring decision was made in this discussion.\nDatabase options were discussed without a decision.\nIntegration tests were reviewed.\nNo monitoring decision was made in this discussion.\nWe discussed whether Redis could help latency in a hypothetical case.\nWe reviewed webhook logs and delivery metrics.\nThe deployment-window pronoun 'he' remains unresolved between Rahul and Arjun."
+    }
+  ],
+  "V74-BELIEF-01": [
+    {
+      "chunk_id": "C0037",
+      "score": 1.666667,
+      "event_ids": [
+        "E10444",
+        "E10445",
+        "E10446",
+        "E10447",
+        "E10448",
+        "E10449",
+        "E10450",
+        "E10451",
+        "E10452",
+        "E0450",
+        "E10454",
+        "E10455"
+      ],
+      "text": "Latency metrics were discussed without a new action.\nMonitoring dashboards were reviewed.\nThe team reviewed cache metrics without making a new decision.\nSomeone asked whether the next deployment needed attention.\nSomeone asked about invoice export progress.\nA possible deployment change was mentioned for later review.\nSomeone asked about invoice export progress.\nA possible deployment change was mentioned for later review.\nNo monitoring decision was made in this discussion.\nI confirmed transaction semantics were the reason the DynamoDB migration was abandoned.\nNo monitoring decision was made in this discussion.\nThe team discussed export monitoring."
+    },
+    {
+      "chunk_id": "C0015",
+      "score": 1.333333,
+      "event_ids": [
+        "E10180",
+        "E10181",
+        "E10182",
+        "E0068",
+        "E10184",
+        "E10185",
+        "E10186",
+        "E10187",
+        "E10188",
+        "E10189",
+        "E10190",
+        "E10191"
+      ],
+      "text": "A billing database migration was discussed as a possibility.\nA billing database migration was discussed as a possibility.\nThe team discussed export monitoring.\nWe tried DynamoDB for the billing prototype, but conditional-update semantics did not match the transaction flow and the migration failed.\nSomeone asked whether the next deployment needed attention.\nWe discussed whether Redis could help latency in a hypothetical case.\nThe team looked at logs and traces.\nRedis was mentioned while reviewing unrelated performance notes.\nSomeone proposed checking webhook behavior later.\nObservability improvements were mentioned as future work.\nRedis was mentioned while reviewing unrelated performance notes.\nA billing database migration was discussed as a possibility."
+    },
+    {
+      "chunk_id": "C0002",
+      "score": 1.0,
+      "event_ids": [
+        "E10024",
+        "E10025",
+        "E10026",
+        "E10027",
+        "E10028",
+        "E10029",
+        "E10030",
+        "E10031",
+        "E10032",
+        "E10033",
+        "E10034",
+        "E10035"
+      ],
+      "text": "Someone suggested looking at cache scope later.\nThe team checked deployment status.\nTest output was mentioned during review.\nDatabase reliability was discussed during planning.\nA billing database migration was discussed as a possibility.\nSomeone suggested another test.\nWe reviewed an old billing note without changing the decision.\nThe team discussed export monitoring.\nThe team checked test coverage.\nNo monitoring decision was made in this discussion.\nDeployment timing was discussed without a committed window.\nWebhook compatibility was discussed with no new decision."
+    },
+    {
+      "chunk_id": "C0003",
+      "score": 1.0,
+      "event_ids": [
+        "E10036",
+        "E10037",
+        "E10038",
+        "E10039",
+        "E10040",
+        "E10041",
+        "E10042",
+        "E10043",
+        "E10044",
+        "E10045",
+        "E10046",
+        "E10047"
+      ],
+      "text": "The team reviewed database documentation.\nLatency metrics were discussed without a new action.\nLatency metrics were discussed without a new action.\nThe team reviewed cache metrics without making a new decision.\nThe team checked deployment status.\nA database migration was mentioned as possible future work.\nRedis came up during a cache design discussion.\nWe reviewed an old billing note without changing the decision.\nSomeone suggested looking at cache scope later.\nWe reviewed an invoice export log without changing the process.\nTest output was mentioned during review.\nIntegration tests were reviewed."
+    },
+    {
+      "chunk_id": "C0004",
+      "score": 1.0,
+      "event_ids": [
+        "E10048",
+        "E10049",
+        "E10050",
+        "E10051",
+        "E10052",
+        "E10053",
+        "E10054",
+        "E10055",
+        "E10056",
+        "E10057",
+        "E10058",
+        "E10059"
+      ],
+      "text": "We discussed billing database options again and compared tradeoffs.\nWe reviewed webhook logs and delivery metrics.\nObservability improvements were mentioned as future work.\nWebhook compatibility was discussed with no new decision.\nDeployment notes were reviewed.\nSomeone compared database tradeoffs.\nThe team discussed export monitoring.\nDatabase options were discussed without a decision.\nThe team checked test coverage.\nA possible deployment change was mentioned for later review.\nWe reviewed webhook logs and delivery metrics.\nWe reviewed an old billing note without changing the decision."
+    },
+    {
+      "chunk_id": "C0021",
+      "score": 1.0,
+      "event_ids": [
+        "E10252",
+        "E10253",
+        "E10254",
+        "E10255",
+        "E10256",
+        "E10257",
+        "E10258",
+        "E10259",
+        "E10260",
+        "E10261",
+        "E10262",
+        "E10263"
+      ],
+      "text": "Latency metrics were discussed without a new action.\nTest output was mentioned during review.\nA database migration was mentioned as possible future work.\nA billing database migration was discussed as a possibility.\nDatabase options were discussed without a decision.\nDeployment notes were reviewed.\nWe discussed whether Redis could help latency in a hypothetical case.\nThe team checked deployment status.\nSomeone proposed checking webhook behavior later.\nDatabase options were discussed without a decision.\nObservability improvements were mentioned as future work.\nWe reviewed an invoice export log without changing the process."
+    }
+  ],
+  "V74-NEG-01": [
+    {
+      "chunk_id": "C0051",
+      "score": 2.828427,
+      "event_ids": [
+        "E10612",
+        "E10613",
+        "E10614",
+        "E10615",
+        "E0549",
+        "E10617",
+        "E10618",
+        "E10619",
+        "E10620",
+        "E10621",
+        "E10622",
+        "E10623"
+      ],
+      "text": "The invoice exporter was mentioned as a possible optimization target.\nIntegration tests were reviewed.\nWebhook migration progress was discussed without changing the current plan.\nWe discussed billing database options again and compared tradeoffs.\nMongoDB was not discussed in the billing migration review; this statement is scoped to that review.\nA possible deployment change was mentioned for later review.\nThe invoice exporter was mentioned as a possible optimization target.\nDatabase options were discussed without a decision.\nMonitoring dashboards were reviewed.\nWebhook migration progress was discussed without changing the current plan.\nRedis came up during a cache design discussion.\nSomeone asked about invoice export progress."
+    },
+    {
+      "chunk_id": "C0080",
+      "score": 2.828427,
+      "event_ids": [
+        "E10960",
+        "E10961",
+        "E10962",
+        "E10963",
+        "E10964",
+        "E10965",
+        "E10966",
+        "E10967",
+        "E10968",
+        "E10969",
+        "E1103",
+        "E10971"
+      ],
+      "text": "Deployment notes were reviewed.\nMonitoring dashboards were reviewed.\nThe team discussed export monitoring.\nWe discussed whether Redis could help latency in a hypothetical case.\nA possible deployment change was mentioned for later review.\nInvoice export work was discussed in standup.\nThe team checked deployment status.\nSomeone asked whether the next deployment needed attention.\nWe discussed whether Redis could help latency in a hypothetical case.\nSomeone proposed checking webhook behavior later.\nA MongoDB proposal appeared in a different project, not the billing migration review.\nWe reviewed webhook logs and delivery metrics."
+    },
+    {
+      "chunk_id": "C0002",
+      "score": 2.474874,
+      "event_ids": [
+        "E10024",
+        "E10025",
+        "E10026",
+        "E10027",
+        "E10028",
+        "E10029",
+        "E10030",
+        "E10031",
+        "E10032",
+        "E10033",
+        "E10034",
+        "E10035"
+      ],
+      "text": "Someone suggested looking at cache scope later.\nThe team checked deployment status.\nTest output was mentioned during review.\nDatabase reliability was discussed during planning.\nA billing database migration was discussed as a possibility.\nSomeone suggested another test.\nWe reviewed an old billing note without changing the decision.\nThe team discussed export monitoring.\nThe team checked test coverage.\nNo monitoring decision was made in this discussion.\nDeployment timing was discussed without a committed window.\nWebhook compatibility was discussed with no new decision."
+    },
+    {
+      "chunk_id": "C0007",
+      "score": 2.474874,
+      "event_ids": [
+        "E10084",
+        "E10085",
+        "E10086",
+        "E10087",
+        "E10088",
+        "E10089",
+        "E10090",
+        "E10091",
+        "E10092",
+        "E10093",
+        "E10094",
+        "E10095"
+      ],
+      "text": "Someone compared database tradeoffs.\nWe discussed billing database options again and compared tradeoffs.\nThe billing prototype was mentioned during a planning chat.\nThe provider integration came up in a routine design review.\nDatabase reliability was discussed during planning.\nDatabase options were discussed without a decision.\nRedis came up during a cache design discussion.\nThe team looked at logs and traces.\nWe discussed whether Redis could help latency in a hypothetical case.\nThe team reviewed database documentation.\nDatabase options were discussed without a decision.\nWebhook migration progress was discussed without changing the current plan."
+    },
+    {
+      "chunk_id": "C0017",
+      "score": 2.474874,
+      "event_ids": [
+        "E10204",
+        "E10205",
+        "E10206",
+        "E10207",
+        "E10208",
+        "E10209",
+        "E10210",
+        "E10211",
+        "E10212",
+        "E10213",
+        "E10214",
+        "E10215"
+      ],
+      "text": "Deployment notes were reviewed.\nInvoice export work was discussed in standup.\nWe reviewed an old billing note without changing the decision.\nThe team reviewed cache metrics without making a new decision.\nThe team checked deployment status.\nWebhook migration progress was discussed without changing the current plan.\nWe discussed whether Redis could help latency in a hypothetical case.\nThe team checked test coverage.\nSomeone asked whether the next deployment needed attention.\nThe team checked test coverage.\nThe team checked deployment status.\nThe provider integration came up in a routine design review."
+    },
+    {
+      "chunk_id": "C0021",
+      "score": 2.474874,
+      "event_ids": [
+        "E10252",
+        "E10253",
+        "E10254",
+        "E10255",
+        "E10256",
+        "E10257",
+        "E10258",
+        "E10259",
+        "E10260",
+        "E10261",
+        "E10262",
+        "E10263"
+      ],
+      "text": "Latency metrics were discussed without a new action.\nTest output was mentioned during review.\nA database migration was mentioned as possible future work.\nA billing database migration was discussed as a possibility.\nDatabase options were discussed without a decision.\nDeployment notes were reviewed.\nWe discussed whether Redis could help latency in a hypothetical case.\nThe team checked deployment status.\nSomeone proposed checking webhook behavior later.\nDatabase options were discussed without a decision.\nObservability improvements were mentioned as future work.\nWe reviewed an invoice export log without changing the process."
+    }
+  ],
+  "V74-PROV-01": [
+    {
+      "chunk_id": "C0035",
+      "score": 2.020726,
+      "event_ids": [
+        "E10420",
+        "E10421",
+        "E10422",
+        "E10423",
+        "E10424",
+        "E10425",
+        "E10426",
+        "E0449",
+        "E10428",
+        "E10429",
+        "E10430",
+        "E10431"
+      ],
+      "text": "The team discussed export monitoring.\nWe discussed whether Redis could help latency in a hypothetical case.\nThe invoice exporter was mentioned as a possible optimization target.\nThe invoice exporter was mentioned as a possible optimization target.\nNo monitoring decision was made in this discussion.\nSomeone asked about invoice export progress.\nObservability improvements were mentioned as future work.\nI inferred that transaction semantics were related to the billing migration failure.\nSomeone compared database tradeoffs.\nMonitoring dashboards were reviewed.\nWe reviewed webhook logs and delivery metrics.\nDatabase reliability was discussed during planning."
+    },
+    {
+      "chunk_id": "C0051",
+      "score": 2.020726,
+      "event_ids": [
+        "E10612",
+        "E10613",
+        "E10614",
+        "E10615",
+        "E0549",
+        "E10617",
+        "E10618",
+        "E10619",
+        "E10620",
+        "E10621",
+        "E10622",
+        "E10623"
+      ],
+      "text": "The invoice exporter was mentioned as a possible optimization target.\nIntegration tests were reviewed.\nWebhook migration progress was discussed without changing the current plan.\nWe discussed billing database options again and compared tradeoffs.\nMongoDB was not discussed in the billing migration review; this statement is scoped to that review.\nA possible deployment change was mentioned for later review.\nThe invoice exporter was mentioned as a possible optimization target.\nDatabase options were discussed without a decision.\nMonitoring dashboards were reviewed.\nWebhook migration progress was discussed without changing the current plan.\nRedis came up during a cache design discussion.\nSomeone asked about invoice export progress."
+    },
+    {
+      "chunk_id": "C0059",
+      "score": 2.020726,
+      "event_ids": [
+        "E10708",
+        "E10709",
+        "E10710",
+        "E10711",
+        "E10712",
+        "E10713",
+        "E10714",
+        "E10715",
+        "E10716",
+        "E0803",
+        "E10718",
+        "E10719"
+      ],
+      "text": "A possible deployment change was mentioned for later review.\nDatabase options were discussed without a decision.\nSomeone asked about invoice export progress.\nSomeone suggested another test.\nThe team reviewed database documentation.\nWe reviewed an invoice export log without changing the process.\nThe team looked at logs and traces.\nThe provider integration came up in a routine design review.\nWe discussed billing database options again and compared tradeoffs.\nI later read the billing migration notes and preserved the failed DynamoDB attempt and decision history.\nSomeone suggested looking at cache scope later.\nThe invoice exporter was mentioned as a possible optimization target."
+    },
+    {
+      "chunk_id": "C0000",
+      "score": 1.732051,
+      "event_ids": [
+        "E10000",
+        "E10001",
+        "E10002",
+        "E10003",
+        "E10004",
+        "E10005",
+        "E10006",
+        "E0014",
+        "E10008",
+        "E10009",
+        "E10010",
+        "E10011"
+      ],
+      "text": "Database options were discussed without a decision.\nSomeone asked whether billing work was on track.\nLatency metrics were discussed without a new action.\nDeployment timing was discussed without a committed window.\nRedis was mentioned while reviewing unrelated performance notes.\nWe reviewed webhook logs and delivery metrics.\nDeployment notes were reviewed.\nWe chose PostgreSQL for billing because auditability mattered more than migration effort.\nThe team discussed export monitoring.\nTest output was mentioned during review.\nDeployment notes were reviewed.\nIntegration tests were reviewed."
+    },
+    {
+      "chunk_id": "C0006",
+      "score": 1.732051,
+      "event_ids": [
+        "E10072",
+        "E10073",
+        "E10074",
+        "E10075",
+        "E10076",
+        "E10077",
+        "E10078",
+        "E10079",
+        "E10080",
+        "E10081",
+        "E10082",
+        "E10083"
+      ],
+      "text": "We reviewed webhook logs and delivery metrics.\nLatency metrics were discussed without a new action.\nThe team reviewed cache metrics without making a new decision.\nTest output was mentioned during review.\nWebhook migration progress was discussed without changing the current plan.\nA billing database migration was discussed as a possibility.\nWe reviewed an invoice export log without changing the process.\nDeployment timing was discussed without a committed window.\nA test run was discussed without a new conclusion.\nObservability improvements were mentioned as future work.\nSomeone asked whether billing work was on track.\nThe billing prototype was mentioned during a planning chat."
+    },
+    {
+      "chunk_id": "C0007",
+      "score": 1.732051,
+      "event_ids": [
+        "E10084",
+        "E10085",
+        "E10086",
+        "E10087",
+        "E10088",
+        "E10089",
+        "E10090",
+        "E10091",
+        "E10092",
+        "E10093",
+        "E10094",
+        "E10095"
+      ],
+      "text": "Someone compared database tradeoffs.\nWe discussed billing database options again and compared tradeoffs.\nThe billing prototype was mentioned during a planning chat.\nThe provider integration came up in a routine design review.\nDatabase reliability was discussed during planning.\nDatabase options were discussed without a decision.\nRedis came up during a cache design discussion.\nThe team looked at logs and traces.\nWe discussed whether Redis could help latency in a hypothetical case.\nThe team reviewed database documentation.\nDatabase options were discussed without a decision.\nWebhook migration progress was discussed without changing the current plan."
+    }
+  ]
+}

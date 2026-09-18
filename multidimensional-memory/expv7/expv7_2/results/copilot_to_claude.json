@@ -1,0 +1,84 @@
+{
+  "writer": "copilot",
+  "reader": "claude",
+  "writer_memory_artifact": "results/copilot.memory.json",
+  "writer_memory_sha256": "d924ded34a6027a8afcc772c46c4d3fa0e7f1e7607505d0551b11d20567791b0",
+  "writer_memory_record_count": 31,
+  "reader_input": "Copilot memory artifact (results/copilot.memory.json) plus the 8 delayed queries and schema only; original conversation, gold memory, gold answers, and Copilot's report/memory_eval were withheld from the reader step.",
+  "cases": 8,
+  "answers": [
+    {
+      "case_id": "V71-HIST-01",
+      "query": "Why was PostgreSQL chosen for the billing service, and what happened when DynamoDB was tried?",
+      "answer": "Per copilot.memory.json: PostgreSQL was chosen for the billing service because auditability mattered more than DynamoDB's lower migration effort (P-BILLING-CHOICE, basis E0005). DynamoDB was tried for the billing prototype but the migration failed because conditional-update semantics did not match the existing transaction flow (P-DYNAMO-FAIL, basis E0067, E0141).",
+      "evidence_used": ["O-E0005", "O-E0067", "O-E0141", "P-BILLING-CHOICE", "P-DYNAMO-FAIL"],
+      "correct": true,
+      "unsupported_claims": 0
+    },
+    {
+      "case_id": "V71-DEC-01",
+      "query": "Why was Redis caching abandoned, and what happened when it was retried?",
+      "answer": "Per copilot.memory.json's R-REDIS-ABANDON: Redis caching was abandoned because the experiment increased cache invalidation complexity (basis E0178, E0263). Per R-REDIS-RETRY: a narrower retry resulted in negligible latency improvement (basis E0731).",
+      "evidence_used": ["O-E0178", "O-E0263", "O-E0731", "R-REDIS-ABANDON", "R-REDIS-RETRY"],
+      "correct": true,
+      "unsupported_claims": 0
+    },
+    {
+      "case_id": "V71-ACT-01",
+      "query": "What happened with invoice exports from the first failed attempt through the later full customer batch?",
+      "answer": "Per copilot.memory.json's R-INVOICE: the invoice export timeout led_to asynchronous jobs (basis E0356, E0622). Per R-INVOICE-SUCCESS: the asynchronous invoice export completed the first full customer batch successfully (basis E1033). In order: timeout -> switched to async -> first full batch succeeded.",
+      "evidence_used": ["O-E0356", "O-E0622", "O-E1033", "R-INVOICE", "R-INVOICE-SUCCESS"],
+      "correct": true,
+      "unsupported_claims": 0
+    },
+    {
+      "case_id": "V71-TIME-01",
+      "query": "Reconstruct the webhook state from the initial migration through the latest known state.",
+      "answer": "Per copilot.memory.json's S-WEBHOOK state_history (4 states): polling compatibility path (2026-02-17 to 2026-03-11, E0233) -> webhooks active (2026-03-11 to 2026-05-20, E0401) -> webhooks disabled temporarily (2026-05-20 to 2026-06-03, E0887) -> webhooks active (from 2026-06-03, E1190). current_state field: webhooks active. Latest known state: webhooks active as of 2026-06-03.",
+      "evidence_used": ["O-E0233", "O-E0401", "O-E0887", "O-E1190", "S-WEBHOOK"],
+      "correct": true,
+      "unsupported_claims": 0
+    },
+    {
+      "case_id": "V71-AMB-01",
+      "query": "Who did \"he\" refer to in the deployment-window discussion?",
+      "answer": "Per copilot.memory.json's A-HE: candidates are [Rahul, Arjun], resolution is null, status unresolved. The reference remains unresolved between Rahul and Arjun.",
+      "evidence_used": ["O-E0312", "O-E0515", "A-HE"],
+      "correct": true,
+      "unsupported_claims": 0
+    },
+    {
+      "case_id": "V71-CONFLICT-01",
+      "query": "Was the reason for abandoning DynamoDB merely an inference, or was it later confirmed? Preserve the provenance.",
+      "answer": "Per copilot.memory.json's B-TRANSACTION belief_history: the claim that transaction semantics caused the DynamoDB abandonment started as inferred (Claude, E0448) and was later confirmed (Rahul, E0449). current_status: confirmed. So it began as an inference and was subsequently confirmed, not left as a mere inference.",
+      "evidence_used": ["O-E0448", "O-E0449", "B-TRANSACTION"],
+      "correct": true,
+      "unsupported_claims": 0
+    },
+    {
+      "case_id": "V71-NEG-01",
+      "query": "Was MongoDB discussed as a billing-migration option in the billing migration review?",
+      "answer": "Per copilot.memory.json's N-MONGODB: value not_discussed, scope 'billing migration review', completeness 'explicitly recorded for that review' (basis E0548), with a qualifier that E1102 belongs to a different project. So: no, MongoDB was not discussed in the billing migration review; a separate MongoDB mention exists but belongs to a different project.",
+      "evidence_used": ["O-E0548", "O-E1102", "N-MONGODB"],
+      "correct": true,
+      "unsupported_claims": 0
+    },
+    {
+      "case_id": "V71-PROV-01",
+      "query": "Which agent observed or confirmed the DynamoDB migration failure, and what is the history of that belief?",
+      "answer": "Per copilot.memory.json's PROV-DYNAMO chain: Rahul observed the failure (E0067) -> Claude confirmed after integration-test review (E0141) -> Claude inferred transaction semantics (E0448) -> Rahul explicitly confirmed that (E0449) -> Copilot later did a memory read (E0802). Original observer: Rahul. Confirmers: Claude (via test review) and later Rahul (of the transaction-semantics cause).",
+      "evidence_used": ["O-E0067", "O-E0141", "O-E0448", "O-E0449", "O-E0802", "PROV-DYNAMO"],
+      "correct": true,
+      "unsupported_claims": 0
+    }
+  ],
+  "correct": 8,
+  "unsupported_claims": 0,
+  "evidence_ids": ["E0005", "E0067", "E0141", "E0178", "E0263", "E0731", "E0356", "E0622", "E1033", "E0233", "E0401", "E0887", "E1190", "E0312", "E0515", "E0448", "E0449", "E0548", "E1102", "E0802"],
+  "missing_or_ambiguous_records": [],
+  "notes": [
+    "Copilot's memory has 31 records vs. Claude's 50: fewer proposition records (2 vs. 9) and fewer relationship records (4 vs. 14), and it deduplicates observations that Claude's writer also cross-referenced across multiple case_ids rather than duplicating -- but every one of the 8 delayed queries was still fully answerable, since Copilot's smaller record set still covers all 20 required event IDs and includes exactly the state_history/ambiguity/belief_history/negative_knowledge/provenance_chain records needed for the harder cases.",
+    "State labels in Copilot's S-WEBHOOK reuse the string 'webhooks active' for both the March and June active periods (matching gold's convention), unlike Claude's writer which used distinct labels ('webhooks_enabled' vs 'webhooks_re_enabled') for the same two periods. Both are semantically correct; this reader treated the reused label as unambiguous given the explicit from/to date ranges disambiguating the two periods."
+  ],
+  "limitations": ["No latency or token instrumentation was available; both fields are null in the underlying per-case scoring, mirrored here as no numeric measurement is reported."]
+}

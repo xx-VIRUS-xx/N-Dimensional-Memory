@@ -1,0 +1,1200 @@
+{"event_id": "E10000", "timestamp": "2026-01-01", "speaker": "Copilot", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E10001", "timestamp": "2026-01-01", "speaker": "Copilot", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10002", "timestamp": "2026-01-01", "speaker": "Rahul", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E10003", "timestamp": "2026-01-01", "speaker": "Arjun", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E10004", "timestamp": "2026-01-01", "speaker": "Copilot", "text": "Redis was mentioned while reviewing unrelated performance notes.", "topics": ["redis"]}
+{"event_id": "E10005", "timestamp": "2026-01-01", "speaker": "Arjun", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10006", "timestamp": "2026-01-01", "speaker": "Rahul", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E0014", "timestamp": "2026-01-05", "speaker": "Rahul", "text": "We chose PostgreSQL for billing because auditability mattered more than migration effort.", "topics": ["billing"]}
+{"event_id": "E10008", "timestamp": "2026-01-01", "speaker": "Rahul", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E10009", "timestamp": "2026-01-01", "speaker": "Claude", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10010", "timestamp": "2026-01-01", "speaker": "Rahul", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E10011", "timestamp": "2026-01-01", "speaker": "Arjun", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10012", "timestamp": "2026-01-01", "speaker": "Rahul", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E10013", "timestamp": "2026-01-01", "speaker": "Rahul", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E10014", "timestamp": "2026-01-01", "speaker": "Rahul", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E10015", "timestamp": "2026-01-01", "speaker": "Copilot", "text": "Someone suggested looking at cache scope later.", "topics": ["redis"]}
+{"event_id": "E10016", "timestamp": "2026-01-01", "speaker": "Claude", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10017", "timestamp": "2026-01-01", "speaker": "Arjun", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E10018", "timestamp": "2026-01-01", "speaker": "Claude", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10019", "timestamp": "2026-01-01", "speaker": "Claude", "text": "The team checked test coverage.", "topics": ["testing"]}
+{"event_id": "E10020", "timestamp": "2026-01-02", "speaker": "Rahul", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E10021", "timestamp": "2026-01-02", "speaker": "Arjun", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10022", "timestamp": "2026-01-02", "speaker": "Copilot", "text": "Someone suggested looking at cache scope later.", "topics": ["redis"]}
+{"event_id": "E10023", "timestamp": "2026-01-02", "speaker": "Rahul", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10024", "timestamp": "2026-01-02", "speaker": "Arjun", "text": "Someone suggested looking at cache scope later.", "topics": ["redis"]}
+{"event_id": "E10025", "timestamp": "2026-01-02", "speaker": "Arjun", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10026", "timestamp": "2026-01-02", "speaker": "Arjun", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10027", "timestamp": "2026-01-02", "speaker": "Copilot", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10028", "timestamp": "2026-01-02", "speaker": "Copilot", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E10029", "timestamp": "2026-01-02", "speaker": "Rahul", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E10030", "timestamp": "2026-01-02", "speaker": "Arjun", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E10031", "timestamp": "2026-01-02", "speaker": "Copilot", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E10032", "timestamp": "2026-01-02", "speaker": "Arjun", "text": "The team checked test coverage.", "topics": ["testing"]}
+{"event_id": "E10033", "timestamp": "2026-01-02", "speaker": "Claude", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E10034", "timestamp": "2026-01-02", "speaker": "Claude", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E10035", "timestamp": "2026-01-02", "speaker": "Copilot", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E10036", "timestamp": "2026-01-02", "speaker": "Rahul", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E10037", "timestamp": "2026-01-02", "speaker": "Rahul", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E10038", "timestamp": "2026-01-02", "speaker": "Claude", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E10039", "timestamp": "2026-01-02", "speaker": "Copilot", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10040", "timestamp": "2026-01-03", "speaker": "Rahul", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10041", "timestamp": "2026-01-03", "speaker": "Copilot", "text": "A database migration was mentioned as possible future work.", "topics": ["database"]}
+{"event_id": "E10042", "timestamp": "2026-01-03", "speaker": "Rahul", "text": "Redis came up during a cache design discussion.", "topics": ["redis"]}
+{"event_id": "E10043", "timestamp": "2026-01-03", "speaker": "Rahul", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E10044", "timestamp": "2026-01-03", "speaker": "Claude", "text": "Someone suggested looking at cache scope later.", "topics": ["redis"]}
+{"event_id": "E10045", "timestamp": "2026-01-03", "speaker": "Arjun", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10046", "timestamp": "2026-01-03", "speaker": "Copilot", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10047", "timestamp": "2026-01-03", "speaker": "Claude", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10048", "timestamp": "2026-01-03", "speaker": "Rahul", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E10049", "timestamp": "2026-01-03", "speaker": "Claude", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10050", "timestamp": "2026-01-03", "speaker": "Claude", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E10051", "timestamp": "2026-01-03", "speaker": "Rahul", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E10052", "timestamp": "2026-01-03", "speaker": "Copilot", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E10053", "timestamp": "2026-01-03", "speaker": "Arjun", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E10054", "timestamp": "2026-01-03", "speaker": "Rahul", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E10055", "timestamp": "2026-01-03", "speaker": "Claude", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E10056", "timestamp": "2026-01-03", "speaker": "Claude", "text": "The team checked test coverage.", "topics": ["testing"]}
+{"event_id": "E10057", "timestamp": "2026-01-03", "speaker": "Arjun", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10058", "timestamp": "2026-01-03", "speaker": "Rahul", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10059", "timestamp": "2026-01-03", "speaker": "Copilot", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E10060", "timestamp": "2026-01-04", "speaker": "Arjun", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10061", "timestamp": "2026-01-04", "speaker": "Arjun", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10062", "timestamp": "2026-01-04", "speaker": "Rahul", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10063", "timestamp": "2026-01-04", "speaker": "Arjun", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E10064", "timestamp": "2026-01-04", "speaker": "Arjun", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10065", "timestamp": "2026-01-04", "speaker": "Claude", "text": "Redis was mentioned while reviewing unrelated performance notes.", "topics": ["redis"]}
+{"event_id": "E10066", "timestamp": "2026-01-04", "speaker": "Arjun", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10067", "timestamp": "2026-01-04", "speaker": "Arjun", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10068", "timestamp": "2026-01-04", "speaker": "Copilot", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10069", "timestamp": "2026-01-04", "speaker": "Arjun", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10070", "timestamp": "2026-01-04", "speaker": "Rahul", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E10071", "timestamp": "2026-01-04", "speaker": "Copilot", "text": "Someone suggested looking at cache scope later.", "topics": ["redis"]}
+{"event_id": "E10072", "timestamp": "2026-01-04", "speaker": "Claude", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10073", "timestamp": "2026-01-04", "speaker": "Copilot", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E10074", "timestamp": "2026-01-04", "speaker": "Copilot", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10075", "timestamp": "2026-01-04", "speaker": "Rahul", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10076", "timestamp": "2026-01-04", "speaker": "Rahul", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10077", "timestamp": "2026-01-04", "speaker": "Rahul", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E10078", "timestamp": "2026-01-04", "speaker": "Copilot", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10079", "timestamp": "2026-01-04", "speaker": "Claude", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E10080", "timestamp": "2026-01-05", "speaker": "Claude", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E10081", "timestamp": "2026-01-05", "speaker": "Rahul", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E10082", "timestamp": "2026-01-05", "speaker": "Copilot", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10083", "timestamp": "2026-01-05", "speaker": "Arjun", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10084", "timestamp": "2026-01-05", "speaker": "Claude", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E10085", "timestamp": "2026-01-05", "speaker": "Claude", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E10086", "timestamp": "2026-01-05", "speaker": "Arjun", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10087", "timestamp": "2026-01-05", "speaker": "Claude", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E10088", "timestamp": "2026-01-05", "speaker": "Rahul", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10089", "timestamp": "2026-01-05", "speaker": "Copilot", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E10090", "timestamp": "2026-01-05", "speaker": "Copilot", "text": "Redis came up during a cache design discussion.", "topics": ["redis"]}
+{"event_id": "E10091", "timestamp": "2026-01-05", "speaker": "Copilot", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10092", "timestamp": "2026-01-05", "speaker": "Claude", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E10093", "timestamp": "2026-01-05", "speaker": "Copilot", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E10094", "timestamp": "2026-01-05", "speaker": "Copilot", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E10095", "timestamp": "2026-01-05", "speaker": "Copilot", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10096", "timestamp": "2026-01-05", "speaker": "Claude", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10097", "timestamp": "2026-01-05", "speaker": "Copilot", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E10098", "timestamp": "2026-01-05", "speaker": "Arjun", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10099", "timestamp": "2026-01-05", "speaker": "Arjun", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10100", "timestamp": "2026-01-06", "speaker": "Claude", "text": "Someone suggested looking at cache scope later.", "topics": ["redis"]}
+{"event_id": "E10101", "timestamp": "2026-01-06", "speaker": "Rahul", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10102", "timestamp": "2026-01-06", "speaker": "Claude", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10103", "timestamp": "2026-01-06", "speaker": "Claude", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10104", "timestamp": "2026-01-06", "speaker": "Arjun", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10105", "timestamp": "2026-01-06", "speaker": "Claude", "text": "A database migration was mentioned as possible future work.", "topics": ["database"]}
+{"event_id": "E10106", "timestamp": "2026-01-06", "speaker": "Claude", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E10107", "timestamp": "2026-01-06", "speaker": "Copilot", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10108", "timestamp": "2026-01-06", "speaker": "Copilot", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E10109", "timestamp": "2026-01-06", "speaker": "Rahul", "text": "Invoice export work was discussed in standup.", "topics": ["invoice"]}
+{"event_id": "E10110", "timestamp": "2026-01-06", "speaker": "Copilot", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E10111", "timestamp": "2026-01-06", "speaker": "Rahul", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10112", "timestamp": "2026-01-06", "speaker": "Rahul", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10113", "timestamp": "2026-01-06", "speaker": "Rahul", "text": "Someone suggested looking at cache scope later.", "topics": ["redis"]}
+{"event_id": "E10114", "timestamp": "2026-01-06", "speaker": "Copilot", "text": "A database migration was mentioned as possible future work.", "topics": ["database"]}
+{"event_id": "E10115", "timestamp": "2026-01-06", "speaker": "Copilot", "text": "Someone suggested looking at cache scope later.", "topics": ["redis"]}
+{"event_id": "E10116", "timestamp": "2026-01-06", "speaker": "Copilot", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10117", "timestamp": "2026-01-06", "speaker": "Arjun", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E10118", "timestamp": "2026-01-06", "speaker": "Claude", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10119", "timestamp": "2026-01-06", "speaker": "Copilot", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10120", "timestamp": "2026-01-07", "speaker": "Rahul", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E10121", "timestamp": "2026-01-07", "speaker": "Arjun", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10122", "timestamp": "2026-01-07", "speaker": "Copilot", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E10123", "timestamp": "2026-01-07", "speaker": "Claude", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E10124", "timestamp": "2026-01-07", "speaker": "Copilot", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E10125", "timestamp": "2026-01-07", "speaker": "Claude", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E10126", "timestamp": "2026-01-07", "speaker": "Arjun", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10127", "timestamp": "2026-01-07", "speaker": "Copilot", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E10128", "timestamp": "2026-01-07", "speaker": "Copilot", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E10129", "timestamp": "2026-01-07", "speaker": "Arjun", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E10130", "timestamp": "2026-01-07", "speaker": "Claude", "text": "Redis was mentioned while reviewing unrelated performance notes.", "topics": ["redis"]}
+{"event_id": "E10131", "timestamp": "2026-01-07", "speaker": "Arjun", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E10132", "timestamp": "2026-01-07", "speaker": "Arjun", "text": "A database migration was mentioned as possible future work.", "topics": ["database"]}
+{"event_id": "E10133", "timestamp": "2026-01-07", "speaker": "Claude", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10134", "timestamp": "2026-01-07", "speaker": "Copilot", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10135", "timestamp": "2026-01-07", "speaker": "Copilot", "text": "Invoice export work was discussed in standup.", "topics": ["invoice"]}
+{"event_id": "E10136", "timestamp": "2026-01-07", "speaker": "Arjun", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10137", "timestamp": "2026-01-07", "speaker": "Arjun", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10138", "timestamp": "2026-01-07", "speaker": "Claude", "text": "Redis was mentioned while reviewing unrelated performance notes.", "topics": ["redis"]}
+{"event_id": "E10139", "timestamp": "2026-01-07", "speaker": "Claude", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E10140", "timestamp": "2026-01-08", "speaker": "Rahul", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10141", "timestamp": "2026-01-08", "speaker": "Claude", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E10142", "timestamp": "2026-01-08", "speaker": "Copilot", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E10143", "timestamp": "2026-01-08", "speaker": "Arjun", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E10144", "timestamp": "2026-01-08", "speaker": "Arjun", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10145", "timestamp": "2026-01-08", "speaker": "Rahul", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10146", "timestamp": "2026-01-08", "speaker": "Copilot", "text": "Invoice export work was discussed in standup.", "topics": ["invoice"]}
+{"event_id": "E10147", "timestamp": "2026-01-08", "speaker": "Claude", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E10148", "timestamp": "2026-01-08", "speaker": "Arjun", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E10149", "timestamp": "2026-01-08", "speaker": "Rahul", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10150", "timestamp": "2026-01-08", "speaker": "Arjun", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10151", "timestamp": "2026-01-08", "speaker": "Claude", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E10152", "timestamp": "2026-01-08", "speaker": "Rahul", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E10153", "timestamp": "2026-01-08", "speaker": "Rahul", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E10154", "timestamp": "2026-01-08", "speaker": "Claude", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E10155", "timestamp": "2026-01-08", "speaker": "Rahul", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E10156", "timestamp": "2026-01-08", "speaker": "Arjun", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E10157", "timestamp": "2026-01-08", "speaker": "Rahul", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E10158", "timestamp": "2026-01-08", "speaker": "Copilot", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10159", "timestamp": "2026-01-08", "speaker": "Copilot", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E10160", "timestamp": "2026-01-09", "speaker": "Copilot", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10161", "timestamp": "2026-01-09", "speaker": "Arjun", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10162", "timestamp": "2026-01-09", "speaker": "Arjun", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10163", "timestamp": "2026-01-09", "speaker": "Arjun", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E10164", "timestamp": "2026-01-09", "speaker": "Claude", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10165", "timestamp": "2026-01-09", "speaker": "Claude", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E10166", "timestamp": "2026-01-09", "speaker": "Arjun", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10167", "timestamp": "2026-01-09", "speaker": "Rahul", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10168", "timestamp": "2026-01-09", "speaker": "Rahul", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10169", "timestamp": "2026-01-09", "speaker": "Arjun", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10170", "timestamp": "2026-01-09", "speaker": "Rahul", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E10171", "timestamp": "2026-01-09", "speaker": "Claude", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E10172", "timestamp": "2026-01-09", "speaker": "Claude", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E10173", "timestamp": "2026-01-09", "speaker": "Copilot", "text": "Redis was mentioned while reviewing unrelated performance notes.", "topics": ["redis"]}
+{"event_id": "E10174", "timestamp": "2026-01-09", "speaker": "Rahul", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10175", "timestamp": "2026-01-09", "speaker": "Copilot", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E10176", "timestamp": "2026-01-09", "speaker": "Copilot", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10177", "timestamp": "2026-01-09", "speaker": "Rahul", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E10178", "timestamp": "2026-01-09", "speaker": "Rahul", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10179", "timestamp": "2026-01-09", "speaker": "Arjun", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E10180", "timestamp": "2026-01-10", "speaker": "Copilot", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E10181", "timestamp": "2026-01-10", "speaker": "Rahul", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E10182", "timestamp": "2026-01-10", "speaker": "Claude", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E0068", "timestamp": "2026-01-19", "speaker": "Rahul", "text": "We tried DynamoDB for the billing prototype, but conditional-update semantics did not match the transaction flow and the migration failed.", "topics": ["billing"]}
+{"event_id": "E10184", "timestamp": "2026-01-10", "speaker": "Claude", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10185", "timestamp": "2026-01-10", "speaker": "Claude", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E10186", "timestamp": "2026-01-10", "speaker": "Claude", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10187", "timestamp": "2026-01-10", "speaker": "Arjun", "text": "Redis was mentioned while reviewing unrelated performance notes.", "topics": ["redis"]}
+{"event_id": "E10188", "timestamp": "2026-01-10", "speaker": "Arjun", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E10189", "timestamp": "2026-01-10", "speaker": "Arjun", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E10190", "timestamp": "2026-01-10", "speaker": "Rahul", "text": "Redis was mentioned while reviewing unrelated performance notes.", "topics": ["redis"]}
+{"event_id": "E10191", "timestamp": "2026-01-10", "speaker": "Rahul", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E10192", "timestamp": "2026-01-10", "speaker": "Copilot", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10193", "timestamp": "2026-01-10", "speaker": "Copilot", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E10194", "timestamp": "2026-01-10", "speaker": "Arjun", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10195", "timestamp": "2026-01-10", "speaker": "Copilot", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10196", "timestamp": "2026-01-10", "speaker": "Arjun", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10197", "timestamp": "2026-01-10", "speaker": "Arjun", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10198", "timestamp": "2026-01-10", "speaker": "Copilot", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E10199", "timestamp": "2026-01-10", "speaker": "Copilot", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10200", "timestamp": "2026-01-11", "speaker": "Copilot", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10201", "timestamp": "2026-01-11", "speaker": "Copilot", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10202", "timestamp": "2026-01-11", "speaker": "Rahul", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10203", "timestamp": "2026-01-11", "speaker": "Claude", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E10204", "timestamp": "2026-01-11", "speaker": "Copilot", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E10205", "timestamp": "2026-01-11", "speaker": "Copilot", "text": "Invoice export work was discussed in standup.", "topics": ["invoice"]}
+{"event_id": "E10206", "timestamp": "2026-01-11", "speaker": "Rahul", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E10207", "timestamp": "2026-01-11", "speaker": "Rahul", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10208", "timestamp": "2026-01-11", "speaker": "Claude", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10209", "timestamp": "2026-01-11", "speaker": "Rahul", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10210", "timestamp": "2026-01-11", "speaker": "Arjun", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E10211", "timestamp": "2026-01-11", "speaker": "Arjun", "text": "The team checked test coverage.", "topics": ["testing"]}
+{"event_id": "E10212", "timestamp": "2026-01-11", "speaker": "Arjun", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10213", "timestamp": "2026-01-11", "speaker": "Arjun", "text": "The team checked test coverage.", "topics": ["testing"]}
+{"event_id": "E10214", "timestamp": "2026-01-11", "speaker": "Rahul", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10215", "timestamp": "2026-01-11", "speaker": "Rahul", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E10216", "timestamp": "2026-01-11", "speaker": "Claude", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E10217", "timestamp": "2026-01-11", "speaker": "Claude", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10218", "timestamp": "2026-01-11", "speaker": "Copilot", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10219", "timestamp": "2026-01-11", "speaker": "Copilot", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10220", "timestamp": "2026-01-12", "speaker": "Arjun", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10221", "timestamp": "2026-01-12", "speaker": "Arjun", "text": "Redis was mentioned while reviewing unrelated performance notes.", "topics": ["redis"]}
+{"event_id": "E10222", "timestamp": "2026-01-12", "speaker": "Claude", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10223", "timestamp": "2026-01-12", "speaker": "Arjun", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10224", "timestamp": "2026-01-12", "speaker": "Arjun", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10225", "timestamp": "2026-01-12", "speaker": "Rahul", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10226", "timestamp": "2026-01-12", "speaker": "Copilot", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E10227", "timestamp": "2026-01-12", "speaker": "Arjun", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E10228", "timestamp": "2026-01-12", "speaker": "Rahul", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E10229", "timestamp": "2026-01-12", "speaker": "Copilot", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10230", "timestamp": "2026-01-12", "speaker": "Copilot", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E10231", "timestamp": "2026-01-12", "speaker": "Rahul", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10232", "timestamp": "2026-01-12", "speaker": "Claude", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10233", "timestamp": "2026-01-12", "speaker": "Arjun", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E10234", "timestamp": "2026-01-12", "speaker": "Claude", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10235", "timestamp": "2026-01-12", "speaker": "Claude", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E10236", "timestamp": "2026-01-12", "speaker": "Copilot", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E10237", "timestamp": "2026-01-12", "speaker": "Copilot", "text": "A database migration was mentioned as possible future work.", "topics": ["database"]}
+{"event_id": "E10238", "timestamp": "2026-01-12", "speaker": "Arjun", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E10239", "timestamp": "2026-01-12", "speaker": "Copilot", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E10240", "timestamp": "2026-01-13", "speaker": "Copilot", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E10241", "timestamp": "2026-01-13", "speaker": "Claude", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E10242", "timestamp": "2026-01-13", "speaker": "Rahul", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E10243", "timestamp": "2026-01-13", "speaker": "Arjun", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10244", "timestamp": "2026-01-13", "speaker": "Copilot", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E10245", "timestamp": "2026-01-13", "speaker": "Arjun", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E10246", "timestamp": "2026-01-13", "speaker": "Claude", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10247", "timestamp": "2026-01-13", "speaker": "Copilot", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E10248", "timestamp": "2026-01-13", "speaker": "Claude", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E10249", "timestamp": "2026-01-13", "speaker": "Copilot", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E10250", "timestamp": "2026-01-13", "speaker": "Copilot", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10251", "timestamp": "2026-01-13", "speaker": "Claude", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E10252", "timestamp": "2026-01-13", "speaker": "Rahul", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E10253", "timestamp": "2026-01-13", "speaker": "Copilot", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10254", "timestamp": "2026-01-13", "speaker": "Arjun", "text": "A database migration was mentioned as possible future work.", "topics": ["database"]}
+{"event_id": "E10255", "timestamp": "2026-01-13", "speaker": "Claude", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E10256", "timestamp": "2026-01-13", "speaker": "Arjun", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E10257", "timestamp": "2026-01-13", "speaker": "Copilot", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E10258", "timestamp": "2026-01-13", "speaker": "Claude", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E10259", "timestamp": "2026-01-13", "speaker": "Copilot", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10260", "timestamp": "2026-01-14", "speaker": "Rahul", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E10261", "timestamp": "2026-01-14", "speaker": "Rahul", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E10262", "timestamp": "2026-01-14", "speaker": "Copilot", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E10263", "timestamp": "2026-01-14", "speaker": "Copilot", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10264", "timestamp": "2026-01-14", "speaker": "Copilot", "text": "Someone suggested looking at cache scope later.", "topics": ["redis"]}
+{"event_id": "E10265", "timestamp": "2026-01-14", "speaker": "Arjun", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10266", "timestamp": "2026-01-14", "speaker": "Rahul", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E10267", "timestamp": "2026-01-14", "speaker": "Claude", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10268", "timestamp": "2026-01-14", "speaker": "Arjun", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E10269", "timestamp": "2026-01-14", "speaker": "Arjun", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10270", "timestamp": "2026-01-14", "speaker": "Claude", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E10271", "timestamp": "2026-01-14", "speaker": "Rahul", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E10272", "timestamp": "2026-01-14", "speaker": "Claude", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E10273", "timestamp": "2026-01-14", "speaker": "Rahul", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E10274", "timestamp": "2026-01-14", "speaker": "Claude", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E10275", "timestamp": "2026-01-14", "speaker": "Arjun", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E10276", "timestamp": "2026-01-14", "speaker": "Rahul", "text": "Someone suggested looking at cache scope later.", "topics": ["redis"]}
+{"event_id": "E10277", "timestamp": "2026-01-14", "speaker": "Rahul", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10278", "timestamp": "2026-01-14", "speaker": "Arjun", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10279", "timestamp": "2026-01-14", "speaker": "Arjun", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E10280", "timestamp": "2026-01-15", "speaker": "Rahul", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10281", "timestamp": "2026-01-15", "speaker": "Copilot", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10282", "timestamp": "2026-01-15", "speaker": "Copilot", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E10283", "timestamp": "2026-01-15", "speaker": "Claude", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E10284", "timestamp": "2026-01-15", "speaker": "Claude", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10285", "timestamp": "2026-01-15", "speaker": "Claude", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E10286", "timestamp": "2026-01-15", "speaker": "Copilot", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E10287", "timestamp": "2026-01-15", "speaker": "Copilot", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10288", "timestamp": "2026-01-15", "speaker": "Copilot", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10289", "timestamp": "2026-01-15", "speaker": "Claude", "text": "Redis came up during a cache design discussion.", "topics": ["redis"]}
+{"event_id": "E10290", "timestamp": "2026-01-15", "speaker": "Rahul", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10291", "timestamp": "2026-01-15", "speaker": "Copilot", "text": "The team checked test coverage.", "topics": ["testing"]}
+{"event_id": "E10292", "timestamp": "2026-01-15", "speaker": "Claude", "text": "Redis was mentioned while reviewing unrelated performance notes.", "topics": ["redis"]}
+{"event_id": "E10293", "timestamp": "2026-01-15", "speaker": "Rahul", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10294", "timestamp": "2026-01-15", "speaker": "Claude", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10295", "timestamp": "2026-01-15", "speaker": "Arjun", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10296", "timestamp": "2026-01-15", "speaker": "Claude", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10297", "timestamp": "2026-01-15", "speaker": "Rahul", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E10298", "timestamp": "2026-01-15", "speaker": "Arjun", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E10299", "timestamp": "2026-01-15", "speaker": "Claude", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E10300", "timestamp": "2026-01-16", "speaker": "Claude", "text": "Someone suggested looking at cache scope later.", "topics": ["redis"]}
+{"event_id": "E0142", "timestamp": "2026-02-02", "speaker": "Claude", "text": "The DynamoDB migration failure was confirmed after reviewing integration-test output.", "topics": ["billing"]}
+{"event_id": "E10302", "timestamp": "2026-01-16", "speaker": "Copilot", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E10303", "timestamp": "2026-01-16", "speaker": "Rahul", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10304", "timestamp": "2026-01-16", "speaker": "Arjun", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E0179", "timestamp": "2026-02-09", "speaker": "Rahul", "text": "We tested Redis caching to reduce API latency.", "topics": ["redis"]}
+{"event_id": "E10306", "timestamp": "2026-01-16", "speaker": "Rahul", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10307", "timestamp": "2026-01-16", "speaker": "Copilot", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10308", "timestamp": "2026-01-16", "speaker": "Claude", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E10309", "timestamp": "2026-01-16", "speaker": "Rahul", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E10310", "timestamp": "2026-01-16", "speaker": "Copilot", "text": "Redis was mentioned while reviewing unrelated performance notes.", "topics": ["redis"]}
+{"event_id": "E10311", "timestamp": "2026-01-16", "speaker": "Rahul", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10312", "timestamp": "2026-01-16", "speaker": "Copilot", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E10313", "timestamp": "2026-01-16", "speaker": "Arjun", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10314", "timestamp": "2026-01-16", "speaker": "Arjun", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E10315", "timestamp": "2026-01-16", "speaker": "Rahul", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E10316", "timestamp": "2026-01-16", "speaker": "Copilot", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10317", "timestamp": "2026-01-16", "speaker": "Claude", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10318", "timestamp": "2026-01-16", "speaker": "Claude", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10319", "timestamp": "2026-01-16", "speaker": "Rahul", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10320", "timestamp": "2026-01-17", "speaker": "Claude", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E10321", "timestamp": "2026-01-17", "speaker": "Copilot", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10322", "timestamp": "2026-01-17", "speaker": "Arjun", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E10323", "timestamp": "2026-01-17", "speaker": "Claude", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10324", "timestamp": "2026-01-17", "speaker": "Arjun", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10325", "timestamp": "2026-01-17", "speaker": "Copilot", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10326", "timestamp": "2026-01-17", "speaker": "Rahul", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E10327", "timestamp": "2026-01-17", "speaker": "Copilot", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E10328", "timestamp": "2026-01-17", "speaker": "Rahul", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10329", "timestamp": "2026-01-17", "speaker": "Claude", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10330", "timestamp": "2026-01-17", "speaker": "Claude", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10331", "timestamp": "2026-01-17", "speaker": "Rahul", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E10332", "timestamp": "2026-01-17", "speaker": "Rahul", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E10333", "timestamp": "2026-01-17", "speaker": "Rahul", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E10334", "timestamp": "2026-01-17", "speaker": "Copilot", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10335", "timestamp": "2026-01-17", "speaker": "Copilot", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10336", "timestamp": "2026-01-17", "speaker": "Rahul", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10337", "timestamp": "2026-01-17", "speaker": "Claude", "text": "Redis was mentioned while reviewing unrelated performance notes.", "topics": ["redis"]}
+{"event_id": "E10338", "timestamp": "2026-01-17", "speaker": "Arjun", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10339", "timestamp": "2026-01-17", "speaker": "Rahul", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10340", "timestamp": "2026-01-18", "speaker": "Copilot", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E10341", "timestamp": "2026-01-18", "speaker": "Claude", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10342", "timestamp": "2026-01-18", "speaker": "Copilot", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10343", "timestamp": "2026-01-18", "speaker": "Rahul", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10344", "timestamp": "2026-01-18", "speaker": "Arjun", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E10345", "timestamp": "2026-01-18", "speaker": "Claude", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E10346", "timestamp": "2026-01-18", "speaker": "Claude", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10347", "timestamp": "2026-01-18", "speaker": "Claude", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10348", "timestamp": "2026-01-18", "speaker": "Copilot", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E10349", "timestamp": "2026-01-18", "speaker": "Claude", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10350", "timestamp": "2026-01-18", "speaker": "Copilot", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E10351", "timestamp": "2026-01-18", "speaker": "Arjun", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E10352", "timestamp": "2026-01-18", "speaker": "Rahul", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E10353", "timestamp": "2026-01-18", "speaker": "Claude", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E10354", "timestamp": "2026-01-18", "speaker": "Claude", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E10355", "timestamp": "2026-01-18", "speaker": "Claude", "text": "Redis was mentioned while reviewing unrelated performance notes.", "topics": ["redis"]}
+{"event_id": "E10356", "timestamp": "2026-01-18", "speaker": "Copilot", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10357", "timestamp": "2026-01-18", "speaker": "Claude", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10358", "timestamp": "2026-01-18", "speaker": "Claude", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E10359", "timestamp": "2026-01-18", "speaker": "Arjun", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10360", "timestamp": "2026-01-19", "speaker": "Claude", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10361", "timestamp": "2026-01-19", "speaker": "Rahul", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E10362", "timestamp": "2026-01-19", "speaker": "Rahul", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10363", "timestamp": "2026-01-19", "speaker": "Rahul", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E10364", "timestamp": "2026-01-19", "speaker": "Arjun", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10365", "timestamp": "2026-01-19", "speaker": "Claude", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E10366", "timestamp": "2026-01-19", "speaker": "Copilot", "text": "Redis came up during a cache design discussion.", "topics": ["redis"]}
+{"event_id": "E10367", "timestamp": "2026-01-19", "speaker": "Copilot", "text": "Someone suggested looking at cache scope later.", "topics": ["redis"]}
+{"event_id": "E10368", "timestamp": "2026-01-19", "speaker": "Copilot", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10369", "timestamp": "2026-01-19", "speaker": "Rahul", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E10370", "timestamp": "2026-01-19", "speaker": "Rahul", "text": "Redis was mentioned while reviewing unrelated performance notes.", "topics": ["redis"]}
+{"event_id": "E0264", "timestamp": "2026-02-21", "speaker": "Rahul", "text": "The Redis experiment increased cache invalidation complexity, so we abandoned it.", "topics": ["redis"]}
+{"event_id": "E10372", "timestamp": "2026-01-19", "speaker": "Arjun", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10373", "timestamp": "2026-01-19", "speaker": "Claude", "text": "The team checked test coverage.", "topics": ["testing"]}
+{"event_id": "E10374", "timestamp": "2026-01-19", "speaker": "Rahul", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10375", "timestamp": "2026-01-19", "speaker": "Rahul", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10376", "timestamp": "2026-01-19", "speaker": "Copilot", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E10377", "timestamp": "2026-01-19", "speaker": "Rahul", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E10378", "timestamp": "2026-01-19", "speaker": "Rahul", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E10379", "timestamp": "2026-01-19", "speaker": "Rahul", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E10380", "timestamp": "2026-01-20", "speaker": "Claude", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10381", "timestamp": "2026-01-20", "speaker": "Rahul", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E10382", "timestamp": "2026-01-20", "speaker": "Copilot", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E10383", "timestamp": "2026-01-20", "speaker": "Arjun", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E10384", "timestamp": "2026-01-20", "speaker": "Claude", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E10385", "timestamp": "2026-01-20", "speaker": "Claude", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10386", "timestamp": "2026-01-20", "speaker": "Copilot", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E0357", "timestamp": "2026-03-01", "speaker": "Rahul", "text": "The first invoice export attempt timed out after 18 minutes.", "topics": ["invoice"]}
+{"event_id": "E10388", "timestamp": "2026-01-20", "speaker": "Copilot", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E10389", "timestamp": "2026-01-20", "speaker": "Copilot", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10390", "timestamp": "2026-01-20", "speaker": "Rahul", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E10391", "timestamp": "2026-01-20", "speaker": "Rahul", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10392", "timestamp": "2026-01-20", "speaker": "Copilot", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E10393", "timestamp": "2026-01-20", "speaker": "Copilot", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E10394", "timestamp": "2026-01-20", "speaker": "Claude", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E10395", "timestamp": "2026-01-20", "speaker": "Arjun", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E10396", "timestamp": "2026-01-20", "speaker": "Claude", "text": "Someone suggested looking at cache scope later.", "topics": ["redis"]}
+{"event_id": "E10397", "timestamp": "2026-01-20", "speaker": "Rahul", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E10398", "timestamp": "2026-01-20", "speaker": "Copilot", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E10399", "timestamp": "2026-01-20", "speaker": "Rahul", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10400", "timestamp": "2026-01-21", "speaker": "Rahul", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E10401", "timestamp": "2026-01-21", "speaker": "Arjun", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10402", "timestamp": "2026-01-21", "speaker": "Rahul", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10403", "timestamp": "2026-01-21", "speaker": "Claude", "text": "Redis came up during a cache design discussion.", "topics": ["redis"]}
+{"event_id": "E10404", "timestamp": "2026-01-21", "speaker": "Arjun", "text": "The team checked test coverage.", "topics": ["testing"]}
+{"event_id": "E10405", "timestamp": "2026-01-21", "speaker": "Arjun", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10406", "timestamp": "2026-01-21", "speaker": "Copilot", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E10407", "timestamp": "2026-01-21", "speaker": "Rahul", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10408", "timestamp": "2026-01-21", "speaker": "Claude", "text": "A database migration was mentioned as possible future work.", "topics": ["database"]}
+{"event_id": "E0402", "timestamp": "2026-03-11", "speaker": "Rahul", "text": "The webhook migration moved from polling to webhooks after the provider fixed signature verification.", "topics": ["webhook"]}
+{"event_id": "E10410", "timestamp": "2026-01-21", "speaker": "Arjun", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E10411", "timestamp": "2026-01-21", "speaker": "Rahul", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E10412", "timestamp": "2026-01-21", "speaker": "Rahul", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E10413", "timestamp": "2026-01-21", "speaker": "Arjun", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E10414", "timestamp": "2026-01-21", "speaker": "Rahul", "text": "Redis was mentioned while reviewing unrelated performance notes.", "topics": ["redis"]}
+{"event_id": "E10415", "timestamp": "2026-01-21", "speaker": "Arjun", "text": "Redis was mentioned while reviewing unrelated performance notes.", "topics": ["redis"]}
+{"event_id": "E10416", "timestamp": "2026-01-21", "speaker": "Claude", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10417", "timestamp": "2026-01-21", "speaker": "Arjun", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10418", "timestamp": "2026-01-21", "speaker": "Claude", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10419", "timestamp": "2026-01-21", "speaker": "Claude", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10420", "timestamp": "2026-01-22", "speaker": "Arjun", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E10421", "timestamp": "2026-01-22", "speaker": "Rahul", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E10422", "timestamp": "2026-01-22", "speaker": "Rahul", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10423", "timestamp": "2026-01-22", "speaker": "Rahul", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10424", "timestamp": "2026-01-22", "speaker": "Copilot", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E10425", "timestamp": "2026-01-22", "speaker": "Copilot", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10426", "timestamp": "2026-01-22", "speaker": "Rahul", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E0449", "timestamp": "2026-03-17", "speaker": "Claude", "text": "I inferred that transaction semantics were related to the billing migration failure.", "topics": ["billing"]}
+{"event_id": "E10428", "timestamp": "2026-01-22", "speaker": "Copilot", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E10429", "timestamp": "2026-01-22", "speaker": "Arjun", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10430", "timestamp": "2026-01-22", "speaker": "Copilot", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10431", "timestamp": "2026-01-22", "speaker": "Rahul", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10432", "timestamp": "2026-01-22", "speaker": "Claude", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10433", "timestamp": "2026-01-22", "speaker": "Copilot", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10434", "timestamp": "2026-01-22", "speaker": "Rahul", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E10435", "timestamp": "2026-01-22", "speaker": "Copilot", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10436", "timestamp": "2026-01-22", "speaker": "Arjun", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10437", "timestamp": "2026-01-22", "speaker": "Rahul", "text": "Invoice export work was discussed in standup.", "topics": ["invoice"]}
+{"event_id": "E10438", "timestamp": "2026-01-22", "speaker": "Claude", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10439", "timestamp": "2026-01-22", "speaker": "Copilot", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10440", "timestamp": "2026-01-23", "speaker": "Copilot", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10441", "timestamp": "2026-01-23", "speaker": "Arjun", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10442", "timestamp": "2026-01-23", "speaker": "Copilot", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10443", "timestamp": "2026-01-23", "speaker": "Claude", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E10444", "timestamp": "2026-01-23", "speaker": "Rahul", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E10445", "timestamp": "2026-01-23", "speaker": "Copilot", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10446", "timestamp": "2026-01-23", "speaker": "Rahul", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10447", "timestamp": "2026-01-23", "speaker": "Arjun", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10448", "timestamp": "2026-01-23", "speaker": "Rahul", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10449", "timestamp": "2026-01-23", "speaker": "Arjun", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10450", "timestamp": "2026-01-23", "speaker": "Arjun", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10451", "timestamp": "2026-01-23", "speaker": "Copilot", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10452", "timestamp": "2026-01-23", "speaker": "Copilot", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E0450", "timestamp": "2026-03-17", "speaker": "Rahul", "text": "I confirmed transaction semantics were the reason the DynamoDB migration was abandoned.", "topics": ["billing"]}
+{"event_id": "E10454", "timestamp": "2026-01-23", "speaker": "Rahul", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E10455", "timestamp": "2026-01-23", "speaker": "Rahul", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E10456", "timestamp": "2026-01-23", "speaker": "Arjun", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E10457", "timestamp": "2026-01-23", "speaker": "Rahul", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E10458", "timestamp": "2026-01-23", "speaker": "Claude", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10459", "timestamp": "2026-01-23", "speaker": "Claude", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E10460", "timestamp": "2026-01-24", "speaker": "Arjun", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10461", "timestamp": "2026-01-24", "speaker": "Claude", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E10462", "timestamp": "2026-01-24", "speaker": "Arjun", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E10463", "timestamp": "2026-01-24", "speaker": "Claude", "text": "A database migration was mentioned as possible future work.", "topics": ["database"]}
+{"event_id": "E10464", "timestamp": "2026-01-24", "speaker": "Copilot", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10465", "timestamp": "2026-01-24", "speaker": "Arjun", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E10466", "timestamp": "2026-01-24", "speaker": "Rahul", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E10467", "timestamp": "2026-01-24", "speaker": "Claude", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E10468", "timestamp": "2026-01-24", "speaker": "Copilot", "text": "A database migration was mentioned as possible future work.", "topics": ["database"]}
+{"event_id": "E10469", "timestamp": "2026-01-24", "speaker": "Arjun", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E10470", "timestamp": "2026-01-24", "speaker": "Copilot", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10471", "timestamp": "2026-01-24", "speaker": "Rahul", "text": "Redis came up during a cache design discussion.", "topics": ["redis"]}
+{"event_id": "E10472", "timestamp": "2026-01-24", "speaker": "Rahul", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10473", "timestamp": "2026-01-24", "speaker": "Rahul", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10474", "timestamp": "2026-01-24", "speaker": "Arjun", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E10475", "timestamp": "2026-01-24", "speaker": "Rahul", "text": "The team checked test coverage.", "topics": ["testing"]}
+{"event_id": "E10476", "timestamp": "2026-01-24", "speaker": "Rahul", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E10477", "timestamp": "2026-01-24", "speaker": "Arjun", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10478", "timestamp": "2026-01-24", "speaker": "Copilot", "text": "Someone suggested looking at cache scope later.", "topics": ["redis"]}
+{"event_id": "E10479", "timestamp": "2026-01-24", "speaker": "Rahul", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E10480", "timestamp": "2026-01-25", "speaker": "Rahul", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10481", "timestamp": "2026-01-25", "speaker": "Claude", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10482", "timestamp": "2026-01-25", "speaker": "Copilot", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10483", "timestamp": "2026-01-25", "speaker": "Arjun", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E10484", "timestamp": "2026-01-25", "speaker": "Claude", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E10485", "timestamp": "2026-01-25", "speaker": "Arjun", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10486", "timestamp": "2026-01-25", "speaker": "Arjun", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10487", "timestamp": "2026-01-25", "speaker": "Claude", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E10488", "timestamp": "2026-01-25", "speaker": "Rahul", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E10489", "timestamp": "2026-01-25", "speaker": "Rahul", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E10490", "timestamp": "2026-01-25", "speaker": "Arjun", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E10491", "timestamp": "2026-01-25", "speaker": "Rahul", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E10492", "timestamp": "2026-01-25", "speaker": "Arjun", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E10493", "timestamp": "2026-01-25", "speaker": "Rahul", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10494", "timestamp": "2026-01-25", "speaker": "Rahul", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10495", "timestamp": "2026-01-25", "speaker": "Copilot", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10496", "timestamp": "2026-01-25", "speaker": "Arjun", "text": "A database migration was mentioned as possible future work.", "topics": ["database"]}
+{"event_id": "E10497", "timestamp": "2026-01-25", "speaker": "Claude", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10498", "timestamp": "2026-01-25", "speaker": "Claude", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10499", "timestamp": "2026-01-25", "speaker": "Claude", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10500", "timestamp": "2026-01-26", "speaker": "Copilot", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10501", "timestamp": "2026-01-26", "speaker": "Claude", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E10502", "timestamp": "2026-01-26", "speaker": "Arjun", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10503", "timestamp": "2026-01-26", "speaker": "Arjun", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10504", "timestamp": "2026-01-26", "speaker": "Rahul", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E10505", "timestamp": "2026-01-26", "speaker": "Arjun", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10506", "timestamp": "2026-01-26", "speaker": "Arjun", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E10507", "timestamp": "2026-01-26", "speaker": "Claude", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E10508", "timestamp": "2026-01-26", "speaker": "Rahul", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10509", "timestamp": "2026-01-26", "speaker": "Rahul", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10510", "timestamp": "2026-01-26", "speaker": "Claude", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10511", "timestamp": "2026-01-26", "speaker": "Arjun", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10512", "timestamp": "2026-01-26", "speaker": "Arjun", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10513", "timestamp": "2026-01-26", "speaker": "Arjun", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10514", "timestamp": "2026-01-26", "speaker": "Copilot", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10515", "timestamp": "2026-01-26", "speaker": "Copilot", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E10516", "timestamp": "2026-01-26", "speaker": "Copilot", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E10517", "timestamp": "2026-01-26", "speaker": "Arjun", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10518", "timestamp": "2026-01-26", "speaker": "Arjun", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E10519", "timestamp": "2026-01-26", "speaker": "Arjun", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10520", "timestamp": "2026-01-27", "speaker": "Arjun", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E10521", "timestamp": "2026-01-27", "speaker": "Arjun", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10522", "timestamp": "2026-01-27", "speaker": "Copilot", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10523", "timestamp": "2026-01-27", "speaker": "Claude", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10524", "timestamp": "2026-01-27", "speaker": "Rahul", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10525", "timestamp": "2026-01-27", "speaker": "Rahul", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10526", "timestamp": "2026-01-27", "speaker": "Claude", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E10527", "timestamp": "2026-01-27", "speaker": "Copilot", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10528", "timestamp": "2026-01-27", "speaker": "Rahul", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10529", "timestamp": "2026-01-27", "speaker": "Copilot", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E10530", "timestamp": "2026-01-27", "speaker": "Rahul", "text": "Invoice export work was discussed in standup.", "topics": ["invoice"]}
+{"event_id": "E10531", "timestamp": "2026-01-27", "speaker": "Rahul", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10532", "timestamp": "2026-01-27", "speaker": "Rahul", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10533", "timestamp": "2026-01-27", "speaker": "Rahul", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E10534", "timestamp": "2026-01-27", "speaker": "Arjun", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10535", "timestamp": "2026-01-27", "speaker": "Arjun", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10536", "timestamp": "2026-01-27", "speaker": "Rahul", "text": "The team checked test coverage.", "topics": ["testing"]}
+{"event_id": "E10537", "timestamp": "2026-01-27", "speaker": "Claude", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E10538", "timestamp": "2026-01-27", "speaker": "Arjun", "text": "The team checked test coverage.", "topics": ["testing"]}
+{"event_id": "E10539", "timestamp": "2026-01-27", "speaker": "Claude", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E10540", "timestamp": "2026-01-28", "speaker": "Arjun", "text": "Invoice export work was discussed in standup.", "topics": ["invoice"]}
+{"event_id": "E10541", "timestamp": "2026-01-28", "speaker": "Arjun", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10542", "timestamp": "2026-01-28", "speaker": "Arjun", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E10543", "timestamp": "2026-01-28", "speaker": "Claude", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10544", "timestamp": "2026-01-28", "speaker": "Claude", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E10545", "timestamp": "2026-01-28", "speaker": "Claude", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10546", "timestamp": "2026-01-28", "speaker": "Arjun", "text": "The team checked test coverage.", "topics": ["testing"]}
+{"event_id": "E10547", "timestamp": "2026-01-28", "speaker": "Claude", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E10548", "timestamp": "2026-01-28", "speaker": "Copilot", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10549", "timestamp": "2026-01-28", "speaker": "Arjun", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E10550", "timestamp": "2026-01-28", "speaker": "Copilot", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10551", "timestamp": "2026-01-28", "speaker": "Claude", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10552", "timestamp": "2026-01-28", "speaker": "Copilot", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E10553", "timestamp": "2026-01-28", "speaker": "Rahul", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10554", "timestamp": "2026-01-28", "speaker": "Rahul", "text": "Redis was mentioned while reviewing unrelated performance notes.", "topics": ["redis"]}
+{"event_id": "E10555", "timestamp": "2026-01-28", "speaker": "Copilot", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10556", "timestamp": "2026-01-28", "speaker": "Copilot", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E10557", "timestamp": "2026-01-28", "speaker": "Copilot", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E10558", "timestamp": "2026-01-28", "speaker": "Rahul", "text": "A database migration was mentioned as possible future work.", "topics": ["database"]}
+{"event_id": "E10559", "timestamp": "2026-01-28", "speaker": "Copilot", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E10560", "timestamp": "2026-01-29", "speaker": "Rahul", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10561", "timestamp": "2026-01-29", "speaker": "Copilot", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E10562", "timestamp": "2026-01-29", "speaker": "Rahul", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10563", "timestamp": "2026-01-29", "speaker": "Claude", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E10564", "timestamp": "2026-01-29", "speaker": "Rahul", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E10565", "timestamp": "2026-01-29", "speaker": "Arjun", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E10566", "timestamp": "2026-01-29", "speaker": "Copilot", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E10567", "timestamp": "2026-01-29", "speaker": "Copilot", "text": "Someone suggested looking at cache scope later.", "topics": ["redis"]}
+{"event_id": "E10568", "timestamp": "2026-01-29", "speaker": "Claude", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10569", "timestamp": "2026-01-29", "speaker": "Copilot", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E10570", "timestamp": "2026-01-29", "speaker": "Copilot", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E10571", "timestamp": "2026-01-29", "speaker": "Arjun", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10572", "timestamp": "2026-01-29", "speaker": "Rahul", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10573", "timestamp": "2026-01-29", "speaker": "Claude", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10574", "timestamp": "2026-01-29", "speaker": "Copilot", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E10575", "timestamp": "2026-01-29", "speaker": "Claude", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10576", "timestamp": "2026-01-29", "speaker": "Rahul", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E10577", "timestamp": "2026-01-29", "speaker": "Arjun", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E10578", "timestamp": "2026-01-29", "speaker": "Arjun", "text": "Redis came up during a cache design discussion.", "topics": ["redis"]}
+{"event_id": "E10579", "timestamp": "2026-01-29", "speaker": "Arjun", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E10580", "timestamp": "2026-01-30", "speaker": "Arjun", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10581", "timestamp": "2026-01-30", "speaker": "Copilot", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10582", "timestamp": "2026-01-30", "speaker": "Rahul", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E10583", "timestamp": "2026-01-30", "speaker": "Arjun", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10584", "timestamp": "2026-01-30", "speaker": "Arjun", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E10585", "timestamp": "2026-01-30", "speaker": "Arjun", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E10586", "timestamp": "2026-01-30", "speaker": "Claude", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10587", "timestamp": "2026-01-30", "speaker": "Copilot", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10588", "timestamp": "2026-01-30", "speaker": "Rahul", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10589", "timestamp": "2026-01-30", "speaker": "Arjun", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E10590", "timestamp": "2026-01-30", "speaker": "Arjun", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E10591", "timestamp": "2026-01-30", "speaker": "Claude", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E10592", "timestamp": "2026-01-30", "speaker": "Claude", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10593", "timestamp": "2026-01-30", "speaker": "Arjun", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E10594", "timestamp": "2026-01-30", "speaker": "Claude", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E10595", "timestamp": "2026-01-30", "speaker": "Copilot", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10596", "timestamp": "2026-01-30", "speaker": "Copilot", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E10597", "timestamp": "2026-01-30", "speaker": "Copilot", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E10598", "timestamp": "2026-01-30", "speaker": "Claude", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E0516", "timestamp": "2026-03-22", "speaker": "Arjun", "text": "The deployment-window pronoun 'he' remains unresolved between Rahul and Arjun.", "topics": ["ambiguity"]}
+{"event_id": "E10600", "timestamp": "2026-02-01", "speaker": "Claude", "text": "Someone suggested looking at cache scope later.", "topics": ["redis"]}
+{"event_id": "E10601", "timestamp": "2026-02-01", "speaker": "Arjun", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10602", "timestamp": "2026-02-01", "speaker": "Claude", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E10603", "timestamp": "2026-02-01", "speaker": "Claude", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10604", "timestamp": "2026-02-01", "speaker": "Arjun", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E10605", "timestamp": "2026-02-01", "speaker": "Copilot", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E10606", "timestamp": "2026-02-01", "speaker": "Copilot", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E10607", "timestamp": "2026-02-01", "speaker": "Arjun", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E10608", "timestamp": "2026-02-01", "speaker": "Copilot", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10609", "timestamp": "2026-02-01", "speaker": "Copilot", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E10610", "timestamp": "2026-02-01", "speaker": "Rahul", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10611", "timestamp": "2026-02-01", "speaker": "Copilot", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10612", "timestamp": "2026-02-01", "speaker": "Claude", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10613", "timestamp": "2026-02-01", "speaker": "Arjun", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10614", "timestamp": "2026-02-01", "speaker": "Copilot", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10615", "timestamp": "2026-02-01", "speaker": "Claude", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E0549", "timestamp": "2026-03-29", "speaker": "Rahul", "text": "MongoDB was not discussed in the billing migration review; this statement is scoped to that review.", "topics": ["negative"]}
+{"event_id": "E10617", "timestamp": "2026-02-01", "speaker": "Copilot", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10618", "timestamp": "2026-02-01", "speaker": "Arjun", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10619", "timestamp": "2026-02-01", "speaker": "Claude", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E10620", "timestamp": "2026-02-02", "speaker": "Arjun", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10621", "timestamp": "2026-02-02", "speaker": "Claude", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10622", "timestamp": "2026-02-02", "speaker": "Claude", "text": "Redis came up during a cache design discussion.", "topics": ["redis"]}
+{"event_id": "E10623", "timestamp": "2026-02-02", "speaker": "Arjun", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10624", "timestamp": "2026-02-02", "speaker": "Rahul", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E10625", "timestamp": "2026-02-02", "speaker": "Copilot", "text": "Someone suggested looking at cache scope later.", "topics": ["redis"]}
+{"event_id": "E10626", "timestamp": "2026-02-02", "speaker": "Rahul", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10627", "timestamp": "2026-02-02", "speaker": "Copilot", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10628", "timestamp": "2026-02-02", "speaker": "Rahul", "text": "A database migration was mentioned as possible future work.", "topics": ["database"]}
+{"event_id": "E10629", "timestamp": "2026-02-02", "speaker": "Copilot", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E10630", "timestamp": "2026-02-02", "speaker": "Copilot", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10631", "timestamp": "2026-02-02", "speaker": "Arjun", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10632", "timestamp": "2026-02-02", "speaker": "Copilot", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10633", "timestamp": "2026-02-02", "speaker": "Rahul", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10634", "timestamp": "2026-02-02", "speaker": "Arjun", "text": "Redis was mentioned while reviewing unrelated performance notes.", "topics": ["redis"]}
+{"event_id": "E10635", "timestamp": "2026-02-02", "speaker": "Rahul", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10636", "timestamp": "2026-02-02", "speaker": "Copilot", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E10637", "timestamp": "2026-02-02", "speaker": "Copilot", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E10638", "timestamp": "2026-02-02", "speaker": "Claude", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10639", "timestamp": "2026-02-02", "speaker": "Arjun", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10640", "timestamp": "2026-02-03", "speaker": "Copilot", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10641", "timestamp": "2026-02-03", "speaker": "Arjun", "text": "Redis came up during a cache design discussion.", "topics": ["redis"]}
+{"event_id": "E10642", "timestamp": "2026-02-03", "speaker": "Claude", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10643", "timestamp": "2026-02-03", "speaker": "Rahul", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E0623", "timestamp": "2026-04-03", "speaker": "Rahul", "text": "We switched invoice exports to asynchronous jobs after the timeout.", "topics": ["invoice"]}
+{"event_id": "E10645", "timestamp": "2026-02-03", "speaker": "Copilot", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10646", "timestamp": "2026-02-03", "speaker": "Arjun", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E10647", "timestamp": "2026-02-03", "speaker": "Rahul", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10648", "timestamp": "2026-02-03", "speaker": "Rahul", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10649", "timestamp": "2026-02-03", "speaker": "Claude", "text": "Invoice export work was discussed in standup.", "topics": ["invoice"]}
+{"event_id": "E10650", "timestamp": "2026-02-03", "speaker": "Rahul", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10651", "timestamp": "2026-02-03", "speaker": "Copilot", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E10652", "timestamp": "2026-02-03", "speaker": "Copilot", "text": "The team checked test coverage.", "topics": ["testing"]}
+{"event_id": "E10653", "timestamp": "2026-02-03", "speaker": "Rahul", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10654", "timestamp": "2026-02-03", "speaker": "Claude", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E10655", "timestamp": "2026-02-03", "speaker": "Copilot", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10656", "timestamp": "2026-02-03", "speaker": "Rahul", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E10657", "timestamp": "2026-02-03", "speaker": "Claude", "text": "Invoice export work was discussed in standup.", "topics": ["invoice"]}
+{"event_id": "E10658", "timestamp": "2026-02-03", "speaker": "Copilot", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10659", "timestamp": "2026-02-03", "speaker": "Claude", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10660", "timestamp": "2026-02-04", "speaker": "Claude", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E10661", "timestamp": "2026-02-04", "speaker": "Arjun", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10662", "timestamp": "2026-02-04", "speaker": "Rahul", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E10663", "timestamp": "2026-02-04", "speaker": "Copilot", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E10664", "timestamp": "2026-02-04", "speaker": "Rahul", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10665", "timestamp": "2026-02-04", "speaker": "Arjun", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E10666", "timestamp": "2026-02-04", "speaker": "Copilot", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E10667", "timestamp": "2026-02-04", "speaker": "Claude", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E10668", "timestamp": "2026-02-04", "speaker": "Rahul", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10669", "timestamp": "2026-02-04", "speaker": "Arjun", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10670", "timestamp": "2026-02-04", "speaker": "Arjun", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10671", "timestamp": "2026-02-04", "speaker": "Rahul", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E10672", "timestamp": "2026-02-04", "speaker": "Copilot", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10673", "timestamp": "2026-02-04", "speaker": "Copilot", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10674", "timestamp": "2026-02-04", "speaker": "Copilot", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E0732", "timestamp": "2026-04-25", "speaker": "Rahul", "text": "We retried Redis with a narrower cache scope, but the latency improvement was negligible.", "topics": ["redis"]}
+{"event_id": "E10676", "timestamp": "2026-02-04", "speaker": "Claude", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E10677", "timestamp": "2026-02-04", "speaker": "Rahul", "text": "Redis came up during a cache design discussion.", "topics": ["redis"]}
+{"event_id": "E10678", "timestamp": "2026-02-04", "speaker": "Copilot", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10679", "timestamp": "2026-02-04", "speaker": "Claude", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10680", "timestamp": "2026-02-05", "speaker": "Arjun", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10681", "timestamp": "2026-02-05", "speaker": "Rahul", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E10682", "timestamp": "2026-02-05", "speaker": "Claude", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10683", "timestamp": "2026-02-05", "speaker": "Copilot", "text": "Invoice export work was discussed in standup.", "topics": ["invoice"]}
+{"event_id": "E10684", "timestamp": "2026-02-05", "speaker": "Claude", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10685", "timestamp": "2026-02-05", "speaker": "Rahul", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E10686", "timestamp": "2026-02-05", "speaker": "Rahul", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E10687", "timestamp": "2026-02-05", "speaker": "Copilot", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E10688", "timestamp": "2026-02-05", "speaker": "Arjun", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10689", "timestamp": "2026-02-05", "speaker": "Claude", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10690", "timestamp": "2026-02-05", "speaker": "Copilot", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E10691", "timestamp": "2026-02-05", "speaker": "Rahul", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10692", "timestamp": "2026-02-05", "speaker": "Rahul", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10693", "timestamp": "2026-02-05", "speaker": "Copilot", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10694", "timestamp": "2026-02-05", "speaker": "Arjun", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E10695", "timestamp": "2026-02-05", "speaker": "Claude", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10696", "timestamp": "2026-02-05", "speaker": "Rahul", "text": "The team checked test coverage.", "topics": ["testing"]}
+{"event_id": "E10697", "timestamp": "2026-02-05", "speaker": "Rahul", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10698", "timestamp": "2026-02-05", "speaker": "Rahul", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10699", "timestamp": "2026-02-05", "speaker": "Rahul", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10700", "timestamp": "2026-02-06", "speaker": "Claude", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10701", "timestamp": "2026-02-06", "speaker": "Rahul", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E10702", "timestamp": "2026-02-06", "speaker": "Copilot", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10703", "timestamp": "2026-02-06", "speaker": "Rahul", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10704", "timestamp": "2026-02-06", "speaker": "Copilot", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E10705", "timestamp": "2026-02-06", "speaker": "Copilot", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E10706", "timestamp": "2026-02-06", "speaker": "Arjun", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10707", "timestamp": "2026-02-06", "speaker": "Rahul", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10708", "timestamp": "2026-02-06", "speaker": "Arjun", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10709", "timestamp": "2026-02-06", "speaker": "Rahul", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E10710", "timestamp": "2026-02-06", "speaker": "Claude", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10711", "timestamp": "2026-02-06", "speaker": "Arjun", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E10712", "timestamp": "2026-02-06", "speaker": "Copilot", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E10713", "timestamp": "2026-02-06", "speaker": "Claude", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10714", "timestamp": "2026-02-06", "speaker": "Rahul", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10715", "timestamp": "2026-02-06", "speaker": "Copilot", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E10716", "timestamp": "2026-02-06", "speaker": "Claude", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E0803", "timestamp": "2026-05-02", "speaker": "Copilot", "text": "I later read the billing migration notes and preserved the failed DynamoDB attempt and decision history.", "topics": ["provenance"]}
+{"event_id": "E10718", "timestamp": "2026-02-06", "speaker": "Rahul", "text": "Someone suggested looking at cache scope later.", "topics": ["redis"]}
+{"event_id": "E10719", "timestamp": "2026-02-06", "speaker": "Copilot", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10720", "timestamp": "2026-02-07", "speaker": "Claude", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E10721", "timestamp": "2026-02-07", "speaker": "Rahul", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E10722", "timestamp": "2026-02-07", "speaker": "Rahul", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E10723", "timestamp": "2026-02-07", "speaker": "Copilot", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E10724", "timestamp": "2026-02-07", "speaker": "Arjun", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E10725", "timestamp": "2026-02-07", "speaker": "Rahul", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E10726", "timestamp": "2026-02-07", "speaker": "Copilot", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10727", "timestamp": "2026-02-07", "speaker": "Rahul", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10728", "timestamp": "2026-02-07", "speaker": "Claude", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E10729", "timestamp": "2026-02-07", "speaker": "Arjun", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E10730", "timestamp": "2026-02-07", "speaker": "Arjun", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10731", "timestamp": "2026-02-07", "speaker": "Rahul", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10732", "timestamp": "2026-02-07", "speaker": "Claude", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10733", "timestamp": "2026-02-07", "speaker": "Arjun", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E10734", "timestamp": "2026-02-07", "speaker": "Claude", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E10735", "timestamp": "2026-02-07", "speaker": "Arjun", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E10736", "timestamp": "2026-02-07", "speaker": "Claude", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10737", "timestamp": "2026-02-07", "speaker": "Copilot", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E10738", "timestamp": "2026-02-07", "speaker": "Rahul", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10739", "timestamp": "2026-02-07", "speaker": "Copilot", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E0888", "timestamp": "2026-05-20", "speaker": "Rahul", "text": "Webhooks were temporarily disabled because duplicate deliveries caused reconciliation errors.", "topics": ["webhook"]}
+{"event_id": "E10741", "timestamp": "2026-02-08", "speaker": "Rahul", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10742", "timestamp": "2026-02-08", "speaker": "Rahul", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E10743", "timestamp": "2026-02-08", "speaker": "Copilot", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E10744", "timestamp": "2026-02-08", "speaker": "Arjun", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E10745", "timestamp": "2026-02-08", "speaker": "Copilot", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E10746", "timestamp": "2026-02-08", "speaker": "Rahul", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E10747", "timestamp": "2026-02-08", "speaker": "Arjun", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E10748", "timestamp": "2026-02-08", "speaker": "Arjun", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10749", "timestamp": "2026-02-08", "speaker": "Copilot", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E10750", "timestamp": "2026-02-08", "speaker": "Claude", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E10751", "timestamp": "2026-02-08", "speaker": "Claude", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10752", "timestamp": "2026-02-08", "speaker": "Copilot", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E10753", "timestamp": "2026-02-08", "speaker": "Arjun", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10754", "timestamp": "2026-02-08", "speaker": "Copilot", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10755", "timestamp": "2026-02-08", "speaker": "Copilot", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E10756", "timestamp": "2026-02-08", "speaker": "Copilot", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10757", "timestamp": "2026-02-08", "speaker": "Arjun", "text": "Someone suggested looking at cache scope later.", "topics": ["redis"]}
+{"event_id": "E10758", "timestamp": "2026-02-08", "speaker": "Arjun", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10759", "timestamp": "2026-02-08", "speaker": "Claude", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E1034", "timestamp": "2026-06-01", "speaker": "Rahul", "text": "The first full customer invoice batch completed successfully through asynchronous export.", "topics": ["invoice"]}
+{"event_id": "E10761", "timestamp": "2026-02-09", "speaker": "Arjun", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10762", "timestamp": "2026-02-09", "speaker": "Arjun", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E10763", "timestamp": "2026-02-09", "speaker": "Claude", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10764", "timestamp": "2026-02-09", "speaker": "Rahul", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E10765", "timestamp": "2026-02-09", "speaker": "Claude", "text": "Invoice export work was discussed in standup.", "topics": ["invoice"]}
+{"event_id": "E10766", "timestamp": "2026-02-09", "speaker": "Copilot", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10767", "timestamp": "2026-02-09", "speaker": "Arjun", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10768", "timestamp": "2026-02-09", "speaker": "Claude", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E10769", "timestamp": "2026-02-09", "speaker": "Arjun", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E10770", "timestamp": "2026-02-09", "speaker": "Rahul", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10771", "timestamp": "2026-02-09", "speaker": "Claude", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E10772", "timestamp": "2026-02-09", "speaker": "Arjun", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E10773", "timestamp": "2026-02-09", "speaker": "Claude", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E10774", "timestamp": "2026-02-09", "speaker": "Claude", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10775", "timestamp": "2026-02-09", "speaker": "Claude", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10776", "timestamp": "2026-02-09", "speaker": "Claude", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10777", "timestamp": "2026-02-09", "speaker": "Arjun", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10778", "timestamp": "2026-02-09", "speaker": "Copilot", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10779", "timestamp": "2026-02-09", "speaker": "Copilot", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E10780", "timestamp": "2026-02-10", "speaker": "Copilot", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10781", "timestamp": "2026-02-10", "speaker": "Arjun", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E10782", "timestamp": "2026-02-10", "speaker": "Rahul", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E10783", "timestamp": "2026-02-10", "speaker": "Rahul", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10784", "timestamp": "2026-02-10", "speaker": "Rahul", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10785", "timestamp": "2026-02-10", "speaker": "Rahul", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10786", "timestamp": "2026-02-10", "speaker": "Claude", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10787", "timestamp": "2026-02-10", "speaker": "Claude", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E10788", "timestamp": "2026-02-10", "speaker": "Copilot", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E10789", "timestamp": "2026-02-10", "speaker": "Rahul", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10790", "timestamp": "2026-02-10", "speaker": "Arjun", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10791", "timestamp": "2026-02-10", "speaker": "Copilot", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E10792", "timestamp": "2026-02-10", "speaker": "Rahul", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10793", "timestamp": "2026-02-10", "speaker": "Copilot", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10794", "timestamp": "2026-02-10", "speaker": "Arjun", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E10795", "timestamp": "2026-02-10", "speaker": "Arjun", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10796", "timestamp": "2026-02-10", "speaker": "Rahul", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E10797", "timestamp": "2026-02-10", "speaker": "Rahul", "text": "A database migration was mentioned as possible future work.", "topics": ["database"]}
+{"event_id": "E10798", "timestamp": "2026-02-10", "speaker": "Copilot", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10799", "timestamp": "2026-02-10", "speaker": "Claude", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10800", "timestamp": "2026-02-11", "speaker": "Arjun", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10801", "timestamp": "2026-02-11", "speaker": "Claude", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10802", "timestamp": "2026-02-11", "speaker": "Claude", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10803", "timestamp": "2026-02-11", "speaker": "Claude", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10804", "timestamp": "2026-02-11", "speaker": "Claude", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10805", "timestamp": "2026-02-11", "speaker": "Copilot", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10806", "timestamp": "2026-02-11", "speaker": "Claude", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10807", "timestamp": "2026-02-11", "speaker": "Copilot", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E10808", "timestamp": "2026-02-11", "speaker": "Rahul", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E10809", "timestamp": "2026-02-11", "speaker": "Rahul", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E10810", "timestamp": "2026-02-11", "speaker": "Claude", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10811", "timestamp": "2026-02-11", "speaker": "Rahul", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E10812", "timestamp": "2026-02-11", "speaker": "Copilot", "text": "The team checked test coverage.", "topics": ["testing"]}
+{"event_id": "E10813", "timestamp": "2026-02-11", "speaker": "Claude", "text": "Someone suggested looking at cache scope later.", "topics": ["redis"]}
+{"event_id": "E10814", "timestamp": "2026-02-11", "speaker": "Rahul", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E10815", "timestamp": "2026-02-11", "speaker": "Copilot", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10816", "timestamp": "2026-02-11", "speaker": "Rahul", "text": "A database migration was mentioned as possible future work.", "topics": ["database"]}
+{"event_id": "E10817", "timestamp": "2026-02-11", "speaker": "Rahul", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10818", "timestamp": "2026-02-11", "speaker": "Rahul", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E10819", "timestamp": "2026-02-11", "speaker": "Claude", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E10820", "timestamp": "2026-02-12", "speaker": "Claude", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E10821", "timestamp": "2026-02-12", "speaker": "Rahul", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E10822", "timestamp": "2026-02-12", "speaker": "Claude", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10823", "timestamp": "2026-02-12", "speaker": "Rahul", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10824", "timestamp": "2026-02-12", "speaker": "Arjun", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E10825", "timestamp": "2026-02-12", "speaker": "Arjun", "text": "Redis was mentioned while reviewing unrelated performance notes.", "topics": ["redis"]}
+{"event_id": "E10826", "timestamp": "2026-02-12", "speaker": "Claude", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E10827", "timestamp": "2026-02-12", "speaker": "Rahul", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E10828", "timestamp": "2026-02-12", "speaker": "Claude", "text": "A database migration was mentioned as possible future work.", "topics": ["database"]}
+{"event_id": "E10829", "timestamp": "2026-02-12", "speaker": "Copilot", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10830", "timestamp": "2026-02-12", "speaker": "Rahul", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10831", "timestamp": "2026-02-12", "speaker": "Claude", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E10832", "timestamp": "2026-02-12", "speaker": "Claude", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10833", "timestamp": "2026-02-12", "speaker": "Copilot", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10834", "timestamp": "2026-02-12", "speaker": "Claude", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E10835", "timestamp": "2026-02-12", "speaker": "Copilot", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10836", "timestamp": "2026-02-12", "speaker": "Rahul", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10837", "timestamp": "2026-02-12", "speaker": "Copilot", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10838", "timestamp": "2026-02-12", "speaker": "Claude", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E10839", "timestamp": "2026-02-12", "speaker": "Copilot", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10840", "timestamp": "2026-02-13", "speaker": "Claude", "text": "The team checked test coverage.", "topics": ["testing"]}
+{"event_id": "E10841", "timestamp": "2026-02-13", "speaker": "Claude", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10842", "timestamp": "2026-02-13", "speaker": "Copilot", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10843", "timestamp": "2026-02-13", "speaker": "Rahul", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E10844", "timestamp": "2026-02-13", "speaker": "Claude", "text": "The team checked test coverage.", "topics": ["testing"]}
+{"event_id": "E10845", "timestamp": "2026-02-13", "speaker": "Copilot", "text": "Invoice export work was discussed in standup.", "topics": ["invoice"]}
+{"event_id": "E10846", "timestamp": "2026-02-13", "speaker": "Rahul", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10847", "timestamp": "2026-02-13", "speaker": "Claude", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10848", "timestamp": "2026-02-13", "speaker": "Rahul", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10849", "timestamp": "2026-02-13", "speaker": "Rahul", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10850", "timestamp": "2026-02-13", "speaker": "Rahul", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E10851", "timestamp": "2026-02-13", "speaker": "Copilot", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10852", "timestamp": "2026-02-13", "speaker": "Rahul", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10853", "timestamp": "2026-02-13", "speaker": "Rahul", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E10854", "timestamp": "2026-02-13", "speaker": "Arjun", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10855", "timestamp": "2026-02-13", "speaker": "Arjun", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E10856", "timestamp": "2026-02-13", "speaker": "Copilot", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10857", "timestamp": "2026-02-13", "speaker": "Arjun", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10858", "timestamp": "2026-02-13", "speaker": "Copilot", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E10859", "timestamp": "2026-02-13", "speaker": "Arjun", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10860", "timestamp": "2026-02-14", "speaker": "Rahul", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E10861", "timestamp": "2026-02-14", "speaker": "Copilot", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E10862", "timestamp": "2026-02-14", "speaker": "Rahul", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E10863", "timestamp": "2026-02-14", "speaker": "Rahul", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10864", "timestamp": "2026-02-14", "speaker": "Claude", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E10865", "timestamp": "2026-02-14", "speaker": "Copilot", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10866", "timestamp": "2026-02-14", "speaker": "Claude", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E10867", "timestamp": "2026-02-14", "speaker": "Claude", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10868", "timestamp": "2026-02-14", "speaker": "Copilot", "text": "Redis came up during a cache design discussion.", "topics": ["redis"]}
+{"event_id": "E10869", "timestamp": "2026-02-14", "speaker": "Copilot", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10870", "timestamp": "2026-02-14", "speaker": "Arjun", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E10871", "timestamp": "2026-02-14", "speaker": "Claude", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E10872", "timestamp": "2026-02-14", "speaker": "Copilot", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10873", "timestamp": "2026-02-14", "speaker": "Copilot", "text": "Someone suggested looking at cache scope later.", "topics": ["redis"]}
+{"event_id": "E10874", "timestamp": "2026-02-14", "speaker": "Rahul", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10875", "timestamp": "2026-02-14", "speaker": "Rahul", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10876", "timestamp": "2026-02-14", "speaker": "Rahul", "text": "A database migration was mentioned as possible future work.", "topics": ["database"]}
+{"event_id": "E10877", "timestamp": "2026-02-14", "speaker": "Claude", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10878", "timestamp": "2026-02-14", "speaker": "Copilot", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E10879", "timestamp": "2026-02-14", "speaker": "Rahul", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10880", "timestamp": "2026-02-15", "speaker": "Rahul", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10881", "timestamp": "2026-02-15", "speaker": "Rahul", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E10882", "timestamp": "2026-02-15", "speaker": "Arjun", "text": "Redis came up during a cache design discussion.", "topics": ["redis"]}
+{"event_id": "E10883", "timestamp": "2026-02-15", "speaker": "Claude", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10884", "timestamp": "2026-02-15", "speaker": "Copilot", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10885", "timestamp": "2026-02-15", "speaker": "Rahul", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E10886", "timestamp": "2026-02-15", "speaker": "Claude", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E10887", "timestamp": "2026-02-15", "speaker": "Copilot", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10888", "timestamp": "2026-02-15", "speaker": "Claude", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10889", "timestamp": "2026-02-15", "speaker": "Rahul", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10890", "timestamp": "2026-02-15", "speaker": "Copilot", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E10891", "timestamp": "2026-02-15", "speaker": "Copilot", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10892", "timestamp": "2026-02-15", "speaker": "Rahul", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10893", "timestamp": "2026-02-15", "speaker": "Rahul", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E10894", "timestamp": "2026-02-15", "speaker": "Copilot", "text": "The team checked test coverage.", "topics": ["testing"]}
+{"event_id": "E10895", "timestamp": "2026-02-15", "speaker": "Arjun", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E10896", "timestamp": "2026-02-15", "speaker": "Claude", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E10897", "timestamp": "2026-02-15", "speaker": "Arjun", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10898", "timestamp": "2026-02-15", "speaker": "Rahul", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10899", "timestamp": "2026-02-15", "speaker": "Rahul", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10900", "timestamp": "2026-02-16", "speaker": "Copilot", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E10901", "timestamp": "2026-02-16", "speaker": "Copilot", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E10902", "timestamp": "2026-02-16", "speaker": "Rahul", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10903", "timestamp": "2026-02-16", "speaker": "Arjun", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10904", "timestamp": "2026-02-16", "speaker": "Claude", "text": "Redis was mentioned while reviewing unrelated performance notes.", "topics": ["redis"]}
+{"event_id": "E10905", "timestamp": "2026-02-16", "speaker": "Copilot", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10906", "timestamp": "2026-02-16", "speaker": "Claude", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E10907", "timestamp": "2026-02-16", "speaker": "Claude", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E10908", "timestamp": "2026-02-16", "speaker": "Rahul", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E10909", "timestamp": "2026-02-16", "speaker": "Claude", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10910", "timestamp": "2026-02-16", "speaker": "Copilot", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10911", "timestamp": "2026-02-16", "speaker": "Rahul", "text": "A database migration was mentioned as possible future work.", "topics": ["database"]}
+{"event_id": "E10912", "timestamp": "2026-02-16", "speaker": "Rahul", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10913", "timestamp": "2026-02-16", "speaker": "Arjun", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E10914", "timestamp": "2026-02-16", "speaker": "Copilot", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E10915", "timestamp": "2026-02-16", "speaker": "Arjun", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10916", "timestamp": "2026-02-16", "speaker": "Arjun", "text": "A database migration was mentioned as possible future work.", "topics": ["database"]}
+{"event_id": "E10917", "timestamp": "2026-02-16", "speaker": "Arjun", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10918", "timestamp": "2026-02-16", "speaker": "Copilot", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10919", "timestamp": "2026-02-16", "speaker": "Copilot", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10920", "timestamp": "2026-02-17", "speaker": "Rahul", "text": "Someone suggested looking at cache scope later.", "topics": ["redis"]}
+{"event_id": "E10921", "timestamp": "2026-02-17", "speaker": "Rahul", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E10922", "timestamp": "2026-02-17", "speaker": "Claude", "text": "The team checked test coverage.", "topics": ["testing"]}
+{"event_id": "E10923", "timestamp": "2026-02-17", "speaker": "Rahul", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E10924", "timestamp": "2026-02-17", "speaker": "Arjun", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E10925", "timestamp": "2026-02-17", "speaker": "Rahul", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10926", "timestamp": "2026-02-17", "speaker": "Rahul", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10927", "timestamp": "2026-02-17", "speaker": "Copilot", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E10928", "timestamp": "2026-02-17", "speaker": "Arjun", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10929", "timestamp": "2026-02-17", "speaker": "Rahul", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E10930", "timestamp": "2026-02-17", "speaker": "Claude", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E10931", "timestamp": "2026-02-17", "speaker": "Copilot", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10932", "timestamp": "2026-02-17", "speaker": "Claude", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E10933", "timestamp": "2026-02-17", "speaker": "Copilot", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E10934", "timestamp": "2026-02-17", "speaker": "Arjun", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E10935", "timestamp": "2026-02-17", "speaker": "Claude", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E10936", "timestamp": "2026-02-17", "speaker": "Rahul", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E10937", "timestamp": "2026-02-17", "speaker": "Copilot", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E10938", "timestamp": "2026-02-17", "speaker": "Arjun", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E10939", "timestamp": "2026-02-17", "speaker": "Copilot", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E10940", "timestamp": "2026-02-18", "speaker": "Rahul", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10941", "timestamp": "2026-02-18", "speaker": "Arjun", "text": "A database migration was mentioned as possible future work.", "topics": ["database"]}
+{"event_id": "E10942", "timestamp": "2026-02-18", "speaker": "Rahul", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10943", "timestamp": "2026-02-18", "speaker": "Claude", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E10944", "timestamp": "2026-02-18", "speaker": "Arjun", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E10945", "timestamp": "2026-02-18", "speaker": "Rahul", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E10946", "timestamp": "2026-02-18", "speaker": "Rahul", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10947", "timestamp": "2026-02-18", "speaker": "Rahul", "text": "Invoice export work was discussed in standup.", "topics": ["invoice"]}
+{"event_id": "E10948", "timestamp": "2026-02-18", "speaker": "Arjun", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E10949", "timestamp": "2026-02-18", "speaker": "Copilot", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E10950", "timestamp": "2026-02-18", "speaker": "Rahul", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E10951", "timestamp": "2026-02-18", "speaker": "Arjun", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E10952", "timestamp": "2026-02-18", "speaker": "Rahul", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E10953", "timestamp": "2026-02-18", "speaker": "Arjun", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10954", "timestamp": "2026-02-18", "speaker": "Rahul", "text": "Someone suggested looking at cache scope later.", "topics": ["redis"]}
+{"event_id": "E10955", "timestamp": "2026-02-18", "speaker": "Arjun", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10956", "timestamp": "2026-02-18", "speaker": "Claude", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E10957", "timestamp": "2026-02-18", "speaker": "Claude", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E10958", "timestamp": "2026-02-18", "speaker": "Claude", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E10959", "timestamp": "2026-02-18", "speaker": "Copilot", "text": "Invoice export work was discussed in standup.", "topics": ["invoice"]}
+{"event_id": "E10960", "timestamp": "2026-02-19", "speaker": "Rahul", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E10961", "timestamp": "2026-02-19", "speaker": "Rahul", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E10962", "timestamp": "2026-02-19", "speaker": "Copilot", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E10963", "timestamp": "2026-02-19", "speaker": "Claude", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E10964", "timestamp": "2026-02-19", "speaker": "Claude", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10965", "timestamp": "2026-02-19", "speaker": "Rahul", "text": "Invoice export work was discussed in standup.", "topics": ["invoice"]}
+{"event_id": "E10966", "timestamp": "2026-02-19", "speaker": "Claude", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10967", "timestamp": "2026-02-19", "speaker": "Arjun", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E10968", "timestamp": "2026-02-19", "speaker": "Rahul", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E10969", "timestamp": "2026-02-19", "speaker": "Claude", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E1103", "timestamp": "2026-06-10", "speaker": "Rahul", "text": "A MongoDB proposal appeared in a different project, not the billing migration review.", "topics": ["negative"]}
+{"event_id": "E10971", "timestamp": "2026-02-19", "speaker": "Arjun", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10972", "timestamp": "2026-02-19", "speaker": "Arjun", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E10973", "timestamp": "2026-02-19", "speaker": "Arjun", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E10974", "timestamp": "2026-02-19", "speaker": "Arjun", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E10975", "timestamp": "2026-02-19", "speaker": "Copilot", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E10976", "timestamp": "2026-02-19", "speaker": "Rahul", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E10977", "timestamp": "2026-02-19", "speaker": "Claude", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10978", "timestamp": "2026-02-19", "speaker": "Rahul", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E10979", "timestamp": "2026-02-19", "speaker": "Rahul", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10980", "timestamp": "2026-02-20", "speaker": "Claude", "text": "Invoice export work was discussed in standup.", "topics": ["invoice"]}
+{"event_id": "E10981", "timestamp": "2026-02-20", "speaker": "Claude", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10982", "timestamp": "2026-02-20", "speaker": "Copilot", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E10983", "timestamp": "2026-02-20", "speaker": "Copilot", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E10984", "timestamp": "2026-02-20", "speaker": "Arjun", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E10985", "timestamp": "2026-02-20", "speaker": "Copilot", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E10986", "timestamp": "2026-02-20", "speaker": "Copilot", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E10987", "timestamp": "2026-02-20", "speaker": "Claude", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E10988", "timestamp": "2026-02-20", "speaker": "Copilot", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E10989", "timestamp": "2026-02-20", "speaker": "Arjun", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E10990", "timestamp": "2026-02-20", "speaker": "Arjun", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10991", "timestamp": "2026-02-20", "speaker": "Arjun", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E10992", "timestamp": "2026-02-20", "speaker": "Claude", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E10993", "timestamp": "2026-02-20", "speaker": "Copilot", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E10994", "timestamp": "2026-02-20", "speaker": "Copilot", "text": "Redis came up during a cache design discussion.", "topics": ["redis"]}
+{"event_id": "E10995", "timestamp": "2026-02-20", "speaker": "Claude", "text": "Redis came up during a cache design discussion.", "topics": ["redis"]}
+{"event_id": "E10996", "timestamp": "2026-02-20", "speaker": "Rahul", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E10997", "timestamp": "2026-02-20", "speaker": "Rahul", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E10998", "timestamp": "2026-02-20", "speaker": "Claude", "text": "Redis came up during a cache design discussion.", "topics": ["redis"]}
+{"event_id": "E10999", "timestamp": "2026-02-20", "speaker": "Copilot", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E11000", "timestamp": "2026-02-21", "speaker": "Claude", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E11001", "timestamp": "2026-02-21", "speaker": "Claude", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E11002", "timestamp": "2026-02-21", "speaker": "Arjun", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E11003", "timestamp": "2026-02-21", "speaker": "Arjun", "text": "Redis was mentioned while reviewing unrelated performance notes.", "topics": ["redis"]}
+{"event_id": "E11004", "timestamp": "2026-02-21", "speaker": "Claude", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E11005", "timestamp": "2026-02-21", "speaker": "Claude", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E11006", "timestamp": "2026-02-21", "speaker": "Rahul", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E11007", "timestamp": "2026-02-21", "speaker": "Arjun", "text": "Invoice export work was discussed in standup.", "topics": ["invoice"]}
+{"event_id": "E11008", "timestamp": "2026-02-21", "speaker": "Copilot", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E11009", "timestamp": "2026-02-21", "speaker": "Rahul", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E11010", "timestamp": "2026-02-21", "speaker": "Arjun", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E11011", "timestamp": "2026-02-21", "speaker": "Copilot", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E11012", "timestamp": "2026-02-21", "speaker": "Arjun", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E11013", "timestamp": "2026-02-21", "speaker": "Arjun", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E11014", "timestamp": "2026-02-21", "speaker": "Rahul", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E11015", "timestamp": "2026-02-21", "speaker": "Claude", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E11016", "timestamp": "2026-02-21", "speaker": "Arjun", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E11017", "timestamp": "2026-02-21", "speaker": "Copilot", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E11018", "timestamp": "2026-02-21", "speaker": "Arjun", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E11019", "timestamp": "2026-02-21", "speaker": "Copilot", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E11020", "timestamp": "2026-02-22", "speaker": "Copilot", "text": "The team checked test coverage.", "topics": ["testing"]}
+{"event_id": "E11021", "timestamp": "2026-02-22", "speaker": "Copilot", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E11022", "timestamp": "2026-02-22", "speaker": "Claude", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E11023", "timestamp": "2026-02-22", "speaker": "Arjun", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E11024", "timestamp": "2026-02-22", "speaker": "Arjun", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E11025", "timestamp": "2026-02-22", "speaker": "Copilot", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E11026", "timestamp": "2026-02-22", "speaker": "Copilot", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E11027", "timestamp": "2026-02-22", "speaker": "Copilot", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E11028", "timestamp": "2026-02-22", "speaker": "Rahul", "text": "Redis came up during a cache design discussion.", "topics": ["redis"]}
+{"event_id": "E11029", "timestamp": "2026-02-22", "speaker": "Copilot", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E11030", "timestamp": "2026-02-22", "speaker": "Claude", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E11031", "timestamp": "2026-02-22", "speaker": "Copilot", "text": "Redis was mentioned while reviewing unrelated performance notes.", "topics": ["redis"]}
+{"event_id": "E11032", "timestamp": "2026-02-22", "speaker": "Arjun", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E11033", "timestamp": "2026-02-22", "speaker": "Rahul", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E11034", "timestamp": "2026-02-22", "speaker": "Copilot", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E11035", "timestamp": "2026-02-22", "speaker": "Copilot", "text": "The team checked test coverage.", "topics": ["testing"]}
+{"event_id": "E11036", "timestamp": "2026-02-22", "speaker": "Arjun", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E11037", "timestamp": "2026-02-22", "speaker": "Rahul", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E11038", "timestamp": "2026-02-22", "speaker": "Rahul", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E11039", "timestamp": "2026-02-22", "speaker": "Arjun", "text": "Someone proposed checking webhook behavior later.", "topics": ["webhook"]}
+{"event_id": "E11040", "timestamp": "2026-02-23", "speaker": "Copilot", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E11041", "timestamp": "2026-02-23", "speaker": "Rahul", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E11042", "timestamp": "2026-02-23", "speaker": "Claude", "text": "The team checked test coverage.", "topics": ["testing"]}
+{"event_id": "E11043", "timestamp": "2026-02-23", "speaker": "Copilot", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E11044", "timestamp": "2026-02-23", "speaker": "Copilot", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E11045", "timestamp": "2026-02-23", "speaker": "Arjun", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E1191", "timestamp": "2026-06-03", "speaker": "Rahul", "text": "Webhooks were re-enabled after idempotency handling was deployed.", "topics": ["webhook"]}
+{"event_id": "E11047", "timestamp": "2026-02-23", "speaker": "Claude", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E11048", "timestamp": "2026-02-23", "speaker": "Claude", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E11049", "timestamp": "2026-02-23", "speaker": "Rahul", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E11050", "timestamp": "2026-02-23", "speaker": "Rahul", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E11051", "timestamp": "2026-02-23", "speaker": "Arjun", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E11052", "timestamp": "2026-02-23", "speaker": "Claude", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E11053", "timestamp": "2026-02-23", "speaker": "Claude", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E11054", "timestamp": "2026-02-23", "speaker": "Claude", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E11055", "timestamp": "2026-02-23", "speaker": "Copilot", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E11056", "timestamp": "2026-02-23", "speaker": "Copilot", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E11057", "timestamp": "2026-02-23", "speaker": "Arjun", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E11058", "timestamp": "2026-02-23", "speaker": "Arjun", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E11059", "timestamp": "2026-02-23", "speaker": "Copilot", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E11060", "timestamp": "2026-02-24", "speaker": "Arjun", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E11061", "timestamp": "2026-02-24", "speaker": "Rahul", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E11062", "timestamp": "2026-02-24", "speaker": "Arjun", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E11063", "timestamp": "2026-02-24", "speaker": "Arjun", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E11064", "timestamp": "2026-02-24", "speaker": "Copilot", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E1200", "timestamp": "2026-06-05", "speaker": "Rahul", "text": "The billing database decision remains PostgreSQL; no later reversal was made.", "topics": ["billing"]}
+{"event_id": "E11066", "timestamp": "2026-02-24", "speaker": "Claude", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E11067", "timestamp": "2026-02-24", "speaker": "Rahul", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E11068", "timestamp": "2026-02-24", "speaker": "Rahul", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E11069", "timestamp": "2026-02-24", "speaker": "Arjun", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E11070", "timestamp": "2026-02-24", "speaker": "Claude", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E11071", "timestamp": "2026-02-24", "speaker": "Arjun", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E11072", "timestamp": "2026-02-24", "speaker": "Claude", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E11073", "timestamp": "2026-02-24", "speaker": "Rahul", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E11074", "timestamp": "2026-02-24", "speaker": "Rahul", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E11075", "timestamp": "2026-02-24", "speaker": "Rahul", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E11076", "timestamp": "2026-02-24", "speaker": "Rahul", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E11077", "timestamp": "2026-02-24", "speaker": "Copilot", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E11078", "timestamp": "2026-02-24", "speaker": "Claude", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E11079", "timestamp": "2026-02-24", "speaker": "Rahul", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E11080", "timestamp": "2026-02-25", "speaker": "Copilot", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E11081", "timestamp": "2026-02-25", "speaker": "Claude", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E11082", "timestamp": "2026-02-25", "speaker": "Claude", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E11083", "timestamp": "2026-02-25", "speaker": "Arjun", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E11084", "timestamp": "2026-02-25", "speaker": "Rahul", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E11085", "timestamp": "2026-02-25", "speaker": "Copilot", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E11086", "timestamp": "2026-02-25", "speaker": "Arjun", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E11087", "timestamp": "2026-02-25", "speaker": "Rahul", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E11088", "timestamp": "2026-02-25", "speaker": "Rahul", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E11089", "timestamp": "2026-02-25", "speaker": "Arjun", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E11090", "timestamp": "2026-02-25", "speaker": "Rahul", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E11091", "timestamp": "2026-02-25", "speaker": "Arjun", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E11092", "timestamp": "2026-02-25", "speaker": "Copilot", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E11093", "timestamp": "2026-02-25", "speaker": "Copilot", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E11094", "timestamp": "2026-02-25", "speaker": "Rahul", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E11095", "timestamp": "2026-02-25", "speaker": "Rahul", "text": "The team checked test coverage.", "topics": ["testing"]}
+{"event_id": "E11096", "timestamp": "2026-02-25", "speaker": "Copilot", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E11097", "timestamp": "2026-02-25", "speaker": "Claude", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E11098", "timestamp": "2026-02-25", "speaker": "Arjun", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E11099", "timestamp": "2026-02-25", "speaker": "Copilot", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E11100", "timestamp": "2026-02-26", "speaker": "Claude", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E11101", "timestamp": "2026-02-26", "speaker": "Claude", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E11102", "timestamp": "2026-02-26", "speaker": "Arjun", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E11103", "timestamp": "2026-02-26", "speaker": "Copilot", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E11104", "timestamp": "2026-02-26", "speaker": "Rahul", "text": "Redis came up during a cache design discussion.", "topics": ["redis"]}
+{"event_id": "E11105", "timestamp": "2026-02-26", "speaker": "Rahul", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E11106", "timestamp": "2026-02-26", "speaker": "Arjun", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E11107", "timestamp": "2026-02-26", "speaker": "Rahul", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E11108", "timestamp": "2026-02-26", "speaker": "Rahul", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E11109", "timestamp": "2026-02-26", "speaker": "Arjun", "text": "Monitoring dashboards were reviewed.", "topics": ["observability"]}
+{"event_id": "E11110", "timestamp": "2026-02-26", "speaker": "Copilot", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E11111", "timestamp": "2026-02-26", "speaker": "Claude", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E11112", "timestamp": "2026-02-26", "speaker": "Arjun", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E11113", "timestamp": "2026-02-26", "speaker": "Arjun", "text": "A database migration was mentioned as possible future work.", "topics": ["database"]}
+{"event_id": "E11114", "timestamp": "2026-02-26", "speaker": "Rahul", "text": "The team looked at logs and traces.", "topics": ["observability"]}
+{"event_id": "E11115", "timestamp": "2026-02-26", "speaker": "Claude", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E11116", "timestamp": "2026-02-26", "speaker": "Copilot", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E11117", "timestamp": "2026-02-26", "speaker": "Claude", "text": "Database options were discussed without a decision.", "topics": ["database"]}
+{"event_id": "E11118", "timestamp": "2026-02-26", "speaker": "Claude", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E11119", "timestamp": "2026-02-26", "speaker": "Arjun", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E11120", "timestamp": "2026-02-27", "speaker": "Claude", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E11121", "timestamp": "2026-02-27", "speaker": "Claude", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E11122", "timestamp": "2026-02-27", "speaker": "Arjun", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E11123", "timestamp": "2026-02-27", "speaker": "Claude", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E11124", "timestamp": "2026-02-27", "speaker": "Rahul", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E11125", "timestamp": "2026-02-27", "speaker": "Rahul", "text": "Someone asked whether billing work was on track.", "topics": ["billing"]}
+{"event_id": "E11126", "timestamp": "2026-02-27", "speaker": "Copilot", "text": "The provider integration came up in a routine design review.", "topics": ["webhook"]}
+{"event_id": "E11127", "timestamp": "2026-02-27", "speaker": "Copilot", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E11128", "timestamp": "2026-02-27", "speaker": "Claude", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E11129", "timestamp": "2026-02-27", "speaker": "Copilot", "text": "Webhook migration progress was discussed without changing the current plan.", "topics": ["webhook"]}
+{"event_id": "E11130", "timestamp": "2026-02-27", "speaker": "Rahul", "text": "A billing database migration was discussed as a possibility.", "topics": ["billing"]}
+{"event_id": "E11131", "timestamp": "2026-02-27", "speaker": "Claude", "text": "Someone suggested looking at cache scope later.", "topics": ["redis"]}
+{"event_id": "E11132", "timestamp": "2026-02-27", "speaker": "Claude", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E1201", "timestamp": "2026-06-06", "speaker": "Rahul", "text": "We will document the webhook state history in the migration notes.", "topics": ["webhook"]}
+{"event_id": "E11134", "timestamp": "2026-02-27", "speaker": "Arjun", "text": "Redis was mentioned while reviewing unrelated performance notes.", "topics": ["redis"]}
+{"event_id": "E11135", "timestamp": "2026-02-27", "speaker": "Copilot", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E11136", "timestamp": "2026-02-27", "speaker": "Copilot", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E11137", "timestamp": "2026-02-27", "speaker": "Claude", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E11138", "timestamp": "2026-02-27", "speaker": "Copilot", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E11139", "timestamp": "2026-02-27", "speaker": "Rahul", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E11140", "timestamp": "2026-02-28", "speaker": "Rahul", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E11141", "timestamp": "2026-02-28", "speaker": "Rahul", "text": "A possible deployment change was mentioned for later review.", "topics": ["deployment"]}
+{"event_id": "E11142", "timestamp": "2026-02-28", "speaker": "Claude", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E11143", "timestamp": "2026-02-28", "speaker": "Rahul", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E11144", "timestamp": "2026-02-28", "speaker": "Arjun", "text": "Invoice export work was discussed in standup.", "topics": ["invoice"]}
+{"event_id": "E11145", "timestamp": "2026-02-28", "speaker": "Rahul", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E11146", "timestamp": "2026-02-28", "speaker": "Claude", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E11147", "timestamp": "2026-02-28", "speaker": "Claude", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E11148", "timestamp": "2026-02-28", "speaker": "Copilot", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E11149", "timestamp": "2026-02-28", "speaker": "Claude", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E11150", "timestamp": "2026-02-28", "speaker": "Rahul", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E11151", "timestamp": "2026-02-28", "speaker": "Rahul", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E11152", "timestamp": "2026-02-28", "speaker": "Copilot", "text": "The team reviewed cache metrics without making a new decision.", "topics": ["redis"]}
+{"event_id": "E11153", "timestamp": "2026-02-28", "speaker": "Rahul", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E11154", "timestamp": "2026-02-28", "speaker": "Rahul", "text": "The team checked test coverage.", "topics": ["testing"]}
+{"event_id": "E11155", "timestamp": "2026-02-28", "speaker": "Arjun", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E11156", "timestamp": "2026-02-28", "speaker": "Copilot", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E11157", "timestamp": "2026-02-28", "speaker": "Claude", "text": "Test output was mentioned during review.", "topics": ["testing"]}
+{"event_id": "E11158", "timestamp": "2026-02-28", "speaker": "Copilot", "text": "Observability improvements were mentioned as future work.", "topics": ["observability"]}
+{"event_id": "E11159", "timestamp": "2026-02-28", "speaker": "Rahul", "text": "Webhook compatibility was discussed with no new decision.", "topics": ["webhook"]}
+{"event_id": "E11160", "timestamp": "2026-02-29", "speaker": "Arjun", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E11161", "timestamp": "2026-02-29", "speaker": "Rahul", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E11162", "timestamp": "2026-02-29", "speaker": "Copilot", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E11163", "timestamp": "2026-02-29", "speaker": "Claude", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E11164", "timestamp": "2026-02-29", "speaker": "Rahul", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E11165", "timestamp": "2026-02-29", "speaker": "Claude", "text": "The billing prototype was mentioned during a planning chat.", "topics": ["billing"]}
+{"event_id": "E11166", "timestamp": "2026-02-29", "speaker": "Rahul", "text": "No monitoring decision was made in this discussion.", "topics": ["observability"]}
+{"event_id": "E11167", "timestamp": "2026-02-29", "speaker": "Arjun", "text": "Someone asked about invoice export progress.", "topics": ["invoice"]}
+{"event_id": "E11168", "timestamp": "2026-02-29", "speaker": "Rahul", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E11169", "timestamp": "2026-02-29", "speaker": "Claude", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E11170", "timestamp": "2026-02-29", "speaker": "Rahul", "text": "The team discussed export monitoring.", "topics": ["invoice"]}
+{"event_id": "E11171", "timestamp": "2026-02-29", "speaker": "Copilot", "text": "Someone suggested another test.", "topics": ["testing"]}
+{"event_id": "E11172", "timestamp": "2026-02-29", "speaker": "Arjun", "text": "Redis came up during a cache design discussion.", "topics": ["redis"]}
+{"event_id": "E11173", "timestamp": "2026-02-29", "speaker": "Arjun", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E11174", "timestamp": "2026-02-29", "speaker": "Claude", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E11175", "timestamp": "2026-02-29", "speaker": "Arjun", "text": "Deployment notes were reviewed.", "topics": ["deployment"]}
+{"event_id": "E11176", "timestamp": "2026-02-29", "speaker": "Copilot", "text": "We discussed billing database options again and compared tradeoffs.", "topics": ["billing"]}
+{"event_id": "E11177", "timestamp": "2026-02-29", "speaker": "Claude", "text": "Redis came up during a cache design discussion.", "topics": ["redis"]}
+{"event_id": "E11178", "timestamp": "2026-02-29", "speaker": "Copilot", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E11179", "timestamp": "2026-02-29", "speaker": "Claude", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E11180", "timestamp": "2026-02-30", "speaker": "Rahul", "text": "We discussed whether Redis could help latency in a hypothetical case.", "topics": ["redis"]}
+{"event_id": "E11181", "timestamp": "2026-02-30", "speaker": "Arjun", "text": "The team reviewed database documentation.", "topics": ["database"]}
+{"event_id": "E11182", "timestamp": "2026-02-30", "speaker": "Arjun", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E11183", "timestamp": "2026-02-30", "speaker": "Claude", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E11184", "timestamp": "2026-02-30", "speaker": "Rahul", "text": "Database reliability was discussed during planning.", "topics": ["database"]}
+{"event_id": "E11185", "timestamp": "2026-02-30", "speaker": "Claude", "text": "Integration tests were reviewed.", "topics": ["testing"]}
+{"event_id": "E11186", "timestamp": "2026-02-30", "speaker": "Claude", "text": "Someone compared database tradeoffs.", "topics": ["database"]}
+{"event_id": "E11187", "timestamp": "2026-02-30", "speaker": "Copilot", "text": "Redis came up during a cache design discussion.", "topics": ["redis"]}
+{"event_id": "E11188", "timestamp": "2026-02-30", "speaker": "Rahul", "text": "Invoice export work was discussed in standup.", "topics": ["invoice"]}
+{"event_id": "E11189", "timestamp": "2026-02-30", "speaker": "Copilot", "text": "Deployment timing was discussed without a committed window.", "topics": ["deployment"]}
+{"event_id": "E11190", "timestamp": "2026-02-30", "speaker": "Arjun", "text": "A test run was discussed without a new conclusion.", "topics": ["testing"]}
+{"event_id": "E11191", "timestamp": "2026-02-30", "speaker": "Rahul", "text": "Someone asked whether the next deployment needed attention.", "topics": ["deployment"]}
+{"event_id": "E11192", "timestamp": "2026-02-30", "speaker": "Claude", "text": "Latency metrics were discussed without a new action.", "topics": ["observability"]}
+{"event_id": "E11193", "timestamp": "2026-02-30", "speaker": "Rahul", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E11194", "timestamp": "2026-02-30", "speaker": "Copilot", "text": "We reviewed an old billing note without changing the decision.", "topics": ["billing"]}
+{"event_id": "E11195", "timestamp": "2026-02-30", "speaker": "Claude", "text": "We reviewed webhook logs and delivery metrics.", "topics": ["webhook"]}
+{"event_id": "E11196", "timestamp": "2026-02-30", "speaker": "Claude", "text": "We reviewed an invoice export log without changing the process.", "topics": ["invoice"]}
+{"event_id": "E11197", "timestamp": "2026-02-30", "speaker": "Copilot", "text": "The invoice exporter was mentioned as a possible optimization target.", "topics": ["invoice"]}
+{"event_id": "E11198", "timestamp": "2026-02-30", "speaker": "Claude", "text": "The team checked deployment status.", "topics": ["deployment"]}
+{"event_id": "E11199", "timestamp": "2026-02-30", "speaker": "Rahul", "text": "Someone suggested another test.", "topics": ["testing"]}

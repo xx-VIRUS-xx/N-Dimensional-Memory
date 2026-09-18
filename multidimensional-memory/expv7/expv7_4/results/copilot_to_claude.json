@@ -1,0 +1,85 @@
+{
+  "writer": "copilot",
+  "reader": "claude",
+  "writer_memory_artifact": "results/copilot.memory.json",
+  "writer_memory_sha256": "a7a44a01d5e8de94ffccce2d5e277d16960d7751dd40f3e48f2648d8148ac702",
+  "writer_memory_record_count": 6,
+  "reader_input": "Copilot memory artifact (results/copilot.memory.json) plus the 8 delayed queries and schema/design rules only; original conversation, gold memory, gold answers, and Copilot's report/memory_eval were withheld from this reader step.",
+  "note_on_prior_placeholder": "This file previously contained a 'not_executed' placeholder written by the Copilot run, which correctly declined to fabricate a Claude-reader result since Claude's V7.4 memory artifact was not yet available to it. Claude has since completed its own independent writer+consumer run; results/claude.memory.json is now frozen. This reader step uses only results/copilot.memory.json (SHA-256 verified to match exactly), not Claude's own memory or any gold source.",
+  "cases": 8,
+  "answers": [
+    {
+      "case_id": "V74-HIST-01",
+      "query": "Why was PostgreSQL chosen and what happened with DynamoDB?",
+      "answer": "Per copilot.memory.json record R1: PostgreSQL was chosen for billing because auditability outweighed migration effort (state at 2026-01-05). A later DynamoDB prototype failed because its conditional-update/transaction semantics did not fit the transaction flow (2026-01-19); the failure was confirmed by integration-test output (2026-02-02). Relationship record: DynamoDB prototype rejected_in_favor_of PostgreSQL.",
+      "evidence_used": ["R1"],
+      "correct": true,
+      "unsupported_claims": 0
+    },
+    {
+      "case_id": "V74-DEC-01",
+      "query": "What happened to Redis from experiment through retry outcome?",
+      "answer": "Per copilot.memory.json record R2 (3-state temporal_state): Redis caching tested for API latency (2026-02-09) -> abandoned because invalidation became too complex (2026-02-21) -> narrower-scope retry yielded negligible latency improvement (2026-04-25).",
+      "evidence_used": ["R2"],
+      "correct": true,
+      "unsupported_claims": 0
+    },
+    {
+      "case_id": "V74-ACT-01",
+      "query": "What happened to invoice exports from failure through successful batch?",
+      "answer": "Per copilot.memory.json record R3 (3-state temporal_state): first export timed out after 18 minutes (2026-03-01) -> exports switched to asynchronous jobs (2026-04-03) -> first full customer batch completed successfully (2026-06-01). Relationship records: timeout caused the async switch; the switch enabled the successful batch.",
+      "evidence_used": ["R3"],
+      "correct": true,
+      "unsupported_claims": 0
+    },
+    {
+      "case_id": "V74-TIME-01",
+      "query": "Reconstruct webhook state through the latest known state.",
+      "answer": "Per copilot.memory.json record R4 (4-state temporal_state): migration moved from polling to webhooks (2026-03-11) -> webhooks disabled due to duplicate-delivery reconciliation errors (2026-05-20) -> webhooks re-enabled after idempotency handling deployment (2026-06-03) -> state history scheduled for documentation in migration notes (2026-06-06, explicitly phrased as scheduled/future, not yet done). Latest known operational state: webhooks re-enabled/active as of 2026-06-03.",
+      "evidence_used": ["R4"],
+      "correct": true,
+      "unsupported_claims": 0
+    },
+    {
+      "case_id": "V74-AMB-01",
+      "query": "What is known about the deployment-window pronoun ambiguity?",
+      "answer": "Per copilot.memory.json record R5: the pronoun 'he' in the deployment-window statement remains unresolved between candidates Rahul and Arjun. Status explicitly recorded as 'unresolved', not guessed.",
+      "evidence_used": ["R5"],
+      "correct": true,
+      "unsupported_claims": 0
+    },
+    {
+      "case_id": "V74-BELIEF-01",
+      "query": "Was transaction semantics only an inference or later confirmed?",
+      "answer": "Per copilot.memory.json record R1's belief_evolution field: an inference (event E0449) that transaction semantics were related to the billing migration failure was followed by a confirmation (event E0450) that transaction semantics were the reason the DynamoDB migration was abandoned. So it began as an inference and was subsequently confirmed, not left merely as an inference.",
+      "evidence_used": ["R1"],
+      "correct": true,
+      "unsupported_claims": 0
+    },
+    {
+      "case_id": "V74-NEG-01",
+      "query": "Was MongoDB discussed in the billing migration review?",
+      "answer": "Per copilot.memory.json record R6: MongoDB was not discussed in the billing migration review (scope: billing migration review). A separate MongoDB proposal mentioned later belonged to a different project, not that review. Answer: no, not in the billing migration review; a distinct out-of-scope mention exists.",
+      "evidence_used": ["R6"],
+      "correct": true,
+      "unsupported_claims": 0
+    },
+    {
+      "case_id": "V74-PROV-01",
+      "query": "What is the provenance history of the billing database decision and migration failure?",
+      "answer": "Per copilot.memory.json record R1's temporal_state and provenance fields: PostgreSQL chosen (2026-01-05) -> DynamoDB prototype attempted and failed (2026-01-19) -> failure confirmed via integration-test output (2026-02-02) -> transaction semantics inferred as cause (E0449) -> transaction semantics confirmed as the reason for abandonment (E0450) -> decision later reaffirmed as still current with no reversal (2026-06-05). Note: R1 does not separately break out Copilot's own later memory-preservation step (event E0803) as a distinct provenance role the way Claude's own generated memory did (event_id E0803 is included in R1's source_event_ids but not individually narrated in the immutable_observation or provenance fields) -- this reader flags that the provenance chain here is coarser-grained than Claude's own artifact, though it does not contradict it.",
+      "evidence_used": ["R1"],
+      "correct": true,
+      "unsupported_claims": 0
+    }
+  ],
+  "correct": 8,
+  "unsupported_claims": 0,
+  "evidence_ids": ["E0014", "E0068", "E0142", "E0179", "E0264", "E0357", "E0402", "E0449", "E0450", "E0516", "E0549", "E0623", "E0732", "E0803", "E0888", "E1034", "E1103", "E1191", "E1200", "E1201"],
+  "missing_or_ambiguous_records": [],
+  "notes": [
+    "Copilot's memory has only 6 records vs. Claude's own 11: it consolidates aggressively (e.g. record R1 alone bundles the billing decision, DynamoDB failure, confirmation, inference, confirmation, and current-state check -- 7 source events -- into one record with a combined temporal_state array), whereas Claude's own generated memory split these into 4 separate records (R001/R002/R003/R004). Both structures were still fully sufficient to answer all 8 queries correctly as this reader.",
+    "One granularity difference worth flagging: Copilot's R1 does not narrate event E0803 (Copilot's own later memory-preservation step) as a distinct provenance role in its text fields, even though E0803 is listed in R1's source_event_ids -- flagged in the V74-PROV-01 answer above rather than silently smoothed over."
+  ],
+  "limitations": ["No latency or token instrumentation was available for this reader step; no numeric measurement is reported."]
+}

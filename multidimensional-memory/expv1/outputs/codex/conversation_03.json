@@ -1,0 +1,207 @@
+{
+  "conversation_id": "conversation_03",
+  "points": [
+    {
+      "point_id": "c03_p001",
+      "surface": "I",
+      "dimensions": ["subject", "actor"],
+      "interpretations": ["user self-reference"],
+      "source_sentences": [
+        "User: I want to learn guitar.",
+        "User: I bought a guitar yesterday.",
+        "User: I practiced chords for thirty minutes.",
+        "User: I want to practice again tomorrow."
+      ],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "c03_p002",
+      "surface": "want",
+      "dimensions": ["verb", "intent", "state"],
+      "interpretations": ["stated desire or intention"],
+      "source_sentences": [
+        "User: I want to learn guitar.",
+        "User: I want to practice again tomorrow."
+      ],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "c03_p003",
+      "surface": "learn guitar",
+      "dimensions": ["verb", "action", "object", "intent"],
+      "interpretations": ["desired guitar-learning activity"],
+      "source_sentences": ["User: I want to learn guitar."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "c03_p004",
+      "surface": "guitar",
+      "dimensions": ["noun", "object"],
+      "interpretations": ["instrument to learn and practice with"],
+      "source_sentences": [
+        "User: I want to learn guitar.",
+        "User: I bought a guitar yesterday.",
+        "Assistant: That gives you an instrument to practice with."
+      ],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "c03_p005",
+      "surface": "We",
+      "dimensions": ["subject", "actor"],
+      "interpretations": ["assistant-inclusive pronoun for starting instruction or practice"],
+      "source_sentences": ["Assistant: We can start with basic chords."],
+      "confidence": 0.88
+    },
+    {
+      "point_id": "c03_p006",
+      "surface": "start",
+      "dimensions": ["verb", "action"],
+      "interpretations": ["assistant-proposed beginning point"],
+      "source_sentences": ["Assistant: We can start with basic chords."],
+      "confidence": 0.93
+    },
+    {
+      "point_id": "c03_p007",
+      "surface": "basic chords",
+      "dimensions": ["noun", "object"],
+      "interpretations": ["initial guitar-learning material proposed by assistant"],
+      "source_sentences": ["Assistant: We can start with basic chords."],
+      "confidence": 0.95
+    },
+    {
+      "point_id": "c03_p008",
+      "surface": "bought",
+      "dimensions": ["verb", "action"],
+      "interpretations": ["acquisition action"],
+      "source_sentences": ["User: I bought a guitar yesterday."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "c03_p009",
+      "surface": "yesterday",
+      "dimensions": ["time"],
+      "interpretations": ["time of buying a guitar"],
+      "source_sentences": ["User: I bought a guitar yesterday."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "c03_p010",
+      "surface": "instrument",
+      "dimensions": ["noun", "object"],
+      "interpretations": ["assistant characterization of the guitar"],
+      "source_sentences": ["Assistant: That gives you an instrument to practice with."],
+      "confidence": 0.92
+    },
+    {
+      "point_id": "c03_p011",
+      "surface": "practice",
+      "dimensions": ["verb", "action", "intent"],
+      "interpretations": ["activity involving the instrument or chords"],
+      "source_sentences": [
+        "Assistant: That gives you an instrument to practice with.",
+        "User: I want to practice again tomorrow."
+      ],
+      "confidence": 0.96
+    },
+    {
+      "point_id": "c03_p012",
+      "surface": "practiced chords",
+      "dimensions": ["verb", "action", "object"],
+      "interpretations": ["completed chord-practice action"],
+      "source_sentences": ["User: I practiced chords for thirty minutes."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "c03_p013",
+      "surface": "chords",
+      "dimensions": ["noun", "object"],
+      "interpretations": ["object of practice"],
+      "source_sentences": [
+        "Assistant: We can start with basic chords.",
+        "User: I practiced chords for thirty minutes."
+      ],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "c03_p014",
+      "surface": "for thirty minutes",
+      "dimensions": ["time"],
+      "interpretations": ["duration of chord practice"],
+      "source_sentences": ["User: I practiced chords for thirty minutes."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "c03_p015",
+      "surface": "Consistent practice",
+      "dimensions": ["noun", "action", "state"],
+      "interpretations": ["assistant characterization of practice as beneficial if consistent"],
+      "source_sentences": ["Assistant: Consistent practice should help."],
+      "confidence": 0.9
+    },
+    {
+      "point_id": "c03_p016",
+      "surface": "practice again tomorrow",
+      "dimensions": ["verb", "action", "intent", "time"],
+      "interpretations": ["stated intention to repeat practice tomorrow"],
+      "source_sentences": ["User: I want to practice again tomorrow."],
+      "confidence": 1.0
+    },
+    {
+      "point_id": "c03_p017",
+      "surface": "tomorrow",
+      "dimensions": ["time"],
+      "interpretations": ["future time for intended practice"],
+      "source_sentences": ["User: I want to practice again tomorrow."],
+      "confidence": 1.0
+    }
+  ],
+  "temporal_states": [
+    {
+      "state_id": "c03_ts001",
+      "surface": "I want to learn guitar.",
+      "subject": "I",
+      "state": "want to learn guitar",
+      "time": null,
+      "source_sentences": ["User: I want to learn guitar."],
+      "confidence": 1.0
+    },
+    {
+      "state_id": "c03_ts002",
+      "surface": "I bought a guitar yesterday.",
+      "subject": "I",
+      "state": "bought a guitar",
+      "time": "yesterday",
+      "source_sentences": ["User: I bought a guitar yesterday."],
+      "confidence": 1.0
+    },
+    {
+      "state_id": "c03_ts003",
+      "surface": "I practiced chords for thirty minutes.",
+      "subject": "I",
+      "state": "practiced chords",
+      "time": "for thirty minutes",
+      "source_sentences": ["User: I practiced chords for thirty minutes."],
+      "confidence": 1.0
+    },
+    {
+      "state_id": "c03_ts004",
+      "surface": "I want to practice again tomorrow.",
+      "subject": "I",
+      "state": "want to practice again",
+      "time": "tomorrow",
+      "source_sentences": ["User: I want to practice again tomorrow."],
+      "confidence": 1.0
+    }
+  ],
+  "ambiguities": [],
+  "explicit_facts": [
+    "User: I want to learn guitar.",
+    "Assistant: We can start with basic chords.",
+    "User: I bought a guitar yesterday.",
+    "Assistant: That gives you an instrument to practice with.",
+    "User: I practiced chords for thirty minutes.",
+    "Assistant: Consistent practice should help.",
+    "User: I want to practice again tomorrow."
+  ]
+}

@@ -1,0 +1,130 @@
+[
+  {
+    "agent_id": "claude",
+    "condition": "RAG",
+    "case_id": "V74-HIST-01",
+    "query_category": "historical_recall",
+    "answer": "Per retrieved evidence: PostgreSQL was chosen for billing because auditability mattered more than migration effort. DynamoDB was tried for the billing prototype but the migration failed because conditional-update semantics did not match the transaction flow. The retrieved chunks (verified against each chunk's event_ids list) do not contain E0142 (the integration-test confirmation event), so the confirmation step cannot be answered from retrieved evidence -- reported as a gap rather than asserted.",
+    "correctness": {"factual": true, "temporal": null, "relationship": true, "ambiguity": null, "conflict": null, "negative_knowledge": null, "provenance": false},
+    "unsupported_claims": 0,
+    "evidence_used": ["E0014", "E0068"],
+    "retrieved_chunks": [
+      {"chunk_id": "C0000", "score": 1.0}, {"chunk_id": "C0001", "score": 1.0}, {"chunk_id": "C0004", "score": 1.0},
+      {"chunk_id": "C0009", "score": 1.0}, {"chunk_id": "C0010", "score": 1.0}, {"chunk_id": "C0015", "score": 1.0}
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "RAG",
+    "case_id": "V74-DEC-01",
+    "query_category": "decision_continuity",
+    "answer": "Per retrieved evidence: Redis caching was tested to reduce API latency, then abandoned because it increased cache invalidation complexity. The retrieved chunks do not contain E0732 (the narrower-scope retry event), so the retry outcome cannot be answered from retrieved evidence -- reported as a gap.",
+    "correctness": {"factual": false, "temporal": false, "relationship": null, "ambiguity": null, "conflict": null, "negative_knowledge": null, "provenance": null},
+    "unsupported_claims": 0,
+    "evidence_used": ["E0179", "E0264"],
+    "retrieved_chunks": [
+      {"chunk_id": "C0034", "score": 1.0}, {"chunk_id": "C0025", "score": 0.666667}, {"chunk_id": "C0030", "score": 0.666667},
+      {"chunk_id": "C0035", "score": 0.666667}, {"chunk_id": "C0051", "score": 0.666667}, {"chunk_id": "C0053", "score": 0.666667}
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "RAG",
+    "case_id": "V74-ACT-01",
+    "query_category": "action_outcome",
+    "answer": "Per retrieved evidence: invoice exports were switched to asynchronous jobs after a timeout, and the first full customer batch completed successfully via asynchronous export. The retrieved chunks do not contain E0357 (the original timeout event), so the initial failure that motivated the switch cannot be confirmed from retrieved evidence alone -- reported as a gap, though the switch and success are both supported.",
+    "correctness": {"factual": false, "temporal": false, "relationship": null, "ambiguity": null, "conflict": null, "negative_knowledge": null, "provenance": null},
+    "unsupported_claims": 0,
+    "evidence_used": ["E0623", "E1034"],
+    "retrieved_chunks": [
+      {"chunk_id": "C0025", "score": 0.948683}, {"chunk_id": "C0035", "score": 0.948683}, {"chunk_id": "C0053", "score": 0.948683},
+      {"chunk_id": "C0063", "score": 0.948683}, {"chunk_id": "C0034", "score": 0.632456}, {"chunk_id": "C0051", "score": 0.632456}
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "RAG",
+    "case_id": "V74-TIME-01",
+    "query_category": "temporal_state",
+    "answer": "None of the three required events (E0402, E0888, E1191) appear in any of the six retrieved chunks, verified directly against each chunk's event_ids list. The retrieved evidence contains no webhook-state information at all for this query. This is reported as a complete retrieval failure for this case, not as any claim about webhook state.",
+    "correctness": {"factual": false, "temporal": false, "relationship": null, "ambiguity": null, "conflict": null, "negative_knowledge": null, "provenance": null},
+    "unsupported_claims": 0,
+    "evidence_used": [],
+    "retrieved_chunks": [
+      {"chunk_id": "C0063", "score": 1.133893}, {"chunk_id": "C0094", "score": 1.133893}, {"chunk_id": "C0000", "score": 0.755929},
+      {"chunk_id": "C0001", "score": 0.755929}, {"chunk_id": "C0002", "score": 0.755929}, {"chunk_id": "C0004", "score": 0.755929}
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "RAG",
+    "case_id": "V74-AMB-01",
+    "query_category": "ambiguity",
+    "answer": "Per retrieved evidence: the pronoun 'he' in the deployment-window discussion remains unresolved between Rahul and Arjun.",
+    "correctness": {"factual": null, "temporal": null, "relationship": null, "ambiguity": true, "conflict": null, "negative_knowledge": null, "provenance": null},
+    "unsupported_claims": 0,
+    "evidence_used": ["E0516"],
+    "retrieved_chunks": [
+      {"chunk_id": "C0001", "score": 1.333333}, {"chunk_id": "C0010", "score": 1.333333}, {"chunk_id": "C0013", "score": 1.333333},
+      {"chunk_id": "C0023", "score": 1.333333}, {"chunk_id": "C0044", "score": 1.333333}, {"chunk_id": "C0049", "score": 1.333333}
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "RAG",
+    "case_id": "V74-BELIEF-01",
+    "query_category": "belief_evolution",
+    "answer": "Per retrieved evidence: transaction semantics were confirmed as the reason the DynamoDB migration was abandoned (E0450). The retrieved chunks do not contain E0449 (Claude's original inference), so retrieved evidence alone cannot establish that this began as an inference before being confirmed -- it can only confirm the confirmation happened, not the earlier inference step. Reported as a partial answer with a gap on the inference side.",
+    "correctness": {"factual": false, "temporal": null, "relationship": null, "ambiguity": null, "conflict": false, "negative_knowledge": null, "provenance": null},
+    "unsupported_claims": 0,
+    "evidence_used": ["E0450"],
+    "retrieved_chunks": [
+      {"chunk_id": "C0037", "score": 1.666667}, {"chunk_id": "C0015", "score": 1.333333}, {"chunk_id": "C0002", "score": 1.0},
+      {"chunk_id": "C0003", "score": 1.0}, {"chunk_id": "C0004", "score": 1.0}, {"chunk_id": "C0021", "score": 1.0}
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "RAG",
+    "case_id": "V74-NEG-01",
+    "query_category": "negative_knowledge",
+    "answer": "Per retrieved evidence, which is sufficient for this case: MongoDB was not discussed in the billing migration review (explicitly scoped). A separate MongoDB proposal occurred in a different, unrelated project.",
+    "correctness": {"factual": true, "temporal": null, "relationship": null, "ambiguity": null, "conflict": null, "negative_knowledge": true, "provenance": null},
+    "unsupported_claims": 0,
+    "evidence_used": ["E0549", "E1103"],
+    "retrieved_chunks": [
+      {"chunk_id": "C0051", "score": 2.828427}, {"chunk_id": "C0080", "score": 2.828427}, {"chunk_id": "C0002", "score": 2.474874},
+      {"chunk_id": "C0007", "score": 2.474874}, {"chunk_id": "C0017", "score": 2.474874}, {"chunk_id": "C0021", "score": 2.474874}
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "RAG",
+    "case_id": "V74-PROV-01",
+    "query_category": "provenance",
+    "answer": "Per retrieved evidence: Claude inferred transaction semantics were related to the billing migration failure (E0449), and Copilot later read the billing migration notes and preserved the failed DynamoDB attempt and decision history (E0803). The retrieved chunks do not contain E0068, E0142, or E0450 (the original failure report, its test-review confirmation, or Rahul's confirmation of the transaction-semantics cause), so the full provenance history cannot be reconstructed from retrieved evidence alone -- reported as a substantially incomplete answer, not the full chain.",
+    "correctness": {"factual": null, "temporal": null, "relationship": null, "ambiguity": null, "conflict": null, "negative_knowledge": null, "provenance": false},
+    "unsupported_claims": 0,
+    "evidence_used": ["E0449", "E0803"],
+    "retrieved_chunks": [
+      {"chunk_id": "C0035", "score": 2.020726}, {"chunk_id": "C0051", "score": 2.020726}, {"chunk_id": "C0059", "score": 2.020726},
+      {"chunk_id": "C0000", "score": 1.732051}, {"chunk_id": "C0006", "score": 1.732051}, {"chunk_id": "C0007", "score": 1.732051}
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  }
+]

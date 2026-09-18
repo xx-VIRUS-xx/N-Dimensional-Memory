@@ -1,0 +1,226 @@
+[
+  {
+    "agent_id": "claude",
+    "condition": "RAG",
+    "case_id": "V71-HIST-01",
+    "query_category": "historical_recall",
+    "answer": "PostgreSQL was chosen for the billing service because auditability mattered more than DynamoDB's lower migration effort. DynamoDB was tried for the billing prototype but the migration failed because conditional-update semantics did not match the existing transaction flow; the failure was confirmed after reviewing integration-test output.",
+    "correctness": {
+      "factual": true,
+      "temporal": null,
+      "relationship": true,
+      "ambiguity": null,
+      "conflict": null,
+      "negative_knowledge": null,
+      "provenance": true
+    },
+    "unsupported_claims": 0,
+    "evidence_used": ["E0005", "E0067", "E0141"],
+    "retrieved_chunks": [
+      {"chunk_id": "C0000", "score": 1.870829},
+      {"chunk_id": "C0005", "score": 1.603567},
+      {"chunk_id": "C0011", "score": 1.603567},
+      {"chunk_id": "C0037", "score": 1.603567},
+      {"chunk_id": "C0066", "score": 1.603567},
+      {"chunk_id": "C0091", "score": 1.336306}
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "RAG",
+    "case_id": "V71-DEC-01",
+    "query_category": "decision_continuity",
+    "answer": "Redis caching was tested to reduce API latency. It was abandoned because the experiment increased cache invalidation complexity. It was later retried with a narrower cache scope, but the latency improvement was negligible.",
+    "correctness": {
+      "factual": true,
+      "temporal": true,
+      "relationship": true,
+      "ambiguity": null,
+      "conflict": null,
+      "negative_knowledge": null,
+      "provenance": null
+    },
+    "unsupported_claims": 0,
+    "evidence_used": ["E0178", "E0263", "E0731"],
+    "retrieved_chunks": [
+      {"chunk_id": "C0021", "score": 1.206045},
+      {"chunk_id": "C0060", "score": 1.206045},
+      {"chunk_id": "C0014", "score": 0.904534},
+      {"chunk_id": "C0037", "score": 0.904534},
+      {"chunk_id": "C0011", "score": 0.603023},
+      {"chunk_id": "C0042", "score": 0.603023}
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "RAG",
+    "case_id": "V71-ACT-01",
+    "query_category": "action_outcome",
+    "answer": "The first invoice export attempt timed out after 18 minutes. Exports were then switched to asynchronous jobs. The first full customer batch subsequently completed successfully via the asynchronous approach.",
+    "correctness": {
+      "factual": true,
+      "temporal": true,
+      "relationship": null,
+      "ambiguity": null,
+      "conflict": null,
+      "negative_knowledge": null,
+      "provenance": null
+    },
+    "unsupported_claims": 0,
+    "evidence_used": ["E0356", "E0622", "E1033"],
+    "retrieved_chunks": [
+      {"chunk_id": "C0086", "score": 1.549193},
+      {"chunk_id": "C0066", "score": 1.290994},
+      {"chunk_id": "C0029", "score": 1.032796},
+      {"chunk_id": "C0011", "score": 0.774597},
+      {"chunk_id": "C0051", "score": 0.774597},
+      {"chunk_id": "C0060", "score": 0.774597}
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "RAG",
+    "case_id": "V71-TIME-01",
+    "query_category": "temporal_state",
+    "answer": "Based only on the evidence actually retrieved under this condition's deterministic policy, two states are supported: polling was used as a temporary compatibility path starting 2026-02-17, then the migration moved to webhooks on 2026-03-11. The retrieved chunks (C0033, C0000, C0005, C0011, C0019, C0037) do not contain any event after 2026-03-11 relevant to webhook state, so this retrieval cannot confirm or deny further changes -- it is insufficient to answer 'latest known state.' This is reported as a retrieval gap, not as a claim that webhooks are the final state.",
+    "correctness": {
+      "factual": false,
+      "temporal": false,
+      "relationship": null,
+      "ambiguity": null,
+      "conflict": null,
+      "negative_knowledge": null,
+      "provenance": null
+    },
+    "unsupported_claims": 0,
+    "evidence_used": ["E0233", "E0401"],
+    "retrieved_chunks": [
+      {"chunk_id": "C0033", "score": 1.264911},
+      {"chunk_id": "C0000", "score": 0.948683},
+      {"chunk_id": "C0005", "score": 0.948683},
+      {"chunk_id": "C0011", "score": 0.948683},
+      {"chunk_id": "C0019", "score": 0.948683},
+      {"chunk_id": "C0037", "score": 0.948683}
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "RAG",
+    "case_id": "V71-AMB-01",
+    "query_category": "ambiguity",
+    "answer": "Per retrieved evidence: the conversation does not establish whether \"he\" refers to Rahul or Arjun; no speaker-reference resolution was recorded. The reference remains unresolved.",
+    "correctness": {
+      "factual": null,
+      "temporal": null,
+      "relationship": null,
+      "ambiguity": true,
+      "conflict": null,
+      "negative_knowledge": null,
+      "provenance": null
+    },
+    "unsupported_claims": 0,
+    "evidence_used": ["E0312", "E0515"],
+    "retrieved_chunks": [
+      {"chunk_id": "C0025", "score": 1.581139},
+      {"chunk_id": "C0042", "score": 1.264911},
+      {"chunk_id": "C0091", "score": 1.264911},
+      {"chunk_id": "C0014", "score": 0.948683},
+      {"chunk_id": "C0037", "score": 0.948683},
+      {"chunk_id": "C0001", "score": 0.632456}
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "RAG",
+    "case_id": "V71-CONFLICT-01",
+    "query_category": "conflict",
+    "answer": "Per retrieved evidence: Claude inferred the migration failure was related to transaction semantics; Rahul later explicitly confirmed transaction semantics as the reason. The belief moved from inferred to confirmed, with both steps present in retrieved evidence.",
+    "correctness": {
+      "factual": null,
+      "temporal": null,
+      "relationship": null,
+      "ambiguity": null,
+      "conflict": true,
+      "negative_knowledge": null,
+      "provenance": true
+    },
+    "unsupported_claims": 0,
+    "evidence_used": ["E0448", "E0449"],
+    "retrieved_chunks": [
+      {"chunk_id": "C0037", "score": 1.549193},
+      {"chunk_id": "C0011", "score": 1.290994},
+      {"chunk_id": "C0066", "score": 1.032796},
+      {"chunk_id": "C0000", "score": 0.774597},
+      {"chunk_id": "C0005", "score": 0.774597},
+      {"chunk_id": "C0021", "score": 0.774597}
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "RAG",
+    "case_id": "V71-NEG-01",
+    "query_category": "negative_knowledge",
+    "answer": "Per retrieved evidence, which is sufficient for this case: MongoDB was not discussed in the billing migration review. The only MongoDB mention retrieved belongs to a different project, not the billing migration review.",
+    "correctness": {
+      "factual": true,
+      "temporal": null,
+      "relationship": null,
+      "ambiguity": null,
+      "conflict": null,
+      "negative_knowledge": true,
+      "provenance": null
+    },
+    "unsupported_claims": 0,
+    "evidence_used": ["E0548", "E1102"],
+    "retrieved_chunks": [
+      {"chunk_id": "C0091", "score": 2.713602},
+      {"chunk_id": "C0045", "score": 2.110579},
+      {"chunk_id": "C0019", "score": 1.809068},
+      {"chunk_id": "C0037", "score": 1.507557},
+      {"chunk_id": "C0011", "score": 1.206045},
+      {"chunk_id": "C0060", "score": 1.206045}
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "RAG",
+    "case_id": "V71-PROV-01",
+    "query_category": "provenance",
+    "answer": "Per retrieved evidence: Rahul originally observed the failed DynamoDB migration. Claude confirmed it after reviewing integration-test output. Claude later inferred the failure was related to transaction semantics, and Rahul explicitly confirmed transaction semantics as the reason. Copilot later read the billing migration notes and preserved the PostgreSQL decision and failed DynamoDB attempt -- a later memory-read step.",
+    "correctness": {
+      "factual": null,
+      "temporal": null,
+      "relationship": null,
+      "ambiguity": null,
+      "conflict": null,
+      "negative_knowledge": null,
+      "provenance": true
+    },
+    "unsupported_claims": 0,
+    "evidence_used": ["E0067", "E0141", "E0448", "E0449", "E0802"],
+    "retrieved_chunks": [
+      {"chunk_id": "C0037", "score": 1.75},
+      {"chunk_id": "C0000", "score": 1.25},
+      {"chunk_id": "C0011", "score": 1.25},
+      {"chunk_id": "C0005", "score": 1.0},
+      {"chunk_id": "C0045", "score": 1.0},
+      {"chunk_id": "C0066", "score": 1.0}
+    ],
+    "input_tokens": null,
+    "latency_ms": null
+  }
+]

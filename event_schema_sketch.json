@@ -1,0 +1,78 @@
+{
+  "event": {
+    "id": "evt_2026_0917_003",
+    "type": "decision",
+    "summary": "User chose Postgres over DynamoDB for the memory store",
+    "dimensions": {
+      "subject": "user:pm10182000",
+      "verb": "chose",
+      "object": "Postgres",
+      "alternatives_considered": ["DynamoDB"],
+      "time_expressed": "2026-09-17",
+      "place": null,
+      "feeling": null
+    },
+    "epistemic_status": "human_approved",
+    "valid_time": { "from": "2026-09-17T14:02:00Z", "to": null },
+    "ingestion_time": "2026-09-17T14:02:03Z",
+    "provenance": [
+      { "source_type": "conversation_turn", "source_id": "turn_44821", "extractor": "small_model_v1" }
+    ],
+    "confidence": 0.97,
+    "superseded_by": null,
+    "episode_id": "ep_memory_store_selection"
+  },
+
+  "relationship": {
+    "id": "rel_00019",
+    "type": "supersedes",
+    "from_event": "evt_2026_0910_001",
+    "to_event": "evt_2026_0917_003",
+    "epistemic_status": "inferred",
+    "confidence": 0.81,
+    "provenance": [
+      { "source_type": "agent_observation", "extractor": "algorithmic_v1", "rule": "same_slot_reassignment" }
+    ]
+  },
+
+  "action": {
+    "id": "act_00007",
+    "event_ref": "evt_2026_0917_003",
+    "verb": "created",
+    "target": "docker-compose.postgres.yml",
+    "actor": "agent",
+    "timestamp": "2026-09-17T14:10:00Z",
+    "outcome_ref": "out_00007"
+  },
+
+  "outcome": {
+    "id": "out_00007",
+    "action_ref": "act_00007",
+    "result": "succeeded",
+    "observed_at": "2026-09-17T14:12:30Z",
+    "provenance": [
+      { "source_type": "system_state", "source_id": "ci_run_881" }
+    ]
+  },
+
+  "ambiguity": {
+    "id": "amb_00003",
+    "question": "Does 'the memory store' in turn_44821 refer to the PoC prototype DB or the production system mentioned in an earlier unrelated conversation?",
+    "candidate_referents": ["evt_2026_0817_poc_db", "evt_2026_0605_prod_db"],
+    "status": "unresolved",
+    "raised_at": "2026-09-17T14:02:03Z",
+    "resolves_via": ["user_clarification", "stronger_context_signal"]
+  },
+
+  "notes": {
+    "epistemic_status_enum": ["observed", "inferred", "human_approved", "contradicted", "superseded", "unresolved"],
+    "why_bitemporal": "valid_time = when true in the world; ingestion_time = when the system learned it. Lets you answer 'what did we believe on date X' separately from 'what was actually true on date X' (matches Zep/TOKI bitemporal convention rather than inventing new terms).",
+    "why_events_never_deleted": "contradicted/superseded events stay in the graph with status flags, not deletions -- required for '20. Immediate Next Step' delayed-query reconstruction and for negative-knowledge queries ('was this ever discussed').",
+    "minimum_viable_slice_for_PoC": [
+      "event + epistemic_status + valid_time",
+      "relationship (just: caused, supersedes, depends_on, contradicts)",
+      "ambiguity bucket",
+      "skip: multi-resolution compression, multi-agent sharing, feeling/subjective dimensions -- these are the highest-risk/lowest-payoff items per the doc's own §17"
+    ]
+  }
+}

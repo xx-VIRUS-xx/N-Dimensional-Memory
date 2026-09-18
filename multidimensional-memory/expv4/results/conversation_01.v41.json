@@ -1,0 +1,116 @@
+{
+  "experiment": "EXP-V4.1",
+  "hypothesis": "An append-only temporal substrate can represent evolving state and detect contradictory state observations without overwriting prior memory.",
+  "policy": {
+    "history_is_append_only": true,
+    "contradictions_are_preserved": true,
+    "latest_state_does_not_delete_prior_state": true,
+    "contradictions_are_not_auto_resolved": true,
+    "no_absolute_dates_invented": true
+  },
+  "state_updates": [
+    {
+      "event_id": "e_004",
+      "sequence": 4,
+      "subject_id": "p_001",
+      "target": "playing",
+      "value": "inactive",
+      "marker": "stopped",
+      "source": "Rahul stopped playing football during the summer.",
+      "time_anchors": [
+        {
+          "text": "summer",
+          "kind": "seasonal",
+          "explicit": true
+        }
+      ]
+    },
+    {
+      "event_id": "e_005",
+      "sequence": 5,
+      "subject_id": "p_001",
+      "target": "playing",
+      "value": "active",
+      "marker": "started",
+      "source": "Rahul started playing again after joining a new team.",
+      "time_anchors": [
+        {
+          "text": "again",
+          "kind": "relative_order",
+          "explicit": false
+        },
+        {
+          "text": "after",
+          "kind": "relative_order",
+          "explicit": false
+        }
+      ]
+    }
+  ],
+  "state_histories": [
+    {
+      "subject_id": "p_001",
+      "target": "playing",
+      "updates": [
+        {
+          "event_id": "e_004",
+          "sequence": 4,
+          "subject_id": "p_001",
+          "target": "playing",
+          "value": "inactive",
+          "marker": "stopped",
+          "source": "Rahul stopped playing football during the summer.",
+          "time_anchors": [
+            {
+              "text": "summer",
+              "kind": "seasonal",
+              "explicit": true
+            }
+          ]
+        },
+        {
+          "event_id": "e_005",
+          "sequence": 5,
+          "subject_id": "p_001",
+          "target": "playing",
+          "value": "active",
+          "marker": "started",
+          "source": "Rahul started playing again after joining a new team.",
+          "time_anchors": [
+            {
+              "text": "again",
+              "kind": "relative_order",
+              "explicit": false
+            },
+            {
+              "text": "after",
+              "kind": "relative_order",
+              "explicit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contradictions": [
+    {
+      "subject_id": "p_001",
+      "target": "playing",
+      "from": "inactive",
+      "to": "active",
+      "event_from": "e_004",
+      "event_to": "e_005",
+      "kind": "state_transition",
+      "resolution": "preserve_both",
+      "evidence": [
+        "Rahul stopped playing football during the summer.",
+        "Rahul started playing again after joining a new team."
+      ]
+    }
+  ],
+  "metrics": {
+    "state_updates": 2,
+    "state_histories": 1,
+    "contradictions_or_transitions": 1
+  }
+}

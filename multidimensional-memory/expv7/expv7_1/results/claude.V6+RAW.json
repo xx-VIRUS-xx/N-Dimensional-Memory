@@ -1,0 +1,170 @@
+[
+  {
+    "agent_id": "claude",
+    "condition": "V6+RAW",
+    "case_id": "V71-HIST-01",
+    "query_category": "historical_recall",
+    "answer": "Per memory (MREL-BILLING-01, MREL-BILLING-02), cross-checked against linked raw evidence (E0005, E0067, E0141): PostgreSQL was chosen for auditability over DynamoDB's lower migration effort; DynamoDB migration failed due to transaction-flow incompatibility, confirmed by Claude after reviewing integration-test output. No discrepancy between memory and raw text.",
+    "correctness": {
+      "factual": true,
+      "temporal": null,
+      "relationship": true,
+      "ambiguity": null,
+      "conflict": null,
+      "negative_knowledge": null,
+      "provenance": true
+    },
+    "unsupported_claims": 0,
+    "evidence_used": ["MREL-BILLING-01", "MREL-BILLING-02", "E0005", "E0067", "E0141"],
+    "retrieved_chunks": [],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "V6+RAW",
+    "case_id": "V71-DEC-01",
+    "query_category": "decision_continuity",
+    "answer": "Per memory (MREL-REDIS-01, MREL-REDIS-02), verified against linked raw events (E0178, E0263, E0731): Redis was tested, abandoned due to cache invalidation complexity, then retried narrower with negligible latency improvement. No discrepancy.",
+    "correctness": {
+      "factual": true,
+      "temporal": true,
+      "relationship": true,
+      "ambiguity": null,
+      "conflict": null,
+      "negative_knowledge": null,
+      "provenance": null
+    },
+    "unsupported_claims": 0,
+    "evidence_used": ["MREL-REDIS-01", "MREL-REDIS-02", "E0178", "E0263", "E0731"],
+    "retrieved_chunks": [],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "V6+RAW",
+    "case_id": "V71-ACT-01",
+    "query_category": "action_outcome",
+    "answer": "Memory contains only three raw observation records for this case (no derived relationship record). Cross-checked against linked raw events E0356/E0622/E1033: first export timed out after 18 minutes, exports switched to asynchronous jobs, first full customer batch completed successfully. No discrepancy; linked raw evidence fully supports the memory observations.",
+    "correctness": {
+      "factual": true,
+      "temporal": true,
+      "relationship": null,
+      "ambiguity": null,
+      "conflict": null,
+      "negative_knowledge": null,
+      "provenance": null
+    },
+    "unsupported_claims": 0,
+    "evidence_used": ["M-E0356", "M-E0622", "M-E1033", "E0356", "E0622", "E1033"],
+    "retrieved_chunks": [],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "V6+RAW",
+    "case_id": "V71-TIME-01",
+    "query_category": "temporal_state",
+    "answer": "Per memory's MSTATE-WEBHOOK, confirmed against all four linked raw events (E0233, E0401, E0887, E1190): polling (2026-02-17) -> webhooks (2026-03-11) -> webhooks disabled temporarily due to duplicate-delivery reconciliation errors (2026-05-20) -> webhooks re-enabled after idempotency handling (2026-06-03). Latest state: webhooks active. Raw evidence confirms the RAG condition's gap (missing E0887/E1190) was a retrieval-policy limitation, not missing information.",
+    "correctness": {
+      "factual": true,
+      "temporal": true,
+      "relationship": null,
+      "ambiguity": null,
+      "conflict": null,
+      "negative_knowledge": null,
+      "provenance": null
+    },
+    "unsupported_claims": 0,
+    "evidence_used": ["MSTATE-WEBHOOK", "E0233", "E0401", "E0887", "E1190"],
+    "retrieved_chunks": [],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "V6+RAW",
+    "case_id": "V71-AMB-01",
+    "query_category": "ambiguity",
+    "answer": "Per memory (MAMB-HE) and confirmed against linked raw events E0312/E0515: the reference \"he\" remains unresolved between Rahul and Arjun; no additional disambiguating text exists in the linked raw evidence either.",
+    "correctness": {
+      "factual": null,
+      "temporal": null,
+      "relationship": null,
+      "ambiguity": true,
+      "conflict": null,
+      "negative_knowledge": null,
+      "provenance": null
+    },
+    "unsupported_claims": 0,
+    "evidence_used": ["MAMB-HE", "E0312", "E0515"],
+    "retrieved_chunks": [],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "V6+RAW",
+    "case_id": "V71-CONFLICT-01",
+    "query_category": "conflict",
+    "answer": "Per memory (MREL-CONFIRM), confirmed against linked raw events E0448/E0449: Claude's inference (E0448) was later explicitly confirmed by Rahul (E0449). current_status: confirmed. Raw text matches memory exactly.",
+    "correctness": {
+      "factual": null,
+      "temporal": null,
+      "relationship": null,
+      "ambiguity": null,
+      "conflict": true,
+      "negative_knowledge": null,
+      "provenance": true
+    },
+    "unsupported_claims": 0,
+    "evidence_used": ["MREL-CONFIRM", "E0448", "E0449"],
+    "retrieved_chunks": [],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "V6+RAW",
+    "case_id": "V71-NEG-01",
+    "query_category": "negative_knowledge",
+    "answer": "Per memory (MNEG-MONGO), confirmed against linked raw events E0548/E1102: MongoDB was not discussed in the billing migration review; the only MongoDB mention belongs to a different project. Raw text matches memory exactly.",
+    "correctness": {
+      "factual": true,
+      "temporal": null,
+      "relationship": null,
+      "ambiguity": null,
+      "conflict": null,
+      "negative_knowledge": true,
+      "provenance": null
+    },
+    "unsupported_claims": 0,
+    "evidence_used": ["MNEG-MONGO", "E0548", "E1102"],
+    "retrieved_chunks": [],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "V6+RAW",
+    "case_id": "V71-PROV-01",
+    "query_category": "provenance",
+    "answer": "Per memory (MPROV-BILLING), confirmed against all five linked raw events (E0067, E0141, E0448, E0449, E0802): Rahul originally observed the failure; Claude confirmed it via integration-test output; Claude then inferred transaction semantics as the cause; Rahul explicitly confirmed that inference; Copilot later read and preserved these facts in memory. Raw text matches memory's chain exactly.",
+    "correctness": {
+      "factual": null,
+      "temporal": null,
+      "relationship": null,
+      "ambiguity": null,
+      "conflict": null,
+      "negative_knowledge": null,
+      "provenance": true
+    },
+    "unsupported_claims": 0,
+    "evidence_used": ["MPROV-BILLING", "E0067", "E0141", "E0448", "E0449", "E0802"],
+    "retrieved_chunks": [],
+    "input_tokens": null,
+    "latency_ms": null
+  }
+]

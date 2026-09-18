@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "agent_id",
+    "condition",
+    "case_id",
+    "query_category",
+    "answer",
+    "correctness",
+    "unsupported_claims",
+    "evidence_used",
+    "input_tokens",
+    "latency_ms"
+  ],
+  "properties": {
+    "agent_id": {
+      "type": "string"
+    },
+    "condition": {
+      "enum": [
+        "RAW",
+        "RAG",
+        "V6",
+        "V6+RAW",
+        "V6-GENERATED",
+        "V6-GENERATED+RAW"
+      ]
+    },
+    "case_id": {
+      "type": "string"
+    },
+    "query_category": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "string"
+    },
+    "correctness": {
+      "type": "object",
+      "required": [
+        "factual",
+        "temporal",
+        "relationship",
+        "ambiguity",
+        "conflict",
+        "negative_knowledge",
+        "provenance"
+      ],
+      "properties": {
+        "factual": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "temporal": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "relationship": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "ambiguity": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "conflict": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "negative_knowledge": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "provenance": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      }
+    },
+    "unsupported_claims": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "evidence_used": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "retrieved_chunks": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "input_tokens": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "latency_ms": {
+      "type": [
+        "number",
+        "null"
+      ]
+    }
+  }
+}

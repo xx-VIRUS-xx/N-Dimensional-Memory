@@ -1,0 +1,14 @@
+Zep: A Temporal Knowledge Graph Architecture for Agent Memory
+https://arxiv.org/abs/2501.13956
+
+What Is a Temporal Knowledge Graph? Definition | Zep
+https://www.getzep.com/ai-agents/temporal-knowledge-graph/
+
+TOKI: A Bitemporal Operator Algebra for Contradiction Resolution in LLM-Agent Persistent Memory
+https://arxiv.org/pdf/2606.06240
+
+Graph-Native Cognitive Memory for AI Agents: Formal Belief Revision Semantics for Versioned Memory Architectures
+https://arxiv.org/html/2603.17244
+
+Eywa: Provenance-Grounded Long-Term Memory for AI Agents
+https://arxiv.org/pdf/2605.30771

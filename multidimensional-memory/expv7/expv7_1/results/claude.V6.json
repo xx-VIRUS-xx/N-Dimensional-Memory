@@ -1,0 +1,170 @@
+[
+  {
+    "agent_id": "claude",
+    "condition": "V6",
+    "case_id": "V71-HIST-01",
+    "query_category": "historical_recall",
+    "answer": "Per memory: PostgreSQL chosen_for billing_service (MREL-BILLING-01, confirmed, basis E0005). DynamoDB migration_failed_because transaction_flow_incompatibility (MREL-BILLING-02, confirmed, basis E0067+E0141).",
+    "correctness": {
+      "factual": true,
+      "temporal": null,
+      "relationship": true,
+      "ambiguity": null,
+      "conflict": null,
+      "negative_knowledge": null,
+      "provenance": true
+    },
+    "unsupported_claims": 0,
+    "evidence_used": ["M-E0005", "M-E0067", "M-E0141", "MREL-BILLING-01", "MREL-BILLING-02"],
+    "retrieved_chunks": [],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "V6",
+    "case_id": "V71-DEC-01",
+    "query_category": "decision_continuity",
+    "answer": "Per memory: Redis abandoned_because cache_invalidation_complexity (MREL-REDIS-01, confirmed, basis E0263). Redis retry_result negligible_latency_improvement (MREL-REDIS-02, confirmed, basis E0731).",
+    "correctness": {
+      "factual": true,
+      "temporal": true,
+      "relationship": true,
+      "ambiguity": null,
+      "conflict": null,
+      "negative_knowledge": null,
+      "provenance": null
+    },
+    "unsupported_claims": 0,
+    "evidence_used": ["M-E0178", "M-E0263", "M-E0731", "MREL-REDIS-01", "MREL-REDIS-02"],
+    "retrieved_chunks": [],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "V6",
+    "case_id": "V71-ACT-01",
+    "query_category": "action_outcome",
+    "answer": "No derived relationship/state record exists for this case in the supplied V6 memory -- only three raw observation records. Per those, in timestamp order: first export attempt timed out after 18 minutes (2026-03-01, M-E0356); exports were switched to asynchronous jobs (2026-04-03, M-E0622); the first full customer batch completed successfully (2026-05-31, M-E1033).",
+    "correctness": {
+      "factual": true,
+      "temporal": true,
+      "relationship": null,
+      "ambiguity": null,
+      "conflict": null,
+      "negative_knowledge": null,
+      "provenance": null
+    },
+    "unsupported_claims": 0,
+    "evidence_used": ["M-E0356", "M-E0622", "M-E1033"],
+    "retrieved_chunks": [],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "V6",
+    "case_id": "V71-TIME-01",
+    "query_category": "temporal_state",
+    "answer": "Per memory's state_history record MSTATE-WEBHOOK: polling (2026-02-17 to 2026-03-11) -> webhooks_active (2026-03-11 to 2026-05-20) -> webhooks_disabled (2026-05-20 to 2026-06-03) -> webhooks_active (from 2026-06-03, ongoing). current_state field: webhooks_active. Latest known state: webhooks active/re-enabled.",
+    "correctness": {
+      "factual": true,
+      "temporal": true,
+      "relationship": null,
+      "ambiguity": null,
+      "conflict": null,
+      "negative_knowledge": null,
+      "provenance": null
+    },
+    "unsupported_claims": 0,
+    "evidence_used": ["M-E0233", "M-E0401", "M-E0887", "M-E1190", "MSTATE-WEBHOOK"],
+    "retrieved_chunks": [],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "V6",
+    "case_id": "V71-AMB-01",
+    "query_category": "ambiguity",
+    "answer": "Per memory's ambiguity record MAMB-HE: expression \"he\", candidates [Rahul, Arjun], resolution: null, status: unresolved.",
+    "correctness": {
+      "factual": null,
+      "temporal": null,
+      "relationship": null,
+      "ambiguity": true,
+      "conflict": null,
+      "negative_knowledge": null,
+      "provenance": null
+    },
+    "unsupported_claims": 0,
+    "evidence_used": ["M-E0312", "M-E0515", "MAMB-HE"],
+    "retrieved_chunks": [],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "V6",
+    "case_id": "V71-CONFLICT-01",
+    "query_category": "conflict",
+    "answer": "Per memory's belief_history record MREL-CONFIRM: proposition \"DynamoDB migration was abandoned because transaction semantics were incompatible\" -- history: [inferred (E0448, Claude), confirmed (E0449, Rahul)]. current_status: confirmed.",
+    "correctness": {
+      "factual": null,
+      "temporal": null,
+      "relationship": null,
+      "ambiguity": null,
+      "conflict": true,
+      "negative_knowledge": null,
+      "provenance": true
+    },
+    "unsupported_claims": 0,
+    "evidence_used": ["M-E0448", "M-E0449", "MREL-CONFIRM"],
+    "retrieved_chunks": [],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "V6",
+    "case_id": "V71-NEG-01",
+    "query_category": "negative_knowledge",
+    "answer": "Per memory's negative_knowledge record MNEG-MONGO: proposition \"MongoDB was discussed in the billing migration review\", status: not_discussed, completeness: complete_for_review, qualifier: a later MongoDB mention belonged to a different project (E1102).",
+    "correctness": {
+      "factual": null,
+      "temporal": null,
+      "relationship": null,
+      "ambiguity": null,
+      "conflict": null,
+      "negative_knowledge": true,
+      "provenance": null
+    },
+    "unsupported_claims": 0,
+    "evidence_used": ["M-E0548", "M-E1102", "MNEG-MONGO"],
+    "retrieved_chunks": [],
+    "input_tokens": null,
+    "latency_ms": null
+  },
+  {
+    "agent_id": "claude",
+    "condition": "V6",
+    "case_id": "V71-PROV-01",
+    "query_category": "provenance",
+    "answer": "Per memory's provenance_chain record MPROV-BILLING: chain = [E0067 (Rahul, observation), E0141 (Claude, confirmation), E0448 (Claude, inference), E0449 (Rahul, confirmation), E0802 (Copilot, later_memory_read)]. Original observer: Rahul. Later confirmer(s): Claude (E0141), then Rahul again (E0449) confirming the transaction-semantics inference. Copilot's step is a later memory read/preservation, not a new independent observation.",
+    "correctness": {
+      "factual": null,
+      "temporal": null,
+      "relationship": null,
+      "ambiguity": null,
+      "conflict": null,
+      "negative_knowledge": null,
+      "provenance": true
+    },
+    "unsupported_claims": 0,
+    "evidence_used": ["M-E0067", "M-E0141", "M-E0448", "M-E0449", "M-E0802", "MPROV-BILLING"],
+    "retrieved_chunks": [],
+    "input_tokens": null,
+    "latency_ms": null
+  }
+]

@@ -1,0 +1,442 @@
+[
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "ENGINEERING-Q000",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event ENG-0011: Change: PostgreSQL migration was replaced by a newer approach; the earlier state is obsolete. The discussion continued with related operational details.",
+    "evidence_used": [
+      "ENG-0011"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "ENGINEERING-Q001",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event ENG-0030: Decision: invoice timeout was approved after reviewing the alternatives.",
+    "evidence_used": [
+      "ENG-0030"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "ENGINEERING-Q002",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event ENG-0037: Action: the team attempted DynamoDB migration; the first attempt failed.",
+    "evidence_used": [
+      "ENG-0037"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "ENGINEERING-Q003",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event ENG-0042: Decision: API rate limit was approved after reviewing the alternatives.",
+    "evidence_used": [
+      "ENG-0042"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "ENGINEERING-Q004",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event ENG-0088: Plan: search index remains unresolved and no final decision has been confirmed. The discussion continued with related operational details.",
+    "evidence_used": [
+      "ENG-0088"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "ENGINEERING-Q005",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event ENG-0103: Action: the team attempted webhook delivery; the first attempt failed.",
+    "evidence_used": [
+      "ENG-0103"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "ENGINEERING-Q006",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event ENG-0121: Action: the team attempted PostgreSQL migration; the first attempt failed. The discussion continued with related operational details.",
+    "evidence_used": [
+      "ENG-0121"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "ENGINEERING-Q007",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event ENG-0128: Outcome: search index was confirmed successful after the follow-up check.",
+    "evidence_used": [
+      "ENG-0128"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "ENGINEERING-Q008",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event ENG-0138: Decision: search index was approved after reviewing the alternatives.",
+    "evidence_used": [
+      "ENG-0138"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "ENGINEERING-Q009",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event ENG-0139: Action: the team attempted cache invalidation; the first attempt failed.",
+    "evidence_used": [
+      "ENG-0139"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "PLANNING-Q000",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event PLA-0004: Plan: team ownership remains unresolved and no final decision has been confirmed.",
+    "evidence_used": [
+      "PLA-0004"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "PLANNING-Q001",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event PLA-0006: Decision: travel schedule was approved after reviewing the alternatives.",
+    "evidence_used": [
+      "PLA-0006"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "PLANNING-Q002",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event PLA-0015: State: vendor review changed from tentative to confirmed.",
+    "evidence_used": [
+      "PLA-0015"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "PLANNING-Q003",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event PLA-0053: Change: hiring plan was replaced by a newer approach; the earlier state is obsolete.",
+    "evidence_used": [
+      "PLA-0053"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "PLANNING-Q004",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event PLA-0063: State: hiring plan changed from tentative to confirmed.",
+    "evidence_used": [
+      "PLA-0063"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "PLANNING-Q005",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event PLA-0064: Plan: team ownership remains unresolved and no final decision has been confirmed.",
+    "evidence_used": [
+      "PLA-0064"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "PLANNING-Q006",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event PLA-0085: Action: the team attempted vendor review; the first attempt failed. Earlier notes were reviewed before moving on.",
+    "evidence_used": [
+      "PLA-0085"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "PLANNING-Q007",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event PLA-0117: State: customer workshop changed from tentative to confirmed.",
+    "evidence_used": [
+      "PLA-0117"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "PLANNING-Q008",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event PLA-0127: Action: the team attempted customer workshop; the first attempt failed.",
+    "evidence_used": [
+      "PLA-0127"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "PLANNING-Q009",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event PLA-0152: Outcome: documentation deadline was confirmed successful after the follow-up check.",
+    "evidence_used": [
+      "PLA-0152"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "PRODUCT-Q000",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event PRO-0013: Action: the team attempted pricing experiment; the first attempt failed.",
+    "evidence_used": [
+      "PRO-0013"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "PRODUCT-Q001",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event PRO-0027: State: export API changed from tentative to confirmed.",
+    "evidence_used": [
+      "PRO-0027"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "PRODUCT-Q002",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event PRO-0028: Plan: SSO rollout remains unresolved and no final decision has been confirmed.",
+    "evidence_used": [
+      "PRO-0028"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "PRODUCT-Q003",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event PRO-0033: State: pricing experiment changed from tentative to confirmed. The discussion continued with related operational details.",
+    "evidence_used": [
+      "PRO-0033"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "PRODUCT-Q004",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event PRO-0115: Action: the team attempted analytics dashboard; the first attempt failed.",
+    "evidence_used": [
+      "PRO-0115"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "PRODUCT-Q005",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event PRO-0123: State: pricing experiment changed from tentative to confirmed.",
+    "evidence_used": [
+      "PRO-0123"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "PRODUCT-Q006",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event PRO-0127: Action: the team attempted export API; the first attempt failed.",
+    "evidence_used": [
+      "PRO-0127"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "PRODUCT-Q007",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event PRO-0137: Change: export API was replaced by a newer approach; the earlier state is obsolete.",
+    "evidence_used": [
+      "PRO-0137"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "PRODUCT-Q008",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event PRO-0168: Decision: SSO rollout was approved after reviewing the alternatives.",
+    "evidence_used": [
+      "PRO-0168"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "PRODUCT-Q009",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event PRO-0181: Action: the team attempted bulk import; the first attempt failed.",
+    "evidence_used": [
+      "PRO-0181"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "OPERATIONS-Q000",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event OPE-0019: Action: the team attempted latency incident; the first attempt failed.",
+    "evidence_used": [
+      "OPE-0019"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "OPERATIONS-Q001",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event OPE-0021: State: database outage changed from tentative to confirmed.",
+    "evidence_used": [
+      "OPE-0021"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "OPERATIONS-Q002",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event OPE-0028: Plan: dependency outage remains unresolved and no final decision has been confirmed.",
+    "evidence_used": [
+      "OPE-0028"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "OPERATIONS-Q003",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event OPE-0067: Action: the team attempted billing alert; the first attempt failed.",
+    "evidence_used": [
+      "OPE-0067"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "OPERATIONS-Q004",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event OPE-0078: Decision: dependency outage was approved after reviewing the alternatives.",
+    "evidence_used": [
+      "OPE-0078"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "OPERATIONS-Q005",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event OPE-0081: State: database outage changed from tentative to confirmed.",
+    "evidence_used": [
+      "OPE-0081"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "OPERATIONS-Q006",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event OPE-0095: Change: worker crash was replaced by a newer approach; the earlier state is obsolete.",
+    "evidence_used": [
+      "OPE-0095"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "OPERATIONS-Q007",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event OPE-0112: Plan: storage alert remains unresolved and no final decision has been confirmed.",
+    "evidence_used": [
+      "OPE-0112"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "OPERATIONS-Q008",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event OPE-0118: Plan: dependency outage remains unresolved and no final decision has been confirmed.",
+    "evidence_used": [
+      "OPE-0118"
+    ]
+  },
+  {
+    "agent": "claude",
+    "condition": "RAW",
+    "query_id": "OPERATIONS-Q009",
+    "correct": true,
+    "unsupported_claim": false,
+    "answer": "Per raw source event OPE-0143: Change: backup failure was replaced by a newer approach; the earlier state is obsolete. The discussion continued with related operational details.",
+    "evidence_used": [
+      "OPE-0143"
+    ]
+  }
+]

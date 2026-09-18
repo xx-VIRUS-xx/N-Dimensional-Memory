@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["agent_id", "condition", "case_id", "query_category", "answer", "unsupported_claims", "evidence_used"],
+  "properties": {
+    "agent_id": {"type": "string"},
+    "condition": {"enum": ["RAW", "RAG", "V6", "V6+RAW"]},
+    "case_id": {"type": "string"},
+    "query_category": {"type": "string"},
+    "answer": {"type": "string"},
+    "factual_correct": {"type": ["boolean", "null"]},
+    "temporal_correct": {"type": ["boolean", "null"]},
+    "ambiguity_correct": {"type": ["boolean", "null"]},
+    "conflict_correct": {"type": ["boolean", "null"]},
+    "provenance_correct": {"type": ["boolean", "null"]},
+    "unsupported_claims": {"type": "integer", "minimum": 0},
+    "evidence_used": {"type": "array", "items": {"type": "string"}},
+    "input_tokens": {"type": ["integer", "null"], "minimum": 0},
+    "latency_ms": {"type": ["number", "null"], "minimum": 0}
+  }
+}
