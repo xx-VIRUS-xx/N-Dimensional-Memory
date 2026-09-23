@@ -1,0 +1,272 @@
+.
+├── AGENT_SETUP_PROMPT.md
+├── README.md
+├── RUN_AGENT.md
+├── RUN_EVALUATION.md
+├── RUN_RETRIEVAL.md
+├── agents
+│   └── antigravity
+│       └── README.md
+├── benchmark
+│   ├── schemas
+│   │   ├── event.schema.json
+│   │   └── retrieval_result.schema.json
+│   └── validation
+│       └── README.md
+├── competitors_
+│   ├── ADAPTER_CONTRACT.md
+│   ├── bm25
+│   │   ├── README.md
+│   │   ├── __pycache__
+│   │   │   └── adapter.cpython-312.pyc
+│   │   ├── adapter.py
+│   │   ├── runner.py
+│   │   └── smoke_test.py
+│   ├── dense
+│   │   ├── README.md
+│   │   ├── __pycache__
+│   │   │   └── adapter.cpython-312.pyc
+│   │   ├── adapter.py
+│   │   ├── runner.py
+│   │   └── smoke_test.py
+│   ├── graphiti
+│   │   ├── README.md
+│   │   ├── __pycache__
+│   │   │   └── adapter.cpython-312.pyc
+│   │   ├── adapter.py
+│   │   ├── docker-compose.yml
+│   │   ├── runner.py
+│   │   └── smoke_test.py
+│   ├── graphrag
+│   │   ├── README.md
+│   │   ├── __pycache__
+│   │   │   └── adapter.cpython-312.pyc
+│   │   ├── adapter.py
+│   │   ├── project
+│   │   ├── runner.py
+│   │   └── smoke_test.py
+│   ├── hipporag2
+│   │   ├── README.md
+│   │   ├── __pycache__
+│   │   │   └── adapter.cpython-312.pyc
+│   │   ├── adapter.py
+│   │   ├── competitors
+│   │   │   └── hipporag2
+│   │   │       └── upstream
+│   │   │           ├── CONTRIBUTING.md
+│   │   │           ├── LICENSE
+│   │   │           ├── README.md
+│   │   │           ├── examples
+│   │   │           │   ├── _shared.py
+│   │   │           │   ├── demo_azure.py
+│   │   │           │   ├── demo_bedrock.py
+│   │   │           │   ├── demo_bedrock_mantle.py
+│   │   │           │   ├── demo_local.py
+│   │   │           │   ├── demo_openai.py
+│   │   │           │   └── demo_orcarouter.py
+│   │   │           ├── images
+│   │   │           │   ├── brain.png
+│   │   │           │   ├── hippo_brain.png
+│   │   │           │   ├── icon_hippo.png
+│   │   │           │   ├── intro.png
+│   │   │           │   └── methodology.png
+│   │   │           ├── main.py
+│   │   │           ├── outputs
+│   │   │           │   └── musique
+│   │   │           │       ├── openie_results_ner_gpt-4o-mini.json
+│   │   │           │       └── openie_results_ner_meta-llama_Llama-3.3-70B-Instruct.json
+│   │   │           ├── pyproject.toml
+│   │   │           ├── reproduce
+│   │   │           │   ├── README.md
+│   │   │           │   └── dataset
+│   │   │           │       ├── 2wikimultihopqa.json
+│   │   │           │       ├── 2wikimultihopqa_corpus.json
+│   │   │           │       ├── hotpotqa.json
+│   │   │           │       ├── hotpotqa_corpus.json
+│   │   │           │       ├── musique.json
+│   │   │           │       ├── musique_corpus.json
+│   │   │           │       ├── sample.json
+│   │   │           │       └── sample_corpus.json
+│   │   │           ├── requirements.txt
+│   │   │           ├── setup.py
+│   │   │           ├── src
+│   │   │           │   └── hipporag
+│   │   │           │       ├── HippoRAG.py
+│   │   │           │       ├── StandardRAG.py
+│   │   │           │       ├── __init__.py
+│   │   │           │       ├── embedding_model
+│   │   │           │       │   ├── Cohere.py
+│   │   │           │       │   ├── Contriever.py
+│   │   │           │       │   ├── GritLM.py
+│   │   │           │       │   ├── NVEmbedV2.py
+│   │   │           │       │   ├── OpenAI.py
+│   │   │           │       │   ├── Transformers.py
+│   │   │           │       │   ├── VLLM.py
+│   │   │           │       │   ├── __init__.py
+│   │   │           │       │   └── base.py
+│   │   │           │       ├── embedding_store.py
+│   │   │           │       ├── evaluation
+│   │   │           │       │   ├── README.md
+│   │   │           │       │   ├── __init__.py
+│   │   │           │       │   ├── base.py
+│   │   │           │       │   ├── qa_eval.py
+│   │   │           │       │   └── retrieval_eval.py
+│   │   │           │       ├── information_extraction
+│   │   │           │       │   ├── __init__.py
+│   │   │           │       │   ├── openie_openai.py
+│   │   │           │       │   ├── openie_transformers_offline.py
+│   │   │           │       │   └── openie_vllm_offline.py
+│   │   │           │       ├── llm
+│   │   │           │       │   ├── __init__.py
+│   │   │           │       │   ├── base.py
+│   │   │           │       │   ├── bedrock_llm.py
+│   │   │           │       │   ├── bedrock_mantle.py
+│   │   │           │       │   ├── openai_gpt.py
+│   │   │           │       │   ├── orcarouter_llm.py
+│   │   │           │       │   ├── transformers_llm.py
+│   │   │           │       │   ├── transformers_offline.py
+│   │   │           │       │   └── vllm_offline.py
+│   │   │           │       ├── preprocessing.py
+│   │   │           │       ├── prompts
+│   │   │           │       │   ├── __init__.py
+│   │   │           │       │   ├── dspy_prompts
+│   │   │           │       │   │   └── filter_llama3.3-70B-Instruct.json
+│   │   │           │       │   ├── filter_default_prompt.py
+│   │   │           │       │   ├── linking.py
+│   │   │           │       │   ├── prompt_template_manager.py
+│   │   │           │       │   └── templates
+│   │   │           │       │       ├── README.md
+│   │   │           │       │       ├── __init__.py
+│   │   │           │       │       ├── ircot_2wikimultihopqa.py
+│   │   │           │       │       ├── ircot_hotpotqa.py
+│   │   │           │       │       ├── ircot_musique.py
+│   │   │           │       │       ├── ner.py
+│   │   │           │       │       ├── ner_query.py
+│   │   │           │       │       ├── rag_qa_musique.py
+│   │   │           │       │       └── triple_extraction.py
+│   │   │           │       ├── rerank.py
+│   │   │           │       ├── utils
+│   │   │           │       │   ├── __init__.py
+│   │   │           │       │   ├── config_utils.py
+│   │   │           │       │   ├── embed_utils.py
+│   │   │           │       │   ├── eval_utils.py
+│   │   │           │       │   ├── llm_utils.py
+│   │   │           │       │   ├── logging_utils.py
+│   │   │           │       │   ├── misc_utils.py
+│   │   │           │       │   ├── openai_utils.py
+│   │   │           │       │   ├── qa_utils.py
+│   │   │           │       │   ├── sample_data.py
+│   │   │           │       │   ├── state_utils.py
+│   │   │           │       │   └── typing.py
+│   │   │           │       └── vector_stores
+│   │   │           │           ├── __init__.py
+│   │   │           │           ├── chroma_store.py
+│   │   │           │           ├── milvus_store.py
+│   │   │           │           ├── naming.py
+│   │   │           │           └── qdrant_store.py
+│   │   │           └── tests
+│   │   │               ├── integration
+│   │   │               │   ├── _shared.py
+│   │   │               │   ├── run_azure.py
+│   │   │               │   ├── run_local.py
+│   │   │               │   ├── run_openai.py
+│   │   │               │   ├── run_orcarouter.py
+│   │   │               │   ├── run_transformers.py
+│   │   │               │   └── run_vector_stores.py
+│   │   │               ├── test_bedrock_llm.py
+│   │   │               ├── test_bedrock_mantle.py
+│   │   │               ├── test_hipporag_state_consistency.py
+│   │   │               ├── test_openai_sdk_compat.py
+│   │   │               ├── test_openie_extraction.py
+│   │   │               ├── test_orcarouter_llm.py
+│   │   │               └── test_regressions.py
+│   │   ├── runner.py
+│   │   └── smoke_test.py
+│   ├── hybrid
+│   │   ├── README.md
+│   │   ├── __pycache__
+│   │   │   └── adapter.cpython-312.pyc
+│   │   ├── adapter.py
+│   │   ├── runner.py
+│   │   └── smoke_test.py
+│   ├── raptor
+│   │   ├── README.md
+│   │   ├── __pycache__
+│   │   │   └── adapter.cpython-312.pyc
+│   │   ├── adapter.py
+│   │   ├── competitors
+│   │   │   └── raptor
+│   │   │       └── upstream
+│   │   │           ├── LICENSE.txt
+│   │   │           ├── README.md
+│   │   │           ├── demo
+│   │   │           │   ├── cinderella
+│   │   │           │   └── sample.txt
+│   │   │           ├── demo.ipynb
+│   │   │           ├── raptor
+│   │   │           │   ├── EmbeddingModels.py
+│   │   │           │   ├── FaissRetriever.py
+│   │   │           │   ├── QAModels.py
+│   │   │           │   ├── RetrievalAugmentation.py
+│   │   │           │   ├── Retrievers.py
+│   │   │           │   ├── SummarizationModels.py
+│   │   │           │   ├── __init__.py
+│   │   │           │   ├── cluster_tree_builder.py
+│   │   │           │   ├── cluster_utils.py
+│   │   │           │   ├── tree_builder.py
+│   │   │           │   ├── tree_retriever.py
+│   │   │           │   ├── tree_structures.py
+│   │   │           │   └── utils.py
+│   │   │           ├── raptor.jpg
+│   │   │           ├── raptor_dark.png
+│   │   │           └── requirements.txt
+│   │   ├── runner.py
+│   │   └── smoke_test.py
+│   └── raw
+│       ├── README.md
+│       ├── __pycache__
+│       │   └── adapter.cpython-312.pyc
+│       ├── adapter.py
+│       ├── runner.py
+│       └── smoke_test.py
+├── docker
+│   └── graphiti
+│       └── docker-compose.yml
+├── out.txt
+├── results
+│   ├── antigravity_environment_audit.md
+│   └── antigravity_setup_report.json
+├── scripts
+│   ├── validate_gold.py
+│   └── validate_source.py
+├── v7_7_1_competitors_gemini_setup
+│   ├── README.md
+│   ├── benchmark
+│   ├── competitors
+│   │   ├── graphiti
+│   │   │   └── README.md
+│   │   ├── graphrag
+│   │   │   └── README.md
+│   │   ├── hipporag2
+│   │   │   └── README.md
+│   │   └── raptor
+│   │       └── README.md
+│   ├── docker
+│   │   ├── graphiti
+│   │   │   └── docker-compose.yml
+│   │   ├── hipporag
+│   │   │   └── dockerfile
+│   │   ├── legacy-baselines.compose.yml
+│   │   └── raptor
+│   │       └── dockerfile
+│   ├── results
+│   │   ├── hipporag2
+│   │   ├── raptor
+│   │   └── setup
+│   │       └── gemini_models.json
+│   └── scripts
+│       ├── setup_all.sh
+│       └── smoke_all.sh
+└── v7_7_1_competitors_gemini_setup.zip
+
+71 directories, 199 files

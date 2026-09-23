@@ -1,0 +1,8 @@
+[C01E001]
+The billing service originally used PostgreSQL.
+
+[C01E002]
+The team evaluated DynamoDB as a replacement for PostgreSQL.
+
+[C01E003]
+The billing service was migrated from PostgreSQL to DynamoDB.

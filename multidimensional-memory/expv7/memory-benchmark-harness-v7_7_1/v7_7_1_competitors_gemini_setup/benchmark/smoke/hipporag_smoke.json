@@ -1,0 +1,20 @@
+[
+  {
+    "event_id": "C01E001",
+    "conversation_id": "C01",
+    "timestamp": "2026-01-01T10:00:00",
+    "text": "The billing service originally used PostgreSQL."
+  },
+  {
+    "event_id": "C01E002",
+    "conversation_id": "C01",
+    "timestamp": "2026-01-02T10:00:00",
+    "text": "The team evaluated DynamoDB as a replacement for PostgreSQL."
+  },
+  {
+    "event_id": "C01E003",
+    "conversation_id": "C01",
+    "timestamp": "2026-01-03T10:00:00",
+    "text": "The billing service was migrated from PostgreSQL to DynamoDB."
+  }
+]

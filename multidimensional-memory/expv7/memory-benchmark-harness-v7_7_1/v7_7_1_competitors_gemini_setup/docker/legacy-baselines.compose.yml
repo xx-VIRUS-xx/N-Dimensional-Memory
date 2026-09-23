@@ -1,0 +1,34 @@
+services:
+
+  hipporag2:
+    build:
+      context: ./hipporag
+    container_name: v771-hipporag2
+    working_dir: /workspace
+    env_file:
+      - ../.env
+    environment:
+      - PYTHONPATH=/workspace/competitor/src
+    volumes:
+      - ../benchmark:/workspace/benchmark:ro
+      - ../competitors/hipporag2:/workspace/competitor
+      - ../results/hipporag2:/workspace/results
+    stdin_open: true
+    tty: true
+
+  raptor:
+    platform: linux/amd64
+    build:
+      context: ./raptor
+    container_name: v771-raptor
+    working_dir: /workspace
+    environment:
+      - PYTHONPATH=/workspace/raptor
+    env_file:
+      - ../.env
+    volumes:
+      - ../benchmark:/workspace/benchmark:ro
+      - ../competitors/raptor:/workspace/competitor
+      - ../results/raptor:/workspace/results
+    stdin_open: true
+    tty: true

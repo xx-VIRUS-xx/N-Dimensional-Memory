@@ -1,0 +1,68 @@
+{
+    "total_runtime": 20.261332035064697,
+    "num_documents": 1,
+    "update_documents": 0,
+    "input_load_time": 0,
+    "workflows": {
+        "load_input_documents": {
+            "overall": 2.126854181289673,
+            "peak_memory_bytes": 792633,
+            "memory_delta_bytes": 760419,
+            "tracemalloc_overhead_bytes": 442832
+        },
+        "create_base_text_units": {
+            "overall": 2.4308369159698486,
+            "peak_memory_bytes": 42830864,
+            "memory_delta_bytes": 24640100,
+            "tracemalloc_overhead_bytes": 29798224
+        },
+        "create_final_documents": {
+            "overall": 0.01371908187866211,
+            "peak_memory_bytes": 55633,
+            "memory_delta_bytes": 10636,
+            "tracemalloc_overhead_bytes": 67504
+        },
+        "extract_graph": {
+            "overall": 4.656415939331055,
+            "peak_memory_bytes": 782684,
+            "memory_delta_bytes": 450855,
+            "tracemalloc_overhead_bytes": 710416
+        },
+        "finalize_graph": {
+            "overall": 0.026803970336914062,
+            "peak_memory_bytes": 72675,
+            "memory_delta_bytes": 46494,
+            "tracemalloc_overhead_bytes": 170256
+        },
+        "extract_covariates": {
+            "overall": 0.00011086463928222656,
+            "peak_memory_bytes": 6385,
+            "memory_delta_bytes": 432,
+            "tracemalloc_overhead_bytes": 2160
+        },
+        "create_communities": {
+            "overall": 0.07875776290893555,
+            "peak_memory_bytes": 252249,
+            "memory_delta_bytes": 84590,
+            "tracemalloc_overhead_bytes": 450512
+        },
+        "create_final_text_units": {
+            "overall": 0.014903068542480469,
+            "peak_memory_bytes": 67290,
+            "memory_delta_bytes": 12519,
+            "tracemalloc_overhead_bytes": 105008
+        },
+        "create_community_reports": {
+            "overall": 3.262143850326538,
+            "peak_memory_bytes": 1597659,
+            "memory_delta_bytes": 1366463,
+            "tracemalloc_overhead_bytes": 1445296
+        },
+        "generate_text_embeddings": {
+            "overall": 7.554018020629883,
+            "peak_memory_bytes": 17942423,
+            "memory_delta_bytes": 17391302,
+            "tracemalloc_overhead_bytes": 10882144
+        }
+    }
+}

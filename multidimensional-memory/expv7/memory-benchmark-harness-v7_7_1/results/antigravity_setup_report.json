@@ -1,0 +1,47 @@
+{
+  "full_benchmark_executed": false,
+  "setup_agent": "Antigravity",
+  "timestamp": "2026-09-18T05:22:00Z",
+  "competitors": {
+    "raw": {
+      "status": "READY",
+      "version": "1.0.0-custom",
+      "implementation": "Built-in Raw Corpus Scanner"
+    },
+    "bm25": {
+      "status": "READY",
+      "version": "rank-bm25 0.2.2",
+      "implementation": "rank_bm25.BM25Okapi"
+    },
+    "dense": {
+      "status": "READY",
+      "version": "sentence-transformers 5.3.0 (all-MiniLM-L6-v2)",
+      "implementation": "sentence_transformers"
+    },
+    "hybrid": {
+      "status": "READY",
+      "version": "1.0.0-RRF",
+      "implementation": "Reciprocal Rank Fusion (BM25 + Dense)"
+    },
+    "graphrag": {
+      "status": "FAILED_SETUP",
+      "version": null,
+      "error": "GRAPH SYSTEM RULE: Real Microsoft GraphRAG engine is required. Upstream package / API credentials not configured."
+    },
+    "graphiti": {
+      "status": "FAILED_SETUP",
+      "version": null,
+      "error": "GRAPH SYSTEM RULE: Official Graphiti container service (Docker + Neo4j/FalkorDB) is required."
+    },
+    "hipporag2": {
+      "status": "FAILED_SETUP",
+      "version": null,
+      "error": "GRAPH SYSTEM RULE: Upstream HippoRAG2 implementation is required."
+    },
+    "raptor": {
+      "status": "FAILED_SETUP",
+      "version": null,
+      "error": "GRAPH SYSTEM RULE: Upstream RAPTOR implementation is required."
+    }
+  }
+}
