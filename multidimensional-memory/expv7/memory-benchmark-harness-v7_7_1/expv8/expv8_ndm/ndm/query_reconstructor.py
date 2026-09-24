@@ -480,9 +480,15 @@ class NDMQueryReconstructor:
                         ids.add(source)
                         changed = True
 
-                # Include correction evidence attached to the selected
-                # decision, e.g. the compliance correction for P305.
-                if rel_type == "corrects" and target in ids:
+                # Correction evidence belongs in compound "why/what
+                # changed" lifecycle questions, not in a plain lifecycle
+                # reconstruction such as "what happened to the original
+                # CockroachDB decision?"
+                if (
+                    rel_type == "corrects"
+                    and "why" in qtokens
+                    and target in ids
+                ):
                     if source in self.propositions and source not in ids:
                         ids.add(source)
                         changed = True
