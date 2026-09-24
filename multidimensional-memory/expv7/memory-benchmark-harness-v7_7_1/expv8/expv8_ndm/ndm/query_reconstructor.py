@@ -244,7 +244,13 @@ class NDMQueryReconstructor:
         if self.norm(spec.scope) == "reporting service database choice":
             candidates = [
                 p for p in candidates
-                if "architecture" not in self.tokens(self.proposition_text(p))
+                if (
+                    "architecture" not in self.tokens(self.proposition_text(p))
+                    and not (
+                        {"alex", "clarified"} <=
+                        self.tokens(self.proposition_text(p))
+                    )
+                )
             ]
 
         if self.norm(spec.scope) == "reporting architecture":
