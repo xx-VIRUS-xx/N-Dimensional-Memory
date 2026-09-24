@@ -1,0 +1,1001 @@
+{
+  "status": "SUCCESS",
+  "version": "ndm-query-reconstructor-v8",
+  "memory_path": "results/ndm/adversarial_02/memory.json",
+  "query_count": 8,
+  "results": [
+    {
+      "query_id": "Q201",
+      "question": "What database did Alice originally choose for the billing service?",
+      "mode": "historical",
+      "propositions": [
+        {
+          "id": "P101",
+          "text": "The billing service should use PostgreSQL.",
+          "status": "observed",
+          "belief": "confirmed",
+          "entities": [
+            "ent_alice",
+            "ent_billing_service",
+            "ent_postgresql"
+          ],
+          "scope": "billing_service",
+          "valid_from": "2026-02-01T09:00:00",
+          "valid_to": "2026-02-03T09:00:00",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E101"
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "E101",
+          "timestamp": "2026-02-01T09:00:00",
+          "description": "Alice decided billing service should use PostgreSQL.",
+          "proposition_ids": [
+            "P101"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E101"
+          }
+        }
+      ],
+      "relationships": [
+        {
+          "type": "supersedes",
+          "from": "P103",
+          "to": "P101",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E103"
+          }
+        }
+      ],
+      "beliefs": [],
+      "negative_knowledge": [],
+      "selected_proposition_ids": [
+        "P101"
+      ],
+      "selected_event_ids": [
+        "E101"
+      ]
+    },
+    {
+      "query_id": "Q202",
+      "question": "What database does the billing service currently use after all of Alice's changes?",
+      "mode": "current",
+      "propositions": [
+        {
+          "id": "P110",
+          "text": "The billing service will use MongoDB, decided after the compliance review.",
+          "status": "observed",
+          "belief": "confirmed",
+          "entities": [
+            "ent_alice",
+            "ent_billing_service",
+            "ent_mongodb"
+          ],
+          "scope": "billing_service",
+          "valid_from": "2026-02-10T09:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E110"
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "E110",
+          "timestamp": "2026-02-10T09:00:00",
+          "description": "Alice decided to use MongoDB for the billing service after the compliance review.",
+          "proposition_ids": [
+            "P110"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E110"
+          }
+        }
+      ],
+      "relationships": [
+        {
+          "type": "supersedes",
+          "from": "P110",
+          "to": "P106",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E110"
+          }
+        },
+        {
+          "type": "supersedes",
+          "from": "P110",
+          "to": "P108",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E110"
+          }
+        },
+        {
+          "type": "supports",
+          "from": "P109",
+          "to": "P110",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E110"
+          }
+        }
+      ],
+      "beliefs": [],
+      "negative_knowledge": [],
+      "selected_proposition_ids": [
+        "P110"
+      ],
+      "selected_event_ids": [
+        "E110"
+      ]
+    },
+    {
+      "query_id": "Q203",
+      "question": "How did Alice's billing-service database decision evolve over time?",
+      "mode": "temporal",
+      "propositions": [
+        {
+          "id": "P101",
+          "text": "The billing service should use PostgreSQL.",
+          "status": "observed",
+          "belief": "confirmed",
+          "entities": [
+            "ent_alice",
+            "ent_billing_service",
+            "ent_postgresql"
+          ],
+          "scope": "billing_service",
+          "valid_from": "2026-02-01T09:00:00",
+          "valid_to": "2026-02-03T09:00:00",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E101"
+          }
+        },
+        {
+          "id": "P103",
+          "text": "The billing service switched to DynamoDB because of the operating cost.",
+          "status": "observed",
+          "belief": "confirmed",
+          "entities": [
+            "ent_alice",
+            "ent_billing_service",
+            "ent_dynamodb"
+          ],
+          "scope": "billing_service",
+          "valid_from": "2026-02-03T09:00:00",
+          "valid_to": "2026-02-06T09:00:00",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E103"
+          }
+        },
+        {
+          "id": "P106",
+          "text": "The billing service should use CockroachDB instead of DynamoDB.",
+          "status": "observed",
+          "belief": "confirmed",
+          "entities": [
+            "ent_alice",
+            "ent_billing_service",
+            "ent_cockroachdb",
+            "ent_dynamodb"
+          ],
+          "scope": "billing_service",
+          "valid_from": "2026-02-06T09:00:00",
+          "valid_to": "2026-02-10T09:00:00",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E106"
+          }
+        },
+        {
+          "id": "P110",
+          "text": "The billing service will use MongoDB, decided after the compliance review.",
+          "status": "observed",
+          "belief": "confirmed",
+          "entities": [
+            "ent_alice",
+            "ent_billing_service",
+            "ent_mongodb"
+          ],
+          "scope": "billing_service",
+          "valid_from": "2026-02-10T09:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E110"
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "E101",
+          "timestamp": "2026-02-01T09:00:00",
+          "description": "Alice decided billing service should use PostgreSQL.",
+          "proposition_ids": [
+            "P101"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E101"
+          }
+        },
+        {
+          "id": "E103",
+          "timestamp": "2026-02-03T09:00:00",
+          "description": "Alice switched the billing service to DynamoDB because of the operating cost.",
+          "proposition_ids": [
+            "P103"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E103"
+          }
+        },
+        {
+          "id": "E106",
+          "timestamp": "2026-02-06T09:00:00",
+          "description": "Alice decided billing service should use CockroachDB instead of DynamoDB.",
+          "proposition_ids": [
+            "P106"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E106"
+          }
+        },
+        {
+          "id": "E110",
+          "timestamp": "2026-02-10T09:00:00",
+          "description": "Alice decided to use MongoDB for the billing service after the compliance review.",
+          "proposition_ids": [
+            "P110"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E110"
+          }
+        }
+      ],
+      "relationships": [
+        {
+          "type": "caused",
+          "from": "P102",
+          "to": "P103",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E103"
+          }
+        },
+        {
+          "type": "supersedes",
+          "from": "P103",
+          "to": "P101",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E103"
+          }
+        },
+        {
+          "type": "supersedes",
+          "from": "P106",
+          "to": "P103",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E106"
+          }
+        },
+        {
+          "type": "supersedes",
+          "from": "P110",
+          "to": "P106",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E110"
+          }
+        },
+        {
+          "type": "supersedes",
+          "from": "P110",
+          "to": "P108",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E110"
+          }
+        },
+        {
+          "type": "supports",
+          "from": "P109",
+          "to": "P110",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E110"
+          }
+        }
+      ],
+      "beliefs": [],
+      "negative_knowledge": [],
+      "selected_proposition_ids": [
+        "P101",
+        "P103",
+        "P106",
+        "P110"
+      ],
+      "selected_event_ids": [
+        "E101",
+        "E103",
+        "E106",
+        "E110"
+      ]
+    },
+    {
+      "query_id": "Q204",
+      "question": "Does Bob's preference for PostgreSQL mean the analytics pipeline or billing service uses PostgreSQL?",
+      "mode": "scope",
+      "propositions": [
+        {
+          "id": "P104",
+          "text": "Bob believed PostgreSQL was still better for analytics workloads.",
+          "status": "observed",
+          "belief": "confirmed",
+          "entities": [
+            "ent_bob",
+            "ent_postgresql"
+          ],
+          "scope": "analytics_pipeline",
+          "valid_from": "2026-02-04T09:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E104"
+          }
+        },
+        {
+          "id": "P107",
+          "text": "The analytics pipeline continued using PostgreSQL.",
+          "status": "observed",
+          "belief": "confirmed",
+          "entities": [
+            "ent_analytics_pipeline",
+            "ent_postgresql"
+          ],
+          "scope": "analytics_pipeline",
+          "valid_from": "2026-02-07T09:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E107"
+          }
+        },
+        {
+          "id": "P106",
+          "text": "The billing service should use CockroachDB instead of DynamoDB.",
+          "status": "observed",
+          "belief": "confirmed",
+          "entities": [
+            "ent_alice",
+            "ent_billing_service",
+            "ent_cockroachdb",
+            "ent_dynamodb"
+          ],
+          "scope": "billing_service",
+          "valid_from": "2026-02-06T09:00:00",
+          "valid_to": "2026-02-10T09:00:00",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E106"
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "E104",
+          "timestamp": "2026-02-04T09:00:00",
+          "description": "Bob believed PostgreSQL was still better for analytics workloads.",
+          "proposition_ids": [
+            "P104"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E104"
+          }
+        },
+        {
+          "id": "E106",
+          "timestamp": "2026-02-06T09:00:00",
+          "description": "Alice decided billing service should use CockroachDB instead of DynamoDB.",
+          "proposition_ids": [
+            "P106"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E106"
+          }
+        },
+        {
+          "id": "E107",
+          "timestamp": "2026-02-07T09:00:00",
+          "description": "The analytics pipeline continued using PostgreSQL.",
+          "proposition_ids": [
+            "P107"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E107"
+          }
+        }
+      ],
+      "relationships": [
+        {
+          "type": "supersedes",
+          "from": "P106",
+          "to": "P103",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E106"
+          }
+        },
+        {
+          "type": "supersedes",
+          "from": "P110",
+          "to": "P106",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E110"
+          }
+        }
+      ],
+      "beliefs": [],
+      "negative_knowledge": [],
+      "selected_proposition_ids": [
+        "P104",
+        "P107",
+        "P106"
+      ],
+      "selected_event_ids": [
+        "E104",
+        "E106",
+        "E107"
+      ]
+    },
+    {
+      "query_id": "Q205",
+      "question": "What happened to Alice's rejection of MongoDB?",
+      "mode": "lifecycle",
+      "propositions": [
+        {
+          "id": "P108",
+          "text": "MongoDB was explicitly rejected for the billing service.",
+          "status": "rejected",
+          "belief": "rejected",
+          "entities": [
+            "ent_alice",
+            "ent_billing_service",
+            "ent_mongodb"
+          ],
+          "scope": "billing_service",
+          "valid_from": "2026-02-08T09:00:00",
+          "valid_to": "2026-02-09T09:00:00",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E108"
+          }
+        },
+        {
+          "id": "P109",
+          "text": "Alice reconsidered MongoDB after a new compliance requirement was introduced.",
+          "status": "observed",
+          "belief": "confirmed",
+          "entities": [
+            "ent_alice",
+            "ent_mongodb",
+            "ent_compliance_requirement"
+          ],
+          "scope": "billing_service",
+          "valid_from": "2026-02-09T09:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E109"
+          }
+        },
+        {
+          "id": "P110",
+          "text": "The billing service will use MongoDB, decided after the compliance review.",
+          "status": "observed",
+          "belief": "confirmed",
+          "entities": [
+            "ent_alice",
+            "ent_billing_service",
+            "ent_mongodb"
+          ],
+          "scope": "billing_service",
+          "valid_from": "2026-02-10T09:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E110"
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "E108",
+          "timestamp": "2026-02-08T09:00:00",
+          "description": "Alice explicitly rejected MongoDB for the billing service.",
+          "proposition_ids": [
+            "P108"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E108"
+          }
+        },
+        {
+          "id": "E109",
+          "timestamp": "2026-02-09T09:00:00",
+          "description": "Alice reconsidered MongoDB after a new compliance requirement was introduced.",
+          "proposition_ids": [
+            "P109"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E109"
+          }
+        },
+        {
+          "id": "E110",
+          "timestamp": "2026-02-10T09:00:00",
+          "description": "Alice decided to use MongoDB for the billing service after the compliance review.",
+          "proposition_ids": [
+            "P110"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E110"
+          }
+        }
+      ],
+      "relationships": [
+        {
+          "type": "supersedes",
+          "from": "P110",
+          "to": "P106",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E110"
+          }
+        },
+        {
+          "type": "supersedes",
+          "from": "P110",
+          "to": "P108",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E110"
+          }
+        },
+        {
+          "type": "caused",
+          "from": "ent_compliance_requirement",
+          "to": "P109",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E109"
+          }
+        },
+        {
+          "type": "supports",
+          "from": "P109",
+          "to": "P110",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E110"
+          }
+        }
+      ],
+      "beliefs": [],
+      "negative_knowledge": [
+        {
+          "id": "NK1",
+          "type": "considered_rejected",
+          "description": "MongoDB was explicitly rejected for the billing service (subsequently reconsidered and reversed).",
+          "related_proposition_id": "P108",
+          "superseded_by": "P110",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E108"
+          }
+        }
+      ],
+      "selected_proposition_ids": [
+        "P108",
+        "P109",
+        "P110"
+      ],
+      "selected_event_ids": [
+        "E108",
+        "E109",
+        "E110"
+      ]
+    },
+    {
+      "query_id": "Q206",
+      "question": "What database had the reporting team selected?",
+      "mode": "belief",
+      "propositions": [
+        {
+          "id": "P111",
+          "text": "The team was considering Cassandra and DynamoDB for a new reporting service; no decision had been made.",
+          "status": "observed",
+          "belief": "confirmed",
+          "entities": [
+            "ent_carol",
+            "ent_reporting_service",
+            "ent_cassandra",
+            "ent_dynamodb"
+          ],
+          "scope": "reporting_service",
+          "valid_from": "2026-02-11T09:00:00",
+          "valid_to": "2026-02-12T09:00:00",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E111"
+          }
+        },
+        {
+          "id": "P112",
+          "text": "The reporting team discussed Cassandra again but still had not selected a database.",
+          "status": "observed",
+          "belief": "confirmed",
+          "entities": [
+            "ent_reporting_service",
+            "ent_cassandra"
+          ],
+          "scope": "reporting_service",
+          "valid_from": "2026-02-12T09:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E112"
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "E111",
+          "timestamp": "2026-02-11T09:00:00",
+          "description": "Carol said the team was considering Cassandra and DynamoDB for a new reporting service; no decision made.",
+          "proposition_ids": [
+            "P111"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E111"
+          }
+        },
+        {
+          "id": "E112",
+          "timestamp": "2026-02-12T09:00:00",
+          "description": "The reporting team discussed Cassandra again but still had not selected a database.",
+          "proposition_ids": [
+            "P112"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E112"
+          }
+        }
+      ],
+      "relationships": [],
+      "beliefs": [],
+      "negative_knowledge": [
+        {
+          "id": "NK2",
+          "type": "not_done",
+          "description": "No decision had been made on a database for the new reporting service as of E111.",
+          "related_proposition_id": "P111",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E111"
+          }
+        },
+        {
+          "id": "NK3",
+          "type": "not_done",
+          "description": "The reporting team still had not selected a database as of E112.",
+          "related_proposition_id": "P112",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E112"
+          }
+        }
+      ],
+      "selected_proposition_ids": [
+        "P111",
+        "P112"
+      ],
+      "selected_event_ids": [
+        "E111",
+        "E112"
+      ]
+    },
+    {
+      "query_id": "Q207",
+      "question": "Did the deployment cause the migration?",
+      "mode": "causal",
+      "propositions": [
+        {
+          "id": "P113",
+          "text": "The billing service deployment completed successfully.",
+          "status": "observed",
+          "belief": "confirmed",
+          "entities": [
+            "ent_billing_service",
+            "ent_billing_deployment"
+          ],
+          "scope": "billing_service",
+          "valid_from": "2026-02-13T09:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E113"
+          }
+        },
+        {
+          "id": "P114",
+          "text": "The deployment completed after the migration work (temporal order only; no causal claim was made).",
+          "status": "observed",
+          "belief": "confirmed",
+          "entities": [
+            "ent_alice",
+            "ent_billing_deployment",
+            "ent_migration_work"
+          ],
+          "scope": "billing_service",
+          "valid_from": "2026-02-14T09:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E114"
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "E113",
+          "timestamp": "2026-02-13T09:00:00",
+          "description": "The billing service deployment completed successfully.",
+          "proposition_ids": [
+            "P113"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E113"
+          }
+        },
+        {
+          "id": "E114",
+          "timestamp": "2026-02-14T09:00:00",
+          "description": "Alice said the deployment completed after the migration work, but did not say deployment caused migration.",
+          "proposition_ids": [
+            "P114"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E114"
+          }
+        }
+      ],
+      "relationships": [
+        {
+          "type": "follows",
+          "from": "P113",
+          "to": "ent_migration_work",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E114"
+          }
+        }
+      ],
+      "beliefs": [],
+      "negative_knowledge": [
+        {
+          "id": "NK4",
+          "type": "not_true",
+          "description": "It was explicitly not claimed that the deployment caused the migration work; only temporal order (deployment followed migration) was stated.",
+          "related_proposition_id": "P114",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E114"
+          }
+        }
+      ],
+      "selected_proposition_ids": [
+        "P113",
+        "P114"
+      ],
+      "selected_event_ids": [
+        "E113",
+        "E114"
+      ]
+    },
+    {
+      "query_id": "Q208",
+      "question": "Which Alex approved the reporting architecture?",
+      "mode": "belief",
+      "propositions": [
+        {
+          "id": "P115",
+          "text": "Alex approved the reporting architecture.",
+          "status": "observed",
+          "belief": "confirmed",
+          "entities": [
+            "ent_alex_platform",
+            "ent_reporting_architecture"
+          ],
+          "scope": "reporting_service",
+          "valid_from": "2026-02-15T09:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E115"
+          }
+        },
+        {
+          "id": "P116",
+          "text": "Another Alex, from the analytics team, rejected the reporting architecture.",
+          "status": "observed",
+          "belief": "confirmed",
+          "entities": [
+            "ent_alex_analytics",
+            "ent_reporting_architecture"
+          ],
+          "scope": "reporting_service",
+          "valid_from": "2026-02-16T09:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E116"
+          }
+        },
+        {
+          "id": "P117",
+          "text": "The first Alex clarified that they were Alex from the platform team.",
+          "status": "observed",
+          "belief": "confirmed",
+          "entities": [
+            "ent_alex_platform"
+          ],
+          "scope": "reporting_service",
+          "valid_from": "2026-02-17T09:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E117"
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "E115",
+          "timestamp": "2026-02-15T09:00:00",
+          "description": "Alex approved the reporting architecture.",
+          "proposition_ids": [
+            "P115"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E115"
+          }
+        },
+        {
+          "id": "E116",
+          "timestamp": "2026-02-16T09:00:00",
+          "description": "Another Alex from the analytics team rejected the reporting architecture.",
+          "proposition_ids": [
+            "P116"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E116"
+          }
+        },
+        {
+          "id": "E117",
+          "timestamp": "2026-02-17T09:00:00",
+          "description": "The first Alex clarified that they were Alex from the platform team.",
+          "proposition_ids": [
+            "P117"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_02",
+            "span": "E117"
+          }
+        }
+      ],
+      "relationships": [],
+      "beliefs": [],
+      "negative_knowledge": [],
+      "selected_proposition_ids": [
+        "P115",
+        "P116",
+        "P117"
+      ],
+      "selected_event_ids": [
+        "E115",
+        "E116",
+        "E117"
+      ]
+    }
+  ]
+}
