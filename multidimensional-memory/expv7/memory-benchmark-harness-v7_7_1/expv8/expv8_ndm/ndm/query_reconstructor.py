@@ -260,22 +260,29 @@ class NDMQueryReconstructor:
 
             ids = set(self.lifecycle(str(anchor["id"])))
 
-            # A rejection lifecycle can continue through reconsideration and
-            # support edges, even when the reconsideration is not itself a
-            # supersession edge.
+            # Follow the rejection forward through explicit supersession.
+            # Do not use the undirected lifecycle graph here: P108 -> P110
+            # must not drag the older P103/P106 branches into the answer.
             changed = True
             while changed:
                 changed = False
                 for rel in self.relationships:
-                    if self.norm(rel.get("type")) not in {"supports", "caused", "follows"}:
-                        continue
-                    source, target = str(rel.get("source")), str(rel.get("target"))
-                    if source in ids and target in self.propositions and target not in ids:
-                        ids.add(target)
-                        changed = True
-                    if target in ids and source in self.propositions and source not in ids:
-                        ids.add(source)
-                        changed = True
+                    rel_type = self.norm(rel.get("type"))
+                    source = str(rel.get("source"))
+                    target = str(rel.get("target"))
+
+                    if rel_type == "supersedes" and target in ids:
+                        if source in self.propositions and source not in ids:
+                            ids.add(source)
+                            changed = True
+
+                    # Reconsideration/support evidence can point into the
+                    # selected lifecycle. Include the supporting proposition,
+                    # but do not walk arbitrary causal/follows branches.
+                    if rel_type == "supports" and target in ids:
+                        if source in self.propositions and source not in ids:
+                            ids.add(source)
+                            changed = True
 
             return self._packet(
                 spec,
@@ -337,8 +344,11 @@ class NDMQueryReconstructor:
             target_selected = target[:1]
 
         selected = external_selected[:2] + target_selected
-        selected = list(dict.fromkeys(selected))
-        return self._packet(spec, [p["id"] for p in selected])
+
+        # Propositions are dictionaries, so deduplicate by stable proposition
+        # identity rather than attempting to hash the records themselves.
+        selected_ids = list(dict.fromkeys(str(p["id"]) for p in selected))
+        return self._packet(spec, selected_ids)
 
     def _belief(self, spec: QuerySpec) -> Dict[str, Any]:
         candidates = self._candidate(spec)
