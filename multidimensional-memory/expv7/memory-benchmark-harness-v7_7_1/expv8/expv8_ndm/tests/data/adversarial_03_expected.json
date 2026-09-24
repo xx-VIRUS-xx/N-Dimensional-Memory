@@ -1,0 +1,36 @@
+{
+  "benchmark_id": "ADV-03",
+  "validation": "representation_only",
+  "expected_semantics": {
+    "current_state": "E307",
+    "decision_chain": [
+      "E301",
+      "E303",
+      "E305",
+      "E307"
+    ],
+    "belief_conflict": [
+      "E308",
+      "E309"
+    ],
+    "correction": [
+      "E306",
+      "E307"
+    ],
+    "identity_resolution": [
+      "E311"
+    ],
+    "scope_exclusion": [
+      "E310"
+    ],
+    "negative_causality": [
+      "E313"
+    ],
+    "compound": [
+      "E304",
+      "E305",
+      "E306",
+      "E307"
+    ]
+  }
+}
