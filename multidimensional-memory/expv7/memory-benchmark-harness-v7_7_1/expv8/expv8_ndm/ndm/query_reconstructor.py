@@ -250,7 +250,10 @@ class NDMQueryReconstructor:
         if self.norm(spec.scope) == "reporting architecture":
             candidates = [
                 p for p in candidates
-                if "architecture" in self.tokens(self.proposition_text(p))
+                if (
+                    "architecture" in self.tokens(self.proposition_text(p))
+                    or {"alex", "clarified"} <= self.tokens(self.proposition_text(p))
+                )
             ]
 
         return candidates
