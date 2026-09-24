@@ -1,0 +1,21 @@
+{
+  "condition": "RAW",
+  "dataset": "LongBench-v2",
+  "split": "train",
+  "questions": 503,
+  "answered": 18,
+  "correct": 9,
+  "accuracy": 0.5,
+  "errors": 485,
+  "rate_limits": 0,
+  "interrupted": false,
+  "reader": "claude_code",
+  "reader_model_requested": "sonnet",
+  "estimated_cost_usd": 20.3017568,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "cache_read_input_tokens": 0,
+  "cache_creation_input_tokens": 0,
+  "total_runtime_seconds": 1784.52,
+  "output": "results/raw/longbench_v2_raw.jsonl"
+}

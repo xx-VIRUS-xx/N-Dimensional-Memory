@@ -1,0 +1,90 @@
+[
+  {
+    "query_id": "Q001",
+    "question": "What database did Alice originally decide to use for the billing service?",
+    "expected_answer": "PostgreSQL",
+    "expected_evidence": ["E001"],
+    "mode": "historical",
+    "subject": "ENT_ALICE",
+    "scope": "billing service technology choice"
+  },
+  {
+    "query_id": "Q002",
+    "question": "What database did Alice ultimately decide to use for the billing service?",
+    "expected_answer": "DynamoDB",
+    "expected_evidence": ["E003"],
+    "mode": "current",
+    "subject": "ENT_ALICE",
+    "scope": "billing service technology choice"
+  },
+  {
+    "query_id": "Q003",
+    "question": "What happened to Alice's original PostgreSQL decision?",
+    "expected_answer": "It was superseded by the DynamoDB decision.",
+    "expected_evidence": ["E001", "E003"],
+    "mode": "lifecycle",
+    "subject": "ENT_ALICE",
+    "scope": "billing service technology choice"
+  },
+  {
+    "query_id": "Q004",
+    "question": "Why did Alice reconsider PostgreSQL?",
+    "expected_answer": "Because PostgreSQL was becoming expensive to operate.",
+    "expected_evidence": ["E002"],
+    "mode": "causal",
+    "subject": "ENT_ALICE",
+    "scope": "operating cost of PostgreSQL for billing service"
+  },
+  {
+    "query_id": "Q005",
+    "question": "What does Bob believe about PostgreSQL?",
+    "expected_answer": "Bob believes PostgreSQL is the better option for analytics.",
+    "expected_evidence": ["E004"],
+    "mode": "belief",
+    "subject": "ENT_BOB",
+    "scope": "analytics use case, as believed by Bob"
+  },
+  {
+    "query_id": "Q006",
+    "question": "Does Bob's preference mean the billing service currently uses PostgreSQL?",
+    "expected_answer": "No.",
+    "expected_evidence": ["E003", "E004"],
+    "mode": "scope",
+    "scope": "billing service technology choice"
+  },
+  {
+    "query_id": "Q007",
+    "question": "Which database did Alice explicitly reject for the billing service?",
+    "expected_answer": "MongoDB.",
+    "expected_evidence": ["E005"],
+    "mode": "negative",
+    "subject": "ENT_ALICE",
+    "scope": "billing service technology choice"
+  },
+  {
+    "query_id": "Q008",
+    "question": "What were Alice's billing-service database decisions over time?",
+    "expected_answer": "She initially chose PostgreSQL and later changed the decision to DynamoDB.",
+    "expected_evidence": ["E001", "E003"],
+    "mode": "temporal",
+    "subject": "ENT_ALICE",
+    "scope": "billing service technology choice"
+  },
+  {
+    "query_id": "Q009",
+    "question": "Is Bob's belief that PostgreSQL is better for analytics a contradiction of Alice's DynamoDB decision for the billing service?",
+    "expected_answer": "No. They concern different scopes.",
+    "expected_evidence": ["E003", "E004"],
+    "mode": "contradiction",
+    "scope": "billing service technology choice"
+  },
+  {
+    "query_id": "Q010",
+    "question": "What caused Alice to reconsider the PostgreSQL decision?",
+    "expected_answer": "The increasing operating cost of PostgreSQL.",
+    "expected_evidence": ["E002"],
+    "mode": "causal",
+    "subject": "ENT_ALICE",
+    "scope": "operating cost of PostgreSQL for billing service"
+  }
+]

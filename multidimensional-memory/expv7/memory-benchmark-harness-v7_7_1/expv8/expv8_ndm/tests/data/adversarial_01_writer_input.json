@@ -1,0 +1,5 @@
+{
+  "source_id": "adversarial_01",
+  "conversation_id": "ADV-01",
+  "context": "[E001] [2026-01-01T10:00:00] Alice decided that the billing service should use PostgreSQL.\n[E002] [2026-01-03T10:00:00] Alice reconsidered the decision because PostgreSQL was becoming expensive to operate.\n[E003] [2026-01-05T10:00:00] Alice decided that the billing service should use DynamoDB instead.\n[E004] [2026-01-06T10:00:00] Bob still believed PostgreSQL was the better option for analytics.\n[E005] [2026-01-07T10:00:00] Alice explicitly rejected MongoDB for the billing service."
+}

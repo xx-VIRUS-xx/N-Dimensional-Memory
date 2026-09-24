@@ -1,0 +1,786 @@
+{
+  "status": "SUCCESS",
+  "version": "ndm-retriever-v3.1",
+  "memory_path": "results/ndm/adversarial_01/memory.json",
+  "query_count": 10,
+  "results": [
+    {
+      "query_id": "Q001",
+      "question": "What database did Alice originally decide to use for the billing service?",
+      "mode": "historical",
+      "propositions": [
+        {
+          "id": "PROP_001",
+          "text": "The billing service should use PostgreSQL.",
+          "status": "superseded",
+          "subject": "ENT_BILLING_SERVICE",
+          "object": "ENT_POSTGRESQL",
+          "scope": "billing service technology choice",
+          "valid_from": "2026-01-01T10:00:00",
+          "valid_to": "2026-01-05T10:00:00",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E001"
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "E001",
+          "timestamp": "2026-01-01T10:00:00",
+          "description": "Alice decided that the billing service should use PostgreSQL.",
+          "participants": [
+            "ENT_ALICE",
+            "ENT_BILLING_SERVICE",
+            "ENT_POSTGRESQL"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E001"
+          }
+        }
+      ],
+      "relationships": [],
+      "beliefs": [
+        {
+          "id": "BELIEF_001",
+          "holder": "ENT_ALICE",
+          "proposition": "PROP_001",
+          "state": "confirmed",
+          "valid_from": "2026-01-01T10:00:00",
+          "valid_to": "2026-01-05T10:00:00",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E001"
+          }
+        }
+      ],
+      "negative_knowledge": [],
+      "selected_proposition_ids": [
+        "PROP_001"
+      ],
+      "selected_event_ids": [
+        "E001"
+      ]
+    },
+    {
+      "query_id": "Q002",
+      "question": "What database did Alice ultimately decide to use for the billing service?",
+      "mode": "current",
+      "propositions": [
+        {
+          "id": "PROP_003",
+          "text": "The billing service should use DynamoDB instead of PostgreSQL.",
+          "status": "observed",
+          "subject": "ENT_BILLING_SERVICE",
+          "object": "ENT_DYNAMODB",
+          "scope": "billing service technology choice",
+          "valid_from": "2026-01-05T10:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E003"
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "E003",
+          "timestamp": "2026-01-05T10:00:00",
+          "description": "Alice decided that the billing service should use DynamoDB instead.",
+          "participants": [
+            "ENT_ALICE",
+            "ENT_BILLING_SERVICE",
+            "ENT_DYNAMODB"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E003"
+          }
+        }
+      ],
+      "relationships": [],
+      "beliefs": [
+        {
+          "id": "BELIEF_002",
+          "holder": "ENT_ALICE",
+          "proposition": "PROP_003",
+          "state": "confirmed",
+          "valid_from": "2026-01-05T10:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E003"
+          }
+        }
+      ],
+      "negative_knowledge": [],
+      "selected_proposition_ids": [
+        "PROP_003"
+      ],
+      "selected_event_ids": [
+        "E003"
+      ]
+    },
+    {
+      "query_id": "Q003",
+      "question": "What happened to Alice's original PostgreSQL decision?",
+      "mode": "lifecycle",
+      "propositions": [
+        {
+          "id": "PROP_001",
+          "text": "The billing service should use PostgreSQL.",
+          "status": "superseded",
+          "subject": "ENT_BILLING_SERVICE",
+          "object": "ENT_POSTGRESQL",
+          "scope": "billing service technology choice",
+          "valid_from": "2026-01-01T10:00:00",
+          "valid_to": "2026-01-05T10:00:00",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E001"
+          }
+        },
+        {
+          "id": "PROP_003",
+          "text": "The billing service should use DynamoDB instead of PostgreSQL.",
+          "status": "observed",
+          "subject": "ENT_BILLING_SERVICE",
+          "object": "ENT_DYNAMODB",
+          "scope": "billing service technology choice",
+          "valid_from": "2026-01-05T10:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E003"
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "E001",
+          "timestamp": "2026-01-01T10:00:00",
+          "description": "Alice decided that the billing service should use PostgreSQL.",
+          "participants": [
+            "ENT_ALICE",
+            "ENT_BILLING_SERVICE",
+            "ENT_POSTGRESQL"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E001"
+          }
+        },
+        {
+          "id": "E003",
+          "timestamp": "2026-01-05T10:00:00",
+          "description": "Alice decided that the billing service should use DynamoDB instead.",
+          "participants": [
+            "ENT_ALICE",
+            "ENT_BILLING_SERVICE",
+            "ENT_DYNAMODB"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E003"
+          }
+        }
+      ],
+      "relationships": [
+        {
+          "type": "supersedes",
+          "source": "PROP_003",
+          "target": "PROP_001",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E003"
+          }
+        }
+      ],
+      "beliefs": [
+        {
+          "id": "BELIEF_001",
+          "holder": "ENT_ALICE",
+          "proposition": "PROP_001",
+          "state": "confirmed",
+          "valid_from": "2026-01-01T10:00:00",
+          "valid_to": "2026-01-05T10:00:00",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E001"
+          }
+        },
+        {
+          "id": "BELIEF_002",
+          "holder": "ENT_ALICE",
+          "proposition": "PROP_003",
+          "state": "confirmed",
+          "valid_from": "2026-01-05T10:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E003"
+          }
+        }
+      ],
+      "negative_knowledge": [],
+      "selected_proposition_ids": [
+        "PROP_001",
+        "PROP_003"
+      ],
+      "selected_event_ids": [
+        "E001",
+        "E003"
+      ]
+    },
+    {
+      "query_id": "Q004",
+      "question": "Why did Alice reconsider PostgreSQL?",
+      "mode": "causal",
+      "propositions": [
+        {
+          "id": "PROP_002",
+          "text": "PostgreSQL was becoming expensive to operate.",
+          "status": "observed",
+          "subject": "ENT_POSTGRESQL",
+          "object": null,
+          "scope": "operating cost of PostgreSQL for billing service",
+          "valid_from": "2026-01-03T10:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E002"
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "E002",
+          "timestamp": "2026-01-03T10:00:00",
+          "description": "Alice reconsidered the decision because PostgreSQL was becoming expensive to operate.",
+          "participants": [
+            "ENT_ALICE",
+            "ENT_POSTGRESQL"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E002"
+          }
+        }
+      ],
+      "relationships": [
+        {
+          "type": "caused",
+          "source": "PROP_002",
+          "target": "E002",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E002"
+          }
+        }
+      ],
+      "beliefs": [],
+      "negative_knowledge": [],
+      "selected_proposition_ids": [
+        "PROP_002"
+      ],
+      "selected_event_ids": [
+        "E002"
+      ]
+    },
+    {
+      "query_id": "Q005",
+      "question": "What does Bob believe about PostgreSQL?",
+      "mode": "belief",
+      "propositions": [
+        {
+          "id": "PROP_004",
+          "text": "PostgreSQL is the better option for analytics.",
+          "status": "observed",
+          "subject": "ENT_POSTGRESQL",
+          "object": null,
+          "scope": "analytics use case, as believed by Bob",
+          "valid_from": "2026-01-06T10:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E004"
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "E004",
+          "timestamp": "2026-01-06T10:00:00",
+          "description": "Bob still believed PostgreSQL was the better option for analytics.",
+          "participants": [
+            "ENT_BOB",
+            "ENT_POSTGRESQL"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E004"
+          }
+        }
+      ],
+      "relationships": [],
+      "beliefs": [
+        {
+          "id": "BELIEF_003",
+          "holder": "ENT_BOB",
+          "proposition": "PROP_004",
+          "state": "confirmed",
+          "valid_from": "2026-01-06T10:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E004"
+          }
+        }
+      ],
+      "negative_knowledge": [],
+      "selected_proposition_ids": [
+        "PROP_004"
+      ],
+      "selected_event_ids": [
+        "E004"
+      ]
+    },
+    {
+      "query_id": "Q006",
+      "question": "Does Bob's preference mean the billing service currently uses PostgreSQL?",
+      "mode": "scope",
+      "propositions": [
+        {
+          "id": "PROP_003",
+          "text": "The billing service should use DynamoDB instead of PostgreSQL.",
+          "status": "observed",
+          "subject": "ENT_BILLING_SERVICE",
+          "object": "ENT_DYNAMODB",
+          "scope": "billing service technology choice",
+          "valid_from": "2026-01-05T10:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E003"
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "E003",
+          "timestamp": "2026-01-05T10:00:00",
+          "description": "Alice decided that the billing service should use DynamoDB instead.",
+          "participants": [
+            "ENT_ALICE",
+            "ENT_BILLING_SERVICE",
+            "ENT_DYNAMODB"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E003"
+          }
+        }
+      ],
+      "relationships": [],
+      "beliefs": [
+        {
+          "id": "BELIEF_002",
+          "holder": "ENT_ALICE",
+          "proposition": "PROP_003",
+          "state": "confirmed",
+          "valid_from": "2026-01-05T10:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E003"
+          }
+        }
+      ],
+      "negative_knowledge": [],
+      "selected_proposition_ids": [
+        "PROP_003"
+      ],
+      "selected_event_ids": [
+        "E003"
+      ]
+    },
+    {
+      "query_id": "Q007",
+      "question": "Which database did Alice explicitly reject for the billing service?",
+      "mode": "negative",
+      "propositions": [
+        {
+          "id": "PROP_005",
+          "text": "MongoDB should be used for the billing service.",
+          "status": "rejected",
+          "subject": "ENT_BILLING_SERVICE",
+          "object": "ENT_MONGODB",
+          "scope": "billing service technology choice",
+          "valid_from": "2026-01-07T10:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E005"
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "E005",
+          "timestamp": "2026-01-07T10:00:00",
+          "description": "Alice explicitly rejected MongoDB for the billing service.",
+          "participants": [
+            "ENT_ALICE",
+            "ENT_BILLING_SERVICE",
+            "ENT_MONGODB"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E005"
+          }
+        }
+      ],
+      "relationships": [],
+      "beliefs": [
+        {
+          "id": "BELIEF_004",
+          "holder": "ENT_ALICE",
+          "proposition": "PROP_005",
+          "state": "rejected",
+          "valid_from": "2026-01-07T10:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E005"
+          }
+        }
+      ],
+      "negative_knowledge": [
+        {
+          "type": "considered_rejected",
+          "text": "MongoDB was considered and explicitly rejected for the billing service.",
+          "related_proposition": "PROP_005",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E005"
+          }
+        }
+      ],
+      "selected_proposition_ids": [
+        "PROP_005"
+      ],
+      "selected_event_ids": [
+        "E005"
+      ]
+    },
+    {
+      "query_id": "Q008",
+      "question": "What were Alice's billing-service database decisions over time?",
+      "mode": "temporal",
+      "propositions": [
+        {
+          "id": "PROP_001",
+          "text": "The billing service should use PostgreSQL.",
+          "status": "superseded",
+          "subject": "ENT_BILLING_SERVICE",
+          "object": "ENT_POSTGRESQL",
+          "scope": "billing service technology choice",
+          "valid_from": "2026-01-01T10:00:00",
+          "valid_to": "2026-01-05T10:00:00",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E001"
+          }
+        },
+        {
+          "id": "PROP_003",
+          "text": "The billing service should use DynamoDB instead of PostgreSQL.",
+          "status": "observed",
+          "subject": "ENT_BILLING_SERVICE",
+          "object": "ENT_DYNAMODB",
+          "scope": "billing service technology choice",
+          "valid_from": "2026-01-05T10:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E003"
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "E001",
+          "timestamp": "2026-01-01T10:00:00",
+          "description": "Alice decided that the billing service should use PostgreSQL.",
+          "participants": [
+            "ENT_ALICE",
+            "ENT_BILLING_SERVICE",
+            "ENT_POSTGRESQL"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E001"
+          }
+        },
+        {
+          "id": "E003",
+          "timestamp": "2026-01-05T10:00:00",
+          "description": "Alice decided that the billing service should use DynamoDB instead.",
+          "participants": [
+            "ENT_ALICE",
+            "ENT_BILLING_SERVICE",
+            "ENT_DYNAMODB"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E003"
+          }
+        }
+      ],
+      "relationships": [
+        {
+          "type": "supersedes",
+          "source": "PROP_003",
+          "target": "PROP_001",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E003"
+          }
+        }
+      ],
+      "beliefs": [
+        {
+          "id": "BELIEF_001",
+          "holder": "ENT_ALICE",
+          "proposition": "PROP_001",
+          "state": "confirmed",
+          "valid_from": "2026-01-01T10:00:00",
+          "valid_to": "2026-01-05T10:00:00",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E001"
+          }
+        },
+        {
+          "id": "BELIEF_002",
+          "holder": "ENT_ALICE",
+          "proposition": "PROP_003",
+          "state": "confirmed",
+          "valid_from": "2026-01-05T10:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E003"
+          }
+        }
+      ],
+      "negative_knowledge": [],
+      "selected_proposition_ids": [
+        "PROP_001",
+        "PROP_003"
+      ],
+      "selected_event_ids": [
+        "E001",
+        "E003"
+      ]
+    },
+    {
+      "query_id": "Q009",
+      "question": "Is Bob's belief that PostgreSQL is better for analytics a contradiction of Alice's DynamoDB decision for the billing service?",
+      "mode": "contradiction",
+      "propositions": [
+        {
+          "id": "PROP_003",
+          "text": "The billing service should use DynamoDB instead of PostgreSQL.",
+          "status": "observed",
+          "subject": "ENT_BILLING_SERVICE",
+          "object": "ENT_DYNAMODB",
+          "scope": "billing service technology choice",
+          "valid_from": "2026-01-05T10:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E003"
+          }
+        },
+        {
+          "id": "PROP_004",
+          "text": "PostgreSQL is the better option for analytics.",
+          "status": "observed",
+          "subject": "ENT_POSTGRESQL",
+          "object": null,
+          "scope": "analytics use case, as believed by Bob",
+          "valid_from": "2026-01-06T10:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E004"
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "E003",
+          "timestamp": "2026-01-05T10:00:00",
+          "description": "Alice decided that the billing service should use DynamoDB instead.",
+          "participants": [
+            "ENT_ALICE",
+            "ENT_BILLING_SERVICE",
+            "ENT_DYNAMODB"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E003"
+          }
+        },
+        {
+          "id": "E004",
+          "timestamp": "2026-01-06T10:00:00",
+          "description": "Bob still believed PostgreSQL was the better option for analytics.",
+          "participants": [
+            "ENT_BOB",
+            "ENT_POSTGRESQL"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E004"
+          }
+        }
+      ],
+      "relationships": [],
+      "beliefs": [
+        {
+          "id": "BELIEF_002",
+          "holder": "ENT_ALICE",
+          "proposition": "PROP_003",
+          "state": "confirmed",
+          "valid_from": "2026-01-05T10:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E003"
+          }
+        },
+        {
+          "id": "BELIEF_003",
+          "holder": "ENT_BOB",
+          "proposition": "PROP_004",
+          "state": "confirmed",
+          "valid_from": "2026-01-06T10:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E004"
+          }
+        }
+      ],
+      "negative_knowledge": [],
+      "selected_proposition_ids": [
+        "PROP_003",
+        "PROP_004"
+      ],
+      "selected_event_ids": [
+        "E003",
+        "E004"
+      ]
+    },
+    {
+      "query_id": "Q010",
+      "question": "What caused Alice to reconsider the PostgreSQL decision?",
+      "mode": "causal",
+      "propositions": [
+        {
+          "id": "PROP_002",
+          "text": "PostgreSQL was becoming expensive to operate.",
+          "status": "observed",
+          "subject": "ENT_POSTGRESQL",
+          "object": null,
+          "scope": "operating cost of PostgreSQL for billing service",
+          "valid_from": "2026-01-03T10:00:00",
+          "valid_to": null,
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E002"
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "E002",
+          "timestamp": "2026-01-03T10:00:00",
+          "description": "Alice reconsidered the decision because PostgreSQL was becoming expensive to operate.",
+          "participants": [
+            "ENT_ALICE",
+            "ENT_POSTGRESQL"
+          ],
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E002"
+          }
+        }
+      ],
+      "relationships": [
+        {
+          "type": "caused",
+          "source": "PROP_002",
+          "target": "E002",
+          "provenance": {
+            "source_type": "conversation",
+            "source_id": "adversarial_01",
+            "span": "E002"
+          }
+        }
+      ],
+      "beliefs": [],
+      "negative_knowledge": [],
+      "selected_proposition_ids": [
+        "PROP_002"
+      ],
+      "selected_event_ids": [
+        "E002"
+      ]
+    }
+  ]
+}

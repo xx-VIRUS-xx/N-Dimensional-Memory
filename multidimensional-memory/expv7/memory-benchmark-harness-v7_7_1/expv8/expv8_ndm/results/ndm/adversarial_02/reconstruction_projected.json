@@ -1,0 +1,104 @@
+{
+  "status": "SUCCESS",
+  "version": "ndm-retriever-v3.1",
+  "memory_path": "results/ndm/adversarial_02/memory_projected.json",
+  "query_count": 8,
+  "results": [
+    {
+      "query_id": "Q201",
+      "question": "What database did Alice originally choose for the billing service?",
+      "mode": "historical",
+      "propositions": [],
+      "events": [],
+      "relationships": [],
+      "beliefs": [],
+      "negative_knowledge": [],
+      "selected_proposition_ids": [],
+      "selected_event_ids": []
+    },
+    {
+      "query_id": "Q202",
+      "question": "What database does the billing service currently use after all of Alice's changes?",
+      "mode": "current",
+      "propositions": [],
+      "events": [],
+      "relationships": [],
+      "beliefs": [],
+      "negative_knowledge": [],
+      "selected_proposition_ids": [],
+      "selected_event_ids": []
+    },
+    {
+      "query_id": "Q203",
+      "question": "How did Alice's billing-service database decision evolve over time?",
+      "mode": "temporal",
+      "propositions": [],
+      "events": [],
+      "relationships": [],
+      "beliefs": [],
+      "negative_knowledge": [],
+      "selected_proposition_ids": [],
+      "selected_event_ids": []
+    },
+    {
+      "query_id": "Q204",
+      "question": "Does Bob's preference for PostgreSQL mean the analytics pipeline or billing service uses PostgreSQL?",
+      "mode": "scope",
+      "propositions": [],
+      "events": [],
+      "relationships": [],
+      "beliefs": [],
+      "negative_knowledge": [],
+      "selected_proposition_ids": [],
+      "selected_event_ids": []
+    },
+    {
+      "query_id": "Q205",
+      "question": "What happened to Alice's rejection of MongoDB?",
+      "mode": "lifecycle",
+      "propositions": [],
+      "events": [],
+      "relationships": [],
+      "beliefs": [],
+      "negative_knowledge": [],
+      "selected_proposition_ids": [],
+      "selected_event_ids": []
+    },
+    {
+      "query_id": "Q206",
+      "question": "What database had the reporting team selected?",
+      "mode": "belief",
+      "propositions": [],
+      "events": [],
+      "relationships": [],
+      "beliefs": [],
+      "negative_knowledge": [],
+      "selected_proposition_ids": [],
+      "selected_event_ids": []
+    },
+    {
+      "query_id": "Q207",
+      "question": "Did the deployment cause the migration?",
+      "mode": "causal",
+      "propositions": [],
+      "events": [],
+      "relationships": [],
+      "beliefs": [],
+      "negative_knowledge": [],
+      "selected_proposition_ids": [],
+      "selected_event_ids": []
+    },
+    {
+      "query_id": "Q208",
+      "question": "Which Alex approved the reporting architecture?",
+      "mode": "belief",
+      "propositions": [],
+      "events": [],
+      "relationships": [],
+      "beliefs": [],
+      "negative_knowledge": [],
+      "selected_proposition_ids": [],
+      "selected_event_ids": []
+    }
+  ]
+}

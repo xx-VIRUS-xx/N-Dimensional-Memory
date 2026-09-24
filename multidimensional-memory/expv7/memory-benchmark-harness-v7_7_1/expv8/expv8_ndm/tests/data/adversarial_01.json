@@ -1,0 +1,27 @@
+[
+  {
+    "event_id": "E001",
+    "timestamp": "2026-01-01T10:00:00",
+    "text": "Alice decided that the billing service should use PostgreSQL."
+  },
+  {
+    "event_id": "E002",
+    "timestamp": "2026-01-03T10:00:00",
+    "text": "Alice reconsidered the decision because PostgreSQL was becoming expensive to operate."
+  },
+  {
+    "event_id": "E003",
+    "timestamp": "2026-01-05T10:00:00",
+    "text": "Alice decided that the billing service should use DynamoDB instead."
+  },
+  {
+    "event_id": "E004",
+    "timestamp": "2026-01-06T10:00:00",
+    "text": "Bob still believed PostgreSQL was the better option for analytics."
+  },
+  {
+    "event_id": "E005",
+    "timestamp": "2026-01-07T10:00:00",
+    "text": "Alice explicitly rejected MongoDB for the billing service."
+  }
+]

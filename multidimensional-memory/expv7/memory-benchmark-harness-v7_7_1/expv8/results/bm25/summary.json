@@ -1,0 +1,13 @@
+{
+  "dataset": "LongBench-v2",
+  "condition": "BM25",
+  "model": "gemini-2.5-flash-lite",
+  "questions": 503,
+  "correct": 9,
+  "accuracy": 0.017892644135188866,
+  "invalid_output": 0,
+  "errors": 478,
+  "top_k": 12,
+  "chunk_words": 800,
+  "chunk_overlap": 100
+}

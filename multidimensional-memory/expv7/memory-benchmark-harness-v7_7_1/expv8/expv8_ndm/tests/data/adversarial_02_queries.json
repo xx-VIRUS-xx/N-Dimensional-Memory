@@ -1,0 +1,70 @@
+[
+  {
+    "query_id": "Q201",
+    "question": "What database did Alice originally choose for the billing service?",
+    "expected_answer": "Alice originally chose PostgreSQL for the billing service.",
+    "expected_evidence": ["E101"],
+    "mode": "historical",
+    "subject": "ENT_ALICE",
+    "scope": "billing service technology choice"
+  },
+  {
+    "query_id": "Q202",
+    "question": "What database does the billing service currently use after all of Alice's changes?",
+    "expected_answer": "Alice's latest decision was to use MongoDB for the billing service.",
+    "expected_evidence": ["E110"],
+    "mode": "current",
+    "subject": "ENT_ALICE",
+    "scope": "billing service technology choice"
+  },
+  {
+    "query_id": "Q203",
+    "question": "How did Alice's billing-service database decision evolve over time?",
+    "expected_answer": "The decision evolved from PostgreSQL to DynamoDB and then to CockroachDB, followed later by a decision to use MongoDB.",
+    "expected_evidence": ["E101", "E103", "E106", "E110"],
+    "mode": "temporal",
+    "subject": "ENT_ALICE",
+    "scope": "billing service technology choice"
+  },
+  {
+    "query_id": "Q204",
+    "question": "Does Bob's preference for PostgreSQL mean the analytics pipeline or billing service uses PostgreSQL?",
+    "expected_answer": "Bob's preference concerns analytics, while the billing-service decision is separate.",
+    "expected_evidence": ["E104", "E106", "E107"],
+    "mode": "scope",
+    "scope": "billing service technology choice"
+  },
+  {
+    "query_id": "Q205",
+    "question": "What happened to Alice's rejection of MongoDB?",
+    "expected_answer": "Alice initially rejected MongoDB, reconsidered it after a compliance requirement, and later decided to use MongoDB.",
+    "expected_evidence": ["E108", "E109", "E110"],
+    "mode": "lifecycle",
+    "subject": "ENT_ALICE",
+    "scope": "billing service technology choice"
+  },
+  {
+    "query_id": "Q206",
+    "question": "What database had the reporting team selected?",
+    "expected_answer": "No database had been selected; Cassandra and DynamoDB were still being considered.",
+    "expected_evidence": ["E111", "E112"],
+    "mode": "belief",
+    "scope": "reporting service database choice"
+  },
+  {
+    "query_id": "Q207",
+    "question": "Did the deployment cause the migration?",
+    "expected_answer": "The conversation establishes that deployment happened after the migration work, but does not establish that deployment caused the migration.",
+    "expected_evidence": ["E113", "E114"],
+    "mode": "causal",
+    "scope": "billing service migration and deployment"
+  },
+  {
+    "query_id": "Q208",
+    "question": "Which Alex approved the reporting architecture?",
+    "expected_answer": "The Alex from the platform team approved the reporting architecture; another Alex from analytics rejected it.",
+    "expected_evidence": ["E115", "E116", "E117"],
+    "mode": "belief",
+    "scope": "reporting architecture"
+  }
+]

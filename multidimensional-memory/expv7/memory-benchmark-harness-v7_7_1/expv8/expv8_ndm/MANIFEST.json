@@ -1,0 +1,12 @@
+{
+  "experiment": "EXP-V8",
+  "condition": "NDM",
+  "version": "ndm-v0.1",
+  "status": "DEVELOPMENT",
+  "writer": "claude_code",
+  "writer_question_access": false,
+  "gold_access": false,
+  "schema": "schemas/ndm_memory.schema.json",
+  "retrieval": "deterministic lexical candidate generation over semantic memory",
+  "notes": "This is intentionally a breakable first implementation. Do not treat it as a frozen benchmark result."
+}

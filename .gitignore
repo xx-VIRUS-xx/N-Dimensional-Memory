@@ -123,6 +123,7 @@ benchmark/gold/
 *.7z
 
 # ---------- Temporary files ----------
+**/datasets/
 tmp/
 temp/
 *.tmp
@@ -177,4 +178,5 @@ build/
 # graph databases
 # raw model caches
 # experimental result dumps
-# ============================================================
+# ============================================================*.arrow
+multidimensional-memory/**/datasets/
