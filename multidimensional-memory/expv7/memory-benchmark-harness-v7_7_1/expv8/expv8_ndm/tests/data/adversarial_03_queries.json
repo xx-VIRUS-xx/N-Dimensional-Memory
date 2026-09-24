@@ -1,0 +1,139 @@
+[
+  {
+    "query_id": "Q301",
+    "question": "What database did Alice initially propose for the payments platform?",
+    "mode": "historical",
+    "subject": "ENT_ALICE_PLATFORM",
+    "scope": "payments platform database choice",
+    "expected_events": [
+      "E301"
+    ]
+  },
+  {
+    "query_id": "Q302",
+    "question": "What database is currently selected for the payments platform?",
+    "mode": "current",
+    "subject": "ENT_ALICE_PLATFORM",
+    "scope": "payments platform database choice",
+    "expected_events": [
+      "E307"
+    ]
+  },
+  {
+    "query_id": "Q303",
+    "question": "How did the payments platform database decision evolve over time?",
+    "mode": "temporal",
+    "subject": "ENT_ALICE_PLATFORM",
+    "scope": "payments platform database choice",
+    "expected_events": [
+      "E301",
+      "E303",
+      "E305",
+      "E307"
+    ]
+  },
+  {
+    "query_id": "Q304",
+    "question": "What happened to the original CockroachDB decision?",
+    "mode": "lifecycle",
+    "subject": "ENT_ALICE_PLATFORM",
+    "scope": "payments platform database choice",
+    "expected_events": [
+      "E303",
+      "E305",
+      "E307"
+    ]
+  },
+  {
+    "query_id": "Q305",
+    "question": "What does Bob believe about the architecture?",
+    "mode": "belief",
+    "subject": "ENT_BOB",
+    "scope": "payments platform architecture interpretation",
+    "expected_events": [
+      "E308"
+    ]
+  },
+  {
+    "query_id": "Q306",
+    "question": "Does Alice agree with Bob's interpretation that CockroachDB was always intended?",
+    "mode": "contradiction",
+    "subject": "ENT_ALICE_PLATFORM",
+    "scope": "payments platform architecture interpretation",
+    "expected_events": [
+      "E308",
+      "E309"
+    ]
+  },
+  {
+    "query_id": "Q307",
+    "question": "Why did Alice switch from CockroachDB to PostgreSQL?",
+    "mode": "causal",
+    "subject": "ENT_ALICE_PLATFORM",
+    "scope": "payments platform database choice",
+    "expected_events": [
+      "E304",
+      "E305"
+    ]
+  },
+  {
+    "query_id": "Q308",
+    "question": "What changed when the compliance interpretation was corrected?",
+    "mode": "correction",
+    "subject": "ENT_ALICE_PLATFORM",
+    "scope": "payments platform database choice",
+    "expected_events": [
+      "E306",
+      "E307"
+    ]
+  },
+  {
+    "query_id": "Q309",
+    "question": "Which Alice made the payments-platform decisions?",
+    "mode": "identity",
+    "subject": "ENT_ALICE_PLATFORM",
+    "scope": "payments platform database choice",
+    "expected_events": [
+      "E301",
+      "E303",
+      "E305",
+      "E307",
+      "E311"
+    ]
+  },
+  {
+    "query_id": "Q310",
+    "question": "Does the security-team Alice affect the payments-platform decision?",
+    "mode": "scope",
+    "scope": "payments platform database choice",
+    "expected_events": [
+      "E301",
+      "E303",
+      "E305",
+      "E307",
+      "E311"
+    ]
+  },
+  {
+    "query_id": "Q311",
+    "question": "What causal relationship is explicitly ruled out?",
+    "mode": "negative",
+    "scope": "payments platform deployment and architecture",
+    "expected_events": [
+      "E313"
+    ]
+  },
+  {
+    "query_id": "Q312",
+    "question": "Why is CockroachDB the current decision, and what happened to the previous PostgreSQL decision?",
+    "mode": "compound",
+    "subject": "ENT_ALICE_PLATFORM",
+    "scope": "payments platform database choice",
+    "expected_events": [
+      "E304",
+      "E305",
+      "E306",
+      "E307"
+    ]
+  }
+]
