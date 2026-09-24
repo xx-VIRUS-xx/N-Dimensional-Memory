@@ -1,0 +1,85 @@
+{
+  "benchmark_id": "ADV-03",
+  "title": "Representation stress test",
+  "purpose": "Stress NDM representation across repeated reversals, belief conflict, correction, provenance, identity ambiguity, scope separation, multi-hop causality, and explicit non-causality.",
+  "conversation": [
+    {
+      "event_id": "E301",
+      "timestamp": "2026-02-01",
+      "speaker": "Alice",
+      "text": "For the payments platform, I propose PostgreSQL."
+    },
+    {
+      "event_id": "E302",
+      "timestamp": "2026-02-02",
+      "speaker": "Bob",
+      "text": "I think CockroachDB is better for multi-region payments."
+    },
+    {
+      "event_id": "E303",
+      "timestamp": "2026-02-03",
+      "speaker": "Alice",
+      "text": "I accept CockroachDB for the payments platform."
+    },
+    {
+      "event_id": "E304",
+      "timestamp": "2026-02-04",
+      "speaker": "Carol",
+      "text": "The compliance requirement rules out CockroachDB for payments."
+    },
+    {
+      "event_id": "E305",
+      "timestamp": "2026-02-05",
+      "speaker": "Alice",
+      "text": "Then I am reversing the decision and selecting PostgreSQL."
+    },
+    {
+      "event_id": "E306",
+      "timestamp": "2026-02-06",
+      "speaker": "Carol",
+      "text": "I found the compliance document. We had interpreted the requirement incorrectly."
+    },
+    {
+      "event_id": "E307",
+      "timestamp": "2026-02-07",
+      "speaker": "Alice",
+      "text": "Correction accepted. The payments platform will use CockroachDB again."
+    },
+    {
+      "event_id": "E308",
+      "timestamp": "2026-02-08",
+      "speaker": "Bob",
+      "text": "That original CockroachDB decision was always the intended architecture."
+    },
+    {
+      "event_id": "E309",
+      "timestamp": "2026-02-09",
+      "speaker": "Alice",
+      "text": "No. That is not correct. The CockroachDB choice changed over time."
+    },
+    {
+      "event_id": "E310",
+      "timestamp": "2026-02-10",
+      "speaker": "Alice",
+      "text": "In the security-team discussion, I am Alice from the security team."
+    },
+    {
+      "event_id": "E311",
+      "timestamp": "2026-02-11",
+      "speaker": "Alice",
+      "text": "For clarity, the Alice who owns the payments decision is Alice from the platform team."
+    },
+    {
+      "event_id": "E312",
+      "timestamp": "2026-02-12",
+      "speaker": "Alice",
+      "text": "The payments platform deployment is complete."
+    },
+    {
+      "event_id": "E313",
+      "timestamp": "2026-02-13",
+      "speaker": "Alice",
+      "text": "The deployment did not cause the architectural decision; the architecture decision happened earlier."
+    }
+  ]
+}
