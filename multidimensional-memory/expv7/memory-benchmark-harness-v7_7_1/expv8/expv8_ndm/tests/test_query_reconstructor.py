@@ -96,6 +96,7 @@ def test_adv02_v8_actual_shape_contract():
         "billing service migration and deployment": "billing_service",
         "reporting service database choice": "reporting_service",
         "reporting architecture": "reporting_service",
+        "analytics pipeline": "analytics_pipeline",
     }
     for proposition in memory["propositions"]:
         proposition["scope"] = scope_aliases[proposition["scope"]]
