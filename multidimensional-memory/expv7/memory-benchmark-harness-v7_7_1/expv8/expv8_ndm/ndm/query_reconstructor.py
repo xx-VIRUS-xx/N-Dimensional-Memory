@@ -65,6 +65,12 @@ class NDMQueryReconstructor:
         return [str(x["id"]) for x in items if x.get("id") is not None]
 
     @staticmethod
+    def _canonical_id(value: Any) -> Optional[str]:
+        if value is None:
+            return None
+        return str(value).strip().lower()
+
+    @staticmethod
     def _entity_ref_id(value: Any) -> Optional[str]:
         if isinstance(value, dict):
             value = value.get("id") or value.get("entity_id") or value.get("ref")
@@ -110,17 +116,35 @@ class NDMQueryReconstructor:
 
     def proposition_matches(self, proposition: Dict[str, Any], spec: QuerySpec) -> bool:
         if spec.subject:
-            subject = str(spec.subject)
-            proposition_entities = self._entity_ref_ids(
-                proposition.get("entities", []) or []
-            )
+            subject = self._canonical_id(spec.subject)
+            proposition_entities = {
+                self._canonical_id(x)
+                for x in (proposition.get("entities", []) or [])
+                if self._canonical_id(x) is not None
+            }
             if subject not in proposition_entities:
                 event = self.event_for_proposition(proposition)
-                participants = self._entity_ref_ids(
-                    (event or {}).get("participants", []) or []
-                )
+                participants = {
+                    self._canonical_id(x)
+                    for x in ((event or {}).get("participants", []) or [])
+                    if self._canonical_id(x) is not None
+                }
                 if subject not in participants:
-                    return False
+                    # ADV-01 establishes that a person query subject can
+                    # identify the holder of a belief about the proposition,
+                    # rather than the proposition's own subject.
+                    for belief in self.beliefs.values():
+                        holder = self._canonical_id(belief.get("holder"))
+                        referenced = belief.get("proposition_id")
+                        if referenced is None:
+                            referenced = belief.get("proposition")
+                        if (
+                            holder == subject
+                            and str(referenced) == str(proposition.get("id"))
+                        ):
+                            break
+                    else:
+                        return False
         if spec.scope:
             return self.scope_matches(proposition.get("scope"), spec.scope)
         return True
