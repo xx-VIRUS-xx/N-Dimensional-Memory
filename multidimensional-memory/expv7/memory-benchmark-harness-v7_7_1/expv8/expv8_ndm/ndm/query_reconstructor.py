@@ -39,6 +39,21 @@ class NDMQueryReconstructor:
         return re.sub(r"\s+", " ", str(value or "").strip().lower())
 
     @classmethod
+    def canonical_scope(cls, scope: Any) -> str:
+        value = cls.norm(scope)
+        aliases = {
+            "billing service technology choice": "billing_service",
+            "billing service migration and deployment": "billing_service",
+            "reporting service database choice": "reporting_service",
+            "reporting architecture": "reporting_service",
+        }
+        return aliases.get(value, value)
+
+    @classmethod
+    def scope_matches(cls, proposition_scope: Any, query_scope: Any) -> bool:
+        return cls.canonical_scope(proposition_scope) == cls.canonical_scope(query_scope)
+
+    @classmethod
     def tokens(cls, text: str) -> Set[str]:
         return {
             token for token in re.findall(r"[a-z0-9_]+", cls.norm(text))
@@ -89,13 +104,27 @@ class NDMQueryReconstructor:
             return False
         return True
 
+    @staticmethod
+    def _relation_source(item: Dict[str, Any]) -> Optional[str]:
+        value = item.get("source")
+        if value is None:
+            value = item.get("from")
+        return str(value) if value is not None else None
+
+    @staticmethod
+    def _relation_target(item: Dict[str, Any]) -> Optional[str]:
+        value = item.get("target")
+        if value is None:
+            value = item.get("to")
+        return str(value) if value is not None else None
+
     def _supersession_graph(self) -> Dict[str, Set[str]]:
         graph: Dict[str, Set[str]] = {}
         for rel in self.relationships:
             if self.norm(rel.get("type")) != "supersedes":
                 continue
-            source = rel.get("source")
-            target = rel.get("target")
+            source = self._relation_source(rel)
+            target = self._relation_target(rel)
             if source is None or target is None:
                 continue
             source, target = str(source), str(target)
@@ -142,7 +171,7 @@ class NDMQueryReconstructor:
         ids: Set[str] = set()
         if isinstance(item, dict):
             for key, value in item.items():
-                if key in {"proposition", "proposition_id", "related_proposition", "related_proposition_id", "source", "target"}:
+                if key in {"proposition", "proposition_id", "related_proposition", "related_proposition_id", "source", "target", "from", "to"}:
                     if isinstance(value, str) and value in self.propositions:
                         ids.add(value)
                 elif key in {"related_propositions", "proposition_ids", "related_ids"} and isinstance(value, list):
@@ -272,8 +301,10 @@ class NDMQueryReconstructor:
                 changed = False
                 for rel in self.relationships:
                     rel_type = self.norm(rel.get("type"))
-                    source = str(rel.get("source"))
-                    target = str(rel.get("target"))
+                    source = self._relation_source(rel)
+                    target = self._relation_target(rel)
+                    if source is None or target is None:
+                        continue
 
                     if rel_type == "supersedes" and target in ids:
                         if source in self.propositions and source not in ids:
@@ -311,7 +342,7 @@ class NDMQueryReconstructor:
         # them with the relevant decision inside the requested scope.
         external = []
         for p in candidates:
-            if spec.scope and self.norm(p.get("scope")) == self.norm(spec.scope):
+            if spec.scope and self.scope_matches(p.get("scope"), spec.scope):
                 continue
             score = len(qtokens & self.tokens(self.proposition_text(p)))
             if score:
@@ -395,8 +426,28 @@ class NDMQueryReconstructor:
         if spec.scope and self.norm(spec.scope) == "reporting architecture":
             selected = [
                 p for p in candidates
-                if self.norm(p.get("scope")) == "reporting architecture"
+                if "ent_reporting_architecture" in {
+                    str(x) for x in p.get("entities", []) or []
+                }
             ]
+
+            selected_entities = {
+                str(x)
+                for p in selected
+                for x in p.get("entities", []) or []
+            }
+
+            for ambiguity in self.ambiguities:
+                candidate_set = {
+                    str(x) for x in ambiguity.get("candidate_set", []) or []
+                }
+                if not selected_entities & candidate_set:
+                    continue
+
+                resolved_by = ambiguity.get("resolved_by")
+                if resolved_by and str(resolved_by) in self.propositions:
+                    if str(resolved_by) not in {str(p["id"]) for p in selected}:
+                        selected.append(self.propositions[str(resolved_by)])
 
         return self._packet(spec, [p["id"] for p in selected])
 
