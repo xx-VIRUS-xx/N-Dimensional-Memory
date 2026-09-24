@@ -86,3 +86,43 @@ def test_adv02_query_contract(qid, question, mode, subject, scope, expected):
     spec = QuerySpec(qid, question, mode, subject, scope)
     result = resolver.resolve(spec)
     assert result["selected_event_ids"] == expected
+
+
+def test_adv02_v8_actual_shape_contract():
+    memory = _memory()
+
+    scope_aliases = {
+        "billing service technology choice": "billing_service",
+        "billing service migration and deployment": "billing_service",
+        "reporting service database choice": "reporting_service",
+        "reporting architecture": "reporting_service",
+    }
+    for proposition in memory["propositions"]:
+        proposition["scope"] = scope_aliases[proposition["scope"]]
+
+    memory["relationships"] = [
+        {
+            **{k: v for k, v in rel.items() if k not in {"source", "target"}},
+            "from": rel["source"],
+            "to": rel["target"],
+        }
+        for rel in memory["relationships"]
+    ]
+
+    resolver = NDMQueryReconstructor(memory)
+
+    expected = {
+        "Q201": ["E101"],
+        "Q202": ["E110"],
+        "Q203": ["E101", "E103", "E106", "E110"],
+        "Q204": ["E104", "E106", "E107"],
+        "Q205": ["E108", "E109", "E110"],
+        "Q206": ["E111", "E112"],
+        "Q207": ["E113", "E114"],
+        "Q208": ["E115", "E116", "E117"],
+    }
+
+    for qid, question, mode, subject, scope, _ in QUERIES:
+        spec = QuerySpec(qid, question, mode, subject, scope)
+        result = resolver.resolve(spec)
+        assert result["selected_event_ids"] == expected[qid]
