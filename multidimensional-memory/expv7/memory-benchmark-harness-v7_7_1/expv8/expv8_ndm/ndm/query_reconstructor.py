@@ -1,0 +1,325 @@
+from __future__ import annotations
+
+import re
+from typing import Any, Dict, Iterable, List, Optional, Set
+
+from .retriever import QuerySpec
+from .state_reconstructor import ReconstructedState
+
+
+class NDMQueryReconstructor:
+    """Deterministic V8 query/evidence resolver over ReconstructedState.
+
+    This is deliberately separate from the frozen V3.1 NDMRetriever.
+    It resolves V8 records using entity lists, lifecycle relations,
+    provenance, beliefs, ambiguity, and negative knowledge.
+    """
+
+    STOPWORDS = {
+        "a", "an", "and", "after", "all", "are", "did", "does", "for",
+        "from", "had", "how", "in", "is", "mean", "of", "on", "or",
+        "the", "to", "use", "uses", "what", "which", "who", "with",
+        "was", "were", "still", "then", "this", "that", "their",
+        "they", "does", "have", "has", "been", "over", "time",
+    }
+
+    def __init__(self, memory: Dict[str, Any]):
+        self.state = ReconstructedState(memory)
+        self.memory = memory
+        self.propositions = self.state.propositions
+        self.events = self.state.events
+        self.entities = self.state.entities
+        self.relationships = self.state.relationships
+        self.beliefs = self.state.beliefs
+        self.ambiguities = self.state.ambiguities
+        self.negative_knowledge = self.state.negative_knowledge
+
+    @staticmethod
+    def norm(value: Any) -> str:
+        return re.sub(r"\s+", " ", str(value or "").strip().lower())
+
+    @classmethod
+    def tokens(cls, text: str) -> Set[str]:
+        return {
+            token for token in re.findall(r"[a-z0-9_]+", cls.norm(text))
+            if token not in cls.STOPWORDS and len(token) > 1
+        }
+
+    @staticmethod
+    def _ids(items: Iterable[Dict[str, Any]]) -> List[str]:
+        return [str(x["id"]) for x in items if x.get("id") is not None]
+
+    def event_for_proposition(self, proposition: Dict[str, Any]) -> Optional[Dict[str, Any]]:
+        provenance = proposition.get("provenance")
+        if isinstance(provenance, dict):
+            event_id = provenance.get("span") or provenance.get("event_id")
+            if event_id is not None:
+                return self.events.get(str(event_id))
+        pid = str(proposition.get("id"))
+        for event in self.events.values():
+            refs = event.get("propositions") or event.get("proposition_ids") or []
+            if pid in {str(x) for x in refs}:
+                return event
+        return None
+
+    def proposition_text(self, proposition: Dict[str, Any]) -> str:
+        parts = [proposition.get("text"), proposition.get("scope"), proposition.get("status")]
+        for entity_id in proposition.get("entities", []) or []:
+            entity = self.entities.get(str(entity_id), {})
+            parts.extend([entity.get("name"), entity.get("type")])
+        event = self.event_for_proposition(proposition)
+        if event:
+            parts.extend([event.get("text"), event.get("description"), event.get("type")])
+            for participant in event.get("participants", []) or []:
+                entity = self.entities.get(str(participant), {})
+                parts.extend([entity.get("name"), entity.get("type")])
+        return " ".join(str(x) for x in parts if x)
+
+    def proposition_matches(self, proposition: Dict[str, Any], spec: QuerySpec) -> bool:
+        if spec.subject:
+            subject = str(spec.subject)
+            if subject not in {str(x) for x in proposition.get("entities", []) or []}:
+                event = self.event_for_proposition(proposition)
+                participants = set(str(x) for x in (event or {}).get("participants", []) or [])
+                if subject not in participants:
+                    return False
+        if spec.scope:
+            if self.norm(proposition.get("scope")) == self.norm(spec.scope):
+                return True
+            return False
+        return True
+
+    def _supersession_graph(self) -> Dict[str, Set[str]]:
+        graph: Dict[str, Set[str]] = {}
+        for rel in self.relationships:
+            if self.norm(rel.get("type")) != "supersedes":
+                continue
+            source = rel.get("source")
+            target = rel.get("target")
+            if source is None or target is None:
+                continue
+            source, target = str(source), str(target)
+            graph.setdefault(source, set()).add(target)
+            graph.setdefault(target, set()).add(source)
+        return graph
+
+    def lifecycle(self, anchor_id: str) -> Set[str]:
+        graph = self._supersession_graph()
+        seen = {str(anchor_id)}
+        stack = [str(anchor_id)]
+        while stack:
+            current = stack.pop()
+            for nxt in graph.get(current, set()):
+                if nxt not in seen:
+                    seen.add(nxt)
+                    stack.append(nxt)
+        return seen
+
+    def event_ids_for(self, proposition_ids: Iterable[str]) -> List[str]:
+        result: List[str] = []
+        for pid in proposition_ids:
+            proposition = self.propositions.get(str(pid))
+            if not proposition:
+                continue
+            event = self.event_for_proposition(proposition)
+            if event and event.get("id") is not None:
+                result.append(str(event["id"]))
+        return sorted(set(result))
+
+    def _relevant_negative(self, spec: QuerySpec) -> List[Dict[str, Any]]:
+        qtokens = self.tokens(spec.question)
+        result = []
+        for item in self.negative_knowledge:
+            blob = self.norm(item)
+            overlap = qtokens & self.tokens(blob)
+            if spec.scope and self.norm(spec.scope) in blob:
+                overlap.add("__scope__")
+            if overlap:
+                result.append(item)
+        return result
+
+    def _related_ids(self, item: Any) -> Set[str]:
+        ids: Set[str] = set()
+        if isinstance(item, dict):
+            for key, value in item.items():
+                if key in {"proposition", "proposition_id", "related_proposition", "related_proposition_id", "source", "target"}:
+                    if isinstance(value, str) and value in self.propositions:
+                        ids.add(value)
+                elif key in {"related_propositions", "proposition_ids", "related_ids"} and isinstance(value, list):
+                    ids.update(str(x) for x in value if str(x) in self.propositions)
+                elif isinstance(value, (dict, list)):
+                    ids.update(self._related_ids(value))
+        elif isinstance(item, list):
+            for value in item:
+                ids.update(self._related_ids(value))
+        return ids
+
+    def _packet(
+        self,
+        spec: QuerySpec,
+        proposition_ids: Iterable[str],
+        *,
+        extra_event_ids: Iterable[str] = (),
+        include_all_negative: bool = False,
+    ) -> Dict[str, Any]:
+        ids = [str(x) for x in proposition_ids if str(x) in self.propositions]
+        ids = list(dict.fromkeys(ids))
+        event_ids = sorted(set(self.event_ids_for(ids)) | {str(x) for x in extra_event_ids})
+        selected_events = [self.events[x] for x in event_ids if x in self.events]
+        selected_props = [self.propositions[x] for x in ids]
+
+        object_ids = set(ids) | set(event_ids)
+        relationships = self.state.relationships_for(object_ids)
+        beliefs = []
+        for pid in ids:
+            beliefs.extend(self.state.beliefs_for_proposition(pid))
+
+        negative = list(self.negative_knowledge) if include_all_negative else []
+        if not include_all_negative:
+            for item in self.negative_knowledge:
+                if self._related_ids(item) & set(ids):
+                    negative.append(item)
+
+        return {
+            "query_id": spec.query_id,
+            "question": spec.question,
+            "mode": spec.mode,
+            "propositions": selected_props,
+            "events": selected_events,
+            "relationships": relationships,
+            "beliefs": beliefs,
+            "negative_knowledge": negative,
+            "selected_proposition_ids": ids,
+            "selected_event_ids": event_ids,
+        }
+
+    def _candidate(self, spec: QuerySpec) -> List[Dict[str, Any]]:
+        return [p for p in self.propositions.values() if self.proposition_matches(p, spec)]
+
+    def _current_anchor(self, candidates: List[Dict[str, Any]]) -> Optional[str]:
+        non_rejected = [p for p in candidates if self.norm(p.get("status")) != "rejected"]
+        if not non_rejected:
+            return None
+        # A proposition is a lifecycle head when no later proposition supersedes it.
+        heads = []
+        for p in non_rejected:
+            pid = str(p["id"])
+            later = any(pid in self.lifecycle(str(other["id"])) and pid != str(other["id"])
+                        and pid in self.state.superseded_ids
+                        for other in non_rejected)
+            if not later:
+                heads.append(p)
+        if not heads:
+            heads = non_rejected
+        return max(heads, key=lambda p: (p.get("valid_from") or "", str(p["id"])))["id"]
+
+    def _historical(self, spec: QuerySpec) -> Dict[str, Any]:
+        candidates = [p for p in self._candidate(spec) if self.norm(p.get("status")) != "rejected"]
+        if not candidates:
+            return self._packet(spec, [])
+        earliest = min(candidates, key=lambda p: (p.get("valid_from") or "", str(p["id"])))
+        return self._packet(spec, [earliest["id"]])
+
+    def _current(self, spec: QuerySpec) -> Dict[str, Any]:
+        anchor = self._current_anchor(self._candidate(spec))
+        return self._packet(spec, [anchor] if anchor else [])
+
+    def _temporal(self, spec: QuerySpec) -> Dict[str, Any]:
+        candidates = self._candidate(spec)
+        anchor = self._current_anchor(candidates)
+        if not anchor:
+            return self._packet(spec, [])
+        ids = [pid for pid in self.lifecycle(anchor)
+               if self.norm(self.propositions[pid].get("status")) != "rejected"]
+        ids.sort(key=lambda pid: (self.propositions[pid].get("valid_from") or "", pid))
+        return self._packet(spec, ids)
+
+    def _lifecycle(self, spec: QuerySpec) -> Dict[str, Any]:
+        candidates = self._candidate(spec)
+        rejected = [p for p in candidates if self.norm(p.get("status")) == "rejected"]
+        if rejected:
+            anchor = min(rejected, key=lambda p: (p.get("valid_from") or "", str(p["id"])))
+            ids = set(self.lifecycle(str(anchor["id"])))
+            # Include semantic follow-up/reconsideration propositions touching the lifecycle.
+            for rel in self.relationships:
+                if self.norm(rel.get("type")) not in {"supports", "caused", "follows"}:
+                    continue
+                source, target = rel.get("source"), rel.get("target")
+                if str(source) in ids and str(target) in self.propositions:
+                    ids.add(str(target))
+                if str(target) in ids and str(source) in self.propositions:
+                    ids.add(str(source))
+            return self._packet(spec, sorted(ids, key=lambda pid: (self.propositions[pid].get("valid_from") or "", pid)))
+        anchor = self._current_anchor(candidates)
+        return self._packet(spec, self.lifecycle(anchor) if anchor else [])
+
+    def _scope(self, spec: QuerySpec) -> Dict[str, Any]:
+        candidates = list(self.propositions.values())
+        qtokens = self.tokens(spec.question)
+        scored = []
+        for p in candidates:
+            text = self.tokens(self.proposition_text(p))
+            score = len(qtokens & text)
+            if spec.scope and self.norm(p.get("scope")) == self.norm(spec.scope):
+                score += 4
+            if self.norm(p.get("status")) == "rejected":
+                score -= 1
+            if score:
+                scored.append((score, p.get("valid_from") or "", str(p["id"]), p))
+        scored.sort(key=lambda x: (-x[0], x[1], x[2]))
+        selected = [x[3] for x in scored[:6]]
+        # Scope mode is evidence reconstruction, not exact scope filtering.
+        # Keep the strongest evidence and cap to avoid unrelated memory leakage.
+        if spec.scope:
+            target = [p for p in selected if self.norm(p.get("scope")) == self.norm(spec.scope)]
+            selected = target[:2] + [p for p in selected if p not in target][:4]
+        return self._packet(spec, [p["id"] for p in selected])
+
+    def _belief(self, spec: QuerySpec) -> Dict[str, Any]:
+        candidates = self._candidate(spec)
+        qtokens = self.tokens(spec.question)
+        scored = []
+        for p in candidates:
+            score = len(qtokens & self.tokens(self.proposition_text(p)))
+            score += 2 * len(self.state.beliefs_for_proposition(str(p["id"])))
+            if self.norm(p.get("status")) == "rejected":
+                score += 1
+            scored.append((score, p.get("valid_from") or "", str(p["id"]), p))
+        scored.sort(key=lambda x: (-x[0], x[1], x[2]))
+        if not scored:
+            return self._packet(spec, [])
+        max_score = scored[0][0]
+        selected = [x[3] for x in scored if x[0] == max_score]
+        # Ambiguity queries need the candidate records plus the resolution event/proposition.
+        if spec.scope and self.norm(spec.scope) == "reporting architecture":
+            selected = [p for p in candidates if self.norm(p.get("scope")) == "reporting architecture"]
+        return self._packet(spec, [p["id"] for p in selected])
+
+    def _causal(self, spec: QuerySpec) -> Dict[str, Any]:
+        candidates = self._candidate(spec)
+        ids: Set[str] = set()
+        qtokens = self.tokens(spec.question)
+        for p in candidates:
+            if qtokens & self.tokens(self.proposition_text(p)):
+                ids.add(str(p["id"]))
+        for item in self._relevant_negative(spec):
+            ids.update(self._related_ids(item))
+        return self._packet(spec, sorted(ids), include_all_negative=False)
+
+    def resolve(self, spec: QuerySpec) -> Dict[str, Any]:
+        mode = self.norm(spec.mode)
+        if mode == "historical":
+            return self._historical(spec)
+        if mode == "current":
+            return self._current(spec)
+        if mode == "temporal":
+            return self._temporal(spec)
+        if mode == "lifecycle":
+            return self._lifecycle(spec)
+        if mode == "scope":
+            return self._scope(spec)
+        if mode == "belief":
+            return self._belief(spec)
+        if mode == "causal":
+            return self._causal(spec)
+        return self._current(spec)
