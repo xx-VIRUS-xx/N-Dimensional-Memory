@@ -11,7 +11,8 @@ ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from ndm.retriever import NDMRetriever, QuerySpec
+from ndm.query_reconstructor import NDMQueryReconstructor
+from ndm.retriever import QuerySpec
 
 
 def load_json(path: Path) -> Any:
@@ -47,7 +48,7 @@ def save_json(
 def main() -> None:
 
     parser = argparse.ArgumentParser(
-        description="NDM V3.1 deterministic state-aware retriever"
+        description="NDM V8 deterministic query reconstruction"
     )
 
     parser.add_argument(
@@ -87,7 +88,7 @@ def main() -> None:
             "Query file must contain a JSON array."
         )
 
-    retriever = NDMRetriever(
+    retriever = NDMQueryReconstructor(
         memory
     )
 
@@ -116,7 +117,7 @@ def main() -> None:
             ),
         )
 
-        result = retriever.retrieve(
+        result = retriever.resolve(
             spec
         )
 
@@ -125,7 +126,7 @@ def main() -> None:
 
     output = {
         "status": "SUCCESS",
-        "version": "ndm-retriever-v3.1",
+        "version": "ndm-query-reconstructor-v8",
         "memory_path": str(
             memory_path
         ),
@@ -144,7 +145,7 @@ def main() -> None:
 
     print()
     print("=" * 64)
-    print("NDM V2 STATE-AWARE RECONSTRUCTION")
+    print("NDM V8 QUERY RECONSTRUCTION")
     print("=" * 64)
 
     print(
