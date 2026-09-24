@@ -1,36 +1,31 @@
 {
-  "benchmark_id": "ADV-03",
-  "validation": "representation_only",
-  "expected_semantics": {
-    "current_state": "E307",
-    "decision_chain": [
-      "E301",
-      "E303",
-      "E305",
-      "E307"
-    ],
-    "belief_conflict": [
-      "E308",
-      "E309"
-    ],
-    "correction": [
-      "E306",
-      "E307"
-    ],
-    "identity_resolution": [
-      "E311"
-    ],
-    "scope_exclusion": [
-      "E310"
-    ],
-    "negative_causality": [
-      "E313"
-    ],
-    "compound": [
-      "E304",
-      "E305",
-      "E306",
-      "E307"
-    ]
+  "scenario": "ADV-03",
+  "purpose": "NDM representation stress test",
+  "dimensions": [
+    "contradictory_beliefs",
+    "correction_chain",
+    "supersession",
+    "provenance_conflict",
+    "partial_information",
+    "ambiguous_identity",
+    "scope_collision",
+    "multi_hop_causality",
+    "temporal_gaps",
+    "negative_knowledge",
+    "compound_queries"
+  ],
+  "expected_evidence": {
+    "Q301": ["E301"],
+    "Q302": ["E307"],
+    "Q303": ["E301", "E303", "E305", "E307"],
+    "Q304": ["E303", "E305", "E307"],
+    "Q305": ["E308"],
+    "Q306": ["E308", "E309"],
+    "Q307": ["E304", "E305"],
+    "Q308": ["E306", "E307"],
+    "Q309": ["E301", "E303", "E305", "E307", "E311"],
+    "Q310": ["E310", "E311"],
+    "Q311": ["E312", "E313"],
+    "Q312": ["E305", "E306", "E307"]
   }
 }
