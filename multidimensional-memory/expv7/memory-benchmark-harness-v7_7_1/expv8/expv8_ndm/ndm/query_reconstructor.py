@@ -64,6 +64,22 @@ class NDMQueryReconstructor:
     def _ids(items: Iterable[Dict[str, Any]]) -> List[str]:
         return [str(x["id"]) for x in items if x.get("id") is not None]
 
+    @staticmethod
+    def _entity_ref_id(value: Any) -> Optional[str]:
+        if isinstance(value, dict):
+            value = value.get("id") or value.get("entity_id") or value.get("ref")
+        if value is None:
+            return None
+        return str(value)
+
+    @classmethod
+    def _entity_ref_ids(cls, values: Iterable[Any]) -> Set[str]:
+        return {
+            ref_id
+            for value in values
+            if (ref_id := cls._entity_ref_id(value)) is not None
+        }
+
     def event_for_proposition(self, proposition: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         provenance = proposition.get("provenance")
         if isinstance(provenance, dict):
@@ -79,23 +95,30 @@ class NDMQueryReconstructor:
 
     def proposition_text(self, proposition: Dict[str, Any]) -> str:
         parts = [proposition.get("text"), proposition.get("scope"), proposition.get("status")]
-        for entity_id in proposition.get("entities", []) or []:
-            entity = self.entities.get(str(entity_id), {})
+        for entity_ref in proposition.get("entities", []) or []:
+            entity_id = self._entity_ref_id(entity_ref)
+            entity = self.entities.get(entity_id, {}) if entity_id else {}
             parts.extend([entity.get("name"), entity.get("type")])
         event = self.event_for_proposition(proposition)
         if event:
             parts.extend([event.get("text"), event.get("description"), event.get("type")])
             for participant in event.get("participants", []) or []:
-                entity = self.entities.get(str(participant), {})
+                participant_id = self._entity_ref_id(participant)
+                entity = self.entities.get(participant_id, {}) if participant_id else {}
                 parts.extend([entity.get("name"), entity.get("type")])
         return " ".join(str(x) for x in parts if x)
 
     def proposition_matches(self, proposition: Dict[str, Any], spec: QuerySpec) -> bool:
         if spec.subject:
             subject = str(spec.subject)
-            if subject not in {str(x) for x in proposition.get("entities", []) or []}:
+            proposition_entities = self._entity_ref_ids(
+                proposition.get("entities", []) or []
+            )
+            if subject not in proposition_entities:
                 event = self.event_for_proposition(proposition)
-                participants = set(str(x) for x in (event or {}).get("participants", []) or [])
+                participants = self._entity_ref_ids(
+                    (event or {}).get("participants", []) or []
+                )
                 if subject not in participants:
                     return False
         if spec.scope:
