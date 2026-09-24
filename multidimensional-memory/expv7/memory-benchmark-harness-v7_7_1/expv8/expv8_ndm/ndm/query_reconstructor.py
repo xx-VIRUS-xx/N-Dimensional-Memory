@@ -99,9 +99,7 @@ class NDMQueryReconstructor:
                 if subject not in participants:
                     return False
         if spec.scope:
-            if self.norm(proposition.get("scope")) == self.norm(spec.scope):
-                return True
-            return False
+            return self.scope_matches(proposition.get("scope"), spec.scope)
         return True
 
     @staticmethod
