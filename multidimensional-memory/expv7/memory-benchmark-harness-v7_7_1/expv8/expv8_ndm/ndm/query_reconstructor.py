@@ -416,8 +416,63 @@ class NDMQueryReconstructor:
                 ),
             )
 
-        anchor = self._current_anchor(candidates)
-        return self._packet(spec, self.lifecycle(anchor) if anchor else [])
+        # For a lifecycle question, anchor on the decision named by the
+        # question rather than automatically anchoring on the current head.
+        # This matters when the query asks about an earlier decision
+        # ("original CockroachDB decision") or the previous decision
+        # ("previous PostgreSQL decision").
+        scored = [
+            (
+                len(qtokens & self.tokens(self.proposition_text(p))),
+                p.get("valid_from") or "",
+                str(p["id"]),
+                p,
+            )
+            for p in candidates
+        ]
+        scored.sort(key=lambda x: (-x[0], x[1], x[2]))
+
+        if not scored:
+            return self._packet(spec, [])
+
+        anchor = scored[0][3]
+        ids = {str(anchor["id"])}
+
+        # Follow supersession forward only: a newer proposition supersedes
+        # the currently selected proposition. Do not walk the undirected
+        # lifecycle graph backward into unrelated earlier branches.
+        changed = True
+        while changed:
+            changed = False
+            for rel in self.relationships:
+                rel_type = self.norm(rel.get("type"))
+                source = self._relation_source(rel)
+                target = self._relation_target(rel)
+                if source is None or target is None:
+                    continue
+
+                if rel_type == "supersedes" and target in ids:
+                    if source in self.propositions and source not in ids:
+                        ids.add(source)
+                        changed = True
+
+                # Include correction evidence attached to a selected
+                # decision, but do not traverse arbitrary graph edges.
+                if rel_type == "corrects" and target in ids:
+                    if source in self.propositions and source not in ids:
+                        ids.add(source)
+                        changed = True
+
+        return self._packet(
+            spec,
+            sorted(
+                ids,
+                key=lambda pid: (
+                    self.propositions[pid].get("valid_from") or "",
+                    pid,
+                ),
+            ),
+        )
 
     def _scope(self, spec: QuerySpec) -> Dict[str, Any]:
         qtokens = self.tokens(spec.question)
