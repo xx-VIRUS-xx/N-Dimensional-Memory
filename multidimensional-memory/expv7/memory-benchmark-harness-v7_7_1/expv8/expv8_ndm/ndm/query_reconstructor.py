@@ -416,31 +416,55 @@ class NDMQueryReconstructor:
                 ),
             )
 
-        # For a lifecycle question, anchor on the decision named by the
-        # question rather than automatically anchoring on the current head.
-        # This matters when the query asks about an earlier decision
-        # ("original CockroachDB decision") or the previous decision
-        # ("previous PostgreSQL decision").
-        scored = [
-            (
-                len(qtokens & self.tokens(self.proposition_text(p))),
-                p.get("valid_from") or "",
-                str(p["id"]),
-                p,
-            )
-            for p in candidates
-        ]
-        scored.sort(key=lambda x: (-x[0], x[1], x[2]))
+        # Anchor on the decision named by the question. Temporal
+        # qualifiers determine which occurrence is intended:
+        #   "original CockroachDB" -> earliest matching decision
+        #   "previous PostgreSQL"  -> latest matching decision before current
+        # This avoids accidentally anchoring on the current head.
+        anchor_candidates = list(candidates)
+        qtokens = self.tokens(spec.question)
 
-        if not scored:
+        # Prefer database/entity terms explicitly named in the question.
+        named = [
+            p for p in anchor_candidates
+            if (
+                {"cockroachdb", "postgresql", "mongodb", "dynamodb", "cassandra"}
+                & self.tokens(self.proposition_text(p))
+                & qtokens
+            )
+        ]
+        if named:
+            anchor_candidates = named
+
+        if not anchor_candidates:
             return self._packet(spec, [])
 
-        anchor = scored[0][3]
+        if "original" in qtokens or "initial" in qtokens:
+            anchor = min(
+                anchor_candidates,
+                key=lambda p: (p.get("valid_from") or "", str(p["id"])),
+            )
+        elif "previous" in qtokens:
+            anchor = max(
+                anchor_candidates,
+                key=lambda p: (p.get("valid_from") or "", str(p["id"])),
+            )
+        else:
+            scored = [
+                (
+                    len(qtokens & self.tokens(self.proposition_text(p))),
+                    p.get("valid_from") or "",
+                    str(p["id"]),
+                    p,
+                )
+                for p in anchor_candidates
+            ]
+            scored.sort(key=lambda x: (-x[0], x[1], x[2]))
+            anchor = scored[0][3]
+
         ids = {str(anchor["id"])}
 
-        # Follow supersession forward only: a newer proposition supersedes
-        # the currently selected proposition. Do not walk the undirected
-        # lifecycle graph backward into unrelated earlier branches.
+        # Follow supersession forward only.
         changed = True
         while changed:
             changed = False
@@ -456,8 +480,8 @@ class NDMQueryReconstructor:
                         ids.add(source)
                         changed = True
 
-                # Include correction evidence attached to a selected
-                # decision, but do not traverse arbitrary graph edges.
+                # Include correction evidence attached to the selected
+                # decision, e.g. the compliance correction for P305.
                 if rel_type == "corrects" and target in ids:
                     if source in self.propositions and source not in ids:
                         ids.add(source)
