@@ -258,7 +258,11 @@ class NDMQueryReconstructor:
             scored.sort(key=lambda x: (-x[0], x[1], x[2]))
             anchor = scored[0][3]
 
-            ids = set(self.lifecycle(str(anchor["id"])))
+            # Start at the named rejection only. The generic lifecycle()
+            # helper is intentionally undirected, which is useful for
+            # temporal history but wrong for a forward "what happened next"
+            # reconstruction.
+            ids = {str(anchor["id"])}
 
             # Follow the rejection forward through explicit supersession.
             # Do not use the undirected lifecycle graph here: P108 -> P110
