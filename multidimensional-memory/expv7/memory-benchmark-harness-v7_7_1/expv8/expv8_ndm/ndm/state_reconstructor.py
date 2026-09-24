@@ -82,11 +82,15 @@ class ReconstructedState:
     @staticmethod
     def _relation_source(item: Dict[str, Any]) -> str | None:
         value = item.get("source")
+        if value is None:
+            value = item.get("from")
         return str(value) if value is not None else None
 
     @staticmethod
     def _relation_target(item: Dict[str, Any]) -> str | None:
         value = item.get("target")
+        if value is None:
+            value = item.get("to")
         return str(value) if value is not None else None
 
     def _build_lifecycle_indexes(self) -> None:
