@@ -1,0 +1,6 @@
+{"entity_a":"Alice","entity_b":"PostgreSQL","relationship_type":"explicitly_connected","evidence_events":["e001","e003","e006"]}
+{"entity_a":"Alice","entity_b":"payments platform","relationship_type":"explicitly_connected","evidence_events":["e001","e003"]}
+{"entity_a":"PostgreSQL","entity_b":"payments platform","relationship_type":"explicitly_connected","evidence_events":["e001","e002","e003"]}
+{"entity_a":"Bob","entity_b":"payments platform","relationship_type":"explicitly_connected","evidence_events":["e002","e005"]}
+{"entity_a":"Bob","entity_b":"Redis","relationship_type":"explicitly_connected","evidence_events":["e005"]}
+{"entity_a":"Carol","entity_b":"payments platform","relationship_type":"explicitly_connected","evidence_events":["e004"]}
