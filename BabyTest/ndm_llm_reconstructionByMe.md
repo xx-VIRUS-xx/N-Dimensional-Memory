@@ -389,11 +389,9 @@ The representation does not explicitly specify what Alice proposed, whether Post
 
 ---
 
-<<<<<<< HEAD
 ## Conclusion
 
 The experiment provides preliminary evidence that an LLM-generated entity-and-dimension representation contains sufficient semantic information for another LLM to interpret the represented context in natural language. This supports using entity-dimension representations as a semantic intermediate representation. It does not yet establish that the representation is lossless, nor that downstream NDM algorithms will successfully recover all cross-event relationships or chronology.
-=======
 # Next Experiment: Corpus → Entity-Dimension Structure → Mathematical Relationship Discovery
 
 ## Objective
@@ -594,4 +592,3 @@ It is intended to determine whether:
 4. algorithmic methods can discover candidate relationships from that structure.
 
 If this works, the next stage is to refine the mathematical representation and relationship-discovery algorithms rather than expanding the LLM's role.
->>>>>>> f4f55e106be35f7d4b6b57ef6bd1b1fd5d561153
