@@ -613,6 +613,17 @@ class NDMQueryReconstructor:
                 ],
             )
 
+        holder_candidates = [
+            p for p in candidates
+            if any(
+                self._canonical_id(b.get("holder")) ==
+                self._canonical_id(spec.subject)
+                for b in self.state.beliefs_for_proposition(str(p["id"]))
+            )
+        ]
+        if holder_candidates:
+            candidates = holder_candidates
+
         scored = []
         for p in candidates:
             score = len(qtokens & self.tokens(self.proposition_text(p)))
