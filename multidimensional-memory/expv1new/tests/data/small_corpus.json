@@ -1,0 +1,11 @@
+{
+  "source_id": "small_corpus_01",
+  "events": [
+    {"event_id": "E001", "timestamp": "2026-04-01T09:00:00", "text": "Alice proposed PostgreSQL for the payments platform."},
+    {"event_id": "E002", "timestamp": "2026-04-02T09:00:00", "text": "Bob argued that CockroachDB was better for multi-region payments, and Alice accepted the proposal."},
+    {"event_id": "E003", "timestamp": "2026-04-03T09:00:00", "text": "Alice reversed the decision and selected PostgreSQL because the compliance requirement ruled out CockroachDB."},
+    {"event_id": "E004", "timestamp": "2026-04-04T09:00:00", "text": "The team discovered that the compliance document had been misinterpreted."},
+    {"event_id": "E005", "timestamp": "2026-04-05T09:00:00", "text": "Alice selected CockroachDB again and said the earlier compliance interpretation was no longer valid."},
+    {"event_id": "E006", "timestamp": "2026-04-06T09:00:00", "text": "Bob later claimed that CockroachDB had always been the intended architecture. Alice rejected that interpretation."}
+  ]
+}
