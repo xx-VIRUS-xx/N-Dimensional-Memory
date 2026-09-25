@@ -34,7 +34,18 @@ def ask_claude(prompt: str) -> dict:
     if response.get("is_error"):
         raise RuntimeError(str(response.get("result") or response))
 
-    return json.loads(response["result"])
+    raw_result = response.get("result", "")
+    try:
+        return json.loads(raw_result)
+    except json.JSONDecodeError as exc:
+        # Keep the experiment strict, but preserve the exact model output so
+        # protocol failures can be diagnosed without guessing or silently
+        # repairing the interpretation.
+        raise ValueError(
+            "Claude returned a non-JSON interpretation. "
+            f"JSON error: {exc}. Raw result:\n{raw_result!r}\n"
+            f"stderr:\n{proc.stderr!r}"
+        ) from exc
 
 
 def main() -> None:
