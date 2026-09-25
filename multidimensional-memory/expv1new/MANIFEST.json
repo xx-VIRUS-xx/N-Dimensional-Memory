@@ -1,0 +1,11 @@
+{
+  "experiment": "EXP-V1NEW",
+  "condition": "NDM",
+  "status": "CLEAN_ROOM_DEVELOPMENT",
+  "representation": "ndm-v1-experimental",
+  "writer": "llm_event_interpreter",
+  "writer_question_access": false,
+  "gold_access": false,
+  "retrieval": "semantic reconstruction over interpreted dimensions",
+  "next": "small corpus validation before LongBench"
+}
