@@ -389,6 +389,209 @@ The representation does not explicitly specify what Alice proposed, whether Post
 
 ---
 
+<<<<<<< HEAD
 ## Conclusion
 
 The experiment provides preliminary evidence that an LLM-generated entity-and-dimension representation contains sufficient semantic information for another LLM to interpret the represented context in natural language. This supports using entity-dimension representations as a semantic intermediate representation. It does not yet establish that the representation is lossless, nor that downstream NDM algorithms will successfully recover all cross-event relationships or chronology.
+=======
+# Next Experiment: Corpus → Entity-Dimension Structure → Mathematical Relationship Discovery
+
+## Objective
+
+The next phase is to move from a controlled semantic reconstruction test to a corpus-based experiment.
+
+The purpose is to deliberately generate entity-and-dimension representations from a real corpus using Claude Code, while keeping relationship discovery outside the LLM extraction step.
+
+The central question is:
+
+> Can independently extracted entity-and-dimension representations contain enough structure for mathematical and algorithmic methods to discover meaningful relationships between entities, even when those relationships were not explicitly stored as relationship edges?
+
+## Stage 1: Corpus Extraction
+
+A corpus will be processed event-by-event.
+
+For each event:
+
+```text
+Event
+  ↓
+LLM semantic interpretation
+  ↓
+Entities
+  ↓
+Entity-specific dimensions
+```
+
+The extraction step must not perform cross-event relationship discovery.
+
+It must not infer relationships merely because entities occur together.
+
+It must not infer chronology or causality across separate events.
+
+It must produce semantic information associated with each entity within the individual event.
+
+The LLM therefore acts as a semantic interpreter, not as the relationship engine.
+
+## Stage 2: Corpus-Level NDM Representation
+
+The independently extracted event-level records will be accumulated into a corpus-level representation.
+
+Conceptually:
+
+```text
+Event E1
+  ├── Entity A
+  │     ├── Dimension
+  │     └── Dimension
+  └── Entity B
+        └── Dimension
+
+Event E2
+  ├── Entity A
+  │     └── Dimension
+  └── Entity C
+        ├── Dimension
+        └── Dimension
+```
+
+The same entity may therefore appear across many events with different dimensions and different semantic states.
+
+No explicit relationship graph is required at ingestion time.
+
+## Stage 3: Mathematical Representation
+
+The entity-dimensional structure will then be converted into mathematical representations suitable for analysis.
+
+The first experiments should investigate multiple signals rather than assuming that a single embedding is sufficient.
+
+Potential signals include:
+
+- semantic similarity between dimensions
+- dimension overlap
+- dimension compatibility
+- repeated appearance of entity pairs under compatible dimensions
+- directional or role information
+- state information
+- temporal information where explicitly available
+- recurrence and distribution across the corpus
+
+For an entity `E`, its representation can be considered as a function of the dimensions associated with that entity:
+
+```text
+E = f(D1, D2, ..., Dn)
+```
+
+Similarity between entities can then be measured mathematically:
+
+```text
+sim(E1, E2)
+```
+
+The similarity itself should initially be treated as a mathematical signal, not automatically as a semantic relationship.
+
+## Stage 4: Candidate Relationship Discovery
+
+The algorithmic layer will search for structure in the mathematical representation.
+
+A candidate relationship may depend on a combination of signals such as:
+
+```text
+R(A, B) = f(
+    semantic similarity,
+    dimension overlap,
+    dimension compatibility,
+    recurrence,
+    directionality,
+    state compatibility,
+    temporal structure
+)
+```
+
+This is a candidate mathematical formulation, not a fixed final algorithm.
+
+The experiment should determine which signals actually contribute useful structure.
+
+## Stage 5: Entity Geometry / Plotting
+
+Entities will be projected into a lower-dimensional space for inspection and analysis.
+
+The visualization is a diagnostic tool rather than proof of a relationship.
+
+The goal is to determine whether entities with meaningful semantic connections form measurable structure in the resulting representation.
+
+For example:
+
+```text
+            Entity Space
+
+       ● Entity A
+                    ● Entity B
+
+                          ● Entity C
+        ● Entity D
+```
+
+The plot should help identify clustering, proximity, separation, and other geometric structure that can later be tested quantitatively.
+
+## Critical Constraint
+
+The system must not confuse mathematical proximity with a verified semantic relationship.
+
+The intended pipeline is:
+
+```text
+mathematical proximity
+        ↓
+candidate relationship
+        ↓
+algorithmic validation
+        ↓
+relationship hypothesis
+```
+
+The experiment should therefore distinguish between:
+
+- information explicitly present in the extracted dimensions
+- structure discovered mathematically
+- relationships validated by independent evidence
+
+## Initial Corpus Scale
+
+The first corpus experiment should remain small enough to inspect manually and debug:
+
+```text
+100–500 events
+20–100 unique entities
+multiple dimensions per entity
+```
+
+The scale can increase after the representation and relationship-discovery pipeline is stable.
+
+## Expected Outputs
+
+The experiment should produce artifacts such as:
+
+```text
+entities.json
+entity_dimensions.json
+entity_features.npy
+similarity_matrix.npy
+candidate_relationships.json
+entity_projection.png
+```
+
+The exact formats can change during experimentation.
+
+## What This Experiment Is Intended to Establish
+
+This experiment is not intended to prove the complete NDM system.
+
+It is intended to determine whether:
+
+1. a real corpus can be converted into useful event-level entity-dimensional representations;
+2. those representations preserve enough structure for mathematical processing;
+3. meaningful entity structure appears without explicitly encoding a relationship graph;
+4. algorithmic methods can discover candidate relationships from that structure.
+
+If this works, the next stage is to refine the mathematical representation and relationship-discovery algorithms rather than expanding the LLM's role.
+>>>>>>> f4f55e106be35f7d4b6b57ef6bd1b1fd5d561153
