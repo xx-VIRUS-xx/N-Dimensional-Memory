@@ -1,0 +1,8 @@
+{
+  "queries": [
+    {"query_id": "Q001", "question": "What was Alice's original database decision?", "dimension": ["temporal", "state", "actor"], "expected_event_ids": ["E001"]},
+    {"query_id": "Q002", "question": "What is Alice's current database decision?", "dimension": ["temporal", "state", "actor"], "expected_event_ids": ["E005"]},
+    {"query_id": "Q003", "question": "How did the database decision change over time?", "dimension": ["temporal", "state", "supersession"], "expected_event_ids": ["E001", "E002", "E003", "E005"]},
+    {"query_id": "Q004", "question": "What did Bob claim about the original architecture, and what did Alice say about that claim?", "dimension": ["belief", "contradiction", "provenance"], "expected_event_ids": ["E006"]}
+  ]
+}
