@@ -1,0 +1,9 @@
+{
+  "dimensions": [
+    {
+      "name": "conversationByTime",
+      "type": "reference",
+      "ordering": "t0 -> tN"
+    }
+  ]
+}
