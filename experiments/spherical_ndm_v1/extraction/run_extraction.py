@@ -58,7 +58,7 @@ def run_claude(prompt: str, model: str | None) -> subprocess.CompletedProcess[st
     if shutil.which("claude") is None:
         raise RuntimeError("Claude Code CLI was not found on PATH.")
     command = [
-        "claude", "-p", "--bare", "--no-session-persistence",
+        "claude", "-p", "--no-session-persistence",
         "--tools", "", "--max-turns", "1",
     ]
     if model:
@@ -127,6 +127,7 @@ def main() -> int:
                 log["stderr"] = result.stderr[-4000:]
                 log_fh.write(json.dumps(log, ensure_ascii=False) + "\n")
                 log_fh.flush()
+            
                 raise RuntimeError(f"Claude failed for {event_id}: {result.stderr.strip()}")
             try:
                 parsed = parse_json_response(result.stdout)

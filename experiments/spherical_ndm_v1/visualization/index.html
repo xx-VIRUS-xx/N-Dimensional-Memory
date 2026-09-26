@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spherical NDM v1 Visualization</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0e27; color: #e0e0e0; display: flex; height: 100vh; }
+        #canvas { flex: 1; display: block; }
+        #sidebar { width: 380px; background: #1a1f2e; border-left: 1px solid #333; display: flex; flex-direction: column; overflow-y: auto; }
+        .section { padding: 16px; border-bottom: 1px solid #333; }
+        .section h3 { font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: #8892a8; margin-bottom: 12px; font-weight: 600; }
+        input[type="range"] { width: 100%; margin: 8px 0; }
+        .time-display { font-size: 16px; font-weight: 600; color: #4ade80; margin: 8px 0; }
+        .label { font-size: 12px; color: #6b7280; margin-bottom: 8px; display: flex; align-items: center; }
+        input[type="checkbox"] { margin-right: 8px; width: 14px; height: 14px; }
+        .entity-item { padding: 8px; margin: 4px 0; background: #2d3748; border-left: 3px solid #4ade80; border-radius: 2px; cursor: pointer; font-size: 12px; }
+        .entity-item:hover { background: #374151; border-left-color: #60a5fa; }
+        .entity-item.selected { background: #1e40af; border-left-color: #60a5fa; }
+        .entity-list { max-height: 180px; overflow-y: auto; }
+        .info-panel { flex: 1; overflow-y: auto; }
+        .info { padding: 12px; border-bottom: 1px solid #333; }
+        .info-label { font-size: 11px; text-transform: uppercase; color: #8892a8; margin-bottom: 6px; }
+        .info-value { font-size: 13px; line-height: 1.6; color: #d1d5db; word-break: break-word; }
+        .tag { display: inline-block; background: #2d3748; padding: 4px 8px; border-radius: 3px; margin: 4px 4px 4px 0; font-size: 11px; border: 1px solid #4a5568; }
+        .help { font-size: 11px; color: #6b7280; line-height: 1.5; padding: 8px; background: #0f1419; border-radius: 3px; margin: 8px 0; }
+        .count { font-size: 11px; color: #6b7280; margin-left: 4px; }
+        .hud { position: absolute; top: 12px; left: 12px; background: rgba(26, 31, 46, 0.95); border: 1px solid #333; border-radius: 4px; padding: 12px; font-size: 12px; font-family: 'Courier New', monospace; color: #8892a8; z-index: 100; }
+        .hud strong { color: #4ade80; }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div class="hud">
+        <div><strong>SPHERICAL NDM v1</strong></div>
+        <div style="margin-top: 8px; font-size: 10px;">Points: <strong id="hud-pts">0</strong><br>Time: <strong id="hud-tm">t0</strong><br>Selected: <strong id="hud-sel">none</strong></div>
+        <div style="margin-top: 8px; font-size: 10px; color: #6b7280;">LMB drag: rotate · RMB drag: pan · Scroll: zoom · Click point: inspect</div>
+    </div>
+
+    <div id="sidebar">
+        <div class="section">
+            <h3>Time Navigation</h3>
+            <div class="label">Conversation Position</div>
+            <div class="time-display" id="time-display">t0</div>
+            <input type="range" id="time-slider" min="0" max="9" value="0">
+            <div class="label">Events: t0 to t9</div>
+        </div>
+
+        <div class="section">
+            <h3>Entity Filters</h3>
+            <div id="entity-filters"></div>
+            <div class="help">Uncheck to hide. Click name to inspect.</div>
+        </div>
+
+        <div class="section">
+            <h3>Visible Entities</h3>
+            <div class="entity-list" id="entity-list"></div>
+        </div>
+
+        <div class="section">
+            <h3>Dimension Filters</h3>
+            <div id="dimension-filters" class="entity-list" style="max-height: 220px;"></div>
+            <div class="help">Uncheck a dimension key to hide it from the inspector below. Keys are collected from the extracted dimensions actually present in the data.</div>
+        </div>
+
+        <div class="section info-panel">
+            <div id="info-content">
+                <div class="info">
+                    <div class="info-label">Instructions</div>
+                    <div class="info-value">Click a point to inspect. Left-drag to rotate, right-drag to pan, scroll to zoom. Geometric proximity is <strong>not</strong> a semantic relationship.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const rawEvents = [
+            {event_id:"t0",text:"Alice proposed PostgreSQL for the payments platform during the architecture discussion."},
+            {event_id:"t1",text:"Bob questioned whether PostgreSQL could handle the payments platform's projected transaction load."},
+            {event_id:"t2",text:"Alice said the available benchmark results were inconclusive and asked the team to test PostgreSQL under peak load."},
+            {event_id:"t3",text:"Carol reported that Redis was already being used for session caching in the payments platform."},
+            {event_id:"t4",text:"Bob proposed using Redis for rate limiting, but it was unclear whether the proposal applied to the payments platform or to a separate service."},
+            {event_id:"t5",text:"Alice reported that the PostgreSQL peak-load benchmark completed successfully, although its failover behavior remained uncertain."},
+            {event_id:"t6",text:"Bob said the rate-limiting change might require a different deployment plan."},
+            {event_id:"t7",text:"Carol said the payments platform team planned to keep Redis for caching while deciding on the database changes."},
+            {event_id:"t8",text:"Alice proposed PostgreSQL again after the failover test, but no final adoption decision was recorded."},
+            {event_id:"t9",text:"Bob and Carol reviewed the architecture document; Bob favored a separate rate-limiting service, while Carol favored keeping Redis for caching."}
+        ];
+
+        const entityDimensions = [
+            {"event_id":"t0","entities":[{"name":"Alice","dimensions":{"role_in_event":"proposer","action":"proposed PostgreSQL","proposal_target":"payments platform","context_of_action":"architecture discussion","temporal_position":"past (action completed)"}},{"name":"PostgreSQL","dimensions":{"role_in_event":"object of proposal","status":"proposed (adoption not stated)","proposed_by":"Alice","proposed_for":"payments platform","context":"architecture discussion"}},{"name":"payments platform","dimensions":{"role_in_event":"subject for which a technology was proposed","associated_proposal":"PostgreSQL","context":"architecture discussion"}},{"name":"architecture discussion","dimensions":{"role_in_event":"setting in which the proposal happened","type":"discussion","topic_domain":"architecture","temporal_position":"past","contained_action":"Alice proposed PostgreSQL for the payments platform"}}]},
+            {"event_id":"t1","entities":[{"name":"Bob","dimensions":{"role_in_event":"questioner","action":"questioned","stance":"doubt or uncertainty about PostgreSQL's capacity to handle the projected transaction load","object_of_inquiry":"whether PostgreSQL could handle the payments platform's projected transaction load","temporal_position":"past"}},{"name":"PostgreSQL","dimensions":{"role_in_event":"subject of the question","questioned_capability":"handling the payments platform's projected transaction load","capability_status":"unresolved","relationship_to_payments_platform":"being considered for handling the platform's projected transaction load; its current use by the platform is not stated"}},{"name":"payments platform","dimensions":{"role_in_event":"context for the question","domain":"payments","possessed_attribute":"projected transaction load"}},{"name":"projected transaction load","dimensions":{"role_in_event":"workload referenced in the question","owner":"payments platform","temporal_status":"projected, meaning it is forecast rather than current","magnitude":"unspecified"}}]},
+            {"event_id":"t2","entities":[{"name":"Alice","dimensions":{"role_in_event":"speaker and requester","communicative_actions":"stated an assessment of the benchmark results; asked the team to run a test","assessment_of_benchmark_results":"inconclusive","request_made":"test PostgreSQL under peak load","request_recipient":"the team"}},{"name":"benchmark results","dimensions":{"availability":"available","evaluated_status":"inconclusive (according to Alice)","source_of_evaluation":"Alice","subject_matter":"unspecified"}},{"name":"the team","dimensions":{"role_in_event":"recipient of Alice's request","requested_action":"test PostgreSQL under peak load","response_status":"unknown"}},{"name":"PostgreSQL","dimensions":{"role_in_event":"subject of the requested test","requested_test_condition":"peak load","test_status":"requested, not yet performed"}},{"name":"peak load","dimensions":{"role_in_event":"test condition for the requested PostgreSQL test","specification":"unspecified"}}]},
+            {"event_id":"t3","entities":[{"name":"Carol","dimensions":{"role_in_event":"reporter","action":"reported","communicated_claim":"Redis was already being used for session caching in the payments platform","temporal_position_of_action":"past"}},{"name":"Redis","dimensions":{"role_in_event":"subject of the report","usage_status":"already in use (as reported)","function":"session caching","deployment_context":"payments platform","epistemic_status":"asserted by Carol; not independently confirmed in the event"}},{"name":"session caching","dimensions":{"role_in_event":"use case","implementation":"Redis (as reported)","context":"payments platform","status":"existing / pre-existing (as reported)"}},{"name":"payments platform","dimensions":{"role_in_event":"system context","reported_component":"Redis used for session caching","epistemic_status":"state described via Carol's report"}}]},
+            {"event_id":"t4","entities":[{"name":"Bob","dimensions":{"role":"proposer","action":"proposed using Redis for rate limiting","temporal_position":"past"}},{"name":"Redis","dimensions":{"role":"proposed technology","proposed_purpose":"rate limiting","proposed_by":"Bob","adoption_status":"proposed; no decision stated"}},{"name":"rate limiting","dimensions":{"role":"function or purpose of the proposal","proposed_implementation":"Redis","target_system":"ambiguous: payments platform or a separate service"}},{"name":"the proposal","dimensions":{"author":"Bob","content":"use Redis for rate limiting","scope_status":"unclear","candidate_scopes":"payments platform or a separate service","temporal_position":"past"}},{"name":"payments platform","dimensions":{"role":"possible target of the proposal","applicability_status":"unresolved"}},{"name":"separate service","dimensions":{"role":"possible target of the proposal","identity":"unspecified","relation_to_payments_platform":"described as separate","applicability_status":"unresolved"}}]},
+            {"event_id":"t5","entities":[{"name":"Alice","dimensions":{"role_in_event":"reporter","action":"reported the benchmark outcome","temporal_position":"past (reporting already occurred)"}},{"name":"PostgreSQL","dimensions":{"role_in_event":"system under benchmark","relationship_to_benchmark":"subject of the peak-load benchmark"}},{"name":"peak-load benchmark","dimensions":{"type":"peak-load performance test","target_system":"PostgreSQL","completion_status":"completed","outcome":"successful","temporal_position":"completed before or at the time of Alice's report","epistemic_source":"according to Alice's report"}},{"name":"failover behavior","dimensions":{"owner":"ambiguous: the event does not make clear whether 'its' means the benchmark or PostgreSQL","certainty_status":"uncertain","persistence":"uncertainty continued ('remained')","relation_to_benchmark_success":"contrasted with the successful completion ('although')","epistemic_source":"according to Alice's report"}}]},
+            {"event_id":"t6","entities":[{"name":"Bob","dimensions":{"role_in_event":"speaker","communicative_action":"said","statement_subject":"the rate-limiting change","epistemic_stance":"tentative (expressed possibility with 'might')"}},{"name":"rate-limiting change","dimensions":{"type":"change concerning rate limiting","role_in_event":"subject of Bob's statement","specificity":"definite reference ('the'), implying a specific change previously known in context","potential_consequence":"might require a different deployment plan","certainty_of_consequence":"uncertain, only possible"}},{"name":"deployment plan","dimensions":{"type":"plan for deployment","role_in_event":"object that might be needed","qualifier":"different (implying an existing or default plan it would replace)","status":"hypothetical; not confirmed as required","dependency":"possible requirement arising from the rate-limiting change"}}]},
+            {"event_id":"t7","entities":[{"name":"Carol","dimensions":{"role_in_event":"speaker / source of the report","action":"said (reported the team's plan)","temporal_position_of_statement":"past","relationship_to_payments_platform_team":"not specified"}},{"name":"payments platform team","dimensions":{"role_in_event":"subject of Carol's report; holder of the plan","plan":"keep Redis for caching","concurrent_activity":"deciding on the database changes","decision_status":"undecided on database changes at the time described","epistemic_source":"attributed via Carol's statement, not directly asserted","temporal_position_of_plan":"past tense ('planned'); whether plan remains current is not stated"}},{"name":"Redis","dimensions":{"role_in_event":"technology the team planned to retain","function":"caching","planned_status":"to be kept","status_duration":"while the database changes are being decided; status afterward not stated","association":"used by or associated with the payments platform team (exact ownership not specified)"}},{"name":"caching","dimensions":{"role_in_event":"purpose for which Redis is kept","provider":"Redis"}},{"name":"database changes","dimensions":{"role_in_event":"matter under decision","decision_status":"pending / being decided","decider":"payments platform team","specifics":"not specified","relationship_to_redis":"not specified beyond occurring concurrently with the plan to keep Redis"}}]},
+            {"event_id":"t8","entities":[{"name":"Alice","dimensions":{"role_in_event":"proposer","action":"proposed PostgreSQL","action_recurrence":"repeated proposal (\"again\" indicates at least one prior proposal)","temporal_position_of_action":"after the failover test","decision_authority":"not stated"}},{"name":"PostgreSQL","dimensions":{"role_in_event":"subject of proposal","proposal_status":"proposed again","proposed_by":"Alice","adoption_status":"no final adoption decision recorded","decision_outcome":"unknown (unresolved or unrecorded)"}},{"name":"failover test","dimensions":{"role_in_event":"temporal reference point","temporal_status":"completed before the proposal","outcome":"not stated","causal_relationship_to_proposal":"not stated (only temporal ordering given)"}},{"name":"final adoption decision","dimensions":{"role_in_event":"expected outcome that is missing","recording_status":"not recorded","existence":"ambiguous (a decision may not have been made, or may have been made but not recorded)","subject":"adoption of PostgreSQL"}}]},
+            {"event_id":"t9","entities":[{"name":"Bob","dimensions":{"action":"reviewed the architecture document","collaboration":"reviewed the document together with Carol","position":"favored a separate rate-limiting service","stance_relative_to_carol":"held a different preference than Carol"}},{"name":"Carol","dimensions":{"action":"reviewed the architecture document","collaboration":"reviewed the document together with Bob","position":"favored keeping Redis for caching","stance_relative_to_bob":"held a different preference than Bob"}},{"name":"architecture document","dimensions":{"role":"object of review","reviewed_by":"Bob and Carol","status":"reviewed"}},{"name":"separate rate-limiting service","dimensions":{"role":"proposed architectural option","advocate":"Bob","purpose":"rate limiting","structural_nature":"separate service","status":"favored by Bob; not stated as adopted or rejected"}},{"name":"Redis","dimensions":{"role":"technology discussed during the review","advocate":"Carol","function":"caching","proposed_state":"kept for caching","implied_current_use":"the phrase 'keeping Redis for caching' suggests Redis is already in use for caching","status":"favored by Carol; not stated as adopted or rejected"}}]}
+        ];
+
+        let app = {
+            scene: null, camera: null, renderer: null, controls: {},
+            currentTime: 0, selectedEntity: null, selectedEvent: null,
+            visibleEntities: new Set(), pointsByEntity: new Map(),
+            entityFilters: new Map(), dimensionFilters: new Map(), points: []
+        };
+
+        function init() {
+            setupThreeJS();
+            buildFilters();
+            buildDimensionFilters();
+            loadViz();
+            setupEvents();
+        }
+
+        function setupThreeJS() {
+            const canvas = document.getElementById('canvas');
+            app.scene = new THREE.Scene();
+            app.scene.background = new THREE.Color(0x0f1419);
+
+            app.camera = new THREE.PerspectiveCamera(75, canvas.clientWidth / canvas.clientHeight, 0.1, 1000);
+            app.camera.position.set(10, 10, 15);
+            app.camera.lookAt(0, 0, 0);
+
+            app.renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+            app.renderer.setSize(canvas.clientWidth, canvas.clientHeight);
+            app.renderer.setPixelRatio(devicePixelRatio);
+
+            const light1 = new THREE.DirectionalLight(0xffffff, 0.6);
+            light1.position.set(5, 10, 7);
+            app.scene.add(light1);
+            app.scene.add(new THREE.AmbientLight(0x404040, 0.4));
+            app.scene.add(new THREE.GridHelper(20, 10, 0x333333, 0x222222));
+            app.scene.add(new THREE.AxesHelper(5));
+
+            setupControls();
+            animate();
+        }
+
+        function setupControls() {
+            let theta = Math.PI / 4, phi = Math.PI / 3;
+            const radius = { val: 25 };
+            const target = new THREE.Vector3(0, 0, 9);
+            let isDragging = false, dragButton = -1, prevX = 0, prevY = 0, moved = false;
+
+            const updateCam = () => {
+                const x = target.x + radius.val * Math.sin(phi) * Math.cos(theta);
+                const y = target.y + radius.val * Math.cos(phi);
+                const z = target.z + radius.val * Math.sin(phi) * Math.sin(theta);
+                app.camera.position.set(x, y, z);
+                app.camera.lookAt(target);
+            };
+            updateCam();
+
+            app.renderer.domElement.addEventListener('contextmenu', (e) => e.preventDefault());
+
+            app.renderer.domElement.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                dragButton = e.button;
+                moved = false;
+                prevX = e.clientX;
+                prevY = e.clientY;
+            });
+
+            document.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                const dx = e.clientX - prevX;
+                const dy = e.clientY - prevY;
+                if (Math.abs(dx) > 2 || Math.abs(dy) > 2) moved = true;
+
+                if (dragButton === 0) {
+                    // rotate
+                    theta -= dx * 0.01;
+                    phi += dy * 0.01;
+                    phi = Math.max(0.1, Math.min(Math.PI - 0.1, phi));
+                    updateCam();
+                } else if (dragButton === 2) {
+                    // pan: move target in camera's local right/up plane
+                    const forward = new THREE.Vector3().subVectors(target, app.camera.position).normalize();
+                    const right = new THREE.Vector3().crossVectors(forward, app.camera.up).normalize();
+                    const up = new THREE.Vector3().crossVectors(right, forward).normalize();
+                    const panSpeed = radius.val * 0.0015;
+                    target.addScaledVector(right, -dx * panSpeed);
+                    target.addScaledVector(up, dy * panSpeed);
+                    updateCam();
+                }
+
+                prevX = e.clientX;
+                prevY = e.clientY;
+            });
+
+            document.addEventListener('mouseup', () => { isDragging = false; dragButton = -1; });
+
+            app.renderer.domElement.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                radius.val *= e.deltaY > 0 ? 1.1 : 0.9;
+                radius.val = Math.max(3, Math.min(150, radius.val));
+                updateCam();
+            });
+
+            app.renderer.domElement.addEventListener('click', (e) => {
+                if (moved) return;
+                const rect = app.renderer.domElement.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width * 2 - 1;
+                const y = -(e.clientY - rect.top) / rect.height * 2 + 1;
+                const raycaster = new THREE.Raycaster();
+                raycaster.setFromCamera(new THREE.Vector2(x, y), app.camera);
+                const meshes = app.scene.children.filter(o => o.userData.point);
+                const hits = raycaster.intersectObjects(meshes);
+                if (hits.length > 0) selectPoint(hits[0].object);
+            });
+        }
+
+        function buildFilters() {
+            const all = new Set();
+            entityDimensions.forEach(e => e.entities.forEach(en => all.add(en.name)));
+
+            const container = document.getElementById('entity-filters');
+            Array.from(all).sort().forEach(name => {
+                const label = document.createElement('label');
+                label.className = 'label';
+                const cb = document.createElement('input');
+                cb.type = 'checkbox';
+                cb.checked = true;
+                app.entityFilters.set(name, true);
+                cb.addEventListener('change', () => {
+                    app.entityFilters.set(name, cb.checked);
+                    loadViz();
+                });
+                const cnt = entityDimensions.reduce((n, e) => n + (e.entities.some(en => en.name === name) ? 1 : 0), 0);
+                label.appendChild(cb);
+                label.appendChild(document.createTextNode(name));
+                label.appendChild(Object.assign(document.createElement('span'), {className: 'count', textContent: `(${cnt}×)`}));
+                container.appendChild(label);
+            });
+        }
+
+        function buildDimensionFilters() {
+            const allKeys = new Set();
+            entityDimensions.forEach(e => e.entities.forEach(en => {
+                Object.keys(en.dimensions || {}).forEach(k => allKeys.add(k));
+            }));
+
+            const container = document.getElementById('dimension-filters');
+            Array.from(allKeys).sort().forEach(key => {
+                const label = document.createElement('label');
+                label.className = 'label';
+                const cb = document.createElement('input');
+                cb.type = 'checkbox';
+                cb.checked = true;
+                app.dimensionFilters.set(key, true);
+                cb.addEventListener('change', () => {
+                    app.dimensionFilters.set(key, cb.checked);
+                    if (app.selectedPoint) updateInfo(app.selectedPoint);
+                });
+                label.appendChild(cb);
+                label.appendChild(document.createTextNode(key));
+                container.appendChild(label);
+            });
+        }
+
+        function loadViz() {
+            const oldMeshes = app.scene.children.filter(o => o instanceof THREE.Mesh && o.userData.point);
+            oldMeshes.forEach(m => app.scene.remove(m));
+            app.points = [];
+            app.pointsByEntity.clear();
+            app.visibleEntities.clear();
+
+            const t = Math.floor(app.currentTime);
+            for (let i = 0; i <= t; i++) {
+                const evt = rawEvents[i];
+                const ext = entityDimensions[i];
+                if (!ext) continue;
+
+                ext.entities.forEach(ent => {
+                    if (!app.entityFilters.get(ent.name)) return;
+                    app.visibleEntities.add(ent.name);
+
+                    if (!app.pointsByEntity.has(ent.name)) app.pointsByEntity.set(ent.name, []);
+
+                    const pt = {
+                        entity: ent.name,
+                        event: evt.event_id,
+                        pos: new THREE.Vector3((Math.random() - 0.5) * 8, (Math.random() - 0.5) * 8, i * 2),
+                        dims: ent.dimensions,
+                        text: evt.text
+                    };
+                    app.points.push(pt);
+                    app.pointsByEntity.get(ent.name).push(pt);
+
+                    const geo = new THREE.SphereGeometry(0.3, 8, 8);
+                    const mat = new THREE.MeshStandardMaterial({color: hashCol(ent.name), roughness: 0.7, metalness: 0.2});
+                    const mesh = new THREE.Mesh(geo, mat);
+                    mesh.position.copy(pt.pos);
+                    mesh.userData = {point: true, data: pt};
+                    app.scene.add(mesh);
+                });
+            }
+
+            updateList();
+            updateHUD();
+        }
+
+        function hashCol(s) {
+            let h = 0;
+            for (let i = 0; i < s.length; i++) h = ((h << 5) - h) + s.charCodeAt(i);
+            const hue = Math.abs(h) % 360;
+            return new THREE.Color(`hsl(${hue}, 70%, 50%)`);
+        }
+
+        function selectPoint(mesh) {
+            const pt = mesh.userData.data;
+            app.selectedEntity = pt.entity;
+            app.selectedEvent = pt.event;
+            app.selectedPoint = pt;
+            updateInfo(pt);
+            updateList();
+            updateHUD();
+            app.scene.children.forEach(o => {
+                if (o instanceof THREE.Mesh && o.userData.point) {
+                    o.material.emissive.setHex(o.userData.data === pt ? 0xffff00 : 0x000000);
+                }
+            });
+        }
+
+        function updateList() {
+            const list = document.getElementById('entity-list');
+            list.innerHTML = '';
+            Array.from(app.visibleEntities).sort().forEach(name => {
+                const div = Object.assign(document.createElement('div'), {
+                    className: 'entity-item' + (app.selectedEntity === name ? ' selected' : ''),
+                    innerHTML: `<strong>${name}</strong> <span class="count">${app.pointsByEntity.get(name)?.length}×</span>`
+                });
+                div.addEventListener('click', () => {
+                    const pt = app.pointsByEntity.get(name)?.[0];
+                    if (pt) {
+                        const mesh = app.scene.children.find(o => o.userData.data === pt);
+                        if (mesh) selectPoint(mesh);
+                    }
+                });
+                list.appendChild(div);
+            });
+        }
+
+        function updateInfo(pt) {
+            let html = `
+                <div class="info">
+                    <div class="info-label">Selected</div>
+                    <div class="info-value"><strong>${pt.entity}</strong> at ${pt.event}</div>
+                </div>
+                <div class="info">
+                    <div class="info-label">Event</div>
+                    <div class="info-value">"${pt.text}"</div>
+                </div>
+                <div class="info">
+                    <div class="info-label">Dimensions</div>
+                    <div class="info-value">
+            `;
+            const dims = Object.entries(pt.dims || {}).filter(([k]) => app.dimensionFilters.get(k) !== false);
+            if (dims.length === 0) {
+                html += '<span style="color:#6b7280;">All dimensions hidden by filter.</span>';
+            }
+            dims.forEach(([k, v]) => {
+                html += `<div class="tag"><strong>${k}:</strong> ${typeof v === 'object' ? JSON.stringify(v) : v}</div>`;
+            });
+            html += `
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="info-label">Occurrences</div>
+                    <div class="info-value">
+                        ${(app.pointsByEntity.get(pt.entity) || []).map(p => `<span class="tag">${p.event}</span>`).join('')}
+                    </div>
+                </div>
+            `;
+            document.getElementById('info-content').innerHTML = html;
+        }
+
+        function updateHUD() {
+            document.getElementById('hud-pts').textContent = app.points.length;
+            document.getElementById('hud-tm').textContent = `t${app.currentTime}`;
+            document.getElementById('hud-sel').textContent = app.selectedEntity || 'none';
+        }
+
+        function setupEvents() {
+            document.getElementById('time-slider').addEventListener('input', (e) => {
+                app.currentTime = +e.target.value;
+                document.getElementById('time-display').textContent = `t${app.currentTime}`;
+                loadViz();
+            });
+
+            window.addEventListener('resize', () => {
+                const w = app.renderer.domElement.clientWidth;
+                const h = app.renderer.domElement.clientHeight;
+                app.camera.aspect = w / h;
+                app.camera.updateProjectionMatrix();
+                app.renderer.setSize(w, h);
+            });
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+            app.renderer.render(app.scene, app.camera);
+        }
+
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
