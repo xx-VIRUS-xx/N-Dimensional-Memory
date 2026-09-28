@@ -1,6 +1,6 @@
 {"id": "MH1", "check": "The proposer of Redis for rate limiting is Bob; Alice is never linked as its proposer.", "why": "role direction"}
 {"id": "MH2", "check": "The target of Bob's rate-limiting proposal (s4) stays ambiguous: payments platform or separate service.", "why": "sentence-stated alternatives must stay open"}
-{"id": "MH3", "check": "'its failover behavior' (s5) is not silently resolved to one owner.", "why": "two compatible candidates"}
+{"id": "MH3", "check": "'its failover behavior' (s5) is not silently resolved to one owner.", "why": "two compatible candidates; the bucket's model_belief is a hint and must not be used as the answer (C9a)"}
 {"id": "MH4", "check": "The peak-load result is owned by Alice (reported claim), not stored as a narrated fact.", "why": "attribution"}
 {"id": "MH5", "check": "Bob's statement in s6 is hedged (possible), not a certain claim.", "why": "modality"}
 {"id": "MH6", "check": "No conflict is recorded between Bob and Carol in s9; they favour things on different dimensions.", "why": "no inferred conflict"}
