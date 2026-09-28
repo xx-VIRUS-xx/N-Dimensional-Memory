@@ -7,6 +7,11 @@ Usage: python tools/ndm_math.py <file.jsonl> [--json out.json]
 import itertools, json, math, re, sys, collections
 import numpy as np
 
+# DIAGNOSTIC HEURISTICS, ND-0 ONLY. These regexes (ABSENCE, INFERENCE, and the
+# bucket detector in strings_babytest) match literal phrasings seen in the pilot
+# BabyTest output. They are measurement scaffolding, not engine logic: any other
+# phrasing is silently missed. Engine stages E4 (cleaning) and E6 (buckets) must
+# use their own specified rules (EXP-ND1.md, CONTRACT C6/C7/C9/C12), not these.
 ABSENCE = re.compile(r"not stated|unspecified|unknown|not recorded|not specified", re.I)
 INFERENCE = re.compile(r"suggests|implying|implied|indicates", re.I)
 STORYLINES = [("Alice", "PostgreSQL"), ("Carol", "Redis")]
@@ -18,7 +23,11 @@ def load(path):
 
 
 def strings_babytest(rows):
-    """-> list of (event_id, peg_or_None, dimension, value_text, participants)"""
+    """-> list of (event_id, peg_or_None, dimension, value_text, participants)
+
+    Bucket detection here is a literal-string heuristic ("ambiguous",
+    "candidate_scopes") for ND-0 diagnostics only; see the note at the top.
+    """
     out, inc = [], []
     names = {x["name"] for r in rows for x in r["entities"]}
     for r in rows:

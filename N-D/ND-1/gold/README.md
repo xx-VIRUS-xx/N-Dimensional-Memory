@@ -5,7 +5,7 @@
 ## Reading the buckets
 
 - `model_belief` is a hint, never a resolution (CONTRACT C9a). tick 8's `model_belief: "PostgreSQL"` does not resolve "its failover behavior"; MH3 requires that bucket to stay open.
-- tick 9 ("the rate-limiting change") lists one candidate, event 6. Under C9c the engine may resolve it (one compatible candidate in the window), recorded as `resolved_by: engine` with evidence tick 6. The gold keeps it written as a bucket so the engine's resolution can be checked.
+- tick 9 ("the rate-limiting change") lists one candidate, event 6. Under C9 clause (c) the engine may resolve it (one compatible candidate in the window), recorded as `resolved_by: engine` with evidence tick 6. The gold keeps it written as a bucket so the engine's resolution can be checked.
 - tick 6 (target: payments platform or separate service) states its alternatives in the sentence, so it stays open (MH2).
 
 ## Known limits
