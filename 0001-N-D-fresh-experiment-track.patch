@@ -1,0 +1,774 @@
+From 4961c4c9de4eb657da460b5a2c7d44951461f87e Mon Sep 17 00:00:00 2001
+From: N-D draft <draft@example.invalid>
+Date: Mon, 28 Sep 2026 06:27:15 +0000
+Subject: [PATCH] N-D: fresh experiment track
+
+- CONTRACT.md: 11 invariants with violation tests
+- schema/event.schema.json, catalog/dimensions_v0.json
+- tools/ndm_math.py: incidence math and metrics
+- ND-0: free-dimension baseline measured on pilot10
+- ND-1: engine v0 spec, judged by contract checks, faithfulness,
+  probe questions, must-haves and cross-model stability (not gold-matching)
+- PLAN.md: ND-0 to ND-5 with go/no-go gates
+---
+ N-D/CONTRACT.md                            |  17 +++
+ N-D/ND-0/EXP-ND0.md                        |  45 ++++++++
+ N-D/ND-0/data/pilot10.babytest.jsonl       |  10 ++
+ N-D/ND-0/data/pilot10.source.jsonl         |  10 ++
+ N-D/ND-0/results/babytest.metrics.json     |  90 ++++++++++++++++
+ N-D/ND-1/EXP-ND1.md                        |  61 +++++++++++
+ N-D/ND-1/LLM_CONTRACT.md                   |  11 ++
+ N-D/ND-1/gold/pilot10.gold.jsonl           |  16 +++
+ N-D/ND-1/probes/must_haves.jsonl           |   7 ++
+ N-D/ND-1/probes/pilot10.probes.jsonl       |  15 +++
+ N-D/ND-1/results/gold_ceiling.metrics.json | 118 +++++++++++++++++++++
+ N-D/PLAN.md                                |  15 +++
+ N-D/README.md                              |  34 ++++++
+ N-D/catalog/dimensions_v0.json             |  15 +++
+ N-D/schema/event.schema.json               |  61 +++++++++++
+ N-D/tools/ndm_math.py                      | 101 ++++++++++++++++++
+ 16 files changed, 626 insertions(+)
+ create mode 100644 N-D/CONTRACT.md
+ create mode 100644 N-D/ND-0/EXP-ND0.md
+ create mode 100644 N-D/ND-0/data/pilot10.babytest.jsonl
+ create mode 100644 N-D/ND-0/data/pilot10.source.jsonl
+ create mode 100644 N-D/ND-0/results/babytest.metrics.json
+ create mode 100644 N-D/ND-1/EXP-ND1.md
+ create mode 100644 N-D/ND-1/LLM_CONTRACT.md
+ create mode 100644 N-D/ND-1/gold/pilot10.gold.jsonl
+ create mode 100644 N-D/ND-1/probes/must_haves.jsonl
+ create mode 100644 N-D/ND-1/probes/pilot10.probes.jsonl
+ create mode 100644 N-D/ND-1/results/gold_ceiling.metrics.json
+ create mode 100644 N-D/PLAN.md
+ create mode 100644 N-D/README.md
+ create mode 100644 N-D/catalog/dimensions_v0.json
+ create mode 100644 N-D/schema/event.schema.json
+ create mode 100644 N-D/tools/ndm_math.py
+
+diff --git a/N-D/CONTRACT.md b/N-D/CONTRACT.md
+new file mode 100644
+index 0000000..0b38322
+--- /dev/null
++++ b/N-D/CONTRACT.md
+@@ -0,0 +1,17 @@
++# N-D Contract v0
++
++Invariants every N-D implementation and experiment must preserve. Each has a test that would catch a violation.
++
++| ID | Invariant | Violation test |
++|---|---|---|
++| C1 | **One event per tick.** Ticks are unique and monotonic; two events never share one. | Any duplicate tick in a committed corpus. |
++| C2 | **Event shape.** One happening per event; 1–6 roles; roles are catalog dimensions; fillers are a peg, a list of pegs, a short literal (≤40 chars), an event reference, or a bucket. | Schema validation failure; role not in catalog. |
++| C3 | **Append-only.** Nothing is updated or deleted; retraction is a new record pointing at a specific event. | Any mutation of a committed event. |
++| C4 | **Two clocks.** Tick = order learned and identity; `occurred` = world time. Questions about "what was true when" use `occurred`. | A late-learned past event changes the answer to a replay query before its tick. |
++| C5 | **No stored inferred edges.** Structural relationships come only from collisions and trajectories. Only source-stated relations are stored, as events. | A relation present in memory with no stating event. |
++| C6 | **No stored absences.** Absence is no record. A *stated* absence ("no decision was recorded") is a negative-polarity fact. | Filler text such as "not stated" / "unspecified". |
++| C7 | **No inference inside a fact.** Conclusions are separate model-belief events. | Fact or claim containing "implies/suggests"-type content. |
++| C8 | **Owned status.** Every event has exactly one status (fact, claim, speaker_belief, model_belief, open_question, intent) and an owner (null only for narrated facts). | Missing or multiple statuses. |
++| C9 | **Resolution authority.** A bucket closes only by an explicit statement or by the user. | A bucket closed by an inference or by a model belief. |
++| C10 | **No self-confirmation.** A model belief never counts as evidence for itself; repetition by the same speaker is not corroboration. | Support count increases on a same-owner restatement. |
++| C11 | **Exactness scope.** Memory is exact relative to extracted events, not the source text; extraction quality is always measured. | An experiment that reports memory accuracy without extraction accuracy. |
+diff --git a/N-D/ND-0/EXP-ND0.md b/N-D/ND-0/EXP-ND0.md
+new file mode 100644
+index 0000000..154f342
+--- /dev/null
++++ b/N-D/ND-0/EXP-ND0.md
+@@ -0,0 +1,45 @@
++# ND-0 — Baseline: free-dimension extraction under the N-D math
++
++**Status:** complete (2026-09-28).
++
++## Question
++
++If an LLM extracts entities and invents its own dimension names per event (the free-dimension style), does the result support the N-D geometry: collisions, trajectories, state interactions?
++
++## Data
++
++- `data/pilot10.source.jsonl`: 10 sentences from a design discussion (PostgreSQL, Redis, three speakers). **Reconstructed from the extraction; replace with the original sentences if they differ.**
++- `data/pilot10.babytest.jsonl`: the free-dimension extraction of those sentences (entity → free dimension → free-text value).
++
++Reference point: `../ND-1/gold/pilot10.gold.jsonl`, 16 hand-built event-star events for the same sentences (the gold ceiling).
++
++## Method
++
++`python tools/ndm_math.py <file>` builds the peg-by-event incidence matrix B and reports shape, geometry and epistemic metrics. Nothing else is computed.
++
++## Results
++
++| Metric | Free-dimension baseline | Event-star gold (ceiling) |
++|---|---:|---:|
++| Events | 10 | 16 (compound sentences split) |
++| Role strings | 180 | 48 |
++| Distinct dimensions | 102 | 25 (all from catalog) |
++| Values that are pegs | 16.1% | 81.2% |
++| Mean words per value | 3.9 | 1.5 |
++| Single-event pegs | 76.9% | 50.0% |
++| Colliding event pairs | 24 | 49 |
++| Storyline ranks (Alice~PostgreSQL, Carol~Redis) | 1, 2 | 1, 2 |
++| Referent buckets | 4 flagged (2 real, 1 absence, 1 duplicate) | 3 (t4 scope, t5 "its", t6 "the change") |
++| Stored absences | 21 | 0 |
++| Inference markers inside facts | 4 | 0 |
++
++## Findings
++
++1. **Entity identification is good enough.** Both formats recover the two storylines at ranks 1 and 2 by weighted collision alone.
++2. **Free dimensions break the rest.** Values are sentences (16% pegs), so values never collide; 21 stored absences and 4 inferences are noise the contract forbids.
++3. **Dimension count per role string is not the right metric at this size.** Gold still has 25 dimensions for 48 strings; the difference is that gold's are catalog names that will repeat as the corpus grows. ND-1 therefore measures catalog compliance, not singleton rate.
++4. **The free-dimension extractor missed one bucket** (t6 "the rate-limiting change") and asserted one false conflict (Bob vs Carol "different preferences", no shared dimension).
++
++## Decision
++
++Free-dimension extraction is rejected as the N-D write format. ND-1 tests whether LLMs can produce the event-star shape directly, scored against the gold.
+diff --git a/N-D/ND-0/data/pilot10.babytest.jsonl b/N-D/ND-0/data/pilot10.babytest.jsonl
+new file mode 100644
+index 0000000..103eb5d
+--- /dev/null
++++ b/N-D/ND-0/data/pilot10.babytest.jsonl
+@@ -0,0 +1,10 @@
++{"event_id": "t0", "entities": [{"name": "Alice", "dimensions": {"role_in_event": "proposer", "action": "proposed PostgreSQL", "proposal_target": "payments platform", "context_of_action": "architecture discussion", "temporal_position": "past (action completed)"}}, {"name": "PostgreSQL", "dimensions": {"role_in_event": "object of proposal", "status": "proposed (adoption not stated)", "proposed_by": "Alice", "proposed_for": "payments platform", "context": "architecture discussion"}}, {"name": "payments platform", "dimensions": {"role_in_event": "subject for which a technology was proposed", "associated_proposal": "PostgreSQL", "context": "architecture discussion"}}, {"name": "architecture discussion", "dimensions": {"role_in_event": "setting in which the proposal happened", "type": "discussion", "topic_domain": "architecture", "temporal_position": "past", "contained_action": "Alice proposed PostgreSQL for the payments platform"}}]}
++{"event_id": "t1", "entities": [{"name": "Bob", "dimensions": {"role_in_event": "questioner", "action": "questioned", "stance": "doubt or uncertainty about PostgreSQL's capacity to handle the projected transaction load", "object_of_inquiry": "whether PostgreSQL could handle the payments platform's projected transaction load", "temporal_position": "past"}}, {"name": "PostgreSQL", "dimensions": {"role_in_event": "subject of the question", "questioned_capability": "handling the payments platform's projected transaction load", "capability_status": "unresolved", "relationship_to_payments_platform": "being considered for handling the platform's projected transaction load; its current use by the platform is not stated"}}, {"name": "payments platform", "dimensions": {"role_in_event": "context for the question", "domain": "payments", "possessed_attribute": "projected transaction load"}}, {"name": "projected transaction load", "dimensions": {"role_in_event": "workload referenced in the question", "owner": "payments platform", "temporal_status": "projected, meaning it is forecast rather than current", "magnitude": "unspecified"}}]}
++{"event_id": "t2", "entities": [{"name": "Alice", "dimensions": {"role_in_event": "speaker and requester", "communicative_actions": "stated an assessment of the benchmark results; asked the team to run a test", "assessment_of_benchmark_results": "inconclusive", "request_made": "test PostgreSQL under peak load", "request_recipient": "the team"}}, {"name": "benchmark results", "dimensions": {"availability": "available", "evaluated_status": "inconclusive (according to Alice)", "source_of_evaluation": "Alice", "subject_matter": "unspecified"}}, {"name": "the team", "dimensions": {"role_in_event": "recipient of Alice's request", "requested_action": "test PostgreSQL under peak load", "response_status": "unknown"}}, {"name": "PostgreSQL", "dimensions": {"role_in_event": "subject of the requested test", "requested_test_condition": "peak load", "test_status": "requested, not yet performed"}}, {"name": "peak load", "dimensions": {"role_in_event": "test condition for the requested PostgreSQL test", "specification": "unspecified"}}]}
++{"event_id": "t3", "entities": [{"name": "Carol", "dimensions": {"role_in_event": "reporter", "action": "reported", "communicated_claim": "Redis was already being used for session caching in the payments platform", "temporal_position_of_action": "past"}}, {"name": "Redis", "dimensions": {"role_in_event": "subject of the report", "usage_status": "already in use (as reported)", "function": "session caching", "deployment_context": "payments platform", "epistemic_status": "asserted by Carol; not independently confirmed in the event"}}, {"name": "session caching", "dimensions": {"role_in_event": "use case", "implementation": "Redis (as reported)", "context": "payments platform", "status": "existing / pre-existing (as reported)"}}, {"name": "payments platform", "dimensions": {"role_in_event": "system context", "reported_component": "Redis used for session caching", "epistemic_status": "state described via Carol's report"}}]}
++{"event_id": "t4", "entities": [{"name": "Bob", "dimensions": {"role": "proposer", "action": "proposed using Redis for rate limiting", "temporal_position": "past"}}, {"name": "Redis", "dimensions": {"role": "proposed technology", "proposed_purpose": "rate limiting", "proposed_by": "Bob", "adoption_status": "proposed; no decision stated"}}, {"name": "rate limiting", "dimensions": {"role": "function or purpose of the proposal", "proposed_implementation": "Redis", "target_system": "ambiguous: payments platform or a separate service"}}, {"name": "the proposal", "dimensions": {"author": "Bob", "content": "use Redis for rate limiting", "scope_status": "unclear", "candidate_scopes": "payments platform or a separate service", "temporal_position": "past"}}, {"name": "payments platform", "dimensions": {"role": "possible target of the proposal", "applicability_status": "unresolved"}}, {"name": "separate service", "dimensions": {"role": "possible target of the proposal", "identity": "unspecified", "relation_to_payments_platform": "described as separate", "applicability_status": "unresolved"}}]}
++{"event_id": "t5", "entities": [{"name": "Alice", "dimensions": {"role_in_event": "reporter", "action": "reported the benchmark outcome", "temporal_position": "past (reporting already occurred)"}}, {"name": "PostgreSQL", "dimensions": {"role_in_event": "system under benchmark", "relationship_to_benchmark": "subject of the peak-load benchmark"}}, {"name": "peak-load benchmark", "dimensions": {"type": "peak-load performance test", "target_system": "PostgreSQL", "completion_status": "completed", "outcome": "successful", "temporal_position": "completed before or at the time of Alice's report", "epistemic_source": "according to Alice's report"}}, {"name": "failover behavior", "dimensions": {"owner": "ambiguous: the event does not make clear whether 'its' means the benchmark or PostgreSQL", "certainty_status": "uncertain", "persistence": "uncertainty continued ('remained')", "relation_to_benchmark_success": "contrasted with the successful completion ('although')", "epistemic_source": "according to Alice's report"}}]}
++{"event_id": "t6", "entities": [{"name": "Bob", "dimensions": {"role_in_event": "speaker", "communicative_action": "said", "statement_subject": "the rate-limiting change", "epistemic_stance": "tentative (expressed possibility with 'might')"}}, {"name": "rate-limiting change", "dimensions": {"type": "change concerning rate limiting", "role_in_event": "subject of Bob's statement", "specificity": "definite reference ('the'), implying a specific change previously known in context", "potential_consequence": "might require a different deployment plan", "certainty_of_consequence": "uncertain, only possible"}}, {"name": "deployment plan", "dimensions": {"type": "plan for deployment", "role_in_event": "object that might be needed", "qualifier": "different (implying an existing or default plan it would replace)", "status": "hypothetical; not confirmed as required", "dependency": "possible requirement arising from the rate-limiting change"}}]}
++{"event_id": "t7", "entities": [{"name": "Carol", "dimensions": {"role_in_event": "speaker / source of the report", "action": "said (reported the team's plan)", "temporal_position_of_statement": "past", "relationship_to_payments_platform_team": "not specified"}}, {"name": "payments platform team", "dimensions": {"role_in_event": "subject of Carol's report; holder of the plan", "plan": "keep Redis for caching", "concurrent_activity": "deciding on the database changes", "decision_status": "undecided on database changes at the time described", "epistemic_source": "attributed via Carol's statement, not directly asserted", "temporal_position_of_plan": "past tense ('planned'); whether plan remains current is not stated"}}, {"name": "Redis", "dimensions": {"role_in_event": "technology the team planned to retain", "function": "caching", "planned_status": "to be kept", "status_duration": "while the database changes are being decided; status afterward not stated", "association": "used by or associated with the payments platform team (exact ownership not specified)"}}, {"name": "caching", "dimensions": {"role_in_event": "purpose for which Redis is kept", "provider": "Redis"}}, {"name": "database changes", "dimensions": {"role_in_event": "matter under decision", "decision_status": "pending / being decided", "decider": "payments platform team", "specifics": "not specified", "relationship_to_redis": "not specified beyond occurring concurrently with the plan to keep Redis"}}]}
++{"event_id": "t8", "entities": [{"name": "Alice", "dimensions": {"role_in_event": "proposer", "action": "proposed PostgreSQL", "action_recurrence": "repeated proposal (\"again\" indicates at least one prior proposal)", "temporal_position_of_action": "after the failover test", "decision_authority": "not stated"}}, {"name": "PostgreSQL", "dimensions": {"role_in_event": "subject of proposal", "proposal_status": "proposed again", "proposed_by": "Alice", "adoption_status": "no final adoption decision recorded", "decision_outcome": "unknown (unresolved or unrecorded)"}}, {"name": "failover test", "dimensions": {"role_in_event": "temporal reference point", "temporal_status": "completed before the proposal", "outcome": "not stated", "causal_relationship_to_proposal": "not stated (only temporal ordering given)"}}, {"name": "final adoption decision", "dimensions": {"role_in_event": "expected outcome that is missing", "recording_status": "not recorded", "existence": "ambiguous (a decision may not have been made, or may have been made but not recorded)", "subject": "adoption of PostgreSQL"}}]}
++{"event_id": "t9", "entities": [{"name": "Bob", "dimensions": {"action": "reviewed the architecture document", "collaboration": "reviewed the document together with Carol", "position": "favored a separate rate-limiting service", "stance_relative_to_carol": "held a different preference than Carol"}}, {"name": "Carol", "dimensions": {"action": "reviewed the architecture document", "collaboration": "reviewed the document together with Bob", "position": "favored keeping Redis for caching", "stance_relative_to_bob": "held a different preference than Bob"}}, {"name": "architecture document", "dimensions": {"role": "object of review", "reviewed_by": "Bob and Carol", "status": "reviewed"}}, {"name": "separate rate-limiting service", "dimensions": {"role": "proposed architectural option", "advocate": "Bob", "purpose": "rate limiting", "structural_nature": "separate service", "status": "favored by Bob; not stated as adopted or rejected"}}, {"name": "Redis", "dimensions": {"role": "technology discussed during the review", "advocate": "Carol", "function": "caching", "proposed_state": "kept for caching", "implied_current_use": "the phrase 'keeping Redis for caching' suggests Redis is already in use for caching", "status": "favored by Carol; not stated as adopted or rejected"}}]}
+diff --git a/N-D/ND-0/data/pilot10.source.jsonl b/N-D/ND-0/data/pilot10.source.jsonl
+new file mode 100644
+index 0000000..260eaf4
+--- /dev/null
++++ b/N-D/ND-0/data/pilot10.source.jsonl
+@@ -0,0 +1,10 @@
++{"sentence_id": "s0", "text": "Alice proposed PostgreSQL for the payments platform during the architecture discussion."}
++{"sentence_id": "s1", "text": "Bob questioned whether PostgreSQL could handle the payments platform's projected transaction load."}
++{"sentence_id": "s2", "text": "Alice said the benchmark results were inconclusive and asked the team to test PostgreSQL under peak load."}
++{"sentence_id": "s3", "text": "Carol reported that Redis was already being used for session caching in the payments platform."}
++{"sentence_id": "s4", "text": "Bob proposed using Redis for rate limiting, but it was unclear whether he meant the payments platform or a separate service."}
++{"sentence_id": "s5", "text": "Alice reported that the peak-load benchmark completed successfully, although its failover behavior remained uncertain."}
++{"sentence_id": "s6", "text": "Bob said the rate-limiting change might require a different deployment plan."}
++{"sentence_id": "s7", "text": "Carol said the payments platform team planned to keep Redis for caching while they decided on the database changes."}
++{"sentence_id": "s8", "text": "After the failover test, Alice proposed PostgreSQL again, but no final adoption decision was recorded."}
++{"sentence_id": "s9", "text": "Bob and Carol reviewed the architecture document; Bob favored a separate rate-limiting service, while Carol favored keeping Redis for caching."}
+diff --git a/N-D/ND-0/results/babytest.metrics.json b/N-D/ND-0/results/babytest.metrics.json
+new file mode 100644
+index 0000000..eeb18d4
+--- /dev/null
++++ b/N-D/ND-0/results/babytest.metrics.json
+@@ -0,0 +1,90 @@
++{
++  "format": "babytest",
++  "events": 10,
++  "pegs": 26,
++  "role_strings": 180,
++  "distinct_dimensions": 102,
++  "singleton_dimension_rate": 0.784,
++  "value_is_peg_rate": 0.161,
++  "mean_words_per_value": 3.93,
++  "single_event_peg_rate": 0.769,
++  "colliding_event_pairs": 24,
++  "isolated_events": [],
++  "storyline_ranks": {
++    "Alice~PostgreSQL": 1,
++    "Carol~Redis": 2
++  },
++  "top_pairs": [
++    [
++      "Alice",
++      "PostgreSQL",
++      2.42
++    ],
++    [
++      "Carol",
++      "Redis",
++      1.74
++    ],
++    [
++      "PostgreSQL",
++      "payments platform",
++      1.24
++    ],
++    [
++      "Bob",
++      "payments platform",
++      1.14
++    ],
++    [
++      "Redis",
++      "payments platform",
++      1.14
++    ],
++    [
++      "Bob",
++      "Redis",
++      1.07
++    ]
++  ],
++  "buckets": 4,
++  "stored_absences": 21,
++  "inference_markers": 4,
++  "trajectories": {
++    "Alice": [
++      "t0",
++      "t2",
++      "t5",
++      "t8"
++    ],
++    "Bob": [
++      "t1",
++      "t4",
++      "t6",
++      "t9"
++    ],
++    "Carol": [
++      "t3",
++      "t7",
++      "t9"
++    ],
++    "PostgreSQL": [
++      "t0",
++      "t1",
++      "t2",
++      "t5",
++      "t8"
++    ],
++    "Redis": [
++      "t3",
++      "t4",
++      "t7",
++      "t9"
++    ],
++    "payments platform": [
++      "t0",
++      "t1",
++      "t3",
++      "t4"
++    ]
++  }
++}
+\ No newline at end of file
+diff --git a/N-D/ND-1/EXP-ND1.md b/N-D/ND-1/EXP-ND1.md
+new file mode 100644
+index 0000000..de95cfa
+--- /dev/null
++++ b/N-D/ND-1/EXP-ND1.md
+@@ -0,0 +1,61 @@
++# ND-1 — Engine v0: from entity-dimension output to N-D geometry
++
++**Status:** spec frozen, not run.
++
++## Question
++
++Given only the LLM's entity-dimension output (ND-0 format), can deterministic engine code and math build a geometry that answers questions about the source correctly, never breaks the contract, keeps the must-haves, and stays stable across models?
++
++## Division of labour
++
++| Layer | Does | Does not |
++|---|---|---|
++| LLM | Entities and free dimensions per sentence (`LLM_CONTRACT.md`) | Ticks, schema, statuses, buckets, relations |
++| Engine (code + math) | Everything below | Call an LLM, except where a stage is marked "confirm" |
++
++## Engine v0 stages
++
++| # | Stage | Method (deterministic) |
++|---|---|---|
++| E1 | Ticks | One tick per input event, in order |
++| E2 | Peg identity | Normalise names (case, punctuation, hyphens); exact and alias matches merge; near-matches ("peak load" / "peak-load benchmark") become proposals for confirmation, never auto-merged |
++| E3 | Value linking | Find known peg names inside value strings, so "proposed PostgreSQL" links to the PostgreSQL peg; the value text is kept as a literal |
++| E4 | Cleaning | Drop absence values ("not stated", "unspecified"); flag inference-marked dimensions ("implied_*", "suggests") as model-belief candidates, not facts |
++| E5 | Epistemic tagging | Map the LLM's own cue dimensions and phrases (e.g. epistemic_source, "according to", "as reported", "might", "questioned whether", "planned") to statuses and owners, with a fixed rule table |
++| E6 | Buckets | Values marked ambiguous/unclear become buckets; candidates come from the text and from collisions on the same dimension in earlier events |
++| E7 | Dimension canonicalisation | Footprints over the corpus; propose equivalent, inverse, broader or related; apply only confirmed mappings |
++| E8 | Geometry | Incidence matrix B, collision levels, trajectories, weighted relationship strength (tools/ndm_math.py) |
++
++## Data
++
++- Input: `../ND-0/data/pilot10.babytest.jsonl`, the existing LLM output. Run it as-is first; then on fresh stateless extractions from 2 more models, 3 runs each.
++- Source text: `../ND-0/data/pilot10.source.jsonl`.
++- Probes: `probes/pilot10.probes.jsonl` (15 questions with accepted answers). Must-haves: `probes/must_haves.jsonl` (7 checks).
++- Reference only: `gold/pilot10.gold.jsonl` (one annotator's reading). **Not a scoring target.** It is used to design probes and must-haves, and as a ceiling for diagnostics.
++
++## Evaluation principle
++
++The LLM's reading is not compared to a handwritten structure. Many extractions of the same sentence are equally valid, so scoring is by what the extraction lets the system do: rules it must never break, faithfulness to the source, questions it must answer, and stability across models.
++
++## Metrics
++
++| ID | Metric | How | Target |
++|---|---|---|---|
++| M1 | Contract violations after engine stages | Schema; stored absences (C6); unflagged inferences (C7) | 0 |
++| M2 | Faithfulness | Every entity name and every value's content words traceable to the source sentence (automatic lexical check, misses reviewed by hand) | ≥ 95% traceable; every untraceable item listed |
++| M3 | Probe accuracy | An answering LLM receives only the engine output (no source text) and answers the 15 probes; answers are string-matched to accepted answers, misses reviewed | ≥ 13/15 |
++| M4 | Must-haves | Each of the 7 checks passes or fails on the engine output | 7/7 |
++| M5 | Stability | Across models and runs: storyline ranks, colliding event pairs (Jaccard), open buckets, probe answers | Storyline ranks identical; collision Jaccard ≥ 0.8; probe answers agree ≥ 90% |
++| M6 | Extra-but-correct | Items the LLM extracted that the reference gold lacks but the source supports | Counted in the LLM's favour; listed |
++| M7 | Stage attribution | For every M1–M4 failure: extraction miss (information absent from LLM output) or engine miss (present but lost or misused) | Reported per item |
++
++**Diagnostics, not targets:** values that are pegs, single-event pegs, and colliding pairs versus the reference ceiling (`results/gold_ceiling.metrics.json`), from `tools/ndm_math.py`.
++
++## Falsification
++
++If must-haves MH4–MH5 and the attribution and belief probes fail as extraction misses (M7), the LLM output lacks the information: code cannot recover who said what or how certain it was. The minimal fix to test is adding one optional field per entity, `"said_by"`, to the LLM contract, and no more.
++
++## Known limits
++
++- Code can only recover what the LLM's output contains. If a speaker or hedge is missing from the output, no rule can restore it; M7 records these cases as extraction misses, not engine misses.
++- Probes and must-haves were written by one author (Claude) and need a human pass; they are less subjective than a full gold structure, but not free of judgement.
+diff --git a/N-D/ND-1/LLM_CONTRACT.md b/N-D/ND-1/LLM_CONTRACT.md
+new file mode 100644
+index 0000000..64b9b33
+--- /dev/null
++++ b/N-D/ND-1/LLM_CONTRACT.md
+@@ -0,0 +1,11 @@
++# What the LLM is asked for (and nothing more)
++
++Per sentence, the LLM returns entities and, for each entity, dimensions with values, in the ND-0 (BabyTest) format:
++
++```json
++{"event_id": "s4", "entities": [{"name": "...", "dimensions": {"dimension_name": "value"}}]}
++```
++
++Free dimension names are allowed. The prompt keeps the BabyTest constraints: no invented information, no relationships just because entities co-occur, no resolving ambiguity the sentence leaves open.
++
++Everything else (ticks, peg identity, value linking, cleaning, dimension canonicalisation, epistemic status, buckets, collisions, trajectories, depiction) is the engine's job, in code and math.
+diff --git a/N-D/ND-1/gold/pilot10.gold.jsonl b/N-D/ND-1/gold/pilot10.gold.jsonl
+new file mode 100644
+index 0000000..92f9cac
+--- /dev/null
++++ b/N-D/ND-1/gold/pilot10.gold.jsonl
+@@ -0,0 +1,16 @@
++{"tick": 1, "source": {"sentence_id": "s0", "speaker": null}, "kind": "proposal", "roles": {"proposer": {"peg": "Alice"}, "proposed": {"peg": "PostgreSQL"}, "target": {"peg": "payments platform"}, "setting": {"peg": "architecture discussion"}}, "status": {"type": "fact", "owner": null}}
++{"tick": 2, "source": {"sentence_id": "s1", "speaker": "Bob"}, "kind": "capability_question", "roles": {"subject": {"peg": "PostgreSQL"}, "capability": {"lit": "projected transaction load"}, "context": {"peg": "payments platform"}}, "status": {"type": "open_question", "owner": "Bob"}}
++{"tick": 3, "source": {"sentence_id": "s2", "speaker": "Alice"}, "kind": "assessment", "roles": {"subject": {"peg": "benchmark results"}, "assessment": {"lit": "inconclusive"}}, "status": {"type": "claim", "owner": "Alice"}}
++{"tick": 4, "source": {"sentence_id": "s2", "speaker": "Alice"}, "kind": "test_request", "roles": {"requester": {"peg": "Alice"}, "recipient": {"peg": "the team"}, "subject": {"peg": "PostgreSQL"}, "test": {"peg": "peak-load test"}}, "status": {"type": "intent", "owner": "Alice"}}
++{"tick": 5, "source": {"sentence_id": "s3", "speaker": "Carol"}, "kind": "usage", "roles": {"system": {"peg": "Redis"}, "function": {"peg": "session caching"}, "context": {"peg": "payments platform"}}, "status": {"type": "claim", "owner": "Carol"}}
++{"tick": 6, "source": {"sentence_id": "s4", "speaker": null}, "kind": "proposal", "roles": {"proposer": {"peg": "Bob"}, "proposed": {"peg": "Redis"}, "function": {"peg": "rate limiting"}, "target": {"bucket": {"query": "which system is the rate-limiting proposal for?", "candidates": ["payments platform", "separate service"], "model_belief": null}}}, "status": {"type": "fact", "owner": null}}
++{"tick": 7, "source": {"sentence_id": "s5", "speaker": "Alice"}, "kind": "test_result", "roles": {"subject": {"peg": "PostgreSQL"}, "test": {"peg": "peak-load test"}, "outcome": {"lit": "passed"}}, "status": {"type": "claim", "owner": "Alice"}}
++{"tick": 8, "source": {"sentence_id": "s5", "speaker": "Alice"}, "kind": "property_question", "roles": {"subject": {"bucket": {"query": "whose failover behaviour is uncertain?", "candidates": ["PostgreSQL", "peak-load test"], "model_belief": "PostgreSQL"}}, "property": {"peg": "failover"}}, "status": {"type": "open_question", "owner": "Alice"}}
++{"tick": 9, "source": {"sentence_id": "s6", "speaker": "Bob"}, "kind": "consequence", "roles": {"cause": {"bucket": {"query": "which rate-limiting change?", "candidates": [6], "model_belief": 6}}, "effect": {"peg": "deployment plan"}, "function": {"peg": "rate limiting"}}, "status": {"type": "speaker_belief", "owner": "Bob", "modality": "possible"}}
++{"tick": 10, "source": {"sentence_id": "s7", "speaker": "Carol"}, "kind": "plan", "roles": {"holder": {"peg": "payments platform team"}, "action": {"lit": "keep"}, "object": {"peg": "Redis"}, "function": {"peg": "caching"}}, "status": {"type": "intent", "owner": "payments platform team"}}
++{"tick": 11, "source": {"sentence_id": "s7", "speaker": "Carol"}, "kind": "decision_pending", "roles": {"decider": {"peg": "payments platform team"}, "subject": {"peg": "database changes"}}, "status": {"type": "open_question", "owner": "payments platform team"}}
++{"tick": 12, "source": {"sentence_id": "s8", "speaker": null}, "kind": "proposal", "roles": {"proposer": {"peg": "Alice"}, "proposed": {"peg": "PostgreSQL"}, "after": {"peg": "failover test"}}, "status": {"type": "fact", "owner": null}, "recurrence_of": 1}
++{"tick": 13, "source": {"sentence_id": "s8", "speaker": null}, "kind": "adoption_decision", "roles": {"subject": {"peg": "PostgreSQL"}}, "status": {"type": "fact", "owner": null, "polarity": "neg"}}
++{"tick": 14, "source": {"sentence_id": "s9", "speaker": null}, "kind": "review", "roles": {"reviewer": {"pegs": ["Bob", "Carol"]}, "object": {"peg": "architecture document"}}, "status": {"type": "fact", "owner": null}}
++{"tick": 15, "source": {"sentence_id": "s9", "speaker": null}, "kind": "preference", "roles": {"holder": {"peg": "Bob"}, "favored": {"peg": "rate-limiting service"}, "qualifier": {"lit": "separate"}}, "status": {"type": "speaker_belief", "owner": "Bob"}}
++{"tick": 16, "source": {"sentence_id": "s9", "speaker": null}, "kind": "preference", "roles": {"holder": {"peg": "Carol"}, "action": {"lit": "keep"}, "object": {"peg": "Redis"}, "function": {"peg": "caching"}}, "status": {"type": "speaker_belief", "owner": "Carol"}}
+diff --git a/N-D/ND-1/probes/must_haves.jsonl b/N-D/ND-1/probes/must_haves.jsonl
+new file mode 100644
+index 0000000..881c7ea
+--- /dev/null
++++ b/N-D/ND-1/probes/must_haves.jsonl
+@@ -0,0 +1,7 @@
++{"id": "MH1", "check": "The proposer of Redis for rate limiting is Bob; Alice is never linked as its proposer.", "why": "role direction"}
++{"id": "MH2", "check": "The target of Bob's rate-limiting proposal (s4) stays ambiguous: payments platform or separate service.", "why": "sentence-stated alternatives must stay open"}
++{"id": "MH3", "check": "'its failover behavior' (s5) is not silently resolved to one owner.", "why": "two compatible candidates"}
++{"id": "MH4", "check": "The peak-load result is owned by Alice (reported claim), not stored as a narrated fact.", "why": "attribution"}
++{"id": "MH5", "check": "Bob's statement in s6 is hedged (possible), not a certain claim.", "why": "modality"}
++{"id": "MH6", "check": "No conflict is recorded between Bob and Carol in s9; they favour things on different dimensions.", "why": "no inferred conflict"}
++{"id": "MH7", "check": "Alice's two PostgreSQL proposals (s0, s8) collide on Alice and PostgreSQL, so the recurrence is visible.", "why": "trajectory"}
+diff --git a/N-D/ND-1/probes/pilot10.probes.jsonl b/N-D/ND-1/probes/pilot10.probes.jsonl
+new file mode 100644
+index 0000000..6e88ec3
+--- /dev/null
++++ b/N-D/ND-1/probes/pilot10.probes.jsonl
+@@ -0,0 +1,15 @@
++{"id": "p01", "type": "fact", "question": "Who proposed PostgreSQL?", "accept": ["Alice"]}
++{"id": "p02", "type": "fact", "question": "What was PostgreSQL proposed for?", "accept": ["payments platform"]}
++{"id": "p03", "type": "attribution", "question": "Who questioned PostgreSQL's capacity?", "accept": ["Bob"]}
++{"id": "p04", "type": "attribution", "question": "What did Alice say about the benchmark results?", "accept": ["inconclusive"]}
++{"id": "p05", "type": "intent", "question": "Who was asked to test PostgreSQL under peak load?", "accept": ["the team", "team"]}
++{"id": "p06", "type": "attribution", "question": "According to Carol, what is Redis used for?", "accept": ["session caching"]}
++{"id": "p07", "type": "fact", "question": "Who proposed Redis for rate limiting?", "accept": ["Bob"]}
++{"id": "p08", "type": "ambiguity", "question": "Is the target system of the rate-limiting proposal known?", "accept": ["no", "unknown", "ambiguous", "unclear"]}
++{"id": "p09", "type": "attribution", "question": "Who reported the result of the peak-load benchmark, and what was it?", "accept": ["Alice"], "accept_also": ["success", "successful", "passed", "completed"]}
++{"id": "p10", "type": "ambiguity", "question": "Is it known whose failover behaviour is uncertain?", "accept": ["no", "unknown", "ambiguous", "unclear"]}
++{"id": "p11", "type": "belief", "question": "What might the rate-limiting change require, according to Bob?", "accept": ["deployment plan"]}
++{"id": "p12", "type": "intent", "question": "What did the payments platform team plan to do with Redis, according to Carol?", "accept": ["keep"], "accept_also": ["caching"]}
++{"id": "p13", "type": "absence", "question": "Was a final adoption decision on PostgreSQL recorded?", "accept": ["no"]}
++{"id": "p14", "type": "sequence", "question": "How many times did Alice propose PostgreSQL?", "accept": ["2", "two", "twice"]}
++{"id": "p15", "type": "belief", "question": "What did Bob favour in the architecture review?", "accept": ["separate rate-limiting service", "separate rate limiting service"]}
+diff --git a/N-D/ND-1/results/gold_ceiling.metrics.json b/N-D/ND-1/results/gold_ceiling.metrics.json
+new file mode 100644
+index 0000000..cd9e12d
+--- /dev/null
++++ b/N-D/ND-1/results/gold_ceiling.metrics.json
+@@ -0,0 +1,118 @@
++{
++  "format": "star",
++  "events": 16,
++  "pegs": 20,
++  "role_strings": 48,
++  "distinct_dimensions": 25,
++  "singleton_dimension_rate": 0.56,
++  "value_is_peg_rate": 0.812,
++  "mean_words_per_value": 1.49,
++  "single_event_peg_rate": 0.5,
++  "colliding_event_pairs": 49,
++  "isolated_events": [],
++  "storyline_ranks": {
++    "Alice~PostgreSQL": 1,
++    "Carol~Redis": 2
++  },
++  "top_pairs": [
++    [
++      "Alice",
++      "PostgreSQL",
++      2.69
++    ],
++    [
++      "Carol",
++      "Redis",
++      1.96
++    ],
++    [
++      "Bob",
++      "rate limiting",
++      1.44
++    ],
++    [
++      "PostgreSQL",
++      "payments platform",
++      1.34
++    ],
++    [
++      "Alice",
++      "peak-load test",
++      1.34
++    ],
++    [
++      "PostgreSQL",
++      "peak-load test",
++      1.34
++    ]
++  ],
++  "buckets": 3,
++  "stored_absences": 0,
++  "inference_markers": 0,
++  "trajectories": {
++    "Alice": [
++      1,
++      3,
++      4,
++      7,
++      8,
++      12
++    ],
++    "Bob": [
++      2,
++      6,
++      9,
++      14,
++      15
++    ],
++    "Carol": [
++      5,
++      10,
++      11,
++      14,
++      16
++    ],
++    "PostgreSQL": [
++      1,
++      2,
++      4,
++      7,
++      12,
++      13
++    ],
++    "Redis": [
++      5,
++      6,
++      10,
++      16
++    ],
++    "caching": [
++      10,
++      16
++    ],
++    "payments platform": [
++      1,
++      2,
++      5
++    ],
++    "payments platform team": [
++      10,
++      11
++    ],
++    "peak-load test": [
++      4,
++      7
++    ],
++    "rate limiting": [
++      6,
++      9
++    ]
++  },
++  "status_counts": {
++    "fact": 5,
++    "open_question": 3,
++    "claim": 3,
++    "intent": 2,
++    "speaker_belief": 3
++  }
++}
+\ No newline at end of file
+diff --git a/N-D/PLAN.md b/N-D/PLAN.md
+new file mode 100644
+index 0000000..0b0f923
+--- /dev/null
++++ b/N-D/PLAN.md
+@@ -0,0 +1,15 @@
++# N-D plan
++
++Each step has a go/no-go. Steps 0–2 need no engine code.
++
++| Week | Experiment | Question | Gate |
++|---|---|---|---|
++| 0 | ND-0 ✅ | Does free-dimension extraction support the math? | Done: no; event-star adopted |
++| 1 | ND-1 | Engine v0: can code + math turn entity-dimension output into a geometry that answers probes and keeps the must-haves? (pilot 10) | M1 = 0; M3 ≥ 13/15; M4 = 7/7; M5 stable |
++| 2 | ND-1b | Same on 3 new hand-written 30-sentence conversations (the corpus grows to ~100 sentences) | Metrics hold within 10%; catalog grows by < 20% |
++| 3 | ND-2 | Dimension geometry: footprints on the ~100-sentence corpus; propose collapse, inverse, broader, related | Precision ≥ 0.9 on hand-labelled dimension pairs |
++| 4–5 | ND-3 | Depiction, facts held constant: flat facts vs N-D depiction, same LLM, 40–60 questions (change, sequence, history, conflict, ambiguity) | Depiction beats flat facts on change and conflict |
++| 6 | ND-4 | Engine on Postgres: ledger + stages E1–E8 + depiction renderer | ND-3 results reproduce from the engine |
++| 7–8 | ND-5 | TANGLE oracle track, then pipeline track | Oracle vs pipeline gap smaller than published memory systems' |
++
++A failed gate stops the sequence until the cause is understood. Failures are reported in the experiment's results.
+diff --git a/N-D/README.md b/N-D/README.md
+new file mode 100644
+index 0000000..cda5fe0
+--- /dev/null
++++ b/N-D/README.md
+@@ -0,0 +1,34 @@
++# N-D — N-Dimensional Memory, fresh track
++
++N-D restarts NDM from first principles. Earlier experiments (EXP-V1 … EXP-V8) are not carried forward as results or assumptions. Their *setup* (harnesses, adapters, retrieval baselines, competitor Docker files) may be reused when an N-D experiment needs it, and every reuse is named in that experiment's spec.
++
++## Thesis
++
++An LLM is a capable reasoner but cannot retain everything or check itself against what it was told. N-D is an external memory that stores every event exactly, tracks change over time, and depicts that history to the LLM so it can reconstruct context.
++
++## Division of labour
++
++The LLM supplies only entities and dimensions per event. The engine (code and math) builds everything else: ticks, peg identity, value linking, epistemic status, buckets, collisions, trajectories, depiction.
++
++## Model in one paragraph
++
++Entities, dimensions and values are fixed pegs. Each event is a star of role strings pinned to its own tick. Relationships are never stored: they come from **collisions** (events sharing a peg) and **trajectories** (a peg's events in order). Relations a source explicitly states (A happened *because* of B) are events themselves. Every event has one epistemic status with an owner: fact, claim, speaker belief, model belief, open question, or intent. Unresolved references are ambiguity buckets, closed only by an explicit statement or the user.
++
++## Layout
++
++```
++CONTRACT.md                 invariants every N-D experiment must preserve
++PLAN.md                     experiment sequence and week-by-week schedule
++schema/event.schema.json    the event-star wire format (v0)
++catalog/dimensions_v0.json  starter dimension and kind catalog
++tools/ndm_math.py           incidence math and metrics (both formats)
++ND-0/                       baseline: free-dimension extraction, measured
++ND-1/                       engine v0: code + math, judged by probes, must-haves and stability
++```
++
++## Rules for every experiment
++
++1. A spec (`EXP-NDx.md`) is written and frozen before any run: question, data, protocol, metrics, success and falsification criteria.
++2. Results are reported against the frozen spec, including failures.
++3. LLM output is never scored against a handwritten structure. It is judged by contract rules, faithfulness to the source, probe questions, must-have checks and stability across models. Probes are written before runs and never shown to the extractor.
++4. Anything reused from V1–V8 is listed with its path and what was changed.
+diff --git a/N-D/catalog/dimensions_v0.json b/N-D/catalog/dimensions_v0.json
+new file mode 100644
+index 0000000..6848457
+--- /dev/null
++++ b/N-D/catalog/dimensions_v0.json
+@@ -0,0 +1,15 @@
++{
++  "version": "v0-pilot10",
++  "note": "Starter catalog for the pilot domain. Extractors must use these names or propose a new one with a definition; proposals go to quarantine.",
++  "kinds": ["proposal", "capability_question", "assessment", "test_request", "usage", "test_result", "property_question", "consequence", "plan", "decision_pending", "adoption_decision", "review", "preference"],
++  "dimensions": {
++    "proposer": "peg that made a proposal", "proposed": "peg being proposed", "target": "system the proposal/action is for",
++    "setting": "meeting or context where it happened", "subject": "peg the statement is about", "capability": "capability being asked about",
++    "context": "system context", "assessment": "evaluative value (literal)", "requester": "peg asking for an action",
++    "recipient": "peg asked to act", "test": "test peg", "condition": "test condition", "outcome": "result value (literal)",
++    "system": "technology in use", "function": "purpose a system serves", "property": "property in question",
++    "cause": "thing that may cause", "effect": "possible consequence", "holder": "peg holding a plan or preference",
++    "action": "planned action (literal)", "object": "peg acted on", "decider": "peg deciding", "reviewer": "pegs reviewing",
++    "favored": "peg preferred", "qualifier": "short qualifier (literal)", "after": "reference point event or peg"
++  }
++}
+diff --git a/N-D/schema/event.schema.json b/N-D/schema/event.schema.json
+new file mode 100644
+index 0000000..bb76500
+--- /dev/null
++++ b/N-D/schema/event.schema.json
+@@ -0,0 +1,61 @@
++{
++  "$schema": "https://json-schema.org/draft/2020-12/schema",
++  "$id": "nd/event.schema.json",
++  "title": "N-D event (event-star shape) v0",
++  "type": "object",
++  "required": ["tick", "source", "kind", "roles", "status"],
++  "additionalProperties": false,
++  "properties": {
++    "tick": {"type": "integer", "minimum": 0, "description": "Unique per event, assigned by the engine at commit; never shared."},
++    "source": {
++      "type": "object",
++      "required": ["sentence_id"],
++      "additionalProperties": false,
++      "properties": {
++        "sentence_id": {"type": "string"},
++        "speaker": {"type": ["string", "null"], "description": "Peg of whoever asserted this; null = narrator."}
++      }
++    },
++    "kind": {"type": "string", "description": "From catalog/kinds."},
++    "roles": {
++      "type": "object",
++      "minProperties": 1,
++      "maxProperties": 6,
++      "description": "Dimension name (from catalog) -> filler. Direction lives in the role name.",
++      "additionalProperties": {"$ref": "#/$defs/filler"}
++    },
++    "occurred": {
++      "type": ["object", "null"],
++      "additionalProperties": false,
++      "properties": {
++        "text": {"type": "string"}, "from": {"type": ["string", "null"]}, "to": {"type": ["string", "null"]}
++      }
++    },
++    "status": {
++      "type": "object",
++      "required": ["type", "owner"],
++      "additionalProperties": false,
++      "properties": {
++        "type": {"enum": ["fact", "claim", "speaker_belief", "model_belief", "open_question", "intent"]},
++        "owner": {"type": ["string", "null"], "description": "Peg that owns the status; null = narrator (facts)."},
++        "polarity": {"enum": ["pos", "neg"], "default": "pos"},
++        "modality": {"enum": ["certain", "probable", "possible", "hypothetical"], "default": "certain"}
++      }
++    },
++    "recurrence_of": {"type": ["integer", "null"], "description": "Tick of an earlier event this repeats (stated, e.g. 'again')."}
++  },
++  "$defs": {
++    "filler": {
++      "oneOf": [
++        {"type": "object", "required": ["peg"], "additionalProperties": false, "properties": {"peg": {"type": "string"}}},
++        {"type": "object", "required": ["pegs"], "additionalProperties": false, "properties": {"pegs": {"type": "array", "items": {"type": "string"}, "minItems": 2}}},
++        {"type": "object", "required": ["lit"], "additionalProperties": false, "properties": {"lit": {"type": "string", "maxLength": 40}}},
++        {"type": "object", "required": ["event"], "additionalProperties": false, "properties": {"event": {"type": "integer"}}},
++        {"type": "object", "required": ["bucket"], "additionalProperties": false,
++         "properties": {"bucket": {"type": "object", "required": ["query", "candidates"], "additionalProperties": false,
++           "properties": {"query": {"type": "string"}, "candidates": {"type": "array", "items": {"oneOf": [{"type": "string"}, {"type": "integer"}]}, "minItems": 1},
++                          "model_belief": {"oneOf": [{"type": "string"}, {"type": "integer"}, {"type": "null"}]}}}}}
++      ]
++    }
++  }
++}
+diff --git a/N-D/tools/ndm_math.py b/N-D/tools/ndm_math.py
+new file mode 100644
+index 0000000..87fbdb7
+--- /dev/null
++++ b/N-D/tools/ndm_math.py
+@@ -0,0 +1,101 @@
++"""N-D incidence math: metrics over an extracted corpus.
++
++Reads either the BabyTest entity-centric format or the N-D event-star format
++(schema/event.schema.json) and reports shape, geometry and epistemic metrics.
++Usage: python tools/ndm_math.py <file.jsonl> [--json out.json]
++"""
++import itertools, json, math, re, sys, collections
++import numpy as np
++
++ABSENCE = re.compile(r"not stated|unspecified|unknown|not recorded|not specified", re.I)
++INFERENCE = re.compile(r"suggests|implying|implied|indicates", re.I)
++STORYLINES = [("Alice", "PostgreSQL"), ("Carol", "Redis")]
++
++
++def load(path):
++    rows = [json.loads(l) for l in open(path) if l.strip()]
++    return ("star" if "roles" in rows[0] else "babytest"), rows
++
++
++def strings_babytest(rows):
++    """-> list of (event_id, peg_or_None, dimension, value_text, participants)"""
++    out, inc = [], []
++    names = {x["name"] for r in rows for x in r["entities"]}
++    for r in rows:
++        inc.append({x["name"] for x in r["entities"]})
++        for x in r["entities"]:
++            for d, v in x["dimensions"].items():
++                out.append({"ev": r["event_id"], "peg": x["name"], "dim": d, "val": str(v),
++                            "val_is_peg": str(v) in names, "bucket": bool(re.search(r"\bambiguous\b|candidate_scopes", f"{d} {v}"))})
++    return out, inc
++
++
++def strings_star(rows):
++    out, inc = [], []
++    for r in rows:
++        parts = set()
++        spk = r["source"].get("speaker")
++        if spk: parts.add(spk)
++        own = r["status"].get("owner")
++        if own: parts.add(own)
++        for d, f in r["roles"].items():
++            if "peg" in f:
++                parts.add(f["peg"]); out.append({"ev": r["tick"], "dim": d, "val": f["peg"], "val_is_peg": True, "bucket": False})
++            elif "pegs" in f:
++                parts.update(f["pegs"])
++                for p in f["pegs"]: out.append({"ev": r["tick"], "dim": d, "val": p, "val_is_peg": True, "bucket": False})
++            elif "lit" in f:
++                out.append({"ev": r["tick"], "dim": d, "val": f["lit"], "val_is_peg": False, "bucket": False})
++            elif "event" in f:
++                out.append({"ev": r["tick"], "dim": d, "val": f"event:{f['event']}", "val_is_peg": True, "bucket": False})
++            elif "bucket" in f:
++                out.append({"ev": r["tick"], "dim": d, "val": json.dumps(f["bucket"]["candidates"]), "val_is_peg": False, "bucket": True})
++        inc.append(parts)
++    return out, inc
++
++
++def analyse(path):
++    fmt, rows = load(path)
++    s, inc = (strings_star if fmt == "star" else strings_babytest)(rows)
++    ids = [r.get("tick", r.get("event_id")) for r in rows]
++    pegs = sorted(set().union(*inc)); P = {p: i for i, p in enumerate(pegs)}
++    B = np.zeros((len(pegs), len(rows)), int)
++    for k, parts in enumerate(inc):
++        for p in parts: B[P[p], k] = 1
++    size = B.sum(0); deg = B.sum(1)
++    aa = collections.Counter()
++    for k in range(len(rows)):
++        idx = np.nonzero(B[:, k])[0]
++        for i, j in itertools.combinations(idx, 2):
++            aa[tuple(sorted((pegs[i], pegs[j])))] += 1 / math.log(1 + size[k])
++    ranking = [p for p, _ in aa.most_common()]
++    dims = collections.Counter(x["dim"] for x in s)
++    D = B.T @ B
++    colliding = sum(1 for k, l in itertools.combinations(range(len(rows)), 2) if D[k, l] > 0)
++    iso = [ids[k] for k in range(len(rows)) if D[k].sum() - D[k, k] == 0]
++    m = {
++        "format": fmt, "events": len(rows), "pegs": len(pegs), "role_strings": len(s),
++        "distinct_dimensions": len(dims),
++        "singleton_dimension_rate": round(sum(1 for c in dims.values() if c == 1) / len(dims), 3),
++        "value_is_peg_rate": round(sum(x["val_is_peg"] for x in s) / len(s), 3),
++        "mean_words_per_value": round(float(np.mean([len(x["val"].split()) for x in s if not x["bucket"]])), 2),
++        "single_event_peg_rate": round(float((deg == 1).mean()), 3),
++        "colliding_event_pairs": colliding, "isolated_events": iso,
++        "storyline_ranks": {f"{a}~{b}": (ranking.index(tuple(sorted((a, b)))) + 1 if tuple(sorted((a, b))) in aa else None) for a, b in STORYLINES},
++        "top_pairs": [[a, b, round(w, 2)] for (a, b), w in aa.most_common(6)],
++        "buckets": sum(x["bucket"] for x in s),
++        "stored_absences": sum(bool(ABSENCE.search(x["val"])) for x in s),
++        "inference_markers": sum(bool(INFERENCE.search(f"{x['dim']} {x['val']}")) for x in s),
++        "trajectories": {p: [ids[k] for k in np.nonzero(B[P[p]])[0]] for p in pegs if deg[P[p]] >= 2},
++    }
++    if fmt == "star":
++        m["status_counts"] = dict(collections.Counter(r["status"]["type"] for r in rows))
++    return m
++
++
++if __name__ == "__main__":
++    m = analyse(sys.argv[1])
++    if "--json" in sys.argv:
++        json.dump(m, open(sys.argv[sys.argv.index("--json") + 1], "w"), indent=2)
++    for k, v in m.items():
++        print(f"{k:26s} {v}")
+-- 
+2.43.0
+

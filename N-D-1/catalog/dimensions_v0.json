@@ -1,0 +1,15 @@
+{
+  "version": "v0-pilot10",
+  "note": "Starter catalog for the pilot domain. Extractors must use these names or propose a new one with a definition; proposals go to quarantine.",
+  "kinds": ["proposal", "capability_question", "assessment", "test_request", "usage", "test_result", "property_question", "consequence", "plan", "decision_pending", "adoption_decision", "review", "preference"],
+  "dimensions": {
+    "proposer": "peg that made a proposal", "proposed": "peg being proposed", "target": "system the proposal/action is for",
+    "setting": "meeting or context where it happened", "subject": "peg the statement is about", "capability": "capability being asked about",
+    "context": "system context", "assessment": "evaluative value (literal)", "requester": "peg asking for an action",
+    "recipient": "peg asked to act", "test": "test peg", "condition": "test condition", "outcome": "result value (literal)",
+    "system": "technology in use", "function": "purpose a system serves", "property": "property in question",
+    "cause": "thing that may cause", "effect": "possible consequence", "holder": "peg holding a plan or preference",
+    "action": "planned action (literal)", "object": "peg acted on", "decider": "peg deciding", "reviewer": "pegs reviewing",
+    "favored": "peg preferred", "qualifier": "short qualifier (literal)", "after": "reference point event or peg"
+  }
+}

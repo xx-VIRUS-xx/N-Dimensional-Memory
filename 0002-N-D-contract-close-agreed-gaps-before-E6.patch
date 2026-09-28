@@ -1,0 +1,86 @@
+From 2073aa33632670b763d50a64505bc6b37df0fb7a Mon Sep 17 00:00:00 2001
+From: N-D draft <draft@example.invalid>
+Date: Mon, 28 Sep 2026 07:35:05 +0000
+Subject: [PATCH] N-D contract: close agreed gaps before E6
+
+- C9: resolution authority adds the engine single-candidate rule (auditable, reversible)
+- C9a: a bucket's model_belief is a hint, never a resolution
+- C12: local (interpreter) and global (engine, backward + forward) ambiguity runs
+- LLM contract: required entity type; dimension dictionary; stateless per-event sessions
+- ND-1/gold/README.md: reference-only status and how to read buckets
+- MH3 references C9a
+---
+ N-D/CONTRACT.md                  |  4 +++-
+ N-D/ND-1/LLM_CONTRACT.md         |  6 ++++--
+ N-D/ND-1/gold/README.md          | 14 ++++++++++++++
+ N-D/ND-1/probes/must_haves.jsonl |  2 +-
+ 4 files changed, 22 insertions(+), 4 deletions(-)
+ create mode 100644 N-D/ND-1/gold/README.md
+
+diff --git a/N-D/CONTRACT.md b/N-D/CONTRACT.md
+index 0b38322..bf6693b 100644
+--- a/N-D/CONTRACT.md
++++ b/N-D/CONTRACT.md
+@@ -12,6 +12,8 @@ Invariants every N-D implementation and experiment must preserve. Each has a tes
+ | C6 | **No stored absences.** Absence is no record. A *stated* absence ("no decision was recorded") is a negative-polarity fact. | Filler text such as "not stated" / "unspecified". |
+ | C7 | **No inference inside a fact.** Conclusions are separate model-belief events. | Fact or claim containing "implies/suggests"-type content. |
+ | C8 | **Owned status.** Every event has exactly one status (fact, claim, speaker_belief, model_belief, open_question, intent) and an owner (null only for narrated facts). | Missing or multiple statuses. |
+-| C9 | **Resolution authority.** A bucket closes only by an explicit statement or by the user. | A bucket closed by an inference or by a model belief. |
++| C9 | **Resolution authority.** A bucket closes only by (a) an explicit statement, (b) the user, or (c) the engine's single-candidate rule: exactly one type-compatible candidate within the last 3 events or the current speaker turn. (c) is recorded as `resolved_by: engine` with its evidence ticks, and a later explicit statement or the user supersedes it. | A bucket closed any other way; an engine resolution with two or more compatible candidates or without evidence ticks. |
++| C9a | **`model_belief` is a hint, never a resolution.** It does not close a bucket, does not remove candidates, is not input to the single-candidate rule, and is always shown labelled as the model's belief. | Any state, depiction or probe answer that equals an open bucket's `model_belief` with no resolution record. |
+ | C10 | **No self-confirmation.** A model belief never counts as evidence for itself; repetition by the same speaker is not corroboration. | Support count increases on a same-owner restatement. |
+ | C11 | **Exactness scope.** Memory is exact relative to extracted events, not the source text; extraction quality is always measured. | An experiment that reports memory accuracy without extraction accuracy. |
++| C12 | **Two ambiguity runs.** Local: the stateless interpreter resolves only references answered inside the same sentence and marks the rest unresolved. Global: on every new event, the engine runs backward (fill or open buckets for the new event's references) and forward (close old buckets the new event explicitly answers). | An unresolved reference in an event with no bucket, engine resolution or unknown-referent record; an old bucket still open after an event that explicitly answers it. |
+diff --git a/N-D/ND-1/LLM_CONTRACT.md b/N-D/ND-1/LLM_CONTRACT.md
+index 64b9b33..af8c599 100644
+--- a/N-D/ND-1/LLM_CONTRACT.md
++++ b/N-D/ND-1/LLM_CONTRACT.md
+@@ -3,9 +3,11 @@
+ Per sentence, the LLM returns entities and, for each entity, dimensions with values, in the ND-0 (BabyTest) format:
+ 
+ ```json
+-{"event_id": "s4", "entities": [{"name": "...", "dimensions": {"dimension_name": "value"}}]}
++{"event_id": "s4", "entities": [{"name": "...", "type": "person|org|system|other", "dimensions": {"dimension_name": "value"}}]}
+ ```
+ 
+-Free dimension names are allowed. The prompt keeps the BabyTest constraints: no invented information, no relationships just because entities co-occur, no resolving ambiguity the sentence leaves open.
++Dimension names are chosen from the dimension dictionary supplied with the prompt; a new name is allowed only when none fits. `type` is required: the engine's single-candidate rule (C9c) needs it to decide which pegs are compatible with "he/she", "it" or "the X".
++
++Each call is a fresh, stateless session: the sentence, speaker and time, and the dictionary, with no earlier sentences. The LLM resolves references answered inside the sentence and marks every other reference as unresolved (local ambiguity run, C12). The prompt keeps the BabyTest constraints: no invented information, no relationships just because entities co-occur, no resolving ambiguity the sentence leaves open.
+ 
+ Everything else (ticks, peg identity, value linking, cleaning, dimension canonicalisation, epistemic status, buckets, collisions, trajectories, depiction) is the engine's job, in code and math.
+diff --git a/N-D/ND-1/gold/README.md b/N-D/ND-1/gold/README.md
+new file mode 100644
+index 0000000..6461867
+--- /dev/null
++++ b/N-D/ND-1/gold/README.md
+@@ -0,0 +1,14 @@
++# Reference gold (pilot10)
++
++`pilot10.gold.jsonl` is one annotator's reading (Claude) of the 10 pilot sentences. It is **reference only, not a scoring target**. It is used to design probes and must-haves, and as a diagnostic ceiling for `tools/ndm_math.py`.
++
++## Reading the buckets
++
++- `model_belief` is a hint, never a resolution (CONTRACT C9a). tick 8's `model_belief: "PostgreSQL"` does not resolve "its failover behavior"; MH3 requires that bucket to stay open.
++- tick 9 ("the rate-limiting change") lists one candidate, event 6. Under C9c the engine may resolve it (one compatible candidate in the window), recorded as `resolved_by: engine` with evidence tick 6. The gold keeps it written as a bucket so the engine's resolution can be checked.
++- tick 6 (target: payments platform or separate service) states its alternatives in the sentence, so it stays open (MH2).
++
++## Known limits
++
++- Single annotator; a second human pass is pending.
++- Source sentences were reconstructed from the BabyTest extraction (`../../ND-0/data/pilot10.source.jsonl`); replace them with the originals if they differ, and revise this file if that changes any reading.
+diff --git a/N-D/ND-1/probes/must_haves.jsonl b/N-D/ND-1/probes/must_haves.jsonl
+index 881c7ea..cb61a5d 100644
+--- a/N-D/ND-1/probes/must_haves.jsonl
++++ b/N-D/ND-1/probes/must_haves.jsonl
+@@ -1,6 +1,6 @@
+ {"id": "MH1", "check": "The proposer of Redis for rate limiting is Bob; Alice is never linked as its proposer.", "why": "role direction"}
+ {"id": "MH2", "check": "The target of Bob's rate-limiting proposal (s4) stays ambiguous: payments platform or separate service.", "why": "sentence-stated alternatives must stay open"}
+-{"id": "MH3", "check": "'its failover behavior' (s5) is not silently resolved to one owner.", "why": "two compatible candidates"}
++{"id": "MH3", "check": "'its failover behavior' (s5) is not silently resolved to one owner.", "why": "two compatible candidates; the bucket's model_belief is a hint and must not be used as the answer (C9a)"}
+ {"id": "MH4", "check": "The peak-load result is owned by Alice (reported claim), not stored as a narrated fact.", "why": "attribution"}
+ {"id": "MH5", "check": "Bob's statement in s6 is hedged (possible), not a certain claim.", "why": "modality"}
+ {"id": "MH6", "check": "No conflict is recorded between Bob and Carol in s9; they favour things on different dimensions.", "why": "no inferred conflict"}
+-- 
+2.43.0
+

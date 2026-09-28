@@ -1,0 +1,74 @@
+From 210fcc8fb7aa0518ad3ba69570bb24e40f540528 Mon Sep 17 00:00:00 2001
+From: N-D draft <draft@example.invalid>
+Date: Mon, 28 Sep 2026 12:10:18 +0000
+Subject: [PATCH] ndm_math: mark babytest heuristics as ND-0 only; fix C9
+ citations
+
+- ndm_math.py: bucket, absence and inference detection in the babytest path
+  match literal pilot phrasings; engine stages E4/E6 must use their specified
+  rules instead. Metrics unchanged.
+- LLM_CONTRACT.md, gold/README.md: cite 'C9 clause (c)' (C9c is not a contract ID).
+---
+ N-D/ND-1/LLM_CONTRACT.md |  2 +-
+ N-D/ND-1/gold/README.md  |  2 +-
+ N-D/tools/ndm_math.py    | 11 ++++++++++-
+ 3 files changed, 12 insertions(+), 3 deletions(-)
+
+diff --git a/N-D/ND-1/LLM_CONTRACT.md b/N-D/ND-1/LLM_CONTRACT.md
+index af8c599..66580fd 100644
+--- a/N-D/ND-1/LLM_CONTRACT.md
++++ b/N-D/ND-1/LLM_CONTRACT.md
+@@ -6,7 +6,7 @@ Per sentence, the LLM returns entities and, for each entity, dimensions with val
+ {"event_id": "s4", "entities": [{"name": "...", "type": "person|org|system|other", "dimensions": {"dimension_name": "value"}}]}
+ ```
+ 
+-Dimension names are chosen from the dimension dictionary supplied with the prompt; a new name is allowed only when none fits. `type` is required: the engine's single-candidate rule (C9c) needs it to decide which pegs are compatible with "he/she", "it" or "the X".
++Dimension names are chosen from the dimension dictionary supplied with the prompt; a new name is allowed only when none fits. `type` is required: the engine's single-candidate rule (C9, clause c) needs it to decide which pegs are compatible with "he/she", "it" or "the X".
+ 
+ Each call is a fresh, stateless session: the sentence, speaker and time, and the dictionary, with no earlier sentences. The LLM resolves references answered inside the sentence and marks every other reference as unresolved (local ambiguity run, C12). The prompt keeps the BabyTest constraints: no invented information, no relationships just because entities co-occur, no resolving ambiguity the sentence leaves open.
+ 
+diff --git a/N-D/ND-1/gold/README.md b/N-D/ND-1/gold/README.md
+index 6461867..61ee43f 100644
+--- a/N-D/ND-1/gold/README.md
++++ b/N-D/ND-1/gold/README.md
+@@ -5,7 +5,7 @@
+ ## Reading the buckets
+ 
+ - `model_belief` is a hint, never a resolution (CONTRACT C9a). tick 8's `model_belief: "PostgreSQL"` does not resolve "its failover behavior"; MH3 requires that bucket to stay open.
+-- tick 9 ("the rate-limiting change") lists one candidate, event 6. Under C9c the engine may resolve it (one compatible candidate in the window), recorded as `resolved_by: engine` with evidence tick 6. The gold keeps it written as a bucket so the engine's resolution can be checked.
++- tick 9 ("the rate-limiting change") lists one candidate, event 6. Under C9 clause (c) the engine may resolve it (one compatible candidate in the window), recorded as `resolved_by: engine` with evidence tick 6. The gold keeps it written as a bucket so the engine's resolution can be checked.
+ - tick 6 (target: payments platform or separate service) states its alternatives in the sentence, so it stays open (MH2).
+ 
+ ## Known limits
+diff --git a/N-D/tools/ndm_math.py b/N-D/tools/ndm_math.py
+index 87fbdb7..b13b7ae 100644
+--- a/N-D/tools/ndm_math.py
++++ b/N-D/tools/ndm_math.py
+@@ -7,6 +7,11 @@ Usage: python tools/ndm_math.py <file.jsonl> [--json out.json]
+ import itertools, json, math, re, sys, collections
+ import numpy as np
+ 
++# DIAGNOSTIC HEURISTICS, ND-0 ONLY. These regexes (ABSENCE, INFERENCE, and the
++# bucket detector in strings_babytest) match literal phrasings seen in the pilot
++# BabyTest output. They are measurement scaffolding, not engine logic: any other
++# phrasing is silently missed. Engine stages E4 (cleaning) and E6 (buckets) must
++# use their own specified rules (EXP-ND1.md, CONTRACT C6/C7/C9/C12), not these.
+ ABSENCE = re.compile(r"not stated|unspecified|unknown|not recorded|not specified", re.I)
+ INFERENCE = re.compile(r"suggests|implying|implied|indicates", re.I)
+ STORYLINES = [("Alice", "PostgreSQL"), ("Carol", "Redis")]
+@@ -18,7 +23,11 @@ def load(path):
+ 
+ 
+ def strings_babytest(rows):
+-    """-> list of (event_id, peg_or_None, dimension, value_text, participants)"""
++    """-> list of (event_id, peg_or_None, dimension, value_text, participants)
++
++    Bucket detection here is a literal-string heuristic ("ambiguous",
++    "candidate_scopes") for ND-0 diagnostics only; see the note at the top.
++    """
+     out, inc = [], []
+     names = {x["name"] for r in rows for x in r["entities"]}
+     for r in rows:
+-- 
+2.43.0
+
