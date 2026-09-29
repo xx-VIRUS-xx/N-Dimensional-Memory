@@ -1,0 +1,25 @@
+{
+  "version": "v1",
+  "source": "Dimensions that recurred (>= 2 uses) in the ND-0 BabyTest extraction, de-duplicated. Fixed for a whole run so every stateless session sees the same book.",
+  "rule": "Use one of these names when it fits. Invent a new snake_case name only when none fits.",
+  "dimensions": {
+    "role_in_event": "the entity's role in this event (proposer, questioner, reporter, speaker, requester, recipient, reviewer, holder, subject, object)",
+    "action": "what the entity did, in the sentence's words",
+    "context": "system or setting the event happens in",
+    "function": "purpose something serves",
+    "target_system": "system an action or proposal is aimed at",
+    "proposed_by": "who proposed it",
+    "advocate": "who favours it",
+    "position": "a stance or preference the entity holds",
+    "owner": "who or what something belongs to",
+    "outcome": "result of a test, decision or action",
+    "status": "current state of the entity as stated",
+    "decision_status": "state of a decision (pending, made, not recorded)",
+    "adoption_status": "state of adoption (proposed, adopted, rejected)",
+    "epistemic_source": "who the information comes from (\"according to X\", \"X reported\")",
+    "epistemic_stance": "hedging or certainty in the sentence (might, possibly, certain)",
+    "temporal_position": "when, relative to the sentence (past, before X, after X)",
+    "type": "what kind of thing the entity is, in the sentence's words",
+    "reference_status": "set to \"unresolved\" when this entity is a reference (he, she, it, its, they, the X) the sentence alone does not resolve"
+  }
+}

@@ -11,8 +11,8 @@ Known v0 limits (reported, not hidden):
   is the interpreter's job.
 - Rule tables are lexical. They are the specified E4/E5/E6 rules for v0, not
   general language understanding, and ND-1 measures where they fail.
-- The pilot data has no entity `type`, so C9(c) type compatibility is skipped
-  and candidates are matched by name overlap only.
+- Entity `type` (LLM contract v1) is used for pronoun candidates; pegs without a
+  type (e.g. the older BabyTest output) are treated as compatible with any pronoun.
 """
 import json
 import re
@@ -29,7 +29,7 @@ STOP = {"the", "a", "an", "of", "for", "to", "in", "on", "and", "or", "by", "wit
 ABSENCE_WHOLE = re.compile(
     r"^\s*(not stated|unspecified|unknown|not specified|not recorded|none stated)"
     r"(\b.*)?$", re.I)
-ABSENCE_PAREN = re.compile(r"\(([^)]*(not stated|unspecified|unknown|not specified)[^)]*)\)", re.I)
+ABSENCE_PAREN = re.compile(r"\(([^)]*(not stated|unspecified|unknown|not specified|not recorded)[^)]*)\)", re.I)
 ABSENCE_TAIL = re.compile(r"[;,]\s*[^;,]*\b(is|are|was|were)? ?not (stated|specified)\b.*$", re.I)
 
 # E4: inference. Dimensions or values that express the extractor's own
@@ -50,8 +50,12 @@ STATUS_RULES = [
 
 # E6: local ambiguity cues in a value.
 AMBIGUITY = re.compile(r"\b(ambiguous|unclear|either)\b", re.I)
-# E6: definite references the interpreter left unresolved.
+# E6: references the interpreter left unresolved. Stateless extractions mark them
+# with reference_status = unresolved (LLM contract v1); the older BabyTest output
+# used the phrase "definite reference".
 DEFINITE_CUE = re.compile(r"definite reference", re.I)
+PRONOUN_PERSON = {"he", "she", "him", "her", "his", "hers", "they", "them", "their"}
+PRONOUN_THING = {"it", "its", "this", "that"}
 # E6 forward: an event that explicitly answers an open bucket.
 RESOLUTION_CUE = re.compile(r"\b(meant|clarified|confirmed that|specifically)\b", re.I)
 WINDOW = 3  # C9(c): last 3 events
@@ -92,7 +96,7 @@ def run(records):
                         state["proposals"].append({"tick": tick, "new": ent["name"], "existing": other,
                                                    "rule": "token overlap", "status": "needs confirmation"})
                 peg_of[n] = ent["name"]
-                state["pegs"][ent["name"]] = {"first_tick": tick}
+                state["pegs"][ent["name"]] = {"first_tick": tick, "type": ent.get("type")}
             ev["participants"].append(peg_of[n])
 
         # E5 speaker: an entity whose role/action marks it as the speaker.
@@ -161,19 +165,36 @@ def run(records):
                                              "query": f"{peg}.{dim}", "candidates": sorted(set(cands)),
                                              "model_belief": None, "state": "open", "origin": "local"})
 
-        # E6 global, backward: definite references the interpreter left open.
+        # E6 global, backward: references the interpreter left open.
         for ent in rec["entities"]:
             dims = " ".join(f"{k} {v}" for k, v in ent["dimensions"].items())
-            if not DEFINITE_CUE.search(dims):
+            unresolved = str(ent["dimensions"].get("reference_status", "")).lower() == "unresolved"
+            if not (unresolved or DEFINITE_CUE.search(dims)):
                 continue
             ref = ent["name"]
-            key = [t for t in content_tokens(ref) if t not in {"change", "changes", "thing", "one"}]
+            ref_n = norm(ref)
             window = [e for e in state["events"] if tick - WINDOW <= e["tick"] < tick]
-            cands = []
-            for e in window:
-                texts = e["participants"] + [s["value"] for s in state["strings"] if s["tick"] == e["tick"]]
-                if key and any(all(k in norm(t).split() for k in key) for t in texts):
-                    cands.append(e["tick"])
+            here_pegs = [p for p in ev["participants"] if norm(p) != ref_n]
+            if ref_n in PRONOUN_PERSON or ref_n in PRONOUN_THING:
+                # Pronoun: candidate pegs of compatible type (C9 clause c), from the
+                # window and from this event. Untyped pegs count as compatible.
+                want_person = ref_n in PRONOUN_PERSON
+                pool = []
+                for p in here_pegs + [p for e in window for p in e["participants"]]:
+                    t = state["pegs"].get(p, {}).get("type")
+                    ok = t is None or ((t == "person") == want_person)
+                    if ok and p not in pool and norm(p) not in PRONOUN_PERSON | PRONOUN_THING:
+                        pool.append(p)
+                cands = pool
+            else:
+                # Definite noun phrase ("the rate-limiting change"): earlier events in the
+                # window whose pegs or values contain its content words.
+                key = [t for t in content_tokens(ref) if t not in {"change", "changes", "thing", "one"}]
+                cands = []
+                for e in window:
+                    texts = e["participants"] + [s["value"] for s in state["strings"] if s["tick"] == e["tick"]]
+                    if key and any(all(k in norm(t).split() for k in key) for t in texts):
+                        cands.append(e["tick"])
             b = {"id": f"b{len(state['buckets'])}", "tick": tick, "peg": peg_of[norm(ref)], "dim": "reference",
                  "query": f"which earlier event is '{ref}'?", "candidates": cands, "model_belief": None,
                  "origin": "global-backward"}

@@ -17,7 +17,14 @@ INFERENCE = re.compile(r"suggests|implying|implied|indicates", re.I)
 
 
 def stem(t):
-    return re.sub(r"(ing|ed|es|s)$", "", t)
+    return re.sub(r"(ly|ing|ed|es|s)$", "", re.sub(r"fully$", "ful", t))
+
+
+# Amendment 1 (EXP-ND1.md): annotation-label dimensions describe the sentence
+# (role, time, status, source) rather than quote it. They are exempt from lexical
+# traceability (M2a) but must not introduce pegs absent from the sentence (M2b).
+LABEL_DIM = re.compile(r"^(role|role_in_event|temporal_\w*|\w*_status|status|epistemic_\w*|type|"
+                       r"specificity|persistence|qualifier|certainty\w*|reference_status)$")
 
 
 def traceable(text, source):
@@ -39,36 +46,53 @@ def score(state, sources):
                                         if INFERENCE.search(f"{s['dim']} {s['value']}")]}
     r["M1"]["pass"] = not r["M1"]["stored_absences"] and not r["M1"]["unflagged_inferences"]
 
-    # M2 faithfulness: entity names fully traceable; values >= 50% content words traceable
-    names = [(e["tick"], p) for e in E for p in e["participants"]]
+    # M2 faithfulness. run-1 definition kept for comparability; amended M2a/M2b decide pass.
+    pron = {"he", "she", "him", "her", "his", "they", "them", "their", "it", "its", "this", "that"}
+    names = [(e["tick"], p) for e in E for p in e["participants"] if norm(p) not in pron]
     bad_names = [f"{t}:{p}" for t, p in names if traceable(p, src[t]) < 1.0]
     vals = [(s["tick"], s["peg"], s["dim"], s["value"]) for s in S]
-    bad_vals = [f"{t}:{p}.{d} = {v}" for t, p, d, v in vals if traceable(v, src[t]) < 0.5]
-    total = len(names) + len(vals)
-    r["M2"] = {"traceable_rate": round(1 - (len(bad_names) + len(bad_vals)) / total, 3),
-               "untraceable_names": bad_names, "untraceable_values": bad_vals}
-    r["M2"]["pass"] = r["M2"]["traceable_rate"] >= 0.95
+    bad_all = [f"{t}:{p}.{d} = {v}" for t, p, d, v in vals if traceable(v, src[t]) < 0.5]
+    content = [v for v in vals if not LABEL_DIM.match(v[2])]
+    labels = [s for s in S if LABEL_DIM.match(s["dim"])]
+    bad_content = [f"{t}:{p}.{d} = {v}" for t, p, d, v in content if traceable(v, src[t]) < 0.5]
+    label_new_pegs = sorted({f"{s['tick']}:{l}" for s in labels for l in s["links"]
+                             if traceable(l, src[s["tick"]]) < 1.0})
+    n_a = len(names) + len(content)
+    r["M2"] = {"run1_definition_rate": round(1 - (len(bad_names) + len(bad_all)) / (len(names) + len(vals)), 3),
+               "M2a_content_traceable_rate": round(1 - (len(bad_names) + len(bad_content)) / n_a, 3),
+               "M2b_label_introduced_pegs": label_new_pegs,
+               "untraceable_names": bad_names, "untraceable_content_values": bad_content}
+    r["M2"]["traceable_rate"] = r["M2"]["M2a_content_traceable_rate"]
+    r["M2"]["pass"] = r["M2"]["M2a_content_traceable_rate"] >= 0.95 and not label_new_pegs
 
-    # M4 must-haves
+    # M4 must-haves. Names are compared normalised so different valid spellings pass.
     def at(t):
         return [s for s in S if s["tick"] == t]
-    parts = {e["tick"]: set(e["participants"]) for e in E}
-    b_at = {b["tick"]: b for b in B}
+    def has(names, want):
+        return any(norm(want) == norm(n) or norm(want) in norm(n).split(" ") for n in names)
+    parts = {e["tick"]: [norm(p) for p in e["participants"]] for e in E}
+    b_at = {}
+    for b in B:
+        b_at.setdefault(b["tick"], []).append(b)
+    def cand_text(b):
+        return " | ".join(norm(str(c)) for c in b["candidates"])
     mh = {}
-    bob4 = [s for s in at(4) if s["peg"] == "Bob" and re.search(r"propos", s["value"]) and "Redis" in s["links"]]
-    mh["MH1"] = bool(bob4) and "Alice" not in parts[4]
-    b4 = b_at.get(4)
-    mh["MH2"] = bool(b4) and b4["state"] == "open" and {"payments platform", "separate service"} <= set(b4["candidates"])
-    b5 = b_at.get(5)
-    mh["MH3"] = bool(b5) and b5["state"] == "open" and b5.get("model_belief") is None \
-        and not any(x["bucket"] == b5["id"] for x in state["resolutions"])
-    res5 = [s for s in at(5) if re.search(r"success", s["value"])]
-    mh["MH4"] = bool(res5) and all(s["status"] == "claim" and s["owner"] == "Alice" for s in res5)
+    bob4 = [s for s in at(4) if norm(s["peg"]) == "bob" and re.search(r"propos", s["value"] + s["dim"])
+            and ("redis" in norm(s["value"]) or any(norm(l) == "redis" for l in s["links"]))]
+    mh["MH1"] = bool(bob4) and "alice" not in parts[4]
+    b4 = [b for b in b_at.get(4, []) if b["state"] == "open"]
+    mh["MH2"] = any("payments platform" in cand_text(b) and "separate service" in cand_text(b) for b in b4)
+    b5 = [b for b in b_at.get(5, [])]
+    mh["MH3"] = bool(b5) and all(b["state"] == "open" and b.get("model_belief") is None
+                                 and not any(x["bucket"] == b["id"] for x in state["resolutions"]) for b in b5)
+    res5 = [s for s in at(5) if re.search(r"success|passed", s["value"]) and not LABEL_DIM.match(s["dim"])]
+    mh["MH4"] = bool(res5) and all(s["status"] == "claim" and norm(s["owner"] or "") == "alice" for s in res5)
     might6 = [s for s in at(6) if re.search(r"\bmight\b", s["value"])]
     mh["MH5"] = bool(might6) and all(s["status"] == "speaker_belief" and s["modality"] == "possible"
-                                     and s["owner"] == "Bob" for s in might6)
-    mh["MH6"] = not any(re.search(r"stance_relative|different preference", f"{s['dim']} {s['value']}") for s in at(9))
-    mh["MH7"] = {"Alice", "PostgreSQL"} <= parts[0] and {"Alice", "PostgreSQL"} <= parts[8]
+                                     and norm(s["owner"] or "") == "bob" for s in might6)
+    mh["MH6"] = not any(re.search(r"stance_relative|different preference|disagree", f"{s['dim']} {s['value']}")
+                        and s["status"] in ("fact", "claim") for s in at(9))
+    mh["MH7"] = all(x in parts[0] for x in ("alice", "postgresql")) and all(x in parts[8] for x in ("alice", "postgresql"))
     r["M4"] = {"checks": mh, "passed": sum(mh.values()), "of": len(mh)}
 
     # Diagnostics
@@ -98,7 +122,8 @@ if __name__ == "__main__":
     json.dump(out, open(sys.argv[3], "w"), indent=2)
     print("M1 pass:", out["M1"]["pass"], "| absences", len(out["M1"]["stored_absences"]),
           "| inferences", len(out["M1"]["unflagged_inferences"]))
-    print("M2 traceable:", out["M2"]["traceable_rate"], "| pass", out["M2"]["pass"],
-          "| bad names", len(out["M2"]["untraceable_names"]), "| bad values", len(out["M2"]["untraceable_values"]))
+    print("M2a content traceable:", out["M2"]["M2a_content_traceable_rate"], "| M2b label-introduced pegs",
+          len(out["M2"]["M2b_label_introduced_pegs"]), "| pass", out["M2"]["pass"],
+          "| (run-1 definition:", out["M2"]["run1_definition_rate"], ")")
     print("M4 must-haves:", out["M4"]["passed"], "/", out["M4"]["of"], out["M4"]["checks"])
     print("diagnostics:", json.dumps(out["diagnostics"], indent=1))

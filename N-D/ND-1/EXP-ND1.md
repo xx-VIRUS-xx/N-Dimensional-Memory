@@ -59,3 +59,19 @@ If must-haves MH4–MH5 and the attribution and belief probes fail as extraction
 
 - Code can only recover what the LLM's output contains. If a speaker or hedge is missing from the output, no rule can restore it; M7 records these cases as extraction misses, not engine misses.
 - Probes and must-haves were written by one author (Claude) and need a human pass; they are less subjective than a full gold structure, but not free of judgement.
+
+## Amendments (logged before run 2; run 1 numbers are unchanged)
+
+**A1: M2 split (after run 1).** Run 1 showed that 58 of 65 untraceable values were annotation labels (role, time, status, epistemic source) that describe the sentence rather than quote it. From run 2:
+
+- **M2a:** entity names and *content* values must be lexically traceable to the source, at ≥ 95%.
+- **M2b:** annotation labels are exempt from traceability but must not introduce pegs that the sentence does not contain. The target is 0.
+- The run-1 definition is still computed and reported, for comparability.
+
+**A2: Measurement fix.** The stemmer now handles "-ly" and "-fully" ("successfully" vs "successful" was a false miss in run 1).
+
+**A3: Engine rule-table fix.** E4's parenthetical absence rule now includes "not recorded" (the single M1 failure in run 1).
+
+**A4: Run 2 protocol.** LLM contract v1: stateless sessions, one sentence per session, the fixed dictionary `dimension_dictionary_v1.json`, a required entity `type`, and unresolved references marked `reference_status: unresolved`. The script is `tools/extract_stateless.py`; the batch runner is `engine/run_batch.py`. Must-haves compare names after normalisation, so valid spellings ("a separate service") pass.
+
+**Known limit found while building run 2:** pronoun candidates are every type-compatible peg in the window, including the entity the pronoun modifies. The candidate lists for "its" are therefore noisy but always open, which is the safe direction. Not tuned on the pilot.

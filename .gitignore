@@ -180,3 +180,6 @@ build/
 # experimental result dumps
 # ============================================================*.arrow
 multidimensional-memory/**/datasets/
+
+# N-D local scratch output
+N-D/scratch/

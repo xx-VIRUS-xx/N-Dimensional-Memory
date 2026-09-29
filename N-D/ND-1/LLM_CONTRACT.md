@@ -11,3 +11,9 @@ Dimension names are chosen from the dimension dictionary supplied with the promp
 Each call is a fresh, stateless session: the sentence, speaker and time, and the dictionary, with no earlier sentences. The LLM resolves references answered inside the sentence and marks every other reference as unresolved (local ambiguity run, C12). The prompt keeps the BabyTest constraints: no invented information, no relationships just because entities co-occur, no resolving ambiguity the sentence leaves open.
 
 Everything else (ticks, peg identity, value linking, cleaning, dimension canonicalisation, epistemic status, buckets, collisions, trajectories, depiction) is the engine's job, in code and math.
+
+## v1 additions (run 2)
+
+- The dictionary is `dimension_dictionary_v1.json`, fixed for a whole run.
+- Unresolved references: add an entity named exactly as written ("its", "the rate-limiting change") with `reference_status: "unresolved"`.
+- The exact prompt is in `tools/extract_stateless.py`.
