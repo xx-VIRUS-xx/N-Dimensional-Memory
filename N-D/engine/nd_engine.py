@@ -54,8 +54,11 @@ AMBIGUITY = re.compile(r"\b(ambiguous|unclear|either)\b", re.I)
 # with reference_status = unresolved (LLM contract v1); the older BabyTest output
 # used the phrase "definite reference".
 DEFINITE_CUE = re.compile(r"definite reference", re.I)
-PRONOUN_PERSON = {"he", "she", "him", "her", "his", "hers", "they", "them", "their"}
+PRONOUN_PERSON = {"he", "she", "him", "her", "his", "hers"}
+PRONOUN_GROUP = {"they", "them", "their", "theirs"}      # persons or orgs (A7b)
 PRONOUN_THING = {"it", "its", "this", "that"}
+PRONOUNS = PRONOUN_PERSON | PRONOUN_GROUP | PRONOUN_THING
+ALTERNATIVE_CUE = re.compile(r"\b(unclear|ambiguous|either|or)\b", re.I)
 # E6 forward: an event that explicitly answers an open bucket.
 RESOLUTION_CUE = re.compile(r"\b(meant|clarified|confirmed that|specifically)\b", re.I)
 WINDOW = 3  # C9(c): last 3 events
@@ -79,11 +82,12 @@ def contains_peg(text, peg_norm):
 
 # ---------------------------------------------------------------- engine
 def run(records):
-    state = {"events": [], "pegs": {}, "strings": [], "proposals": [], "buckets": [],
+    state = {"engine_version": "v0.2", "events": [], "pegs": {}, "strings": [], "proposals": [], "buckets": [], "first_mentions": [],
              "dropped_absences": [], "model_belief_candidates": [], "resolutions": []}
     peg_of = {}            # normalised name -> peg id (display name of first mention)
 
     for tick, rec in enumerate(records):                      # E1 ticks
+        known_before = set(peg_of)                             # pegs that existed before this event
         ev = {"tick": tick, "input_id": rec["event_id"], "participants": [], "speaker": None}
 
         # E2 peg identity: exact normalised match merges; near matches are proposals.
@@ -166,42 +170,79 @@ def run(records):
                                              "model_belief": None, "state": "open", "origin": "local"})
 
         # E6 global, backward: references the interpreter left open.
+        refs = []
         for ent in rec["entities"]:
             dims = " ".join(f"{k} {v}" for k, v in ent["dimensions"].items())
             unresolved = str(ent["dimensions"].get("reference_status", "")).lower() == "unresolved"
-            if not (unresolved or DEFINITE_CUE.search(dims)):
-                continue
+            n = norm(ent["name"])
+            # A7f: every "the X" phrase that is not an already-known peg is checked,
+            # whether or not the interpreter marked it (unmatched ones become first mentions).
+            definite = ent["name"].strip().lower().startswith("the ") and n not in known_before
+            if unresolved or definite or DEFINITE_CUE.search(dims):
+                refs.append(ent)
+
+        # A7d: two or more unresolved non-pronoun entities in one event, marked unclear,
+        # are sentence-stated alternatives (one local bucket), not separate references.
+        alts = [e for e in refs if norm(e["name"]).split(" ")[0] not in PRONOUNS
+                and ALTERNATIVE_CUE.search(str(e["dimensions"].get("epistemic_stance", "")))]
+        if len(alts) >= 2:
+            state["buckets"].append({"id": f"b{len(state['buckets'])}", "tick": tick, "peg": alts[0]["name"],
+                                     "dim": "alternatives", "query": "which of the stated alternatives?",
+                                     "candidates": sorted(e["name"] for e in alts), "model_belief": None,
+                                     "state": "open", "origin": "local-alternatives"})
+            refs = [e for e in refs if e not in alts]
+        # A7g: a phrase naming a peg that already existed is identity, not a reference.
+        refs = [e for e in refs if not (norm(e["name"]) in known_before and norm(e["name"]).split(" ")[0] not in PRONOUNS)]
+
+        for ent in refs:
             ref = ent["name"]
             ref_n = norm(ref)
+            first = ref_n.split(" ")[0] if ref_n else ""
             window = [e for e in state["events"] if tick - WINDOW <= e["tick"] < tick]
-            here_pegs = [p for p in ev["participants"] if norm(p) != ref_n]
-            if ref_n in PRONOUN_PERSON or ref_n in PRONOUN_THING:
-                # Pronoun: candidate pegs of compatible type (C9 clause c), from the
-                # window and from this event. Untyped pegs count as compatible.
-                want_person = ref_n in PRONOUN_PERSON
+            # A7e: never offer the entity the pronoun modifies ("its failover behavior",
+            # or an entity whose value is the pronoun) as its own referent.
+            modified = {norm(e["name"]) for e in rec["entities"]
+                        if any(norm(str(v)) == ref_n for v in e["dimensions"].values())}
+            if first in PRONOUNS:
+                head = ref_n[len(first):].strip()
+                if head:
+                    modified.add(head)
+            here_pegs = [p for p in ev["participants"] if norm(p) != ref_n and norm(p) not in modified]
+            if first in PRONOUNS:
+                # A7a: pronoun, bare or possessive ("its failover behavior").
+                def compatible(t):
+                    if t is None:
+                        return True
+                    if first in PRONOUN_PERSON:
+                        return t == "person"
+                    if first in PRONOUN_GROUP:
+                        return t in ("person", "org")
+                    return t != "person"
                 pool = []
                 for p in here_pegs + [p for e in window for p in e["participants"]]:
-                    t = state["pegs"].get(p, {}).get("type")
-                    ok = t is None or ((t == "person") == want_person)
-                    if ok and p not in pool and norm(p) not in PRONOUN_PERSON | PRONOUN_THING:
+                    if (compatible(state["pegs"].get(p, {}).get("type")) and p not in pool
+                            and norm(p).split(" ")[0] not in PRONOUNS and norm(p) not in modified):
                         pool.append(p)
                 cands = pool
             else:
-                # Definite noun phrase ("the rate-limiting change"): earlier events in the
-                # window whose pegs or values contain its content words.
+                # Definite noun phrase: earlier events whose pegs or values contain its content words.
                 key = [t for t in content_tokens(ref) if t not in {"change", "changes", "thing", "one"}]
                 cands = []
                 for e in window:
                     texts = e["participants"] + [s["value"] for s in state["strings"] if s["tick"] == e["tick"]]
                     if key and any(all(k in norm(t).split() for k in key) for t in texts):
                         cands.append(e["tick"])
+                if not cands:
+                    # A7c: a definite phrase with no earlier match is a first mention, not an ambiguity.
+                    state.setdefault("first_mentions", []).append({"tick": tick, "name": ref})
+                    continue
             b = {"id": f"b{len(state['buckets'])}", "tick": tick, "peg": peg_of[norm(ref)], "dim": "reference",
-                 "query": f"which earlier event is '{ref}'?", "candidates": cands, "model_belief": None,
+                 "query": f"what does '{ref}' refer to?", "candidates": cands, "model_belief": None,
                  "origin": "global-backward"}
             if len(cands) == 1:
-                b.update(state="resolved", resolved_by="engine", evidence_ticks=cands)
-                state["resolutions"].append({"bucket": b["id"], "by": "engine", "rule": "C9(c) single candidate",
-                                             "value": cands[0], "evidence_ticks": cands, "at_tick": tick})
+                b.update(state="resolved", resolved_by="engine", evidence_ticks=cands if isinstance(cands[0], int) else [])
+                state["resolutions"].append({"bucket": b["id"], "by": "engine", "rule": "C9 clause (c): single candidate",
+                                             "value": cands[0], "evidence_ticks": b["evidence_ticks"], "at_tick": tick})
             elif not cands:
                 b.update(state="unknown_referent")
             else:

@@ -1,0 +1,179 @@
+{
+  "runs": [
+    {
+      "run": "claude-cli__opus__run1",
+      "M1_pass": true,
+      "M2a": 0.987,
+      "M2b_new_pegs": 0,
+      "M2_pass": true,
+      "M4": "7/7",
+      "M4_failed": [],
+      "buckets": [
+        [
+          4,
+          "open"
+        ],
+        [
+          5,
+          "open"
+        ],
+        [
+          5,
+          "resolved"
+        ],
+        [
+          6,
+          "resolved"
+        ]
+      ],
+      "colliding_pairs": 23
+    },
+    {
+      "run": "claude-cli__opus__run2",
+      "M1_pass": true,
+      "M2a": 0.986,
+      "M2b_new_pegs": 0,
+      "M2_pass": true,
+      "M4": "7/7",
+      "M4_failed": [],
+      "buckets": [
+        [
+          4,
+          "open"
+        ],
+        [
+          5,
+          "open"
+        ],
+        [
+          5,
+          "resolved"
+        ],
+        [
+          6,
+          "resolved"
+        ],
+        [
+          7,
+          "open"
+        ]
+      ],
+      "colliding_pairs": 23
+    },
+    {
+      "run": "claude-cli__opus__run3",
+      "M1_pass": true,
+      "M2a": 1.0,
+      "M2b_new_pegs": 0,
+      "M2_pass": true,
+      "M4": "7/7",
+      "M4_failed": [],
+      "buckets": [
+        [
+          4,
+          "open"
+        ],
+        [
+          5,
+          "open"
+        ],
+        [
+          5,
+          "resolved"
+        ],
+        [
+          6,
+          "resolved"
+        ]
+      ],
+      "colliding_pairs": 23
+    },
+    {
+      "run": "claude-cli__sonnet__run1",
+      "M1_pass": true,
+      "M2a": 1.0,
+      "M2b_new_pegs": 0,
+      "M2_pass": true,
+      "M4": "7/7",
+      "M4_failed": [],
+      "buckets": [
+        [
+          4,
+          "open"
+        ],
+        [
+          5,
+          "open"
+        ],
+        [
+          5,
+          "resolved"
+        ],
+        [
+          6,
+          "resolved"
+        ]
+      ],
+      "colliding_pairs": 23
+    },
+    {
+      "run": "claude-cli__sonnet__run2",
+      "M1_pass": true,
+      "M2a": 1.0,
+      "M2b_new_pegs": 0,
+      "M2_pass": true,
+      "M4": "7/7",
+      "M4_failed": [],
+      "buckets": [
+        [
+          4,
+          "open"
+        ],
+        [
+          5,
+          "open"
+        ],
+        [
+          5,
+          "resolved"
+        ],
+        [
+          6,
+          "resolved"
+        ]
+      ],
+      "colliding_pairs": 23
+    },
+    {
+      "run": "claude-cli__sonnet__run3",
+      "M1_pass": true,
+      "M2a": 1.0,
+      "M2b_new_pegs": 0,
+      "M2_pass": true,
+      "M4": "6/7",
+      "M4_failed": [
+        "MH3"
+      ],
+      "buckets": [
+        [
+          4,
+          "open"
+        ],
+        [
+          5,
+          "resolved"
+        ],
+        [
+          6,
+          "resolved"
+        ]
+      ],
+      "colliding_pairs": 23
+    }
+  ],
+  "M5": {
+    "collision_jaccard_min": 1.0,
+    "bucket_outcome_jaccard_min": 0.6,
+    "runs": 6
+  }
+}

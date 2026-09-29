@@ -1,0 +1,1355 @@
+{
+  "engine_version": "v0.2",
+  "events": [
+    {
+      "tick": 0,
+      "input_id": "t0",
+      "participants": [
+        "Alice",
+        "PostgreSQL",
+        "payments platform"
+      ],
+      "speaker": null,
+      "actor": "Alice"
+    },
+    {
+      "tick": 1,
+      "input_id": "t1",
+      "participants": [
+        "Bob",
+        "PostgreSQL",
+        "payments platform"
+      ],
+      "speaker": null,
+      "actor": "Bob"
+    },
+    {
+      "tick": 2,
+      "input_id": "t2",
+      "participants": [
+        "Alice",
+        "the benchmark results",
+        "the team",
+        "PostgreSQL"
+      ],
+      "speaker": "Alice",
+      "actor": null
+    },
+    {
+      "tick": 3,
+      "input_id": "t3",
+      "participants": [
+        "Carol",
+        "Redis",
+        "payments platform"
+      ],
+      "speaker": "Carol",
+      "actor": null
+    },
+    {
+      "tick": 4,
+      "input_id": "t4",
+      "participants": [
+        "Bob",
+        "Redis",
+        "payments platform",
+        "a separate service"
+      ],
+      "speaker": null,
+      "actor": "Bob"
+    },
+    {
+      "tick": 5,
+      "input_id": "t5",
+      "participants": [
+        "Alice",
+        "the peak-load benchmark",
+        "its failover behavior"
+      ],
+      "speaker": "Alice",
+      "actor": null
+    },
+    {
+      "tick": 6,
+      "input_id": "t6",
+      "participants": [
+        "Bob",
+        "the rate-limiting change",
+        "a different deployment plan"
+      ],
+      "speaker": "Bob",
+      "actor": null
+    },
+    {
+      "tick": 7,
+      "input_id": "t7",
+      "participants": [
+        "Carol",
+        "the payments platform team",
+        "Redis",
+        "the database changes"
+      ],
+      "speaker": "Carol",
+      "actor": null
+    },
+    {
+      "tick": 8,
+      "input_id": "t8",
+      "participants": [
+        "Alice",
+        "PostgreSQL",
+        "the failover test"
+      ],
+      "speaker": null,
+      "actor": "Alice"
+    },
+    {
+      "tick": 9,
+      "input_id": "t9",
+      "participants": [
+        "Bob",
+        "Carol",
+        "the architecture document",
+        "a separate rate-limiting service",
+        "Redis"
+      ],
+      "speaker": null,
+      "actor": "Bob"
+    }
+  ],
+  "pegs": {
+    "Alice": {
+      "first_tick": 0,
+      "type": "person"
+    },
+    "PostgreSQL": {
+      "first_tick": 0,
+      "type": "system"
+    },
+    "payments platform": {
+      "first_tick": 0,
+      "type": "system"
+    },
+    "Bob": {
+      "first_tick": 1,
+      "type": "person"
+    },
+    "the benchmark results": {
+      "first_tick": 2,
+      "type": "other"
+    },
+    "the team": {
+      "first_tick": 2,
+      "type": "org"
+    },
+    "Carol": {
+      "first_tick": 3,
+      "type": "person"
+    },
+    "Redis": {
+      "first_tick": 3,
+      "type": "system"
+    },
+    "a separate service": {
+      "first_tick": 4,
+      "type": "system"
+    },
+    "the peak-load benchmark": {
+      "first_tick": 5,
+      "type": "system"
+    },
+    "its failover behavior": {
+      "first_tick": 5,
+      "type": "other"
+    },
+    "the rate-limiting change": {
+      "first_tick": 6,
+      "type": "other"
+    },
+    "a different deployment plan": {
+      "first_tick": 6,
+      "type": "other"
+    },
+    "the payments platform team": {
+      "first_tick": 7,
+      "type": "org"
+    },
+    "the database changes": {
+      "first_tick": 7,
+      "type": "other"
+    },
+    "the failover test": {
+      "first_tick": 8,
+      "type": "other"
+    },
+    "the architecture document": {
+      "first_tick": 9,
+      "type": "other"
+    },
+    "a separate rate-limiting service": {
+      "first_tick": 9,
+      "type": "system"
+    }
+  },
+  "strings": [
+    {
+      "tick": 0,
+      "peg": "Alice",
+      "dim": "role_in_event",
+      "value": "proposer",
+      "links": [],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 0,
+      "peg": "Alice",
+      "dim": "action",
+      "value": "proposed PostgreSQL for the payments platform",
+      "links": [
+        "PostgreSQL",
+        "payments platform"
+      ],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 0,
+      "peg": "Alice",
+      "dim": "context",
+      "value": "architecture discussion",
+      "links": [],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 0,
+      "peg": "PostgreSQL",
+      "dim": "proposed_by",
+      "value": "Alice",
+      "links": [
+        "Alice"
+      ],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 0,
+      "peg": "PostgreSQL",
+      "dim": "target_system",
+      "value": "payments platform",
+      "links": [
+        "payments platform"
+      ],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 0,
+      "peg": "PostgreSQL",
+      "dim": "adoption_status",
+      "value": "proposed",
+      "links": [],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 0,
+      "peg": "payments platform",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 1,
+      "peg": "Bob",
+      "dim": "role_in_event",
+      "value": "questioner",
+      "links": [],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 1,
+      "peg": "Bob",
+      "dim": "action",
+      "value": "questioned whether PostgreSQL could handle the payments platform's projected transaction load",
+      "links": [
+        "PostgreSQL",
+        "payments platform"
+      ],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Bob"
+    },
+    {
+      "tick": 1,
+      "peg": "PostgreSQL",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 1,
+      "peg": "PostgreSQL",
+      "dim": "position",
+      "value": "unclear whether it could handle the payments platform's projected transaction load",
+      "links": [
+        "payments platform"
+      ],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Bob"
+    },
+    {
+      "tick": 1,
+      "peg": "PostgreSQL",
+      "dim": "epistemic_source",
+      "value": "Bob",
+      "links": [
+        "Bob"
+      ],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 1,
+      "peg": "PostgreSQL",
+      "dim": "epistemic_stance",
+      "value": "questioned",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Bob"
+    },
+    {
+      "tick": 1,
+      "peg": "payments platform",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 1,
+      "peg": "payments platform",
+      "dim": "owner",
+      "value": "payments platform",
+      "links": [],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 2,
+      "peg": "Alice",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Alice"
+    },
+    {
+      "tick": 2,
+      "peg": "Alice",
+      "dim": "action",
+      "value": "said the benchmark results were inconclusive and asked the team to test PostgreSQL under peak load",
+      "links": [
+        "PostgreSQL",
+        "the benchmark results",
+        "the team"
+      ],
+      "status": "intent",
+      "modality": "certain",
+      "owner": "Alice"
+    },
+    {
+      "tick": 2,
+      "peg": "the benchmark results",
+      "dim": "status",
+      "value": "inconclusive",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Alice"
+    },
+    {
+      "tick": 2,
+      "peg": "the benchmark results",
+      "dim": "epistemic_source",
+      "value": "Alice",
+      "links": [
+        "Alice"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Alice"
+    },
+    {
+      "tick": 2,
+      "peg": "the team",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Alice"
+    },
+    {
+      "tick": 2,
+      "peg": "PostgreSQL",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Alice"
+    },
+    {
+      "tick": 2,
+      "peg": "PostgreSQL",
+      "dim": "action",
+      "value": "to be tested under peak load",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Alice"
+    },
+    {
+      "tick": 2,
+      "peg": "PostgreSQL",
+      "dim": "context",
+      "value": "peak load",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Alice"
+    },
+    {
+      "tick": 3,
+      "peg": "Carol",
+      "dim": "role_in_event",
+      "value": "reporter",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Carol"
+    },
+    {
+      "tick": 3,
+      "peg": "Carol",
+      "dim": "action",
+      "value": "reported that Redis was already being used for session caching in the payments platform",
+      "links": [
+        "Redis",
+        "payments platform"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Carol"
+    },
+    {
+      "tick": 3,
+      "peg": "Carol",
+      "dim": "epistemic_source",
+      "value": "Carol",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Carol"
+    },
+    {
+      "tick": 3,
+      "peg": "Redis",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Carol"
+    },
+    {
+      "tick": 3,
+      "peg": "Redis",
+      "dim": "function",
+      "value": "session caching",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Carol"
+    },
+    {
+      "tick": 3,
+      "peg": "Redis",
+      "dim": "status",
+      "value": "already being used",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Carol"
+    },
+    {
+      "tick": 3,
+      "peg": "Redis",
+      "dim": "context",
+      "value": "payments platform",
+      "links": [
+        "payments platform"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Carol"
+    },
+    {
+      "tick": 3,
+      "peg": "Redis",
+      "dim": "temporal_position",
+      "value": "before this event",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Carol"
+    },
+    {
+      "tick": 3,
+      "peg": "payments platform",
+      "dim": "role_in_event",
+      "value": "context",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Carol"
+    },
+    {
+      "tick": 3,
+      "peg": "payments platform",
+      "dim": "owner",
+      "value": "the payments platform",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Carol"
+    },
+    {
+      "tick": 4,
+      "peg": "Bob",
+      "dim": "role_in_event",
+      "value": "proposer",
+      "links": [],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 4,
+      "peg": "Bob",
+      "dim": "action",
+      "value": "proposed using Redis for rate limiting",
+      "links": [
+        "Redis"
+      ],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 4,
+      "peg": "Bob",
+      "dim": "position",
+      "value": "using Redis for rate limiting",
+      "links": [
+        "Redis"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Bob"
+    },
+    {
+      "tick": 4,
+      "peg": "Bob",
+      "dim": "function",
+      "value": "rate limiting",
+      "links": [],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 4,
+      "peg": "Bob",
+      "dim": "decision_status",
+      "value": "pending",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Bob"
+    },
+    {
+      "tick": 4,
+      "peg": "Redis",
+      "dim": "function",
+      "value": "rate limiting",
+      "links": [],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 4,
+      "peg": "Redis",
+      "dim": "proposed_by",
+      "value": "Bob",
+      "links": [
+        "Bob"
+      ],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 4,
+      "peg": "Redis",
+      "dim": "adoption_status",
+      "value": "proposed",
+      "links": [],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 4,
+      "peg": "payments platform",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Bob"
+    },
+    {
+      "tick": 4,
+      "peg": "payments platform",
+      "dim": "epistemic_stance",
+      "value": "unclear",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Bob"
+    },
+    {
+      "tick": 4,
+      "peg": "a separate service",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Bob"
+    },
+    {
+      "tick": 4,
+      "peg": "a separate service",
+      "dim": "epistemic_stance",
+      "value": "unclear",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Bob"
+    },
+    {
+      "tick": 5,
+      "peg": "Alice",
+      "dim": "role_in_event",
+      "value": "reporter",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Alice"
+    },
+    {
+      "tick": 5,
+      "peg": "Alice",
+      "dim": "action",
+      "value": "reported that the peak-load benchmark completed successfully",
+      "links": [
+        "the peak-load benchmark"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Alice"
+    },
+    {
+      "tick": 5,
+      "peg": "the peak-load benchmark",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Alice"
+    },
+    {
+      "tick": 5,
+      "peg": "the peak-load benchmark",
+      "dim": "outcome",
+      "value": "completed successfully",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Alice"
+    },
+    {
+      "tick": 5,
+      "peg": "the peak-load benchmark",
+      "dim": "epistemic_source",
+      "value": "Alice",
+      "links": [
+        "Alice"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Alice"
+    },
+    {
+      "tick": 5,
+      "peg": "its failover behavior",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Alice"
+    },
+    {
+      "tick": 5,
+      "peg": "its failover behavior",
+      "dim": "status",
+      "value": "remained uncertain",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Alice"
+    },
+    {
+      "tick": 5,
+      "peg": "its failover behavior",
+      "dim": "epistemic_stance",
+      "value": "uncertain",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Alice"
+    },
+    {
+      "tick": 5,
+      "peg": "its failover behavior",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Alice"
+    },
+    {
+      "tick": 6,
+      "peg": "Bob",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Bob"
+    },
+    {
+      "tick": 6,
+      "peg": "Bob",
+      "dim": "action",
+      "value": "said the rate-limiting change might require a different deployment plan",
+      "links": [
+        "a different deployment plan",
+        "the rate-limiting change"
+      ],
+      "status": "speaker_belief",
+      "modality": "possible",
+      "owner": "Bob"
+    },
+    {
+      "tick": 6,
+      "peg": "Bob",
+      "dim": "epistemic_source",
+      "value": "Bob",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Bob"
+    },
+    {
+      "tick": 6,
+      "peg": "the rate-limiting change",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Bob"
+    },
+    {
+      "tick": 6,
+      "peg": "the rate-limiting change",
+      "dim": "epistemic_stance",
+      "value": "might",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "possible",
+      "owner": "Bob"
+    },
+    {
+      "tick": 6,
+      "peg": "the rate-limiting change",
+      "dim": "outcome",
+      "value": "might require a different deployment plan",
+      "links": [
+        "a different deployment plan"
+      ],
+      "status": "speaker_belief",
+      "modality": "possible",
+      "owner": "Bob"
+    },
+    {
+      "tick": 6,
+      "peg": "a different deployment plan",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Bob"
+    },
+    {
+      "tick": 6,
+      "peg": "a different deployment plan",
+      "dim": "epistemic_stance",
+      "value": "might",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "possible",
+      "owner": "Bob"
+    },
+    {
+      "tick": 6,
+      "peg": "a different deployment plan",
+      "dim": "status",
+      "value": "possibly required",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "possible",
+      "owner": "Bob"
+    },
+    {
+      "tick": 7,
+      "peg": "Carol",
+      "dim": "role_in_event",
+      "value": "reporter",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Carol"
+    },
+    {
+      "tick": 7,
+      "peg": "Carol",
+      "dim": "action",
+      "value": "said the payments platform team planned to keep Redis for caching while they decided on the database changes",
+      "links": [
+        "Redis",
+        "payments platform",
+        "the database changes",
+        "the payments platform team",
+        "the team"
+      ],
+      "status": "intent",
+      "modality": "certain",
+      "owner": "Carol"
+    },
+    {
+      "tick": 7,
+      "peg": "Carol",
+      "dim": "epistemic_source",
+      "value": "Carol",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Carol"
+    },
+    {
+      "tick": 7,
+      "peg": "the payments platform team",
+      "dim": "role_in_event",
+      "value": "proposer",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Carol"
+    },
+    {
+      "tick": 7,
+      "peg": "the payments platform team",
+      "dim": "position",
+      "value": "keep Redis for caching",
+      "links": [
+        "Redis"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Carol"
+    },
+    {
+      "tick": 7,
+      "peg": "the payments platform team",
+      "dim": "decision_status",
+      "value": "pending",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Carol"
+    },
+    {
+      "tick": 7,
+      "peg": "the payments platform team",
+      "dim": "epistemic_source",
+      "value": "Carol",
+      "links": [
+        "Carol"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Carol"
+    },
+    {
+      "tick": 7,
+      "peg": "Redis",
+      "dim": "function",
+      "value": "caching",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Carol"
+    },
+    {
+      "tick": 7,
+      "peg": "Redis",
+      "dim": "status",
+      "value": "kept",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Carol"
+    },
+    {
+      "tick": 7,
+      "peg": "Redis",
+      "dim": "owner",
+      "value": "the payments platform team",
+      "links": [
+        "payments platform",
+        "the payments platform team",
+        "the team"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Carol"
+    },
+    {
+      "tick": 7,
+      "peg": "the database changes",
+      "dim": "decision_status",
+      "value": "pending",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Carol"
+    },
+    {
+      "tick": 7,
+      "peg": "the database changes",
+      "dim": "epistemic_source",
+      "value": "Carol",
+      "links": [
+        "Carol"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Carol"
+    },
+    {
+      "tick": 8,
+      "peg": "Alice",
+      "dim": "role_in_event",
+      "value": "proposer",
+      "links": [],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 8,
+      "peg": "Alice",
+      "dim": "action",
+      "value": "proposed PostgreSQL again",
+      "links": [
+        "PostgreSQL"
+      ],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 8,
+      "peg": "Alice",
+      "dim": "temporal_position",
+      "value": "after the failover test",
+      "links": [
+        "the failover test"
+      ],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 8,
+      "peg": "PostgreSQL",
+      "dim": "proposed_by",
+      "value": "Alice",
+      "links": [
+        "Alice"
+      ],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 8,
+      "peg": "PostgreSQL",
+      "dim": "adoption_status",
+      "value": "no final adoption decision was recorded",
+      "links": [],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 8,
+      "peg": "the failover test",
+      "dim": "temporal_position",
+      "value": "before Alice proposed PostgreSQL again",
+      "links": [
+        "Alice",
+        "PostgreSQL"
+      ],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 9,
+      "peg": "Bob",
+      "dim": "role_in_event",
+      "value": "reviewer",
+      "links": [],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 9,
+      "peg": "Bob",
+      "dim": "action",
+      "value": "reviewed the architecture document",
+      "links": [
+        "the architecture document"
+      ],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 9,
+      "peg": "Bob",
+      "dim": "position",
+      "value": "favored a separate rate-limiting service",
+      "links": [
+        "a separate rate-limiting service"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Bob"
+    },
+    {
+      "tick": 9,
+      "peg": "Bob",
+      "dim": "advocate",
+      "value": "Bob",
+      "links": [],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 9,
+      "peg": "Carol",
+      "dim": "role_in_event",
+      "value": "reviewer",
+      "links": [],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 9,
+      "peg": "Carol",
+      "dim": "action",
+      "value": "reviewed the architecture document",
+      "links": [
+        "the architecture document"
+      ],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 9,
+      "peg": "Carol",
+      "dim": "position",
+      "value": "favored keeping Redis for caching",
+      "links": [
+        "Redis"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Bob"
+    },
+    {
+      "tick": 9,
+      "peg": "Carol",
+      "dim": "advocate",
+      "value": "Carol",
+      "links": [],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 9,
+      "peg": "the architecture document",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 9,
+      "peg": "a separate rate-limiting service",
+      "dim": "advocate",
+      "value": "Bob",
+      "links": [
+        "Bob"
+      ],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 9,
+      "peg": "a separate rate-limiting service",
+      "dim": "function",
+      "value": "rate-limiting",
+      "links": [],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 9,
+      "peg": "Redis",
+      "dim": "advocate",
+      "value": "Carol",
+      "links": [
+        "Carol"
+      ],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    },
+    {
+      "tick": 9,
+      "peg": "Redis",
+      "dim": "function",
+      "value": "caching",
+      "links": [],
+      "status": "fact",
+      "modality": "certain",
+      "owner": null
+    }
+  ],
+  "proposals": [
+    {
+      "tick": 7,
+      "new": "the payments platform team",
+      "existing": "payments platform",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 7,
+      "new": "the payments platform team",
+      "existing": "the team",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 9,
+      "new": "a separate rate-limiting service",
+      "existing": "a separate service",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    }
+  ],
+  "buckets": [
+    {
+      "id": "b0",
+      "tick": 4,
+      "peg": "the payments platform",
+      "dim": "alternatives",
+      "query": "which of the stated alternatives?",
+      "candidates": [
+        "a separate service",
+        "the payments platform"
+      ],
+      "model_belief": null,
+      "state": "open",
+      "origin": "local-alternatives"
+    },
+    {
+      "id": "b1",
+      "tick": 5,
+      "peg": "the peak-load benchmark",
+      "dim": "reference",
+      "query": "what does 'the peak-load benchmark' refer to?",
+      "candidates": [
+        2
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "resolved",
+      "resolved_by": "engine",
+      "evidence_ticks": [
+        2
+      ]
+    },
+    {
+      "id": "b2",
+      "tick": 5,
+      "peg": "its failover behavior",
+      "dim": "reference",
+      "query": "what does 'its failover behavior' refer to?",
+      "candidates": [
+        "the peak-load benchmark",
+        "the benchmark results",
+        "the team",
+        "PostgreSQL",
+        "Redis",
+        "payments platform",
+        "a separate service"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b3",
+      "tick": 6,
+      "peg": "the rate-limiting change",
+      "dim": "reference",
+      "query": "what does 'the rate-limiting change' refer to?",
+      "candidates": [
+        4
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "resolved",
+      "resolved_by": "engine",
+      "evidence_ticks": [
+        4
+      ]
+    }
+  ],
+  "first_mentions": [
+    {
+      "tick": 2,
+      "name": "the benchmark results"
+    },
+    {
+      "tick": 2,
+      "name": "the team"
+    },
+    {
+      "tick": 7,
+      "name": "the payments platform team"
+    },
+    {
+      "tick": 7,
+      "name": "the database changes"
+    },
+    {
+      "tick": 8,
+      "name": "the failover test"
+    },
+    {
+      "tick": 9,
+      "name": "the architecture document"
+    }
+  ],
+  "dropped_absences": [],
+  "model_belief_candidates": [],
+  "resolutions": [
+    {
+      "bucket": "b1",
+      "by": "engine",
+      "rule": "C9 clause (c): single candidate",
+      "value": 2,
+      "evidence_ticks": [
+        2
+      ],
+      "at_tick": 5
+    },
+    {
+      "bucket": "b3",
+      "by": "engine",
+      "rule": "C9 clause (c): single candidate",
+      "value": 4,
+      "evidence_ticks": [
+        4
+      ],
+      "at_tick": 6
+    }
+  ]
+}

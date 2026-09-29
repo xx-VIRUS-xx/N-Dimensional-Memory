@@ -1,6 +1,6 @@
 # ND-1 — Engine v0: from entity-dimension output to N-D geometry
 
-**Status:** spec frozen. Run 1 complete (M3 and M5 pending); see `results/run1/REPORT.md`.
+**Status:** spec frozen. Run 1 complete (`results/run1/REPORT.md`). Run 2 complete except M3 (`results/run2/REPORT.md`). Engine v0.2 is frozen for ND-1b.
 
 ## Question
 
@@ -75,5 +75,21 @@ If must-haves MH4–MH5 and the attribution and belief probes fail as extraction
 **A4: Run 2 protocol.** LLM contract v1: stateless sessions, one sentence per session, the fixed dictionary `dimension_dictionary_v1.json`, a required entity `type`, and unresolved references marked `reference_status: unresolved`. The script is `tools/extract_stateless.py`; the batch runner is `engine/run_batch.py`. Must-haves compare names after normalisation, so valid spellings ("a separate service") pass.
 
 **A5: Claude Code CLI as a provider.** `--provider claude-cli` runs `claude -p` (print mode) once per sentence, from a new empty temporary folder with one turn, using the operator's Claude Code login. Temperature cannot be set, so run-to-run variance is expected and is measured by M5. User-level `~/.claude/CLAUDE.md` is loaded by Claude Code regardless of folder, so it must be moved aside for runs; each run's `.meta.json` records whether it was present, plus the CLI version.
+
+**A6: Claude-only run 2.** Only Claude Code was available, so M5 compares Sonnet and Opus (3 runs each). Stability is established within one model family only; cross-family stability stays untested.
+
+**A7: Engine v0.2, from the run 2 failure analysis** (`results/run2/REPORT.md`):
+
+- a. Pronoun-led references ("its failover behavior") are handled as the pronoun.
+- b. "they/them/their" are compatible with persons and orgs.
+- c. A definite phrase with no earlier match is a first mention, not a bucket.
+- d. Two or more unresolved non-pronoun entities in one event, marked unclear, form one alternatives bucket.
+- e. A pronoun's own head entity is never offered as its referent.
+- f. Every unmarked "the X" phrase that is not a known peg is checked.
+- g. A phrase naming an already-known peg is identity, not a reference.
+
+v0.2 is fitted to run 2 and is validated only by ND-1b.
+
+**A8: MH3 check scope.** The check now looks only at the "its failover behavior" bucket, not every bucket at tick 5. A correct engine resolution of "the peak-load benchmark" had made it fail.
 
 **Known limit found while building run 2:** pronoun candidates are every type-compatible peg in the window, including the entity the pronoun modifies. The candidate lists for "its" are therefore noisy but always open, which is the safe direction. Not tuned on the pilot.

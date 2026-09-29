@@ -82,7 +82,8 @@ def score(state, sources):
     mh["MH1"] = bool(bob4) and "alice" not in parts[4]
     b4 = [b for b in b_at.get(4, []) if b["state"] == "open"]
     mh["MH2"] = any("payments platform" in cand_text(b) and "separate service" in cand_text(b) for b in b4)
-    b5 = [b for b in b_at.get(5, [])]
+    # A8: MH3 concerns the "its failover behavior" reference only, not every tick-5 bucket.
+    b5 = [b for b in b_at.get(5, []) if re.search(r"\bits\b|failover", f"{b['peg']} {b['query']} {b['candidates']}", re.I)]
     mh["MH3"] = bool(b5) and all(b["state"] == "open" and b.get("model_belief") is None
                                  and not any(x["bucket"] == b["id"] for x in state["resolutions"]) for b in b5)
     res5 = [s for s in at(5) if re.search(r"success|passed", s["value"]) and not LABEL_DIM.match(s["dim"])]

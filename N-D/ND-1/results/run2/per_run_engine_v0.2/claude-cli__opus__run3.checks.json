@@ -1,0 +1,90 @@
+{
+  "M1": {
+    "stored_absences": [],
+    "unflagged_inferences": [],
+    "pass": true
+  },
+  "M2": {
+    "run1_definition_rate": 0.692,
+    "M2a_content_traceable_rate": 1.0,
+    "M2b_label_introduced_pegs": [],
+    "untraceable_names": [],
+    "untraceable_content_values": [],
+    "traceable_rate": 1.0,
+    "pass": true
+  },
+  "M4": {
+    "checks": {
+      "MH1": true,
+      "MH2": true,
+      "MH3": true,
+      "MH4": true,
+      "MH5": true,
+      "MH6": true,
+      "MH7": true
+    },
+    "passed": 7,
+    "of": 7
+  },
+  "diagnostics": {
+    "strings_with_peg_links": 0.347,
+    "single_event_pegs": 0.727,
+    "colliding_event_pairs": 23,
+    "buckets": [
+      {
+        "id": "b0",
+        "tick": 4,
+        "state": "open",
+        "candidates": [
+          "a separate service",
+          "the payments platform"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b1",
+        "tick": 5,
+        "state": "resolved",
+        "candidates": [
+          2
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b2",
+        "tick": 5,
+        "state": "open",
+        "candidates": [
+          "the peak-load benchmark",
+          "the benchmark results",
+          "the team",
+          "PostgreSQL",
+          "Redis",
+          "the payments platform",
+          "rate limiting",
+          "a separate service"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b3",
+        "tick": 6,
+        "state": "resolved",
+        "candidates": [
+          4
+        ],
+        "resolved_by": "engine"
+      }
+    ],
+    "identity_proposals_pending": 5,
+    "dropped_absences": 0,
+    "model_belief_candidates": 0,
+    "status_counts": {
+      "fact": 50,
+      "claim": 44,
+      "speaker_belief": 5,
+      "open_question": 19,
+      "intent": 3
+    }
+  }
+}

@@ -4,10 +4,17 @@ state, never the source text.
 1) Build prompts:  python engine/probe_harness.py prompts <state.json> <probes.jsonl> <out_dir>
 2) Answer them with any model (one answer per probe id, JSON: {"p01": "...", ...}).
 3) Score:          python engine/probe_harness.py score <probes.jsonl> <answers.json>
+
+Or all at once through Claude Code (one fresh, isolated `claude -p` call per probe):
+   python engine/probe_harness.py batch <state_dir> <probes.jsonl> --model sonnet
+   Answers go to <state_dir>/../probes_<state_dir_name>/<run>.answers.json, plus m3_summary.json.
 """
+import glob
 import json
 import os
 import sys
+
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "tools"))
 
 
 def render(state):
@@ -46,21 +53,52 @@ def build(state_path, probes_path, out_dir):
     print(f"wrote {len(probes)} prompts and context ({len(ctx.split())} words) to {out_dir}")
 
 
-def score(probes_path, answers_path):
+def score(probes_path, answers_path, quiet=False):
     probes = [json.loads(l) for l in open(probes_path) if l.strip()]
     ans = json.load(open(answers_path))
-    ok = 0
+    ok, misses = 0, []
     for p in probes:
         a = ans.get(p["id"], "").lower()
         also = p.get("accept_also", [])
         hit = any(x.lower() in a for x in p["accept"]) and (not also or any(y.lower() in a for y in also))
         ok += hit
-        print(f"{p['id']} {'PASS' if hit else 'MISS'}  {p['question']}  ->  {ans.get(p['id'], '')}")
-    print(f"M3: {ok}/{len(probes)} (misses need manual review before counting)")
+        if not hit:
+            misses.append({"id": p["id"], "question": p["question"], "answer": ans.get(p["id"], "")})
+        if not quiet:
+            print(f"{p['id']} {'PASS' if hit else 'MISS'}  {p['question']}  ->  {ans.get(p['id'], '')}")
+    if not quiet:
+        print(f"M3: {ok}/{len(probes)} (misses need manual review before counting)")
+    return ok, len(probes), misses
+
+
+def batch(state_dir, probes_path, model="sonnet"):
+    from extract_stateless import call  # isolated claude -p call
+    state_dir = state_dir.rstrip("/")
+    out = os.path.join(os.path.dirname(state_dir), "probes_" + os.path.basename(state_dir))
+    os.makedirs(out, exist_ok=True)
+    probes = [json.loads(l) for l in open(probes_path) if l.strip()]
+    summary = {"answering_model": f"claude-cli:{model}", "runs": {}}
+    for f in sorted(glob.glob(os.path.join(state_dir, "*.state.json"))):
+        name = os.path.basename(f)[:-11]
+        ctx = render(json.load(open(f)))
+        answers = {}
+        for p in probes:
+            prompt = (f"{ctx}\n\nAnswer from the memory above only. If memory does not settle it, "
+                      f"say so. Answer in one short sentence.\nQuestion: {p['question']}")
+            answers[p["id"]] = call("claude-cli", model, prompt).strip()
+        path = os.path.join(out, f"{name}.answers.json")
+        json.dump(answers, open(path, "w"), indent=2)
+        ok, n, misses = score(probes_path, path, quiet=True)
+        summary["runs"][name] = {"M3": f"{ok}/{n}", "misses": misses}
+        print(f"{name:40s} M3 {ok}/{n}  misses: {[m['id'] for m in misses]}")
+    json.dump(summary, open(os.path.join(out, "m3_summary.json"), "w"), indent=2)
 
 
 if __name__ == "__main__":
     if sys.argv[1] == "prompts":
         build(*sys.argv[2:5])
+    elif sys.argv[1] == "batch":
+        model = sys.argv[sys.argv.index("--model") + 1] if "--model" in sys.argv else "sonnet"
+        batch(sys.argv[2], sys.argv[3], model)
     else:
         score(*sys.argv[2:4])
