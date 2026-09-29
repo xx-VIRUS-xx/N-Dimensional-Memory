@@ -1,0 +1,11 @@
+{
+  "provider": "claude-cli",
+  "model": "sonnet",
+  "run": 2,
+  "started": "2026-09-29T23:37:14",
+  "temperature": "not settable (CLI default)",
+  "isolation": "fresh empty temp dir per call",
+  "claude_version": "2.1.281 (Claude Code)",
+  "user_claude_md_present": false,
+  "finished": "2026-09-29T23:38:10"
+}

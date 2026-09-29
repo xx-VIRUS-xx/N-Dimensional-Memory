@@ -1,0 +1,70 @@
+{
+  "M1": {
+    "stored_absences": [],
+    "unflagged_inferences": [],
+    "pass": true
+  },
+  "M2": {
+    "run1_definition_rate": 0.744,
+    "M2a_content_traceable_rate": 1.0,
+    "M2b_label_introduced_pegs": [],
+    "untraceable_names": [],
+    "untraceable_content_values": [],
+    "traceable_rate": 1.0,
+    "pass": true
+  },
+  "M4": {
+    "checks": {
+      "MH1": true,
+      "MH2": false,
+      "MH3": false,
+      "MH4": true,
+      "MH5": true,
+      "MH6": true,
+      "MH7": true
+    },
+    "passed": 5,
+    "of": 7
+  },
+  "diagnostics": {
+    "strings_with_peg_links": 0.34,
+    "single_event_pegs": 0.667,
+    "colliding_event_pairs": 23,
+    "buckets": [
+      {
+        "id": "b0",
+        "tick": 4,
+        "state": "open",
+        "candidates": [
+          1,
+          3
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b1",
+        "tick": 4,
+        "state": "unknown_referent",
+        "candidates": [],
+        "resolved_by": null
+      },
+      {
+        "id": "b2",
+        "tick": 5,
+        "state": "unknown_referent",
+        "candidates": [],
+        "resolved_by": null
+      }
+    ],
+    "identity_proposals_pending": 3,
+    "dropped_absences": 0,
+    "model_belief_candidates": 0,
+    "status_counts": {
+      "fact": 35,
+      "claim": 35,
+      "speaker_belief": 9,
+      "open_question": 13,
+      "intent": 2
+    }
+  }
+}
