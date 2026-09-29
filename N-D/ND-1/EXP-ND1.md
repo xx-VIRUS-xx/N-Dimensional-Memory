@@ -74,4 +74,6 @@ If must-haves MH4–MH5 and the attribution and belief probes fail as extraction
 
 **A4: Run 2 protocol.** LLM contract v1: stateless sessions, one sentence per session, the fixed dictionary `dimension_dictionary_v1.json`, a required entity `type`, and unresolved references marked `reference_status: unresolved`. The script is `tools/extract_stateless.py`; the batch runner is `engine/run_batch.py`. Must-haves compare names after normalisation, so valid spellings ("a separate service") pass.
 
+**A5: Claude Code CLI as a provider.** `--provider claude-cli` runs `claude -p` (print mode) once per sentence, from a new empty temporary folder with one turn, using the operator's Claude Code login. Temperature cannot be set, so run-to-run variance is expected and is measured by M5. User-level `~/.claude/CLAUDE.md` is loaded by Claude Code regardless of folder, so it must be moved aside for runs; each run's `.meta.json` records whether it was present, plus the CLI version.
+
 **Known limit found while building run 2:** pronoun candidates are every type-compatible peg in the window, including the entity the pronoun modifies. The candidate lists for "its" are therefore noisy but always open, which is the safe direction. Not tuned on the pilot.

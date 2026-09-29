@@ -7,18 +7,27 @@ Usage:
   python tools/extract_stateless.py --provider anthropic --model <model-id> --run 1
   python tools/extract_stateless.py --provider openai    --model <model-id> --run 1
   python tools/extract_stateless.py --provider ollama    --model <model-name> --run 1
+  python tools/extract_stateless.py --provider claude-cli --model sonnet    --run 1   # uses Claude Code login
   python tools/extract_stateless.py --provider replay    --model babytest   --run 1   # offline smoke test
 
 Keys: ANTHROPIC_API_KEY or OPENAI_API_KEY in the environment. Ollama: local server at
-http://localhost:11434 (override with OLLAMA_URL). Output:
+http://localhost:11434 (override with OLLAMA_URL). claude-cli: the installed `claude`
+command in print mode (-p), logged in with your Claude Code account; each call runs in
+a new empty temporary folder so no project files or project CLAUDE.md are visible.
+User-level ~/.claude/CLAUDE.md is still loaded by Claude Code; move it aside for runs.
+Output:
   ND-1/results/run2/extractions/<provider>__<model>__run<k>.jsonl
 Standard library only.
 """
 import argparse
+import datetime
 import json
 import os
 import re
+import shutil
+import subprocess
 import sys
+import tempfile
 import time
 import urllib.request
 
@@ -74,6 +83,19 @@ def call(provider, model, prompt):
             "model": model, "stream": False, "options": {"temperature": 0},
             "messages": [{"role": "user", "content": prompt}]}).encode(), headers={"content-type": "application/json"})
         return json.load(urllib.request.urlopen(req, timeout=300))["message"]["content"]
+    if provider == "claude-cli":
+        # Fresh session per call: empty temp dir as cwd, one turn, no tools needed.
+        with tempfile.TemporaryDirectory(prefix="nd-stateless-") as empty:
+            cmd = ["claude", "-p", "--output-format", "json", "--max-turns", "1"]
+            if model != "default":
+                cmd += ["--model", model]
+            proc = subprocess.run(cmd, input=prompt, capture_output=True, text=True, cwd=empty, timeout=300)
+        if proc.returncode != 0:
+            raise RuntimeError(f"claude exited {proc.returncode}: {proc.stderr.strip()[:300]}")
+        try:
+            return json.loads(proc.stdout)["result"]
+        except (ValueError, KeyError):
+            return proc.stdout
     raise ValueError(provider)
 
 
@@ -85,7 +107,7 @@ def parse(text):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--provider", required=True, choices=["anthropic", "openai", "ollama", "replay"])
+    ap.add_argument("--provider", required=True, choices=["anthropic", "openai", "ollama", "claude-cli", "replay"])
     ap.add_argument("--model", required=True)
     ap.add_argument("--run", type=int, default=1)
     a = ap.parse_args()
@@ -94,6 +116,19 @@ def main():
     os.makedirs(OUT_DIR, exist_ok=True)
     safe = re.sub(r"[^A-Za-z0-9._-]", "_", a.model)
     out_path = os.path.join(OUT_DIR, f"{a.provider}__{safe}__run{a.run}.jsonl")
+    if a.provider == "claude-cli" and not shutil.which("claude"):
+        sys.exit("claude-cli: the `claude` command was not found on PATH")
+    meta = {"provider": a.provider, "model": a.model, "run": a.run,
+            "started": datetime.datetime.now().isoformat(timespec="seconds"),
+            "temperature": "0" if a.provider in ("anthropic", "openai", "ollama") else "not settable (CLI default)",
+            "isolation": "fresh empty temp dir per call" if a.provider == "claude-cli" else "stateless API call"}
+    if a.provider == "claude-cli":
+        v = subprocess.run(["claude", "--version"], capture_output=True, text=True)
+        meta["claude_version"] = v.stdout.strip()
+        meta["user_claude_md_present"] = os.path.exists(os.path.expanduser("~/.claude/CLAUDE.md"))
+        if meta["user_claude_md_present"]:
+            print("WARNING: ~/.claude/CLAUDE.md exists and will be loaded into every call. "
+                  "Move it aside for a clean run (see instructions).")
     replay = None
     if a.provider == "replay":
         replay = [json.loads(l) for l in open(os.path.join(ROOT, "ND-0", "data", "pilot10.babytest.jsonl"))]
@@ -115,6 +150,8 @@ def main():
                 rec["event_id"] = sid
             out.write(json.dumps(rec) + "\n")
             print(f"{sid}: {len(rec.get('entities', []))} entities")
+    meta["finished"] = datetime.datetime.now().isoformat(timespec="seconds")
+    json.dump(meta, open(out_path[:-6] + ".meta.json", "w"), indent=2)
     print("wrote", out_path)
 
 
