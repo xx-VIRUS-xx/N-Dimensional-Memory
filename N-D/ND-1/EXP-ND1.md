@@ -1,6 +1,6 @@
 # ND-1 — Engine v0: from entity-dimension output to N-D geometry
 
-**Status:** spec frozen, not run.
+**Status:** spec frozen. Run 1 complete (M3 and M5 pending); see `results/run1/REPORT.md`.
 
 ## Question
 

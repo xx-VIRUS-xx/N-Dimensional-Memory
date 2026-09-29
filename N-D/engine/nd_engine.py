@@ -1,0 +1,210 @@
+"""N-D engine v0: stages E1-E6 (EXP-ND1.md).
+
+Input : LLM entity-dimension output, one JSON object per event (ND-0 format).
+Output: engine state (JSON) with pegs, role strings, statuses, buckets, proposals.
+
+Deterministic: no LLM calls. Every rule lives in a table below so it can be
+reviewed and replaced; nothing is inferred outside these tables.
+
+Known v0 limits (reported, not hidden):
+- One event per input record. The engine cannot split compound sentences; that
+  is the interpreter's job.
+- Rule tables are lexical. They are the specified E4/E5/E6 rules for v0, not
+  general language understanding, and ND-1 measures where they fail.
+- The pilot data has no entity `type`, so C9(c) type compatibility is skipped
+  and candidates are matched by name overlap only.
+"""
+import json
+import re
+import sys
+from collections import defaultdict
+
+# ---------------------------------------------------------------- rule tables
+STOP = {"the", "a", "an", "of", "for", "to", "in", "on", "and", "or", "by", "with",
+        "is", "was", "be", "as", "at", "its", "it", "that", "this", "under"}
+
+# E4: absence. A value (or a parenthetical inside it) that only says something is
+# missing is not a fact (C6). Stated absences with content ("no final adoption
+# decision recorded") are kept.
+ABSENCE_WHOLE = re.compile(
+    r"^\s*(not stated|unspecified|unknown|not specified|not recorded|none stated)"
+    r"(\b.*)?$", re.I)
+ABSENCE_PAREN = re.compile(r"\(([^)]*(not stated|unspecified|unknown|not specified)[^)]*)\)", re.I)
+ABSENCE_TAIL = re.compile(r"[;,]\s*[^;,]*\b(is|are|was|were)? ?not (stated|specified)\b.*$", re.I)
+
+# E4: inference. Dimensions or values that express the extractor's own
+# conclusion become model-belief candidates, never facts (C7).
+INFERENCE_DIM = re.compile(r"^(implied_|inferred_|stance_relative_to_)", re.I)
+INFERENCE_VAL = re.compile(r"\b(suggests|implying|implies|indicates)\b", re.I)
+
+# E5: epistemic cues, checked in order; first match wins for a role string.
+SPEAKER_ROLE = re.compile(r"\b(reporter|speaker|said|reported|stated|requester)\b", re.I)
+# E5: when nobody speaks, the owner of a non-fact string is the event's actor.
+ACTOR_ROLE = re.compile(r"\b(questioner|proposer|requester|reviewer|holder|advocate)\b", re.I)
+STATUS_RULES = [
+    ("open_question", None, re.compile(r"\b(questioned|question|whether|uncertain|uncertainty|unresolved|pending|being decided|undecided|ambiguous|unclear)\b", re.I)),
+    ("speaker_belief", "possible", re.compile(r"\b(might|may|possibly|possible|tentative|hypothetical|doubt)\b", re.I)),
+    ("speaker_belief", "certain", re.compile(r"\b(favou?red|prefers?|preference|position)\b", re.I)),
+    ("intent", None, re.compile(r"\b(planned|plans?|asked|requested|request|to be kept)\b", re.I)),
+]
+
+# E6: local ambiguity cues in a value.
+AMBIGUITY = re.compile(r"\b(ambiguous|unclear|either)\b", re.I)
+# E6: definite references the interpreter left unresolved.
+DEFINITE_CUE = re.compile(r"definite reference", re.I)
+# E6 forward: an event that explicitly answers an open bucket.
+RESOLUTION_CUE = re.compile(r"\b(meant|clarified|confirmed that|specifically)\b", re.I)
+WINDOW = 3  # C9(c): last 3 events
+
+
+# ---------------------------------------------------------------- helpers
+def norm(name):
+    s = name.lower().replace("-", " ").replace("_", " ")
+    s = re.sub(r"[^a-z0-9 ]", " ", s)
+    s = re.sub(r"^(the|a|an) ", "", s.strip())
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def content_tokens(text):
+    return [t for t in norm(text).split() if t not in STOP]
+
+
+def contains_peg(text, peg_norm):
+    return re.search(rf"(?<![a-z0-9]){re.escape(peg_norm)}(?![a-z0-9])", norm(text)) is not None
+
+
+# ---------------------------------------------------------------- engine
+def run(records):
+    state = {"events": [], "pegs": {}, "strings": [], "proposals": [], "buckets": [],
+             "dropped_absences": [], "model_belief_candidates": [], "resolutions": []}
+    peg_of = {}            # normalised name -> peg id (display name of first mention)
+
+    for tick, rec in enumerate(records):                      # E1 ticks
+        ev = {"tick": tick, "input_id": rec["event_id"], "participants": [], "speaker": None}
+
+        # E2 peg identity: exact normalised match merges; near matches are proposals.
+        for ent in rec["entities"]:
+            n = norm(ent["name"])
+            if n not in peg_of:
+                for other_n, other in peg_of.items():
+                    a, b = set(n.split()), set(other_n.split())
+                    if (a < b or b < a or len(a & b) / len(a | b) >= 0.5) and a & b - STOP:
+                        state["proposals"].append({"tick": tick, "new": ent["name"], "existing": other,
+                                                   "rule": "token overlap", "status": "needs confirmation"})
+                peg_of[n] = ent["name"]
+                state["pegs"][ent["name"]] = {"first_tick": tick}
+            ev["participants"].append(peg_of[n])
+
+        # E5 speaker: an entity whose role/action marks it as the speaker.
+        for ent in rec["entities"]:
+            d = ent["dimensions"]
+            cue = " ".join(str(d.get(k, "")) for k in ("role_in_event", "role", "action", "communicative_action"))
+            if SPEAKER_ROLE.search(cue):
+                ev["speaker"] = peg_of[norm(ent["name"])]
+                break
+        ev["actor"] = None
+        for ent in rec["entities"]:
+            d = ent["dimensions"]
+            cue = " ".join(str(d.get(k, "")) for k in ("role_in_event", "role"))
+            if ACTOR_ROLE.search(cue) and not ev["speaker"]:
+                ev["actor"] = peg_of[norm(ent["name"])]
+                break
+        state["events"].append(ev)
+
+        for ent in rec["entities"]:
+            peg = peg_of[norm(ent["name"])]
+            for dim, raw in ent["dimensions"].items():
+                val = str(raw)
+
+                # E4 cleaning: strip absence parentheticals/tails; drop pure absences.
+                cleaned = ABSENCE_PAREN.sub("", val)
+                cleaned = ABSENCE_TAIL.sub("", cleaned).strip(" ;,")
+                if not cleaned or ABSENCE_WHOLE.match(cleaned):
+                    state["dropped_absences"].append({"tick": tick, "peg": peg, "dim": dim, "value": val})
+                    continue
+                if INFERENCE_DIM.search(dim) or INFERENCE_VAL.search(cleaned):
+                    state["model_belief_candidates"].append({"tick": tick, "peg": peg, "dim": dim, "value": cleaned,
+                                                             "note": "extractor inference; not a fact (C7)"})
+                    continue
+
+                # E3 value linking: known pegs (seen up to now) named inside the value.
+                links = sorted({p for n, p in peg_of.items() if p != peg and contains_peg(cleaned, n)})
+
+                # E5 status per role string.
+                status, modality = ("claim", "certain") if ev["speaker"] else ("fact", "certain")
+                for st, mod, rx in STATUS_RULES:
+                    if rx.search(f"{dim} {cleaned}"):
+                        status, modality = st, (mod or "certain")
+                        break
+                owner = None if status == "fact" else (ev["speaker"] or ev["actor"] or peg)
+                if status == "intent" and dim in ("plan", "planned_status") and not ev["speaker"]:
+                    owner = peg
+
+                s = {"tick": tick, "peg": peg, "dim": dim, "value": cleaned, "links": links,
+                     "status": status, "modality": modality, "owner": owner}
+                state["strings"].append(s)
+
+                # E6 local ambiguity: the interpreter marked alternatives.
+                if AMBIGUITY.search(cleaned):
+                    # Candidates must be pegs, or short noun phrases (<= 4 words) split on "or".
+                    cands = list(links) or [c.strip(" .;,()'") for c in re.split(r"\bor\b", cleaned.split(":", 1)[-1])
+                                            if 0 < len(c.split()) <= 4]
+                    # head-noun match for "the benchmark" style mentions
+                    for n, p in peg_of.items():
+                        head = n.split()[-1]
+                        if p not in cands and re.search(rf"\bthe {re.escape(head)}\b", val.lower()):
+                            cands.append(p)
+                    if len(set(cands)) < 2:
+                        # Not a referent ambiguity (no alternative pegs): it stays an open-question string.
+                        continue
+                    state["buckets"].append({"id": f"b{len(state['buckets'])}", "tick": tick, "peg": peg, "dim": dim,
+                                             "query": f"{peg}.{dim}", "candidates": sorted(set(cands)),
+                                             "model_belief": None, "state": "open", "origin": "local"})
+
+        # E6 global, backward: definite references the interpreter left open.
+        for ent in rec["entities"]:
+            dims = " ".join(f"{k} {v}" for k, v in ent["dimensions"].items())
+            if not DEFINITE_CUE.search(dims):
+                continue
+            ref = ent["name"]
+            key = [t for t in content_tokens(ref) if t not in {"change", "changes", "thing", "one"}]
+            window = [e for e in state["events"] if tick - WINDOW <= e["tick"] < tick]
+            cands = []
+            for e in window:
+                texts = e["participants"] + [s["value"] for s in state["strings"] if s["tick"] == e["tick"]]
+                if key and any(all(k in norm(t).split() for k in key) for t in texts):
+                    cands.append(e["tick"])
+            b = {"id": f"b{len(state['buckets'])}", "tick": tick, "peg": peg_of[norm(ref)], "dim": "reference",
+                 "query": f"which earlier event is '{ref}'?", "candidates": cands, "model_belief": None,
+                 "origin": "global-backward"}
+            if len(cands) == 1:
+                b.update(state="resolved", resolved_by="engine", evidence_ticks=cands)
+                state["resolutions"].append({"bucket": b["id"], "by": "engine", "rule": "C9(c) single candidate",
+                                             "value": cands[0], "evidence_ticks": cands, "at_tick": tick})
+            elif not cands:
+                b.update(state="unknown_referent")
+            else:
+                b.update(state="open")
+            state["buckets"].append(b)
+
+        # E6 global, forward: does this event explicitly answer an open bucket?
+        here = [s for s in state["strings"] if s["tick"] == tick]
+        for b in state["buckets"]:
+            if b["state"] != "open" or b["tick"] == tick:
+                continue
+            for s in here:
+                hit = [c for c in b["candidates"] if isinstance(c, str) and contains_peg(s["value"], norm(c))]
+                if len(hit) == 1 and RESOLUTION_CUE.search(s["value"]):
+                    b.update(state="resolved", resolved_by="explicit statement", evidence_ticks=[tick])
+                    state["resolutions"].append({"bucket": b["id"], "by": "explicit statement", "value": hit[0],
+                                                 "evidence_ticks": [tick], "at_tick": tick})
+    return state
+
+
+if __name__ == "__main__":
+    recs = [json.loads(l) for l in open(sys.argv[1]) if l.strip()]
+    out = run(recs)
+    json.dump(out, open(sys.argv[2], "w"), indent=2)
+    print(f"events={len(out['events'])} pegs={len(out['pegs'])} strings={len(out['strings'])} "
+          f"buckets={len(out['buckets'])} proposals={len(out['proposals'])} "
+          f"dropped_absences={len(out['dropped_absences'])} model_belief_candidates={len(out['model_belief_candidates'])}")

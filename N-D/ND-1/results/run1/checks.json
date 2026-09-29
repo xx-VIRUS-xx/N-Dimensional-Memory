@@ -1,0 +1,143 @@
+{
+  "M1": {
+    "stored_absences": [
+      "8:final adoption decision.existence"
+    ],
+    "unflagged_inferences": [],
+    "pass": false
+  },
+  "M2": {
+    "traceable_rate": 0.673,
+    "untraceable_names": [
+      "4:the proposal",
+      "5:PostgreSQL"
+    ],
+    "untraceable_values": [
+      "0:Alice.role_in_event = proposer",
+      "0:Alice.temporal_position = past (action completed)",
+      "0:PostgreSQL.role_in_event = object of proposal",
+      "0:payments platform.role_in_event = subject for which a technology was proposed",
+      "0:architecture discussion.role_in_event = setting in which the proposal happened",
+      "0:architecture discussion.temporal_position = past",
+      "1:Bob.role_in_event = questioner",
+      "1:Bob.temporal_position = past",
+      "1:PostgreSQL.capability_status = unresolved",
+      "1:projected transaction load.role_in_event = workload referenced in the question",
+      "1:projected transaction load.temporal_status = projected, meaning it is forecast rather than current",
+      "2:Alice.role_in_event = speaker and requester",
+      "2:benchmark results.availability = available",
+      "2:the team.role_in_event = recipient of Alice's request",
+      "2:PostgreSQL.role_in_event = subject of the requested test",
+      "2:PostgreSQL.test_status = requested, not yet performed",
+      "3:Carol.role_in_event = reporter",
+      "3:Carol.temporal_position_of_action = past",
+      "3:Redis.epistemic_status = asserted by Carol; not independently confirmed in the event",
+      "3:session caching.role_in_event = use case",
+      "3:session caching.status = existing / pre-existing (as reported)",
+      "3:payments platform.role_in_event = system context",
+      "3:payments platform.epistemic_status = state described via Carol's report",
+      "4:Bob.role = proposer",
+      "4:Bob.temporal_position = past",
+      "4:Redis.adoption_status = proposed; no decision stated",
+      "4:rate limiting.role = function or purpose of the proposal",
+      "4:the proposal.temporal_position = past",
+      "4:payments platform.role = possible target of the proposal",
+      "4:payments platform.applicability_status = unresolved",
+      "4:separate service.role = possible target of the proposal",
+      "4:separate service.applicability_status = unresolved",
+      "5:Alice.role_in_event = reporter",
+      "5:Alice.temporal_position = past (reporting already occurred)",
+      "5:peak-load benchmark.target_system = PostgreSQL",
+      "5:peak-load benchmark.outcome = successful",
+      "5:failover behavior.owner = ambiguous: the event does not make clear whether 'its' means the benchmark or PostgreSQL",
+      "5:failover behavior.persistence = uncertainty continued ('remained')",
+      "5:failover behavior.relation_to_benchmark_success = contrasted with the successful completion ('although')",
+      "6:Bob.role_in_event = speaker",
+      "6:Bob.epistemic_stance = tentative (expressed possibility with 'might')",
+      "6:rate-limiting change.role_in_event = subject of Bob's statement",
+      "6:rate-limiting change.certainty_of_consequence = uncertain, only possible",
+      "6:deployment plan.role_in_event = object that might be needed",
+      "6:deployment plan.status = hypothetical; not confirmed as required",
+      "6:deployment plan.dependency = possible requirement arising from the rate-limiting change",
+      "7:Carol.role_in_event = speaker / source of the report",
+      "7:Carol.action = said (reported the team's plan)",
+      "7:Carol.temporal_position_of_statement = past",
+      "7:payments platform team.role_in_event = subject of Carol's report; holder of the plan",
+      "7:payments platform team.decision_status = undecided on database changes at the time described",
+      "7:payments platform team.epistemic_source = attributed via Carol's statement, not directly asserted",
+      "7:payments platform team.temporal_position_of_plan = past tense ('planned')",
+      "7:Redis.planned_status = to be kept",
+      "7:caching.role_in_event = purpose for which Redis is kept",
+      "7:database changes.role_in_event = matter under decision",
+      "7:database changes.decision_status = pending / being decided",
+      "8:Alice.role_in_event = proposer",
+      "8:PostgreSQL.role_in_event = subject of proposal",
+      "8:failover test.role_in_event = temporal reference point",
+      "8:failover test.temporal_status = completed before the proposal",
+      "8:final adoption decision.role_in_event = expected outcome that is missing",
+      "8:final adoption decision.existence = ambiguous (a decision may not have been made, or may have been made but not recorded)",
+      "9:separate rate-limiting service.role = proposed architectural option",
+      "9:Redis.role = technology discussed during the review"
+    ],
+    "pass": false
+  },
+  "M4": {
+    "checks": {
+      "MH1": true,
+      "MH2": true,
+      "MH3": true,
+      "MH4": true,
+      "MH5": true,
+      "MH6": true,
+      "MH7": true
+    },
+    "passed": 7,
+    "of": 7
+  },
+  "diagnostics": {
+    "strings_with_peg_links": 0.559,
+    "single_event_pegs": 0.769,
+    "colliding_event_pairs": 24,
+    "buckets": [
+      {
+        "id": "b0",
+        "tick": 4,
+        "state": "open",
+        "candidates": [
+          "payments platform",
+          "separate service"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b1",
+        "tick": 5,
+        "state": "open",
+        "candidates": [
+          "PostgreSQL",
+          "peak-load benchmark"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b2",
+        "tick": 6,
+        "state": "resolved",
+        "candidates": [
+          4
+        ],
+        "resolved_by": "engine"
+      }
+    ],
+    "identity_proposals_pending": 7,
+    "dropped_absences": 13,
+    "model_belief_candidates": 6,
+    "status_counts": {
+      "fact": 66,
+      "claim": 53,
+      "speaker_belief": 11,
+      "open_question": 19,
+      "intent": 12
+    }
+  }
+}
