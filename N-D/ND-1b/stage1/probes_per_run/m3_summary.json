@@ -1,0 +1,85 @@
+{
+  "answering_model": "claude-cli:sonnet",
+  "runs": {
+    "claude-cli__haiku__run1": {
+      "M3": "10/25",
+      "misses": [
+        {
+          "id": "q00",
+          "question": "When did Caroline go to the LGBTQ support group?",
+          "answer": "Caroline went to the LGBTQ support group the day before t2 (stated as \"yesterday\" relative to that message)."
+        },
+        {
+          "id": "q01",
+          "question": "When did Melanie paint a sunrise?",
+          "answer": "Melanie painted that lake sunrise last year (t13)."
+        },
+        {
+          "id": "q02",
+          "question": "What fields would Caroline be likely to pursue in her educaton?",
+          "answer": "Counseling or working in mental health (t10)."
+        },
+        {
+          "id": "q05",
+          "question": "When did Melanie run a charity race?",
+          "answer": "Melanie ran the charity race for mental health last Saturday (t18)."
+        },
+        {
+          "id": "q06",
+          "question": "When is Melanie planning on going camping?",
+          "answer": "Melanie is planning to go camping next month (per t24), but the memory doesn't specify a relative date from which \"next month\" is anchored, so an exact month can't be determined."
+        },
+        {
+          "id": "q08",
+          "question": "When did Caroline give a speech at a school?",
+          "answer": "Caroline gave the talk at the school event last week (t35), which was \"last week\" relative to t35 \u2014 memory doesn't give an absolute date."
+        },
+        {
+          "id": "q09",
+          "question": "When did Caroline meet up with her friends, family, and mentors?",
+          "answer": "Last week (t45), relative to the conversation."
+        },
+        {
+          "id": "q12",
+          "question": "What did Melanie realize after the charity race?",
+          "answer": "Memory doesn't say directly \u2014 the charity race was mentioned at t18, but Melanie's realization about self-care being important is attributed at t20, without an explicit causal link stated between the two."
+        },
+        {
+          "id": "q13",
+          "question": "How does Melanie prioritize self-care?",
+          "answer": "Melanie prioritizes self-care by carving out daily me-time (running, reading, or playing violin) \u2014 t20, t22."
+        },
+        {
+          "id": "q14",
+          "question": "What are Caroline's plans for the summer?",
+          "answer": "Memory doesn't settle this directly for \"summer\" specifically \u2014 Caroline's stated plans are continuing her education/checking career options (t8), researching and pursuing adoption to give a home to kids in need (t25\u2013t33), and staying connected with her support network of friends/family/mentors \u2014 none explicitly tagged as \"summer.\""
+        },
+        {
+          "id": "q15",
+          "question": "What type of individuals does the adoption agency Caroline is considering support?",
+          "answer": "The adoption agency supports LGBTQ+ folks (t29)."
+        },
+        {
+          "id": "q16",
+          "question": "Why did Caroline choose the adoption agency?",
+          "answer": "Because their inclusivity and support really spoke to her (t29)."
+        },
+        {
+          "id": "q17",
+          "question": "What is Caroline excited about in the adoption process?",
+          "answer": "Memory doesn't settle this precisely \u2014 the closest is t25/t27/t31: Caroline is excited/hopeful about giving a loving home to kids who need one through adoption (a single-parent family for kids in need)."
+        },
+        {
+          "id": "q18",
+          "question": "What does Melanie think about Caroline's decision to adopt?",
+          "answer": "Melanie thinks Caroline is kind and would be an awesome mom, and expresses encouragement, praise, and wishes her good luck in creating a family for those kids."
+        },
+        {
+          "id": "q19",
+          "question": "How long have Mel and her husband been married?",
+          "answer": "Memory doesn't settle it: t50 says Melanie put the dress on 5 years ago, but nothing in memory explicitly states how long Mel and her husband have been married."
+        }
+      ]
+    }
+  }
+}

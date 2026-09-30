@@ -1,0 +1,78 @@
+{
+  "runs": [
+    {
+      "run": "claude-cli__haiku__run1",
+      "M1_pass": true,
+      "input_issues": 0,
+      "M2a": 0.968,
+      "M2b_new_pegs": 0,
+      "M2_pass": true,
+      "M4": "0/0",
+      "M4_failed": [],
+      "buckets": [
+        [
+          3,
+          "open"
+        ],
+        [
+          4,
+          "resolved"
+        ],
+        [
+          5,
+          "open"
+        ],
+        [
+          7,
+          "open"
+        ],
+        [
+          11,
+          "open"
+        ],
+        [
+          12,
+          "open"
+        ],
+        [
+          22,
+          "open"
+        ],
+        [
+          24,
+          "open"
+        ],
+        [
+          28,
+          "open"
+        ],
+        [
+          29,
+          "open"
+        ],
+        [
+          30,
+          "open"
+        ],
+        [
+          34,
+          "open"
+        ],
+        [
+          54,
+          "open"
+        ]
+      ],
+      "colliding_pairs": 61
+    }
+  ],
+  "M5": {
+    "hub_pegs_excluded": [
+      "caroline",
+      "melanie"
+    ],
+    "collision_jaccard_min": 1.0,
+    "bucket_outcome_jaccard_min": 1.0,
+    "runs": 1
+  }
+}

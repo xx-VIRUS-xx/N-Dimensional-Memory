@@ -1,0 +1,12 @@
+{
+  "provider": "claude-cli",
+  "model": "haiku",
+  "run": 1,
+  "source": "ND-1b/data/source.jsonl",
+  "started": "2026-09-30T17:35:19",
+  "temperature": "not settable (CLI default)",
+  "isolation": "fresh empty temp dir per call",
+  "claude_version": "2.1.281 (Claude Code)",
+  "user_claude_md_present": false,
+  "finished": "2026-09-30T18:30:49"
+}

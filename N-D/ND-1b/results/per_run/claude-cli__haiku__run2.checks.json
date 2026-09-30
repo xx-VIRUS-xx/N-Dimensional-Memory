@@ -1,0 +1,268 @@
+{
+  "M1": {
+    "stored_absences": [],
+    "unflagged_inferences": [],
+    "input_issues": [
+      {
+        "tick": 25,
+        "entity": "adoption agencies",
+        "issue": "entity without dimensions"
+      }
+    ],
+    "pass": false
+  },
+  "M2": {
+    "run1_definition_rate": 0.688,
+    "M2a_content_traceable_rate": 0.973,
+    "M2b_label_introduced_pegs": [],
+    "untraceable_names": [
+      "8:education",
+      "27:the adoption agency",
+      "47:Caroline's home country",
+      "51:Melanie's spouse"
+    ],
+    "untraceable_content_values": [
+      "5:Melanie.action = expressed enthusiasm for a painting and approval of finding a helpful group; asked about its impact",
+      "9:Melanie.action = asking about jobs",
+      "30:Melanie.action = expressing approval and asking about excitement",
+      "30:adoption process.context = subject of inquiry about Caroline's excitement",
+      "47:Caroline.position = grateful",
+      "51:Caroline.action = offered congratulations and wishes"
+    ],
+    "traceable_rate": 0.973,
+    "pass": true
+  },
+  "M4": {
+    "checks": {},
+    "passed": 0,
+    "of": 0,
+    "note": "no must-haves for this corpus"
+  },
+  "diagnostics": {
+    "strings_with_peg_links": 0.253,
+    "single_event_pegs": 0.875,
+    "colliding_event_pairs": 1599,
+    "buckets": [
+      {
+        "id": "b0",
+        "tick": 3,
+        "state": "resolved",
+        "candidates": [
+          "LGBTQ support group"
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b1",
+        "tick": 4,
+        "state": "resolved",
+        "candidates": [
+          2
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b2",
+        "tick": 5,
+        "state": "resolved",
+        "candidates": [
+          2
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b3",
+        "tick": 7,
+        "state": "open",
+        "candidates": [
+          "the transgender stories",
+          "the support",
+          "painting",
+          "group",
+          "the support group"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b4",
+        "tick": 11,
+        "state": "open",
+        "candidates": [
+          "empathy and understanding",
+          "people you work with",
+          "education",
+          "career options"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b5",
+        "tick": 12,
+        "state": "open",
+        "candidates": [
+          "empathy and understanding",
+          "people you work with"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b6",
+        "tick": 12,
+        "state": "open",
+        "candidates": [
+          "empathy and understanding",
+          "people you work with"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b7",
+        "tick": 22,
+        "state": "open",
+        "candidates": [
+          "me-time",
+          "my fam",
+          "charity race",
+          "mental health",
+          "The event",
+          "self-care",
+          "my family"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b8",
+        "tick": 23,
+        "state": "open",
+        "candidates": [
+          "The event",
+          "self-care",
+          "my family",
+          "me-time",
+          "my fam"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b9",
+        "tick": 24,
+        "state": "open",
+        "candidates": [
+          "summer break",
+          "camping",
+          "summer",
+          "self-care",
+          "me-time",
+          "my fam"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b10",
+        "tick": 28,
+        "state": "open",
+        "candidates": [
+          "adoption agencies",
+          "kids in need",
+          "future family",
+          "the adoption agency"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b11",
+        "tick": 29,
+        "state": "open",
+        "candidates": [
+          "Caroline",
+          "LGBTQ+ folks",
+          "Melanie",
+          "Mel",
+          "the kids",
+          "friends",
+          "mentors",
+          "the adoption agency"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b12",
+        "tick": 34,
+        "state": "open",
+        "candidates": [
+          "Melanie",
+          "Caroline",
+          "the kids"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b13",
+        "tick": 37,
+        "state": "resolved",
+        "candidates": [
+          35
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b14",
+        "tick": 39,
+        "state": "open",
+        "candidates": [
+          "our experiences",
+          "love and support",
+          "our stories",
+          "community of hope",
+          "your event",
+          "LGBTQ community",
+          "the audience",
+          "trans community"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b15",
+        "tick": 42,
+        "state": "resolved",
+        "candidates": [
+          39
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b16",
+        "tick": 54,
+        "state": "open",
+        "candidates": [
+          "games",
+          "good food",
+          "Family moments",
+          "life",
+          "a great day"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b17",
+        "tick": 55,
+        "state": "open",
+        "candidates": [
+          52,
+          54
+        ],
+        "resolved_by": null
+      }
+    ],
+    "identity_proposals_pending": 39,
+    "dropped_absences": 0,
+    "model_belief_candidates": 0,
+    "status_counts": {
+      "fact": 0,
+      "claim": 364,
+      "speaker_belief": 34,
+      "open_question": 23,
+      "intent": 2
+    }
+  }
+}

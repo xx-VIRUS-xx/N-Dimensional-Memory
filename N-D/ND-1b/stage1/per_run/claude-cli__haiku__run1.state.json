@@ -1,0 +1,6138 @@
+{
+  "input_issues": [],
+  "engine_version": "v0.2.1",
+  "events": [
+    {
+      "tick": 0,
+      "input_id": "t0",
+      "participants": [
+        "Caroline",
+        "Melanie"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 1,
+      "input_id": "t1",
+      "participants": [
+        "Melanie",
+        "Caroline",
+        "the kids"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 2,
+      "input_id": "t2",
+      "participants": [
+        "Caroline",
+        "LGBTQ support group"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 3,
+      "input_id": "t3",
+      "participants": [
+        "Melanie",
+        "Caroline",
+        "that",
+        "inspiring stories"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 4,
+      "input_id": "t4",
+      "participants": [
+        "Caroline",
+        "transgender stories",
+        "the support"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 5,
+      "input_id": "t5",
+      "participants": [
+        "Melanie",
+        "Caroline",
+        "that painting",
+        "a helpful group"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 6,
+      "input_id": "t6",
+      "participants": [
+        "The support group",
+        "Caroline"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 7,
+      "input_id": "t7",
+      "participants": [
+        "Melanie",
+        "Caroline",
+        "that"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 8,
+      "input_id": "t8",
+      "participants": [
+        "Caroline"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 9,
+      "input_id": "t9",
+      "participants": [
+        "Melanie",
+        "Caroline"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 10,
+      "input_id": "t10",
+      "participants": [
+        "Caroline",
+        "counseling",
+        "mental health",
+        "those with similar issues"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 11,
+      "input_id": "t11",
+      "participants": [
+        "Melanie",
+        "Caroline",
+        "the people you work with",
+        "this"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 12,
+      "input_id": "t12",
+      "participants": [
+        "Caroline",
+        "Melanie",
+        "that",
+        "the painting"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 13,
+      "input_id": "t13",
+      "participants": [
+        "Melanie",
+        "that lake sunrise"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 14,
+      "input_id": "t14",
+      "participants": [
+        "Caroline",
+        "Melanie",
+        "the colors",
+        "the painting"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 15,
+      "input_id": "t15",
+      "participants": [
+        "Melanie",
+        "Caroline",
+        "the painting"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 16,
+      "input_id": "t16",
+      "participants": [
+        "Caroline",
+        "Melanie",
+        "ourselves"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 17,
+      "input_id": "t17",
+      "participants": [
+        "Melanie",
+        "Caroline",
+        "the kids"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 18,
+      "input_id": "t18",
+      "participants": [
+        "Melanie",
+        "Caroline",
+        "charity race for mental health"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 19,
+      "input_id": "t19",
+      "participants": [
+        "Caroline",
+        "Melanie",
+        "charity race",
+        "mental health"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 20,
+      "input_id": "t20",
+      "participants": [
+        "Melanie",
+        "Caroline",
+        "the event",
+        "self-care",
+        "my family"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 21,
+      "input_id": "t21",
+      "participants": [
+        "Caroline",
+        "Melanie",
+        "self-care"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 22,
+      "input_id": "t22",
+      "participants": [
+        "Melanie",
+        "it",
+        "me-time",
+        "fam"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 23,
+      "input_id": "t23",
+      "participants": [
+        "Caroline",
+        "Mel"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 24,
+      "input_id": "t24",
+      "participants": [
+        "Melanie",
+        "Caroline",
+        "it",
+        "the kids",
+        "camping"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 25,
+      "input_id": "t25",
+      "participants": [
+        "Caroline",
+        "adoption agencies",
+        "the kids"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 26,
+      "input_id": "t26",
+      "participants": [
+        "Melanie",
+        "Caroline",
+        "kids in need"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 27,
+      "input_id": "t27",
+      "participants": [
+        "Caroline",
+        "Mel",
+        "the kids",
+        "friends and mentors",
+        "adoption agencies"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 28,
+      "input_id": "t28",
+      "participants": [
+        "Melanie",
+        "Caroline",
+        "that agency"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 29,
+      "input_id": "t29",
+      "participants": [
+        "Caroline",
+        "them",
+        "LGBTQ+ folks"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 30,
+      "input_id": "t30",
+      "participants": [
+        "Melanie",
+        "Caroline",
+        "that",
+        "inclusivity",
+        "the support",
+        "adoption process"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 31,
+      "input_id": "t31",
+      "participants": [
+        "Caroline",
+        "kids who need one"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 32,
+      "input_id": "t32",
+      "participants": [
+        "Melanie",
+        "Caroline",
+        "those kids"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 33,
+      "input_id": "t33",
+      "participants": [
+        "Caroline",
+        "Melanie",
+        "kind words",
+        "these kids"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 34,
+      "input_id": "t34",
+      "participants": [
+        "Melanie",
+        "Caroline",
+        "they"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 35,
+      "input_id": "t35",
+      "participants": [
+        "Caroline",
+        "Melanie",
+        "school event",
+        "students",
+        "LGBTQ community",
+        "transgender journey"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 36,
+      "input_id": "t36",
+      "participants": [
+        "Melanie",
+        "Caroline",
+        "your event",
+        "LGBTQ community",
+        "your transition"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 37,
+      "input_id": "t37",
+      "participants": [
+        "Caroline",
+        "Mel",
+        "audience",
+        "trans community",
+        "talk"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 38,
+      "input_id": "t38",
+      "participants": [
+        "Melanie",
+        "Caroline",
+        "others",
+        "trans community",
+        "inclusivity and acceptance"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 39,
+      "input_id": "t39",
+      "participants": [
+        "Caroline",
+        "Melanie",
+        "kind words",
+        "experiences",
+        "understanding and acceptance",
+        "love and support",
+        "community of hope"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 40,
+      "input_id": "t40",
+      "participants": [
+        "Melanie",
+        "Caroline",
+        "our own stories",
+        "people",
+        "others",
+        "vulnerable moments",
+        "your voice",
+        "love, acceptance, and hope"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 41,
+      "input_id": "t41",
+      "participants": [
+        "Caroline",
+        "Melanie",
+        "others",
+        "more inclusive and understanding world"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 42,
+      "input_id": "t42",
+      "participants": [
+        "Melanie",
+        "Caroline",
+        "journey",
+        "impact"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 43,
+      "input_id": "t43",
+      "participants": [
+        "Caroline",
+        "Mel",
+        "love",
+        "understanding",
+        "the support",
+        "encouragement",
+        "life's challenges"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 44,
+      "input_id": "t44",
+      "participants": [
+        "Melanie",
+        "Caroline",
+        "family"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 45,
+      "input_id": "t45",
+      "participants": [
+        "Caroline",
+        "Melanie",
+        "friends",
+        "family",
+        "mentors",
+        "we"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 46,
+      "input_id": "t46",
+      "participants": [
+        "Melanie",
+        "Caroline",
+        "photo",
+        "support system"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 47,
+      "input_id": "t47",
+      "participants": [
+        "Caroline",
+        "these friends",
+        "Melanie",
+        "that tough breakup"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 48,
+      "input_id": "t48",
+      "participants": [
+        "Melanie",
+        "husband",
+        "the kids"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 49,
+      "input_id": "t49",
+      "participants": [
+        "Caroline",
+        "Melanie",
+        "family pic"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 50,
+      "input_id": "t50",
+      "participants": [
+        "Melanie",
+        "Caroline",
+        "this dress"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 51,
+      "input_id": "t51",
+      "participants": [
+        "Caroline",
+        "Melanie"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 52,
+      "input_id": "t52",
+      "participants": [
+        "Melanie",
+        "Caroline",
+        "kind words",
+        "family",
+        "moments",
+        "happy years"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 53,
+      "input_id": "t53",
+      "participants": [
+        "Caroline",
+        "Melanie",
+        "you all"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 54,
+      "input_id": "t54",
+      "participants": [
+        "Melanie",
+        "it",
+        "Family moments"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 55,
+      "input_id": "t55",
+      "participants": [
+        "Caroline",
+        "Mel",
+        "moments"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    },
+    {
+      "tick": 56,
+      "input_id": "t56",
+      "participants": [
+        "Melanie",
+        "Caroline",
+        "family"
+      ],
+      "speaker": "Melanie",
+      "actor": null
+    },
+    {
+      "tick": 57,
+      "input_id": "t57",
+      "participants": [
+        "Caroline",
+        "Melanie",
+        "loved ones",
+        "family"
+      ],
+      "speaker": "Caroline",
+      "actor": null
+    }
+  ],
+  "pegs": {
+    "Caroline": {
+      "first_tick": 0,
+      "type": "person"
+    },
+    "Melanie": {
+      "first_tick": 0,
+      "type": "person"
+    },
+    "the kids": {
+      "first_tick": 1,
+      "type": "other"
+    },
+    "LGBTQ support group": {
+      "first_tick": 2,
+      "type": "org"
+    },
+    "that": {
+      "first_tick": 3,
+      "type": "other"
+    },
+    "inspiring stories": {
+      "first_tick": 3,
+      "type": "other"
+    },
+    "transgender stories": {
+      "first_tick": 4,
+      "type": "other"
+    },
+    "the support": {
+      "first_tick": 4,
+      "type": "other"
+    },
+    "that painting": {
+      "first_tick": 5,
+      "type": "other"
+    },
+    "a helpful group": {
+      "first_tick": 5,
+      "type": "other"
+    },
+    "The support group": {
+      "first_tick": 6,
+      "type": "org"
+    },
+    "counseling": {
+      "first_tick": 10,
+      "type": "system"
+    },
+    "mental health": {
+      "first_tick": 10,
+      "type": "system"
+    },
+    "those with similar issues": {
+      "first_tick": 10,
+      "type": "other"
+    },
+    "the people you work with": {
+      "first_tick": 11,
+      "type": "person"
+    },
+    "this": {
+      "first_tick": 11,
+      "type": "other"
+    },
+    "the painting": {
+      "first_tick": 12,
+      "type": "other"
+    },
+    "that lake sunrise": {
+      "first_tick": 13,
+      "type": "other"
+    },
+    "the colors": {
+      "first_tick": 14,
+      "type": "other"
+    },
+    "ourselves": {
+      "first_tick": 16,
+      "type": "other"
+    },
+    "charity race for mental health": {
+      "first_tick": 18,
+      "type": "other"
+    },
+    "charity race": {
+      "first_tick": 19,
+      "type": "event"
+    },
+    "the event": {
+      "first_tick": 20,
+      "type": "other"
+    },
+    "self-care": {
+      "first_tick": 20,
+      "type": "other"
+    },
+    "my family": {
+      "first_tick": 20,
+      "type": "other"
+    },
+    "it": {
+      "first_tick": 22,
+      "type": "other"
+    },
+    "me-time": {
+      "first_tick": 22,
+      "type": "other"
+    },
+    "fam": {
+      "first_tick": 22,
+      "type": "person"
+    },
+    "Mel": {
+      "first_tick": 23,
+      "type": "person"
+    },
+    "camping": {
+      "first_tick": 24,
+      "type": "other"
+    },
+    "adoption agencies": {
+      "first_tick": 25,
+      "type": "org"
+    },
+    "kids in need": {
+      "first_tick": 26,
+      "type": "other"
+    },
+    "friends and mentors": {
+      "first_tick": 27,
+      "type": "friends and mentors"
+    },
+    "that agency": {
+      "first_tick": 28,
+      "type": "other"
+    },
+    "them": {
+      "first_tick": 29,
+      "type": "other"
+    },
+    "LGBTQ+ folks": {
+      "first_tick": 29,
+      "type": "other"
+    },
+    "inclusivity": {
+      "first_tick": 30,
+      "type": "other"
+    },
+    "adoption process": {
+      "first_tick": 30,
+      "type": "system"
+    },
+    "kids who need one": {
+      "first_tick": 31,
+      "type": "person"
+    },
+    "those kids": {
+      "first_tick": 32,
+      "type": "person"
+    },
+    "kind words": {
+      "first_tick": 33,
+      "type": "other"
+    },
+    "these kids": {
+      "first_tick": 33,
+      "type": "other"
+    },
+    "they": {
+      "first_tick": 34,
+      "type": "other"
+    },
+    "school event": {
+      "first_tick": 35,
+      "type": "event"
+    },
+    "students": {
+      "first_tick": 35,
+      "type": "person"
+    },
+    "LGBTQ community": {
+      "first_tick": 35,
+      "type": "community"
+    },
+    "transgender journey": {
+      "first_tick": 35,
+      "type": "journey"
+    },
+    "your event": {
+      "first_tick": 36,
+      "type": "event"
+    },
+    "your transition": {
+      "first_tick": 36,
+      "type": "transition"
+    },
+    "audience": {
+      "first_tick": 37,
+      "type": "other"
+    },
+    "trans community": {
+      "first_tick": 37,
+      "type": "other"
+    },
+    "talk": {
+      "first_tick": 37,
+      "type": "other"
+    },
+    "others": {
+      "first_tick": 38,
+      "type": "person"
+    },
+    "inclusivity and acceptance": {
+      "first_tick": 38,
+      "type": "other"
+    },
+    "experiences": {
+      "first_tick": 39,
+      "type": "other"
+    },
+    "understanding and acceptance": {
+      "first_tick": 39,
+      "type": "other"
+    },
+    "love and support": {
+      "first_tick": 39,
+      "type": "other"
+    },
+    "community of hope": {
+      "first_tick": 39,
+      "type": "other"
+    },
+    "our own stories": {
+      "first_tick": 40,
+      "type": "other"
+    },
+    "people": {
+      "first_tick": 40,
+      "type": "other"
+    },
+    "vulnerable moments": {
+      "first_tick": 40,
+      "type": "other"
+    },
+    "your voice": {
+      "first_tick": 40,
+      "type": "other"
+    },
+    "love, acceptance, and hope": {
+      "first_tick": 40,
+      "type": "other"
+    },
+    "more inclusive and understanding world": {
+      "first_tick": 41,
+      "type": "other"
+    },
+    "journey": {
+      "first_tick": 42,
+      "type": "other"
+    },
+    "impact": {
+      "first_tick": 42,
+      "type": "other"
+    },
+    "love": {
+      "first_tick": 43,
+      "type": "other"
+    },
+    "understanding": {
+      "first_tick": 43,
+      "type": "other"
+    },
+    "encouragement": {
+      "first_tick": 43,
+      "type": "other"
+    },
+    "life's challenges": {
+      "first_tick": 43,
+      "type": "other"
+    },
+    "family": {
+      "first_tick": 44,
+      "type": "other"
+    },
+    "friends": {
+      "first_tick": 45,
+      "type": "person"
+    },
+    "mentors": {
+      "first_tick": 45,
+      "type": "person"
+    },
+    "we": {
+      "first_tick": 45,
+      "type": "person"
+    },
+    "photo": {
+      "first_tick": 46,
+      "type": "other"
+    },
+    "support system": {
+      "first_tick": 46,
+      "type": "other"
+    },
+    "these friends": {
+      "first_tick": 47,
+      "type": "other"
+    },
+    "that tough breakup": {
+      "first_tick": 47,
+      "type": "other"
+    },
+    "husband": {
+      "first_tick": 48,
+      "type": "person"
+    },
+    "family pic": {
+      "first_tick": 49,
+      "type": "family pic"
+    },
+    "this dress": {
+      "first_tick": 50,
+      "type": "other"
+    },
+    "moments": {
+      "first_tick": 52,
+      "type": "other"
+    },
+    "happy years": {
+      "first_tick": 52,
+      "type": "other"
+    },
+    "you all": {
+      "first_tick": 53,
+      "type": "person"
+    },
+    "Family moments": {
+      "first_tick": 54,
+      "type": "other"
+    },
+    "loved ones": {
+      "first_tick": 57,
+      "type": "people"
+    }
+  },
+  "strings": [
+    {
+      "tick": 0,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 0,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 1,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 1,
+      "peg": "Melanie",
+      "dim": "status",
+      "value": "swamped with the kids & work",
+      "links": [
+        "the kids"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 1,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 1,
+      "peg": "the kids",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 2,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 2,
+      "peg": "Caroline",
+      "dim": "action",
+      "value": "went to a LGBTQ support group",
+      "links": [
+        "LGBTQ support group"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 2,
+      "peg": "Caroline",
+      "dim": "temporal_position",
+      "value": "yesterday",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 2,
+      "peg": "LGBTQ support group",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 2,
+      "peg": "LGBTQ support group",
+      "dim": "status",
+      "value": "powerful",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 3,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 3,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "expressed enthusiasm about something and asked Caroline what happened and whether she heard inspiring stories",
+      "links": [
+        "Caroline",
+        "inspiring stories"
+      ],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 3,
+      "peg": "Melanie",
+      "dim": "epistemic_stance",
+      "value": "enthusiastic",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 3,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 3,
+      "peg": "that",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 3,
+      "peg": "inspiring stories",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 4,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 4,
+      "peg": "Caroline",
+      "dim": "position",
+      "value": "happy and thankful for all the support",
+      "links": [
+        "the support"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 4,
+      "peg": "transgender stories",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 4,
+      "peg": "transgender stories",
+      "dim": "action",
+      "value": "were so inspiring",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 4,
+      "peg": "the support",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 5,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker, questioner",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 5,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "loves that painting",
+      "links": [
+        "that",
+        "that painting"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 5,
+      "peg": "Melanie",
+      "dim": "epistemic_stance",
+      "value": "certain, enthusiastic",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 5,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 5,
+      "peg": "Caroline",
+      "dim": "action",
+      "value": "found a helpful group",
+      "links": [
+        "a helpful group"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 5,
+      "peg": "that painting",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 5,
+      "peg": "a helpful group",
+      "dim": "type",
+      "value": "group",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 5,
+      "peg": "a helpful group",
+      "dim": "function",
+      "value": "helpful",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 6,
+      "peg": "The support group",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 6,
+      "peg": "The support group",
+      "dim": "action",
+      "value": "made me feel accepted and given me courage to embrace myself",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 6,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 6,
+      "peg": "Caroline",
+      "dim": "status",
+      "value": "feels accepted and has courage to embrace herself",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 7,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 7,
+      "peg": "Melanie",
+      "dim": "position",
+      "value": "finds it really cool",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 7,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "asks \"What now?\"",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 7,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 7,
+      "peg": "Caroline",
+      "dim": "position",
+      "value": "has guts",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 7,
+      "peg": "that",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 8,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 8,
+      "peg": "Caroline",
+      "dim": "action",
+      "value": "continue my edu and check out career options",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 8,
+      "peg": "Caroline",
+      "dim": "position",
+      "value": "pretty exciting",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 9,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 9,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "asking",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 9,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 10,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 10,
+      "peg": "Caroline",
+      "dim": "position",
+      "value": "keen on counseling or working in mental health",
+      "links": [
+        "counseling",
+        "mental health"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 10,
+      "peg": "Caroline",
+      "dim": "action",
+      "value": "love to support those with similar issues",
+      "links": [
+        "the support",
+        "those with similar issues"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 10,
+      "peg": "Caroline",
+      "dim": "epistemic_source",
+      "value": "Caroline",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 10,
+      "peg": "Caroline",
+      "dim": "epistemic_stance",
+      "value": "keen, love",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 10,
+      "peg": "counseling",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 10,
+      "peg": "mental health",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 10,
+      "peg": "those with similar issues",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 10,
+      "peg": "those with similar issues",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 11,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 11,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 11,
+      "peg": "Caroline",
+      "dim": "position",
+      "value": "would be a great counselor",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 11,
+      "peg": "Caroline",
+      "dim": "outcome",
+      "value": "Your empathy and understanding will help the people you work with",
+      "links": [
+        "the people you work with"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 11,
+      "peg": "the people you work with",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 11,
+      "peg": "this",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 12,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 12,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 12,
+      "peg": "that",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 12,
+      "peg": "the painting",
+      "dim": "type",
+      "value": "painting",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 12,
+      "peg": "the painting",
+      "dim": "owner",
+      "value": "Melanie",
+      "links": [
+        "Melanie"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 13,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 13,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "painted that lake sunrise last year",
+      "links": [
+        "that",
+        "that lake sunrise"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 13,
+      "peg": "Melanie",
+      "dim": "position",
+      "value": "It's special to me",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 13,
+      "peg": "that lake sunrise",
+      "dim": "owner",
+      "value": "Melanie",
+      "links": [
+        "Melanie"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 14,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 14,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 14,
+      "peg": "the colors",
+      "dim": "status",
+      "value": "blend nicely",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 14,
+      "peg": "the painting",
+      "dim": "function",
+      "value": "outlet for expressing yourself",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 14,
+      "peg": "the painting",
+      "dim": "epistemic_stance",
+      "value": "looks like",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 15,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 15,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "thanked Caroline",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 15,
+      "peg": "Melanie",
+      "dim": "position",
+      "value": "painting is a fun way to express feelings, get creative, and relax after a long day",
+      "links": [
+        "the painting"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 15,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 15,
+      "peg": "the painting",
+      "dim": "function",
+      "value": "express feelings, get creative, relax after a long day",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 16,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 16,
+      "peg": "Caroline",
+      "dim": "action",
+      "value": "going to do research",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 16,
+      "peg": "Caroline",
+      "dim": "position",
+      "value": "relaxing and expressing ourselves is key",
+      "links": [
+        "ourselves"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 16,
+      "peg": "Caroline",
+      "dim": "epistemic_source",
+      "value": "Caroline",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 16,
+      "peg": "Caroline",
+      "dim": "epistemic_stance",
+      "value": "certain",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 16,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "listener",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 16,
+      "peg": "ourselves",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 17,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 17,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "going swimming with the kids",
+      "links": [
+        "the kids"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 17,
+      "peg": "Melanie",
+      "dim": "position",
+      "value": "taking care of ourselves is vital",
+      "links": [
+        "ourselves"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 17,
+      "peg": "Melanie",
+      "dim": "epistemic_stance",
+      "value": "certain",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 17,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 17,
+      "peg": "the kids",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 18,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 18,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "ran a charity race for mental health",
+      "links": [
+        "charity race for mental health",
+        "mental health"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 18,
+      "peg": "Melanie",
+      "dim": "temporal_position",
+      "value": "last Saturday",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 18,
+      "peg": "Melanie",
+      "dim": "position",
+      "value": "taking care of minds is important",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 18,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "listener",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 18,
+      "peg": "charity race for mental health",
+      "dim": "function",
+      "value": "to support mental health",
+      "links": [
+        "mental health",
+        "the support"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 18,
+      "peg": "charity race for mental health",
+      "dim": "temporal_position",
+      "value": "last Saturday",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 18,
+      "peg": "charity race for mental health",
+      "dim": "epistemic_source",
+      "value": "Melanie",
+      "links": [
+        "Melanie"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 18,
+      "peg": "charity race for mental health",
+      "dim": "epistemic_stance",
+      "value": "emphatic",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 19,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 19,
+      "peg": "Caroline",
+      "dim": "position",
+      "value": "the charity race sounds great",
+      "links": [
+        "charity race"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 19,
+      "peg": "Caroline",
+      "dim": "epistemic_stance",
+      "value": "positive",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 19,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 19,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "taking part in the charity race",
+      "links": [
+        "charity race"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 19,
+      "peg": "charity race",
+      "dim": "function",
+      "value": "making a difference & raising awareness for mental health",
+      "links": [
+        "mental health"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 19,
+      "peg": "mental health",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 20,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 20,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "thanking Caroline; starting to realize self-care is important; looking after herself",
+      "links": [
+        "Caroline",
+        "self-care"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 20,
+      "peg": "Melanie",
+      "dim": "position",
+      "value": "self-care is really important",
+      "links": [
+        "self-care"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 20,
+      "peg": "Melanie",
+      "dim": "status",
+      "value": "on a self-care journey",
+      "links": [
+        "self-care"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 20,
+      "peg": "Melanie",
+      "dim": "outcome",
+      "value": "able to better look after her family",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 20,
+      "peg": "Melanie",
+      "dim": "epistemic_stance",
+      "value": "starting to realize",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 20,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "listener, recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 20,
+      "peg": "the event",
+      "dim": "status",
+      "value": "really thought-provoking",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 20,
+      "peg": "self-care",
+      "dim": "status",
+      "value": "really important",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 20,
+      "peg": "my family",
+      "dim": "owner",
+      "value": "Melanie",
+      "links": [
+        "Melanie"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 20,
+      "peg": "my family",
+      "dim": "role_in_event",
+      "value": "beneficiary",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 21,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 21,
+      "peg": "Caroline",
+      "dim": "action",
+      "value": "agrees",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 21,
+      "peg": "Caroline",
+      "dim": "position",
+      "value": "taking care of ourselves is important",
+      "links": [
+        "ourselves"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 21,
+      "peg": "Caroline",
+      "dim": "epistemic_stance",
+      "value": "certain",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 21,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 21,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "prioritizing self-care",
+      "links": [
+        "self-care"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 21,
+      "peg": "Melanie",
+      "dim": "epistemic_source",
+      "value": "Caroline",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 21,
+      "peg": "self-care",
+      "dim": "position",
+      "value": "important",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 21,
+      "peg": "self-care",
+      "dim": "difficulty",
+      "value": "not always easy",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 21,
+      "peg": "self-care",
+      "dim": "epistemic_source",
+      "value": "Caroline",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 22,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 22,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "carving out some me-time each day - running, reading, or playing violin",
+      "links": [
+        "me-time"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 22,
+      "peg": "it",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 22,
+      "peg": "it",
+      "dim": "status",
+      "value": "tough",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 22,
+      "peg": "me-time",
+      "dim": "function",
+      "value": "refreshes and helps stay present for family",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 22,
+      "peg": "fam",
+      "dim": "owner",
+      "value": "Melanie",
+      "links": [
+        "Melanie"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 22,
+      "peg": "fam",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 23,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 23,
+      "peg": "Caroline",
+      "dim": "position",
+      "value": "taking time for yourself is so important",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 23,
+      "peg": "Caroline",
+      "dim": "epistemic_stance",
+      "value": "certain",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 23,
+      "peg": "Mel",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 23,
+      "peg": "Mel",
+      "dim": "action",
+      "value": "taking time for yourself and looking after yourself and your family",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 23,
+      "peg": "Mel",
+      "dim": "status",
+      "value": "doing an awesome job",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 23,
+      "peg": "Mel",
+      "dim": "epistemic_stance",
+      "value": "certain",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 24,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 24,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "thanking Caroline, doing my best, thinking about going camping",
+      "links": [
+        "Caroline",
+        "camping"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 24,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 24,
+      "peg": "it",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 24,
+      "peg": "it",
+      "dim": "status",
+      "value": "work in progress",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 24,
+      "peg": "the kids",
+      "dim": "owner",
+      "value": "Melanie",
+      "links": [
+        "Melanie"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 24,
+      "peg": "the kids",
+      "dim": "status",
+      "value": "excited about summer break",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 24,
+      "peg": "camping",
+      "dim": "temporal_position",
+      "value": "next month",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 25,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 25,
+      "peg": "Caroline",
+      "dim": "action",
+      "value": "researching adoption agencies",
+      "links": [
+        "adoption agencies"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 25,
+      "peg": "Caroline",
+      "dim": "position",
+      "value": "dreams of having a family and giving a loving home to kids who need it",
+      "links": [
+        "it",
+        "the kids"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 25,
+      "peg": "adoption agencies",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 25,
+      "peg": "adoption agencies",
+      "dim": "context",
+      "value": "adoption",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 25,
+      "peg": "the kids",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 25,
+      "peg": "the kids",
+      "dim": "status",
+      "value": "need a loving home",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 26,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 26,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 26,
+      "peg": "Caroline",
+      "dim": "action",
+      "value": "taking in kids in need",
+      "links": [
+        "kids in need",
+        "the kids"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 26,
+      "peg": "Caroline",
+      "dim": "position",
+      "value": "kind",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 26,
+      "peg": "kids in need",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 27,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 27,
+      "peg": "Caroline",
+      "dim": "action",
+      "value": "thanking Mel; expressing gratitude for support; looking into adoption agencies",
+      "links": [
+        "Mel",
+        "adoption agencies",
+        "the support"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 27,
+      "peg": "Caroline",
+      "dim": "goal",
+      "value": "give kids a loving home",
+      "links": [
+        "the kids"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 27,
+      "peg": "Caroline",
+      "dim": "position",
+      "value": "hopeful and optimistic",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 27,
+      "peg": "Caroline",
+      "dim": "epistemic_stance",
+      "value": "hopeful, confident",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 27,
+      "peg": "Mel",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 27,
+      "peg": "the kids",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 27,
+      "peg": "friends and mentors",
+      "dim": "action",
+      "value": "provided support",
+      "links": [
+        "the support"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 27,
+      "peg": "adoption agencies",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 28,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 28,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "expressed that the agency looks great; asked what made Caroline pick it",
+      "links": [
+        "Caroline",
+        "it",
+        "that"
+      ],
+      "status": "intent",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 28,
+      "peg": "Melanie",
+      "dim": "epistemic_stance",
+      "value": "certain",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 28,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 28,
+      "peg": "Caroline",
+      "dim": "action",
+      "value": "picked the agency",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 28,
+      "peg": "that agency",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 28,
+      "peg": "that agency",
+      "dim": "status",
+      "value": "looks great",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 28,
+      "peg": "that agency",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 29,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 29,
+      "peg": "Caroline",
+      "dim": "action",
+      "value": "chose them",
+      "links": [
+        "them"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 29,
+      "peg": "Caroline",
+      "dim": "position",
+      "value": "inclusivity and support really spoke to me",
+      "links": [
+        "the support"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 29,
+      "peg": "them",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 29,
+      "peg": "them",
+      "dim": "action",
+      "value": "help LGBTQ+ folks",
+      "links": [
+        "LGBTQ+ folks"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 29,
+      "peg": "them",
+      "dim": "target_system",
+      "value": "adoption",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 29,
+      "peg": "them",
+      "dim": "epistemic_source",
+      "value": "Caroline",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 29,
+      "peg": "LGBTQ+ folks",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 30,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 30,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "expressing approval and asking",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 30,
+      "peg": "Melanie",
+      "dim": "epistemic_stance",
+      "value": "positive",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 30,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 30,
+      "peg": "that",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 30,
+      "peg": "inclusivity",
+      "dim": "advocate",
+      "value": "Melanie",
+      "links": [
+        "Melanie"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 30,
+      "peg": "the support",
+      "dim": "advocate",
+      "value": "Melanie",
+      "links": [
+        "Melanie"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 30,
+      "peg": "adoption process",
+      "dim": "context",
+      "value": "domain of discussion",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 31,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 31,
+      "peg": "Caroline",
+      "dim": "action",
+      "value": "make a family for kids who need one",
+      "links": [
+        "kids who need one",
+        "the kids"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 31,
+      "peg": "Caroline",
+      "dim": "status",
+      "value": "single parent",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 31,
+      "peg": "Caroline",
+      "dim": "position",
+      "value": "thrilled to make a family for kids who need one",
+      "links": [
+        "kids who need one",
+        "the kids"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 31,
+      "peg": "Caroline",
+      "dim": "epistemic_stance",
+      "value": "certain",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 31,
+      "peg": "kids who need one",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 31,
+      "peg": "kids who need one",
+      "dim": "status",
+      "value": "need a family",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 32,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 32,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "expressing encouragement and praise, wishing good luck",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 32,
+      "peg": "Melanie",
+      "dim": "epistemic_stance",
+      "value": "certain, positive",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 32,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 32,
+      "peg": "Caroline",
+      "dim": "action",
+      "value": "creating a family for those kids",
+      "links": [
+        "the kids",
+        "those kids"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 32,
+      "peg": "Caroline",
+      "dim": "position",
+      "value": "awesome mom",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 32,
+      "peg": "Caroline",
+      "dim": "temporal_position",
+      "value": "future",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 32,
+      "peg": "those kids",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 32,
+      "peg": "those kids",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 33,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 33,
+      "peg": "Caroline",
+      "dim": "action",
+      "value": "thanking Melanie for kind words and committing to provide a safe and loving home for these kids",
+      "links": [
+        "Melanie",
+        "kind words",
+        "the kids",
+        "these kids"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 33,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 33,
+      "peg": "kind words",
+      "dim": "owner",
+      "value": "Melanie",
+      "links": [
+        "Melanie"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 33,
+      "peg": "these kids",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 33,
+      "peg": "these kids",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 34,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 34,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "expressing confidence in Caroline's caring heart and excitement for the new chapter",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 34,
+      "peg": "Melanie",
+      "dim": "epistemic_stance",
+      "value": "certain",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 34,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 34,
+      "peg": "Caroline",
+      "dim": "status",
+      "value": "has a caring heart",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 34,
+      "peg": "they",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 35,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 35,
+      "peg": "Caroline",
+      "dim": "action",
+      "value": "wanted to tell about school event, talked about transgender journey, encouraged students to get involved in LGBTQ community, started transitioning",
+      "links": [
+        "LGBTQ community",
+        "school event",
+        "students",
+        "the event",
+        "transgender journey"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 35,
+      "peg": "Caroline",
+      "dim": "temporal_position",
+      "value": "started transitioning three years ago",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 35,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 35,
+      "peg": "school event",
+      "dim": "context",
+      "value": "school",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 35,
+      "peg": "school event",
+      "dim": "temporal_position",
+      "value": "last week",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 35,
+      "peg": "students",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 35,
+      "peg": "students",
+      "dim": "action",
+      "value": "had reactions",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 35,
+      "peg": "LGBTQ community",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 35,
+      "peg": "transgender journey",
+      "dim": "owner",
+      "value": "Caroline",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 36,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 36,
+      "peg": "Melanie",
+      "dim": "position",
+      "value": "proud of Caroline for spreading awareness in LGBTQ community",
+      "links": [
+        "Caroline",
+        "LGBTQ community"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 36,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "expressed pride and encouragement",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 36,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 36,
+      "peg": "Caroline",
+      "dim": "action",
+      "value": "spreading awareness and getting others involved in the LGBTQ community",
+      "links": [
+        "LGBTQ community"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 36,
+      "peg": "your event",
+      "dim": "owner",
+      "value": "Caroline",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 36,
+      "peg": "your event",
+      "dim": "outcome",
+      "value": "amazing",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 36,
+      "peg": "your event",
+      "dim": "epistemic_source",
+      "value": "Caroline",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 36,
+      "peg": "your event",
+      "dim": "epistemic_stance",
+      "value": "hedged",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 36,
+      "peg": "LGBTQ community",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 36,
+      "peg": "your transition",
+      "dim": "owner",
+      "value": "Caroline",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 36,
+      "peg": "your transition",
+      "dim": "temporal_position",
+      "value": "past",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 37,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 37,
+      "peg": "Caroline",
+      "dim": "action",
+      "value": "gave talk, shared journey and struggles, gave voice to trans community",
+      "links": [
+        "talk",
+        "trans community"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 37,
+      "peg": "Caroline",
+      "dim": "status",
+      "value": "developed since coming out, felt super powerful",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 37,
+      "peg": "Caroline",
+      "dim": "position",
+      "value": "conversations about gender identity and inclusion are necessary",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 37,
+      "peg": "Mel",
+      "dim": "role_in_event",
+      "value": "supporter",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 37,
+      "peg": "Mel",
+      "dim": "action",
+      "value": "backing",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 37,
+      "peg": "audience",
+      "dim": "type",
+      "value": "group of persons",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 37,
+      "peg": "audience",
+      "dim": "action",
+      "value": "related to what Caroline said",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 37,
+      "peg": "audience",
+      "dim": "outcome",
+      "value": "inspired to be better allies",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 37,
+      "peg": "audience",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 37,
+      "peg": "trans community",
+      "dim": "type",
+      "value": "community",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 37,
+      "peg": "trans community",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 37,
+      "peg": "talk",
+      "dim": "type",
+      "value": "talk",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 37,
+      "peg": "talk",
+      "dim": "owner",
+      "value": "Caroline",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 37,
+      "peg": "talk",
+      "dim": "function",
+      "value": "sharing journey and inspiring audience to be better allies",
+      "links": [
+        "audience"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 38,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 38,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 38,
+      "peg": "Caroline",
+      "dim": "action",
+      "value": "inspiring others with your journey, positively affecting so many, speaking up for the trans community",
+      "links": [
+        "others",
+        "trans community"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 38,
+      "peg": "Caroline",
+      "dim": "epistemic_source",
+      "value": "Melanie",
+      "links": [
+        "Melanie"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 38,
+      "peg": "others",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 38,
+      "peg": "trans community",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 38,
+      "peg": "trans community",
+      "dim": "advocate",
+      "value": "Caroline",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 38,
+      "peg": "inclusivity and acceptance",
+      "dim": "status",
+      "value": "crucial",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 39,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 39,
+      "peg": "Caroline",
+      "dim": "action",
+      "value": "thanks, shares experiences, passes on love and support",
+      "links": [
+        "experiences",
+        "love and support",
+        "the support"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 39,
+      "peg": "Caroline",
+      "dim": "position",
+      "value": "feels it's important to help promote understanding and acceptance",
+      "links": [
+        "it",
+        "understanding and acceptance"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 39,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 39,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "gave kind words",
+      "links": [
+        "kind words"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 39,
+      "peg": "kind words",
+      "dim": "owner",
+      "value": "Melanie",
+      "links": [
+        "Melanie"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 39,
+      "peg": "kind words",
+      "dim": "function",
+      "value": "mean a lot to Caroline",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 39,
+      "peg": "experiences",
+      "dim": "function",
+      "value": "promote understanding and acceptance, build strong supportive community",
+      "links": [
+        "understanding and acceptance"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 39,
+      "peg": "experiences",
+      "dim": "epistemic_stance",
+      "value": "isn't always easy",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 39,
+      "peg": "understanding and acceptance",
+      "dim": "function",
+      "value": "goals of sharing experiences",
+      "links": [
+        "experiences"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 39,
+      "peg": "love and support",
+      "dim": "status",
+      "value": "what Caroline has been blessed with",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 39,
+      "peg": "love and support",
+      "dim": "action",
+      "value": "pass it on to others",
+      "links": [
+        "it",
+        "others"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 39,
+      "peg": "community of hope",
+      "dim": "function",
+      "value": "what can be built by sharing stories",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 40,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 40,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "affirms that it takes courage to talk about our own stories; discusses bonding through vulnerable moments; thanks Caroline for using her voice to create love, acceptance, and hope",
+      "links": [
+        "Caroline",
+        "it",
+        "love, acceptance, and hope",
+        "our own stories",
+        "talk",
+        "that",
+        "vulnerable moments"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 40,
+      "peg": "Melanie",
+      "dim": "position",
+      "value": "sharing stories helps people feel less alone and inspired",
+      "links": [
+        "people"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 40,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 40,
+      "peg": "Caroline",
+      "dim": "action",
+      "value": "using your voice to create love, acceptance, and hope",
+      "links": [
+        "love, acceptance, and hope",
+        "your voice"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 40,
+      "peg": "Caroline",
+      "dim": "status",
+      "value": "doing amazing",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 40,
+      "peg": "Caroline",
+      "dim": "epistemic_source",
+      "value": "Melanie",
+      "links": [
+        "Melanie"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 40,
+      "peg": "our own stories",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 40,
+      "peg": "our own stories",
+      "dim": "function",
+      "value": "inspire and encourage others facing challenges; show people they're not alone",
+      "links": [
+        "others",
+        "people",
+        "they"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 40,
+      "peg": "people",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 40,
+      "peg": "people",
+      "dim": "status",
+      "value": "not alone",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 40,
+      "peg": "others",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 40,
+      "peg": "others",
+      "dim": "context",
+      "value": "facing the same challenges",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 40,
+      "peg": "others",
+      "dim": "outcome",
+      "value": "can be inspired and encouraged by our stories",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 40,
+      "peg": "vulnerable moments",
+      "dim": "context",
+      "value": "where we bond and understand each other",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 40,
+      "peg": "your voice",
+      "dim": "owner",
+      "value": "Caroline",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 40,
+      "peg": "your voice",
+      "dim": "function",
+      "value": "create love, acceptance, and hope",
+      "links": [
+        "love, acceptance, and hope"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 40,
+      "peg": "love, acceptance, and hope",
+      "dim": "outcome",
+      "value": "created by Caroline through using her voice",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 41,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 41,
+      "peg": "Caroline",
+      "dim": "action",
+      "value": "shares story, gives others hope, keeps using voice to make a change, lifts others up",
+      "links": [
+        "others"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 41,
+      "peg": "Caroline",
+      "dim": "position",
+      "value": "values inclusivity and understanding",
+      "links": [
+        "inclusivity"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 41,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 41,
+      "peg": "Melanie",
+      "dim": "status",
+      "value": "part of the effort to make change and lift others up",
+      "links": [
+        "others"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 41,
+      "peg": "others",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 41,
+      "peg": "others",
+      "dim": "status",
+      "value": "receive hope from Caroline and are lifted up",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 41,
+      "peg": "more inclusive and understanding world",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 41,
+      "peg": "more inclusive and understanding world",
+      "dim": "status",
+      "value": "to be built together",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 42,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 42,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "expressing gratitude and pride, proposing mutual motivation and help",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 42,
+      "peg": "Melanie",
+      "dim": "position",
+      "value": "proud to be part of the difference Caroline is making",
+      "links": [
+        "Caroline"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 42,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 42,
+      "peg": "Caroline",
+      "dim": "action",
+      "value": "letting Melanie join her journey, making a difference",
+      "links": [
+        "Melanie",
+        "journey"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 42,
+      "peg": "journey",
+      "dim": "owner",
+      "value": "Caroline",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 42,
+      "peg": "impact",
+      "dim": "function",
+      "value": "something Melanie and Caroline can make together",
+      "links": [
+        "Caroline",
+        "Melanie"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 43,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 43,
+      "peg": "Mel",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 43,
+      "peg": "Mel",
+      "dim": "action",
+      "value": "provided support and encouragement",
+      "links": [
+        "encouragement",
+        "the support"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 43,
+      "peg": "love",
+      "dim": "action",
+      "value": "spread",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 43,
+      "peg": "understanding",
+      "dim": "action",
+      "value": "spread",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 43,
+      "peg": "the support",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 43,
+      "peg": "encouragement",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 43,
+      "peg": "life's challenges",
+      "dim": "action",
+      "value": "tackle",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 44,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 44,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "wants to be courageous for family; asks what motivates Caroline",
+      "links": [
+        "Caroline",
+        "family"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 44,
+      "peg": "Melanie",
+      "dim": "position",
+      "value": "motivated by family who love her",
+      "links": [
+        "family",
+        "love"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 44,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 44,
+      "peg": "Caroline",
+      "dim": "status",
+      "value": "courageous; inspiring",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 44,
+      "peg": "family",
+      "dim": "owner",
+      "value": "Melanie",
+      "links": [
+        "Melanie"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 44,
+      "peg": "family",
+      "dim": "action",
+      "value": "motivate Melanie; give her love",
+      "links": [
+        "Melanie",
+        "love"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 45,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 45,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 45,
+      "peg": "friends",
+      "dim": "owner",
+      "value": "Caroline",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 45,
+      "peg": "friends",
+      "dim": "action",
+      "value": "motivate and give strength to push on",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 45,
+      "peg": "friends",
+      "dim": "position",
+      "value": "my rocks",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 45,
+      "peg": "family",
+      "dim": "owner",
+      "value": "Caroline",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 45,
+      "peg": "family",
+      "dim": "action",
+      "value": "motivate and give strength to push on",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 45,
+      "peg": "family",
+      "dim": "position",
+      "value": "my rocks",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 45,
+      "peg": "mentors",
+      "dim": "owner",
+      "value": "Caroline",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 45,
+      "peg": "mentors",
+      "dim": "action",
+      "value": "motivate and give strength to push on",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 45,
+      "peg": "mentors",
+      "dim": "position",
+      "value": "my rocks",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 45,
+      "peg": "we",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 45,
+      "peg": "we",
+      "dim": "action",
+      "value": "met up",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 45,
+      "peg": "we",
+      "dim": "temporal_position",
+      "value": "last week",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 46,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 46,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "said a photo is great and asked how long a support system has been had",
+      "links": [
+        "photo",
+        "support system",
+        "the support"
+      ],
+      "status": "intent",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 46,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 46,
+      "peg": "photo",
+      "dim": "status",
+      "value": "great",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 46,
+      "peg": "photo",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 46,
+      "peg": "support system",
+      "dim": "owner",
+      "value": "Caroline",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 46,
+      "peg": "support system",
+      "dim": "status",
+      "value": "great",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 46,
+      "peg": "support system",
+      "dim": "type",
+      "value": "support system",
+      "links": [
+        "the support"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 47,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 47,
+      "peg": "Caroline",
+      "dim": "position",
+      "value": "lucky to have them, super thankful",
+      "links": [
+        "them"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 47,
+      "peg": "Caroline",
+      "dim": "temporal_position",
+      "value": "moved from home country 4 years ago",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 47,
+      "peg": "these friends",
+      "dim": "type",
+      "value": "friends",
+      "links": [
+        "friends"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 47,
+      "peg": "these friends",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 47,
+      "peg": "these friends",
+      "dim": "action",
+      "value": "been there through everything",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 47,
+      "peg": "these friends",
+      "dim": "owner",
+      "value": "Caroline",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 47,
+      "peg": "these friends",
+      "dim": "temporal_position",
+      "value": "for 4 years, since Caroline moved from home country",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 47,
+      "peg": "these friends",
+      "dim": "status",
+      "value": "important to Caroline",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 47,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 47,
+      "peg": "that tough breakup",
+      "dim": "type",
+      "value": "breakup",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 47,
+      "peg": "that tough breakup",
+      "dim": "status",
+      "value": "tough",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 47,
+      "peg": "that tough breakup",
+      "dim": "temporal_position",
+      "value": "past",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 48,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 48,
+      "peg": "Melanie",
+      "dim": "status",
+      "value": "lucky",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 48,
+      "peg": "Melanie",
+      "dim": "outcome",
+      "value": "kept motivated",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 48,
+      "peg": "husband",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 48,
+      "peg": "husband",
+      "dim": "owner",
+      "value": "Melanie",
+      "links": [
+        "Melanie"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 48,
+      "peg": "husband",
+      "dim": "action",
+      "value": "keep motivated",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 48,
+      "peg": "the kids",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 48,
+      "peg": "the kids",
+      "dim": "owner",
+      "value": "Melanie",
+      "links": [
+        "Melanie"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 48,
+      "peg": "the kids",
+      "dim": "action",
+      "value": "keep motivated",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 49,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 49,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 49,
+      "peg": "Melanie",
+      "dim": "status",
+      "value": "married",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 49,
+      "peg": "family pic",
+      "dim": "status",
+      "value": "amazing",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 50,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 50,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "put this dress on",
+      "links": [
+        "this",
+        "this dress"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 50,
+      "peg": "Melanie",
+      "dim": "temporal_position",
+      "value": "5 years ago",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 50,
+      "peg": "Melanie",
+      "dim": "epistemic_stance",
+      "value": "feels like just yesterday",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 50,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 50,
+      "peg": "this dress",
+      "dim": "owner",
+      "value": "Melanie",
+      "links": [
+        "Melanie"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 50,
+      "peg": "this dress",
+      "dim": "temporal_position",
+      "value": "5 years ago",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 51,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 51,
+      "peg": "Caroline",
+      "dim": "action",
+      "value": "congratulating and wishing happiness",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 51,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 51,
+      "peg": "Melanie",
+      "dim": "outcome",
+      "value": "looked so great on wedding day",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 52,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 52,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 52,
+      "peg": "kind words",
+      "dim": "owner",
+      "value": "Caroline",
+      "links": [
+        "Caroline"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 52,
+      "peg": "kind words",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 52,
+      "peg": "family",
+      "dim": "owner",
+      "value": "Melanie",
+      "links": [
+        "Melanie"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 52,
+      "peg": "family",
+      "dim": "function",
+      "value": "makes life worthwhile",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 52,
+      "peg": "moments",
+      "dim": "owner",
+      "value": "Melanie",
+      "links": [
+        "Melanie"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 52,
+      "peg": "moments",
+      "dim": "function",
+      "value": "makes life worthwhile",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 52,
+      "peg": "happy years",
+      "dim": "temporal_position",
+      "value": "future",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 53,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 53,
+      "peg": "Caroline",
+      "dim": "epistemic_source",
+      "value": "Caroline",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 53,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 53,
+      "peg": "Melanie",
+      "dim": "status",
+      "value": "had a great day",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 53,
+      "peg": "Melanie",
+      "dim": "epistemic_stance",
+      "value": "might",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "possible",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 53,
+      "peg": "you all",
+      "dim": "status",
+      "value": "look so happy",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 53,
+      "peg": "you all",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 54,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 54,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "played games, ate good food, and just hung out together",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 54,
+      "peg": "it",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 54,
+      "peg": "it",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 54,
+      "peg": "it",
+      "dim": "status",
+      "value": "fun",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 54,
+      "peg": "Family moments",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 54,
+      "peg": "Family moments",
+      "dim": "function",
+      "value": "make life awesome",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 55,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 55,
+      "peg": "Mel",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 55,
+      "peg": "Mel",
+      "dim": "action",
+      "value": "had a great time",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 55,
+      "peg": "moments",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 55,
+      "peg": "moments",
+      "dim": "status",
+      "value": "the best",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 56,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 56,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "cherish time with family",
+      "links": [
+        "family"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 56,
+      "peg": "Melanie",
+      "dim": "position",
+      "value": "feels alive and happy when with family",
+      "links": [
+        "family"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 56,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "listener",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 56,
+      "peg": "family",
+      "dim": "function",
+      "value": "makes Melanie feel alive and happy",
+      "links": [
+        "Melanie"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Melanie"
+    },
+    {
+      "tick": 57,
+      "peg": "Caroline",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 57,
+      "peg": "Caroline",
+      "dim": "action",
+      "value": "agree; become thankful",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 57,
+      "peg": "Caroline",
+      "dim": "position",
+      "value": "hanging with loved ones is amazing and brings happiness; family is everything",
+      "links": [
+        "family",
+        "loved ones"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 57,
+      "peg": "Caroline",
+      "dim": "epistemic_stance",
+      "value": "100% certain",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 57,
+      "peg": "Melanie",
+      "dim": "role_in_event",
+      "value": "listener",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 57,
+      "peg": "loved ones",
+      "dim": "function",
+      "value": "brings happiness",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Caroline"
+    },
+    {
+      "tick": 57,
+      "peg": "family",
+      "dim": "position",
+      "value": "everything",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Caroline"
+    }
+  ],
+  "proposals": [
+    {
+      "tick": 4,
+      "new": "the support",
+      "existing": "LGBTQ support group",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 6,
+      "new": "The support group",
+      "existing": "LGBTQ support group",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 6,
+      "new": "The support group",
+      "existing": "the support",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 12,
+      "new": "the painting",
+      "existing": "that painting",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 18,
+      "new": "charity race for mental health",
+      "existing": "mental health",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 19,
+      "new": "charity race",
+      "existing": "charity race for mental health",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 26,
+      "new": "kids in need",
+      "existing": "the kids",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 31,
+      "new": "kids who need one",
+      "existing": "the kids",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 32,
+      "new": "those kids",
+      "existing": "the kids",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 33,
+      "new": "these kids",
+      "existing": "the kids",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 35,
+      "new": "school event",
+      "existing": "the event",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 36,
+      "new": "your event",
+      "existing": "the event",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 38,
+      "new": "inclusivity and acceptance",
+      "existing": "inclusivity",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 39,
+      "new": "understanding and acceptance",
+      "existing": "inclusivity and acceptance",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 39,
+      "new": "love and support",
+      "existing": "the support",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 40,
+      "new": "people",
+      "existing": "the people you work with",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 42,
+      "new": "journey",
+      "existing": "transgender journey",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 43,
+      "new": "love",
+      "existing": "love and support",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 43,
+      "new": "love",
+      "existing": "love, acceptance, and hope",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 43,
+      "new": "understanding",
+      "existing": "understanding and acceptance",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 43,
+      "new": "understanding",
+      "existing": "more inclusive and understanding world",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 44,
+      "new": "family",
+      "existing": "my family",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 45,
+      "new": "friends",
+      "existing": "friends and mentors",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 45,
+      "new": "mentors",
+      "existing": "friends and mentors",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 46,
+      "new": "support system",
+      "existing": "the support",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 47,
+      "new": "these friends",
+      "existing": "friends",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 49,
+      "new": "family pic",
+      "existing": "family",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 52,
+      "new": "moments",
+      "existing": "vulnerable moments",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 54,
+      "new": "Family moments",
+      "existing": "family",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 54,
+      "new": "Family moments",
+      "existing": "moments",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    }
+  ],
+  "buckets": [
+    {
+      "id": "b0",
+      "tick": 3,
+      "peg": "that",
+      "dim": "reference",
+      "query": "what does 'that' refer to?",
+      "candidates": [
+        "inspiring stories",
+        "the kids",
+        "LGBTQ support group"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b1",
+      "tick": 4,
+      "peg": "the support",
+      "dim": "reference",
+      "query": "what does 'the support' refer to?",
+      "candidates": [
+        2
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "resolved",
+      "resolved_by": "engine",
+      "evidence_ticks": [
+        2
+      ]
+    },
+    {
+      "id": "b2",
+      "tick": 5,
+      "peg": "that painting",
+      "dim": "reference",
+      "query": "what does 'that painting' refer to?",
+      "candidates": [
+        "a helpful group",
+        "LGBTQ support group",
+        "inspiring stories",
+        "transgender stories",
+        "the support"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b3",
+      "tick": 7,
+      "peg": "that",
+      "dim": "reference",
+      "query": "what does 'That' refer to?",
+      "candidates": [
+        "transgender stories",
+        "the support",
+        "a helpful group",
+        "The support group"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b4",
+      "tick": 11,
+      "peg": "this",
+      "dim": "reference",
+      "query": "what does 'this' refer to?",
+      "candidates": [
+        "counseling",
+        "mental health",
+        "those with similar issues"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b5",
+      "tick": 12,
+      "peg": "that",
+      "dim": "reference",
+      "query": "what does 'that' refer to?",
+      "candidates": [
+        "the painting",
+        "counseling",
+        "mental health",
+        "those with similar issues"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b6",
+      "tick": 22,
+      "peg": "it",
+      "dim": "reference",
+      "query": "what does 'it' refer to?",
+      "candidates": [
+        "me-time",
+        "charity race",
+        "mental health",
+        "the event",
+        "self-care",
+        "my family"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b7",
+      "tick": 24,
+      "peg": "it",
+      "dim": "reference",
+      "query": "what does 'it' refer to?",
+      "candidates": [
+        "the kids",
+        "camping",
+        "self-care",
+        "me-time"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b8",
+      "tick": 28,
+      "peg": "that agency",
+      "dim": "reference",
+      "query": "what does 'that agency' refer to?",
+      "candidates": [
+        "adoption agencies",
+        "the kids",
+        "kids in need",
+        "friends and mentors"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b9",
+      "tick": 29,
+      "peg": "them",
+      "dim": "reference",
+      "query": "what does 'them' refer to?",
+      "candidates": [
+        "Caroline",
+        "Melanie",
+        "Mel",
+        "adoption agencies"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b10",
+      "tick": 30,
+      "peg": "that",
+      "dim": "reference",
+      "query": "what does 'that' refer to?",
+      "candidates": [
+        "inclusivity",
+        "the support",
+        "adoption process",
+        "the kids",
+        "friends and mentors",
+        "adoption agencies",
+        "LGBTQ+ folks"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b11",
+      "tick": 34,
+      "peg": "they",
+      "dim": "reference",
+      "query": "what does 'they' refer to?",
+      "candidates": [
+        "Melanie",
+        "Caroline",
+        "kids who need one",
+        "those kids"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b12",
+      "tick": 54,
+      "peg": "it",
+      "dim": "reference",
+      "query": "what does 'it' refer to?",
+      "candidates": [
+        "Family moments",
+        "kind words",
+        "family",
+        "moments",
+        "happy years"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    }
+  ],
+  "first_mentions": [
+    {
+      "tick": 1,
+      "name": "the kids"
+    },
+    {
+      "tick": 6,
+      "name": "The support group"
+    },
+    {
+      "tick": 10,
+      "name": "those with similar issues"
+    },
+    {
+      "tick": 11,
+      "name": "the people you work with"
+    },
+    {
+      "tick": 12,
+      "name": "the painting"
+    },
+    {
+      "tick": 14,
+      "name": "the colors"
+    },
+    {
+      "tick": 16,
+      "name": "ourselves"
+    },
+    {
+      "tick": 20,
+      "name": "the event"
+    },
+    {
+      "tick": 32,
+      "name": "those kids"
+    },
+    {
+      "tick": 33,
+      "name": "these kids"
+    },
+    {
+      "tick": 45,
+      "name": "we"
+    },
+    {
+      "tick": 46,
+      "name": "photo"
+    },
+    {
+      "tick": 53,
+      "name": "you all"
+    }
+  ],
+  "dropped_absences": [],
+  "model_belief_candidates": [
+    {
+      "tick": 11,
+      "peg": "Melanie",
+      "dim": "action",
+      "value": "suggests Caroline would be a great counselor; directs her to take a look at something",
+      "note": "extractor inference; not a fact (C7)"
+    }
+  ],
+  "resolutions": [
+    {
+      "bucket": "b1",
+      "by": "engine",
+      "rule": "C9 clause (c): single candidate",
+      "value": 2,
+      "evidence_ticks": [
+        2
+      ],
+      "at_tick": 4
+    }
+  ]
+}
