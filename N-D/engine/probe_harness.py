@@ -100,9 +100,31 @@ def batch(state_dir, probes_path, model="sonnet"):
     json.dump(summary, open(os.path.join(out, "m3_summary.json"), "w"), indent=2)
 
 
+def raw_baseline(source_path, probes_path, out_dir, model="sonnet"):
+    """Baseline: the answering model reads the original turns instead of engine memory."""
+    from extract_stateless import call
+    turns = [json.loads(l) for l in open(source_path) if l.strip()]
+    ctx = "CONVERSATION\n" + "\n".join(
+        f"[{t.get('date', '')}] {t.get('speaker', '')}: {t['text']}" for t in turns)
+    os.makedirs(out_dir, exist_ok=True)
+    probes = [json.loads(l) for l in open(probes_path) if l.strip()]
+    answers = {}
+    for p in probes:
+        prompt = (f"{ctx}\n\nAnswer from the conversation above only. If it does not settle it, "
+                  f"say so. Answer in one short sentence.\nQuestion: {p['question']}")
+        answers[p["id"]] = call("claude-cli", model, prompt).strip()
+    path = os.path.join(out_dir, "raw.answers.json")
+    json.dump(answers, open(path, "w"), indent=2)
+    ok, n, misses = score(probes_path, path, quiet=True)
+    print(f"RAW baseline  M3 {ok}/{n}  misses: {[m['id'] for m in misses]}")
+
+
 if __name__ == "__main__":
     if sys.argv[1] == "prompts":
         build(*sys.argv[2:5])
+    elif sys.argv[1] == "raw":
+        model = sys.argv[sys.argv.index("--model") + 1] if "--model" in sys.argv else "sonnet"
+        raw_baseline(sys.argv[2], sys.argv[3], sys.argv[4], model)
     elif sys.argv[1] == "batch":
         model = sys.argv[sys.argv.index("--model") + 1] if "--model" in sys.argv else "sonnet"
         batch(sys.argv[2], sys.argv[3], model)
