@@ -9,6 +9,7 @@ Usage:
   python tools/extract_stateless.py --provider ollama    --model <model-name> --run 1
   python tools/extract_stateless.py --provider claude-cli --model sonnet    --run 1   # uses Claude Code login
   python tools/extract_stateless.py --provider replay    --model babytest   --run 1   # offline smoke test
+  add --resume to continue an interrupted run from the first missing sentence
 
 Keys: ANTHROPIC_API_KEY or OPENAI_API_KEY in the environment. Ollama: local server at
 http://localhost:11434 (override with OLLAMA_URL). claude-cli: the installed `claude`
@@ -120,6 +121,8 @@ def main():
     ap.add_argument("--run", type=int, default=1)
     ap.add_argument("--source", default=SOURCE, help="jsonl of sentences (default: the pilot)")
     ap.add_argument("--out-dir", default=OUT_DIR)
+    ap.add_argument("--resume", action="store_true",
+                    help="keep sentences already extracted in this run's file and continue from the first missing one")
     a = ap.parse_args()
     sentences = [json.loads(l) for l in open(a.source) if l.strip()]
     dictionary = json.dumps(json.load(open(DICT))["dimensions"], indent=1)
@@ -139,11 +142,27 @@ def main():
         if meta["user_claude_md_present"]:
             print("WARNING: ~/.claude/CLAUDE.md exists and will be loaded into every call. "
                   "Move it aside for a clean run (see instructions).")
+    done = []
+    if a.resume and os.path.exists(out_path):
+        for line in open(out_path):
+            if line.strip():
+                try:
+                    done.append(json.loads(line))
+                except ValueError:
+                    break  # a torn last line is dropped and redone
+        done = [r for i, r in enumerate(done) if r.get("event_id") == f"t{i}"][:len(sentences)]
+        meta["resumed_from_turn"] = len(done)
+        print(f"resuming {os.path.basename(out_path)} at t{len(done)} ({len(done)} of {len(sentences)} already done)")
     replay = None
     if a.provider == "replay":
         replay = [json.loads(l) for l in open(os.path.join(ROOT, "ND-0", "data", "pilot10.babytest.jsonl"))]
     with open(out_path, "w") as out:
+        for r in done:
+            out.write(json.dumps(r) + "\n")
+        out.flush()
         for i, s in enumerate(sentences):
+            if i < len(done):
+                continue
             sid = f"t{i}"
             if replay:
                 rec = replay[i]
@@ -156,10 +175,12 @@ def main():
                         break
                     except Exception as e:  # network or JSON errors: retry, then fail loudly
                         if attempt == 2:
-                            sys.exit(f"{sid}: failed after 3 attempts: {e}")
+                            sys.exit(f"{sid}: failed after 3 attempts: {e}\n"
+                                     f"Progress is saved. Continue later with the same command plus --resume.")
                         time.sleep(2 * (attempt + 1))
                 rec["event_id"] = sid
             out.write(json.dumps(rec) + "\n")
+            out.flush()
             print(f"{sid}: {len(rec.get('entities', []))} entities")
     meta["finished"] = datetime.datetime.now().isoformat(timespec="seconds")
     json.dump(meta, open(out_path[:-6] + ".meta.json", "w"), indent=2)

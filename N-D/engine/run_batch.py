@@ -43,8 +43,13 @@ def main(d, tag=None, source=None):
     hubs = frozenset(norm(x) for t in sources for x in (t.get("speaker"), t.get("listener")) if x)
     os.makedirs(os.path.join(d, per), exist_ok=True)
     rows, states = [], {}
+    skipped = []
     for f in sorted(glob.glob(os.path.join(d, "extractions", "*.jsonl"))):
         name = os.path.basename(f)[:-6]
+        n_lines = sum(1 for l in open(f) if l.strip())
+        if not os.path.exists(f[:-6] + ".meta.json") or n_lines != len(sources):
+            skipped.append(f"{name} ({n_lines}/{len(sources)} turns)")
+            continue  # incomplete run: finish it with --resume before scoring
         st = run([json.loads(l) for l in open(f) if l.strip()])
         sc = score(st, sources, musthaves)
         json.dump(st, open(os.path.join(d, per, f"{name}.state.json"), "w"), indent=2)
@@ -65,6 +70,8 @@ def main(d, tag=None, source=None):
         print(f"{r['run']:45s} M1 {'ok' if r['M1_pass'] else 'FAIL'}  M2a {r['M2a']:.3f}  M2b {r['M2b_new_pegs']}  "
               f"M4 {r['M4']} {r['M4_failed'] or ''}  pairs {r['colliding_pairs']}  buckets {r['buckets']}")
     print("M5:", m5)
+    if skipped:
+        print("SKIPPED incomplete runs (finish with --resume):", ", ".join(skipped))
 
 
 if __name__ == "__main__":
