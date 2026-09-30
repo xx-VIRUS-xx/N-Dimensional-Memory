@@ -5,7 +5,9 @@ state, never the source text.
 2) Answer them with any model (one answer per probe id, JSON: {"p01": "...", ...}).
 3) Score:          python engine/probe_harness.py score <probes.jsonl> <answers.json>
 
-Or all at once through Claude Code (one fresh, isolated `claude -p` call per probe):
+Or all at once through Claude Code (one fresh, isolated `claude -p` call per probe).
+Progress prints per probe; answers are saved after each one, and rerunning the same
+command continues where it stopped:
    python engine/probe_harness.py batch <state_dir> <probes.jsonl> --model sonnet
    Answers go to <state_dir>/../probes_<state_dir_name>/<run>.answers.json, plus m3_summary.json.
 """
@@ -87,13 +89,17 @@ def batch(state_dir, probes_path, model="sonnet"):
     for f in sorted(glob.glob(os.path.join(state_dir, "*.state.json"))):
         name = os.path.basename(f)[:-11]
         ctx = render(json.load(open(f)))
-        answers = {}
+        path = os.path.join(out, f"{name}.answers.json")
+        answers = json.load(open(path)) if os.path.exists(path) else {}   # resume: keep saved answers
+        print(f"{name}: memory context {len(ctx.split())} words; {len(answers)}/{len(probes)} already answered", flush=True)
         for p in probes:
+            if p["id"] in answers:
+                continue
             prompt = (f"{ctx}\n\nAnswer from the memory above only. If memory does not settle it, "
                       f"say so. Answer in one short sentence.\nQuestion: {p['question']}")
             answers[p["id"]] = call("claude-cli", model, prompt).strip()
-        path = os.path.join(out, f"{name}.answers.json")
-        json.dump(answers, open(path, "w"), indent=2)
+            json.dump(answers, open(path, "w"), indent=2)                  # saved after every answer
+            print(f"  {p['id']} done ({len(answers)}/{len(probes)})", flush=True)
         ok, n, misses = score(probes_path, path, quiet=True)
         summary["runs"][name] = {"M3": f"{ok}/{n}", "misses": misses}
         print(f"{name:40s} M3 {ok}/{n}  misses: {[m['id'] for m in misses]}")
@@ -108,13 +114,17 @@ def raw_baseline(source_path, probes_path, out_dir, model="sonnet"):
         f"[{t.get('date', '')}] {t.get('speaker', '')}: {t['text']}" for t in turns)
     os.makedirs(out_dir, exist_ok=True)
     probes = [json.loads(l) for l in open(probes_path) if l.strip()]
-    answers = {}
+    path = os.path.join(out_dir, "raw.answers.json")
+    answers = json.load(open(path)) if os.path.exists(path) else {}
+    print(f"RAW: context {len(ctx.split())} words; {len(answers)}/{len(probes)} already answered", flush=True)
     for p in probes:
+        if p["id"] in answers:
+            continue
         prompt = (f"{ctx}\n\nAnswer from the conversation above only. If it does not settle it, "
                   f"say so. Answer in one short sentence.\nQuestion: {p['question']}")
         answers[p["id"]] = call("claude-cli", model, prompt).strip()
-    path = os.path.join(out_dir, "raw.answers.json")
-    json.dump(answers, open(path, "w"), indent=2)
+        json.dump(answers, open(path, "w"), indent=2)
+        print(f"  {p['id']} done ({len(answers)}/{len(probes)})", flush=True)
     ok, n, misses = score(probes_path, path, quiet=True)
     print(f"RAW baseline  M3 {ok}/{n}  misses: {[m['id'] for m in misses]}")
 

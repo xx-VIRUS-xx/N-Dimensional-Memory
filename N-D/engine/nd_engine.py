@@ -81,8 +81,26 @@ def contains_peg(text, peg_norm):
 
 
 # ---------------------------------------------------------------- engine
+def _sanitise(tick, rec, issues):
+    """Input validation (v0.2.1): malformed extractor output is recorded as a contract
+    violation instead of crashing the engine. No extraction content is invented."""
+    ents = []
+    for ent in rec.get("entities") or []:
+        if not isinstance(ent, dict) or not str(ent.get("name", "")).strip():
+            issues.append({"tick": tick, "issue": "entity without a name", "raw": str(ent)[:120]})
+            continue
+        dims = ent.get("dimensions")
+        if not isinstance(dims, dict):
+            issues.append({"tick": tick, "entity": ent["name"], "issue": "entity without dimensions"})
+            dims = {}
+        ents.append({**ent, "dimensions": dims})
+    return {**rec, "entities": ents}
+
+
 def run(records):
-    state = {"engine_version": "v0.2", "events": [], "pegs": {}, "strings": [], "proposals": [], "buckets": [], "first_mentions": [],
+    issues = []
+    records = [_sanitise(t, r, issues) for t, r in enumerate(records)]
+    state = {"input_issues": issues, "engine_version": "v0.2.1", "events": [], "pegs": {}, "strings": [], "proposals": [], "buckets": [], "first_mentions": [],
              "dropped_absences": [], "model_belief_candidates": [], "resolutions": []}
     peg_of = {}            # normalised name -> peg id (display name of first mention)
 

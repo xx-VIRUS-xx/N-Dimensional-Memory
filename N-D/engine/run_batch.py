@@ -55,7 +55,7 @@ def main(d, tag=None, source=None):
         json.dump(st, open(os.path.join(d, per, f"{name}.state.json"), "w"), indent=2)
         json.dump(sc, open(os.path.join(d, per, f"{name}.checks.json"), "w"), indent=2)
         states[name] = st
-        rows.append({"run": name, "M1_pass": sc["M1"]["pass"], "M2a": sc["M2"]["M2a_content_traceable_rate"],
+        rows.append({"run": name, "M1_pass": sc["M1"]["pass"], "input_issues": len(sc["M1"]["input_issues"]), "M2a": sc["M2"]["M2a_content_traceable_rate"],
                      "M2b_new_pegs": len(sc["M2"]["M2b_label_introduced_pegs"]), "M2_pass": sc["M2"]["pass"],
                      "M4": f"{sc['M4']['passed']}/{sc['M4']['of']}",
                      "M4_failed": [k for k, v in sc["M4"]["checks"].items() if not v],
@@ -67,7 +67,7 @@ def main(d, tag=None, source=None):
           "runs": len(states)}
     json.dump({"runs": rows, "M5": m5}, open(os.path.join(d, summ), "w"), indent=2, default=list)
     for r in rows:
-        print(f"{r['run']:45s} M1 {'ok' if r['M1_pass'] else 'FAIL'}  M2a {r['M2a']:.3f}  M2b {r['M2b_new_pegs']}  "
+        print(f"{r['run']:45s} M1 {'ok' if r['M1_pass'] else 'FAIL'}{' (' + str(r['input_issues']) + ' input issues)' if r['input_issues'] else ''}  M2a {r['M2a']:.3f}  M2b {r['M2b_new_pegs']}  "
               f"M4 {r['M4']} {r['M4_failed'] or ''}  pairs {r['colliding_pairs']}  buckets {r['buckets']}")
     print("M5:", m5)
     if skipped:

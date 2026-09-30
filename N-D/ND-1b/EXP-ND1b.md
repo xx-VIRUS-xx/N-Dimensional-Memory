@@ -42,6 +42,9 @@ With engine v0.2 and prompt v1 frozen (plus dialogue metadata, B1), do faithfuln
 - **B1: Dialogue metadata.** Each turn's speaker, listener and date are passed to the stateless extractor. The metadata is part of the input, so names and dates from it count as traceable in M2.
 - **B2: Hub pegs.** In a two-person dialogue both participants touch nearly every event (the pipeline test found 1,418 of 1,653 pairs colliding), so raw collision stability is trivially 1.0. M5 therefore excludes participants' pegs.
 
+- **B3: Staged runs (usage limits, before any scoring).** Stage 1: Haiku runs 1–2, with probes on Haiku run 1 plus the RAW baseline. Stage 2: Haiku run 3, no probes. Stage 3: Sonnet × 1, with probes. Probes run on one extraction per model, because stability (M5) is measured from collision structure and needs no probes, and ND-1 showed M3 varies by at most one question across runs. If Stage 1 fails the M3 target, stages 2–3 are not run.
+- **B4: Engine v0.2.1.** Input validation only. Malformed extractor output (an entity without a name or without dimensions) is recorded as an M1 contract violation instead of crashing the engine. No rules changed; the pilot results reproduce exactly.
+
 ## Falsification
 
 ND-1b **fails** if any of these holds:

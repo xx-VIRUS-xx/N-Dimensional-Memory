@@ -46,7 +46,8 @@ def score(state, sources, musthaves=True):
     r["M1"] = {"stored_absences": [f"{s['tick']}:{s['peg']}.{s['dim']}" for s in S if ABSENCE.search(s["value"])],
                "unflagged_inferences": [f"{s['tick']}:{s['peg']}.{s['dim']}" for s in S
                                         if INFERENCE.search(f"{s['dim']} {s['value']}")]}
-    r["M1"]["pass"] = not r["M1"]["stored_absences"] and not r["M1"]["unflagged_inferences"]
+    r["M1"]["input_issues"] = state.get("input_issues", [])
+    r["M1"]["pass"] = not r["M1"]["stored_absences"] and not r["M1"]["unflagged_inferences"] and not r["M1"]["input_issues"]
 
     # M2 faithfulness. run-1 definition kept for comparability; amended M2a/M2b decide pass.
     pron = {"he", "she", "him", "her", "his", "they", "them", "their", "it", "its", "this", "that"}
