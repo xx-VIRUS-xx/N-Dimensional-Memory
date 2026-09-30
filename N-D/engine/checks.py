@@ -9,7 +9,7 @@ import re
 import sys
 
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
-from nd_engine import content_tokens, norm  # noqa: E402
+from nd_engine import content_tokens, norm, singular  # noqa: E402
 
 # Measurement patterns (same literal families as ND-0 so numbers are comparable).
 ABSENCE = re.compile(r"not stated|unspecified|unknown|not recorded|not specified", re.I)
@@ -17,7 +17,9 @@ INFERENCE = re.compile(r"suggests|implying|implied|indicates", re.I)
 
 
 def stem(t):
-    return re.sub(r"(ly|ing|ed|es|s)$", "", re.sub(r"fully$", "ful", t))
+    t = re.sub(r"fully$", "ful", t)
+    t = singular(t)                       # plurals the same way the engine's identity does
+    return re.sub(r"(ly|ing|ed)$", "", t)
 
 
 # Amendment 1 (EXP-ND1.md): annotation-label dimensions describe the sentence

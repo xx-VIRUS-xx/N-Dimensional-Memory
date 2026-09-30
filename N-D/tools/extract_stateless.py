@@ -42,6 +42,12 @@ PROMPT = """You extract entities and dimensions from ONE sentence. You have no o
 Return JSON only, no prose, no code fences:
 {{"event_id": "{sid}", "entities": [{{"name": "...", "type": "person|org|system|other", "dimensions": {{"dimension_name": "value"}}}}]}}
 
+Output requirements (your output is validated by a parser and rejected if any fails):
+- The top level has "event_id" and a non-empty "entities" list.
+- EVERY entity has all three keys: "name" (non-empty text), "type" (one of person, org, system, other),
+  and "dimensions" (an object with AT LEAST ONE dimension). Never output an entity without dimensions;
+  if you cannot give it a dimension, leave that entity out.
+{speaker_rule}
 Rules:
 1. Use only what the sentence states. Do not add entities, facts or relationships it does not state.
 2. Name entities as the sentence names them.
@@ -108,6 +114,36 @@ def call(provider, model, prompt):
     raise ValueError(provider)
 
 
+VALID_TYPES = {"person", "org", "system", "other"}
+
+
+def validate(rec, sid, speaker=None):
+    """Return a list of problems; empty means the record meets the contract."""
+    errs = []
+    if not isinstance(rec, dict):
+        return ["top level is not a JSON object"]
+    ents = rec.get("entities")
+    if not isinstance(ents, list) or not ents:
+        return ["'entities' is missing or empty"]
+    for i, e in enumerate(ents):
+        if not isinstance(e, dict):
+            errs.append(f"entity {i} is not an object")
+            continue
+        name = e.get("name")
+        if not isinstance(name, str) or not name.strip():
+            errs.append(f"entity {i} has no 'name'")
+        if e.get("type") not in VALID_TYPES:
+            errs.append(f"entity {i} ({name}) has type {e.get('type')!r}; use one of {sorted(VALID_TYPES)}")
+        d = e.get("dimensions")
+        if not isinstance(d, dict) or not d:
+            errs.append(f"entity {i} ({name}) has no 'dimensions' (needs at least one)")
+        elif any(not isinstance(k, str) or isinstance(v, (dict, list)) for k, v in d.items()):
+            errs.append(f"entity {i} ({name}) has a nested or non-text dimension value; use flat text values")
+    if speaker and not any(isinstance(e, dict) and str(e.get("name", "")).strip().lower() == speaker.lower() for e in ents):
+        errs.append(f"the speaker {speaker} is missing as an entity")
+    return errs
+
+
 def parse(text):
     t = re.sub(r"^```(json)?|```$", "", text.strip(), flags=re.M).strip()
     start, end = t.find("{"), t.rfind("}")
@@ -153,6 +189,7 @@ def main():
         done = [r for i, r in enumerate(done) if r.get("event_id") == f"t{i}"][:len(sentences)]
         meta["resumed_from_turn"] = len(done)
         print(f"resuming {os.path.basename(out_path)} at t{len(done)} ({len(done)} of {len(sentences)} already done)")
+    retries = {}
     replay = None
     if a.provider == "replay":
         replay = [json.loads(l) for l in open(os.path.join(ROOT, "ND-0", "data", "pilot10.babytest.jsonl"))]
@@ -168,21 +205,36 @@ def main():
                 rec = replay[i]
             else:
                 md = METADATA.format(**s) if "speaker" in s else ""
-                prompt = PROMPT.format(sid=sid, text=s["text"], dictionary=dictionary, metadata=md)
-                for attempt in range(3):
+                md = METADATA.format(**s) if "speaker" in s else ""
+                spk_rule = (f'- There must be an entity named exactly "{s["speaker"]}" (the speaker).\n'
+                            if "speaker" in s else "")
+                base = PROMPT.format(sid=sid, text=s["text"], dictionary=dictionary, metadata=md,
+                                     speaker_rule=spk_rule)
+                prompt, rec, errs = base, None, []
+                for attempt in range(1, 5):          # 1 try + up to 3 retries with the parser's feedback
                     try:
-                        rec = parse(call(a.provider, a.model, prompt))
+                        cand = parse(call(a.provider, a.model, prompt))
+                        errs = validate(cand, sid, s.get("speaker"))
+                    except Exception as e:           # network, CLI or JSON errors
+                        cand, errs = None, [f"call or JSON error: {e}"]
+                        if "claude exited" in str(e) or "HTTP" in str(e):
+                            time.sleep(2 * attempt)
+                    if not errs:
+                        rec = cand
                         break
-                    except Exception as e:  # network or JSON errors: retry, then fail loudly
-                        if attempt == 2:
-                            sys.exit(f"{sid}: failed after 3 attempts: {e}\n"
-                                     f"Progress is saved. Continue later with the same command plus --resume.")
-                        time.sleep(2 * (attempt + 1))
+                    retries[sid] = attempt
+                    prompt = (base + "\n\nYOUR PREVIOUS OUTPUT WAS REJECTED BY THE PARSER:\n- "
+                              + "\n- ".join(errs[:8]) + "\nReturn the corrected JSON only.")
+                if rec is None:
+                    sys.exit(f"{sid}: failed validation after 4 attempts: {errs[:3]}\n"
+                             f"Progress is saved. Continue later with the same command plus --resume.")
                 rec["event_id"] = sid
             out.write(json.dumps(rec) + "\n")
             out.flush()
             print(f"{sid}: {len(rec.get('entities', []))} entities")
     meta["finished"] = datetime.datetime.now().isoformat(timespec="seconds")
+    meta["prompt_version"] = "v2 (validated: name, type, dimensions on every entity; speaker required)"
+    meta["turns_needing_retries"] = retries
     json.dump(meta, open(out_path[:-6] + ".meta.json", "w"), indent=2)
     print("wrote", out_path)
 

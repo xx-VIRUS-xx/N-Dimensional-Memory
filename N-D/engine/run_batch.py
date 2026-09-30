@@ -50,7 +50,7 @@ def main(d, tag=None, source=None):
         if not os.path.exists(f[:-6] + ".meta.json") or n_lines != len(sources):
             skipped.append(f"{name} ({n_lines}/{len(sources)} turns)")
             continue  # incomplete run: finish it with --resume before scoring
-        st = run([json.loads(l) for l in open(f) if l.strip()])
+        st = run([json.loads(l) for l in open(f) if l.strip()], sources)
         sc = score(st, sources, musthaves)
         json.dump(st, open(os.path.join(d, per, f"{name}.state.json"), "w"), indent=2)
         json.dump(sc, open(os.path.join(d, per, f"{name}.checks.json"), "w"), indent=2)

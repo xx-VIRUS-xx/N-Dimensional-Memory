@@ -5,6 +5,9 @@ state, never the source text.
 2) Answer them with any model (one answer per probe id, JSON: {"p01": "...", ...}).
 3) Score:          python engine/probe_harness.py score <probes.jsonl> <answers.json>
 
+N-D depiction instead of the flat dump (one depiction per question, built by engine/depict.py):
+   python engine/probe_harness.py depict <state_dir> <probes.jsonl> --model sonnet
+
 Or all at once through Claude Code (one fresh, isolated `claude -p` call per probe).
 Progress prints per probe; answers are saved after each one, and rerunning the same
 command continues where it stopped:
@@ -25,6 +28,8 @@ def render(state):
              "open_question, intent. OPEN buckets are unresolved; do not pick a candidate yourself.", ""]
     for e in state["events"]:
         head = f"t{e['tick']}"
+        if e.get("occurred_anchor"):
+            head = f"[{e['occurred_anchor']}] " + head          # v0.3: the second clock, also in the flat view
         if e["speaker"]:
             head += f" (speaker: {e['speaker']})"
         lines.append(head)
@@ -79,30 +84,41 @@ def score(probes_path, answers_path, quiet=False):
     return ok, len(probes), misses
 
 
-def batch(state_dir, probes_path, model="sonnet"):
+def batch(state_dir, probes_path, model="sonnet", mode="flat", budget=700):
     from extract_stateless import call  # isolated claude -p call
     state_dir = state_dir.rstrip("/")
-    out = os.path.join(os.path.dirname(state_dir), "probes_" + os.path.basename(state_dir))
+    suffix = "" if mode == "flat" else f"_{mode}"
+    out = os.path.join(os.path.dirname(state_dir), "probes_" + os.path.basename(state_dir) + suffix)
+    if mode == "depict":
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        from depict import depict
     os.makedirs(out, exist_ok=True)
     probes = [json.loads(l) for l in open(probes_path) if l.strip()]
     summary = {"answering_model": f"claude-cli:{model}", "runs": {}}
     for f in sorted(glob.glob(os.path.join(state_dir, "*.state.json"))):
         name = os.path.basename(f)[:-11]
-        ctx = render(json.load(open(f)))
+        state = json.load(open(f))
+        flat_ctx = render(state)
         path = os.path.join(out, f"{name}.answers.json")
         answers = json.load(open(path)) if os.path.exists(path) else {}   # resume: keep saved answers
-        print(f"{name}: memory context {len(ctx.split())} words; {len(answers)}/{len(probes)} already answered", flush=True)
+        sizes_path = os.path.join(out, f"{name}.context_words.json")
+        sizes = json.load(open(sizes_path)) if os.path.exists(sizes_path) else {}
+        print(f"{name} [{mode}]: {len(answers)}/{len(probes)} already answered", flush=True)
         for p in probes:
             if p["id"] in answers:
                 continue
+            ctx = depict(state, p["question"], budget) if mode == "depict" else flat_ctx
+            sizes[p["id"]] = len(ctx.split())
             prompt = (f"{ctx}\n\nAnswer from the memory above only. If memory does not settle it, "
                       f"say so. Answer in one short sentence.\nQuestion: {p['question']}")
             answers[p["id"]] = call("claude-cli", model, prompt).strip()
             json.dump(answers, open(path, "w"), indent=2)                  # saved after every answer
+            json.dump(sizes, open(sizes_path, "w"), indent=2)
             print(f"  {p['id']} done ({len(answers)}/{len(probes)})", flush=True)
         ok, n, misses = score(probes_path, path, quiet=True)
-        summary["runs"][name] = {"M3": f"{ok}/{n}", "misses": misses}
-        print(f"{name:40s} M3 {ok}/{n}  misses: {[m['id'] for m in misses]}")
+        summary["runs"][name] = {"M3_triage": f"{ok}/{n}", "misses": misses,
+                                 "mean_context_words": round(sum(sizes.values()) / max(len(sizes), 1))}
+        print(f"{name:40s} M3 triage {ok}/{n}  mean context {summary['runs'][name]['mean_context_words']} words")
     json.dump(summary, open(os.path.join(out, "m3_summary.json"), "w"), indent=2)
 
 
@@ -126,7 +142,7 @@ def raw_baseline(source_path, probes_path, out_dir, model="sonnet"):
         json.dump(answers, open(path, "w"), indent=2)
         print(f"  {p['id']} done ({len(answers)}/{len(probes)})", flush=True)
     ok, n, misses = score(probes_path, path, quiet=True)
-    print(f"RAW baseline  M3 {ok}/{n}  misses: {[m['id'] for m in misses]}")
+    print(f"RAW baseline  M3 triage {ok}/{n}  context {len(ctx.split())} words")
 
 
 if __name__ == "__main__":
@@ -135,8 +151,8 @@ if __name__ == "__main__":
     elif sys.argv[1] == "raw":
         model = sys.argv[sys.argv.index("--model") + 1] if "--model" in sys.argv else "sonnet"
         raw_baseline(sys.argv[2], sys.argv[3], sys.argv[4], model)
-    elif sys.argv[1] == "batch":
+    elif sys.argv[1] in ("batch", "depict"):
         model = sys.argv[sys.argv.index("--model") + 1] if "--model" in sys.argv else "sonnet"
-        batch(sys.argv[2], sys.argv[3], model)
+        batch(sys.argv[2], sys.argv[3], model, mode="flat" if sys.argv[1] == "batch" else "depict")
     else:
         score(*sys.argv[2:4])

@@ -76,8 +76,41 @@ def content_tokens(text):
     return [t for t in norm(text).split() if t not in STOP]
 
 
-def contains_peg(text, peg_norm):
-    return re.search(rf"(?<![a-z0-9]){re.escape(peg_norm)}(?![a-z0-9])", norm(text)) is not None
+# v0.3 identity key: case, punctuation, determiners/possessives and plurals do not make
+# a different peg ("that lake sunrise" = "lake sunrise"; "adoption agencies" = "adoption agency").
+DETERMINERS = {"the", "a", "an", "that", "this", "these", "those", "some"}
+# Possessives carry identity ("my family" said by Melanie is Melanie's family, not
+# Caroline's "a family"). First/second person resolve to speaker/listener from turn
+# metadata; third person stays as written (not guessed).
+FIRST_PERSON = {"my", "our", "mine", "ours"}
+SECOND_PERSON = {"your", "yours"}
+
+
+def singular(t):
+    if len(t) <= 3 or t.endswith("ss") or t.endswith("us") or t.endswith("is"):
+        return t
+    if t.endswith("ies") and len(t) > 4:
+        return t[:-3] + "y"
+    if t.endswith("s"):
+        return t[:-1]
+    return t
+
+
+def ident(name, speaker=None, listener=None):
+    toks = []
+    for t in norm(name).split():
+        if t in DETERMINERS:
+            continue
+        if t in FIRST_PERSON and speaker:
+            t = norm(speaker)
+        elif t in SECOND_PERSON and listener:
+            t = norm(listener)
+        toks.append(t)
+    return " ".join(singular(t) for t in toks) or norm(name)
+
+
+def contains_peg(text, peg_norm, speaker=None, listener=None):
+    return re.search(rf"(?<![a-z0-9]){re.escape(peg_norm)}(?![a-z0-9])", ident(text, speaker, listener)) is not None
 
 
 # ---------------------------------------------------------------- engine
@@ -97,20 +130,31 @@ def _sanitise(tick, rec, issues):
     return {**rec, "entities": ents}
 
 
-def run(records):
+def run(records, sources=None):
+    """sources: optional turn metadata aligned with records (speaker, date, dia_id)."""
     issues = []
     records = [_sanitise(t, r, issues) for t, r in enumerate(records)]
-    state = {"input_issues": issues, "engine_version": "v0.2.1", "events": [], "pegs": {}, "strings": [], "proposals": [], "buckets": [], "first_mentions": [],
+    state = {"input_issues": issues, "engine_version": "v0.3", "events": [], "pegs": {}, "strings": [], "proposals": [], "buckets": [], "first_mentions": [],
              "dropped_absences": [], "model_belief_candidates": [], "resolutions": []}
     peg_of = {}            # normalised name -> peg id (display name of first mention)
 
     for tick, rec in enumerate(records):                      # E1 ticks
-        known_before = set(peg_of)                             # pegs that existed before this event
+        known_before = set(peg_of)                             # identity keys that existed before this event
+        spk_, lst_ = (sources[tick].get("speaker"), sources[tick].get("listener")) if sources and tick < len(sources) else (None, None)
+
+        def idkey(name):
+            return ident(name, spk_, lst_)
         ev = {"tick": tick, "input_id": rec["event_id"], "participants": [], "speaker": None}
+        if sources and tick < len(sources):                    # v0.3: second clock (C4)
+            src = sources[tick]
+            ev["occurred_anchor"] = src.get("date")             # when the turn was said; relative times in
+            ev["source_speaker"] = src.get("speaker")           # values ("yesterday") are read against it
+            ev["source_listener"] = src.get("listener")
+            ev["dia_id"] = src.get("dia_id")
 
         # E2 peg identity: exact normalised match merges; near matches are proposals.
         for ent in rec["entities"]:
-            n = norm(ent["name"])
+            n = idkey(ent["name"])
             if n not in peg_of:
                 for other_n, other in peg_of.items():
                     a, b = set(n.split()), set(other_n.split())
@@ -119,6 +163,10 @@ def run(records):
                                                    "rule": "token overlap", "status": "needs confirmation"})
                 peg_of[n] = ent["name"]
                 state["pegs"][ent["name"]] = {"first_tick": tick, "type": ent.get("type")}
+            else:
+                state["pegs"][peg_of[n]].setdefault("aliases", [])
+                if ent["name"] != peg_of[n] and ent["name"] not in state["pegs"][peg_of[n]]["aliases"]:
+                    state["pegs"][peg_of[n]]["aliases"].append(ent["name"])
             ev["participants"].append(peg_of[n])
 
         # E5 speaker: an entity whose role/action marks it as the speaker.
@@ -126,19 +174,19 @@ def run(records):
             d = ent["dimensions"]
             cue = " ".join(str(d.get(k, "")) for k in ("role_in_event", "role", "action", "communicative_action"))
             if SPEAKER_ROLE.search(cue):
-                ev["speaker"] = peg_of[norm(ent["name"])]
+                ev["speaker"] = peg_of[idkey(ent["name"])]
                 break
         ev["actor"] = None
         for ent in rec["entities"]:
             d = ent["dimensions"]
             cue = " ".join(str(d.get(k, "")) for k in ("role_in_event", "role"))
             if ACTOR_ROLE.search(cue) and not ev["speaker"]:
-                ev["actor"] = peg_of[norm(ent["name"])]
+                ev["actor"] = peg_of[idkey(ent["name"])]
                 break
         state["events"].append(ev)
 
         for ent in rec["entities"]:
-            peg = peg_of[norm(ent["name"])]
+            peg = peg_of[idkey(ent["name"])]
             for dim, raw in ent["dimensions"].items():
                 val = str(raw)
 
@@ -154,7 +202,7 @@ def run(records):
                     continue
 
                 # E3 value linking: known pegs (seen up to now) named inside the value.
-                links = sorted({p for n, p in peg_of.items() if p != peg and contains_peg(cleaned, n)})
+                links = sorted({p for n, p in peg_of.items() if p != peg and contains_peg(cleaned, n, spk_, lst_)})
 
                 # E5 status per role string.
                 status, modality = ("claim", "certain") if ev["speaker"] else ("fact", "certain")
@@ -192,7 +240,7 @@ def run(records):
         for ent in rec["entities"]:
             dims = " ".join(f"{k} {v}" for k, v in ent["dimensions"].items())
             unresolved = str(ent["dimensions"].get("reference_status", "")).lower() == "unresolved"
-            n = norm(ent["name"])
+            n = idkey(ent["name"])
             # A7f: every "the X" phrase that is not an already-known peg is checked,
             # whether or not the interpreter marked it (unmatched ones become first mentions).
             definite = ent["name"].strip().lower().startswith("the ") and n not in known_before
@@ -210,7 +258,7 @@ def run(records):
                                      "state": "open", "origin": "local-alternatives"})
             refs = [e for e in refs if e not in alts]
         # A7g: a phrase naming a peg that already existed is identity, not a reference.
-        refs = [e for e in refs if not (norm(e["name"]) in known_before and norm(e["name"]).split(" ")[0] not in PRONOUNS)]
+        refs = [e for e in refs if not (idkey(e["name"]) in known_before and norm(e["name"]).split(" ")[0] not in PRONOUNS)]
 
         for ent in refs:
             ref = ent["name"]
@@ -254,7 +302,7 @@ def run(records):
                     # A7c: a definite phrase with no earlier match is a first mention, not an ambiguity.
                     state.setdefault("first_mentions", []).append({"tick": tick, "name": ref})
                     continue
-            b = {"id": f"b{len(state['buckets'])}", "tick": tick, "peg": peg_of[norm(ref)], "dim": "reference",
+            b = {"id": f"b{len(state['buckets'])}", "tick": tick, "peg": peg_of[idkey(ref)], "dim": "reference",
                  "query": f"what does '{ref}' refer to?", "candidates": cands, "model_belief": None,
                  "origin": "global-backward"}
             if len(cands) == 1:
@@ -283,7 +331,8 @@ def run(records):
 
 if __name__ == "__main__":
     recs = [json.loads(l) for l in open(sys.argv[1]) if l.strip()]
-    out = run(recs)
+    srcs = [json.loads(l) for l in open(sys.argv[3]) if l.strip()] if len(sys.argv) > 3 else None
+    out = run(recs, srcs)
     json.dump(out, open(sys.argv[2], "w"), indent=2)
     print(f"events={len(out['events'])} pegs={len(out['pegs'])} strings={len(out['strings'])} "
           f"buckets={len(out['buckets'])} proposals={len(out['proposals'])} "

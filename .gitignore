@@ -186,3 +186,6 @@ N-D/scratch/
 
 # LoCoMo raw chunk (CC BY-NC 4.0); regenerate with N-D/tools/locomo_chunk.py
 N-D/ND-1b/data/
+
+# LoCoMo raw chunks for ND-2 (CC BY-NC 4.0); regenerate with N-D/tools/locomo_chunk.py
+N-D/ND-2/heldout/data/

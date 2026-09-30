@@ -23,6 +23,7 @@ def main():
     ap.add_argument("--locomo", required=True)
     ap.add_argument("--sample", type=int, default=0)
     ap.add_argument("--sessions", default="1-3")
+    ap.add_argument("--out-dir", default=None, help="default: ND-1b/data")
     a = ap.parse_args()
     raw = open(a.locomo, "rb").read()
     sha = hashlib.sha256(raw).hexdigest()
@@ -53,7 +54,7 @@ def main():
             p["gold_answer"] = str(q["answer"])
             p["accept"] = [str(q["answer"])]
         probes.append(p)
-    out = os.path.join(ROOT, "ND-1b", "data")
+    out = os.path.abspath(a.out_dir) if a.out_dir else os.path.join(ROOT, "ND-1b", "data")
     os.makedirs(out, exist_ok=True)
     with open(os.path.join(out, "source.jsonl"), "w") as f:
         for t in turns:

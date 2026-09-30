@@ -1,10 +1,11 @@
 # N-D engine v0
 
-Engine version: v0.2 (see EXP-ND1 amendment A7). Deterministic stages E1–E6 over the LLM's entity-dimension output. No LLM calls.
+Engine version: v0.3 (dates, identity normalisation; see ND-2/EXP-ND2.md) (see EXP-ND1 amendment A7). Deterministic stages E1–E6 over the LLM's entity-dimension output. No LLM calls.
 
 | File | Purpose |
 |---|---|
 | `nd_engine.py` | E1 ticks, E2 peg identity (merge exact, propose near), E3 value linking, E4 cleaning, E5 epistemic tagging, E6 buckets (local + global backward/forward). All rules are in tables at the top of the file. |
+| `depict.py` | Depiction v1: the question-specific memory view handed to the answering model |
 | `checks.py` | ND-1 metrics that need no LLM: M1 contract, M2 faithfulness, M4 must-haves, diagnostics |
 | `run_batch.py` | Engine + checks on every extraction in a folder, and the M5 stability summary; an optional tag rescores into `per_run_<tag>/` |
 | `probe_harness.py` (`batch`) | M3 through Claude Code: one isolated `claude -p` call per probe, for every state in a folder |
