@@ -56,7 +56,15 @@ Rules:
 Dimension dictionary:
 {dictionary}
 
-Sentence ({sid}): {text}
+{metadata}Sentence ({sid}): {text}
+"""
+
+METADATA = """Turn metadata (given, not part of the sentence):
+- Speaker: {speaker}. "I", "me", "my" in the sentence refer to {speaker}; resolve them to {speaker}.
+- Listener: {listener}. "you", "your" refer to {listener}; resolve them to {listener}.
+- Date of this turn: {date}. Relative times ("last Sunday", "yesterday") may be recorded as written, with this date as context.
+- Include {speaker} as an entity with role_in_event "speaker".
+
 """
 
 
@@ -110,15 +118,17 @@ def main():
     ap.add_argument("--provider", required=True, choices=["anthropic", "openai", "ollama", "claude-cli", "replay"])
     ap.add_argument("--model", required=True)
     ap.add_argument("--run", type=int, default=1)
+    ap.add_argument("--source", default=SOURCE, help="jsonl of sentences (default: the pilot)")
+    ap.add_argument("--out-dir", default=OUT_DIR)
     a = ap.parse_args()
-    sentences = [json.loads(l) for l in open(SOURCE) if l.strip()]
+    sentences = [json.loads(l) for l in open(a.source) if l.strip()]
     dictionary = json.dumps(json.load(open(DICT))["dimensions"], indent=1)
-    os.makedirs(OUT_DIR, exist_ok=True)
+    os.makedirs(a.out_dir, exist_ok=True)
     safe = re.sub(r"[^A-Za-z0-9._-]", "_", a.model)
-    out_path = os.path.join(OUT_DIR, f"{a.provider}__{safe}__run{a.run}.jsonl")
+    out_path = os.path.join(a.out_dir, f"{a.provider}__{safe}__run{a.run}.jsonl")
     if a.provider == "claude-cli" and not shutil.which("claude"):
         sys.exit("claude-cli: the `claude` command was not found on PATH")
-    meta = {"provider": a.provider, "model": a.model, "run": a.run,
+    meta = {"provider": a.provider, "model": a.model, "run": a.run, "source": os.path.relpath(a.source, ROOT),
             "started": datetime.datetime.now().isoformat(timespec="seconds"),
             "temperature": "0" if a.provider in ("anthropic", "openai", "ollama") else "not settable (CLI default)",
             "isolation": "fresh empty temp dir per call" if a.provider == "claude-cli" else "stateless API call"}
@@ -138,7 +148,8 @@ def main():
             if replay:
                 rec = replay[i]
             else:
-                prompt = PROMPT.format(sid=sid, text=s["text"], dictionary=dictionary)
+                md = METADATA.format(**s) if "speaker" in s else ""
+                prompt = PROMPT.format(sid=sid, text=s["text"], dictionary=dictionary, metadata=md)
                 for attempt in range(3):
                     try:
                         rec = parse(call(a.provider, a.model, prompt))

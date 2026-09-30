@@ -35,8 +35,10 @@ def traceable(text, source):
     return sum(stem(t) in src for t in toks) / len(toks)
 
 
-def score(state, sources):
-    src = {i: s["text"] for i, s in enumerate(sources)}
+def score(state, sources, musthaves=True):
+    # Dialogue turns carry metadata (speaker, listener, date) that the extractor is given;
+    # names and dates from it count as traceable (ND-1b amendment B1).
+    src = {i: " ".join(str(s.get(k, "")) for k in ("speaker", "listener", "date", "text")) for i, s in enumerate(sources)}
     S, B, E = state["strings"], state["buckets"], state["events"]
     r = {}
 
@@ -65,6 +67,9 @@ def score(state, sources):
     r["M2"]["traceable_rate"] = r["M2"]["M2a_content_traceable_rate"]
     r["M2"]["pass"] = r["M2"]["M2a_content_traceable_rate"] >= 0.95 and not label_new_pegs
 
+    if not musthaves:
+        r["M4"] = {"checks": {}, "passed": 0, "of": 0, "note": "no must-haves for this corpus"}
+        return _diagnostics(r, S, B, E, state)
     # M4 must-haves. Names are compared normalised so different valid spellings pass.
     def at(t):
         return [s for s in S if s["tick"] == t]
@@ -95,7 +100,10 @@ def score(state, sources):
                         and s["status"] in ("fact", "claim") for s in at(9))
     mh["MH7"] = all(x in parts[0] for x in ("alice", "postgresql")) and all(x in parts[8] for x in ("alice", "postgresql"))
     r["M4"] = {"checks": mh, "passed": sum(mh.values()), "of": len(mh)}
+    return _diagnostics(r, S, B, E, state)
 
+
+def _diagnostics(r, S, B, E, state):
     # Diagnostics
     colliding = sum(1 for a, b in itertools.combinations(E, 2) if set(a["participants"]) & set(b["participants"]))
     deg = {}
