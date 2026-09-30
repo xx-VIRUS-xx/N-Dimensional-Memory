@@ -1,0 +1,14 @@
+{
+  "reviewer": "Claude; all 50 answers read against LoCoMo gold answers",
+  "scale": "C = 1, P (partial) = 0.5, W = 0",
+  "memory_haiku_run1": {"q00":"W","q01":"W","q02":"C","q03":"C","q04":"C","q05":"W","q06":"W","q07":"C","q08":"W","q09":"W","q10":"C","q11":"C","q12":"P","q13":"C","q14":"P","q15":"C","q16":"C","q17":"C","q18":"C","q19":"W","q20":"C","q21":"C","q22":"W","q23":"C","q24":"C"},
+  "raw_baseline":      {"q00":"C","q01":"C","q02":"C","q03":"C","q04":"C","q05":"C","q06":"C","q07":"W","q08":"C","q09":"C","q10":"C","q11":"C","q12":"C","q13":"C","q14":"P","q15":"P","q16":"C","q17":"C","q18":"C","q19":"C","q20":"W","q21":"C","q22":"W","q23":"C","q24":"C"},
+  "notes": {
+    "q05": "LoCoMo gold says 'the sunday before 25 May'; the text says 'last Saturday'. The RAW answer (Saturday 20 May) follows the text and is scored C. This is likely a gold error (an independent audit of LoCoMo reports errors of this kind).",
+    "q07": "The gold is 'Single'. Memory answered 'single parent' (C); RAW said the conversation doesn't settle it (W).",
+    "q19": "The fact spans two turns: t49 asks 'How long have you been married?', t50 answers '5 years already!'. Stateless per-turn extraction stored '5 years ago … put this dress on' with no link to marriage.",
+    "q20": "Adversarial. Memory rejected the false premise (the realisation was Melanie's, not Caroline's); RAW accepted it and answered as Caroline.",
+    "q22": "Adversarial. Both answered the agency question without flagging that Melanie isn't the one adopting."
+  },
+  "totals": {"memory": 16.0, "raw": 21.0, "ratio": 0.762}
+}

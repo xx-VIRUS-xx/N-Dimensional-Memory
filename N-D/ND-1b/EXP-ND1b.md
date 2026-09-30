@@ -1,6 +1,6 @@
 # ND-1b: does the frozen engine hold on external dialogue?
 
-**Status:** spec frozen 2026-09-30, before any run.
+**Status:** spec frozen 2026-09-30, before any run. **Stage 1 failed** (M1, M3 at 76% of RAW, M5 = 0.22); stages 2–3 not run, per B3. See `stage1/REPORT.md`.
 
 ## Question
 
