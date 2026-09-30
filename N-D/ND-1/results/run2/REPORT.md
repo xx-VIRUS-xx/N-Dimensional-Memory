@@ -49,11 +49,42 @@ M5 under v0.2: collision Jaccard 1.0, bucket-outcome Jaccard 0.6. The remaining 
 
 - **Claude-only (amendment A6).** Stability is shown within one model family. Cross-family stability is untested, and shared training could hide shared blind spots.
 - **No temperature control** through the CLI. Sonnet's three runs were nearly identical anyway; Opus varied more.
-- **M3 (probes) still pending.** Run it with `engine/probe_harness.py batch` (see the instructions).
 
 ## Decisions
 
 1. Freeze engine v0.2 and prompt v1 for ND-1b.
 2. Prompt v1 stays unchanged. Row f is an extraction violation that engine rules must not paper over; it stays visible as an MH3 failure.
-3. Run M3 on both the v0.1 and v0.2 states, with Sonnet as the answering model.
+3. M3 is done (below).
 4. Next: ND-1b, three new 30-sentence conversations, never seen by the engine rules.
+
+## M3: probe accuracy (added 2026-09-30)
+
+The answering model is Claude Sonnet via `claude -p`, one isolated call per probe. It sees only the rendered engine memory. All 180 answers were read by hand (`m3_review.json`).
+
+| Run | Engine v0.1 | Engine v0.2 |
+|---|---|---|
+| Opus 1 / 2 / 3 | 15 / 15 / 15 | 15 / 15 / 15 |
+| Sonnet 1 | 14 (p10) | 15 |
+| Sonnet 2 | **14** (p10; automatic score was 15) | 15 |
+| Sonnet 3 | 14 (p10) | 14 (p10) |
+
+Every run clears the ≥ 13/15 target. The only probe ever missed is p10, "whose failover behaviour is uncertain?", and every miss names an owner for an unresolved "its". The misses land exactly where the must-haves predicted.
+
+**Caveats:**
+
+- **No string scorer is reliable here.** Substring matching let "no" match inside "not" and "known". Whole-word matching (A9) fixes that, but creates a new false miss (Opus 1: "Not fully — … unresolved"), and neither catches a self-contradicting answer ("No — … it's PostgreSQL's"). The automatic score is triage only; **hand review of every answer on the discriminating probes (p08, p10, p13) is mandatory**, and run 2's M3 is the hand-reviewed number.
+- **Most probes are easy.** Any faithful extraction answers probes such as "who proposed Redis?". Only p08, p10 and p13 discriminate. M3 shows that memory keeps the facts; it does not show that the N-D depiction helps. That is ND-3's question.
+- **The answering model is from the same family as the extractor** (Claude-only, A6).
+- **The depiction shows raw extractor labels.** Opus answers to p05 hedged because the memory still displayed `reference_status = unresolved` for "the team", although the engine had classified it as a first mention. The renderer should show engine decisions, not the labels those decisions replaced. This belongs in the depiction layer (ND-3).
+
+## ND-1 verdict
+
+| Gate criterion (PLAN.md) | Result |
+|---|---|
+| M1 = 0 | ✓ all runs |
+| M2a ≥ 95%, M2b = 0 | ✓ all runs |
+| M3 ≥ 13/15 | ✓ all runs (hand-reviewed) |
+| M4 = 7/7 | Opus ✓. Sonnet 5/7 under v0.1; 7/7, 7/7, 6/7 under v0.2 (fitted) |
+| M5 stable | Geometry ✓ (collision Jaccard 1.0). Ambiguity ✗ (0.091 under v0.1, 0.6 under v0.2) |
+
+**Conditional pass.** Faithfulness, the contract, retention and the collision geometry hold across models and runs. Ambiguity handling does not yet: the v0.2 fixes exist but are unvalidated. **ND-1b decides:** new conversations, engine v0.2 and prompt v1 frozen, whole-word probe scoring.

@@ -11,6 +11,7 @@ Or all at once through Claude Code (one fresh, isolated `claude -p` call per pro
 """
 import glob
 import json
+import re
 import os
 import sys
 
@@ -60,7 +61,12 @@ def score(probes_path, answers_path, quiet=False):
     for p in probes:
         a = ans.get(p["id"], "").lower()
         also = p.get("accept_also", [])
-        hit = any(x.lower() in a for x in p["accept"]) and (not also or any(y.lower() in a for y in also))
+        # A9: whole-word matching (substring matching let "no" match "not"/"known").
+        # Still triage only: it misses paraphrases ("not fully ... unresolved") and cannot
+        # catch self-contradicting answers. M3 is the hand-reviewed score.
+        def said(x):
+            return re.search(rf"(?<![a-z]){re.escape(x.lower())}(?![a-z])", a) is not None
+        hit = any(said(x) for x in p["accept"]) and (not also or any(said(y) for y in also))
         ok += hit
         if not hit:
             misses.append({"id": p["id"], "question": p["question"], "answer": ans.get(p["id"], "")})

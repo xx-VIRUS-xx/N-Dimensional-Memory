@@ -1,6 +1,6 @@
 # ND-1 — Engine v0: from entity-dimension output to N-D geometry
 
-**Status:** spec frozen. Run 1 complete (`results/run1/REPORT.md`). Run 2 complete except M3 (`results/run2/REPORT.md`). Engine v0.2 is frozen for ND-1b.
+**Status:** spec frozen. Run 1 complete (`results/run1/REPORT.md`). Run 2 complete (`results/run2/REPORT.md`). **Verdict: conditional pass**; ambiguity stability is decided by ND-1b with engine v0.2 frozen.
 
 ## Question
 
@@ -91,5 +91,7 @@ If must-haves MH4–MH5 and the attribution and belief probes fail as extraction
 v0.2 is fitted to run 2 and is validated only by ND-1b.
 
 **A8: MH3 check scope.** The check now looks only at the "its failover behavior" bucket, not every bucket at tick 5. A correct engine resolution of "the peak-load benchmark" had made it fail.
+
+**A9: Probe scoring.** Answers are matched as whole words from ND-1b on, because substring matching let "no" match inside "not" and "known". String matching is triage only. M3 is the hand-reviewed score, and every answer to p08, p10 and p13 is read by hand, since whole-word matching produces its own false misses and no matcher catches self-contradicting answers (`results/run2/m3_review.json`).
 
 **Known limit found while building run 2:** pronoun candidates are every type-compatible peg in the window, including the entity the pronoun modifies. The candidate lists for "its" are therefore noisy but always open, which is the safe direction. Not tuned on the pilot.

@@ -1,0 +1,21 @@
+{
+  "reviewer": "Claude, all 180 answers read (2 engine versions x 6 runs x 15 probes)",
+  "answering_model": "claude-cli:sonnet",
+  "changes_from_automatic_score": [
+    {"engine": "v0.1", "run": "claude-cli__sonnet__run2", "probe": "p10",
+     "automatic": "PASS", "manual": "MISS",
+     "why": "Answer begins 'No' but then asserts it is PostgreSQL's failover behaviour, resolving the open bucket; substring match on 'no' passed it."}
+  ],
+  "notes": [
+    {"probe": "p05", "runs": "opus 1-3 (both engines)", "verdict": "PASS, with note",
+     "why": "Names 'the team' but hedges because the rendered memory still shows the extractor's raw label reference_status = unresolved, although engine v0.2 classified 'the team' as a first mention. The depiction shows raw labels that contradict engine decisions (fix belongs in the depiction layer, ND-3)."},
+    {"probe": "p06", "runs": "opus 3 (v0.2)", "verdict": "PASS, with note",
+     "why": "Says Carol 'gave two different answers' (session caching vs caching): mild over-reading of a broader/narrower pair as a conflict."},
+    {"probe": "p10", "runs": "sonnet 3 (both engines), sonnet 1 (v0.1)", "verdict": "MISS (genuine)",
+     "why": "Answer names a specific owner for 'its'. In sonnet 3 the extractor silently resolved it; in sonnet 1 under v0.1 no 'its' bucket existed."}
+  ],
+  "final_M3": {
+    "engine_v0.2": {"opus_run1": "15/15", "opus_run2": "15/15", "opus_run3": "15/15", "sonnet_run1": "15/15", "sonnet_run2": "15/15", "sonnet_run3": "14/15"},
+    "engine_v0.1": {"opus_run1": "15/15", "opus_run2": "15/15", "opus_run3": "15/15", "sonnet_run1": "14/15", "sonnet_run2": "14/15", "sonnet_run3": "14/15"}
+  }
+}
