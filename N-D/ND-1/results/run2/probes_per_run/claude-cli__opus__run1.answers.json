@@ -1,0 +1,17 @@
+{
+  "p01": "Alice proposed PostgreSQL (initially at t0, and again at t8).",
+  "p02": "PostgreSQL was proposed (twice, by Alice) for the payments platform.",
+  "p03": "Bob questioned whether PostgreSQL could handle the payments platform's projected transaction load.",
+  "p04": "Alice said the benchmark results were inconclusive and asked the team to test PostgreSQL under peak load.",
+  "p05": "Memory does not settle this \u2014 \"the team\" was asked, but its reference is marked unresolved (open_question).",
+  "p06": "Carol said Redis is used for session caching (later, for caching generally, with the payments platform team planning to keep it).",
+  "p07": "Bob proposed Redis for rate limiting (t4).",
+  "p08": "No, it's unresolved \u2014 at t4 it's unclear whether Bob meant the payments platform or a separate service (open bucket b2), and it's never resolved in the memory.",
+  "p09": "Alice reported that the peak-load benchmark completed successfully, though failover behavior remained uncertain.",
+  "p10": "No \u2014 at t5 \"its failover behavior\" has an unresolved reference (open bucket b3 with multiple candidates), so whose failover behavior is uncertain is not settled.",
+  "p11": "According to Bob, the rate-limiting change might require a different deployment plan.",
+  "p12": "According to Carol, the payments platform team planned to keep Redis for caching (while they decided on the database changes).",
+  "p13": "No \u2014 per t8, Alice proposed PostgreSQL again after the failover test, but \"no final adoption decision was recorded.\"",
+  "p14": "Alice proposed PostgreSQL twice (t0 and t8).",
+  "p15": "Bob favored a separate rate-limiting service in the architecture review."
+}

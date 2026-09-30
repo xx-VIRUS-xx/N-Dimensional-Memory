@@ -1,0 +1,35 @@
+{
+  "answering_model": "claude-cli:sonnet",
+  "runs": {
+    "claude-cli__opus__run1": {
+      "M3": "15/15",
+      "misses": []
+    },
+    "claude-cli__opus__run2": {
+      "M3": "15/15",
+      "misses": []
+    },
+    "claude-cli__opus__run3": {
+      "M3": "15/15",
+      "misses": []
+    },
+    "claude-cli__sonnet__run1": {
+      "M3": "15/15",
+      "misses": []
+    },
+    "claude-cli__sonnet__run2": {
+      "M3": "15/15",
+      "misses": []
+    },
+    "claude-cli__sonnet__run3": {
+      "M3": "14/15",
+      "misses": [
+        {
+          "id": "p10",
+          "question": "Is it known whose failover behaviour is uncertain?",
+          "answer": "Yes \u2014 it's the peak-load benchmark's (from t2, referenced at t5) failover behavior."
+        }
+      ]
+    }
+  }
+}
