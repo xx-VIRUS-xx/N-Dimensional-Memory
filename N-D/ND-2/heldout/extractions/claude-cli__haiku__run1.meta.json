@@ -1,0 +1,15 @@
+{
+  "provider": "claude-cli",
+  "model": "haiku",
+  "run": 1,
+  "source": "ND-2/heldout/data/source.jsonl",
+  "started": "2026-10-01T13:04:55",
+  "temperature": "not settable (CLI default)",
+  "isolation": "fresh empty temp dir per call",
+  "claude_version": "2.1.281 (Claude Code)",
+  "user_claude_md_present": false,
+  "resumed_from_turn": 23,
+  "finished": "2026-10-01T13:41:44",
+  "prompt_version": "v2 (validated: name, type, dimensions on every entity; speaker required)",
+  "turns_needing_retries": {}
+}

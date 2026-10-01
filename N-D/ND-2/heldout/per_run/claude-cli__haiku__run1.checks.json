@@ -1,0 +1,264 @@
+{
+  "M1": {
+    "stored_absences": [],
+    "unflagged_inferences": [],
+    "input_issues": [],
+    "pass": true
+  },
+  "M2": {
+    "run1_definition_rate": 0.68,
+    "M2a_content_traceable_rate": 0.955,
+    "M2b_label_introduced_pegs": [],
+    "untraceable_names": [
+      "16:Gina's team"
+    ],
+    "untraceable_content_values": [
+      "8:Gina.action = expressing appreciation",
+      "10:Gina.position = favors exploring and planning dance activities",
+      "11:Jon.action = proposing to show his moves to Gina",
+      "12:Gina.position = approves",
+      "15:stage.context = location of the dance performance",
+      "23:Jon.position = eager for upcoming festival performance",
+      "23:nearby festival.function = venue for performance",
+      "25:the festival.function = venue for performance",
+      "32:Gina.action = asked about location and features, expressed enthusiasm, shared travel experience",
+      "37:Jon.position = believes it will be worth it",
+      "38:Gina.position = confident Jon can succeed",
+      "40:Gina.action = expressed appreciation",
+      "42:Gina.position = optimistic and committed to continued progress toward goals",
+      "56:Jon.position = confident about achieving dreams"
+    ],
+    "traceable_rate": 0.955,
+    "pass": true
+  },
+  "M4": {
+    "checks": {},
+    "passed": 0,
+    "of": 0,
+    "note": "no must-haves for this corpus"
+  },
+  "diagnostics": {
+    "strings_with_peg_links": 0.305,
+    "single_event_pegs": 0.771,
+    "colliding_event_pairs": 1538,
+    "buckets": [
+      {
+        "id": "b0",
+        "tick": 4,
+        "state": "open",
+        "candidates": [
+          "Door Dash",
+          "your job",
+          "own business",
+          "dance studio"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b1",
+        "tick": 4,
+        "state": "open",
+        "candidates": [
+          "Door Dash",
+          "your job",
+          "own business",
+          "dance studio"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b2",
+        "tick": 13,
+        "state": "open",
+        "candidates": [
+          "we",
+          "new dance moves",
+          "dance session",
+          "moves"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b3",
+        "tick": 19,
+        "state": "open",
+        "candidates": [
+          "ideal dance studio by the water",
+          "Gina's team",
+          "regionals",
+          "Finding Freedom"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b4",
+        "tick": 20,
+        "state": "open",
+        "candidates": [
+          "Finding Freedom",
+          "ideal dance studio by the water"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b5",
+        "tick": 22,
+        "state": "open",
+        "candidates": [
+          "ideal dance studio by the water",
+          "we",
+          "a place like this"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b6",
+        "tick": 24,
+        "state": "open",
+        "candidates": [
+          "we",
+          "a place like this",
+          "small group of dancers",
+          "projects",
+          "choreography",
+          "nearby festival"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b7",
+        "tick": 24,
+        "state": "open",
+        "candidates": [
+          "Gina",
+          "Jon"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b8",
+        "tick": 25,
+        "state": "open",
+        "candidates": [
+          "Jon",
+          "Gina"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b9",
+        "tick": 25,
+        "state": "open",
+        "candidates": [
+          23,
+          24
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b10",
+        "tick": 26,
+        "state": "open",
+        "candidates": [
+          "Gina",
+          "Jon"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b11",
+        "tick": 27,
+        "state": "resolved",
+        "candidates": [
+          "the festival"
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b12",
+        "tick": 33,
+        "state": "open",
+        "candidates": [
+          "dance floor",
+          "vision",
+          "dance studio",
+          "right spot",
+          "place with great natural light",
+          "Paris",
+          "Rome"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b13",
+        "tick": 37,
+        "state": "open",
+        "candidates": [
+          "dance floor",
+          "Marley flooring",
+          "dance studio",
+          "Marley"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b14",
+        "tick": 39,
+        "state": "open",
+        "candidates": [
+          "Marley",
+          "dance studio",
+          "the process"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b15",
+        "tick": 43,
+        "state": "open",
+        "candidates": [
+          "Success",
+          "our dreams"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b16",
+        "tick": 48,
+        "state": "open",
+        "candidates": [
+          "furniture and decor",
+          "wholesalers",
+          "clothing store",
+          "the space",
+          "trendy pieces"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b17",
+        "tick": 55,
+        "state": "open",
+        "candidates": [
+          "dance studio",
+          "the space",
+          "special experience",
+          "support",
+          "challenge",
+          "store"
+        ],
+        "resolved_by": null
+      }
+    ],
+    "identity_proposals_pending": 27,
+    "dropped_absences": 0,
+    "model_belief_candidates": 0,
+    "status_counts": {
+      "fact": 0,
+      "claim": 340,
+      "speaker_belief": 34,
+      "open_question": 24,
+      "intent": 2
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "answering_model": "claude-cli:sonnet",
+  "runs": {
+    "claude-cli__haiku__run1": {
+      "M3_triage": "12/33",
+      "misses": [
+        {
+          "id": "q00",
+          "question": "When Jon has lost his job as a banker?",
+          "answer": "Yesterday, i.e. January 19, 2023 (the day before the conversation on 2023-01-20)."
+        },
+        {
+          "id": "q01",
+          "question": "When Gina has lost her job at Door Dash?",
+          "answer": "Gina lost her Door Dash job earlier in January 2023, \"this month\" relative to that January 20, 2023 conversation (t2)."
+        },
+        {
+          "id": "q02",
+          "question": "How do Jon and Gina both like to destress?",
+          "answer": "Dance is how both destress: Jon dances as his passion and escape, and Gina uses dance as her go-to for stress relief."
+        },
+        {
+          "id": "q03",
+          "question": "What do Jon and Gina both have in common?",
+          "answer": "Both lost their jobs recently and are starting their own businesses, and both love dance as an outlet."
+        },
+        {
+          "id": "q04",
+          "question": "Why did Jon decide to start his dance studio?",
+          "answer": "Jon decided to start the dance studio because dancing has been his passion and escape since he was a kid, and he wanted to teach others the joy of dancing."
+        },
+        {
+          "id": "q05",
+          "question": "What Jon thinks the ideal dance studio should look like?",
+          "answer": "Memory doesn't settle this: Jon mentions wanting great natural light and Marley flooring as desired features, but no single statement describes his overall vision of what the ideal studio should \"look like.\""
+        },
+        {
+          "id": "q06",
+          "question": "When is Jon's group performing at a festival?",
+          "answer": "Jon's group is performing at the festival next month (relative to 2023-01-20, so February 2023) \u2014 t23."
+        },
+        {
+          "id": "q11",
+          "question": "What was Gina's favorite dancing memory?",
+          "answer": "Memory doesn't settle this \u2014 Gina's favorite dancing memory is never mentioned; only that dance is her go-to for stress relief."
+        },
+        {
+          "id": "q12",
+          "question": "What kind of dance piece did Gina's team perform to win first place?",
+          "answer": "Memory doesn't specify the dance style Gina's team performed to win regionals\u2014only that it happened at age fifteen."
+        },
+        {
+          "id": "q13",
+          "question": "What do the dancers in the photo represent?",
+          "answer": "Memory doesn't settle this \u2014 the dancers in the photo are tied to the crew's first-place win last year (t15), but what they \"represent\" isn't stated anywhere."
+        },
+        {
+          "id": "q14",
+          "question": "What does Gina say about the dancers in the photo?",
+          "answer": "Memory doesn't settle this \u2014 there's no record of Gina commenting on the dancers in the photo."
+        },
+        {
+          "id": "q15",
+          "question": "What is Jon's attitude towards being part of the dance festival?",
+          "answer": "Jon is eager and confident about performing at the festival, calling it something he's definitely practicing hard for."
+        },
+        {
+          "id": "q18",
+          "question": "What did Gina design for her store?",
+          "answer": "Gina designed the space for her store \u2014 a cozy, inviting layout with trendy pieces, furniture that looks great and comfy, and a chandelier for a glam feel."
+        },
+        {
+          "id": "q19",
+          "question": "What did Gina want her customers to feel in her store?",
+          "answer": "Gina wanted her customers to feel cozy and welcomed, so they'd want to return."
+        },
+        {
+          "id": "q20",
+          "question": "What did Jon say about Gina's progress with her store?",
+          "answer": "Jon said Gina's hard work was paying off \u2014 he told her she found the perfect spot for her store (t46), and that the store looked great (t29, t50)."
+        },
+        {
+          "id": "q21",
+          "question": "What made Gina choose the furniture and decor for her store?",
+          "answer": "Gina chose furniture and decor that reflected her own style and would make her customers feel cozy."
+        },
+        {
+          "id": "q22",
+          "question": "What did Jon say about creating a special experience for customers?",
+          "answer": "Jon said he thinks creating a special experience for customers is key to making them feel welcome and come back."
+        },
+        {
+          "id": "q23",
+          "question": "What did Gina say about creating an experience for her customers?",
+          "answer": "Gina said that creating an experience that makes customers feel welcomed and want to return is key, and that making the spot comfortable and inviting is part of that."
+        },
+        {
+          "id": "q27",
+          "question": "What is Gina's attitude towards participating in the dance festival?",
+          "answer": "Gina is enthusiastic and certain they'll \"rock the festival,\" reflecting excitement about participating."
+        },
+        {
+          "id": "q28",
+          "question": "What kind of flooring is Gina looking for in her dance studio?",
+          "answer": "Gina wants Marley flooring (grippy, tough, easy to clean) for the dance studio."
+        },
+        {
+          "id": "q31",
+          "question": "What did Jon want his customers to feel in her store?",
+          "answer": "Jon wanted Gina's customers to feel welcome and come back."
+        }
+      ],
+      "mean_context_words": 571
+    }
+  }
+}

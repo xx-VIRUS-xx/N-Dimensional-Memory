@@ -1,0 +1,6008 @@
+{
+  "input_issues": [],
+  "engine_version": "v0.3",
+  "events": [
+    {
+      "tick": 0,
+      "input_id": "t0",
+      "participants": [
+        "Gina",
+        "Jon"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D1:1",
+      "actor": null
+    },
+    {
+      "tick": 1,
+      "input_id": "t1",
+      "participants": [
+        "Jon",
+        "Gina"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D1:2",
+      "actor": null
+    },
+    {
+      "tick": 2,
+      "input_id": "t2",
+      "participants": [
+        "Gina",
+        "Jon",
+        "Door Dash",
+        "your job",
+        "own business"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D1:3",
+      "actor": null
+    },
+    {
+      "tick": 3,
+      "input_id": "t3",
+      "participants": [
+        "Jon",
+        "dance studio"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D1:4",
+      "actor": null
+    },
+    {
+      "tick": 4,
+      "input_id": "t4",
+      "participants": [
+        "Gina",
+        "Jon",
+        "That",
+        "this biz"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D1:5",
+      "actor": null
+    },
+    {
+      "tick": 5,
+      "input_id": "t5",
+      "participants": [
+        "Jon",
+        "dancing",
+        "dance studio",
+        "others"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D1:6",
+      "actor": null
+    },
+    {
+      "tick": 6,
+      "input_id": "t6",
+      "participants": [
+        "Gina",
+        "Jon",
+        "Dance"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D1:7",
+      "actor": null
+    },
+    {
+      "tick": 7,
+      "input_id": "t7",
+      "participants": [
+        "Jon",
+        "Gina",
+        "contemporary"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D1:8",
+      "actor": null
+    },
+    {
+      "tick": 8,
+      "input_id": "t8",
+      "participants": [
+        "Gina",
+        "Contemporary dance"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D1:9",
+      "actor": null
+    },
+    {
+      "tick": 9,
+      "input_id": "t9",
+      "participants": [
+        "Jon",
+        "dance class"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D1:10",
+      "actor": null
+    },
+    {
+      "tick": 10,
+      "input_id": "t10",
+      "participants": [
+        "Gina",
+        "we",
+        "new dance moves",
+        "dance session"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D1:11",
+      "actor": null
+    },
+    {
+      "tick": 11,
+      "input_id": "t11",
+      "participants": [
+        "Jon",
+        "Gina",
+        "moves"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D1:12",
+      "actor": null
+    },
+    {
+      "tick": 12,
+      "input_id": "t12",
+      "participants": [
+        "Gina",
+        "Jon"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D1:13",
+      "actor": null
+    },
+    {
+      "tick": 13,
+      "input_id": "t13",
+      "participants": [
+        "Jon",
+        "This"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D1:14",
+      "actor": null
+    },
+    {
+      "tick": 14,
+      "input_id": "t14",
+      "participants": [
+        "Gina",
+        "Jon"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D1:15",
+      "actor": null
+    },
+    {
+      "tick": 15,
+      "input_id": "t15",
+      "participants": [
+        "Jon",
+        "dance crew",
+        "local comp",
+        "stage",
+        "pic",
+        "intensity",
+        "Gina",
+        "other peeps"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D1:16",
+      "actor": null
+    },
+    {
+      "tick": 16,
+      "input_id": "t16",
+      "participants": [
+        "Gina",
+        "Gina's team",
+        "regionals"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D1:17",
+      "actor": null
+    },
+    {
+      "tick": 17,
+      "input_id": "t17",
+      "participants": [
+        "Jon",
+        "Gina"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D1:18",
+      "actor": null
+    },
+    {
+      "tick": 18,
+      "input_id": "t18",
+      "participants": [
+        "Gina",
+        "Finding Freedom"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D1:19",
+      "actor": null
+    },
+    {
+      "tick": 19,
+      "input_id": "t19",
+      "participants": [
+        "Jon",
+        "Gina",
+        "ideal dance studio by the water",
+        "That"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D1:20",
+      "actor": null
+    },
+    {
+      "tick": 20,
+      "input_id": "t20",
+      "participants": [
+        "Gina",
+        "Jon",
+        "that view"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D1:21",
+      "actor": null
+    },
+    {
+      "tick": 21,
+      "input_id": "t21",
+      "participants": [
+        "Jon",
+        "we",
+        "a place like this"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D1:22",
+      "actor": null
+    },
+    {
+      "tick": 22,
+      "input_id": "t22",
+      "participants": [
+        "Gina",
+        "Jon",
+        "it"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D1:23",
+      "actor": null
+    },
+    {
+      "tick": 23,
+      "input_id": "t23",
+      "participants": [
+        "Jon",
+        "small group of dancers",
+        "projects",
+        "choreography",
+        "nearby festival"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D1:24",
+      "actor": null
+    },
+    {
+      "tick": 24,
+      "input_id": "t24",
+      "participants": [
+        "Gina",
+        "it",
+        "they",
+        "Jon"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D1:25",
+      "actor": null
+    },
+    {
+      "tick": 25,
+      "input_id": "t25",
+      "participants": [
+        "Jon",
+        "they",
+        "the festival"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D1:26",
+      "actor": null
+    },
+    {
+      "tick": 26,
+      "input_id": "t26",
+      "participants": [
+        "Gina",
+        "they",
+        "the festival"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D1:27",
+      "actor": null
+    },
+    {
+      "tick": 27,
+      "input_id": "t27",
+      "participants": [
+        "Jon",
+        "it"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "4:04 pm on 20 January, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D1:28",
+      "actor": null
+    },
+    {
+      "tick": 28,
+      "input_id": "t28",
+      "participants": [
+        "Gina",
+        "clothing store",
+        "ad campaign"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "2:32 pm on 29 January, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D2:1",
+      "actor": null
+    },
+    {
+      "tick": 29,
+      "input_id": "t29",
+      "participants": [
+        "Jon",
+        "Gina",
+        "store",
+        "hard work",
+        "stuff"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "2:32 pm on 29 January, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D2:2",
+      "actor": null
+    },
+    {
+      "tick": 30,
+      "input_id": "t30",
+      "participants": [
+        "Gina",
+        "Jon",
+        "vision",
+        "dance studio",
+        "right spot"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "2:32 pm on 29 January, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D2:3",
+      "actor": null
+    },
+    {
+      "tick": 31,
+      "input_id": "t31",
+      "participants": [
+        "Jon",
+        "Gina",
+        "dance studio",
+        "place with great natural light",
+        "Paris"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "2:32 pm on 29 January, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D2:4",
+      "actor": null
+    },
+    {
+      "tick": 32,
+      "input_id": "t32",
+      "participants": [
+        "Gina",
+        "Jon",
+        "Paris",
+        "Rome"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "2:32 pm on 29 January, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D2:5",
+      "actor": null
+    },
+    {
+      "tick": 33,
+      "input_id": "t33",
+      "participants": [
+        "Jon",
+        "my students",
+        "it",
+        "dance floor"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "2:32 pm on 29 January, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D2:6",
+      "actor": null
+    },
+    {
+      "tick": 34,
+      "input_id": "t34",
+      "participants": [
+        "Gina",
+        "Jon",
+        "dance floor"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "2:32 pm on 29 January, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D2:7",
+      "actor": null
+    },
+    {
+      "tick": 35,
+      "input_id": "t35",
+      "participants": [
+        "Jon",
+        "Marley flooring",
+        "dance studio"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "2:32 pm on 29 January, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D2:8",
+      "actor": null
+    },
+    {
+      "tick": 36,
+      "input_id": "t36",
+      "participants": [
+        "Gina",
+        "Marley",
+        "dance studio",
+        "Jon"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "2:32 pm on 29 January, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D2:9",
+      "actor": null
+    },
+    {
+      "tick": 37,
+      "input_id": "t37",
+      "participants": [
+        "Jon",
+        "it"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "2:32 pm on 29 January, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D2:10",
+      "actor": null
+    },
+    {
+      "tick": 38,
+      "input_id": "t38",
+      "participants": [
+        "Gina",
+        "Jon",
+        "the process"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "2:32 pm on 29 January, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D2:11",
+      "actor": null
+    },
+    {
+      "tick": 39,
+      "input_id": "t39",
+      "participants": [
+        "Jon",
+        "Gina",
+        "This"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "2:32 pm on 29 January, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D2:12",
+      "actor": null
+    },
+    {
+      "tick": 40,
+      "input_id": "t40",
+      "participants": [
+        "Gina",
+        "Jon"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "2:32 pm on 29 January, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D2:13",
+      "actor": null
+    },
+    {
+      "tick": 41,
+      "input_id": "t41",
+      "participants": [
+        "Jon",
+        "Gina",
+        "our dreams"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "2:32 pm on 29 January, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D2:14",
+      "actor": null
+    },
+    {
+      "tick": 42,
+      "input_id": "t42",
+      "participants": [
+        "Gina"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "2:32 pm on 29 January, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D2:15",
+      "actor": null
+    },
+    {
+      "tick": 43,
+      "input_id": "t43",
+      "participants": [
+        "Jon",
+        "Success",
+        "This"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "2:32 pm on 29 January, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D2:16",
+      "actor": null
+    },
+    {
+      "tick": 44,
+      "input_id": "t44",
+      "participants": [
+        "Jon",
+        "dance studio"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "12:48 am on 1 February, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D3:1",
+      "actor": null
+    },
+    {
+      "tick": 45,
+      "input_id": "t45",
+      "participants": [
+        "Gina",
+        "Jon",
+        "wholesalers",
+        "clothing store"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "12:48 am on 1 February, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D3:2",
+      "actor": null
+    },
+    {
+      "tick": 46,
+      "input_id": "t46",
+      "participants": [
+        "Jon",
+        "Gina"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "12:48 am on 1 February, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D3:3",
+      "actor": null
+    },
+    {
+      "tick": 47,
+      "input_id": "t47",
+      "participants": [
+        "Gina",
+        "Jon",
+        "the space",
+        "customers",
+        "trendy pieces"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "12:48 am on 1 February, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D3:4",
+      "actor": null
+    },
+    {
+      "tick": 48,
+      "input_id": "t48",
+      "participants": [
+        "Jon",
+        "Gina",
+        "it",
+        "furniture and decor"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "12:48 am on 1 February, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D3:5",
+      "actor": null
+    },
+    {
+      "tick": 49,
+      "input_id": "t49",
+      "participants": [
+        "Gina",
+        "the place",
+        "furniture",
+        "the chandelier",
+        "my customers"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "12:48 am on 1 February, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D3:6",
+      "actor": null
+    },
+    {
+      "tick": 50,
+      "input_id": "t50",
+      "participants": [
+        "Jon",
+        "Gina",
+        "store",
+        "customers"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "12:48 am on 1 February, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D3:7",
+      "actor": null
+    },
+    {
+      "tick": 51,
+      "input_id": "t51",
+      "participants": [
+        "Gina",
+        "spot",
+        "customers",
+        "experience"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "12:48 am on 1 February, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D3:8",
+      "actor": null
+    },
+    {
+      "tick": 52,
+      "input_id": "t52",
+      "participants": [
+        "Jon",
+        "Gina",
+        "customers",
+        "the space",
+        "special experience"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "12:48 am on 1 February, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D3:9",
+      "actor": null
+    },
+    {
+      "tick": 53,
+      "input_id": "t53",
+      "participants": [
+        "Gina",
+        "Jon",
+        "support",
+        "customers",
+        "challenge"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "12:48 am on 1 February, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D3:10",
+      "actor": null
+    },
+    {
+      "tick": 54,
+      "input_id": "t54",
+      "participants": [
+        "Jon",
+        "Gina",
+        "store"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "12:48 am on 1 February, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D3:11",
+      "actor": null
+    },
+    {
+      "tick": 55,
+      "input_id": "t55",
+      "participants": [
+        "Gina",
+        "Jon",
+        "dance studio",
+        "This"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "12:48 am on 1 February, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D3:12",
+      "actor": null
+    },
+    {
+      "tick": 56,
+      "input_id": "t56",
+      "participants": [
+        "Jon",
+        "Gina",
+        "dreams"
+      ],
+      "speaker": "Jon",
+      "occurred_anchor": "12:48 am on 1 February, 2023",
+      "source_speaker": "Jon",
+      "source_listener": "Gina",
+      "dia_id": "D3:13",
+      "actor": null
+    },
+    {
+      "tick": 57,
+      "input_id": "t57",
+      "participants": [
+        "Gina",
+        "Jon",
+        "hard work"
+      ],
+      "speaker": "Gina",
+      "occurred_anchor": "12:48 am on 1 February, 2023",
+      "source_speaker": "Gina",
+      "source_listener": "Jon",
+      "dia_id": "D3:14",
+      "actor": null
+    }
+  ],
+  "pegs": {
+    "Gina": {
+      "first_tick": 0,
+      "type": "person",
+      "aliases": []
+    },
+    "Jon": {
+      "first_tick": 0,
+      "type": "person",
+      "aliases": []
+    },
+    "Door Dash": {
+      "first_tick": 2,
+      "type": "org"
+    },
+    "your job": {
+      "first_tick": 2,
+      "type": "other"
+    },
+    "own business": {
+      "first_tick": 2,
+      "type": "other"
+    },
+    "dance studio": {
+      "first_tick": 3,
+      "type": "other",
+      "aliases": [
+        "dance studios"
+      ]
+    },
+    "That": {
+      "first_tick": 4,
+      "type": "other",
+      "aliases": [
+        "that"
+      ]
+    },
+    "this biz": {
+      "first_tick": 4,
+      "type": "other"
+    },
+    "dancing": {
+      "first_tick": 5,
+      "type": "other"
+    },
+    "others": {
+      "first_tick": 5,
+      "type": "person"
+    },
+    "Dance": {
+      "first_tick": 6,
+      "type": "other"
+    },
+    "contemporary": {
+      "first_tick": 7,
+      "type": "other"
+    },
+    "Contemporary dance": {
+      "first_tick": 8,
+      "type": "other"
+    },
+    "dance class": {
+      "first_tick": 9,
+      "type": "other"
+    },
+    "we": {
+      "first_tick": 10,
+      "type": "other",
+      "aliases": []
+    },
+    "new dance moves": {
+      "first_tick": 10,
+      "type": "other"
+    },
+    "dance session": {
+      "first_tick": 10,
+      "type": "other"
+    },
+    "moves": {
+      "first_tick": 11,
+      "type": "other"
+    },
+    "This": {
+      "first_tick": 13,
+      "type": "other",
+      "aliases": [
+        "this"
+      ]
+    },
+    "dance crew": {
+      "first_tick": 15,
+      "type": "org"
+    },
+    "local comp": {
+      "first_tick": 15,
+      "type": "other"
+    },
+    "stage": {
+      "first_tick": 15,
+      "type": "other"
+    },
+    "pic": {
+      "first_tick": 15,
+      "type": "other"
+    },
+    "intensity": {
+      "first_tick": 15,
+      "type": "other"
+    },
+    "other peeps": {
+      "first_tick": 15,
+      "type": "person"
+    },
+    "Gina's team": {
+      "first_tick": 16,
+      "type": "other"
+    },
+    "regionals": {
+      "first_tick": 16,
+      "type": "other"
+    },
+    "Finding Freedom": {
+      "first_tick": 18,
+      "type": "other"
+    },
+    "ideal dance studio by the water": {
+      "first_tick": 19,
+      "type": "other"
+    },
+    "that view": {
+      "first_tick": 20,
+      "type": "other"
+    },
+    "a place like this": {
+      "first_tick": 21,
+      "type": "other"
+    },
+    "it": {
+      "first_tick": 22,
+      "type": "other",
+      "aliases": []
+    },
+    "small group of dancers": {
+      "first_tick": 23,
+      "type": "other"
+    },
+    "projects": {
+      "first_tick": 23,
+      "type": "other"
+    },
+    "choreography": {
+      "first_tick": 23,
+      "type": "other"
+    },
+    "nearby festival": {
+      "first_tick": 23,
+      "type": "other"
+    },
+    "they": {
+      "first_tick": 24,
+      "type": "other",
+      "aliases": []
+    },
+    "the festival": {
+      "first_tick": 25,
+      "type": "system",
+      "aliases": []
+    },
+    "clothing store": {
+      "first_tick": 28,
+      "type": "system",
+      "aliases": []
+    },
+    "ad campaign": {
+      "first_tick": 28,
+      "type": "other"
+    },
+    "store": {
+      "first_tick": 29,
+      "type": "other",
+      "aliases": []
+    },
+    "hard work": {
+      "first_tick": 29,
+      "type": "other",
+      "aliases": []
+    },
+    "stuff": {
+      "first_tick": 29,
+      "type": "other"
+    },
+    "vision": {
+      "first_tick": 30,
+      "type": "other"
+    },
+    "right spot": {
+      "first_tick": 30,
+      "type": "other"
+    },
+    "place with great natural light": {
+      "first_tick": 31,
+      "type": "other"
+    },
+    "Paris": {
+      "first_tick": 31,
+      "type": "other",
+      "aliases": []
+    },
+    "Rome": {
+      "first_tick": 32,
+      "type": "other"
+    },
+    "my students": {
+      "first_tick": 33,
+      "type": "person"
+    },
+    "dance floor": {
+      "first_tick": 33,
+      "type": "other",
+      "aliases": [
+        "dance floors"
+      ]
+    },
+    "Marley flooring": {
+      "first_tick": 35,
+      "type": "other"
+    },
+    "Marley": {
+      "first_tick": 36,
+      "type": "other"
+    },
+    "the process": {
+      "first_tick": 38,
+      "type": "other"
+    },
+    "our dreams": {
+      "first_tick": 41,
+      "type": "other"
+    },
+    "Success": {
+      "first_tick": 43,
+      "type": "other"
+    },
+    "wholesalers": {
+      "first_tick": 45,
+      "type": "org"
+    },
+    "the space": {
+      "first_tick": 47,
+      "type": "other",
+      "aliases": [
+        "space"
+      ]
+    },
+    "customers": {
+      "first_tick": 47,
+      "type": "person",
+      "aliases": []
+    },
+    "trendy pieces": {
+      "first_tick": 47,
+      "type": "other"
+    },
+    "furniture and decor": {
+      "first_tick": 48,
+      "type": "other"
+    },
+    "the place": {
+      "first_tick": 49,
+      "type": "system"
+    },
+    "furniture": {
+      "first_tick": 49,
+      "type": "other"
+    },
+    "the chandelier": {
+      "first_tick": 49,
+      "type": "other"
+    },
+    "my customers": {
+      "first_tick": 49,
+      "type": "other"
+    },
+    "spot": {
+      "first_tick": 51,
+      "type": "other"
+    },
+    "experience": {
+      "first_tick": 51,
+      "type": "other"
+    },
+    "special experience": {
+      "first_tick": 52,
+      "type": "other"
+    },
+    "support": {
+      "first_tick": 53,
+      "type": "other"
+    },
+    "challenge": {
+      "first_tick": 53,
+      "type": "other"
+    },
+    "dreams": {
+      "first_tick": 56,
+      "type": "other"
+    }
+  },
+  "strings": [
+    {
+      "tick": 0,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 0,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 1,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 1,
+      "peg": "Jon",
+      "dim": "action",
+      "value": "lost job as banker, taking a shot at starting own business",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 1,
+      "peg": "Jon",
+      "dim": "temporal_position",
+      "value": "yesterday (job loss), future (business start)",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 1,
+      "peg": "Jon",
+      "dim": "type",
+      "value": "banker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 1,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 2,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 2,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "lost my job at Door Dash",
+      "links": [
+        "Door Dash"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 2,
+      "peg": "Gina",
+      "dim": "temporal_position",
+      "value": "this month",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 2,
+      "peg": "Gina",
+      "dim": "position",
+      "value": "starting own business sounds awesome",
+      "links": [
+        "own business"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 2,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 2,
+      "peg": "Jon",
+      "dim": "action",
+      "value": "starting your own business",
+      "links": [
+        "own business"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 2,
+      "peg": "Door Dash",
+      "dim": "role_in_event",
+      "value": "employer",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 2,
+      "peg": "your job",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 2,
+      "peg": "your job",
+      "dim": "owner",
+      "value": "Jon",
+      "links": [
+        "Jon"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 2,
+      "peg": "own business",
+      "dim": "owner",
+      "value": "Jon",
+      "links": [
+        "Jon"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 2,
+      "peg": "own business",
+      "dim": "adoption_status",
+      "value": "proposed",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 3,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 3,
+      "peg": "Jon",
+      "dim": "action",
+      "value": "starting a dance studio",
+      "links": [
+        "dance studio"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 3,
+      "peg": "Jon",
+      "dim": "position",
+      "value": "passionate about dancing",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 3,
+      "peg": "dance studio",
+      "dim": "function",
+      "value": "share dancing with others",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 4,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 4,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "asking what got you into this biz",
+      "links": [
+        "this biz"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 4,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 4,
+      "peg": "That",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 4,
+      "peg": "this biz",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 5,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 5,
+      "peg": "Jon",
+      "dim": "position",
+      "value": "dancing is my passion and escape",
+      "links": [
+        "dancing"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 5,
+      "peg": "Jon",
+      "dim": "action",
+      "value": "want to start a dance studio and teach others",
+      "links": [
+        "dance studio",
+        "others"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 5,
+      "peg": "Jon",
+      "dim": "temporal_position",
+      "value": "since I was a kid",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 5,
+      "peg": "dancing",
+      "dim": "function",
+      "value": "passion and escape",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 5,
+      "peg": "dance studio",
+      "dim": "adoption_status",
+      "value": "proposed",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 5,
+      "peg": "dance studio",
+      "dim": "proposed_by",
+      "value": "Jon",
+      "links": [
+        "Jon"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 5,
+      "peg": "dance studio",
+      "dim": "function",
+      "value": "to teach others the joy of dancing",
+      "links": [
+        "dancing",
+        "others"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 5,
+      "peg": "others",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 6,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 6,
+      "peg": "Gina",
+      "dim": "position",
+      "value": "Dance is my go-to for stress relief",
+      "links": [
+        "Dance"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 6,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 6,
+      "peg": "Dance",
+      "dim": "function",
+      "value": "stress relief",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 7,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 7,
+      "peg": "Jon",
+      "dim": "position",
+      "value": "contemporary is my top pick",
+      "links": [
+        "contemporary"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 7,
+      "peg": "Jon",
+      "dim": "action",
+      "value": "loves all dances",
+      "links": [
+        "Dance"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 7,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 7,
+      "peg": "contemporary",
+      "dim": "position",
+      "value": "Jon's top pick",
+      "links": [
+        "Jon"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 7,
+      "peg": "contemporary",
+      "dim": "status",
+      "value": "expressive and powerful",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 8,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 8,
+      "peg": "Gina",
+      "dim": "position",
+      "value": "contemporary dance is expressive and graceful; speaks to her",
+      "links": [
+        "Contemporary dance",
+        "Dance",
+        "contemporary"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 8,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "expressing appreciation",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 8,
+      "peg": "Contemporary dance",
+      "dim": "status",
+      "value": "expressive and graceful",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 9,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 9,
+      "peg": "Jon",
+      "dim": "action",
+      "value": "proposes going to a dance class",
+      "links": [
+        "Dance",
+        "dance class"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 9,
+      "peg": "Jon",
+      "dim": "position",
+      "value": "the dance class will be fun",
+      "links": [
+        "Dance",
+        "dance class"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 9,
+      "peg": "Jon",
+      "dim": "epistemic_stance",
+      "value": "enthusiastic",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 9,
+      "peg": "dance class",
+      "dim": "type",
+      "value": "dance class",
+      "links": [
+        "Dance"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 9,
+      "peg": "dance class",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 10,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 10,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "proposes exploring new dance moves and planning a dance session",
+      "links": [
+        "Dance",
+        "dance session",
+        "new dance moves"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 10,
+      "peg": "Gina",
+      "dim": "position",
+      "value": "favors exploring and planning dance activities",
+      "links": [
+        "Dance"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 10,
+      "peg": "we",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 10,
+      "peg": "new dance moves",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 10,
+      "peg": "dance session",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 10,
+      "peg": "dance session",
+      "dim": "temporal_position",
+      "value": "soon",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 11,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 11,
+      "peg": "Jon",
+      "dim": "action",
+      "value": "proposing to show his moves to Gina",
+      "links": [
+        "Gina",
+        "moves"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 11,
+      "peg": "Jon",
+      "dim": "temporal_position",
+      "value": "next Fri",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 11,
+      "peg": "Jon",
+      "dim": "epistemic_stance",
+      "value": "certain",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 11,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 11,
+      "peg": "moves",
+      "dim": "owner",
+      "value": "Jon",
+      "links": [
+        "Jon"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 11,
+      "peg": "moves",
+      "dim": "temporal_position",
+      "value": "next Fri",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 12,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 12,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "agrees to Next Friday, proposes to boogie",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 12,
+      "peg": "Gina",
+      "dim": "position",
+      "value": "approves",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 12,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 13,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 13,
+      "peg": "Jon",
+      "dim": "position",
+      "value": "excited",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 13,
+      "peg": "Jon",
+      "dim": "epistemic_stance",
+      "value": "certain",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 13,
+      "peg": "This",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 14,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 14,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 15,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 15,
+      "peg": "Jon",
+      "dim": "position",
+      "value": "super keen to spread that intensity with other peeps",
+      "links": [
+        "intensity",
+        "other peeps",
+        "others"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 15,
+      "peg": "dance crew",
+      "dim": "owner",
+      "value": "Jon",
+      "links": [
+        "Jon"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 15,
+      "peg": "dance crew",
+      "dim": "outcome",
+      "value": "took home first in a local comp",
+      "links": [
+        "local comp"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 15,
+      "peg": "dance crew",
+      "dim": "temporal_position",
+      "value": "last year",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 15,
+      "peg": "local comp",
+      "dim": "temporal_position",
+      "value": "last year",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 15,
+      "peg": "local comp",
+      "dim": "outcome",
+      "value": "took home first",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 15,
+      "peg": "stage",
+      "dim": "context",
+      "value": "location of the dance performance",
+      "links": [
+        "Dance"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 15,
+      "peg": "stage",
+      "dim": "temporal_position",
+      "value": "last year",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 15,
+      "peg": "pic",
+      "dim": "context",
+      "value": "photo from when the dance crew took home first",
+      "links": [
+        "Dance",
+        "dance crew"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 15,
+      "peg": "pic",
+      "dim": "temporal_position",
+      "value": "last year",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 15,
+      "peg": "intensity",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 15,
+      "peg": "intensity",
+      "dim": "action",
+      "value": "spread",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 15,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 15,
+      "peg": "other peeps",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 16,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 16,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "competed in dance competitions and shows; was part of a team that won first place at a regionals",
+      "links": [
+        "Dance",
+        "regionals"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 16,
+      "peg": "Gina",
+      "dim": "temporal_position",
+      "value": "at age fifteen",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 16,
+      "peg": "Gina",
+      "dim": "position",
+      "value": "valued the accomplishment as awesome",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 16,
+      "peg": "Gina's team",
+      "dim": "owner",
+      "value": "Gina",
+      "links": [
+        "Gina"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 16,
+      "peg": "Gina's team",
+      "dim": "action",
+      "value": "won first place at a regionals",
+      "links": [
+        "regionals"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 16,
+      "peg": "Gina's team",
+      "dim": "temporal_position",
+      "value": "at age fifteen",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 16,
+      "peg": "regionals",
+      "dim": "context",
+      "value": "dance",
+      "links": [
+        "Dance"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 16,
+      "peg": "regionals",
+      "dim": "type",
+      "value": "competition",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 17,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 17,
+      "peg": "Jon",
+      "dim": "action",
+      "value": "expressed amazement about winning first place",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 17,
+      "peg": "Jon",
+      "dim": "epistemic_stance",
+      "value": "certain",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 17,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 17,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "doing a dance",
+      "links": [
+        "Dance"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 17,
+      "peg": "Gina",
+      "dim": "temporal_position",
+      "value": "past",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 18,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 18,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "just did a contemporary piece",
+      "links": [
+        "contemporary"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 18,
+      "peg": "Finding Freedom",
+      "dim": "type",
+      "value": "contemporary piece",
+      "links": [
+        "contemporary"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 18,
+      "peg": "Finding Freedom",
+      "dim": "status",
+      "value": "emotional and powerful",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 19,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 19,
+      "peg": "Jon",
+      "dim": "action",
+      "value": "asking Gina to check the ideal dance studio by the water",
+      "links": [
+        "Dance",
+        "Gina",
+        "dance studio",
+        "ideal dance studio by the water"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 19,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 19,
+      "peg": "ideal dance studio by the water",
+      "dim": "owner",
+      "value": "Jon",
+      "links": [
+        "Jon"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 19,
+      "peg": "ideal dance studio by the water",
+      "dim": "context",
+      "value": "by the water",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 19,
+      "peg": "That",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 19,
+      "peg": "That",
+      "dim": "epistemic_source",
+      "value": "Jon",
+      "links": [
+        "Jon"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 19,
+      "peg": "That",
+      "dim": "epistemic_stance",
+      "value": "must've been great",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 20,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 20,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "expressed approval of setup, exclaimed about the view, asked if Jon has time to rehearse with a biz and a new store",
+      "links": [
+        "Jon",
+        "that view",
+        "this biz"
+      ],
+      "status": "intent",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 20,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 20,
+      "peg": "that view",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 21,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 21,
+      "peg": "Jon",
+      "dim": "action",
+      "value": "will find a place like this that will inspire us",
+      "links": [
+        "a place like this"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 21,
+      "peg": "Jon",
+      "dim": "epistemic_stance",
+      "value": "hopefully",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 21,
+      "peg": "we",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 21,
+      "peg": "a place like this",
+      "dim": "type",
+      "value": "place",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 21,
+      "peg": "a place like this",
+      "dim": "function",
+      "value": "inspire us",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 22,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 22,
+      "peg": "Gina",
+      "dim": "position",
+      "value": "looks great",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 22,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 22,
+      "peg": "it",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 23,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 23,
+      "peg": "Jon",
+      "dim": "action",
+      "value": "rehearsed with a small group of dancers after work",
+      "links": [
+        "small group of dancers"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 23,
+      "peg": "Jon",
+      "dim": "position",
+      "value": "eager for upcoming festival performance",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 23,
+      "peg": "small group of dancers",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 23,
+      "peg": "projects",
+      "dim": "status",
+      "value": "in the works",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 23,
+      "peg": "choreography",
+      "dim": "status",
+      "value": "being finished",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 23,
+      "peg": "choreography",
+      "dim": "function",
+      "value": "to be performed at nearby festival",
+      "links": [
+        "nearby festival"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 23,
+      "peg": "choreography",
+      "dim": "temporal_position",
+      "value": "next month",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 23,
+      "peg": "nearby festival",
+      "dim": "function",
+      "value": "venue for performance",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 23,
+      "peg": "nearby festival",
+      "dim": "temporal_position",
+      "value": "next month",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 24,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 24,
+      "peg": "it",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 24,
+      "peg": "it",
+      "dim": "status",
+      "value": "looks awesome",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 24,
+      "peg": "they",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 24,
+      "peg": "they",
+      "dim": "status",
+      "value": "so graceful",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 24,
+      "peg": "they",
+      "dim": "context",
+      "value": "at the festival",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 24,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 25,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 25,
+      "peg": "they",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 25,
+      "peg": "they",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 25,
+      "peg": "they",
+      "dim": "action",
+      "value": "performing at the festival, practicing hard",
+      "links": [
+        "the festival"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 25,
+      "peg": "they",
+      "dim": "epistemic_source",
+      "value": "Jon",
+      "links": [
+        "Jon"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 25,
+      "peg": "they",
+      "dim": "epistemic_stance",
+      "value": "definitely",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 25,
+      "peg": "the festival",
+      "dim": "type",
+      "value": "event",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 25,
+      "peg": "the festival",
+      "dim": "function",
+      "value": "venue for performance",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 26,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 26,
+      "peg": "Gina",
+      "dim": "position",
+      "value": "enthusiastic about them rocking the festival",
+      "links": [
+        "the festival"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 26,
+      "peg": "Gina",
+      "dim": "epistemic_stance",
+      "value": "certain",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 26,
+      "peg": "they",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 26,
+      "peg": "they",
+      "dim": "action",
+      "value": "rock the festival",
+      "links": [
+        "the festival"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 26,
+      "peg": "the festival",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 27,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 27,
+      "peg": "Jon",
+      "dim": "position",
+      "value": "glad to be part of it",
+      "links": [
+        "it"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 27,
+      "peg": "it",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 28,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 28,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "launched an ad campaign for her clothing store",
+      "links": [
+        "ad campaign",
+        "clothing store"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 28,
+      "peg": "Gina",
+      "dim": "position",
+      "value": "starting own store and taking risks is both scary and rewarding",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 28,
+      "peg": "clothing store",
+      "dim": "owner",
+      "value": "Gina",
+      "links": [
+        "Gina"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 28,
+      "peg": "clothing store",
+      "dim": "function",
+      "value": "growing the business",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 28,
+      "peg": "ad campaign",
+      "dim": "status",
+      "value": "launched",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 28,
+      "peg": "ad campaign",
+      "dim": "target_system",
+      "value": "clothing store",
+      "links": [
+        "clothing store"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 28,
+      "peg": "ad campaign",
+      "dim": "function",
+      "value": "growing the business",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 29,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 29,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 29,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "hard work",
+      "links": [
+        "hard work"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 29,
+      "peg": "Gina",
+      "dim": "status",
+      "value": "hard work paid off",
+      "links": [
+        "hard work"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 29,
+      "peg": "store",
+      "dim": "owner",
+      "value": "Gina",
+      "links": [
+        "Gina"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 29,
+      "peg": "store",
+      "dim": "status",
+      "value": "looks great",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 29,
+      "peg": "hard work",
+      "dim": "owner",
+      "value": "Gina",
+      "links": [
+        "Gina"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 29,
+      "peg": "hard work",
+      "dim": "outcome",
+      "value": "paid off",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 29,
+      "peg": "stuff",
+      "dim": "owner",
+      "value": "Gina",
+      "links": [
+        "Gina"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 29,
+      "peg": "stuff",
+      "dim": "status",
+      "value": "on display",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 30,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 30,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "thanks",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 30,
+      "peg": "Gina",
+      "dim": "position",
+      "value": "awesome seeing my vision happen",
+      "links": [
+        "vision"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 30,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 30,
+      "peg": "vision",
+      "dim": "owner",
+      "value": "Gina",
+      "links": [
+        "Gina"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 30,
+      "peg": "vision",
+      "dim": "status",
+      "value": "happening",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 30,
+      "peg": "dance studio",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 30,
+      "peg": "right spot",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 31,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 31,
+      "peg": "Jon",
+      "dim": "action",
+      "value": "hunting for ideal dance studio spot; looking at and visualizing spaces; visited Paris",
+      "links": [
+        "Dance",
+        "Paris",
+        "dance studio"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 31,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "questioner",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 31,
+      "peg": "dance studio",
+      "dim": "owner",
+      "value": "Jon",
+      "links": [
+        "Jon"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 31,
+      "peg": "place with great natural light",
+      "dim": "status",
+      "value": "found",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 31,
+      "peg": "place with great natural light",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 31,
+      "peg": "Paris",
+      "dim": "temporal_position",
+      "value": "yesterday",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 31,
+      "peg": "Paris",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 32,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 32,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "asked about location and features, expressed enthusiasm, shared travel experience",
+      "links": [],
+      "status": "intent",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 32,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 32,
+      "peg": "Jon",
+      "dim": "decision_status",
+      "value": "pending",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 32,
+      "peg": "Paris",
+      "dim": "temporal_position",
+      "value": "never visited by Gina",
+      "links": [
+        "Gina"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 32,
+      "peg": "Paris",
+      "dim": "epistemic_stance",
+      "value": "questioned",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 32,
+      "peg": "Rome",
+      "dim": "temporal_position",
+      "value": "visited once",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 32,
+      "peg": "Rome",
+      "dim": "status",
+      "value": "visited by Gina",
+      "links": [
+        "Gina"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 33,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 33,
+      "peg": "Jon",
+      "dim": "action",
+      "value": "gotta check the size & floor quality; need a good dance floor with enough bounce",
+      "links": [
+        "Dance",
+        "dance floor"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 33,
+      "peg": "my students",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 33,
+      "peg": "my students",
+      "dim": "owner",
+      "value": "Jon",
+      "links": [
+        "Jon"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 33,
+      "peg": "my students",
+      "dim": "action",
+      "value": "dance safely",
+      "links": [
+        "Dance"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 33,
+      "peg": "it",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 33,
+      "peg": "it",
+      "dim": "context",
+      "value": "downtown",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 33,
+      "peg": "it",
+      "dim": "status",
+      "value": "easy to get to, has natural light",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 33,
+      "peg": "dance floor",
+      "dim": "function",
+      "value": "for me & my students to dance safely",
+      "links": [
+        "Dance",
+        "Jon",
+        "my students"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 33,
+      "peg": "dance floor",
+      "dim": "status",
+      "value": "needs enough bounce",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 34,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 34,
+      "peg": "Gina",
+      "dim": "epistemic_stance",
+      "value": "certain",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 34,
+      "peg": "Gina",
+      "dim": "position",
+      "value": "dance floors help avoid injuries and make dancing enjoyable",
+      "links": [
+        "Dance",
+        "dance floor",
+        "dancing"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 34,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 34,
+      "peg": "Jon",
+      "dim": "action",
+      "value": "thinking about dance floors",
+      "links": [
+        "Dance",
+        "dance floor"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 34,
+      "peg": "dance floor",
+      "dim": "type",
+      "value": "flooring",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 34,
+      "peg": "dance floor",
+      "dim": "function",
+      "value": "avoid injuries and make dancing enjoyable",
+      "links": [
+        "dancing"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 35,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 35,
+      "peg": "Jon",
+      "dim": "action",
+      "value": "seeking Marley flooring",
+      "links": [
+        "Marley flooring"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 35,
+      "peg": "Jon",
+      "dim": "position",
+      "value": "flooring is crucial",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 35,
+      "peg": "Marley flooring",
+      "dim": "type",
+      "value": "flooring",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 35,
+      "peg": "Marley flooring",
+      "dim": "function",
+      "value": "used by dance studios",
+      "links": [
+        "Dance",
+        "dance studio"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 35,
+      "peg": "Marley flooring",
+      "dim": "status",
+      "value": "grippy, lets you move, tough, easy to keep clean",
+      "links": [
+        "moves"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 35,
+      "peg": "dance studio",
+      "dim": "action",
+      "value": "usually use Marley flooring",
+      "links": [
+        "Marley flooring"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 36,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 36,
+      "peg": "Gina",
+      "dim": "position",
+      "value": "approves of Marley",
+      "links": [
+        "Marley"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 36,
+      "peg": "Gina",
+      "dim": "epistemic_stance",
+      "value": "enthusiastic",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 36,
+      "peg": "Marley",
+      "dim": "status",
+      "value": "perfect with the right amount of grip and movement",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 36,
+      "peg": "dance studio",
+      "dim": "owner",
+      "value": "Jon",
+      "links": [
+        "Jon"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 36,
+      "peg": "dance studio",
+      "dim": "status",
+      "value": "not yet complete",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 36,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 37,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 37,
+      "peg": "Jon",
+      "dim": "action",
+      "value": "looking for the right place and getting everything ready",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 37,
+      "peg": "Jon",
+      "dim": "epistemic_stance",
+      "value": "determined",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 37,
+      "peg": "Jon",
+      "dim": "position",
+      "value": "believes it will be worth it",
+      "links": [
+        "it"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 37,
+      "peg": "it",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 37,
+      "peg": "it",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 38,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 38,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "encourages Jon to believe in himself and push through; reminds him to take breaks and dance to destress",
+      "links": [
+        "Dance",
+        "Jon"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 38,
+      "peg": "Gina",
+      "dim": "position",
+      "value": "confident Jon can succeed",
+      "links": [
+        "Jon"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 38,
+      "peg": "Gina",
+      "dim": "epistemic_stance",
+      "value": "hedged about difficulty, confident about outcome",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 38,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 38,
+      "peg": "the process",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 38,
+      "peg": "the process",
+      "dim": "type",
+      "value": "process",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 38,
+      "peg": "the process",
+      "dim": "status",
+      "value": "tough",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 38,
+      "peg": "the process",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 39,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 39,
+      "peg": "Jon",
+      "dim": "position",
+      "value": "glad to have support",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 39,
+      "peg": "Jon",
+      "dim": "epistemic_stance",
+      "value": "certain",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 39,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 39,
+      "peg": "This",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 40,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 40,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "expressed appreciation",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 40,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 40,
+      "peg": "Jon",
+      "dim": "action",
+      "value": "provided support",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 41,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 41,
+      "peg": "Jon",
+      "dim": "action",
+      "value": "keep going and chase our dreams",
+      "links": [
+        "our dreams"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 41,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 41,
+      "peg": "our dreams",
+      "dim": "owner",
+      "value": "Jon and Gina",
+      "links": [
+        "Gina",
+        "Jon"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 41,
+      "peg": "our dreams",
+      "dim": "type",
+      "value": "dreams",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 42,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 42,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "proposing to keep going after goals and making them happen",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 42,
+      "peg": "Gina",
+      "dim": "position",
+      "value": "optimistic and committed to continued progress toward goals",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 42,
+      "peg": "Gina",
+      "dim": "epistemic_stance",
+      "value": "certain",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 43,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 43,
+      "peg": "Jon",
+      "dim": "position",
+      "value": "success is almost here",
+      "links": [
+        "Success"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 43,
+      "peg": "Jon",
+      "dim": "epistemic_stance",
+      "value": "certain",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 43,
+      "peg": "Success",
+      "dim": "status",
+      "value": "almost here",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 43,
+      "peg": "This",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 44,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 44,
+      "peg": "Jon",
+      "dim": "action",
+      "value": "following passion for dance; searching for place to open dance studio",
+      "links": [
+        "Dance",
+        "dance studio"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 44,
+      "peg": "Jon",
+      "dim": "position",
+      "value": "determined",
+      "links": [],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 44,
+      "peg": "Jon",
+      "dim": "epistemic_stance",
+      "value": "determined",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 44,
+      "peg": "dance studio",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 44,
+      "peg": "dance studio",
+      "dim": "adoption_status",
+      "value": "proposed",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 45,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 45,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "emailed some wholesalers",
+      "links": [
+        "wholesalers"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 45,
+      "peg": "Gina",
+      "dim": "status",
+      "value": "over the moon",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 45,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 45,
+      "peg": "Jon",
+      "dim": "action",
+      "value": "pushing forward with dancing",
+      "links": [
+        "dancing"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 45,
+      "peg": "wholesalers",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 45,
+      "peg": "wholesalers",
+      "dim": "outcome",
+      "value": "one replied and said yes",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 45,
+      "peg": "wholesalers",
+      "dim": "temporal_position",
+      "value": "today",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 45,
+      "peg": "clothing store",
+      "dim": "owner",
+      "value": "Gina",
+      "links": [
+        "Gina"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 45,
+      "peg": "clothing store",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 45,
+      "peg": "clothing store",
+      "dim": "status",
+      "value": "can be expanded",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 46,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 46,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 46,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "found the perfect spot for your store",
+      "links": [
+        "store"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 46,
+      "peg": "Gina",
+      "dim": "outcome",
+      "value": "hard work's paying off",
+      "links": [
+        "hard work"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 46,
+      "peg": "Gina",
+      "dim": "epistemic_source",
+      "value": "Jon",
+      "links": [
+        "Jon"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 47,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 47,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "designed the space",
+      "links": [
+        "the space"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 47,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 47,
+      "peg": "Jon",
+      "dim": "position",
+      "value": "likes it",
+      "links": [
+        "it"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 47,
+      "peg": "the space",
+      "dim": "type",
+      "value": "space",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 47,
+      "peg": "the space",
+      "dim": "owner",
+      "value": "Gina",
+      "links": [
+        "Gina"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 47,
+      "peg": "the space",
+      "dim": "status",
+      "value": "cozy and inviting",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 47,
+      "peg": "the space",
+      "dim": "function",
+      "value": "for customers to check out all the trendy pieces",
+      "links": [
+        "customers",
+        "trendy pieces"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 47,
+      "peg": "customers",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 47,
+      "peg": "trendy pieces",
+      "dim": "type",
+      "value": "pieces",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 47,
+      "peg": "trendy pieces",
+      "dim": "function",
+      "value": "for customers to check out",
+      "links": [
+        "customers"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 48,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 48,
+      "peg": "Jon",
+      "dim": "epistemic_stance",
+      "value": "inferred",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 48,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 48,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "designed it and picked out the furniture and decor",
+      "links": [
+        "furniture and decor",
+        "it"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 48,
+      "peg": "it",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 48,
+      "peg": "furniture and decor",
+      "dim": "type",
+      "value": "items",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 48,
+      "peg": "furniture and decor",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 49,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 49,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "wanted to make the place look like my own style and make my customers feel cozy; chose furniture that looks great and is comfy",
+      "links": [
+        "customers",
+        "furniture",
+        "my customers",
+        "the place"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 49,
+      "peg": "the place",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 49,
+      "peg": "the place",
+      "dim": "type",
+      "value": "store",
+      "links": [
+        "store"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 49,
+      "peg": "furniture",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 49,
+      "peg": "furniture",
+      "dim": "type",
+      "value": "furniture",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 49,
+      "peg": "furniture",
+      "dim": "action",
+      "value": "looks great and is comfy",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 49,
+      "peg": "the chandelier",
+      "dim": "role_in_event",
+      "value": "subject",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 49,
+      "peg": "the chandelier",
+      "dim": "type",
+      "value": "chandelier",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 49,
+      "peg": "the chandelier",
+      "dim": "action",
+      "value": "adds a nice glam feel while matching the style of the store",
+      "links": [
+        "store"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 49,
+      "peg": "the chandelier",
+      "dim": "function",
+      "value": "adds a nice glam feel",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 49,
+      "peg": "my customers",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 50,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 50,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 50,
+      "peg": "store",
+      "dim": "status",
+      "value": "looks great",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 50,
+      "peg": "store",
+      "dim": "owner",
+      "value": "Gina",
+      "links": [
+        "Gina"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 50,
+      "peg": "customers",
+      "dim": "status",
+      "value": "will be so comfy",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 51,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 51,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "making spot comfortable and inviting, creating an experience",
+      "links": [
+        "experience",
+        "spot"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 51,
+      "peg": "Gina",
+      "dim": "position",
+      "value": "making customers feel welcomed and wanting to return is key",
+      "links": [
+        "customers"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 51,
+      "peg": "spot",
+      "dim": "owner",
+      "value": "Gina",
+      "links": [
+        "Gina"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 51,
+      "peg": "spot",
+      "dim": "status",
+      "value": "being made comfortable and inviting",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 51,
+      "peg": "customers",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 51,
+      "peg": "experience",
+      "dim": "type",
+      "value": "experience",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 51,
+      "peg": "experience",
+      "dim": "function",
+      "value": "to make customers want to return",
+      "links": [
+        "customers"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 51,
+      "peg": "experience",
+      "dim": "proposed_by",
+      "value": "Gina",
+      "links": [
+        "Gina"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 52,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 52,
+      "peg": "Jon",
+      "dim": "position",
+      "value": "creating a special experience for customers is key to making them feel welcome and come back",
+      "links": [
+        "customers",
+        "experience",
+        "special experience"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 52,
+      "peg": "Jon",
+      "dim": "epistemic_stance",
+      "value": "I think",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 52,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 52,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "imagining a space",
+      "links": [
+        "the space"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 52,
+      "peg": "customers",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 52,
+      "peg": "customers",
+      "dim": "outcome",
+      "value": "feel welcome and come back",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 52,
+      "peg": "the space",
+      "dim": "type",
+      "value": "space",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 52,
+      "peg": "the space",
+      "dim": "owner",
+      "value": "Gina",
+      "links": [
+        "Gina"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 52,
+      "peg": "special experience",
+      "dim": "function",
+      "value": "key to making customers feel welcome and come back",
+      "links": [
+        "customers"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 52,
+      "peg": "special experience",
+      "dim": "target_system",
+      "value": "customers",
+      "links": [
+        "customers"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 53,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 53,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "thank; express confidence in ability to make special shopping experience for customers; express readiness for challenge",
+      "links": [
+        "challenge",
+        "customers",
+        "experience"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 53,
+      "peg": "Gina",
+      "dim": "epistemic_stance",
+      "value": "certain",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 53,
+      "peg": "Gina",
+      "dim": "position",
+      "value": "up for the challenge; confident in ability to make special shopping experience",
+      "links": [
+        "challenge",
+        "experience"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 53,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 53,
+      "peg": "Jon",
+      "dim": "action",
+      "value": "provide support",
+      "links": [
+        "support"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 53,
+      "peg": "support",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 53,
+      "peg": "support",
+      "dim": "owner",
+      "value": "Jon",
+      "links": [
+        "Jon"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 53,
+      "peg": "support",
+      "dim": "status",
+      "value": "means a lot",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 53,
+      "peg": "customers",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 53,
+      "peg": "customers",
+      "dim": "type",
+      "value": "customers",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 53,
+      "peg": "customers",
+      "dim": "owner",
+      "value": "Gina",
+      "links": [
+        "Gina"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 53,
+      "peg": "challenge",
+      "dim": "role_in_event",
+      "value": "object",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 53,
+      "peg": "challenge",
+      "dim": "status",
+      "value": "tough",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 54,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 54,
+      "peg": "Jon",
+      "dim": "action",
+      "value": "support you",
+      "links": [
+        "support"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 54,
+      "peg": "Jon",
+      "dim": "epistemic_stance",
+      "value": "always",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 54,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 54,
+      "peg": "store",
+      "dim": "owner",
+      "value": "Gina",
+      "links": [
+        "Gina"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 55,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 55,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "thanks Jon, will try her best",
+      "links": [
+        "Jon"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 55,
+      "peg": "Gina",
+      "dim": "epistemic_stance",
+      "value": "certain",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 55,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 55,
+      "peg": "Jon",
+      "dim": "context",
+      "value": "dance studio",
+      "links": [
+        "Dance",
+        "dance studio"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 55,
+      "peg": "Jon",
+      "dim": "epistemic_source",
+      "value": "Gina",
+      "links": [
+        "Gina"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 55,
+      "peg": "dance studio",
+      "dim": "type",
+      "value": "dance studio",
+      "links": [
+        "Dance"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 55,
+      "peg": "dance studio",
+      "dim": "owner",
+      "value": "Jon",
+      "links": [
+        "Jon"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 55,
+      "peg": "This",
+      "dim": "reference_status",
+      "value": "unresolved",
+      "links": [],
+      "status": "open_question",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 56,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 56,
+      "peg": "Jon",
+      "dim": "action",
+      "value": "staying positive and pushing forward",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 56,
+      "peg": "Jon",
+      "dim": "position",
+      "value": "confident about achieving dreams",
+      "links": [
+        "dreams"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 56,
+      "peg": "Jon",
+      "dim": "epistemic_stance",
+      "value": "sure",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 56,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "reporter",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 56,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "spoke words",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 56,
+      "peg": "dreams",
+      "dim": "type",
+      "value": "dreams",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 56,
+      "peg": "dreams",
+      "dim": "owner",
+      "value": "our",
+      "links": [
+        "Jon"
+      ],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 56,
+      "peg": "dreams",
+      "dim": "status",
+      "value": "invested in",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Jon"
+    },
+    {
+      "tick": 57,
+      "peg": "Gina",
+      "dim": "role_in_event",
+      "value": "speaker",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 57,
+      "peg": "Gina",
+      "dim": "action",
+      "value": "encourages to stay motivated and keep going",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 57,
+      "peg": "Gina",
+      "dim": "position",
+      "value": "hard work pays off eventually",
+      "links": [
+        "hard work"
+      ],
+      "status": "speaker_belief",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 57,
+      "peg": "Jon",
+      "dim": "role_in_event",
+      "value": "recipient",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    },
+    {
+      "tick": 57,
+      "peg": "hard work",
+      "dim": "outcome",
+      "value": "pays off eventually",
+      "links": [],
+      "status": "claim",
+      "modality": "certain",
+      "owner": "Gina"
+    }
+  ],
+  "proposals": [
+    {
+      "tick": 2,
+      "new": "your job",
+      "existing": "Jon",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 6,
+      "new": "Dance",
+      "existing": "dance studio",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 8,
+      "new": "Contemporary dance",
+      "existing": "Dance",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 8,
+      "new": "Contemporary dance",
+      "existing": "contemporary",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 9,
+      "new": "dance class",
+      "existing": "Dance",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 10,
+      "new": "new dance moves",
+      "existing": "Dance",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 10,
+      "new": "dance session",
+      "existing": "Dance",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 11,
+      "new": "moves",
+      "existing": "new dance moves",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 15,
+      "new": "dance crew",
+      "existing": "Dance",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 15,
+      "new": "other peeps",
+      "existing": "others",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 16,
+      "new": "Gina's team",
+      "existing": "Gina",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 19,
+      "new": "ideal dance studio by the water",
+      "existing": "dance studio",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 19,
+      "new": "ideal dance studio by the water",
+      "existing": "Dance",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 25,
+      "new": "the festival",
+      "existing": "nearby festival",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 29,
+      "new": "store",
+      "existing": "clothing store",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 33,
+      "new": "my students",
+      "existing": "Jon",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 33,
+      "new": "dance floor",
+      "existing": "Dance",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 36,
+      "new": "Marley",
+      "existing": "Marley flooring",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 41,
+      "new": "our dreams",
+      "existing": "Jon",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 49,
+      "new": "the place",
+      "existing": "a place like this",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 49,
+      "new": "the place",
+      "existing": "place with great natural light",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 49,
+      "new": "furniture",
+      "existing": "furniture and decor",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 49,
+      "new": "my customers",
+      "existing": "Gina",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 49,
+      "new": "my customers",
+      "existing": "customers",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 51,
+      "new": "spot",
+      "existing": "right spot",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 52,
+      "new": "special experience",
+      "existing": "experience",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    },
+    {
+      "tick": 56,
+      "new": "dreams",
+      "existing": "our dreams",
+      "rule": "token overlap",
+      "status": "needs confirmation"
+    }
+  ],
+  "buckets": [
+    {
+      "id": "b0",
+      "tick": 4,
+      "peg": "That",
+      "dim": "reference",
+      "query": "what does 'That' refer to?",
+      "candidates": [
+        "Door Dash",
+        "your job",
+        "own business",
+        "dance studio"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b1",
+      "tick": 4,
+      "peg": "this biz",
+      "dim": "reference",
+      "query": "what does 'this biz' refer to?",
+      "candidates": [
+        "Door Dash",
+        "your job",
+        "own business",
+        "dance studio"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b2",
+      "tick": 13,
+      "peg": "This",
+      "dim": "reference",
+      "query": "what does 'This' refer to?",
+      "candidates": [
+        "we",
+        "new dance moves",
+        "dance session",
+        "moves"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b3",
+      "tick": 19,
+      "peg": "That",
+      "dim": "reference",
+      "query": "what does 'that' refer to?",
+      "candidates": [
+        "ideal dance studio by the water",
+        "Gina's team",
+        "regionals",
+        "Finding Freedom"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b4",
+      "tick": 20,
+      "peg": "that view",
+      "dim": "reference",
+      "query": "what does 'that view' refer to?",
+      "candidates": [
+        "Finding Freedom",
+        "ideal dance studio by the water"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b5",
+      "tick": 22,
+      "peg": "it",
+      "dim": "reference",
+      "query": "what does 'it' refer to?",
+      "candidates": [
+        "ideal dance studio by the water",
+        "we",
+        "a place like this"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b6",
+      "tick": 24,
+      "peg": "it",
+      "dim": "reference",
+      "query": "what does 'it' refer to?",
+      "candidates": [
+        "we",
+        "a place like this",
+        "small group of dancers",
+        "projects",
+        "choreography",
+        "nearby festival"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b7",
+      "tick": 24,
+      "peg": "they",
+      "dim": "reference",
+      "query": "what does 'they' refer to?",
+      "candidates": [
+        "Gina",
+        "Jon"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b8",
+      "tick": 25,
+      "peg": "they",
+      "dim": "reference",
+      "query": "what does 'they' refer to?",
+      "candidates": [
+        "Jon",
+        "Gina"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b9",
+      "tick": 25,
+      "peg": "the festival",
+      "dim": "reference",
+      "query": "what does 'the festival' refer to?",
+      "candidates": [
+        23,
+        24
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b10",
+      "tick": 26,
+      "peg": "they",
+      "dim": "reference",
+      "query": "what does 'they' refer to?",
+      "candidates": [
+        "Gina",
+        "Jon"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b11",
+      "tick": 27,
+      "peg": "it",
+      "dim": "reference",
+      "query": "what does 'it' refer to?",
+      "candidates": [
+        "the festival"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "resolved",
+      "resolved_by": "engine",
+      "evidence_ticks": []
+    },
+    {
+      "id": "b12",
+      "tick": 33,
+      "peg": "it",
+      "dim": "reference",
+      "query": "what does 'it' refer to?",
+      "candidates": [
+        "dance floor",
+        "vision",
+        "dance studio",
+        "right spot",
+        "place with great natural light",
+        "Paris",
+        "Rome"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b13",
+      "tick": 37,
+      "peg": "it",
+      "dim": "reference",
+      "query": "what does 'it' refer to?",
+      "candidates": [
+        "dance floor",
+        "Marley flooring",
+        "dance studio",
+        "Marley"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b14",
+      "tick": 39,
+      "peg": "This",
+      "dim": "reference",
+      "query": "what does 'this' refer to?",
+      "candidates": [
+        "Marley",
+        "dance studio",
+        "the process"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b15",
+      "tick": 43,
+      "peg": "This",
+      "dim": "reference",
+      "query": "what does 'this' refer to?",
+      "candidates": [
+        "Success",
+        "our dreams"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b16",
+      "tick": 48,
+      "peg": "it",
+      "dim": "reference",
+      "query": "what does 'it' refer to?",
+      "candidates": [
+        "furniture and decor",
+        "wholesalers",
+        "clothing store",
+        "the space",
+        "trendy pieces"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    },
+    {
+      "id": "b17",
+      "tick": 55,
+      "peg": "This",
+      "dim": "reference",
+      "query": "what does 'this' refer to?",
+      "candidates": [
+        "dance studio",
+        "the space",
+        "special experience",
+        "support",
+        "challenge",
+        "store"
+      ],
+      "model_belief": null,
+      "origin": "global-backward",
+      "state": "open"
+    }
+  ],
+  "first_mentions": [
+    {
+      "tick": 2,
+      "name": "your job"
+    },
+    {
+      "tick": 10,
+      "name": "we"
+    },
+    {
+      "tick": 15,
+      "name": "other peeps"
+    },
+    {
+      "tick": 38,
+      "name": "the process"
+    },
+    {
+      "tick": 47,
+      "name": "the space"
+    },
+    {
+      "tick": 49,
+      "name": "the place"
+    },
+    {
+      "tick": 49,
+      "name": "the chandelier"
+    }
+  ],
+  "dropped_absences": [],
+  "model_belief_candidates": [],
+  "resolutions": [
+    {
+      "bucket": "b11",
+      "by": "engine",
+      "rule": "C9 clause (c): single candidate",
+      "value": "the festival",
+      "evidence_ticks": [],
+      "at_tick": 27
+    }
+  ]
+}
