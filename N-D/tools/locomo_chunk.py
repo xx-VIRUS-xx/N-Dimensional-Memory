@@ -24,14 +24,20 @@ def main():
     ap.add_argument("--sample", type=int, default=0)
     ap.add_argument("--sessions", default="1-3")
     ap.add_argument("--out-dir", default=None, help="default: ND-1b/data")
+    ap.add_argument("--probe-sample", type=int, default=0,
+                    help="if > 0, keep this many questions, stratified by category, seeded (see --seed)")
+    ap.add_argument("--seed", type=int, default=7)
     a = ap.parse_args()
     raw = open(a.locomo, "rb").read()
     sha = hashlib.sha256(raw).hexdigest()
     if sha != EXPECTED_SHA256:
         raise SystemExit(f"locomo10.json SHA-256 mismatch: {sha} (expected {EXPECTED_SHA256})")
-    lo, hi = (int(x) for x in a.sessions.split("-"))
     conv = json.loads(raw)[a.sample]
     c = conv["conversation"]
+    if a.sessions == "all":
+        lo, hi = 1, max(int(k.split("_")[1]) for k in c if k.startswith("session_") and not k.endswith("date_time"))
+    else:
+        lo, hi = (int(x) for x in a.sessions.split("-"))
     who = {c["speaker_a"]: c["speaker_b"], c["speaker_b"]: c["speaker_a"]}
     turns = []
     for s in range(lo, hi + 1):
@@ -54,6 +60,23 @@ def main():
             p["gold_answer"] = str(q["answer"])
             p["accept"] = [str(q["answer"])]
         probes.append(p)
+    if a.probe_sample and len(probes) > a.probe_sample:
+        import random
+        rng = random.Random(a.seed)
+        by_cat = {}
+        for p in probes:
+            by_cat.setdefault(p["category"], []).append(p)
+        quota = {k: round(a.probe_sample * len(v) / len(probes)) for k, v in by_cat.items()}
+        while sum(quota.values()) > a.probe_sample:
+            quota[max(quota, key=quota.get)] -= 1
+        while sum(quota.values()) < a.probe_sample:
+            quota[max(by_cat, key=lambda k: len(by_cat[k]) - quota[k])] += 1
+        keep = set()
+        for k, v in by_cat.items():
+            keep |= {p["locomo_index"] for p in rng.sample(v, quota[k])}
+        probes = [p for p in probes if p["locomo_index"] in keep]
+        for i, p in enumerate(probes):
+            p["id"] = f"q{i:02d}"
     out = os.path.abspath(a.out_dir) if a.out_dir else os.path.join(ROOT, "ND-1b", "data")
     os.makedirs(out, exist_ok=True)
     with open(os.path.join(out, "source.jsonl"), "w") as f:
@@ -64,6 +87,7 @@ def main():
             f.write(json.dumps(p) + "\n")
     meta = {"dataset": "snap-research/locomo data/locomo10.json", "sha256": sha, "sample": a.sample,
             "sample_id": conv.get("sample_id"), "sessions": a.sessions, "turns": len(turns), "probes": len(probes),
+            "probe_sample": a.probe_sample, "seed": a.seed,
             "license": "CC BY-NC 4.0 (derived data; non-commercial use with attribution)"}
     json.dump(meta, open(os.path.join(out, "chunk_meta.json"), "w"), indent=2)
     print(json.dumps(meta))

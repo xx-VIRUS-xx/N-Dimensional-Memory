@@ -85,13 +85,15 @@ def score(probes_path, answers_path, quiet=False):
 
 
 def batch(state_dir, probes_path, model="sonnet", mode="flat", budget=700):
+    if mode == "depict2":
+        budget = 1000
     from extract_stateless import call  # isolated claude -p call
     state_dir = state_dir.rstrip("/")
     suffix = "" if mode == "flat" else f"_{mode}"
     out = os.path.join(os.path.dirname(state_dir), "probes_" + os.path.basename(state_dir) + suffix)
-    if mode == "depict":
+    if mode in ("depict", "depict2"):
         sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-        from depict import depict
+        from depict import depict, depict_v2
     os.makedirs(out, exist_ok=True)
     probes = [json.loads(l) for l in open(probes_path) if l.strip()]
     summary = {"answering_model": f"claude-cli:{model}", "runs": {}}
@@ -107,7 +109,8 @@ def batch(state_dir, probes_path, model="sonnet", mode="flat", budget=700):
         for p in probes:
             if p["id"] in answers:
                 continue
-            ctx = depict(state, p["question"], budget) if mode == "depict" else flat_ctx
+            ctx = (depict(state, p["question"], budget) if mode == "depict"
+                   else depict_v2(state, p["question"], budget) if mode == "depict2" else flat_ctx)
             sizes[p["id"]] = len(ctx.split())
             prompt = (f"{ctx}\n\nAnswer from the memory above only. If memory does not settle it, "
                       f"say so. Answer in one short sentence.\nQuestion: {p['question']}")
@@ -120,6 +123,34 @@ def batch(state_dir, probes_path, model="sonnet", mode="flat", budget=700):
                                  "mean_context_words": round(sum(sizes.values()) / max(len(sizes), 1))}
         print(f"{name:40s} M3 triage {ok}/{n}  mean context {summary['runs'][name]['mean_context_words']} words")
     json.dump(summary, open(os.path.join(out, "m3_summary.json"), "w"), indent=2)
+
+
+def rag_baseline(source_path, probes_path, out_dir, model="sonnet", budget=1000):
+    """Retrieval baseline at the depiction's word budget: BM25 over raw turns."""
+    from extract_stateless import call
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from depict import bm25_context
+    turns = [json.loads(l) for l in open(source_path) if l.strip()]
+    os.makedirs(out_dir, exist_ok=True)
+    probes = [json.loads(l) for l in open(probes_path) if l.strip()]
+    path = os.path.join(out_dir, "rag.answers.json")
+    sizes_path = os.path.join(out_dir, "rag.context_words.json")
+    answers = json.load(open(path)) if os.path.exists(path) else {}
+    sizes = json.load(open(sizes_path)) if os.path.exists(sizes_path) else {}
+    print(f"RAG (BM25, {budget} words): {len(answers)}/{len(probes)} already answered", flush=True)
+    for p in probes:
+        if p["id"] in answers:
+            continue
+        ctx = bm25_context(turns, p["question"], budget)
+        sizes[p["id"]] = len(ctx.split())
+        prompt = (f"{ctx}\n\nAnswer from the turns above only. If they do not settle it, "
+                  f"say so. Answer in one short sentence.\nQuestion: {p['question']}")
+        answers[p["id"]] = call("claude-cli", model, prompt).strip()
+        json.dump(answers, open(path, "w"), indent=2)
+        json.dump(sizes, open(sizes_path, "w"), indent=2)
+        print(f"  {p['id']} done ({len(answers)}/{len(probes)})", flush=True)
+    ok, n, misses = score(probes_path, path, quiet=True)
+    print(f"RAG baseline  M3 triage {ok}/{n}  mean context {round(sum(sizes.values()) / max(len(sizes), 1))} words")
 
 
 def raw_baseline(source_path, probes_path, out_dir, model="sonnet"):
@@ -151,8 +182,11 @@ if __name__ == "__main__":
     elif sys.argv[1] == "raw":
         model = sys.argv[sys.argv.index("--model") + 1] if "--model" in sys.argv else "sonnet"
         raw_baseline(sys.argv[2], sys.argv[3], sys.argv[4], model)
-    elif sys.argv[1] in ("batch", "depict"):
+    elif sys.argv[1] in ("batch", "depict", "depict2"):
         model = sys.argv[sys.argv.index("--model") + 1] if "--model" in sys.argv else "sonnet"
-        batch(sys.argv[2], sys.argv[3], model, mode="flat" if sys.argv[1] == "batch" else "depict")
+        batch(sys.argv[2], sys.argv[3], model, mode={"batch": "flat"}.get(sys.argv[1], sys.argv[1]))
+    elif sys.argv[1] == "rag":
+        model = sys.argv[sys.argv.index("--model") + 1] if "--model" in sys.argv else "sonnet"
+        rag_baseline(sys.argv[2], sys.argv[3], sys.argv[4], model)
     else:
         score(*sys.argv[2:4])
