@@ -1,0 +1,17 @@
+{
+  "reviewer": "Claude; all 99 held-out answers read against LoCoMo gold (C = 1, P = 0.5, W = 0)",
+  "DEPICT": {"q00":"C","q01":"C","q02":"C","q03":"C","q04":"P","q05":"P","q06":"C","q07":"C","q08":"C","q09":"C","q10":"C","q11":"W","q12":"W","q13":"W","q14":"W","q15":"P","q16":"C","q17":"P","q18":"C","q19":"C","q20":"C","q21":"C","q22":"C","q23":"C","q24":"C","q25":"C","q26":"C","q27":"W","q28":"W","q29":"C","q30":"C","q31":"W","q32":"C"},
+  "RAW":    {"q00":"C","q01":"C","q02":"C","q03":"C","q04":"P","q05":"P","q06":"P","q07":"C","q08":"C","q09":"C","q10":"C","q11":"C","q12":"C","q13":"W","q14":"C","q15":"C","q16":"C","q17":"W","q18":"C","q19":"C","q20":"C","q21":"C","q22":"C","q23":"C","q24":"C","q25":"W","q26":"W","q27":"P","q28":"C","q29":"C","q30":"C","q31":"C","q32":"W"},
+  "FLAT":   {"q00":"C","q01":"C","q02":"C","q03":"C","q04":"P","q05":"P","q06":"P","q07":"C","q08":"C","q09":"P","q10":"C","q11":"P","q12":"W","q13":"W","q14":"W","q15":"C","q16":"C","q17":"P","q18":"C","q19":"C","q20":"C","q21":"C","q22":"C","q23":"C","q24":"C","q25":"C","q26":"C","q27":"C","q28":"C","q29":"C","q30":"C","q31":"C","q32":"C"},
+  "DEPICT_miss_attribution": {
+    "q11": "selection: the fact (Gina's team won first place at regionals, t16) is in memory; the depiction did not select t16",
+    "q12": "selection: 'Finding Freedom' (t18) is in memory; t18 was not selected",
+    "q13": "all three conditions miss it; the gold ('performing at the festival') is arguably not stated as what the dancers 'represent'",
+    "q14": "extraction / reference: 'they' (t24) stayed an unresolved reference, so 'so graceful' is not tied to the dancers in the photo",
+    "q27": "presentation: adversarial premise (Gina participating) accepted; the depiction shows Gina's enthusiasm without making clear the performers are Jon's group",
+    "q28": "presentation: adversarial premise accepted; Marley flooring events are Jon's, but the answer attributed them to Gina",
+    "q31": "presentation: adversarial premise half-accepted"
+  },
+  "totals": {"DEPICT": 24.0, "RAW": 26.0, "FLAT": 27.0},
+  "context_words": {"DEPICT_mean": 571, "RAW": 1734, "FLAT_mean": 4080}
+}

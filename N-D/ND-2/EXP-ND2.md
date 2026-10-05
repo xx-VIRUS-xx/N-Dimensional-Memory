@@ -1,6 +1,6 @@
 # ND-2: does the N-D depiction beat a flat memory dump and match the raw conversation?
 
-**Status:** spec frozen 2026-10-01, before any ND-2 run. Engine v0.3 and depiction v1 are frozen.
+**Status:** spec frozen 2026-10-01, before any ND-2 run. **Result: pass** (D1 92%, D2 33%), with the qualifier that FLAT scored highest; see `REPORT.md`.
 
 ## Why
 
