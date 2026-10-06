@@ -1,0 +1,2 @@
+{"ts": 1791303971.656359, "tool": "find_value", "args": {"word": "bonsai"}, "error": false, "text": "No recorded value or entity name contains 'bonsai' (matched after dropping plural, -ing and -ed endings)."}
+{"ts": 1791303973.084809, "tool": "find_entity", "args": {"name": "bonsai tree"}, "error": false, "text": "No entity matches 'bonsai tree'."}

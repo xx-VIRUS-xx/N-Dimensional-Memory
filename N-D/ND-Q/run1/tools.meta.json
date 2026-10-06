@@ -1,0 +1,402 @@
+{
+  "q00": {
+    "calls": 2,
+    "call_errors": 0,
+    "words_returned": 208,
+    "num_turns": 3,
+    "cost_usd": 0.033345,
+    "seconds": 6.8,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q01": {
+    "calls": 2,
+    "call_errors": 0,
+    "words_returned": 75,
+    "num_turns": 3,
+    "cost_usd": 0.035628999999999994,
+    "seconds": 10.3,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q02": {
+    "calls": 5,
+    "call_errors": 0,
+    "words_returned": 460,
+    "num_turns": 6,
+    "cost_usd": 0.0479488,
+    "seconds": 14.5,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q03": {
+    "calls": 3,
+    "call_errors": 0,
+    "words_returned": 127,
+    "num_turns": 4,
+    "cost_usd": 0.038276000000000004,
+    "seconds": 10.7,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q04": {
+    "calls": 4,
+    "call_errors": 0,
+    "words_returned": 196,
+    "num_turns": 5,
+    "cost_usd": 0.038223599999999996,
+    "seconds": 9.3,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q05": {
+    "calls": 3,
+    "call_errors": 0,
+    "words_returned": 380,
+    "num_turns": 4,
+    "cost_usd": 0.0394426,
+    "seconds": 99.0,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q06": {
+    "calls": 2,
+    "call_errors": 0,
+    "words_returned": 77,
+    "num_turns": 3,
+    "cost_usd": 0.0318042,
+    "seconds": 8.4,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q07": {
+    "calls": 3,
+    "call_errors": 0,
+    "words_returned": 323,
+    "num_turns": 4,
+    "cost_usd": 0.0392534,
+    "seconds": 11.3,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q08": {
+    "calls": 3,
+    "call_errors": 0,
+    "words_returned": 281,
+    "num_turns": 4,
+    "cost_usd": 0.0384034,
+    "seconds": 99.3,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q09": {
+    "calls": 2,
+    "call_errors": 0,
+    "words_returned": 390,
+    "num_turns": 3,
+    "cost_usd": 0.035580600000000004,
+    "seconds": 6.9,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q10": {
+    "calls": 2,
+    "call_errors": 0,
+    "words_returned": 220,
+    "num_turns": 3,
+    "cost_usd": 0.0336876,
+    "seconds": 6.7,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q11": {
+    "calls": 5,
+    "call_errors": 0,
+    "words_returned": 520,
+    "num_turns": 6,
+    "cost_usd": 0.0457956,
+    "seconds": 12.3,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q12": {
+    "calls": 2,
+    "call_errors": 0,
+    "words_returned": 192,
+    "num_turns": 3,
+    "cost_usd": 0.036879999999999996,
+    "seconds": 9.1,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q13": {
+    "calls": 7,
+    "call_errors": 0,
+    "words_returned": 512,
+    "num_turns": 8,
+    "cost_usd": 0.051358600000000004,
+    "seconds": 15.0,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q14": {
+    "calls": 2,
+    "call_errors": 0,
+    "words_returned": 148,
+    "num_turns": 3,
+    "cost_usd": 0.0350848,
+    "seconds": 7.1,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q15": {
+    "calls": 1,
+    "call_errors": 0,
+    "words_returned": 74,
+    "num_turns": 2,
+    "cost_usd": 0.0306574,
+    "seconds": 6.3,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q16": {
+    "calls": 2,
+    "call_errors": 0,
+    "words_returned": 185,
+    "num_turns": 3,
+    "cost_usd": 0.0331924,
+    "seconds": 6.2,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q17": {
+    "calls": 4,
+    "call_errors": 0,
+    "words_returned": 316,
+    "num_turns": 5,
+    "cost_usd": 0.0415208,
+    "seconds": 7.4,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q18": {
+    "calls": 4,
+    "call_errors": 0,
+    "words_returned": 458,
+    "num_turns": 5,
+    "cost_usd": 0.0420388,
+    "seconds": 10.3,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q19": {
+    "calls": 2,
+    "call_errors": 0,
+    "words_returned": 154,
+    "num_turns": 3,
+    "cost_usd": 0.0328662,
+    "seconds": 6.9,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q20": {
+    "calls": 4,
+    "call_errors": 0,
+    "words_returned": 318,
+    "num_turns": 5,
+    "cost_usd": 0.0391166,
+    "seconds": 8.6,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q21": {
+    "calls": 1,
+    "call_errors": 0,
+    "words_returned": 68,
+    "num_turns": 2,
+    "cost_usd": 0.0308846,
+    "seconds": 6.1,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q22": {
+    "calls": 2,
+    "call_errors": 0,
+    "words_returned": 248,
+    "num_turns": 3,
+    "cost_usd": 0.033421,
+    "seconds": 6.3,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q23": {
+    "calls": 6,
+    "call_errors": 0,
+    "words_returned": 519,
+    "num_turns": 7,
+    "cost_usd": 0.054157000000000004,
+    "seconds": 19.1,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q24": {
+    "calls": 4,
+    "call_errors": 0,
+    "words_returned": 451,
+    "num_turns": 5,
+    "cost_usd": 0.0428248,
+    "seconds": 12.4,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q25": {
+    "calls": 2,
+    "call_errors": 0,
+    "words_returned": 127,
+    "num_turns": 3,
+    "cost_usd": 0.0350358,
+    "seconds": 7.6,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q26": {
+    "calls": 1,
+    "call_errors": 0,
+    "words_returned": 168,
+    "num_turns": 2,
+    "cost_usd": 0.032569,
+    "seconds": 6.4,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q27": {
+    "calls": 2,
+    "call_errors": 0,
+    "words_returned": 242,
+    "num_turns": 3,
+    "cost_usd": 0.0336544,
+    "seconds": 15.4,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q28": {
+    "calls": 5,
+    "call_errors": 0,
+    "words_returned": 429,
+    "num_turns": 6,
+    "cost_usd": 0.04702219999999999,
+    "seconds": 13.1,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q29": {
+    "calls": 3,
+    "call_errors": 0,
+    "words_returned": 192,
+    "num_turns": 4,
+    "cost_usd": 0.0368756,
+    "seconds": 6.3,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q30": {
+    "calls": 2,
+    "call_errors": 0,
+    "words_returned": 119,
+    "num_turns": 3,
+    "cost_usd": 0.0352832,
+    "seconds": 7.6,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q31": {
+    "calls": 3,
+    "call_errors": 0,
+    "words_returned": 401,
+    "num_turns": 4,
+    "cost_usd": 0.0384552,
+    "seconds": 6.5,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q32": {
+    "calls": 2,
+    "call_errors": 0,
+    "words_returned": 83,
+    "num_turns": 3,
+    "cost_usd": 0.0347702,
+    "seconds": 8.2,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q33": {
+    "calls": 2,
+    "call_errors": 0,
+    "words_returned": 106,
+    "num_turns": 3,
+    "cost_usd": 0.0349304,
+    "seconds": 11.4,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q34": {
+    "calls": 2,
+    "call_errors": 0,
+    "words_returned": 21,
+    "num_turns": 3,
+    "cost_usd": 0.0335002,
+    "seconds": 6.3,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q35": {
+    "calls": 1,
+    "call_errors": 0,
+    "words_returned": 89,
+    "num_turns": 2,
+    "cost_usd": 0.0308106,
+    "seconds": 9.7,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q36": {
+    "calls": 3,
+    "call_errors": 0,
+    "words_returned": 22,
+    "num_turns": 4,
+    "cost_usd": 0.0393778,
+    "seconds": 10.8,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q37": {
+    "calls": 5,
+    "call_errors": 0,
+    "words_returned": 529,
+    "num_turns": 6,
+    "cost_usd": 0.0513724,
+    "seconds": 265.6,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q38": {
+    "calls": 3,
+    "call_errors": 0,
+    "words_returned": 334,
+    "num_turns": 4,
+    "cost_usd": 0.038934,
+    "seconds": 9.6,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q39": {
+    "calls": 6,
+    "call_errors": 0,
+    "words_returned": 575,
+    "num_turns": 7,
+    "cost_usd": 0.050731200000000004,
+    "seconds": 14.2,
+    "is_error": false,
+    "over_call_limit": false
+  }
+}

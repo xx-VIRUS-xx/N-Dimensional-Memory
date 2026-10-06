@@ -1,0 +1,32 @@
+{
+  "q00": {
+    "calls": 7,
+    "call_errors": 2,
+    "words_returned": 337,
+    "num_turns": 8,
+    "cost_usd": 0.0688226,
+    "seconds": 18.6,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q01": {
+    "calls": 4,
+    "call_errors": 0,
+    "words_returned": 141,
+    "num_turns": 5,
+    "cost_usd": 0.0415746,
+    "seconds": 13.4,
+    "is_error": false,
+    "over_call_limit": false
+  },
+  "q02": {
+    "calls": 4,
+    "call_errors": 1,
+    "words_returned": 525,
+    "num_turns": 5,
+    "cost_usd": 0.041939399999999995,
+    "seconds": 10.6,
+    "is_error": false,
+    "over_call_limit": false
+  }
+}
