@@ -63,7 +63,7 @@ class Runner(unittest.TestCase):
         self.assertEqual(argv[argv.index("--tools") + 1], "")                       # built-in tools off
         self.assertEqual(argv[argv.index("--max-turns") + 1], "12")
         self.assertEqual(sorted(a for a in argv if a.startswith("mcp__ndm__")), sorted(f"mcp__ndm__{t}" for t in
-                         ["find_entity", "trajectory", "event", "co_occurring", "filter_events", "count", "ambiguities"]))
+                         ["find_entity", "trajectory", "event", "co_occurring", "filter_events", "count", "find_value", "ambiguities"]))
         trace = [json.loads(l) for l in open(os.path.join(self.out, "tools.traces", "q00.jsonl"))]
         self.assertEqual(trace[0]["tool"], "count")
 

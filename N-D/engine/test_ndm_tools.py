@@ -137,6 +137,50 @@ class Ambiguities(unittest.TestCase):
         self.assertLessEqual(len(got), len(want) + 5)
 
 
+class FindValue(unittest.TestCase):
+    @staticmethod
+    def manual(pattern, **kw):
+        out = set()
+        for x in S["strings"]:
+            if kw.get("peg") and x["peg"] != kw["peg"]:
+                continue
+            if kw.get("speaker") and EV[x["tick"]]["source_speaker"] != kw["speaker"]:
+                continue
+            if kw.get("may") and not said_in(x["tick"], "May", 2023):
+                continue
+            text = x["value"] + " " + x["peg"]
+            if all(re.search(p_, text, re.I) for p_ in pattern):
+                out.add(x["tick"])
+        return sorted(out)
+
+    def test_inflections_meet(self):
+        for word, pat in [("trip", r"\btrips?\b"), ("trips", r"\btrips?\b"), ("hike", r"\b(hike|hikes|hiked|hiking)\b"),
+                          ("hiking", r"\b(hike|hikes|hiked|hiking)\b")]:
+            self.assertEqual(M.find_value(word)["data"], self.manual([pat]), word)
+
+    def test_two_words_must_share_a_string(self):
+        self.assertEqual(M.find_value("road trip")["data"], self.manual([r"\broads?\b", r"\btrips?\b"]))
+
+    def test_filters(self):
+        self.assertEqual(M.find_value("trip", speaker="Evan")["data"], self.manual([r"\btrips?\b"], speaker="Evan"))
+        self.assertEqual(M.find_value("trip", frm="2023-05", to="2023-05")["data"], self.manual([r"\btrips?\b"], may=True))
+        self.assertEqual(M.find_value("trip", entity="Evan")["data"], self.manual([r"\btrips?\b"], peg="Evan"))
+
+    def test_no_synonyms_no_fuzz(self):
+        self.assertEqual(M.find_value("zzyzx")["data"], [])
+        self.assertIn("No recorded value", M.find_value("zzyzx")["text"])
+        self.assertEqual(M.find_value("tripp")["data"], self.manual([r"\btripp(s|ed|ing)?\b"]))   # no stemming beyond the stated endings
+
+    def test_input_errors(self):
+        self.assertIsNone(M.find_value("")["data"]); self.assertIsNone(M.find_value("trip", entity="zzyzx")["data"])
+        self.assertTrue(M.find_value("trip", frm="May")["text"].startswith("Error"))
+
+    def test_time_order_and_exact_total_in_header(self):
+        r = M.find_value("hike")
+        self.assertEqual(r["data"], sorted(r["data"]))
+        self.assertTrue(r["text"].startswith(f"{len(r['data'])} events"))
+
+
 class Properties(unittest.TestCase):
     def test_word_cap_everywhere(self):
         limit = CAP_WORDS + 10                                  # header plus "(N more)" footer
@@ -144,6 +188,7 @@ class Properties(unittest.TestCase):
         for p in S["pegs"]:
             texts += [M.find_entity(p)["text"], M.trajectory(p)["text"], M.co_occurring(p)["text"]]
         texts += [M.event(t)["text"] for t in range(0, 509, 7)] + [M.ambiguities(p)["text"] for p in list(S["pegs"])[:60]]
+        texts += [M.find_value(w)["text"] for w in ("trip", "hike", "family", "work", "love", "new", "good", "time", "hobby", "paint")]
         texts += [M.count()["text"], M.filter_events()["text"], M.filter_events(speaker="Evan")["text"]]
         over = [t[:60] for t in texts if words(t) > limit]
         self.assertEqual(over, [])

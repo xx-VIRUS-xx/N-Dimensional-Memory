@@ -47,7 +47,7 @@ class Protocol(unittest.TestCase):
 
     def test_tools_list_matches_spec(self):
         tools = {t["name"]: t for t in self.c.rpc("tools/list")["result"]["tools"]}
-        self.assertEqual(set(tools), {"find_entity", "trajectory", "event", "co_occurring", "filter_events", "count", "ambiguities"})
+        self.assertEqual(set(tools), {"find_entity", "trajectory", "event", "co_occurring", "filter_events", "count", "find_value", "ambiguities"})
         for t in tools.values():
             self.assertEqual(t["inputSchema"]["type"], "object"); self.assertTrue(t["description"])
         self.assertIn("from", tools["count"]["inputSchema"]["properties"])
@@ -58,6 +58,7 @@ class Protocol(unittest.TestCase):
                                    ("event", {"tick": 1}, M.event(1)),
                                    ("count", {"status": "open_question", "from": "2023-05", "to": "2023-12"}, M.count(status="open_question", frm="2023-05", to="2023-12")),
                                    ("co_occurring", {"entity_a": "trip"}, M.co_occurring("trip")),
+                                   ("find_value", {"word": "hike", "from": "2023-05"}, M.find_value("hike", frm="2023-05")),
                                    ("ambiguities", {"entity": "it"}, M.ambiguities("it"))]:
             r = self.c.rpc("tools/call", {"name": name, "arguments": args})["result"]
             self.assertFalse(r["isError"], name); self.assertEqual(r["content"][0]["text"], direct["text"], name)
@@ -72,6 +73,12 @@ class Protocol(unittest.TestCase):
             self.assertTrue(r["isError"], (name, args))
         self.assertEqual(self.c.rpc("ping")["result"], {})                 # still alive after the bad calls
         self.assertIn("error", self.c.rpc("resources/list"))
+
+    def test_nothing_found_is_not_an_error(self):
+        for name, args in [("find_entity", {"name": "zzyzx"}), ("find_value", {"word": "zzyzx"})]:
+            r = self.c.rpc("tools/call", {"name": name, "arguments": args})["result"]
+            self.assertFalse(r["isError"], name)
+        self.assertTrue(self.c.rpc("tools/call", {"name": "find_value", "arguments": {"word": ""}})["result"]["isError"])
 
     def test_trace_file(self):
         self.c.rpc("tools/call", {"name": "find_entity", "arguments": {"name": "Prius"}})

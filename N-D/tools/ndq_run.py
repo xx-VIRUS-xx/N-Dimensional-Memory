@@ -24,6 +24,7 @@ Rules:
 - Answer from what the tools return only. If the tools do not settle it, say it is not in memory.
 - Do not accept a premise the memory does not support. Say who actually said or did something, or that the memory does not show it.
 - A date in memory is the day a turn was said, not necessarily when the thing happened ("last week" is relative to that day).
+- Facts are recorded as values under entities. If what you need is a concept or detail rather than an entity name, look for its words with find_value.
 - You may call tools several times, at most {calls} calls in total.
 - Dimension names that exist in memory: {dims}. Statuses: claim, speaker_belief, open_question, intent.
 
@@ -41,7 +42,7 @@ Rules:
 Answer in one short sentence.
 Question: {q}"""
 
-ARMS = {"tools": ("ndm", ["find_entity", "trajectory", "event", "co_occurring", "filter_events", "count", "ambiguities"]),
+ARMS = {"tools": ("ndm", ["find_entity", "trajectory", "event", "co_occurring", "filter_events", "count", "find_value", "ambiguities"]),
         "ragtool": ("rag", ["search_turns"])}
 
 

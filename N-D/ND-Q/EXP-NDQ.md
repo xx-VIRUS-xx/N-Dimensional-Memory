@@ -29,7 +29,7 @@ This tests the query mechanism on the memory as it is today (engine v0.3, Haiku 
 
 RAGTOOL is the control that matters. An iterative agent can beat one-shot retrieval without any structure, so TOOLS must beat RAGTOOL for the credit to belong to the structure.
 
-## The tools (frozen interface; read-only, deterministic, no LLM)
+## The tools (interface frozen on approval; read-only, deterministic, no LLM)
 
 Every result is capped at 200 words with a "N more" count. Tools return **memory strings** (entity, dimension, value, status, owner, date, speaker), never source turns.
 
@@ -41,7 +41,10 @@ Every result is capped at 200 words with a "N more" count. Tools return **memory
 | `co_occurring(entity_a, entity_b?)` | Events where the pegs appear together (collisions), hub pegs excluded unless named |
 | `filter_events(dimension?, status?, owner?, speaker?, entity?, from?, to?)` | Matching events: count plus the first 10 |
 | `count(entity?, dimension?, status?, owner?, from?, to?)` | Exact number of matching events and of distinct pegs, with their ids |
+| `find_value(word, speaker?, entity?, from?, to?)` | Events whose recorded values or entity names contain every word given: exact match after dropping plural, -ing and -ed endings (dance, dances, danced, dancing meet), no synonyms, no ranking. Up to 10 events in time order with the exact total |
 | `ambiguities(entity?)` | Unresolved buckets with their candidates; no resolution is applied. The header gives how many others the engine's single-candidate rule resolved, without showing them |
+
+**Amendment after the pilot (3 conv-30 questions, unscored):** `find_value` was added. In the pilot the model looked up "banker", "bank" and "stress" as entities; in this memory such words live inside values (`action = "lost my job as a banker"`), not as entities, and it could not reach "destress" at all. `find_value` is exact lexical matching over memory strings, a filter and not a ranker, but it does bring keyword matching into the structured arm. Consequences, stated now: RAGTOOL still searches raw turns with BM25, so the two arms differ in what is searched and in the structured filters (entity, speaker, date, status, owner) that only TOOLS has; if TOOLS ties RAGTOOL, structure added nothing beyond a lexical lookup. The tool-call error counter now counts only invalid input; "found nothing" is a normal result.
 
 Amendments made while building the tools, before any scored run: `filter_events` gained `entity?` (as `count` already had); `trajectory` skips and counts events where the peg only listened, which would otherwise print as empty lines; bad input (for example a malformed date) returns an error message instead of raising. Dates are the day a turn was said. `count` and `filter_events` never match entities loosely: an unknown name returns "no entity" and the model must use `find_entity`.
 
@@ -78,7 +81,7 @@ The prompt gives the model the dimension dictionary, the date range of the memor
 
 ## Implementation (built and tested, no scored run yet)
 
-- `engine/ndm_tools.py`: the seven tools; `engine/test_ndm_tools.py`: 23 contract tests against the frozen ND-3 state.
+- `engine/ndm_tools.py`: the eight tools; `engine/test_ndm_tools.py`: 29 contract tests against the frozen ND-3 state.
 - `engine/ndm_mcp.py`: the tools as a dependency-free MCP stdio server (checked against the official MCP Python client); `engine/rag_mcp.py`: the RAGTOOL control, `search_turns(query)`, BM25 top 5 dated turns with the ND-3 RAG scoring.
 - `tools/ndq_run.py`: one isolated `claude -p` session per question, empty temp dir, built-in tools off (`--tools ""`), only that arm's MCP server (`--strict-mcp-config`), `--max-turns 12`, at most 10 tool calls stated in the prompt. The exact prompt text for both arms is in this file and is frozen with the spec. It saves answers, per-question calls and words read, cost, and every tool call and result (`<arm>.traces/<id>.jsonl`). It resumes after a stop; a usage limit shows as "claude exited 1".
 - `engine/test_ndm_mcp.py`, `engine/test_ndq_run.py`: protocol and plumbing tests (a stub `claude` makes a real tool call through the generated config; no model is used).

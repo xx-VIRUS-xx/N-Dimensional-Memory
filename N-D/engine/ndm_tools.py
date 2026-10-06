@@ -53,6 +53,21 @@ def _safe(fn):
     return wrapped
 
 
+_SUFFIXES = ("ing", "ed", "es", "s", "e")
+
+
+def _stem(w):
+    """Drop a plural, -ing, -ed or final -e ending, so dance/dances/danced/dancing meet. Nothing fuzzier than that."""
+    for suf in _SUFFIXES:
+        if w.endswith(suf) and len(w) - len(suf) >= 3:
+            return w[:-len(suf)]
+    return w
+
+
+def _stems(text):
+    return {_stem(w) for w in re.findall(r"[a-z0-9]+", re.sub(r"['\u2019]s\b", "", str(text).lower()))}
+
+
 def _day(anchor):
     m = re.search(r"(\d{1,2}) (\w+),? (\d{4})", anchor or "")
     return datetime.datetime.strptime(" ".join(m.groups()), "%d %B %Y").date() if m else None
@@ -247,6 +262,38 @@ class Memory:
         if pegs and len(pegs) <= 25:
             txt += " (" + ", ".join(sorted(pegs)) + ")"
         return {"text": _cap("", [txt]), "data": {"events": ticks, "pegs": sorted(pegs)}}
+
+    # ------------------------------------------------------------ 8. find_value
+    @_safe
+    def find_value(self, word, speaker=None, entity=None, frm=None, to=None):
+        """Events whose recorded values or entity names contain every word given (exact after _stem). Unranked, time order."""
+        q = _stems(word)
+        if not q:
+            return {"text": "Error: give at least one word to look for.", "data": None}
+        lo, hi = _parse_bound(frm, False), _parse_bound(to, True)
+        pegs = None
+        if entity:
+            pegs, _ = self.resolve(entity)
+            if not pegs:
+                return {"text": f"No entity '{entity}'. Use find_entity first.", "data": None}
+        hits = defaultdict(list)
+        for x in self.s["strings"]:
+            t = x["tick"]
+            if (lo or hi) and not self._in_window(t, lo, hi):
+                continue
+            if speaker and norm(self.events[t].get("source_speaker") or "") != norm(speaker):
+                continue
+            if pegs and x["peg"] not in pegs:
+                continue
+            if q <= (_stems(x["value"]) | _stems(x["peg"])):
+                hits[t].append(x)
+        ticks = sorted(hits)
+        if not ticks:
+            return {"text": f"No recorded value or entity name contains '{word}' (matched after dropping plural, -ing and -ed endings).", "data": []}
+        lines = [self._line(t, hits[t], show_all=True) for t in ticks[:10]]
+        if len(ticks) > 10:
+            lines.append(f"({len(ticks) - 10} more events not listed; narrow with entity, speaker, from or to)")
+        return {"text": _cap(f"{len(ticks)} events whose recorded values or entity names contain '{word}':", lines), "data": ticks}
 
     # ------------------------------------------------------------ 7. ambiguities
     def ambiguities(self, entity=None):

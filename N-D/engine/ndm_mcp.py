@@ -1,4 +1,4 @@
-"""ND-Q: the seven tools (ndm_tools.py) as a dependency-free MCP stdio server.
+"""ND-Q: the eight tools (ndm_tools.py) as a dependency-free MCP stdio server.
 
 Usage:   python3 ndm_mcp.py <engine state.json>
 Trace:   set NDQ_TRACE=<file.jsonl> to append every call and result (for audit).
@@ -41,6 +41,10 @@ TOOLS = [
     _tool("count", "Exact count of events matching all given conditions, with their tick numbers and the distinct entities among them. "
           "An event counts once however many strings match. An unknown entity name returns an error; use find_entity first. " + DATES,
           {"entity": S, "dimension": S, "status": S, "owner": S, "from": S, "to": S}),
+    _tool("find_value", "Find events whose recorded values or entity names contain the given word or words. Use this when what you are looking for is a "
+          "concept or detail (a job, a hobby, a place, a food) that is not an entity name. Exact matching after dropping plural, -ing and -ed endings "
+          "(dance, dances, danced, dancing all match); no synonyms, no ranking. Lists up to 10 events in time order with the exact total. " + DATES,
+          {"word": S, "speaker": S, "entity": S, "from": S, "to": S}, ["word"]),
     _tool("ambiguities", "List unresolved references (pronouns and definite phrases such as 'it', 'that', 'the old one') with their candidate referents. "
           "Nothing is resolved for you; candidates are options, not answers.",
           {"entity": S}),
@@ -60,6 +64,8 @@ def dispatch(mem, name, a):
         return mem.filter_events(a.get("dimension"), a.get("status"), a.get("owner"), a.get("speaker"), a.get("entity"), a.get("from"), a.get("to"))
     if name == "count":
         return mem.count(a.get("entity"), a.get("dimension"), a.get("status"), a.get("owner"), a.get("from"), a.get("to"))
+    if name == "find_value":
+        return mem.find_value(a["word"], a.get("speaker"), a.get("entity"), a.get("from"), a.get("to"))
     if name == "ambiguities":
         return mem.ambiguities(a.get("entity"))
     raise KeyError(name)
@@ -77,7 +83,7 @@ def call(mem, name, args):
     try:
         res = dispatch(mem, name, args)
         text = res["text"]
-        return text, res["data"] is None or text.startswith(("Error", "No entity", "No event"))
+        return text, res["data"] is None or text.startswith(("Error", "No entity '", "No event"))
     except (ValueError, TypeError) as e:
         return f"Error: {e}", True
 
