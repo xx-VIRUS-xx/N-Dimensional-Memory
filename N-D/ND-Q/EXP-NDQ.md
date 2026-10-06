@@ -73,11 +73,17 @@ The prompt gives the model the dimension dictionary, the date range of the memor
 - 40 questions, one conversation, one extraction run, Claude only. A difference of 1–2 questions is noise.
 - The primary 40 were read during the ND-3 miss analysis and during the NLP-query prototype. The tool interface here comes from the memory's structure, not from those answers, but the primary set is not held out. That is why the confirmation set is required.
 - The answering model is also the query planner, and temperature is not settable on the CLI: each question runs once, so run-to-run variance is not measured.
+- **Known thin structure, stated before the run:** the ND-3 memory has only 19 distinct dimension names, and three of them (`role_in_event`, `action`, `position`) hold 1,865 of its 3,178 strings. Dimension filters therefore discriminate little; most of what the tools can do rests on entity, speaker, date and status, and the content stays in free-text values. A TOOLS result close to DEPICT would point at the storage format, not at the tool design.
 - A tool result that is empty, or that returns a wrong peg, is scored as the arm's failure, even when the cause is an extraction gap. The ceiling split (measure 4) separates these.
 
-## Implementation intent (not results)
+## Implementation (built and tested, no scored run yet)
 
-`engine/ndm_tools.py` holds the pure functions; `engine/ndm_mcp.py` wraps them as an MCP stdio server; the runner uses `claude -p` with `--strict-mcp-config`, built-in tools disabled, an empty temp directory and `--max-turns 12`. Every tool call and result is saved per question for audit. Each tool gets a contract test on the frozen state (for example `count` matches a manual count on five known cases) before the first scored run.
+- `engine/ndm_tools.py`: the seven tools; `engine/test_ndm_tools.py`: 23 contract tests against the frozen ND-3 state.
+- `engine/ndm_mcp.py`: the tools as a dependency-free MCP stdio server (checked against the official MCP Python client); `engine/rag_mcp.py`: the RAGTOOL control, `search_turns(query)`, BM25 top 5 dated turns with the ND-3 RAG scoring.
+- `tools/ndq_run.py`: one isolated `claude -p` session per question, empty temp dir, built-in tools off (`--tools ""`), only that arm's MCP server (`--strict-mcp-config`), `--max-turns 12`, at most 10 tool calls stated in the prompt. The exact prompt text for both arms is in this file and is frozen with the spec. It saves answers, per-question calls and words read, cost, and every tool call and result (`<arm>.traces/<id>.jsonl`). It resumes after a stop; a usage limit shows as "claude exited 1".
+- `engine/test_ndm_mcp.py`, `engine/test_ndq_run.py`: protocol and plumbing tests (a stub `claude` makes a real tool call through the generated config; no model is used).
+
+**Pilot (unscored, harness debugging only, conv-30):** `python3 tools/ndq_run.py --arm tools --state ND-2/heldout/per_run/claude-cli__haiku__run1.state.json --probes ND-2/heldout/data/probes.jsonl --out ND-Q/pilot --limit 3`. It checks that the real `claude` accepts the MCP config and tool permissions, that tools are called, and what a question costs. Prompts and tool descriptions may change after the pilot and before the freeze, never after the first scored conv-49 answer.
 
 ## Not tested here
 
