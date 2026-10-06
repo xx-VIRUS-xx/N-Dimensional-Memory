@@ -1,6 +1,6 @@
 # ND-Q: does an LLM-planned logical query beat keyword selection on the memory we already have?
 
-**Status:** DRAFT 2026-10-06. Not frozen. It freezes on approval, before any ND-Q run; after that, any change is a new version and the first version is still reported.
+**Status:** DRAFT 2026-10-06 (tool table amended the same day after the tools were built and tested; see the note under the table). Not frozen. It freezes on approval, before any ND-Q run; after that, any change is a new version and the first version is still reported.
 
 ## Why
 
@@ -36,12 +36,14 @@ Every result is capped at 200 words with a "N more" count. Tools return **memory
 | Tool | Returns |
 |---|---|
 | `find_entity(name)` | Pegs matching by normalised name (exact, then near matches, near matches proposed and never merged): type, event count, first and last date |
-| `trajectory(entity, from?, to?)` | That peg's events in order: tick, date, speaker, its dimension values, status, owner |
+| `trajectory(entity, from?, to?)` | That peg's events in order that record something about it: tick, date, speaker, its dimension values, status, owner; the header counts the events where it was present but nothing was recorded about it (for example as listener) |
 | `event(tick)` | One event in full: speaker, listener, date, every entity with its dimension values and statuses |
 | `co_occurring(entity_a, entity_b?)` | Events where the pegs appear together (collisions), hub pegs excluded unless named |
-| `filter_events(dimension?, status?, owner?, speaker?, from?, to?)` | Matching events: count plus the first 10 |
+| `filter_events(dimension?, status?, owner?, speaker?, entity?, from?, to?)` | Matching events: count plus the first 10 |
 | `count(entity?, dimension?, status?, owner?, from?, to?)` | Exact number of matching events and of distinct pegs, with their ids |
-| `ambiguities(entity?)` | Open buckets with their candidates; no resolution is applied |
+| `ambiguities(entity?)` | Unresolved buckets with their candidates; no resolution is applied. The header gives how many others the engine's single-candidate rule resolved, without showing them |
+
+Amendments made while building the tools, before any scored run: `filter_events` gained `entity?` (as `count` already had); `trajectory` skips and counts events where the peg only listened, which would otherwise print as empty lines; bad input (for example a malformed date) returns an error message instead of raising. Dates are the day a turn was said. `count` and `filter_events` never match entities loosely: an unknown name returns "no entity" and the model must use `find_entity`.
 
 The prompt gives the model the dimension dictionary, the date range of the memory, and these rules: answer only from tool results; if the tools return nothing relevant, say it is not in memory; do not accept a premise the memory does not support. The final-answer instructions are the ND-3 text, unchanged.
 
