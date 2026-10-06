@@ -1,6 +1,6 @@
 # ND-Q: does an LLM-planned logical query beat keyword selection on the memory we already have?
 
-**Status:** DRAFT 2026-10-06 (tool table amended the same day after the tools were built and tested; see the note under the table). Not frozen. It freezes on approval, before any ND-Q run; after that, any change is a new version and the first version is still reported.
+**Status:** FROZEN 2026-10-06, approved by Prabhat Saxena ("approve", after reading the pilot). Hypotheses Q1–Q5, the pass rule, the tool interface, the two prompts and the arms are fixed; `ND-Q/FREEZE.sha256` lists the hashes of the files that define them. Any later change is a new version and this one is still reported. Before freezing, the tool table was amended twice (after the tools were built, and after the unscored conv-30 pilot added `find_value`); both are recorded below.
 
 ## Why
 
