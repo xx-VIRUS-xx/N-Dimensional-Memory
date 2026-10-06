@@ -1,6 +1,6 @@
 # ND-E: event-relation extraction with an accumulating type/role registry
 
-**Status:** DRAFT 2026-10-07. Not frozen. Thresholds below are proposals for approval; they freeze before the first extraction run, and any later change is a new version.
+**Status:** FROZEN 2026-10-07 (spec, measures and thresholds approved by Prabhat Saxena). The extraction prompt may still change during Phase 1 (30 turns, read by hand); the prompt used for the full Phase 2 run is fixed by its hash in the run's meta file before that run starts. `ND-E/FREEZE.sha256` lists the hashes of this spec and of the report script that computes the measures; the extractor is deliberately not listed, because its prompt may change until Phase 2. Any later change to the spec is a new version and this one is still reported.
 
 ## Why
 ND-Q (REPORT.md) showed the query tools were limited by what the memory stores and shows. Measured on the ND-3 memory: 96% of `action` values are unique (492 of 512), values average 4.2 words, relations live inside free-text values (a single announcement is stored three times, once per entity), 7% of strings sit on pronoun pegs, and 23 of 74 evidence events (31%) have no entity to key on except Evan, Sam or a pronoun (Evan and Sam are in 86% of events). The tools can narrow only on what is categorical, and almost nothing is.
@@ -47,3 +47,8 @@ M6 and M7 use the evidence turns as an oracle (what narrowing would be possible)
 
 ## Not tested here
 Whether answers improve (that is ND-Q v2), other models, other conversations, cross-turn coreference, any change to the engine's ambiguity rules.
+
+## Implementation (built and tested, no model run yet)
+`tools/extract_events.py`: one fresh `claude -p` session per turn (empty temp dir, no tools), prompt v3.0 with the registry, strict output validation with up to three retries that quote the parser's complaints, links derived in code, resume after a stop, `--limit N`. `tools/nde_report.py`: M1-M5 and M8 plus a `review.md` for the M3 hand check. `tools/test_nde.py`: 16 tests on self-built fixtures (link derivation on the Bob/Alice example, plural and determiner folding, registry counts, caps and recency, retry, resume, report numbers); mutation checks caught every deliberate breakage after one test was added.
+
+**Phase 1 run:** the first 30 turns of conv-49 with Haiku, window 10 for M4 (50 is for the 509-turn run). conv-49 is development data; ND-E is not scored on answers, and the ND-Q v2 evaluation will use the 40 fresh conv-49 questions.
