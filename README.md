@@ -48,18 +48,18 @@ Every experiment has a spec frozen before it runs; results are reported against 
 | **ND-1** | Same pilot, engine v0 | Is the engine faithful and stable? | **Conditional pass.** Faithfulness 0.986–1.0; collisions identical across runs (Jaccard 1.0); 14–15 of 15 probes. |
 | **ND-1b** | LoCoMo conv-26, 3 sessions | Does memory answer benchmark questions? | **Fail.** 16 vs raw text 21 (76%); temporal 1/7. Causes: missing dates, identity drift, facts split across turns. |
 | **ND-2** | LoCoMo conv-30, held out, 33 questions | After fixes, does the depiction keep up with raw text? | **Pass, with a qualifier.** Depiction 24, raw text 26, full memory dump 27. Depiction uses 571 words vs 1,734 (33%). Temporal 5/5. |
-| **ND-3** | LoCoMo conv-49, full length (509 turns), 40 questions | Does N-D beat retrieval at the same size? | **Running.** Spec frozen; compares depiction vs BM25 retrieval (both ≤ 1,000 words) vs raw text (~15k words). |
+| **ND-3** | LoCoMo conv-49, full length (509 turns), 40 questions | Does N-D beat retrieval at the same size? | **Fail.** Depiction 28.5, BM25 retrieval 28.5 (both ~1,000 words), raw text 32.5 (15,014 words): a tie with retrieval, 88% of raw. False premise: depiction 7/8, raw 5/8. Temporal 7/7. |
 
 **What the evidence supports so far**
 
-- The engine's memory is as accurate as reading the raw conversation (ND-2: 27 vs 26).
-- Attribution works where raw reading fails: on false-premise questions (swapped-speaker traps such as "Jon's team performed…"), the memory dump scored 9/9 and raw text 5.5/9.
-- Dates on every event fixed temporal questions (1/7 in ND-1b to 5/5 in ND-2).
-- The depiction currently adds **compression, not accuracy**: 92% of raw accuracy at a third of the words.
+- **Attribution is the robust result.** On false-premise questions (swapped-speaker traps), owned memory beats reading the raw text on two held-out conversations: ND-2 memory dump 9/9 vs raw 5.5/9; ND-3 depiction 7/8 vs raw 5/8, at 6% of the raw size.
+- **Dates work.** Temporal questions went from 1/7 (ND-1b) to 5/5 (ND-2) and 7/7 (ND-3).
+- **The engine's memory holds the facts.** In ND-2 the full memory dump matched raw text (27 vs 26). In ND-3, 7 of the depiction's 14 misses were facts present in memory but not selected.
+- **Selection is not yet better than retrieval.** At equal size, the depiction ties BM25 (ND-3): it still chooses what to show mostly by question words, and it is weak on questions that gather many turns (multi-hop 3/8 vs raw 6/8).
 
 **Limits.** Small samples (33–40 questions per test), one conversation per test, one extraction run, Claude models only. A difference of 1–2 questions is noise. No comparison with other memory systems (Mem0, Zep) yet.
 
-Full reports: [ND-1b](N-D/ND-1b/stage1/REPORT.md) · [ND-2](N-D/ND-2/REPORT.md) · [ND-3 spec](N-D/ND-3/EXP-ND3.md)
+Full reports: [ND-1b](N-D/ND-1b/stage1/REPORT.md) · [ND-2](N-D/ND-2/REPORT.md) · [ND-3](N-D/ND-3/REPORT.md)
 
 ## Repository layout
 
@@ -132,7 +132,9 @@ The question runs call `claude -p` once per question, from an empty temporary fo
 
 ## What's next
 
-- Finish ND-3 and publish the verdict (depiction vs retrieval at equal size).
+- Split the engine into inspectable layers, each writing a human-readable view, with a test for every contract rule.
+- Fix selection using the engine's structure, not question words: speaker-scoped trajectories, open-bucket candidates, and aggregation for "how many / what kinds" questions; test on fresh held-out data.
+- Supersession and contradiction handling, and event-at-a-time ingestion.
 - Repeat with a second model family, and compare against existing memory systems (Mem0, Zep).
 - Activity memory (tracking intents and tasks over time) and harder ambiguity tests.
 
