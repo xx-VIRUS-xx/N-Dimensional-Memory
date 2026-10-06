@@ -1,0 +1,2002 @@
+{
+  "M1": {
+    "stored_absences": [],
+    "unflagged_inferences": [],
+    "input_issues": [],
+    "pass": true
+  },
+  "M2": {
+    "run1_definition_rate": 0.655,
+    "M2a_content_traceable_rate": 0.954,
+    "M2b_label_introduced_pegs": [
+      "117:These times",
+      "223:These times",
+      "256:These times",
+      "257:health",
+      "261:These times",
+      "277:These times",
+      "299:These times",
+      "302:that situation",
+      "316:something",
+      "317:health challenges",
+      "329:These times",
+      "339:These times",
+      "387:the subject",
+      "393:the subject",
+      "397:the subject",
+      "399:the subject",
+      "401:the subject",
+      "413:the subject",
+      "415:the subject",
+      "419:the subject",
+      "419:we",
+      "422:the subject",
+      "436:the subject",
+      "439:the subject",
+      "440:the subject",
+      "443:the subject",
+      "449:the subject",
+      "453:the subject",
+      "465:the subject",
+      "470:the subject",
+      "474:motivation",
+      "477:the subject",
+      "490:health issues",
+      "491:the subject",
+      "493:picture"
+    ],
+    "untraceable_names": [
+      "1:Evan's family",
+      "1:Evan's new Prius",
+      "82:Evan's kids",
+      "223:Sam's doctor",
+      "300:Evan's job",
+      "432:Evan's partner",
+      "434:my family",
+      "435:my family",
+      "442:my family",
+      "491:Evan's partner"
+    ],
+    "untraceable_content_values": [
+      "0:Sam.action = greeted Evan and asked questions",
+      "3:Rockies.context = destination",
+      "7:Sam.action = hiked",
+      "21:Evan.action = expresses anticipation and bids farewell",
+      "23:Sam.position = finds Jasper amazing and breathtaking, has not visited it",
+      "26:Evan.action = expressing sympathy and offering to help",
+      "33:Sam.action = thanked Evan, expressed appreciation for encouragement, committed to trying something and reporting back",
+      "34:Evan.action = encourages fun and advises against pressure",
+      "36:Evan.position = wants to be kept updated",
+      "43:Evan.action = proposing dietary changes; asking for opinion",
+      "49:Evan.action = encouraged continuation",
+      "51:Evan.position = enthusiastic about exercise",
+      "68:Evan.action = encouraged and advised Sam",
+      "70:Evan.action = asked about exercising and asserted its importance",
+      "70:Exercising.function = health maintenance",
+      "71:the gym.function = location for exercising",
+      "73:Sam.position = appreciative",
+      "76:Evan.action = offering support and encouraging continuation",
+      "78:Sam.action = expressing sympathy",
+      "87:That visual reminder.function = providing motivation",
+      "89:thirst for adventure on interesting hikes.function = motivates",
+      "98:Sam.action = affirms and encourages",
+      "102:Canada.context = destination of vacation",
+      "104:Evan.action = expressing sympathy and offering help",
+      "105:Sam.action = expressing gratitude",
+      "113:Sam.action = agreed with Evan, expressed appreciation",
+      "128:roasted veg recipe.function = sharing",
+      "130:Sam.action = expressing gladness and empathy, advising self-care",
+      "134:Sam.position = grateful",
+      "136:Sam.position = appreciative",
+      "138:Evan.action = exclaims and inquires",
+      "142:Evan.action = expresses approval, encourages Sam, asks about recipes",
+      "143:Sam.position = favors trying the recipe",
+      "146:Evan.action = expressed enthusiasm and gratitude",
+      "147:Sam.action = provided recipe and requested feedback",
+      "153:Sam.action = asked",
+      "155:Sam.action = asking",
+      "172:Sam.action = expressing sympathy and offering help",
+      "175:PT.function = physical therapy for knee",
+      "178:Evan.action = went",
+      "180:nature.function = provides tranquility and refreshment",
+      "182:Sam.action = asked for lake recommendation",
+      "187:Evan.action = wishing well and saying goodbye",
+      "189:Evan.action = greets and asks about his activities",
+      "201:Evan.position = enthusiastic about painting",
+      "215:Sam.action = compliments",
+      "224:lifting weights.function = exercise",
+      "228:Evan.action = encouraging",
+      "229:Sam.position = appreciative",
+      "229:Evan.position = supportive",
+      "230:Evan.position = supportive",
+      "231:Sam.position = grateful",
+      "236:Evan.action = expressed enthusiasm and encouraged",
+      "236:Evan.position = confident in your success",
+      "238:Evan.position = supportive",
+      "240:Evan.action = greeting",
+      "246:Evan.action = asking about kayaking experience and soliciting thoughts",
+      "251:Sam.action = expressed gratitude and anticipation",
+      "252:Evan.action = asked about adventure and destination",
+      "256:Sam.position = health prioritization is necessary",
+      "256:gastritis.outcome = diagnosed condition from health scare",
+      "262:Sam.action = expressing anticipation",
+      "266:Sam.action = expressing gratitude and enthusiasm",
+      "268:Sam.action = expressed appreciation",
+      "271:Evan.action = saying goodbye and expressing eagerness to hit the trail",
+      "271:Evan.position = enthusiastic about hitting the trail",
+      "276:Sam.action = thanks for reminder; acknowledges getting impatient with self; commits to being patient",
+      "282:Sam.position = impressed by transformation through mindset change",
+      "287:Evan.action = congratulating on victories, encouraging to keep it up, and offering support",
+      "291:Evan.action = congratulating",
+      "295:us.outcome = inspired",
+      "300:Sam.action = expressed sympathy and asked what happened",
+      "302:Sam.action = expressing sympathy and offering support",
+      "304:Sam.action = offering support and encouragement",
+      "304:Sam.position = supportive",
+      "306:Sam.action = commenting on the sunset and asking about a spot",
+      "311:Sam.action = liking it",
+      "314:Sam.action = greeting and inquiring",
+      "321:Evan.position = approves",
+      "321:little things in life.function = to be appreciated",
+      "334:Sam.action = affirms",
+      "340:Sam.action = offered encouragement",
+      "341:Evan.action = offering to be available for talk",
+      "343:Sam.action = expressing sympathy",
+      "345:new opportunities.outcome = result from setbacks",
+      "351:yoga tips.function = assistance",
+      "353:Sam.action = expressed that seeking help is normal and support is valuable",
+      "353:Sam.position = support and help-seeking are valuable",
+      "355:Sam.action = requesting updates on yoga",
+      "370:Sam.action = saying goodbye",
+      "381:Sam.action = greeting and expressing appreciation for the help",
+      "413:Sam.position = concerned",
+      "417:Sam.action = expressing gladness",
+      "427:healthy snacks.function = what Sam is looking for",
+      "433:Sam.action = expressed congratulations and enthusiasm for Evan's news and happiness",
+      "439:Sam.action = agreeing and expressing gratitude",
+      "443:Sam.position = family is essential support",
+      "443:family.function = support",
+      "446:homemade lasagna.function = food",
+      "450:Evan.action = commented that something looks yummy and asked if the listener made it",
+      "452:Evan.action = expressed enthusiasm about weddings",
+      "459:Sam.action = requesting feedback",
+      "463:Sam.action = expressing approval and saying goodbye",
+      "464:Evan.action = thanking and saying goodbye",
+      "480:Sam.action = expresses approval and asks for idea source and suggestions",
+      "487:Evan.action = advises and encourages",
+      "487:dream.function = something to be controlled",
+      "504:bright spots.function = to be found",
+      "505:Sam.position = small things are worth appreciating",
+      "506:Evan.action = expressing encouragement",
+      "508:Evan.position = supportive"
+    ],
+    "traceable_rate": 0.954,
+    "pass": false
+  },
+  "M4": {
+    "checks": {},
+    "passed": 0,
+    "of": 0,
+    "note": "no must-haves for this corpus"
+  },
+  "diagnostics": {
+    "strings_with_peg_links": 0.278,
+    "single_event_pegs": 0.729,
+    "colliding_event_pairs": 124595,
+    "buckets": [
+      {
+        "id": "b0",
+        "tick": 7,
+        "state": "open",
+        "candidates": [
+          "there",
+          "the trails",
+          "the views",
+          "hiking"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b1",
+        "tick": 8,
+        "state": "open",
+        "candidates": [
+          "the trails",
+          "the views",
+          "hiking"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b2",
+        "tick": 12,
+        "state": "open",
+        "candidates": [
+          "hobbies",
+          "painting",
+          "idea"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b3",
+        "tick": 13,
+        "state": "open",
+        "candidates": [
+          "painting",
+          "hobbies",
+          "idea"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b4",
+        "tick": 13,
+        "state": "open",
+        "candidates": [
+          "painting",
+          "hobbies",
+          "idea"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b5",
+        "tick": 14,
+        "state": "open",
+        "candidates": [
+          "watercolor painting",
+          "idea"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b6",
+        "tick": 15,
+        "state": "resolved",
+        "candidates": [
+          "watercolor painting"
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b7",
+        "tick": 17,
+        "state": "resolved",
+        "candidates": [
+          "watercolor painting"
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b8",
+        "tick": 24,
+        "state": "open",
+        "candidates": [
+          "family",
+          "Jasper",
+          "Icefields Parkway",
+          "glacier",
+          "road trip"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b9",
+        "tick": 26,
+        "state": "open",
+        "candidates": [
+          "Jasper",
+          "road trip"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b10",
+        "tick": 28,
+        "state": "open",
+        "candidates": [
+          "health challenges",
+          "weight"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b11",
+        "tick": 33,
+        "state": "open",
+        "candidates": [
+          "fitness routine",
+          "diet",
+          "hobbies",
+          "painting",
+          "Exercising"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b12",
+        "tick": 34,
+        "state": "open",
+        "candidates": [
+          "hobbies",
+          "painting",
+          "Exercising"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b13",
+        "tick": 36,
+        "state": "unknown_referent",
+        "candidates": [],
+        "resolved_by": null
+      },
+      {
+        "id": "b14",
+        "tick": 40,
+        "state": "unknown_referent",
+        "candidates": [],
+        "resolved_by": null
+      },
+      {
+        "id": "b15",
+        "tick": 44,
+        "state": "open",
+        "candidates": [
+          "salad",
+          "health",
+          "processed food",
+          "sugary snacks",
+          "ginger snaps",
+          "diet",
+          "soda and candy",
+          "soda",
+          "flavored seltzer water",
+          "candy",
+          "dark chocolate with high cocoa content"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b16",
+        "tick": 46,
+        "state": "open",
+        "candidates": [
+          "soda",
+          "flavored seltzer water",
+          "candy",
+          "dark chocolate with high cocoa content"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b17",
+        "tick": 48,
+        "state": "resolved",
+        "candidates": [
+          "those tiny changes"
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b18",
+        "tick": 49,
+        "state": "resolved",
+        "candidates": [
+          "those tiny changes"
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b19",
+        "tick": 52,
+        "state": "open",
+        "candidates": [
+          "getting started",
+          "Exercise",
+          "Workouts",
+          "Goals"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b20",
+        "tick": 55,
+        "state": "open",
+        "candidates": [
+          "getting started",
+          "self-checkout machines"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b21",
+        "tick": 58,
+        "state": "unknown_referent",
+        "candidates": [],
+        "resolved_by": null
+      },
+      {
+        "id": "b22",
+        "tick": 58,
+        "state": "unknown_referent",
+        "candidates": [],
+        "resolved_by": null
+      },
+      {
+        "id": "b23",
+        "tick": 65,
+        "state": "open",
+        "candidates": [
+          "the novel",
+          "low-calorie snacks",
+          "soda and candy intake",
+          "flavored seltzer water",
+          "mystery novel"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b24",
+        "tick": 65,
+        "state": "resolved",
+        "candidates": [
+          64
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b25",
+        "tick": 67,
+        "state": "open",
+        "candidates": [
+          "the novel",
+          "flavored seltzer water",
+          "mystery novel",
+          "low-calorie snacks",
+          "flavored seltzer",
+          "air-popped popcorn",
+          "fruit",
+          "The Great Gatsby"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b26",
+        "tick": 67,
+        "state": "open",
+        "candidates": [
+          "flavored seltzer water",
+          "mystery novel",
+          "low-calorie snacks",
+          "flavored seltzer",
+          "air-popped popcorn",
+          "fruit",
+          "The Great Gatsby"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b27",
+        "tick": 72,
+        "state": "open",
+        "candidates": [
+          "reminder",
+          "Exercising",
+          "the gym"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b28",
+        "tick": 75,
+        "state": "unknown_referent",
+        "candidates": [],
+        "resolved_by": null
+      },
+      {
+        "id": "b29",
+        "tick": 78,
+        "state": "open",
+        "candidates": [
+          "Sam",
+          "Evan",
+          "awesome Canadian woman"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b30",
+        "tick": 83,
+        "state": "open",
+        "candidates": [
+          "Evan",
+          "Sam",
+          "Evan's kids"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b31",
+        "tick": 86,
+        "state": "open",
+        "candidates": [
+          "healthy road",
+          "motivation",
+          "similar ones",
+          "my family"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b32",
+        "tick": 92,
+        "state": "open",
+        "candidates": [
+          "thirst for adventure on interesting hikes",
+          "the views",
+          "something",
+          "struggles"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b33",
+        "tick": 93,
+        "state": "open",
+        "candidates": [
+          "the views",
+          "something",
+          "struggles"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b34",
+        "tick": 94,
+        "state": "open",
+        "candidates": [
+          "something",
+          "struggles"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b35",
+        "tick": 97,
+        "state": "resolved",
+        "candidates": [
+          95
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b36",
+        "tick": 106,
+        "state": "open",
+        "candidates": [
+          "people who care",
+          "reminder or quote",
+          "Canada",
+          "photo",
+          "health issues",
+          "things"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b37",
+        "tick": 109,
+        "state": "open",
+        "candidates": [
+          "first step",
+          "healthier habits",
+          "people who care",
+          "reminder or quote",
+          "a quote"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b38",
+        "tick": 110,
+        "state": "open",
+        "candidates": [
+          "a quote",
+          "first step",
+          "healthier habits"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b39",
+        "tick": 111,
+        "state": "open",
+        "candidates": [
+          "These times",
+          "a quote",
+          "first step",
+          "healthier habits"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b40",
+        "tick": 112,
+        "state": "open",
+        "candidates": [
+          "Evan",
+          "Sam"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b41",
+        "tick": 115,
+        "state": "open",
+        "candidates": [
+          "dream",
+          "small wins",
+          "every step forward",
+          "keys"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b42",
+        "tick": 123,
+        "state": "resolved",
+        "candidates": [
+          122
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b43",
+        "tick": 124,
+        "state": "resolved",
+        "candidates": [
+          122
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b44",
+        "tick": 125,
+        "state": "open",
+        "candidates": [
+          "recipes",
+          "what happened",
+          "the class",
+          "the cooking class",
+          "grilled dish"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b45",
+        "tick": 126,
+        "state": "open",
+        "candidates": [
+          "the cooking class",
+          "the class",
+          "grilled dish",
+          "recipes"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b46",
+        "tick": 129,
+        "state": "open",
+        "candidates": [
+          "Evan",
+          "Sam"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b47",
+        "tick": 130,
+        "state": "open",
+        "candidates": [
+          "Sam",
+          "Evan",
+          "someone we care about"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b48",
+        "tick": 135,
+        "state": "unknown_referent",
+        "candidates": [],
+        "resolved_by": null
+      },
+      {
+        "id": "b49",
+        "tick": 136,
+        "state": "unknown_referent",
+        "candidates": [],
+        "resolved_by": null
+      },
+      {
+        "id": "b50",
+        "tick": 138,
+        "state": "resolved",
+        "candidates": [
+          "Making changes to live healthier"
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b51",
+        "tick": 139,
+        "state": "resolved",
+        "candidates": [
+          "Making changes to live healthier"
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b52",
+        "tick": 140,
+        "state": "resolved",
+        "candidates": [
+          "Making changes to live healthier"
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b53",
+        "tick": 161,
+        "state": "open",
+        "candidates": [
+          "painting",
+          "places like this",
+          "trusty car"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b54",
+        "tick": 164,
+        "state": "open",
+        "candidates": [
+          "Skiing",
+          "Snow",
+          "Winter sports",
+          "the views",
+          "skiing opportunities"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b55",
+        "tick": 167,
+        "state": "open",
+        "candidates": [
+          164,
+          166
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b56",
+        "tick": 172,
+        "state": "resolved",
+        "candidates": [
+          "diet and exercise routine"
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b57",
+        "tick": 178,
+        "state": "open",
+        "candidates": [
+          "PT",
+          "appointment",
+          "knee",
+          "Swimming",
+          "active lifestyle",
+          "road trip",
+          "scenery",
+          "nature",
+          "the push"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b58",
+        "tick": 183,
+        "state": "open",
+        "candidates": [
+          "the ones",
+          "nature",
+          "hiking",
+          "road trip",
+          "hikes",
+          "doing hikes together"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b59",
+        "tick": 184,
+        "state": "open",
+        "candidates": [
+          "the views",
+          "hikes",
+          "doing hikes together",
+          "the ones"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b60",
+        "tick": 185,
+        "state": "open",
+        "candidates": [
+          "here",
+          "the ones",
+          "the views"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b61",
+        "tick": 194,
+        "state": "open",
+        "candidates": [
+          "stress",
+          "boredom",
+          "wanting comfort",
+          "sugary treats",
+          "sugary drinks and snacks"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b62",
+        "tick": 198,
+        "state": "open",
+        "candidates": [
+          "something comforting",
+          "painting",
+          "going for a drive"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b63",
+        "tick": 206,
+        "state": "open",
+        "candidates": [
+          "PT",
+          "family"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b64",
+        "tick": 209,
+        "state": "open",
+        "candidates": [
+          "watercolor painting",
+          "PT",
+          "city"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b65",
+        "tick": 210,
+        "state": "open",
+        "candidates": [
+          "painting",
+          "PT",
+          "watercolor painting",
+          "city"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b66",
+        "tick": 216,
+        "state": "open",
+        "candidates": [
+          "painting",
+          "art"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b67",
+        "tick": 218,
+        "state": "resolved",
+        "candidates": [
+          217
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b68",
+        "tick": 220,
+        "state": "open",
+        "candidates": [
+          "drawing",
+          "writing",
+          "new phone",
+          "the phone",
+          "the tip",
+          "my journal",
+          "creative writing"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b69",
+        "tick": 221,
+        "state": "open",
+        "candidates": [
+          "writing",
+          "the phone",
+          "the tip",
+          "my journal",
+          "creative writing"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b70",
+        "tick": 222,
+        "state": "open",
+        "candidates": [
+          "outlet",
+          "thoughts and feelings",
+          "the tip",
+          "my journal",
+          "creative writing"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b71",
+        "tick": 225,
+        "state": "open",
+        "candidates": [
+          "outlet",
+          "thoughts and feelings",
+          "lifting weights"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b72",
+        "tick": 233,
+        "state": "open",
+        "candidates": [
+          "health",
+          "Progress"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b73",
+        "tick": 233,
+        "state": "open",
+        "candidates": [
+          "health",
+          "Progress"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b74",
+        "tick": 239,
+        "state": "unknown_referent",
+        "candidates": [],
+        "resolved_by": null
+      },
+      {
+        "id": "b75",
+        "tick": 241,
+        "state": "resolved",
+        "candidates": [
+          "unhealthy snacks"
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b76",
+        "tick": 242,
+        "state": "resolved",
+        "candidates": [
+          241
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b77",
+        "tick": 242,
+        "state": "resolved",
+        "candidates": [
+          241
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b78",
+        "tick": 243,
+        "state": "open",
+        "candidates": [
+          "Sam",
+          "Evan"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b79",
+        "tick": 248,
+        "state": "resolved",
+        "candidates": [
+          "kayaking"
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b80",
+        "tick": 249,
+        "state": "resolved",
+        "candidates": [
+          246
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b81",
+        "tick": 250,
+        "state": "open",
+        "candidates": [
+          "kayaking trip",
+          "cool spot",
+          "kayaking",
+          "the lake"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b82",
+        "tick": 254,
+        "state": "open",
+        "candidates": [
+          "adventure",
+          "Lake Tahoe"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b83",
+        "tick": 255,
+        "state": "open",
+        "candidates": [
+          "adventure",
+          "Lake Tahoe"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b84",
+        "tick": 258,
+        "state": "open",
+        "candidates": [
+          "gastritis",
+          "nutritious diet",
+          "regular exercise",
+          "the phone",
+          "fitness"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b85",
+        "tick": 258,
+        "state": "resolved",
+        "candidates": [
+          257
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b86",
+        "tick": 261,
+        "state": "open",
+        "candidates": [
+          "getting started",
+          "hikes",
+          "feeling good and reaching goals",
+          "Goals",
+          "Exercise",
+          "buddy"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b87",
+        "tick": 265,
+        "state": "open",
+        "candidates": [
+          "hikes",
+          "hiking",
+          "the gym",
+          "Strength",
+          "Memory",
+          "Progress",
+          "the trails"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b88",
+        "tick": 284,
+        "state": "open",
+        "candidates": [
+          "well-being",
+          "quick results",
+          "pressure",
+          "unrealistic expectations"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b89",
+        "tick": 298,
+        "state": "open",
+        "candidates": [
+          "others",
+          "us"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b90",
+        "tick": 306,
+        "state": "open",
+        "candidates": [
+          "sunset",
+          "Life"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b91",
+        "tick": 308,
+        "state": "open",
+        "candidates": [
+          "sunset",
+          "peaceful place",
+          "home"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b92",
+        "tick": 308,
+        "state": "open",
+        "candidates": [
+          "sunset",
+          "peaceful place",
+          "home"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b93",
+        "tick": 309,
+        "state": "open",
+        "candidates": [
+          "picture",
+          "favorite spot by the beach",
+          "waves",
+          "sunset colors",
+          "nature's resilience",
+          "sunset",
+          "peaceful place",
+          "home"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b94",
+        "tick": 310,
+        "state": "open",
+        "candidates": [
+          "a plan to go",
+          "peaceful place",
+          "home",
+          "picture",
+          "favorite spot by the beach",
+          "waves",
+          "sunset colors",
+          "nature's resilience"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b95",
+        "tick": 311,
+        "state": "open",
+        "candidates": [
+          "picture",
+          "favorite spot by the beach",
+          "waves",
+          "sunset colors",
+          "nature's resilience",
+          "a plan to go",
+          "photo"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b96",
+        "tick": 313,
+        "state": "open",
+        "candidates": [
+          "a plan to go",
+          "photo",
+          "trip",
+          "there"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b97",
+        "tick": 315,
+        "state": "open",
+        "candidates": [
+          "Evan",
+          "Sam"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b98",
+        "tick": 318,
+        "state": "open",
+        "candidates": [
+          "hospital",
+          "health scare",
+          "misunderstanding",
+          "small steps",
+          "new hobbies"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b99",
+        "tick": 319,
+        "state": "open",
+        "candidates": [
+          "movie",
+          "misunderstanding",
+          "small steps",
+          "new hobbies"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b100",
+        "tick": 327,
+        "state": "open",
+        "candidates": [
+          "the gym",
+          "car",
+          "fitness goals",
+          "Life"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b101",
+        "tick": 329,
+        "state": "open",
+        "candidates": [
+          "Progress",
+          "the gym",
+          "car",
+          "fitness goals"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b102",
+        "tick": 330,
+        "state": "open",
+        "candidates": [
+          "the gym",
+          "car",
+          "fitness goals",
+          "Progress"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b103",
+        "tick": 332,
+        "state": "open",
+        "candidates": [
+          "Progress",
+          "the island"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b104",
+        "tick": 333,
+        "state": "resolved",
+        "candidates": [
+          "the island"
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b105",
+        "tick": 334,
+        "state": "resolved",
+        "candidates": [
+          "the island"
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b106",
+        "tick": 335,
+        "state": "unknown_referent",
+        "candidates": [],
+        "resolved_by": null
+      },
+      {
+        "id": "b107",
+        "tick": 336,
+        "state": "unknown_referent",
+        "candidates": [],
+        "resolved_by": null
+      },
+      {
+        "id": "b108",
+        "tick": 337,
+        "state": "resolved",
+        "candidates": [
+          "there"
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b109",
+        "tick": 338,
+        "state": "resolved",
+        "candidates": [
+          "there"
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b110",
+        "tick": 346,
+        "state": "open",
+        "candidates": [
+          "something different",
+          "car",
+          "prius",
+          "plans",
+          "something like this",
+          "setbacks",
+          "new opportunities"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b111",
+        "tick": 348,
+        "state": "resolved",
+        "candidates": [
+          347
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b112",
+        "tick": 354,
+        "state": "open",
+        "candidates": [
+          "yoga tips",
+          "the support"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b113",
+        "tick": 358,
+        "state": "open",
+        "candidates": [
+          "Parenthood",
+          "yoga"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b114",
+        "tick": 364,
+        "state": "open",
+        "candidates": [
+          "something",
+          "the family bond",
+          "collage",
+          "Evan's family",
+          "the sign in the center",
+          "Banff",
+          "Bring it on Home",
+          "family"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b115",
+        "tick": 370,
+        "state": "open",
+        "candidates": [
+          "big family reunion",
+          "collage",
+          "big event",
+          "family's milestones",
+          "the support"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b116",
+        "tick": 375,
+        "state": "open",
+        "candidates": [
+          "Sam",
+          "Evan",
+          "son"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b117",
+        "tick": 375,
+        "state": "open",
+        "candidates": [
+          "we",
+          "accident",
+          "us",
+          "all this"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b118",
+        "tick": 375,
+        "state": "open",
+        "candidates": [
+          "we",
+          "accident",
+          "us",
+          "all this"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b119",
+        "tick": 385,
+        "state": "open",
+        "candidates": [
+          "Sam",
+          "Evan"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b120",
+        "tick": 385,
+        "state": "open",
+        "candidates": [
+          "trying something new",
+          "something new"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b121",
+        "tick": 391,
+        "state": "resolved",
+        "candidates": [
+          "painting"
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b122",
+        "tick": 392,
+        "state": "open",
+        "candidates": [
+          "Evan",
+          "Sam",
+          "the woman from Canada"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b123",
+        "tick": 394,
+        "state": "resolved",
+        "candidates": [
+          "love at first sight"
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b124",
+        "tick": 395,
+        "state": "open",
+        "candidates": [
+          "Love",
+          "love at first sight"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b125",
+        "tick": 404,
+        "state": "open",
+        "candidates": [
+          "the creative process",
+          "art",
+          "painting",
+          "emotions"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b126",
+        "tick": 405,
+        "state": "open",
+        "candidates": [
+          "painting",
+          "art",
+          "emotions",
+          "the creative process"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b127",
+        "tick": 406,
+        "state": "open",
+        "candidates": [
+          "the compliment",
+          "emotions",
+          "the creative process"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b128",
+        "tick": 408,
+        "state": "open",
+        "candidates": [
+          "keys",
+          "painting",
+          "the compliment"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b129",
+        "tick": 410,
+        "state": "open",
+        "candidates": [
+          "keys",
+          "GPS sensor"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b130",
+        "tick": 410,
+        "state": "open",
+        "candidates": [
+          "keys",
+          "GPS sensor"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b131",
+        "tick": 415,
+        "state": "open",
+        "candidates": [
+          "Sam",
+          "Evan"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b132",
+        "tick": 421,
+        "state": "open",
+        "candidates": [
+          "Sam",
+          "Evan"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b133",
+        "tick": 425,
+        "state": "open",
+        "candidates": [
+          "Sam",
+          "Evan"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b134",
+        "tick": 428,
+        "state": "open",
+        "candidates": [
+          "these",
+          "the tip",
+          "healthy snacks"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b135",
+        "tick": 430,
+        "state": "open",
+        "candidates": [
+          "the tip",
+          "healthy snacks",
+          "these",
+          "self-checkout"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b136",
+        "tick": 431,
+        "state": "open",
+        "candidates": [
+          "these",
+          "self-checkout"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b137",
+        "tick": 432,
+        "state": "open",
+        "candidates": [
+          "extended fam",
+          "marriage",
+          "these",
+          "self-checkout"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b138",
+        "tick": 435,
+        "state": "resolved",
+        "candidates": [
+          434
+        ],
+        "resolved_by": "engine"
+      },
+      {
+        "id": "b139",
+        "tick": 444,
+        "state": "open",
+        "candidates": [
+          "Evan",
+          "Sam"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b140",
+        "tick": 448,
+        "state": "open",
+        "candidates": [
+          "diet plan",
+          "family gathering",
+          "family get-together",
+          "homemade lasagna",
+          "new diet",
+          "ginger snaps",
+          "menu"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b141",
+        "tick": 450,
+        "state": "open",
+        "candidates": [
+          "diet plan",
+          "family gathering",
+          "lasagna",
+          "dessert"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b142",
+        "tick": 452,
+        "state": "open",
+        "candidates": [
+          "Weddings",
+          "lasagna",
+          "dessert"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b143",
+        "tick": 455,
+        "state": "open",
+        "candidates": [
+          "trip",
+          "Weddings",
+          "cake",
+          "special occasions",
+          "Canada"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b144",
+        "tick": 459,
+        "state": "open",
+        "candidates": [
+          "poutine",
+          "we",
+          "there"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b145",
+        "tick": 460,
+        "state": "open",
+        "candidates": [
+          "the hype",
+          "poutine",
+          "we",
+          "there"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b146",
+        "tick": 461,
+        "state": "open",
+        "candidates": [
+          "the details",
+          "poutine",
+          "we",
+          "there",
+          "the hype"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b147",
+        "tick": 468,
+        "state": "open",
+        "candidates": [
+          "something funny",
+          "roses"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b148",
+        "tick": 470,
+        "state": "open",
+        "candidates": [
+          "anyone",
+          "roses"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b149",
+        "tick": 471,
+        "state": "open",
+        "candidates": [
+          "Evan",
+          "Sam"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b150",
+        "tick": 472,
+        "state": "open",
+        "candidates": [
+          "Sam",
+          "Evan"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b151",
+        "tick": 473,
+        "state": "open",
+        "candidates": [
+          "Evan",
+          "my partner",
+          "Sam"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b152",
+        "tick": 480,
+        "state": "open",
+        "candidates": [
+          "salad",
+          "balanced diet plan",
+          "low-impact exercises",
+          "my current situation"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b153",
+        "tick": 480,
+        "state": "open",
+        "candidates": [
+          "balanced diet plan",
+          "low-impact exercises",
+          "my current situation"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b154",
+        "tick": 481,
+        "state": "open",
+        "candidates": [
+          "nearby restaurant",
+          "Swimming",
+          "yoga",
+          "walking",
+          "balanced diet plan",
+          "low-impact exercises",
+          "my current situation",
+          "salad"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b155",
+        "tick": 486,
+        "state": "open",
+        "candidates": [
+          "recurring dream",
+          "yoga",
+          "diet",
+          "The Godfather",
+          "healthier diet",
+          "positive changes",
+          "low-impact exercises",
+          "beach sunsets"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b156",
+        "tick": 488,
+        "state": "open",
+        "candidates": [
+          "low-impact exercises",
+          "beach sunsets",
+          "recurring dream",
+          "dream"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b157",
+        "tick": 492,
+        "state": "open",
+        "candidates": [
+          "Evan",
+          "Sam",
+          "Evan's partner"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b158",
+        "tick": 492,
+        "state": "open",
+        "candidates": [
+          "health issues",
+          "weight",
+          "the rose bushes"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b159",
+        "tick": 497,
+        "state": "open",
+        "candidates": [
+          "the lake",
+          "the countryside",
+          "city",
+          "nature",
+          "sunset",
+          "Moments"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b160",
+        "tick": 497,
+        "state": "open",
+        "candidates": [
+          "the lake",
+          "the countryside",
+          "city",
+          "nature",
+          "sunset",
+          "Moments"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b161",
+        "tick": 499,
+        "state": "open",
+        "candidates": [
+          "nature",
+          "sunset",
+          "Moments",
+          "the lake"
+        ],
+        "resolved_by": null
+      },
+      {
+        "id": "b162",
+        "tick": 507,
+        "state": "open",
+        "candidates": [
+          "little moments",
+          "bright spots",
+          "small things"
+        ],
+        "resolved_by": null
+      }
+    ],
+    "identity_proposals_pending": 200,
+    "dropped_absences": 0,
+    "model_belief_candidates": 4,
+    "status_counts": {
+      "fact": 0,
+      "claim": 2617,
+      "speaker_belief": 292,
+      "open_question": 239,
+      "intent": 30
+    }
+  }
+}
