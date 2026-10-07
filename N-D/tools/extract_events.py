@@ -80,8 +80,22 @@ def norm_entity(s):
     return t
 
 
-def validate(rec):
-    """Problems found in one model output; an empty list means it meets the contract."""
+_YOU = re.compile(r"\b(you|your|yours|yourself|you're|you'll|you've|you'd|y'all)\b", re.I)
+
+
+def ungrounded_listener(value, turn):
+    """True when `value` is the listener's name but the turn has neither that name nor a word for 'you'.
+    The speaker is never checked (the speaker is present by speaking). 'we' does not ground the listener."""
+    name = str(turn.get("listener", "")).strip()
+    if not name or str(value).strip().lower() != name.lower():
+        return False
+    text = str(turn.get("text", ""))
+    return not (_YOU.search(text) or re.search(r"\b" + re.escape(name) + r"\b", text, re.I))
+
+
+def validate(rec, turn=None):
+    """Problems found in one model output; an empty list means it meets the contract.
+    With `turn` (amendment 3), a slot naming the listener without grounds in the turn is also a problem."""
     if not isinstance(rec, dict):
         return ["top level is not a JSON object"]
     errs = []
@@ -104,6 +118,9 @@ def validate(rec):
                 errs.append(f"event {i} has an empty key")
             elif k != "type" and (not isinstance(v, str) or not v.strip()):
                 errs.append(f"event {i} role '{k}' must have a non-empty text value (omit the role if unknown)")
+            elif k != "type" and turn is not None and ungrounded_listener(v, turn):
+                errs.append(f"event {i} role '{k}' names {v.strip()}, but this turn does not mention {v.strip()} or say 'you'. "
+                            f"If the turn says 'we', 'they' or 'us', keep that word as written (list it in Entities) and do not guess who it includes; otherwise omit the role")
     return errs
 
 
@@ -244,7 +261,7 @@ def main(argv=None):
                     else:
                         raw = call_claude(prompt, a.model)
                     cand = parse(raw) if isinstance(raw, str) else raw
-                    errs = validate(cand)
+                    errs = validate(cand, turn)
                 except Exception as e:
                     cand, errs = None, [f"call or JSON error: {e}"]
                     if "claude exited" in str(e):

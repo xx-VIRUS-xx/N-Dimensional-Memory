@@ -73,6 +73,38 @@ class Validation(unittest.TestCase):
             self.assertTrue(any(frag in e for e in errs), (rec, errs))
 
 
+class ListenerGrounding(unittest.TestCase):
+    T8 = {"speaker": "Sam", "listener": "Evan", "text": "We hiked a good distance - quite a feat for me back then."}
+
+    def rec(self, **slots):
+        return {"Entities": [], "EventRelation": [{"type": "travel", **slots}]}
+
+    def test_listener_without_name_or_you_is_rejected(self):
+        errs = X.validate(self.rec(traveler="Sam", companions="Evan"), self.T8)
+        self.assertEqual(len(errs), 1)
+        self.assertIn("role 'companions' names Evan", errs[0])
+        self.assertIn("keep that word as written", errs[0])
+
+    def test_listener_is_grounded_by_name_or_you(self):
+        self.assertEqual(X.validate(self.rec(companions="Evan"), {**self.T8, "text": "Evan, we hiked far."}), [])
+        for w in ("you", "You're", "your", "yourself", "you'll"):
+            self.assertEqual(X.validate(self.rec(companions="Evan"), {**self.T8, "text": f"Glad {w} asked."}), [], w)
+        self.assertNotEqual(X.validate(self.rec(companions="Evan"), {**self.T8, "text": "We went with Evangeline."}), [])   # whole word only
+        self.assertEqual(X.validate(self.rec(companions="Evan"), {**self.T8, "text": "Thank you so much."}), [])   # any word for you grounds the listener
+
+    def test_speaker_and_other_values_are_never_checked(self):
+        self.assertEqual(X.validate(self.rec(traveler="Sam", companions="dad", note="Evan went"), self.T8), [])
+        self.assertEqual(X.validate(self.rec(traveler="sam"), self.T8), [])
+
+    def test_case_insensitive_and_without_turn_nothing_changes(self):
+        self.assertEqual(len(X.validate(self.rec(companions="evan"), self.T8)), 1)
+        self.assertEqual(X.validate(self.rec(companions="Evan")), [])                       # old call signature still works
+
+    def test_ungrounded_listener_helper(self):
+        self.assertFalse(X.ungrounded_listener("Evan", {"text": "x", "listener": ""}))
+        self.assertTrue(X.ungrounded_listener("Evan", self.T8))
+
+
 class Links(unittest.TestCase):
     def test_example_links(self):
         ev = X.derive(EXAMPLE)
@@ -206,6 +238,16 @@ class RunAndReport(unittest.TestCase):
         self.assertEqual((s["inquirer"]["link"], s["inquired"]["link"]), ("Sam", "Evan"))
         self.assertEqual(rows[0]["Entities"], [])                                           # stored list is the model's own
         self.assertEqual(rows[2]["events"][0]["slots"]["subject"]["link"], "Sam")           # t2 speaker Sam, not in its Entities
+
+    def test_ungrounded_listener_triggers_a_retry_that_quotes_the_complaint(self):
+        bad = {"Entities": ["Evan", "Jasper"], "EventRelation": [{"type": "trip", "traveler": "Evan", "companions": "Sam"}]}   # t1: Sam is the listener, turn never says you or Sam
+        rows = self.run_main([RAW[0], bad, RAW[1], RAW[2]])
+        self.assertEqual([r["attempts"] for r in rows], [1, 2, 1])
+        self.assertEqual(rows[1]["events"][0]["slots"]["companions"]["link"], "family")
+
+    def test_prompt_text_is_the_one_frozen_for_phase_2(self):
+        import hashlib
+        self.assertEqual(hashlib.sha256(X.PROMPT.encode()).hexdigest()[:8], "6844bb51")      # v3.2; amendment 3 changes code only
 
     def test_registry_reaches_the_next_prompt(self):
         reg = X.Registry()

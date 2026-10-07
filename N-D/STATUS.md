@@ -1,6 +1,6 @@
 # N-D status: what exists, what is only planned
 
-Read this before assuming something was built. Updated 2026-10-07 (patch 0028). Status words: **built** (code and tests exist), **run** (a model run produced results), **spec** (written down, no code), **idea** (discussed, not specced), **parked** (decided to leave for later).
+Read this before assuming something was built. Updated 2026-10-07 (patch 0029). Status words: **built** (code and tests exist), **run** (a model run produced results), **spec** (written down, no code), **idea** (discussed, not specced), **parked** (decided to leave for later).
 
 ## ND-Q (query tools over the engine memory): finished, failed
 | Item | Status |
@@ -15,11 +15,12 @@ Read this before assuming something was built. Updated 2026-10-07 (patch 0028). 
 | EXP-NDE.md frozen spec; M1 to M8 defined | spec, frozen |
 | `extract_events.py` (registry, validation, retries, resume, links decided in code) | built, run (runs 1 and 2) |
 | Amendment 1: speaker and listener linked in code, prompt v3.1 | built, run (run 2) |
-| Amendment 2: prompt v3.2 (we/us/they, no phrases as entities, example types), turn-level Entities counted for M6/M7 | built (0028), **not run yet** |
+| Amendment 2: prompt v3.2 (we/us/they, no phrases as entities, example types), turn-level Entities counted for M6/M7 | built, run (run 3) |
+| Amendment 3: listener grounding check in the validator (prompt unchanged, hash 6844bb51 pinned by a test) | built (0029), not run on a full extraction |
 | `nde_synonyms.py`: synonym-candidate report | built (0028), run on runs 1 and 2 |
 | `nde_report.py`: M1 to M5 and M8, review.md for the M3 hand check | built, run |
 | **M6 and M7 computation** (needs the evidence oracle: map the 74 evidence events of the 40 ND-3 questions to turns) | **not built** |
-| Phase 1 rerun, run 3 (30 turns, v3.2) | pending your run |
+| Phase 1 run 3 (30 turns, v3.2): M1 to M3 and M5 pass; M4 undecided at 30 turns | run (see AMENDMENT-3.md) |
 | Phase 2: all 509 turns, M1 to M8, prompt hash fixed beforehand. About 45 s per turn, so about 6.4 hours sequential; registry is sequential by design | **not run** |
 | Pronoun rule at display time (most recent candidate first, user correction recorded) | spec only (rule 7); no engine change |
 | Attribution (status field) no longer enforced; false-premise questions (category 5) reported separately | spec only |
@@ -48,6 +49,8 @@ Read this before assuming something was built. Updated 2026-10-07 (patch 0028). 
 | Trigger: only if Phase 2 shows the catalog outgrowing what can be shown, or many real duplicates in the synonym report | idea |
 
 ## Known problems found, not fixed
+- "we" resolved to a person at t3 (Sam) and t8 (Evan); the grounding check catches t8 but not t3.
+- Phrases listed as entities and linked ("good distance", "great memory"); fewer types in run 3 meant coarser types (`decision`, `advice_giving` hold unrelated acts).
 - About 35% of run-2 events are social acts or questions. Left as is; filterable by type.
 - `breakdown` filed apart from `state`, and `thanks` filed as `greeting`: not detectable by the synonym tool; hand read only.
 - An entity inside a text value is not a link; the turn-level Entities list is the fallback key.
