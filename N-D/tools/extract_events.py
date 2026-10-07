@@ -22,7 +22,7 @@ import sys
 import tempfile
 import time
 
-PROMPT_VERSION = "v4.0"
+PROMPT_VERSION = "v4.1"
 
 PROMPT = """You extract entities and relations from ONE sentence of a conversation. The sentence is all you have: you are not told who speaks, who is addressed, or when, and you have no other context.
 
@@ -30,9 +30,10 @@ Return JSON only, no prose, no code fences:
 {{"Entities": ["..."], "EventRelation": [{{"type": "...", "<role>": "<value>"}}]}}
 
 What to record
-- Entities: the people, things, places, tools, organisations and topics that your relations point at. Every role value that names one of these must also be in Entities, written the same way. Do not list anything that no relation uses. Name things as the sentence names them. Do not list actions, feelings or plain adjectives as entities. A phrase, a time expression, a feeling or a question is never an entity.
+- Entities: the people, things, places, tools, organisations and topics that your relations point at. Every role value that names one of these must also be in Entities, written the same way; this includes "I", "you", "we", "it" and any other pronoun you use as a value. List an entity only if it appears as a role value in one of your relations. Name things as the sentence names them. Do not list actions, feelings or plain adjectives as entities. A phrase, a time expression, a feeling or a question is never an entity.
 - EventRelation: one object per thing that happens, is claimed, is asked, is intended, or is the case. Every object has "type" (a short snake_case name for the kind of relation) plus role keys of your choice. A role value either names an entity from your Entities list (exactly as written there) or is short text (a claim, a reason, a quantity).
 - Use type "state" for how someone or something is: a subject and the state.
+- A name used to address someone ("Hey Priya", "Thanks, Priya") is recorded as one relation of type "address" with the role "addressee", so a reader can tell who is addressed. Use type "greeting", "thanks" or "farewell" only when the sentence really greets, thanks or says goodbye.
 - Record any time expression exactly as written ("last week", "yesterday", "in July") under a role of your choice.
 - Record who claims, believes, asks or intends something through the roles of the relation (for example who argued, asked or plans), never by guessing.
 

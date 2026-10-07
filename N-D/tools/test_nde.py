@@ -81,7 +81,10 @@ class PromptContract(unittest.TestCase):
                      "Otherwise put the word in Entities as written",
                      "do not automatically include the person addressed",
                      "Every role value that names one of these must also be in Entities",
-                     "Do not list anything that no relation uses",
+                     "List an entity only if it appears as a role value in one of your relations",
+                     "this includes \"I\", \"you\", \"we\", \"it\" and any other pronoun you use as a value",
+                     'is recorded as one relation of type "address" with the role "addressee"',
+                     'Use type "greeting", "thanks" or "farewell" only when the sentence really greets, thanks or says goodbye',
                      'Never join two with "and" or a comma',
                      "A phrase, a time expression, a feeling or a question is never an entity",
                      "belong to the example"):
@@ -96,8 +99,8 @@ class PromptContract(unittest.TestCase):
 
     def test_prompt_text_is_the_one_frozen_for_phase_2(self):
         import hashlib
-        self.assertEqual(X.PROMPT_VERSION, "v4.0")
-        self.assertEqual(hashlib.sha256(X.PROMPT.encode()).hexdigest()[:8], "d17fe36e")
+        self.assertEqual(X.PROMPT_VERSION, "v4.1")
+        self.assertEqual(hashlib.sha256(X.PROMPT.encode()).hexdigest()[:8], "ee9427ff")
 
 
 class Links(unittest.TestCase):
@@ -312,6 +315,24 @@ class SynonymCandidates(unittest.TestCase):
         self.assertNotIn("giver", S.generic_roles(types))
         self.assertEqual(S.candidates(types), [])                        # only one specific shared role (giver); time is generic
 
+    def test_pronouns_do_not_make_a_pair(self):
+        names = ("alpha", "bravo", "charlie", "delta", "echo", "foxtrot", "golf", "hotel", "india", "juliet")
+        rows = [_row("t0", ("x_one", {"a": ("i", "I"), "b": ("y", "you"), "c": ("w", "we"), "d": ("t", "it")})),
+                _row("t1", ("y_two", {"e": ("i", "I"), "f": ("y", "you"), "g": ("w", "we"), "h": ("t", "it")})),
+                *[_row(f"f{i}", (names[i], {f"own_role_{i}": ("v", None)})) for i in range(10)]]
+        types = S.profile(rows)
+        self.assertEqual(types["x_one"]["entities"], set())               # pronoun links are not recorded as entities
+        self.assertEqual(S.candidates(types), [])
+
+    def test_two_shared_entities_are_not_enough_three_are(self):
+        names = ("alpha", "bravo", "charlie", "delta", "echo", "foxtrot", "golf", "hotel", "india", "juliet")
+        filler = [_row(f"f{i}", (names[i], {f"own_role_{i}": ("v", None)})) for i in range(10)]
+        two = [_row("t0", ("x_one", {"a": ("1", "park"), "b": ("2", "gift")})), _row("t1", ("y_two", {"c": ("1", "park"), "d": ("2", "gift")}))]
+        self.assertEqual(S.candidates(S.profile(two + filler)), [])
+        three = [_row("t0", ("x_one", {"a": ("1", "park"), "b": ("2", "gift"), "z": ("3", "noon")})),
+                 _row("t1", ("y_two", {"c": ("1", "park"), "d": ("2", "gift"), "y": ("3", "noon")}))]
+        self.assertEqual([(c["a"], c["b"]) for c in S.candidates(S.profile(three + filler))], [("x_one", "y_two")])
+
     def test_cli_writes_report_and_changes_nothing(self):
         d = tempfile.mkdtemp()
         src = os.path.join(d, "run.jsonl")
@@ -321,5 +342,8 @@ class SynonymCandidates(unittest.TestCase):
         before = open(src).read()
         S.main(["--extraction", src, "--out", os.path.join(d, "o")])
         self.assertEqual(open(src).read(), before)
-        self.assertIn("travel (1) vs travel_return (1)", open(os.path.join(d, "o", "synonym_candidates.md")).read())
+        md = open(os.path.join(d, "o", "synonym_candidates.md")).read()
+        self.assertIn("travel (1) vs travel_return (1)", md)
+        self.assertIn('"event": "t0"', md)
+        self.assertNotIn('"turn"', md)
         self.assertEqual(json.load(open(os.path.join(d, "o", "synonym_candidates.json")))["types"], 5)

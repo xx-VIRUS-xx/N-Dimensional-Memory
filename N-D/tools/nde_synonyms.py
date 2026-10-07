@@ -3,7 +3,7 @@
   python3 tools/nde_synonyms.py --extraction <run.jsonl> --out <dir>
 
 Writes <dir>/synonym_candidates.json and .md. Code proposes pairs; a person (or, in a later consolidation pass, an LLM
-shown these examples) decides. Signals per pair of types: shared specific role names, shared non-hub linked entities,
+shown these examples) decides. Signals per pair of types: shared specific role names, shared non-hub, non-pronoun linked entities,
 shared name tokens (travel / travel_return). Generic roles (used by a fifth of all types, like time) and hub entities
 (linked in 30% of relations, like the two speakers) are ignored. A role pair inside one type is reported when the names share a stem
 (companion / companions) or a token. Standard library only.
@@ -12,6 +12,10 @@ import argparse
 import json
 import os
 import re
+
+
+PRONOUNS = {"i", "me", "my", "mine", "myself", "you", "your", "yours", "yourself", "we", "us", "our", "ours", "ourselves", "it", "its",
+            "that", "this", "there", "they", "them", "their", "he", "him", "his", "she", "her", "hers"}
 
 
 def rels(row):
@@ -34,17 +38,19 @@ def profile(rows):
     types = {}
     for r in rows:
         for ev in rels(r):
-            p = types.setdefault(ev["type"], {"count": 0, "roles": {}, "entities": set(), "ent_counts": {}, "example": None, "turns": []})
+            p = types.setdefault(ev["type"], {"count": 0, "roles": {}, "entities": set(), "ent_counts": {}, "example": None, "events": []})
             p["count"] += 1
-            p["turns"].append(r["event_id"])
+            p["events"].append(r["event_id"])
             for role, s in ev["slots"].items():
                 p["roles"][role] = p["roles"].get(role, 0) + 1
                 if s["link"]:
                     e = s["link"].lower()
+                    if e in PRONOUNS:
+                        continue                                   # pronouns say nothing about two types being alike
                     p["entities"].add(e)
                     p["ent_counts"][e] = p["ent_counts"].get(e, 0) + 1
             if p["example"] is None:
-                p["example"] = {"turn": r["event_id"], **{k: v["value"] for k, v in ev["slots"].items()}}
+                p["example"] = {"event": r["event_id"], **{k: v["value"] for k, v in ev["slots"].items()}}
     return types
 
 
@@ -68,7 +74,7 @@ def hub_entities(types, rows_total, share=0.3):
     return {e for e, c in count.items() if total and c / total >= share}
 
 
-def candidates(types, min_shared_roles=2, min_shared_entities=2):
+def candidates(types, min_shared_roles=2, min_shared_entities=3):
     names, out = sorted(types), []
     gen, hubs = generic_roles(types), hub_entities(types, None)
     for i, a in enumerate(names):
