@@ -13,5 +13,7 @@ Each step has a go/no-go. Steps 0–2 need no engine code.
 | — | (superseded: done as ND-2 and ND-3) | Depiction, facts held constant: flat facts vs N-D depiction, same LLM, 40–60 questions (change, sequence, history, conflict, ambiguity) | Depiction beats flat facts on change and conflict |
 | 6 | ND-4 | Engine on Postgres: ledger + stages E1–E8 + depiction renderer | ND-3 results reproduce from the engine |
 | 7–8 | ND-5 | TANGLE oracle track, then pipeline track | Oracle vs pipeline gap smaller than published memory systems' |
+| — | ND-Q ❌ | Can LLM-planned query tools over the ND-3 memory beat raw text? (`ND-Q/EXP-NDQ.md`) | Failed: the limit is what is stored and shown (`ND-Q/REPORT.md`) |
+| — | ND-E in progress | Store typed events with role slots instead (`ND-E/EXP-NDE.md`, amendments 1 and 2); query-side tools and consolidation are planned, not built | M1 to M8; see `STATUS.md` for what exists |
 
 A failed gate stops the sequence until the cause is understood. Failures are reported in the experiment's results.

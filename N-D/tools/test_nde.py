@@ -12,6 +12,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import extract_events as X  # noqa: E402
 import nde_report as R  # noqa: E402
+import nde_synonyms as S  # noqa: E402
 
 EXAMPLE = {"Entities": ["Bob", "CockroachDB", "multi-region payments", "Alice", "proposal"],
            "EventRelation": [
@@ -107,9 +108,14 @@ class Links(unittest.TestCase):
         for frag in ("Every role value that names one of these must also be in Entities",
                      "Do not list anything that no event uses",
                      "The speaker and the listener are known automatically",
-                     'Never join two with "and" or a comma'):
+                     'Never join two with "and" or a comma',
+                     'A phrase, a time expression, a feeling or a question is never an entity',
+                     '"we", "us" and "they" do not automatically mean the listener',
+                     "belong to the example"):
             self.assertIn(frag, X.PROMPT)
-        self.assertEqual(X.PROMPT_VERSION, "v3.1")
+        self.assertEqual(X.PROMPT_VERSION, "v3.2")
+        for gone in ("\"argument\"", "\"acceptance\""):
+            self.assertNotIn(gone, X.PROMPT)                                                   # example types must not be generic
 
     def test_type_and_role_names_are_normalised(self):
         ev = X.derive({"Entities": [], "EventRelation": [{"type": "Road Trip", "Who Went": "Evan"}]})
@@ -242,3 +248,62 @@ class RunAndReport(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+
+
+def _row(tid, *events):
+    return {"event_id": tid, "events": [{"type": ty, "slots": {r: {"value": v, "link": l} for r, (v, l) in sl.items()}} for ty, sl in events]}
+
+
+class SynonymCandidates(unittest.TestCase):
+    def rows(self):
+        hubs = lambda n: {"actor": (n, n)}
+        return [
+            _row("t0", ("travel", {"traveler": ("Evan", "Evan"), "destination": ("Rockies", "Rockies"), "time": ("last week", None)})),
+            _row("t1", ("travel_return", {"traveler": ("Evan", "Evan"), "companions": ("family", "family"), "time": ("just", None)})),
+            _row("t2", ("thanks", {"thanker": ("Sam", "Sam"), "recipient": ("Evan", "Evan"), "time": ("now", None)})),
+            _row("t3", ("farewell", {"fareweller": ("Sam", "Sam"), "target": ("Evan", "Evan"), "time": ("soon", None)})),
+            _row("t4", ("outing", {"participants": ("Evan", "Evan"), "companion": ("dad", "dad"), "companions": ("family", "family")})),
+        ]
+
+    def test_finds_name_token_pair_and_ignores_hubs_and_generic_roles(self):
+        types = S.profile(self.rows())
+        pairs = {(c["a"], c["b"]) for c in S.candidates(types)}
+        self.assertIn(("travel", "travel_return"), pairs)
+        self.assertNotIn(("farewell", "thanks"), pairs)                  # share only hub entities Sam and Evan and the generic role time
+        self.assertNotIn(("outing", "thanks"), pairs)
+
+    def test_role_variants_within_a_type(self):
+        v = S.role_variants(S.profile(self.rows()))
+        self.assertEqual([(x["type"], x["a"], x["b"]) for x in v], [("outing", "companion", "companions")])
+
+    def test_shared_specific_roles_and_entities_count(self):
+        rows = [_row("t0", ("a_one", {"giver": ("x", "x"), "gift": ("g", "gift"), "place": ("p", "park"), "when": ("w", "noon")})),
+                _row("t1", ("b_two", {"giver": ("x", "x"), "gift": ("g", "gift"), "place": ("p", "park"), "other": ("o", "o")})),
+                *[_row(f"f{i}", (("alpha", "bravo", "charlie", "delta", "echo", "foxtrot", "golf", "hotel", "india", "juliet")[i], {f"own_role_{i}": ("v", None)})) for i in range(10)]]            # enough types that shared roles are not "generic"
+        pairs = [(c["a"], c["b"], c["reasons"]) for c in S.candidates(S.profile(rows))]
+        self.assertEqual(len(pairs), 1)
+        self.assertEqual(pairs[0][:2], ("a_one", "b_two"))
+        self.assertEqual(len(pairs[0][2]), 2)                            # specific roles and entities, each a reason
+
+    def test_generic_role_alone_does_not_make_a_pair(self):
+        names = ("alpha", "bravo", "charlie", "delta", "echo", "foxtrot", "golf", "hotel", "india", "juliet")
+        rows = [_row("t0", ("x_one", {"giver": ("g", None), "time": ("now", None)})),
+                _row("t1", ("y_two", {"giver": ("g", None), "time": ("now", None)})),
+                _row("t2", ("z_three", {"time": ("now", None)})),
+                *[_row(f"f{i}", (names[i], {f"own_role_{i}": ("v", None)})) for i in range(10)]]
+        types = S.profile(rows)
+        self.assertIn("time", S.generic_roles(types))
+        self.assertNotIn("giver", S.generic_roles(types))
+        self.assertEqual(S.candidates(types), [])                        # only one specific shared role (giver); time is generic
+
+    def test_cli_writes_report_and_changes_nothing(self):
+        d = tempfile.mkdtemp()
+        src = os.path.join(d, "run.jsonl")
+        with open(src, "w") as f:
+            for r in self.rows():
+                f.write(json.dumps(r) + "\n")
+        before = open(src).read()
+        S.main(["--extraction", src, "--out", os.path.join(d, "o")])
+        self.assertEqual(open(src).read(), before)
+        self.assertIn("travel (1) vs travel_return (1)", open(os.path.join(d, "o", "synonym_candidates.md")).read())
+        self.assertEqual(json.load(open(os.path.join(d, "o", "synonym_candidates.json")))["types"], 5)
