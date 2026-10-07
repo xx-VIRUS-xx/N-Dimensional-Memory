@@ -13,6 +13,7 @@ sys.path.insert(0, HERE)
 import extract_events as X  # noqa: E402
 import nde_report as R  # noqa: E402
 import nde_synonyms as S  # noqa: E402
+import nde_evidence as E  # noqa: E402
 
 EXAMPLE = {"Entities": ["Bob", "CockroachDB", "multi-region payments", "Alice", "proposal"],
            "EventRelation": [
@@ -263,6 +264,70 @@ class RunAndReport(unittest.TestCase):
         text = R.review(rows, turns)
         self.assertIn("destination='Jasper' LINK", text)
         self.assertIn("when='last weekend' TEXT", text)
+
+
+class EvidenceOracle(unittest.TestCase):
+    def _fixture(self, n=16):
+        src = [{"sentence_id": f"t{i}", "dia_id": f"D1:{i + 1}", "speaker": "Sam" if i % 2 == 0 else "Evan",
+                "listener": "Evan" if i % 2 == 0 else "Sam", "text": "x"} for i in range(n)]
+        rows = []
+        for i in range(n):
+            ev = [("state", {"subject": ("I", "I"), "state": ("fine", None)})]
+            if i == 5:
+                ev.append(("trip", {"destination": ("Rockies", "Rockies")}))
+            rows.append(dict(_row(f"t{i}", *ev), Entities=["I"] + (["Rockies"] if i == 5 else []) + (["lake"] if i == 7 else [])))
+        return src, rows
+
+    def test_evidence_mapping_and_categories(self):
+        src, _ = self._fixture(4)
+        probes = [{"category": 1, "evidence": ["D1:1", "D1:3", "D9:9"]}, {"category": 5, "evidence": ["D1:2"]},
+                  {"category": 2, "evidence": ["D1:1"]}]
+        ids, missing = E.evidence_events(probes, src)
+        self.assertEqual(ids, ["t0", "t2"])
+        self.assertEqual(missing, ["D9:9"])
+
+    def test_hubs_are_the_speakers_of_the_source(self):
+        src, _ = self._fixture(4)
+        self.assertEqual(E.hubs_of(src), {"sam", "evan"})
+
+    def test_pronoun_only_event_has_no_entity_key_and_join_cannot_create_one(self):
+        src, rows = self._fixture()
+        for join in (False, True):
+            m = E.measure(rows, src, ["t0"], join, False)
+            self.assertEqual((m["covered"], m["M6_no_entity_key"]), (1, 1))
+
+    def test_join_shrinks_the_candidate_set_for_i(self):
+        src, rows = self._fixture()
+        stored = E.measure(rows, src, ["t0"], False, False)
+        joined = E.measure(rows, src, ["t0"], True, False)
+        self.assertEqual(stored["detail"][0]["smallest_candidate_set"], 16)
+        self.assertEqual(joined["detail"][0]["smallest_candidate_set"], 8)
+        self.assertEqual((stored["M7_le10"], joined["M7_le10"]), (0, 1))
+
+    def test_entity_key_counts_and_entities_list_is_a_second_arm(self):
+        src, rows = self._fixture()
+        slots = E.measure(rows, src, ["t5", "t7"], False, False)
+        both = E.measure(rows, src, ["t5", "t7"], False, True)
+        self.assertEqual(slots["M6_no_entity_key"], 1)
+        self.assertEqual(both["M6_no_entity_key"], 0)
+        self.assertEqual(slots["detail"][0]["smallest_candidate_set"], 1)
+
+    def test_events_missing_from_the_run_are_not_covered(self):
+        src, rows = self._fixture(4)
+        m = E.measure(rows[:2], src, ["t0", "t3"], False, False)
+        self.assertEqual((m["evidence_events"], m["covered"]), (2, 1))
+
+    def test_cli_writes_both_files(self):
+        src, rows = self._fixture()
+        with tempfile.TemporaryDirectory() as d:
+            for name, data in (("s.jsonl", src), ("r.jsonl", rows), ("p.jsonl", [{"category": 1, "evidence": ["D1:1"]}])):
+                with open(os.path.join(d, name), "w") as f:
+                    f.write("\n".join(json.dumps(x) for x in data) + "\n")
+            E.main(["--extraction", os.path.join(d, "r.jsonl"), "--source", os.path.join(d, "s.jsonl"),
+                    "--probes", os.path.join(d, "p.jsonl"), "--out", os.path.join(d, "o")])
+            out = json.load(open(os.path.join(d, "o", "nde_evidence.json")))
+            self.assertEqual(set(out["arms"]), {"slots / as stored", "slots / joined", "+entities / as stored", "+entities / joined"})
+            self.assertIn("M6", open(os.path.join(d, "o", "nde_evidence.md")).read())
 
 
 if __name__ == "__main__":

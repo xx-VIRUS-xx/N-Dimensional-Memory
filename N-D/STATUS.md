@@ -1,6 +1,6 @@
 # N-D status: what exists, what is only planned
 
-Read this before assuming something was built. Updated 2026-10-07 (patch 0031). Status words: **built** (code and tests exist), **run** (a model run produced results), **spec** (written down, no code), **idea** (discussed, not specced), **parked** (decided to leave for later).
+Read this before assuming something was built. Updated 2026-10-07 (patch 0032). Status words: **built** (code and tests exist), **run** (a model run produced results), **spec** (written down, no code), **idea** (discussed, not specced), **parked** (decided to leave for later).
 
 ## Words
 **event** = one sentence of the conversation (earlier files called it a turn). **EventRelation** = the model's list for that event. **relation** = one item of that list (type plus role slots; earlier files and messages called it an "event"). The extractor sees the sentence text only: no speaker, listener, date or neighbouring sentences, and stored rows carry none of them (amendment 4).
@@ -21,15 +21,16 @@ Read this before assuming something was built. Updated 2026-10-07 (patch 0031). 
 | Amendment 2: prompt rules (we/us/they, no phrases as entities, example types), turn-level Entities counted for M6/M7 | built, run (run 3); rules kept in v4.0 |
 | Amendment 3: listener grounding check | built, **removed in amendment 4** (it needed the listener field) |
 | Amendment 4: prompt v4.0 (sentence only, "I"/"you" ambiguous unless the sentence names them), relations vocabulary, no speaker/listener/date in rows, C9 correction | built (0030), **not run yet (run 4 pending)** |
-| Amendment 5: prompt v4.1 (vocative = `address`, pronoun values listed in Entities, no unused entities), synonym report ignores pronouns | built (0031), **not run yet (run 5 pending)** |
+| Amendment 5: prompt v4.1 (vocative = `address`, pronoun values listed in Entities, no unused entities), synonym report ignores pronouns | built (0031), run (run 5) |
 | `nde_synonyms.py`: synonym-candidate report | built (0028, fixed in 0031), run on runs 1 to 4 |
 | `nde_report.py`: M1 to M5 and M8, review.md for the M3 hand check | built, run |
-| **M6 and M7 computation** (evidence oracle: `probes.jsonl` lists `dia_id`s per question and `source.jsonl` maps `dia_id` to `event_id`, so it is buildable) | **not built** |
-| **Decision: resolve "I" and attribution by joining the source `speaker` field on `event_id` at the engine/query layer (rows stay pure)** | **undecided**; recommended; without it M6 and "who said X" questions are expected to fail |
+| `nde_evidence.py`: M6 and M7 from the evidence events of the probes (arms slots / +entities, as stored / joined) | built (0032), run on run 5 (8 evidence events covered; meaningless until Phase 2) |
+| Decision: "I" = source `speaker`, "you" = source `listener`, joined on `event_id` at the engine/query layer; rows stay sentence-only; extractor and prompt unchanged | decided (amendment 6); join itself not built (the `joined` reading in `nde_evidence.py` simulates it) |
+| Prompt v4.1 frozen for Phase 2 | decided (amendment 6) |
 | Phase 1 run 3 (30 events, v3.2): M1 to M3 and M5 pass; M4 undecided at 30 events | run (see AMENDMENT-3.md) |
 | Phase 1 run 4 (30 events, v4.0, sentence only): M1, M2, M5 pass; M3 about 96% (about 90% on named entities only); M4 29% on 10-event windows; 94 relations, "I" is about 39 of 109 links | run (see AMENDMENT-5.md) |
-| Phase 1 run 5 (30 events, v4.1) | pending your run |
-| Phase 2: all 509 events, M1 to M8, prompt hash fixed beforehand (the v4.x prompt of the last Phase 1 run). Stopped before any data was written. About 45 s per turn, so about 6.4 hours sequential; registry is sequential by design | **not run** |
+| Phase 1 run 5 (30 events, v4.1): M1, M2, M3 (about 99%), M5 pass; M4 9/2/3; 97 relations, 14 types; defects listed in AMENDMENT-6.md | run |
+| Phase 2: all 509 events, M1 to M8 (M6/M7 via `nde_evidence.py`), prompt v4.1 sha256 `ee9427ff...` frozen. About 48 s per event, so about 6.7 hours sequential; registry is sequential by design | **not run; next** |
 | Pronoun resolution over ND-E rows: contract C9 (explicit statement, user, or the single-candidate rule within the last 3 events; otherwise an open bucket with candidates, most recent first) and C12 (backward and forward runs). Spec rule 7 wrongly said the engine resolves nothing (AMENDMENT-4.md). **ND-E rows are not ingested by `nd_engine.py`: not wired** | spec / contract only |
 | Attribution (status field) no longer enforced; false-premise questions (category 5) reported separately | spec only |
 
