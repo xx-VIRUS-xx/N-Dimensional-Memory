@@ -1,12 +1,14 @@
-"""ND-E extractor (EXP-NDE.md): one turn in, entities plus typed events out, with an accumulating type/role registry.
+"""ND-E extractor (EXP-NDE.md, amendment 4): one sentence (an event) in, entities plus typed relations out, with an accumulating type/role registry.
 
   python3 tools/extract_events.py --source <source.jsonl> --out-dir <dir> [--model haiku] [--limit 30] [--resume]
   python3 tools/extract_events.py --source S --out-dir D --provider replay --replay canned.jsonl      # offline test
 
-Each turn goes to a fresh `claude -p` session (empty temp dir, no tools) with the turn, its speaker/listener/date and the
-registry of types and role names seen so far. Nothing else from the conversation. Turns run in order because the registry
-accumulates. Code, not the model, decides which slot values are links to entities (norm_entity match against `Entities`).
-Output: <out-dir>/<provider>__<model>__run<k>.jsonl (one record per turn) and a .meta.json beside it. Standard library only.
+Vocabulary: an EVENT is one sentence of the conversation. Its EventRelation list holds RELATIONS (type plus role slots).
+The model sees the sentence text and the registry and nothing else: no speaker, listener, date or neighbouring sentences,
+even though the source file may carry them. Each call is a fresh `claude -p` session (empty temp dir, no tools).
+Sentences run in order because the registry accumulates. Code, not the model, decides which slot values are links to
+entities (norm_entity match against `Entities`). The stored row has no speaker, listener or date.
+Output: <out-dir>/<provider>__<model>__run<k>.jsonl (one record per event) and a .meta.json beside it. Standard library only.
 """
 import argparse
 import datetime
@@ -20,37 +22,36 @@ import sys
 import tempfile
 import time
 
-PROMPT_VERSION = "v3.2"
+PROMPT_VERSION = "v4.0"
 
-PROMPT = """You extract entities and events from ONE conversation turn. You have no other context.
+PROMPT = """You extract entities and relations from ONE sentence of a conversation. The sentence is all you have: you are not told who speaks, who is addressed, or when, and you have no other context.
 
 Return JSON only, no prose, no code fences:
 {{"Entities": ["..."], "EventRelation": [{{"type": "...", "<role>": "<value>"}}]}}
 
 What to record
-- Entities: the people, things, places, tools, organisations and topics that your events point at. Every role value that names one of these must also be in Entities, written the same way. Do not list anything that no event uses. The speaker and the listener are known automatically, so you need not list them. Name things as the turn names them. Do not list actions, feelings or plain adjectives as entities. A phrase, a time expression, a feeling or a question is never an entity.
-- EventRelation: one object per thing that happens, is claimed, is asked, is intended, or is the case. Every object has "type" (a short snake_case name for the kind of event) plus role keys of your choice. A role value either names an entity from your Entities list (exactly as written there) or is short text (a claim, a reason, a quantity).
+- Entities: the people, things, places, tools, organisations and topics that your relations point at. Every role value that names one of these must also be in Entities, written the same way. Do not list anything that no relation uses. Name things as the sentence names them. Do not list actions, feelings or plain adjectives as entities. A phrase, a time expression, a feeling or a question is never an entity.
+- EventRelation: one object per thing that happens, is claimed, is asked, is intended, or is the case. Every object has "type" (a short snake_case name for the kind of relation) plus role keys of your choice. A role value either names an entity from your Entities list (exactly as written there) or is short text (a claim, a reason, a quantity).
 - Use type "state" for how someone or something is: a subject and the state.
 - Record any time expression exactly as written ("last week", "yesterday", "in July") under a role of your choice.
-- Record who claims, believes, asks or intends something through the roles of the event (for example who argued, asked or plans), never by guessing.
+- Record who claims, believes, asks or intends something through the roles of the relation (for example who argued, asked or plans), never by guessing.
 
 Rules
-1. Use only what the turn states. Never invent entities, facts or relations. A role you cannot fill is left out. An event you cannot describe is left out.
+1. Use only what the sentence states. Never invent entities, facts or relations. A role you cannot fill is left out. A relation you cannot describe is left out.
 2. Reuse an existing type and its role names from the registry below whenever they fit. Create a new type or role name only when none fits.
-3. "I", "me", "my" mean {speaker}. "you", "your" mean {listener}. Use those names.
-4. If a pronoun or phrase (it, that, this, there, they, he, she, we, us, the X) has no antecedent inside this turn, put it in Entities as written (for example "it") and use it as the value. Never guess what it refers to; in particular "we", "us" and "they" do not automatically mean the listener.
-5. Keep values short, in the turn's own words.
-6. A turn with no event (a greeting) returns {{"Entities": [], "EventRelation": []}}.
-7. One entity or one short phrase per role value. Never join two with "and" or a comma. For several people or things in the same role, write one event each, or use a second role (for example participant and participant_2).
+3. You are not told who "I", "me", "my", "you" or "your" are. Use a name for them only when the sentence itself supplies it (for example "Hey Priya" addresses Priya; "I'm Marcus" names the speaker). Otherwise put the word in Entities as written ("I", "you") and use it as the value.
+4. If a pronoun or phrase (it, that, this, there, they, he, she, we, us, the X) has no antecedent inside this sentence, put it in Entities as written (for example "it") and use it as the value. Never guess what it refers to; in particular "we", "us" and "they" do not automatically include the person addressed.
+5. Keep values short, in the sentence's own words.
+6. A sentence with no relation (a greeting) returns {{"Entities": [], "EventRelation": []}}.
+7. One entity or one short phrase per role value. Never join two with "and" or a comma. For several people or things in the same role, write one relation each, or use a second role (for example participant and participant_2).
 
-Format example only (unrelated to this conversation; its type and role names belong to the example, use them only if a turn really is that). Turn: "Bob recommended CockroachDB for multi-region payments, and Alice accepted the proposal."
+Format example only (unrelated to this conversation; its type and role names belong to the example, use them only if a sentence really is that). Sentence: "Bob recommended CockroachDB for multi-region payments, and Alice accepted the proposal."
 {{"Entities": ["Bob", "CockroachDB", "multi-region payments", "Alice", "proposal"], "EventRelation": [{{"type": "database_recommendation", "recommender": "Bob", "recommended": "CockroachDB", "reason": "better", "domain": "multi-region payments"}}, {{"type": "proposal_acceptance", "acceptor": "Alice", "accepted_object": "proposal"}}]}}
 
 Registry of types seen so far (type (uses): role names (uses); e.g. one example):
 {registry}
 
-Turn metadata (given, not part of the turn): speaker {speaker}, listener {listener}, date {date}.
-Turn {sid}: {text}
+Sentence {sid}: {text}
 """
 
 TOP_TYPES = 40
@@ -80,22 +81,8 @@ def norm_entity(s):
     return t
 
 
-_YOU = re.compile(r"\b(you|your|yours|yourself|you're|you'll|you've|you'd|y'all)\b", re.I)
-
-
-def ungrounded_listener(value, turn):
-    """True when `value` is the listener's name but the turn has neither that name nor a word for 'you'.
-    The speaker is never checked (the speaker is present by speaking). 'we' does not ground the listener."""
-    name = str(turn.get("listener", "")).strip()
-    if not name or str(value).strip().lower() != name.lower():
-        return False
-    text = str(turn.get("text", ""))
-    return not (_YOU.search(text) or re.search(r"\b" + re.escape(name) + r"\b", text, re.I))
-
-
-def validate(rec, turn=None):
-    """Problems found in one model output; an empty list means it meets the contract.
-    With `turn` (amendment 3), a slot naming the listener without grounds in the turn is also a problem."""
+def validate(rec):
+    """Problems found in one model output; an empty list means it meets the contract."""
     if not isinstance(rec, dict):
         return ["top level is not a JSON object"]
     errs = []
@@ -109,26 +96,23 @@ def validate(rec, turn=None):
         return errs
     for i, ev in enumerate(evs):
         if not isinstance(ev, dict):
-            errs.append(f"event {i} is not an object")
+            errs.append(f"relation {i} is not an object")
             continue
         if not isinstance(ev.get("type"), str) or not snake(ev.get("type")):
-            errs.append(f"event {i} has no 'type'")
+            errs.append(f"relation {i} has no 'type'")
         for k, v in ev.items():
             if not isinstance(k, str) or not snake(k):
-                errs.append(f"event {i} has an empty key")
+                errs.append(f"relation {i} has an empty key")
             elif k != "type" and (not isinstance(v, str) or not v.strip()):
-                errs.append(f"event {i} role '{k}' must have a non-empty text value (omit the role if unknown)")
-            elif k != "type" and turn is not None and ungrounded_listener(v, turn):
-                errs.append(f"event {i} role '{k}' names {v.strip()}, but this turn does not mention {v.strip()} or say 'you'. "
-                            f"If the turn says 'we', 'they' or 'us', keep that word as written (list it in Entities) and do not guess who it includes; otherwise omit the role")
+                errs.append(f"relation {i} role '{k}' must have a non-empty text value (omit the role if unknown)")
     return errs
 
 
-def derive(rec, known=()):
-    """Code decides links: a slot value whose norm_entity matches an entity in Entities, or a name in `known`
-    (the speaker and listener, supplied by code from the source, amendment 1), is a link."""
+def derive(rec):
+    """Code decides links: a slot value whose norm_entity matches an entity in Entities is a link.
+    Returns the relations of one event: [{"type": ..., "slots": {role: {"value": ..., "link": entity or None}}}]."""
     index = {}
-    for e in list(rec["Entities"]) + [k for k in known if k]:
+    for e in rec["Entities"]:
         index.setdefault(norm_entity(e), e.strip())
     out = []
     for ev in rec["EventRelation"]:
@@ -145,8 +129,8 @@ class Registry:
     def __init__(self):
         self.types = {}
 
-    def update(self, events, tick, entities):
-        for ev in events:
+    def update(self, relations, tick, entities):
+        for ev in relations:
             t = self.types.setdefault(ev["type"], {"count": 0, "roles": {}, "example": None, "last": tick})
             t["count"] += 1
             t["last"] = tick
@@ -196,9 +180,14 @@ def call_claude(prompt, model):
         return proc.stdout
 
 
-def make_prompt(turn, sid, registry, tick):
-    return PROMPT.format(speaker=turn["speaker"], listener=turn["listener"], date=turn["date"], sid=sid,
-                         text=turn["text"], registry=registry.render(tick))
+def rels(row):
+    """The relations of a stored row (rows written before amendment 4 call them `events`)."""
+    return row["relations"] if "relations" in row else row["events"]
+
+
+def make_prompt(event, sid, registry, tick):
+    """The model sees the sentence text and the registry. Nothing else from the source record is used."""
+    return PROMPT.format(sid=sid, text=event["text"], registry=registry.render(tick))
 
 
 def main(argv=None):
@@ -212,9 +201,9 @@ def main(argv=None):
     ap.add_argument("--limit", type=int)
     ap.add_argument("--resume", action="store_true")
     a = ap.parse_args(argv)
-    turns = [json.loads(l) for l in open(a.source) if l.strip()]
+    events = [json.loads(l) for l in open(a.source) if l.strip()]
     if a.limit:
-        turns = turns[:a.limit]
+        events = events[:a.limit]
     os.makedirs(a.out_dir, exist_ok=True)
     safe = re.sub(r"[^A-Za-z0-9._-]", "_", a.model)
     out_path = os.path.join(a.out_dir, f"{a.provider}__{safe}__run{a.run}.jsonl")
@@ -229,13 +218,13 @@ def main(argv=None):
                     done.append(json.loads(line))
                 except ValueError:
                     break
-        done = [r for i, r in enumerate(done) if r.get("event_id") == f"t{i}"][:len(turns)]
+        done = [r for i, r in enumerate(done) if r.get("event_id") == f"t{i}"][:len(events)]
         for r in done:
-            reg.update(r["events"], r["tick"], r["Entities"])
-        print(f"resuming at t{len(done)} ({len(done)} of {len(turns)} done)")
+            reg.update(rels(r), r["tick"], r["Entities"])
+        print(f"resuming at t{len(done)} ({len(done)} of {len(events)} done)")
     meta = {"provider": a.provider, "model": a.model, "run": a.run, "prompt_version": PROMPT_VERSION,
             "prompt_sha256": hashlib.sha256(PROMPT.encode()).hexdigest(), "source": os.path.basename(a.source),
-            "turns": len(turns), "started": datetime.datetime.now().isoformat(timespec="seconds"),
+            "events": len(events), "model_input": "sentence text and registry only", "started": datetime.datetime.now().isoformat(timespec="seconds"),
             "isolation": "fresh empty temp dir per call, no tools" if a.provider == "claude-cli" else "replay"}
     if a.provider == "claude-cli":
         meta["claude_version"] = subprocess.run(["claude", "--version"], capture_output=True, text=True).stdout.strip()
@@ -246,11 +235,11 @@ def main(argv=None):
         for r in done:
             out.write(json.dumps(r) + "\n")
         out.flush()
-        for tick, turn in enumerate(turns):
+        for tick, event in enumerate(events):
             if tick < len(done):
                 continue
             sid = f"t{tick}"
-            base = make_prompt(turn, sid, reg, tick)
+            base = make_prompt(event, sid, reg, tick)
             prompt, rec, errs, attempt = base, None, [], 0
             t0 = time.time()
             for attempt in range(1, 5):
@@ -261,7 +250,7 @@ def main(argv=None):
                     else:
                         raw = call_claude(prompt, a.model)
                     cand = parse(raw) if isinstance(raw, str) else raw
-                    errs = validate(cand, turn)
+                    errs = validate(cand)
                 except Exception as e:
                     cand, errs = None, [f"call or JSON error: {e}"]
                     if "claude exited" in str(e):
@@ -272,14 +261,14 @@ def main(argv=None):
                 prompt = base + "\n\nYOUR PREVIOUS OUTPUT WAS REJECTED BY THE PARSER:\n- " + "\n- ".join(errs[:8]) + "\nReturn the corrected JSON only."
             if rec is None:
                 sys.exit(f"{sid}: failed validation after 4 attempts: {errs[:3]}\nProgress is saved; rerun the same command with --resume.")
-            events = derive(rec, [turn["speaker"], turn["listener"]])
-            reg.update(events, tick, rec["Entities"])
-            row = {"event_id": sid, "tick": tick, "speaker": turn["speaker"], "listener": turn["listener"], "date": turn["date"],
-                   "Entities": [e.strip() for e in rec["Entities"]], "EventRelation": rec["EventRelation"], "events": events,
+            relations = derive(rec)
+            reg.update(relations, tick, rec["Entities"])
+            row = {"event_id": sid, "tick": tick,
+                   "Entities": [e.strip() for e in rec["Entities"]], "EventRelation": rec["EventRelation"], "relations": relations,
                    "attempts": attempt, "seconds": round(time.time() - t0, 1), "prompt_chars": len(base), "registry": reg.sizes()}
             out.write(json.dumps(row, ensure_ascii=False) + "\n")
             out.flush()
-            print(f"{sid}: {len(rec['Entities'])} entities, {len(events)} events, registry {reg.sizes()['types']} types")
+            print(f"{sid}: {len(rec['Entities'])} entities, {len(relations)} relations, registry {reg.sizes()['types']} types")
     meta["finished"] = datetime.datetime.now().isoformat(timespec="seconds")
     json.dump(meta, open(out_path[:-6] + ".meta.json", "w"), indent=2)
     print("wrote", out_path)

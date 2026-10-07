@@ -5,13 +5,17 @@
 Writes <dir>/synonym_candidates.json and .md. Code proposes pairs; a person (or, in a later consolidation pass, an LLM
 shown these examples) decides. Signals per pair of types: shared specific role names, shared non-hub linked entities,
 shared name tokens (travel / travel_return). Generic roles (used by a fifth of all types, like time) and hub entities
-(linked in 30% of events, like the two speakers) are ignored. A role pair inside one type is reported when the names share a stem
+(linked in 30% of relations, like the two speakers) are ignored. A role pair inside one type is reported when the names share a stem
 (companion / companions) or a token. Standard library only.
 """
 import argparse
 import json
 import os
 import re
+
+
+def rels(row):
+    return row["relations"] if "relations" in row else row["events"]
 
 
 def tokens(name):
@@ -29,7 +33,7 @@ def jaccard(a, b):
 def profile(rows):
     types = {}
     for r in rows:
-        for ev in r["events"]:
+        for ev in rels(r):
             p = types.setdefault(ev["type"], {"count": 0, "roles": {}, "entities": set(), "ent_counts": {}, "example": None, "turns": []})
             p["count"] += 1
             p["turns"].append(r["event_id"])
@@ -55,7 +59,7 @@ def generic_roles(types, share=0.2):
 
 
 def hub_entities(types, rows_total, share=0.3):
-    """Entities linked in at least `share` of all events are hubs (the speakers); sharing them proves nothing."""
+    """Entities linked in at least `share` of all relations are hubs (the speakers); sharing them proves nothing."""
     count, total = {}, 0
     for p in types.values():
         total += p["count"]

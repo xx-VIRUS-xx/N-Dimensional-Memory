@@ -73,36 +73,31 @@ class Validation(unittest.TestCase):
             self.assertTrue(any(frag in e for e in errs), (rec, errs))
 
 
-class ListenerGrounding(unittest.TestCase):
-    T8 = {"speaker": "Sam", "listener": "Evan", "text": "We hiked a good distance - quite a feat for me back then."}
+class PromptContract(unittest.TestCase):
+    def test_rules_present(self):
+        for frag in ("ONE sentence of a conversation",
+                     "you are not told who speaks, who is addressed, or when",
+                     'You are not told who "I", "me", "my", "you" or "your" are',
+                     "Otherwise put the word in Entities as written",
+                     "do not automatically include the person addressed",
+                     "Every role value that names one of these must also be in Entities",
+                     "Do not list anything that no relation uses",
+                     'Never join two with "and" or a comma',
+                     "A phrase, a time expression, a feeling or a question is never an entity",
+                     "belong to the example"):
+            self.assertIn(frag, X.PROMPT)
 
-    def rec(self, **slots):
-        return {"Entities": [], "EventRelation": [{"type": "travel", **slots}]}
+    def test_no_dataset_metadata_in_the_prompt_template(self):
+        for gone in ("{speaker}", "{listener}", "{date}", "listener", "metadata", "Turn ", "Sam", "Evan"):
+            self.assertNotIn(gone, X.PROMPT)                                                  # no placeholders, no dataset names
+            self.assertNotIn(gone, X.PROMPT)
+        for gone in ('"argument"', '"acceptance"'):
+            self.assertNotIn(gone, X.PROMPT)                                                  # example types must not be generic
 
-    def test_listener_without_name_or_you_is_rejected(self):
-        errs = X.validate(self.rec(traveler="Sam", companions="Evan"), self.T8)
-        self.assertEqual(len(errs), 1)
-        self.assertIn("role 'companions' names Evan", errs[0])
-        self.assertIn("keep that word as written", errs[0])
-
-    def test_listener_is_grounded_by_name_or_you(self):
-        self.assertEqual(X.validate(self.rec(companions="Evan"), {**self.T8, "text": "Evan, we hiked far."}), [])
-        for w in ("you", "You're", "your", "yourself", "you'll"):
-            self.assertEqual(X.validate(self.rec(companions="Evan"), {**self.T8, "text": f"Glad {w} asked."}), [], w)
-        self.assertNotEqual(X.validate(self.rec(companions="Evan"), {**self.T8, "text": "We went with Evangeline."}), [])   # whole word only
-        self.assertEqual(X.validate(self.rec(companions="Evan"), {**self.T8, "text": "Thank you so much."}), [])   # any word for you grounds the listener
-
-    def test_speaker_and_other_values_are_never_checked(self):
-        self.assertEqual(X.validate(self.rec(traveler="Sam", companions="dad", note="Evan went"), self.T8), [])
-        self.assertEqual(X.validate(self.rec(traveler="sam"), self.T8), [])
-
-    def test_case_insensitive_and_without_turn_nothing_changes(self):
-        self.assertEqual(len(X.validate(self.rec(companions="evan"), self.T8)), 1)
-        self.assertEqual(X.validate(self.rec(companions="Evan")), [])                       # old call signature still works
-
-    def test_ungrounded_listener_helper(self):
-        self.assertFalse(X.ungrounded_listener("Evan", {"text": "x", "listener": ""}))
-        self.assertTrue(X.ungrounded_listener("Evan", self.T8))
+    def test_prompt_text_is_the_one_frozen_for_phase_2(self):
+        import hashlib
+        self.assertEqual(X.PROMPT_VERSION, "v4.0")
+        self.assertEqual(hashlib.sha256(X.PROMPT.encode()).hexdigest()[:8], "d17fe36e")
 
 
 class Links(unittest.TestCase):
@@ -121,33 +116,6 @@ class Links(unittest.TestCase):
         s = X.derive(rec)[0]["slots"]
         self.assertEqual((s["thing"]["link"], s["other"]["link"], s["many"]["link"]), ("Prius", "Prius", "snack"))
         self.assertIsNone(s["owner"]["link"])                         # Evan is not in Entities here
-
-    def test_speaker_and_listener_link_without_being_listed(self):
-        rec = {"Entities": ["old one"], "EventRelation": [
-            {"type": "inquiry", "inquirer": "Sam", "inquired": "evan", "question": "what happened to the old one"}]}
-        plain = X.derive(rec)[0]["slots"]
-        self.assertIsNone(plain["inquirer"]["link"])
-        s = X.derive(rec, ["Sam", "Evan"])[0]["slots"]
-        self.assertEqual((s["inquirer"]["link"], s["inquired"]["link"]), ("Sam", "Evan"))
-        self.assertIsNone(s["question"]["link"])
-        self.assertEqual(rec["Entities"], ["old one"])                                      # the model's own list is untouched
-
-    def test_listed_entity_wins_over_known_name(self):
-        rec = {"Entities": ["the Sam"], "EventRelation": [{"type": "x", "who": "Sam"}]}
-        self.assertEqual(X.derive(rec, ["Sam"])[0]["slots"]["who"]["link"], "the Sam")
-
-    def test_prompt_rules_of_amendment_1(self):
-        for frag in ("Every role value that names one of these must also be in Entities",
-                     "Do not list anything that no event uses",
-                     "The speaker and the listener are known automatically",
-                     'Never join two with "and" or a comma',
-                     'A phrase, a time expression, a feeling or a question is never an entity',
-                     '"we", "us" and "they" do not automatically mean the listener',
-                     "belong to the example"):
-            self.assertIn(frag, X.PROMPT)
-        self.assertEqual(X.PROMPT_VERSION, "v3.2")
-        for gone in ("\"argument\"", "\"acceptance\""):
-            self.assertNotIn(gone, X.PROMPT)                                                   # example types must not be generic
 
     def test_type_and_role_names_are_normalised(self):
         ev = X.derive({"Entities": [], "EventRelation": [{"type": "Road Trip", "Who Went": "Evan"}]})
@@ -221,42 +189,47 @@ class RunAndReport(unittest.TestCase):
         raws = [RAW[0], {"Entities": ["Evan"], "EventRelation": [{"type": "trip", "when": 3}]}, RAW[1], RAW[2]]   # t1 first answer is bad
         rows = self.run_main(raws)
         self.assertEqual([r["attempts"] for r in rows], [1, 2, 1])
-        self.assertEqual(rows[1]["events"][0]["slots"]["destination"]["link"], "Jasper")
-        self.assertEqual(rows[1]["events"][0]["slots"]["companions"]["link"], "family")     # "my family" -> family
-        self.assertIsNone(rows[1]["events"][0]["slots"]["when"]["link"])
-        self.assertEqual(rows[2]["events"][0]["slots"]["object"]["link"], "it")             # pronoun kept as an entity
+        self.assertEqual(rows[1]["relations"][0]["slots"]["destination"]["link"], "Jasper")
+        self.assertEqual(rows[1]["relations"][0]["slots"]["companions"]["link"], "family")     # "my family" -> family
+        self.assertIsNone(rows[1]["relations"][0]["slots"]["when"]["link"])
+        self.assertEqual(rows[2]["relations"][0]["slots"]["object"]["link"], "it")             # pronoun kept as an entity
         self.assertEqual(rows[1]["registry"], {"types": 1, "roles": 4})
         meta = json.load(open(os.path.join(self.d, "out", "replay__stub__run1.meta.json")))
         self.assertEqual(meta["prompt_version"], X.PROMPT_VERSION)
         self.assertEqual(len(meta["prompt_sha256"]), 64)
-
-    def test_main_links_speaker_and_listener(self):
-        raws = [{"Entities": [], "EventRelation": [{"type": "inquiry", "inquirer": "Sam", "inquired": "Evan", "question": "how was it"}]},
-                RAW[1], RAW[2]]
-        rows = self.run_main(raws)
-        s = rows[0]["events"][0]["slots"]
-        self.assertEqual((s["inquirer"]["link"], s["inquired"]["link"]), ("Sam", "Evan"))
-        self.assertEqual(rows[0]["Entities"], [])                                           # stored list is the model's own
-        self.assertEqual(rows[2]["events"][0]["slots"]["subject"]["link"], "Sam")           # t2 speaker Sam, not in its Entities
-
-    def test_ungrounded_listener_triggers_a_retry_that_quotes_the_complaint(self):
-        bad = {"Entities": ["Evan", "Jasper"], "EventRelation": [{"type": "trip", "traveler": "Evan", "companions": "Sam"}]}   # t1: Sam is the listener, turn never says you or Sam
-        rows = self.run_main([RAW[0], bad, RAW[1], RAW[2]])
-        self.assertEqual([r["attempts"] for r in rows], [1, 2, 1])
-        self.assertEqual(rows[1]["events"][0]["slots"]["companions"]["link"], "family")
-
-    def test_prompt_text_is_the_one_frozen_for_phase_2(self):
-        import hashlib
-        self.assertEqual(hashlib.sha256(X.PROMPT.encode()).hexdigest()[:8], "6844bb51")      # v3.2; amendment 3 changes code only
 
     def test_registry_reaches_the_next_prompt(self):
         reg = X.Registry()
         reg.update(X.derive(RAW[1]), 1, RAW[1]["Entities"])
         prompt = X.make_prompt(TURNS[2], "t2", reg, 2)
         self.assertIn("- trip (1): ", prompt)
-        self.assertIn("speaker Sam, listener Evan", prompt)
-        self.assertIn("Turn t2: That sounds great", prompt)
-        self.assertNotIn("Jasper last weekend", prompt)                                     # earlier turn text is not leaked
+        self.assertIn("Sentence t2: That sounds great", prompt)
+        self.assertNotIn("Jasper last weekend", prompt)                                     # earlier sentence text is not leaked
+
+    def test_model_sees_only_the_sentence_and_the_registry(self):
+        prompt = X.make_prompt(TURNS[1], "t1", X.Registry(), 1)
+        for leaked in ("1:00 pm", "18 May", "Sam", "Evan", "{speaker}", "{listener}", "{date}"):
+            self.assertNotIn(leaked, prompt)
+        self.assertIn("I got back from a road trip to Jasper", prompt)
+
+    def test_rows_carry_no_speaker_listener_or_date_and_call_relations_relations(self):
+        rows = self.run_main([RAW[0], RAW[1], RAW[2]])
+        for r in rows:
+            self.assertFalse({"speaker", "listener", "date", "events"} & set(r), r.keys())
+            self.assertIn("relations", r)
+        meta = json.load(open(os.path.join(self.d, "out", "replay__stub__run1.meta.json")))
+        self.assertEqual(meta["model_input"], "sentence text and registry only")
+        self.assertEqual(meta["events"], 3)
+
+    def test_first_person_stays_ambiguous_because_nothing_names_the_speaker(self):
+        raw = {"Entities": ["I", "Jasper"], "EventRelation": [{"type": "trip", "traveler": "I", "destination": "Jasper"}]}
+        rows = self.run_main([raw, RAW[1], RAW[2]])
+        s = rows[0]["relations"][0]["slots"]
+        self.assertEqual((s["traveler"]["link"], s["destination"]["link"]), ("I", "Jasper"))   # "I" is an ambiguous entity, not Sam or Evan
+
+    def test_old_rows_with_events_key_are_still_read(self):
+        self.assertEqual(X.rels({"events": [1]}), [1])
+        self.assertEqual(X.rels({"relations": [2], "events": [1]}), [2])
 
     def test_failure_stops_and_resume_continues(self):
         bad = {"Entities": "x", "EventRelation": []}
@@ -277,12 +250,13 @@ class RunAndReport(unittest.TestCase):
         turns = [json.loads(l) for l in open(self.src)]
         m = R.measures(rows, turns, window=2)
         self.assertAlmostEqual(m["M1_valid_without_retry"], 2 / 3)
-        self.assertEqual(m["events"], 2)
+        self.assertEqual(m["events"], 3)
+        self.assertEqual(m["relations"], 2)
         self.assertEqual(m["slot_values"], 7)                                  # trip: 4 roles; state: 3 roles
-        self.assertAlmostEqual(m["M3_link_rate_all_slots"], 5 / 7)             # Evan, Jasper, family, it, and Sam (speaker, known to code)
-        self.assertEqual(m["M5_time_cue_turns"], 1)
+        self.assertAlmostEqual(m["M3_link_rate_all_slots"], 4 / 7)             # Evan, Jasper, family, it; Sam is not in Entities, so it stays TEXT (nothing supplies it)
+        self.assertEqual(m["M5_time_cue_events"], 1)
         self.assertEqual(m["M5_time_cue_kept"], 1.0)                           # "last weekend" kept in slot 'when'
-        self.assertEqual(m["M4_new_types_per_window"], [{"turns": "0-1", "new_types": 1}, {"turns": "2-2", "new_types": 1}])
+        self.assertEqual(m["M4_new_types_per_window"], [{"events": "0-1", "new_types": 1}, {"events": "2-2", "new_types": 1}])
         text = R.review(rows, turns)
         self.assertIn("destination='Jasper' LINK", text)
         self.assertIn("when='last weekend' TEXT", text)
@@ -293,7 +267,7 @@ if __name__ == "__main__":
 
 
 def _row(tid, *events):
-    return {"event_id": tid, "events": [{"type": ty, "slots": {r: {"value": v, "link": l} for r, (v, l) in sl.items()}} for ty, sl in events]}
+    return {"event_id": tid, "relations": [{"type": ty, "slots": {r: {"value": v, "link": l} for r, (v, l) in sl.items()}} for ty, sl in events]}
 
 
 class SynonymCandidates(unittest.TestCase):
