@@ -20,7 +20,7 @@ import sys
 import tempfile
 import time
 
-PROMPT_VERSION = "v3.0"
+PROMPT_VERSION = "v3.1"
 
 PROMPT = """You extract entities and events from ONE conversation turn. You have no other context.
 
@@ -28,7 +28,7 @@ Return JSON only, no prose, no code fences:
 {{"Entities": ["..."], "EventRelation": [{{"type": "...", "<role>": "<value>"}}]}}
 
 What to record
-- Entities: the people, things, places, tools, organisations and topics the turn mentions that could come up again in a later turn. Name them as the turn names them. Do not list actions, feelings or plain adjectives as entities.
+- Entities: the people, things, places, tools, organisations and topics that your events point at. Every role value that names one of these must also be in Entities, written the same way. Do not list anything that no event uses. The speaker and the listener are known automatically, so you need not list them. Name things as the turn names them. Do not list actions, feelings or plain adjectives as entities.
 - EventRelation: one object per thing that happens, is claimed, is asked, is intended, or is the case. Every object has "type" (a short snake_case name for the kind of event) plus role keys of your choice. A role value either names an entity from your Entities list (exactly as written there) or is short text (a claim, a reason, a quantity).
 - Use type "state" for how someone or something is: a subject and the state.
 - Record any time expression exactly as written ("last week", "yesterday", "in July") under a role of your choice.
@@ -41,6 +41,7 @@ Rules
 4. If a pronoun or phrase (it, that, this, they, the X) has no antecedent inside this turn, put it in Entities as written (for example "it") and use it as the value. Never guess what it refers to.
 5. Keep values short, in the turn's own words.
 6. A turn with no event (a greeting) returns {{"Entities": [], "EventRelation": []}}.
+7. One entity or one short phrase per role value. Never join two with "and" or a comma. For several people or things in the same role, write one event each, or use a second role (for example participant and participant_2).
 
 Format example only (unrelated to this conversation). Turn: "Bob argued that CockroachDB was better for multi-region payments, and Alice accepted the proposal."
 {{"Entities": ["Bob", "CockroachDB", "multi-region payments", "Alice", "proposal"], "EventRelation": [{{"type": "argument", "arguer": "Bob", "claim_subject": "CockroachDB", "claim": "better", "domain": "multi-region payments"}}, {{"type": "acceptance", "acceptor": "Alice", "accepted_object": "proposal"}}]}}
@@ -106,10 +107,11 @@ def validate(rec):
     return errs
 
 
-def derive(rec):
-    """Code decides links: a slot value whose norm_entity matches an entity in Entities is a link."""
+def derive(rec, known=()):
+    """Code decides links: a slot value whose norm_entity matches an entity in Entities, or a name in `known`
+    (the speaker and listener, supplied by code from the source, amendment 1), is a link."""
     index = {}
-    for e in rec["Entities"]:
+    for e in list(rec["Entities"]) + [k for k in known if k]:
         index.setdefault(norm_entity(e), e.strip())
     out = []
     for ev in rec["EventRelation"]:
@@ -253,7 +255,7 @@ def main(argv=None):
                 prompt = base + "\n\nYOUR PREVIOUS OUTPUT WAS REJECTED BY THE PARSER:\n- " + "\n- ".join(errs[:8]) + "\nReturn the corrected JSON only."
             if rec is None:
                 sys.exit(f"{sid}: failed validation after 4 attempts: {errs[:3]}\nProgress is saved; rerun the same command with --resume.")
-            events = derive(rec)
+            events = derive(rec, [turn["speaker"], turn["listener"]])
             reg.update(events, tick, rec["Entities"])
             row = {"event_id": sid, "tick": tick, "speaker": turn["speaker"], "listener": turn["listener"], "date": turn["date"],
                    "Entities": [e.strip() for e in rec["Entities"]], "EventRelation": rec["EventRelation"], "events": events,

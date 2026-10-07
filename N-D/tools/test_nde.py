@@ -89,6 +89,28 @@ class Links(unittest.TestCase):
         self.assertEqual((s["thing"]["link"], s["other"]["link"], s["many"]["link"]), ("Prius", "Prius", "snack"))
         self.assertIsNone(s["owner"]["link"])                         # Evan is not in Entities here
 
+    def test_speaker_and_listener_link_without_being_listed(self):
+        rec = {"Entities": ["old one"], "EventRelation": [
+            {"type": "inquiry", "inquirer": "Sam", "inquired": "evan", "question": "what happened to the old one"}]}
+        plain = X.derive(rec)[0]["slots"]
+        self.assertIsNone(plain["inquirer"]["link"])
+        s = X.derive(rec, ["Sam", "Evan"])[0]["slots"]
+        self.assertEqual((s["inquirer"]["link"], s["inquired"]["link"]), ("Sam", "Evan"))
+        self.assertIsNone(s["question"]["link"])
+        self.assertEqual(rec["Entities"], ["old one"])                                      # the model's own list is untouched
+
+    def test_listed_entity_wins_over_known_name(self):
+        rec = {"Entities": ["the Sam"], "EventRelation": [{"type": "x", "who": "Sam"}]}
+        self.assertEqual(X.derive(rec, ["Sam"])[0]["slots"]["who"]["link"], "the Sam")
+
+    def test_prompt_rules_of_amendment_1(self):
+        for frag in ("Every role value that names one of these must also be in Entities",
+                     "Do not list anything that no event uses",
+                     "The speaker and the listener are known automatically",
+                     'Never join two with "and" or a comma'):
+            self.assertIn(frag, X.PROMPT)
+        self.assertEqual(X.PROMPT_VERSION, "v3.1")
+
     def test_type_and_role_names_are_normalised(self):
         ev = X.derive({"Entities": [], "EventRelation": [{"type": "Road Trip", "Who Went": "Evan"}]})
         self.assertEqual(ev[0]["type"], "road_trip")
@@ -170,6 +192,15 @@ class RunAndReport(unittest.TestCase):
         self.assertEqual(meta["prompt_version"], X.PROMPT_VERSION)
         self.assertEqual(len(meta["prompt_sha256"]), 64)
 
+    def test_main_links_speaker_and_listener(self):
+        raws = [{"Entities": [], "EventRelation": [{"type": "inquiry", "inquirer": "Sam", "inquired": "Evan", "question": "how was it"}]},
+                RAW[1], RAW[2]]
+        rows = self.run_main(raws)
+        s = rows[0]["events"][0]["slots"]
+        self.assertEqual((s["inquirer"]["link"], s["inquired"]["link"]), ("Sam", "Evan"))
+        self.assertEqual(rows[0]["Entities"], [])                                           # stored list is the model's own
+        self.assertEqual(rows[2]["events"][0]["slots"]["subject"]["link"], "Sam")           # t2 speaker Sam, not in its Entities
+
     def test_registry_reaches_the_next_prompt(self):
         reg = X.Registry()
         reg.update(X.derive(RAW[1]), 1, RAW[1]["Entities"])
@@ -200,7 +231,7 @@ class RunAndReport(unittest.TestCase):
         self.assertAlmostEqual(m["M1_valid_without_retry"], 2 / 3)
         self.assertEqual(m["events"], 2)
         self.assertEqual(m["slot_values"], 7)                                  # trip: 4 roles; state: 3 roles
-        self.assertAlmostEqual(m["M3_link_rate_all_slots"], 4 / 7)             # Evan, Jasper, family, it
+        self.assertAlmostEqual(m["M3_link_rate_all_slots"], 5 / 7)             # Evan, Jasper, family, it, and Sam (speaker, known to code)
         self.assertEqual(m["M5_time_cue_turns"], 1)
         self.assertEqual(m["M5_time_cue_kept"], 1.0)                           # "last weekend" kept in slot 'when'
         self.assertEqual(m["M4_new_types_per_window"], [{"turns": "0-1", "new_types": 1}, {"turns": "2-2", "new_types": 1}])
