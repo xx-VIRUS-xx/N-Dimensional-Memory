@@ -27,6 +27,8 @@ def main():
     ap.add_argument("--probe-sample", type=int, default=0,
                     help="if > 0, keep this many questions, stratified by category, seeded (see --seed)")
     ap.add_argument("--seed", type=int, default=7)
+    ap.add_argument("--exclude", default=None,
+                    help="probes.jsonl whose questions (by locomo_index) are dropped before sampling, so a new draw is disjoint from it")
     a = ap.parse_args()
     raw = open(a.locomo, "rb").read()
     sha = hashlib.sha256(raw).hexdigest()
@@ -60,6 +62,14 @@ def main():
             p["gold_answer"] = str(q["answer"])
             p["accept"] = [str(q["answer"])]
         probes.append(p)
+    excluded = 0
+    if a.exclude:
+        gone = {json.loads(l)["locomo_index"] for l in open(a.exclude) if l.strip()}
+        excluded = len(gone & {p["locomo_index"] for p in probes})
+        probes = [p for p in probes if p["locomo_index"] not in gone]
+        if not a.probe_sample:
+            for i, p in enumerate(probes):
+                p["id"] = f"q{i:02d}"
     if a.probe_sample and len(probes) > a.probe_sample:
         import random
         rng = random.Random(a.seed)
@@ -87,7 +97,7 @@ def main():
             f.write(json.dumps(p) + "\n")
     meta = {"dataset": "snap-research/locomo data/locomo10.json", "sha256": sha, "sample": a.sample,
             "sample_id": conv.get("sample_id"), "sessions": a.sessions, "turns": len(turns), "probes": len(probes),
-            "probe_sample": a.probe_sample, "seed": a.seed,
+            "probe_sample": a.probe_sample, "seed": a.seed, "excluded": excluded,
             "license": "CC BY-NC 4.0 (derived data; non-commercial use with attribution)"}
     json.dump(meta, open(os.path.join(out, "chunk_meta.json"), "w"), indent=2)
     print(json.dumps(meta))

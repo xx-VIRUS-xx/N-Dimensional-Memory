@@ -389,8 +389,6 @@ class SynonymAtScale(unittest.TestCase):
             self.assertEqual(len(json.load(open(os.path.join(d, "b", "synonym_candidates.json")))["type_pairs"]), 0)
 
 
-if __name__ == "__main__":
-    unittest.main(verbosity=2)
 
 
 def _row(tid, *events):
@@ -471,3 +469,7 @@ class SynonymCandidates(unittest.TestCase):
         self.assertIn('"event": "t0"', md)
         self.assertNotIn('"turn"', md)
         self.assertEqual(json.load(open(os.path.join(d, "o", "synonym_candidates.json")))["types"], 5)
+
+
+if __name__ == "__main__":
+    unittest.main(verbosity=2)

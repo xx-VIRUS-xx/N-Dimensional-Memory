@@ -1,6 +1,6 @@
 # N-D status: what exists, what is only planned
 
-Read this before assuming something was built. Updated 2026-10-09 (patch 0033). Status words: **built** (code and tests exist), **run** (a model run produced results), **spec** (written down, no code), **idea** (discussed, not specced), **parked** (decided to leave for later).
+Read this before assuming something was built. Updated 2026-10-09 (patch 0034). Status words: **built** (code and tests exist), **run** (a model run produced results), **spec** (written down, no code), **idea** (discussed, not specced), **parked** (decided to leave for later).
 
 ## Words
 **event** = one sentence of the conversation (earlier files called it a turn). **EventRelation** = the model's list for that event. **relation** = one item of that list (type plus role slots; earlier files and messages called it an "event"). The extractor sees the sentence text only: no speaker, listener, date or neighbouring sentences, and stored rows carry none of them (amendment 4).
@@ -34,18 +34,19 @@ Read this before assuming something was built. Updated 2026-10-09 (patch 0033). 
 | Pronoun resolution over ND-E rows: contract C9 (explicit statement, user, or the single-candidate rule within the last 3 events; otherwise an open bucket with candidates, most recent first) and C12 (backward and forward runs). Spec rule 7 wrongly said the engine resolves nothing (AMENDMENT-4.md). **ND-E rows are not ingested by `nd_engine.py`: not wired** | spec / contract only |
 | Attribution (status field) no longer enforced; false-premise questions (category 5) reported separately | spec only |
 
-## Phase 3: query side. Approved 2026-10-09 although M6 and M7 failed on the spec arm (AMENDMENT-7.md). Spec drafted in `ND-Q2/EXP-NDQ2.md`, not frozen; nothing here is built
+## Phase 3: query side. Approved 2026-10-09 although M6 and M7 failed on the spec arm (AMENDMENT-7.md). Spec `ND-Q2/EXP-NDQ2.md` frozen 2026-10-09; tools, server, runner and scorer built (0034); dev-set pilot not yet run
 | Item | Status |
 |---|---|
-| `catalog` view: every type with count, role names, one example; top entities with counts | idea |
-| Multi-type filter `types=[...]`; the model maps a question to a set of related types, entities, roles | idea |
-| Count first, narrow, then fetch (narrow-or-count); facets; `describe` | idea |
-| Entity-first route (events where any slot links to X), type as secondary filter | idea |
-| Text-search fallback over slot values; optional BM25 rank inside a filtered set | idea |
-| `offset` paging; `neighbors(tick, +-3)` (C9's window of 3 events); `values(entity, role)` | idea |
-| Time cues shown and resolved in code against the source `date` joined on `event_id` (closed grammar in the ND-Q2 draft) | spec drafted |
+| `engine/ndq2_tools.py`: catalog, find (types list, entity, role, value, speaker, from/to, offset), count (by type/speaker/month), values, event, neighbors, BM25 `search_turns`; 250-word cap (catalog 700) with exact "n more not shown"; errors as text | built (0034), contract tests with mutation checks |
+| Time cues shown as `cue -> range` and resolved in code against the source `date` joined on `event_id` (closed list in `resolve_cue`) | built (0034) |
+| "I" = speaker, "you" = listener joined at query time, rows never rewritten | built (0034) |
+| `engine/ndq2_mcp.py`: MCP server, arms struct / tools2 / ragtool2 | built (0034), protocol tests |
+| `tools/ndq2_run.py`: runner (one isolated `claude -p` per question, 10 calls), prompts draft | built (0034), stub-claude tests; prompts and tool descriptions freeze after the dev-set pilot |
+| `tools/ndq2_score.py`: blind sheet (random order, key kept apart), R1 to R5, trace evidence recall, cost | built (0034), tests |
+| `tools/locomo_chunk.py --exclude`: disjoint fresh draw | built (0034); draw gives 153 questions left, not the 156 in the spec |
+| Dev-set pilot on the 40 ND-3 questions (unscored), then ND-Q2/AMENDMENT-1 freezing descriptions, prompts and the RAGTOOL2 output format | next |
+| Test-set draw (seed 11), four arms, blind scoring, report | after the freeze |
 | Code-computed "possibly similar types" hints | dropped from ND-Q2 (Phase 2 synonym report was mostly noise before the fix) |
-| ND-Q2 spec: arms RAW, RAGTOOL, STRUCT, TOOLS2; 40 fresh conv-49 questions (seed 11); tools catalog, find, count, values, event, neighbors, search_turns | spec drafted, awaiting approval to freeze |
 
 ## Phase 4 (optional): memory consolidation. Nothing here is built
 | Item | Status |

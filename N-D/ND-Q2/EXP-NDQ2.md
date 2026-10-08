@@ -1,6 +1,6 @@
 # ND-Q2: does an LLM-planned query over the ND-E memory beat searching raw turns?
 
-**Status: DRAFT 2026-10-09. Not frozen, nothing built.** Freezing needs Prabhat Saxena's approval of the items marked **[A]**. After the freeze, the spec, tool descriptions and prompt are not edited; later changes are numbered amendments.
+**Status: FROZEN 2026-10-09, approved by Prabhat Saxena ("Approve", after reading the draft; the items marked [A] are approved as written).** Freeze is staged, as in ND-Q: this file (data, arms, hypotheses, pass rule, tool names and behaviour) is frozen now and listed in `ND-Q2/FREEZE.sha256`. The exact tool descriptions and the prompt text may change during the dev-set pilot and are frozen, with their hashes in an amendment, before the test set is drawn; after the first scored answer nothing is edited. Later changes are numbered amendments and this file stays as it is.
 
 ## Why
 ND-Q (v1) failed on the old memory: TOOLS 26.5, RAGTOOL 31.0, RAW 32.5 (Q1, Q2, Q3 failed). Its traces named three causes: relative time was stored but never shown or resolved; free-text values did not share words with the question; nine questions had no evidence in any tool result. ND-E changes what is stored: one event per sentence, open relation types with linked entities, a per-event `Entities` list, time cues kept verbatim, no speaker or date in the rows. Phase 2 (amendment 7) passed M1 to M5 and failed M6 and M7 on the spec arm because content nouns often sit inside text values. This experiment tests the query side on that memory as it is: no re-extraction.
@@ -29,7 +29,7 @@ Every call returns at most 250 words (`catalog` 700), with an exact "N more" cou
 | `catalog()` | Every relation type with its count, its role names and one example; the 30 most linked entities with counts; the date range. The model reads it to choose types and entities |
 | `find(types?, entity?, role?, value?, speaker?, from?, to?, offset?)` | Count plus a page of 10 events in time order. `types` is a list (related types together). `entity` matches any slot or the `Entities` list by normalised name; "Evan" also matches "I" in Evan's turns and "you" in turns addressed to him. `value` matches words in slot values and in the sentence (stems: plural, -ing, -ed; no synonyms; not ranked) |
 | `count(...same filters..., by?)` | Exact number of events and of distinct entities; `by` = type, speaker or month gives the breakdown |
-| `values(entity, role?)` | The distinct values that entity takes in that role (any role if omitted), with event ids |
+| `values(entity, role?)` | In the relations that link `entity` (after the pronoun join), the distinct values of slot `role` (every role if omitted), grouped by relation type, with event ids |
 | `event(id)` | One event in full |
 | `neighbors(id, k)` | The k events before and after (k up to 3, the C9 window) |
 | `search_turns(query)` | BM25 top 5 dated turns (TOOLS2 only) |
