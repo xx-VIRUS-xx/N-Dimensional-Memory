@@ -330,6 +330,65 @@ class EvidenceOracle(unittest.TestCase):
             self.assertIn("M6", open(os.path.join(d, "o", "nde_evidence.md")).read())
 
 
+class SynonymAtScale(unittest.TestCase):
+    NAMES = ("alpha", "bravo", "charlie", "delta", "echo", "foxtrot", "golf", "hotel", "india", "juliet")
+
+    def filler(self):
+        return [_row(f"f{i}", (self.NAMES[i], {f"own_role_{i}": ("v", None)})) for i in range(10)]
+
+    def pair_rows(self, shared=("park", "gift", "lake")):
+        a = {f"r{i}": (e, e) for i, e in enumerate(shared)}
+        b = {f"s{i}": (e, e) for i, e in enumerate(shared)}
+        return [_row("t0", ("x_one", a)), _row("t1", ("y_two", b))] + self.filler()
+
+    def test_three_shared_entities_make_a_pair_until_they_are_named_hubs(self):
+        rows = self.pair_rows()
+        self.assertEqual(len(S.candidates(S.profile(rows))), 1)
+        self.assertEqual(S.candidates(S.profile(rows), hub_names=("Park", "gift")), [])      # source speakers are hubs, case ignored
+
+    def test_overlap_must_be_a_share_of_the_smaller_type(self):
+        big = {f"r{i}": (f"e{i}", f"e{i}") for i in range(12)}
+        small = {f"s{i}": (f"e{i}", f"e{i}") for i in range(3)}
+        rows = [_row("t0", ("x_one", big)), _row("t1", ("y_two", small))] + self.filler()
+        self.assertEqual(len(S.candidates(S.profile(rows))), 1)                              # 3 of 3 shared: all of the smaller type
+        small2 = {f"s{i}": (f"e{i}" if i < 3 else f"z{i}", f"e{i}" if i < 3 else f"z{i}") for i in range(12)}
+        rows = [_row("t0", ("x_one", big)), _row("t1", ("y_two", small2))] + self.filler()
+        self.assertEqual(S.candidates(S.profile(rows)), [])                                  # 3 of 12: below 0.3
+
+    def test_catch_all_type_is_not_paired_by_shared_entities(self):
+        rows = self.pair_rows() + [_row(f"c{i}", ("x_one", {"q": ("v", "park")})) for i in range(40)]
+        self.assertEqual(S.candidates(S.profile(rows)), [])                                  # x_one holds over a quarter of all relations
+
+    def test_numbered_role_copies_do_not_count_as_shared_roles(self):
+        rows = [_row("t0", ("x_one", {"object": ("a", None), "reason": ("b", None)})),
+                _row("t1", ("y_two", {"object_2": ("a", None), "reason_2": ("b", None)}))] + self.filler()
+        self.assertEqual(len(S.candidates(S.profile(rows))), 1)                              # object_2 and object are one role name for comparing types
+        rows = [_row("t0", ("x_one", {"other": ("a", None)})), _row("t1", ("y_two", {"object_2": ("a", None), "reason_2": ("b", None)}))] + self.filler()
+        self.assertEqual(S.candidates(S.profile(rows)), [])
+
+    def test_role_families_group_roles_whose_links_are_the_same_pronoun(self):
+        rows = [_row(f"t{i}", ("thanks", {"thanker": ("I", "I")})) for i in range(12)] + \
+               [_row(f"u{i}", ("hope", {"hoper": ("I", "I")})) for i in range(12)] + \
+               [_row(f"v{i}", ("trip", {"destination": ("Rockies", "Rockies")})) for i in range(12)]
+        fam = S.role_families(rows)
+        self.assertEqual(sorted(x["role"] for x in fam["i"]), ["hoper", "thanker"])
+        self.assertNotIn("destination", str(fam))
+        self.assertEqual(S.role_families(rows[:12]), {})                                      # one role is not a family
+        mixed = [_row(f"m{i}", (t, {"mixed": (p, p)})) for t in ("p_type", "q_type") for i, p in enumerate(("I", "you", "we", "it") * 3)]
+        self.assertNotIn("mixed", str(S.role_families(rows + mixed)))                         # no single pronoun reaches half of its links
+
+    def test_cli_reads_hub_names_from_the_source(self):
+        rows = self.pair_rows(("sam", "gift", "lake"))
+        with tempfile.TemporaryDirectory() as d:
+            ext, srcp = os.path.join(d, "r.jsonl"), os.path.join(d, "s.jsonl")
+            open(ext, "w").write("\n".join(json.dumps(r) for r in rows) + "\n")
+            open(srcp, "w").write(json.dumps({"sentence_id": "t0", "speaker": "Sam", "listener": "Evan", "text": "x"}) + "\n")
+            S.main(["--extraction", ext, "--out", os.path.join(d, "a")])
+            S.main(["--extraction", ext, "--source", srcp, "--out", os.path.join(d, "b")])
+            self.assertEqual(len(json.load(open(os.path.join(d, "a", "synonym_candidates.json")))["type_pairs"]), 1)
+            self.assertEqual(len(json.load(open(os.path.join(d, "b", "synonym_candidates.json")))["type_pairs"]), 0)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
 
