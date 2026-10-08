@@ -31,7 +31,7 @@ FILTERS = {"types": {"type": "array", "items": S}, "entity": S, "role": S, "valu
 TOOLS = {
     "catalog": _tool("catalog", "List every relation type in memory with its count, its main role names and one example, then the most linked entities "
                      "and the date range. Read it first to choose types and entities.", {}),
-    "find": _tool("find", "List events (count plus a page of 10, in time order) matching all given filters. Each event shows the dated sentence and its relations "
+    "find": _tool("find", "List events (the exact count, then up to 10 in time order, as many as fit in about 250 words; the result says which offset continues) matching all given filters. Each event shows the dated sentence and its relations "
                   "as type(role=value). 'types' is a list: give several related types together. 'entity' matches any slot or entity of the event; "
                   "\"I\" counts as the speaker and \"you\" as the listener of that turn. 'role' keeps events that have that slot name. "
                   "'value' keeps events whose slot values or sentence contain every word given (plural, -ing and -ed endings ignored; no synonyms; not ranked). "
@@ -51,6 +51,9 @@ TOOLS = {
 ARMS = {"struct": ["catalog", "find", "count", "values", "event", "neighbors"],
         "tools2": ["catalog", "find", "count", "values", "event", "neighbors", "search_turns"],
         "ragtool2": ["search_turns"]}
+
+
+MAX_CALLS = 10
 
 
 def call(mem, idx, arm, name, args):
@@ -89,6 +92,7 @@ def main():
     mem = load(ext, src)
     idx = TurnIndex(mem)
     tools = [TOOLS[n] for n in ARMS[arm]]
+    used = 0
     trace = os.environ.get("NDQ_TRACE")
     out = sys.stdout
     for line in sys.stdin:
@@ -111,7 +115,11 @@ def main():
             res = {"tools": tools}
         elif method == "tools/call":
             name, args = params.get("name"), params.get("arguments") or {}
-            text, is_err = call(mem, idx, arm, name, args)
+            used += 1
+            if used > MAX_CALLS:
+                text, is_err = f"Error: the limit of {MAX_CALLS} tool calls is used up. Answer now from what you have, or say it is not in memory.", True
+            else:
+                text, is_err = call(mem, idx, arm, name, args)
             res = {"content": [{"type": "text", "text": text}], "isError": is_err}
             if trace:
                 with open(trace, "a") as f:

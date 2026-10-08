@@ -150,7 +150,7 @@ class Tools(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.m.find(value="!!")
         t = self.m.find(types=["hike"], offset=2)
-        self.assertEqual(self.ids(t), ["t6"]); self.assertIn("showing 3-3", t)
+        self.assertEqual(self.ids(t), ["t6"]); self.assertIn("showing 3-3", t); self.assertNotIn("more", t)
         self.assertIn("past the last match", self.m.find(types=["hike"], offset=9))
 
     def test_count(self):
@@ -205,8 +205,16 @@ class Tools(unittest.TestCase):
             rows.append({"event_id": f"t{i}", "Entities": [], "relations": [{"type": "talk", "slots": {"x": slot("v")}}]})
         m = T.Memory(rows, src)
         t = m.find(types=["talk"])
-        self.assertLessEqual(len(t.split()), T.CAP); self.assertRegex(t, r"\(\d+ more not shown; use offset\)")
+        self.assertLessEqual(len(t.split()), T.CAP)
+        n = len(self.ids(t))
+        self.assertIn(f"showing 1-{n}", t); self.assertIn(f"offset={n})", t); self.assertLess(n, T.PAGE)   # the header and the offset say what was shown
         self.assertTrue(t.startswith("30 events match"))                              # the count is exact even when the page is cut
+        seen, off = [], 0
+        while off < 30:                                                               # following the offsets visits every event once, in order
+            page = m.find(types=["talk"], offset=off); got = self.ids(page); self.assertTrue(got); seen += got; off += len(got)
+        self.assertEqual(seen, [f"t{i}" for i in range(30)])
+        one = T.Memory([{**rows[0]}], [{**src[0], "text": " ".join(["w"] * 400)}]).find(types=["talk"])
+        self.assertLessEqual(len(one.split()), T.CAP); self.assertIn("truncated", one); self.assertIn("showing 1-1", one)
         self.assertLessEqual(len(m.neighbors("t10", 3).split()), T.CAP)
         self.assertLessEqual(len(T.TurnIndex(m).search("alpha").split()), T.CAP)
         big = T._cap("h", [" ".join(["w"] * 400)], 250)
@@ -263,6 +271,14 @@ class Server(unittest.TestCase):
         self.assertTrue(r[2]["result"]["isError"])
         r = self.session("struct", [("tools/call", {"name": "search_turns", "arguments": {"query": "Prius"}})])
         self.assertTrue(r[2]["result"]["isError"])
+
+    def test_call_limit_is_enforced_by_the_server(self):
+        c = ("tools/call", {"name": "find", "arguments": {"types": ["hike"]}})
+        r = self.session("tools2", [c] * 12)
+        res = [x["result"] for x in r[2:]]
+        self.assertFalse(any(x["isError"] for x in res[:10]))
+        for x in res[10:]:
+            self.assertTrue(x["isError"]); self.assertIn("limit of 10", x["content"][0]["text"])
 
     def test_event_not_found_is_flagged_but_no_matches_is_data(self):
         r = self.session("struct", [("tools/call", {"name": "event", "arguments": {"id": "t99"}}), ("tools/call", {"name": "find", "arguments": {"entity": "Zed"}})])

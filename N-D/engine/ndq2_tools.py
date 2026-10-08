@@ -25,6 +25,7 @@ from depict import QUESTION_WORDS        # noqa: E402
 CAP = 250
 CATALOG_CAP = 700
 PAGE = 10
+FIND_RESERVE = 25                  # words kept free in a find result for the header and the continuation note
 TOP_BM25 = 5
 MAX_K = 3
 MONTHS = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]
@@ -338,11 +339,23 @@ class Memory:
             raise ValueError("offset must be 0 or more")
         hit = self._filter(types, entity, role, value, speaker, frm, to)
         page = hit[offset:offset + PAGE]
-        head = f"{len(hit)} events match" + (f"; showing {offset + 1}-{offset + len(page)}" if page else "")
         if not page:
-            return head + ("" if not hit else f" (offset {offset} is past the last match)")
-        text = _cap(head, [self.line(e) for e in page], CAP, hint="; use offset")
-        return text
+            return f"{len(hit)} events match" + ("" if not hit else f" (offset {offset} is past the last match)")
+        lines = [self.line(e) for e in page]
+        n, used = 0, FIND_RESERVE                                  # header and continuation note are reserved
+        for ln in lines:
+            if used + _words(ln) > CAP:
+                break
+            used += _words(ln)
+            n += 1
+        if n == 0:                                                 # a single over-long event: cut its text, never skip it
+            lines[0] = " ".join(lines[0].split()[:CAP - FIND_RESERVE]) + " ...(truncated)"
+            n = 1
+        left = len(hit) - (offset + n)
+        out = [f"{len(hit)} events match; showing {offset + 1}-{offset + n}"] + lines[:n]
+        if left:
+            out.append(f"({left} more; the next one is at offset={offset + n})")
+        return "\n".join(out)
 
     def count(self, types=None, entity=None, role=None, value=None, speaker=None, frm=None, to=None, by=None):
         self._need_filter(types=types, entity=entity, role=role, value=value, speaker=speaker, frm=frm, to=to)
