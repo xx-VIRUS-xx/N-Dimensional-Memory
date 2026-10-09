@@ -1,6 +1,6 @@
 # N-D status: what exists, what is only planned
 
-Read this before assuming something was built. Updated 2026-10-09 (patch 0037). Status words: **built** (code and tests exist), **run** (a model run produced results), **spec** (written down, no code), **idea** (discussed, not specced), **parked** (decided to leave for later).
+Read this before assuming something was built. Updated 2026-10-09 (patch 0038). **Project closed as a negative result: see `CLOSEOUT.md`.** Status words: **built** (code and tests exist), **run** (a model run produced results), **spec** (written down, no code), **idea** (discussed, not specced), **parked** (decided to leave for later).
 
 ## Words
 **event** = one sentence of the conversation (earlier files called it a turn). **EventRelation** = the model's list for that event. **relation** = one item of that list (type plus role slots; earlier files and messages called it an "event"). The extractor sees the sentence text only: no speaker, listener, date or neighbouring sentences, and stored rows carry none of them (amendment 4).
@@ -47,7 +47,7 @@ Read this before assuming something was built. Updated 2026-10-09 (patch 0037). 
 | Dev-set pilot on the 40 ND-3 questions (unscored): ran, found a `find` paging bug and a missing server-side call limit, both fixed (0035); findings in `ND-Q2/PILOT.md` | run (round 1) |
 | Pilot round 2 on struct and tools2: no defect, no call over 10 | run |
 | ND-Q2/AMENDMENT-1: tool descriptions, prompts, RAGTOOL2 format and code hashes frozen | frozen 2026-10-09 |
-| Test-set draw (seed 11), four arms, blind scoring, report | run: pass rule FAILED (TOOLS2 29.0 vs RAGTOOL 29.5 and RAW 32.5); see `ND-Q2/REPORT.md`. Next step undecided (options in the report) |
+| Test-set draw (seed 11), four arms, blind scoring, report | run: pass rule FAILED (TOOLS2 29.0 vs RAGTOOL 29.5 and RAW 32.5); see `ND-Q2/REPORT.md`. Closed: see `CLOSEOUT.md` |
 | Code-computed "possibly similar types" hints | dropped from ND-Q2 (Phase 2 synonym report was mostly noise before the fix) |
 
 ## Phase 4 (optional): memory consolidation. Nothing here is built

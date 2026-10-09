@@ -1,5 +1,7 @@
 # N-D — N-Dimensional Memory, fresh track
 
+> **Closed 2026-10-09 as a negative result on a 509-turn conversation.** Read `CLOSEOUT.md` first, then `STATUS.md`.
+
 N-D restarts NDM from first principles. Earlier experiments (EXP-V1 … EXP-V8) are not carried forward as results or assumptions. Their *setup* (harnesses, adapters, retrieval baselines, competitor Docker files) may be reused when an N-D experiment needs it, and every reuse is named in that experiment's spec.
 
 ## Thesis
