@@ -1,0 +1,242 @@
+{
+ "q00": [
+  "RAGTOOL",
+  "RAW",
+  "TOOLS2",
+  "STRUCT"
+ ],
+ "q01": [
+  "STRUCT",
+  "TOOLS2",
+  "RAW",
+  "RAGTOOL"
+ ],
+ "q02": [
+  "RAW",
+  "STRUCT",
+  "TOOLS2",
+  "RAGTOOL"
+ ],
+ "q03": [
+  "TOOLS2",
+  "RAGTOOL",
+  "RAW",
+  "STRUCT"
+ ],
+ "q04": [
+  "RAW",
+  "RAGTOOL",
+  "STRUCT",
+  "TOOLS2"
+ ],
+ "q05": [
+  "TOOLS2",
+  "STRUCT",
+  "RAGTOOL",
+  "RAW"
+ ],
+ "q06": [
+  "STRUCT",
+  "RAGTOOL",
+  "RAW",
+  "TOOLS2"
+ ],
+ "q07": [
+  "RAW",
+  "STRUCT",
+  "RAGTOOL",
+  "TOOLS2"
+ ],
+ "q08": [
+  "RAGTOOL",
+  "TOOLS2",
+  "STRUCT",
+  "RAW"
+ ],
+ "q09": [
+  "TOOLS2",
+  "STRUCT",
+  "RAGTOOL",
+  "RAW"
+ ],
+ "q10": [
+  "RAW",
+  "STRUCT",
+  "TOOLS2",
+  "RAGTOOL"
+ ],
+ "q11": [
+  "STRUCT",
+  "TOOLS2",
+  "RAGTOOL",
+  "RAW"
+ ],
+ "q12": [
+  "RAW",
+  "TOOLS2",
+  "RAGTOOL",
+  "STRUCT"
+ ],
+ "q13": [
+  "TOOLS2",
+  "RAGTOOL",
+  "STRUCT",
+  "RAW"
+ ],
+ "q14": [
+  "STRUCT",
+  "RAGTOOL",
+  "RAW",
+  "TOOLS2"
+ ],
+ "q15": [
+  "TOOLS2",
+  "RAGTOOL",
+  "RAW",
+  "STRUCT"
+ ],
+ "q16": [
+  "STRUCT",
+  "RAGTOOL",
+  "TOOLS2",
+  "RAW"
+ ],
+ "q17": [
+  "TOOLS2",
+  "RAGTOOL",
+  "RAW",
+  "STRUCT"
+ ],
+ "q18": [
+  "TOOLS2",
+  "RAW",
+  "RAGTOOL",
+  "STRUCT"
+ ],
+ "q19": [
+  "RAGTOOL",
+  "TOOLS2",
+  "RAW",
+  "STRUCT"
+ ],
+ "q20": [
+  "TOOLS2",
+  "RAW",
+  "RAGTOOL",
+  "STRUCT"
+ ],
+ "q21": [
+  "RAW",
+  "RAGTOOL",
+  "STRUCT",
+  "TOOLS2"
+ ],
+ "q22": [
+  "STRUCT",
+  "TOOLS2",
+  "RAW",
+  "RAGTOOL"
+ ],
+ "q23": [
+  "TOOLS2",
+  "RAGTOOL",
+  "RAW",
+  "STRUCT"
+ ],
+ "q24": [
+  "RAGTOOL",
+  "STRUCT",
+  "RAW",
+  "TOOLS2"
+ ],
+ "q25": [
+  "STRUCT",
+  "TOOLS2",
+  "RAW",
+  "RAGTOOL"
+ ],
+ "q26": [
+  "TOOLS2",
+  "RAGTOOL",
+  "STRUCT",
+  "RAW"
+ ],
+ "q27": [
+  "STRUCT",
+  "RAW",
+  "TOOLS2",
+  "RAGTOOL"
+ ],
+ "q28": [
+  "RAGTOOL",
+  "RAW",
+  "TOOLS2",
+  "STRUCT"
+ ],
+ "q29": [
+  "TOOLS2",
+  "RAGTOOL",
+  "RAW",
+  "STRUCT"
+ ],
+ "q30": [
+  "TOOLS2",
+  "RAGTOOL",
+  "RAW",
+  "STRUCT"
+ ],
+ "q31": [
+  "RAW",
+  "STRUCT",
+  "RAGTOOL",
+  "TOOLS2"
+ ],
+ "q32": [
+  "RAGTOOL",
+  "RAW",
+  "TOOLS2",
+  "STRUCT"
+ ],
+ "q33": [
+  "RAGTOOL",
+  "STRUCT",
+  "TOOLS2",
+  "RAW"
+ ],
+ "q34": [
+  "TOOLS2",
+  "STRUCT",
+  "RAW",
+  "RAGTOOL"
+ ],
+ "q35": [
+  "RAW",
+  "TOOLS2",
+  "RAGTOOL",
+  "STRUCT"
+ ],
+ "q36": [
+  "RAGTOOL",
+  "TOOLS2",
+  "STRUCT",
+  "RAW"
+ ],
+ "q37": [
+  "RAW",
+  "STRUCT",
+  "RAGTOOL",
+  "TOOLS2"
+ ],
+ "q38": [
+  "TOOLS2",
+  "RAW",
+  "STRUCT",
+  "RAGTOOL"
+ ],
+ "q39": [
+  "STRUCT",
+  "RAW",
+  "TOOLS2",
+  "RAGTOOL"
+ ]
+}

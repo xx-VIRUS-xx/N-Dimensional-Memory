@@ -1,0 +1,34 @@
+{
+ "totals": {
+  "RAW": 32.5,
+  "RAGTOOL": 29.5,
+  "STRUCT": 29.0,
+  "TOOLS2": 29.0
+ },
+ "recall": {
+  "STRUCT": 0.49185606060606063,
+  "TOOLS2": 0.6174242424242424,
+  "RAGTOOL": 0.5990530303030303
+ },
+ "median_calls_words": {
+  "STRUCT": [
+   2.0,
+   234.0
+  ],
+  "TOOLS2": [
+   2.0,
+   191.5
+  ],
+  "RAGTOOL": [
+   2.0,
+   322.0
+  ]
+ },
+ "decision": {
+  "R1": false,
+  "R2": false,
+  "R3": false,
+  "R5": true,
+  "pass": false
+ }
+}
